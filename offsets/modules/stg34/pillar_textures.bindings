@@ -1,0 +1,9 @@
+text  SONIC_PILLAR_TEXTURES_KD_LS_UNIT802  14
+text  SONIC_PILLAR_TEXTURES_KD_LS_UNIT803  14
+
+pointer  textures  0x00000000  SONIC_PILLAR_TEXTURES_KD_LS_UNIT802
+pointer  textures  0x0000000c  SONIC_PILLAR_TEXTURES_KD_LS_UNIT803
+pointer  electric_pillar_texlist  0x00000000  textures
+pointer  electric_pillar_model  0x00000000  electric_pillar_vertices
+pointer  electric_pillar_model  0x00000004  electric_pillar_polygons
+pointer  electric_pillar_object  0x00000004  electric_pillar_model

@@ -1,0 +1,3 @@
+text  COLONY_TEXT_LCSPARK  C  0x00000048  8
+datum  emitter_effects  D  0x00000000  4
+datum  colony_spark_texlists  D  0x00000004  8

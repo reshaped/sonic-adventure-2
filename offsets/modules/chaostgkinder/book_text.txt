@@ -1,0 +1,7 @@
+datum  empty_code  C  0x00000000  2
+datum  ascii_codes  C  0x00000002  570
+datum  latin_codes  C  0x0000023c  256
+datum  japanese_codes  C  0x0000033c  376
+datum  reserved_code  C  0x000004b4  2
+datum  escape_code  C  0x000004b6  2
+datum  alphabet  C  0x000004b8  1024

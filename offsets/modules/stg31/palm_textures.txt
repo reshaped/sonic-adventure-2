@@ -1,0 +1,2 @@
+text  PALM_MATERIAL_HILL_OBJ  C  0x00000000  9
+datum  textures  D  0x00000000  12

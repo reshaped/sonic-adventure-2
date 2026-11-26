@@ -1,0 +1,4 @@
+pointer  support_models  0x00000000  flag_shadow_support
+pointer  support_models  0x00000004  flag_bright_support
+pointer  tilted_flag_texlists  0x00000000  flag_shadow_support_texlist
+pointer  tilted_flag_texlists  0x00000004  flag_bright_support_texlist

@@ -1,0 +1,12 @@
+datum  muzzle_object_a_polygons  D  0x00000000  70
+datum  muzzle_object_a_vertices  D  0x00000048  300
+datum  muzzle_object_b_polygons  D  0x000001c0  70
+datum  muzzle_object_b_vertices  D  0x00000208  300
+datum  muzzle_object_c_polygons  D  0x00000380  70
+datum  muzzle_object_c_vertices  D  0x000003c8  300
+datum  muzzle_object_a_mesh  D  0x00000174  24
+datum  muzzle_object_a  D  0x0000018c  52
+datum  muzzle_object_b_mesh  D  0x00000334  24
+datum  muzzle_object_b  D  0x0000034c  52
+datum  muzzle_object_c_mesh  D  0x000004f4  24
+datum  muzzle_object_c  D  0x0000050c  52

@@ -1,0 +1,28 @@
+        .EXPORT     __bfxbu
+
+REGISTER_BITS:  .EQU    32
+BYTE_BITS:      .EQU    8
+
+        .SECTION    P,CODE,ALIGN=4
+
+; extract an unsigned bit field from the byte at R2, for compiled code. R1's
+; bits 0 to 7 give the field's width. its bits 8 to 15 give the number of the
+; byte's bits above the field. return the field in R0, zero-extended. it
+; changes R0, and no other register
+; @asm opcode: swap, SWAP.B R1,R0 at 0x0c9f2166 brings R1's bits 8 to 15
+; down to R0's low byte
+__bfxbu:
+        MOV.L       R1,@-R15
+        SWAP.B      R1,R0
+        MOV.L       R3,@-R15
+        EXTU.B      R0,R3
+        MOV.B       @R2,R0
+        EXTU.B      R1,R1
+        ADD         #-REGISTER_BITS,R1
+        ADD         #REGISTER_BITS-BYTE_BITS,R3
+        SHLD        R3,R0           ; the field's top bit to bit 31
+        SHLD        R1,R0
+        MOV.L       @R15+,R3
+        RTS
+        MOV.L       @R15+,R1
+        .END

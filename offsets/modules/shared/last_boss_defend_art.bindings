@@ -1,0 +1,41 @@
+text  FLARE_BOSSHAJIKI01  13
+text  FLARE_BOSSHAJIKI02  13
+text  FLARE_BOSSHAJIKI03  13
+text  FLARE_BOSSHAJIKI04  13
+text  FLARE_BOSSHAJIKI05  13
+text  FLARE_BOSSHAJIKI06  13
+text  FLARE_BOSSHAJIKI07  13
+text  FLARE_BOSSHAJIKI08  13
+text  FLARE_A_EFF01  8
+text  FLARE_A_EFF02  8
+text  FLARE_A_EFF03  8
+text  FLARE_A_EFF04  8
+text  FLARE_A_EFF05  8
+text  FLARE_A_EFF06  8
+pointer  unused_spark_mesh  0x00000000  unused_spark_vertices
+pointer  unused_spark_mesh  0x00000004  unused_spark_polygons
+pointer  unused_spark  0x00000004  unused_spark_mesh
+pointer  defend_flare_mesh  0x00000000  defend_flare_vertices
+pointer  defend_flare_mesh  0x00000004  defend_flare_polygons
+pointer  defend_flare_object  0x00000004  defend_flare_mesh
+pointer  flare_shape_keys  0x00000004  flare_points_0
+pointer  flare_shape_keys  0x0000000c  flare_points_2
+pointer  flare_shape_keys  0x00000014  flare_points_4
+pointer  shape_channels  0x00000000  flare_shape_keys
+pointer  defend_flare_shape  0x00000000  shape_channels
+pointer  defend_flare_motion  0x00000000  rest_channels
+pointer  defend_textures  0x00000000  FLARE_BOSSHAJIKI01
+pointer  defend_textures  0x0000000c  FLARE_BOSSHAJIKI02
+pointer  defend_textures  0x00000018  FLARE_BOSSHAJIKI03
+pointer  defend_textures  0x00000024  FLARE_BOSSHAJIKI04
+pointer  defend_textures  0x00000030  FLARE_BOSSHAJIKI05
+pointer  defend_textures  0x0000003c  FLARE_BOSSHAJIKI06
+pointer  defend_textures  0x00000048  FLARE_BOSSHAJIKI07
+pointer  defend_textures  0x00000054  FLARE_BOSSHAJIKI08
+pointer  defend_textures  0x00000060  FLARE_A_EFF01
+pointer  defend_textures  0x0000006c  FLARE_A_EFF02
+pointer  defend_textures  0x00000078  FLARE_A_EFF03
+pointer  defend_textures  0x00000084  FLARE_A_EFF04
+pointer  defend_textures  0x00000090  FLARE_A_EFF05
+pointer  defend_textures  0x0000009c  FLARE_A_EFF06
+pointer  defend_texlist  0x00000000  defend_textures

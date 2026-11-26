@@ -1,0 +1,25 @@
+text  HARBOR_TEXTURE_MIU128_MH003  13
+text  HARBOR_TEXTURE_MIU64_MH005  12
+text  HARBOR_TEXTURE_MIU64_MH010  12
+text  HARBOR_TEXTURE_PR128_7  8
+text  HARBOR_TEXTURE_PR256_2  8
+text  HARBOR_TEXTURE_PR64_17  8
+text  HARBOR_TEXTURE_PR64_3  7
+pointer  container_0_textures  0x00000000  HARBOR_TEXTURE_MIU128_MH003
+pointer  container_0_textures  0x0000000c  HARBOR_TEXTURE_MIU64_MH005
+pointer  container_0_textures  0x00000018  HARBOR_TEXTURE_MIU64_MH010
+pointer  container_0_textures  0x00000024  HARBOR_TEXTURE_PR128_7
+pointer  container_0_textures  0x00000030  HARBOR_TEXTURE_PR256_2
+pointer  container_0_textures  0x0000003c  HARBOR_TEXTURE_PR64_17
+pointer  container_0_textures  0x00000048  HARBOR_TEXTURE_PR64_3
+pointer  container_0_texlist  0x00000000  container_0_textures
+pointer  container_0_model  0x00000000  container_0_vertices
+pointer  container_0_model  0x00000004  container_0_polygons
+pointer  container_0_object  0x00000004  container_0_model
+pointer  container_0_collision_meshsets  0x00000004  container_0_collision_indices_0
+pointer  container_0_collision_model  0x00000000  container_0_collision_points
+pointer  container_0_collision_model  0x00000004  container_0_collision_normals
+pointer  container_0_collision_model  0x0000000c  container_0_collision_meshsets
+pointer  container_0_collision_model  0x00000010  container_0_collision_materials
+pointer  container_0_collision  0x00000004  container_0_collision_model
+pointer  container_0_texlists  0x00000000  container_0_texlist

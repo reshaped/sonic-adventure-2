@@ -1,0 +1,16 @@
+# The six rideable rails and their contact sphere, at offsets in rails.c.
+datum  rail_1_points    D  0x00000000  380
+datum  rail_1           D  0x0000017c  16
+datum  rail_2_points    D  0x0000018c  380
+datum  rail_2           D  0x00000308  16
+datum  rail_3_points    D  0x00000318  80
+datum  rail_3           D  0x00000368  16
+datum  rail_4_points    D  0x00000378  80
+datum  rail_4           D  0x000003c8  16
+datum  rail_5_points    D  0x000003d8  80
+datum  rail_5           D  0x00000428  16
+datum  rail_6_points    D  0x00000438  80
+datum  rail_6           D  0x00000488  16
+datum  contact_shape    C  0x0000000c  48
+datum  rail_templates  D  0x00000498  28
+datum  biolizard_rail_paths  D  0x000004b8  4

@@ -1,0 +1,15 @@
+text  TURNTABLE_TEXTURE_PUM32_1  8
+text  TURNTABLE_TEXTURE_PUM64_4  8
+
+pointer  turntable_texlist_names  0x00000000  TURNTABLE_TEXTURE_PUM32_1
+pointer  turntable_texlist_names  0x0000000c  TURNTABLE_TEXTURE_PUM64_4
+pointer  turntable_texlist  0x00000000  turntable_texlist_names
+pointer  turntable_model  0x00000000  turntable_vertices
+pointer  turntable_model  0x00000004  turntable_polygons
+pointer  turntable_object  0x00000004  turntable_model
+pointer  turntable_collision_faces  0x00000004  turntable_collision_strips
+pointer  turntable_collision_model  0x00000000  turntable_collision_points
+pointer  turntable_collision_model  0x00000004  turntable_collision_normals
+pointer  turntable_collision_model  0x0000000c  turntable_collision_faces
+pointer  turntable_collision_model  0x00000010  turntable_collision_materials
+pointer  turntable_collision  0x00000004  turntable_collision_model

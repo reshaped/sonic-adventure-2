@@ -1,0 +1,15 @@
+/* the slot of each texture in E_BIGTEX */
+#ifndef SHARED_BIG_ART_TEXTURES_H
+#define SHARED_BIG_ART_TEXTURES_H
+
+enum big_texture_slot {
+    BIG_TEXTURE_BELT,
+    BIG_TEXTURE_RING,
+    BIG_TEXTURE_BIG,
+    BIG_TEXTURE_SKIN,
+    BIG_TEXTURE_BTX_SIMS,
+    BIG_TEXTURE_FISHING_ROD,
+    BIG_TEXTURE_COUNT
+};
+
+#endif

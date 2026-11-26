@@ -1,0 +1,15 @@
+text  FALLEN_TREE_TEXTURE_1  C  0x00000024  14
+text  FALLEN_TREE_TEXTURE_2  C  0x00000034  15
+text  FALLEN_TREE_TEXTURE_3  C  0x00000044  15
+datum  fallen_tree_textures  D  0x00000000  36
+datum  fallen_tree_polygons  D  0x0000002c  370
+datum  fallen_tree_vertices  D  0x000001a0  460
+datum  fallen_tree_model  D  0x0000036c  24
+datum  fallen_tree_object  D  0x00000384  52
+datum  fallen_tree_collision_materials  D  0x000003b8  20
+datum  fallen_tree_collision_indices_0  D  0x000003cc  24
+datum  fallen_tree_collision_meshsets  D  0x000003e4  24
+datum  fallen_tree_collision_points  D  0x000003fc  72
+datum  fallen_tree_collision_normals  D  0x00000444  72
+datum  fallen_tree_collision_model  D  0x0000048c  40
+datum  fallen_tree_collision  D  0x000004b4  52

@@ -1,0 +1,7 @@
+text  WATER_RIPPLE_TEXT_WATERCOLUMN01  14
+
+pointer  ripple_textures  0x00000000  WATER_RIPPLE_TEXT_WATERCOLUMN01
+pointer  ripple_texlist  0x00000000  ripple_textures
+pointer  ripple_model  0x00000000  ripple_vertices
+pointer  ripple_model  0x00000004  ripple_polygons
+pointer  ripple_object  0x00000004  ripple_model

@@ -1,0 +1,4 @@
+pointer  models  0x00000000  base_small_plant
+pointer  models  0x00000004  base_large_plant
+pointer  base_plant_texlists  0x00000000  base_small_plant_texlist
+pointer  base_plant_texlists  0x00000004  base_large_plant_texlist

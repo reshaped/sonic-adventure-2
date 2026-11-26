@@ -1,0 +1,128 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_MIU128_GREEN001  16
+text  STAGE_TEXTURE_MIU128_GREEN002  16
+text  STAGE_TEXTURE_MIU128_GREEN003  16
+text  STAGE_TEXTURE_MIU128_GREEN004  16
+text  STAGE_TEXTURE_MIU128_GREEN005  16
+text  STAGE_TEXTURE_MIU128_GREEN006  16
+text  STAGE_TEXTURE_MIU128_GREEN007  16
+text  STAGE_TEXTURE_MIU128_GREEN008  16
+text  STAGE_TEXTURE_MIU128_GREEN009  16
+text  STAGE_TEXTURE_MIU32_GF001  12
+text  STAGE_TEXTURE_MIU32_GF002  12
+text  STAGE_TEXTURE_MIU64_GF001  12
+text  STAGE_TEXTURE_MIU64_GREEN001  15
+text  STAGE_TEXTURE_MIU64_GREEN002  15
+text  STAGE_TEXTURE_MIU64_GREEN003  15
+text  STAGE_TEXTURE_MIU64_GREEN004  15
+text  STAGE_TEXTURE_MIU64_GREEN005  15
+text  STAGE_TEXTURE_MIU64_GREEN006  15
+text  STAGE_TEXTURE_MIU64_GREEN007  15
+text  STAGE_TEXTURE_MIU64_GREEN008  15
+text  STAGE_TEXTURE_MIU64_KAGE001  14
+text  STAGE_TEXTURE_YA_JUNGLE  10
+text  PVM_OBJTEX_STG03  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+text  PVM_LANDTX03  9
+text  PVM_LANDTX03_SUIMEN  16
+text  PVM_LEVUPDAI_THTEX  15
+
+pointer  stage_texture_names  0x00000000  STAGE_TEXTURE_MIU128_GREEN001
+pointer  stage_texture_names  0x0000000c  STAGE_TEXTURE_MIU128_GREEN002
+pointer  stage_texture_names  0x00000018  STAGE_TEXTURE_MIU128_GREEN003
+pointer  stage_texture_names  0x00000024  STAGE_TEXTURE_MIU128_GREEN004
+pointer  stage_texture_names  0x00000030  STAGE_TEXTURE_MIU128_GREEN005
+pointer  stage_texture_names  0x0000003c  STAGE_TEXTURE_MIU128_GREEN006
+pointer  stage_texture_names  0x00000048  STAGE_TEXTURE_MIU128_GREEN007
+pointer  stage_texture_names  0x00000054  STAGE_TEXTURE_MIU128_GREEN008
+pointer  stage_texture_names  0x00000060  STAGE_TEXTURE_MIU128_GREEN009
+pointer  stage_texture_names  0x0000006c  STAGE_TEXTURE_MIU32_GF001
+pointer  stage_texture_names  0x00000078  STAGE_TEXTURE_MIU32_GF002
+pointer  stage_texture_names  0x00000084  STAGE_TEXTURE_MIU64_GF001
+pointer  stage_texture_names  0x00000090  STAGE_TEXTURE_MIU64_GREEN001
+pointer  stage_texture_names  0x0000009c  STAGE_TEXTURE_MIU64_GREEN002
+pointer  stage_texture_names  0x000000a8  STAGE_TEXTURE_MIU64_GREEN003
+pointer  stage_texture_names  0x000000b4  STAGE_TEXTURE_MIU64_GREEN004
+pointer  stage_texture_names  0x000000c0  STAGE_TEXTURE_MIU64_GREEN005
+pointer  stage_texture_names  0x000000cc  STAGE_TEXTURE_MIU64_GREEN006
+pointer  stage_texture_names  0x000000d8  STAGE_TEXTURE_MIU64_GREEN007
+pointer  stage_texture_names  0x000000e4  STAGE_TEXTURE_MIU64_GREEN008
+pointer  stage_texture_names  0x000000f0  STAGE_TEXTURE_MIU64_KAGE001
+pointer  stage_texture_names  0x000000fc  STAGE_TEXTURE_YA_JUNGLE
+pointer  stage_textures  0x00000000  stage_texture_names
+pointer  common_group  0x00000000  spring_texlist
+pointer  common_group  0x00000004  ring_texlist
+pointer  common_group  0x00000008  switch_texlist
+pointer  common_group  0x0000000c  dash_panel_texlist
+pointer  common_group  0x00000010  dash_panel_anim_texlist
+pointer  common_group  0x00000014  save_point_texlist
+pointer  common_group  0x00000018  revolving_vine_texlist
+pointer  common_group  0x0000001c  big_jump_anim_texlist
+pointer  common_group  0x00000020  big_jump_texlist
+pointer  common_group  0x00000024  vine_texlist
+pointer  common_group  0x00000028  hover_lift_texlist_0
+pointer  common_group  0x0000002c  dirt_texlist
+pointer  common_group  0x00000030  fallen_tree_texlist
+pointer  common_group  0x00000034  bungee_vine_texlist
+pointer  common_group  0x00000038  ring_shadow_texlist
+pointer  common_group  0x0000003c  test_wood_texlist
+pointer  common_group  0x00000040  hover_lift_texlist_1
+pointer  common_group  0x00000044  effect_texlist
+pointer  common_group  0x00000048  item_balloon_texlist
+pointer  common_group  0x0000004c  ring_sparkle_texlist
+pointer  common_group  0x00000050  burst_texlist
+pointer  common_group  0x00000054  stars_texlist
+pointer  green_forest_object_texture_groups  0x00000000  common_group
+pointer  green_forest_object_texture_groups  0x00000004  jungle_prop_texlists
+pointer  green_forest_object_texture_groups  0x00000008  solid_scenery_texlists
+pointer  green_forest_object_texture_groups  0x0000000c  item_box_texlists
+pointer  green_forest_object_texture_groups  0x00000010  item_box_air_texlists
+pointer  green_forest_object_texture_groups  0x00000014  iron_ball_texlists
+pointer  green_forest_object_texture_groups  0x00000018  goal_ring_texlists
+pointer  green_forest_object_texture_groups  0x0000001c  emerald_texlists
+pointer  green_forest_object_texture_groups  0x00000020  weight_texlists
+pointer  green_forest_object_texture_groups  0x00000024  triple_spring_texlists
+pointer  green_forest_object_texture_groups  0x00000028  dynamite_texlists
+pointer  green_forest_object_texture_groups  0x0000002c  reel_texlists
+pointer  green_forest_object_texture_groups  0x00000030  chao_pipe_texlists
+pointer  green_forest_object_texture_groups  0x00000034  cage_texlists
+pointer  green_forest_object_texture_groups  0x00000038  wood_box_texlists
+pointer  green_forest_object_texture_groups  0x0000003c  iron_box_texlists
+pointer  green_forest_object_texture_groups  0x00000040  upgrade_texlists
+pointer  green_forest_object_texture_groups  0x00000044  missile_texlists
+pointer  green_forest_object_texture_groups  0x00000048  skull_texlists
+pointer  green_forest_object_texture_groups  0x0000004c  rocket_texlists
+pointer  green_forest_object_texture_groups  0x00000050  search_box_texlists
+pointer  green_forest_object_texture_groups  0x00000054  hint_box_texlists
+pointer  green_forest_object_texture_groups  0x00000058  knudai_texlists
+pointer  green_forest_object_texture_groups  0x0000005c  knudai_foothold_texlists
+pointer  green_forest_object_texture_groups  0x00000060  knudai_warp_hole_texlists
+pointer  green_forest_object_texture_groups  0x00000064  knudai_door_texlists
+pointer  green_forest_object_texture_groups  0x00000068  chao_box_texlists
+pointer  green_forest_object_texture_groups  0x0000006c  chao_key_texlists
+pointer  green_forest_object_texture_groups  0x00000070  object_effect_texlists
+pointer  green_forest_object_texture_groups  0x00000074  messenger_texlists
+pointer  green_forest_object_texture_groups  0x00000078  ring_effect_texlists
+pointer  green_forest_object_texture_groups  0x0000007c  solid_box_texlists
+pointer  green_forest_object_texture_groups  0x00000080  wood_fence_texlists
+pointer  green_forest_object_texture_groups  0x00000084  dragonfly_texlists
+pointer  green_forest_object_texture_groups  0x00000088  jungle_pickup_texlists
+pointer  green_forest_object_texture_groups  0x0000008c  falling_cliff_texlists
+pointer  green_forest_object_texture_groups  0x00000090  hover_lift_texlists
+pointer  green_forest_object_texture_groups  0x00000094  arrow_sign_texlists
+pointer  green_forest_object_pvms  0x00000000  PVM_OBJTEX_STG03
+pointer  green_forest_object_pvms  0x00000004  stage_textures
+pointer  green_forest_object_pvms  0x00000008  PVM_EFFTEX_COMMON
+pointer  green_forest_object_pvms  0x0000000c  efftex_common_texlist
+pointer  green_forest_object_pvms  0x00000010  PVM_OBJTEX_COMMON
+pointer  green_forest_object_pvms  0x00000014  objtex_common_texlist
+pointer  green_forest_object_pvms  0x00000018  PVM_LANDTX03
+pointer  green_forest_object_pvms  0x0000001c  green_forest_ground_texlist
+pointer  green_forest_object_pvms  0x00000020  PVM_LANDTX03_SUIMEN
+pointer  green_forest_object_pvms  0x00000024  green_forest_water_texlist
+pointer  green_forest_object_pvms  0x00000028  PVM_LEVUPDAI_THTEX
+pointer  green_forest_object_pvms  0x0000002c  upgrade_sparkle_texlist
+pointer  green_forest_object_pvms  0x00000034  green_forest_land_texlist

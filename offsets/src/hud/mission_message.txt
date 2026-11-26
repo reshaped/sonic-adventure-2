@@ -1,0 +1,9 @@
+datum  row_quads  D  0x00000018  672
+datum  shadow_quad  D  0x00000318  96
+datum  text_quad  D  0x000002b8  96
+text  MISSION_LANGUAGE_J  C  0x00000040  2
+text  MISSION_LANGUAGE_E  C  0x00000044  2
+text  MISSION_LANGUAGE_F  C  0x00000048  2
+text  MISSION_LANGUAGE_S  C  0x0000004c  2
+text  MISSION_LANGUAGE_G  C  0x00000050  2
+datum  mission_letters  D  0x00000004  20

@@ -1,0 +1,3 @@
+datum  pluswd  DATA  0x00000000  243
+datum  pword  DATA  0x000000f3  1532
+datum  pwordmap  DATA  0x000006f0  192

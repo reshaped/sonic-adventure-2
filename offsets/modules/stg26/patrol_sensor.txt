@@ -1,0 +1,8 @@
+datum  sensor_polygons  D  0x00000000  254
+datum  sensor_vertices  D  0x00000100  588
+datum  sensor_model  D  0x0000034c  24
+datum  guard_sensor_objects  D  0x00000364  52
+datum  shadow_polygons  D  0x00000398  730
+datum  shadow_vertices  D  0x00000674  756
+datum  shadow_model  D  0x00000968  24
+datum  guard_shadow_objects  D  0x00000980  52

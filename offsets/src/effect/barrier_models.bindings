@@ -1,0 +1,24 @@
+text  BARRIER_SPARK_TEXTURE  11
+text  MAGNETIC_SPARK_TEXTURE  11
+text  INVINCIBILITY_BALL_TEXTURE  11
+text  INVINCIBILITY_SPARK_TEXTURE  9
+pointer  barrier_spark_textures  0x00000000  BARRIER_SPARK_TEXTURE
+pointer  barrier_spark_texlist  0x00000000  barrier_spark_textures
+pointer  barrier_spark_model  0x00000000  barrier_spark_vertices
+pointer  barrier_spark_model  0x00000004  barrier_spark_polygons
+pointer  barrier_spark_object  0x00000004  barrier_spark_model
+pointer  magnetic_spark_textures  0x00000000  MAGNETIC_SPARK_TEXTURE
+pointer  magnetic_spark_texlist  0x00000000  magnetic_spark_textures
+pointer  magnetic_spark_model  0x00000000  magnetic_spark_vertices
+pointer  magnetic_spark_model  0x00000004  magnetic_spark_polygons
+pointer  magnetic_spark_object  0x00000004  magnetic_spark_model
+pointer  invincibility_ball_textures  0x00000000  INVINCIBILITY_BALL_TEXTURE
+pointer  invincibility_ball_texlist  0x00000000  invincibility_ball_textures
+pointer  invincibility_ball_model  0x00000000  invincibility_ball_vertices
+pointer  invincibility_ball_model  0x00000004  invincibility_ball_polygons
+pointer  invincibility_ball_object  0x00000004  invincibility_ball_model
+pointer  invincibility_spark_textures  0x00000000  INVINCIBILITY_SPARK_TEXTURE
+pointer  invincibility_spark_texlist  0x00000000  invincibility_spark_textures
+pointer  invincibility_spark_model  0x00000000  invincibility_spark_vertices
+pointer  invincibility_spark_model  0x00000004  invincibility_spark_polygons
+pointer  invincibility_spark_object  0x00000004  invincibility_spark_model

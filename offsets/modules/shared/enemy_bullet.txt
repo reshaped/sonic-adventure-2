@@ -1,0 +1,12 @@
+datum  bullet_shape  D  0x00000304  48
+datum  bullet_polygons  D  0x00000014  166
+datum  bullet_vertices  D  0x000000bc  220
+datum  streak_polygons  D  0x000001e4  78
+datum  streak_vertices  D  0x00000234  132
+text  PROJECTILE_TEXTURE_ENEMY5  C  0x00000028  7
+datum  bullet_texname  D  0x00000000  12
+datum  bullet_texlist  D  0x0000000c  8
+datum  bullet_model  D  0x00000198  24
+datum  bullet_object  D  0x000001b0  52
+datum  streak_model  D  0x000002b8  24
+datum  streak_object  D  0x000002d0  52

@@ -1,0 +1,3 @@
+pointer core_block_shadow  0x00000000  shadow_vertices
+pointer core_block_shadow  0x00000004  shadow_polygons
+pointer shadow_object  0x00000004  core_block_shadow

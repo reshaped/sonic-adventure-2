@@ -1,0 +1,3 @@
+datum  guard_eye_texlists  D  0x00000000  12
+datum  models  D  0x0000001c  32
+datum  shapes  D  0x00000054  96

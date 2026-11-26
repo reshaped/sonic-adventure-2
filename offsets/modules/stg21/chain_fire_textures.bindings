@@ -1,0 +1,5 @@
+text  OCEAN_TEXTURE_KD_SO_KUSARI1  14
+text  OCEAN_TEXTURE_KD_SO_SARA1  12
+pointer  textures  0x00000000  OCEAN_TEXTURE_KD_SO_KUSARI1
+pointer  textures  0x0000000c  OCEAN_TEXTURE_KD_SO_SARA1
+pointer  chain_fire_texlist  0x00000000  textures

@@ -1,0 +1,4 @@
+datum  rouge_shaft_wall_name  C  0x00000000  12
+datum  rouge_kd_lk_water2_01  C  0x0000000c  16
+datum  rouge_kd_lk_water3  C  0x0000001c  16
+datum  rouge_kd_lk_water1_01  C  0x0000002c  16

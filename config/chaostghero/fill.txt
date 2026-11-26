@@ -1,0 +1,2 @@
+# The original overlay header points to an export in its first code input.
+DHEAD P inputs cde113ae090d44aad02bac6aaa986276e84d3f73e2cdd5e9b8cf8b36ea978ac3 _chaostghero_step 0x0c9c0008

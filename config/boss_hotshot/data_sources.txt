@@ -1,0 +1,2 @@
+modules/boss_hotshot/hotshot_body.c
+modules/boss_hotshot/terrain.c

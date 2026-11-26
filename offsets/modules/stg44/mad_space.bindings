@@ -1,0 +1,32 @@
+text MAD_SPACE_LIGHT_FILE 16
+text MAD_SPACE_FOGA_FILE 15
+text MAD_SPACE_FOGB_FILE 15
+
+pointer  mad_space_kill_areas  0x00000004  mad_space_kill_object
+pointer  surfaces  0x00000000  mad_space_land_0
+pointer  surfaces  0x00000010  mad_space_land_1
+pointer  surfaces  0x00000020  mad_space_land_2
+pointer  surfaces  0x00000030  mad_space_land_3
+pointer  surfaces  0x00000040  mad_space_land_4
+pointer  surfaces  0x00000050  mad_space_land_5
+pointer  surfaces  0x00000060  mad_space_land_6
+pointer  surfaces  0x00000070  mad_space_land_7
+pointer  surfaces  0x00000080  mad_space_land_8
+pointer  surfaces  0x00000090  mad_space_land_9
+pointer  surfaces  0x000000a0  mad_space_land_8
+pointer  surfaces  0x000000b0  mad_space_land_11
+pointer  surfaces  0x000000c0  mad_space_land_12
+pointer  surfaces  0x000000d0  mad_space_land_13
+pointer  surfaces  0x000000e0  mad_space_land_14
+pointer  surfaces  0x000000f0  mad_space_land_15
+pointer  surfaces  0x00000100  mad_space_land_16
+pointer  background_builds  0x00000004  background_0_texlist
+pointer  background_builds  0x00000008  background_0_object
+pointer  background_builds  0x00000014  background_1_texlist
+pointer  background_builds  0x00000018  background_1_object
+pointer  background_builds  0x00000024  background_2_texlist
+pointer  background_builds  0x00000028  background_2_object
+pointer  background_builds  0x00000034  background_3_texlist
+pointer  background_builds  0x00000038  background_3_object
+pointer  background_builds  0x00000044  background_4_texlist
+pointer  background_builds  0x00000048  background_4_object

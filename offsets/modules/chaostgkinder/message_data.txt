@@ -1,0 +1,1 @@
+datum  kinder_default_script  D  0x00000034  588

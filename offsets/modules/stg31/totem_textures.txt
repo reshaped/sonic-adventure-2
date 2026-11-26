@@ -1,0 +1,2 @@
+datum  green_hill_totem_texture_name  C  0x00000000  6
+datum  textures  D  0x00000000  12

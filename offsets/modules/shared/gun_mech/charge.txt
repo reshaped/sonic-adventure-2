@@ -1,0 +1,4 @@
+datum  charge_polygons  D  0x00000000  1314
+datum  charge_vertices  D  0x00000524  1740
+datum  mech_boss_beam_charge_model  D  0x00000bf0  24
+datum  charge  D  0x00000c08  52

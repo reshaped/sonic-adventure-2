@@ -1,0 +1,91 @@
+text  FOUR_VALVE_TANK_MIU128_CG001  13
+text  FOUR_VALVE_TANK_MIU128_CG015  13
+text  FOUR_VALVE_TANK_MIU128_CG017  13
+text  FOUR_VALVE_TANK_MIU256_CG004  13
+text  FOUR_VALVE_TANK_MIU64_CG003  12
+text  FOUR_VALVE_TANK_MIU64_CG004  12
+text  FOUR_VALVE_TANK_MIU64_CG008  12
+text  FOUR_VALVE_TANK_MIU64_CG009  12
+text  FOUR_VALVE_TANK_MIU128_CG014  13
+
+pointer  four_valve_tank_names  0x00000000  FOUR_VALVE_TANK_MIU128_CG001
+pointer  four_valve_tank_names  0x0000000c  FOUR_VALVE_TANK_MIU128_CG015
+pointer  four_valve_tank_names  0x00000018  FOUR_VALVE_TANK_MIU128_CG017
+pointer  four_valve_tank_names  0x00000024  FOUR_VALVE_TANK_MIU256_CG004
+pointer  four_valve_tank_names  0x00000030  FOUR_VALVE_TANK_MIU64_CG003
+pointer  four_valve_tank_names  0x0000003c  FOUR_VALVE_TANK_MIU64_CG004
+pointer  four_valve_tank_names  0x00000048  FOUR_VALVE_TANK_MIU64_CG008
+pointer  four_valve_tank_names  0x00000054  FOUR_VALVE_TANK_MIU64_CG009
+pointer  four_valve_tank_names  0x00000060  FOUR_VALVE_TANK_MIU128_CG014
+pointer  four_valve_tank_names  0x0000006c  FOUR_VALVE_TANK_MIU128_CG017
+pointer  four_valve_tank_texlist  0x00000000  four_valve_tank_names
+pointer  four_valve_tank_lid_model  0x00000000  four_valve_tank_lid_vertices
+pointer  four_valve_tank_lid_model  0x00000004  four_valve_tank_lid_polygons
+pointer  four_valve_tank_lid  0x00000004  four_valve_tank_lid_model
+pointer  four_valve_tank_model  0x00000000  four_valve_tank_vertices
+pointer  four_valve_tank_model  0x00000004  four_valve_tank_polygons
+pointer  four_valve_tank_object  0x00000004  four_valve_tank_model
+pointer  four_valve_tank_object  0x0000002c  four_valve_tank_lid
+pointer  four_valve_tank_piece_1_names  0x00000000  FOUR_VALVE_TANK_MIU128_CG001
+pointer  four_valve_tank_piece_1_names  0x0000000c  FOUR_VALVE_TANK_MIU128_CG017
+pointer  four_valve_tank_piece_1_names  0x00000018  FOUR_VALVE_TANK_MIU64_CG008
+pointer  four_valve_tank_piece_1_names  0x00000024  FOUR_VALVE_TANK_MIU64_CG009
+pointer  four_valve_tank_piece_1_texlist  0x00000000  four_valve_tank_piece_1_names
+pointer  four_valve_tank_piece_1_model  0x00000000  four_valve_tank_piece_1_vertices
+pointer  four_valve_tank_piece_1_model  0x00000004  four_valve_tank_piece_1_polygons
+pointer  four_valve_tank_piece_1_object  0x00000004  four_valve_tank_piece_1_model
+pointer  four_valve_tank_piece_2_names  0x00000000  FOUR_VALVE_TANK_MIU64_CG004
+pointer  four_valve_tank_piece_2_names  0x0000000c  FOUR_VALVE_TANK_MIU128_CG014
+pointer  four_valve_tank_piece_2_texlist  0x00000000  four_valve_tank_piece_2_names
+pointer  four_valve_tank_piece_2_model  0x00000000  four_valve_tank_piece_2_vertices
+pointer  four_valve_tank_piece_2_model  0x00000004  four_valve_tank_piece_2_polygons
+pointer  four_valve_tank_piece_2_object  0x00000004  four_valve_tank_piece_2_model
+pointer  four_valve_tank_piece_3_names  0x00000000  FOUR_VALVE_TANK_MIU128_CG015
+pointer  four_valve_tank_piece_3_names  0x0000000c  FOUR_VALVE_TANK_MIU64_CG009
+pointer  four_valve_tank_piece_3_texlist  0x00000000  four_valve_tank_piece_3_names
+pointer  four_valve_tank_piece_3_model  0x00000000  four_valve_tank_piece_3_vertices
+pointer  four_valve_tank_piece_3_model  0x00000004  four_valve_tank_piece_3_polygons
+pointer  four_valve_tank_piece_3_object  0x00000004  four_valve_tank_piece_3_model
+pointer  four_valve_tank_piece_4_names  0x00000000  FOUR_VALVE_TANK_MIU128_CG017
+pointer  four_valve_tank_piece_4_names  0x0000000c  FOUR_VALVE_TANK_MIU256_CG004
+pointer  four_valve_tank_piece_4_names  0x00000018  FOUR_VALVE_TANK_MIU64_CG008
+pointer  four_valve_tank_piece_4_texlist  0x00000000  four_valve_tank_piece_4_names
+pointer  four_valve_tank_piece_4_model  0x00000000  four_valve_tank_piece_4_vertices
+pointer  four_valve_tank_piece_4_model  0x00000004  four_valve_tank_piece_4_polygons
+pointer  four_valve_tank_piece_4_object  0x00000004  four_valve_tank_piece_4_model
+pointer  four_valve_tank_texlists  0x00000000  four_valve_tank_texlist
+pointer  four_valve_tank_texlists  0x00000004  four_valve_tank_piece_1_texlist
+pointer  four_valve_tank_texlists  0x00000008  four_valve_tank_piece_2_texlist
+pointer  four_valve_tank_texlists  0x0000000c  four_valve_tank_piece_3_texlist
+pointer  four_valve_tank_texlists  0x00000010  four_valve_tank_piece_4_texlist
+pointer  four_valve_tank_texlists  0x00000014  dust_texlist
+pointer  four_valve_tank_pieces  0x00000000  four_valve_tank_piece_3_texlist
+pointer  four_valve_tank_pieces  0x00000004  four_valve_tank_piece_3_model
+pointer  four_valve_tank_pieces  0x00000020  four_valve_tank_piece_1_texlist
+pointer  four_valve_tank_pieces  0x00000024  four_valve_tank_piece_1_model
+pointer  four_valve_tank_pieces  0x00000040  four_valve_tank_piece_1_texlist
+pointer  four_valve_tank_pieces  0x00000044  four_valve_tank_piece_1_model
+pointer  four_valve_tank_pieces  0x00000060  four_valve_tank_piece_2_texlist
+pointer  four_valve_tank_pieces  0x00000064  four_valve_tank_piece_2_model
+pointer  four_valve_tank_pieces  0x00000080  four_valve_tank_piece_2_texlist
+pointer  four_valve_tank_pieces  0x00000084  four_valve_tank_piece_2_model
+pointer  four_valve_tank_pieces  0x000000a0  four_valve_tank_piece_3_texlist
+pointer  four_valve_tank_pieces  0x000000a4  four_valve_tank_piece_3_model
+pointer  four_valve_tank_pieces  0x000000c0  four_valve_tank_piece_3_texlist
+pointer  four_valve_tank_pieces  0x000000c4  four_valve_tank_piece_3_model
+pointer  four_valve_tank_pieces  0x000000e0  four_valve_tank_piece_1_texlist
+pointer  four_valve_tank_pieces  0x000000e4  four_valve_tank_piece_1_model
+pointer  four_valve_tank_pieces  0x00000100  four_valve_tank_piece_3_texlist
+pointer  four_valve_tank_pieces  0x00000104  four_valve_tank_piece_3_model
+pointer  four_valve_tank_pieces  0x00000120  four_valve_tank_piece_3_texlist
+pointer  four_valve_tank_pieces  0x00000124  four_valve_tank_piece_3_model
+pointer  four_valve_tank_pieces  0x00000140  four_valve_tank_piece_3_texlist
+pointer  four_valve_tank_pieces  0x00000144  four_valve_tank_piece_3_model
+pointer  four_valve_tank_pieces  0x00000160  four_valve_tank_piece_1_texlist
+pointer  four_valve_tank_pieces  0x00000164  four_valve_tank_piece_1_model
+pointer  four_valve_tank_pieces  0x00000180  four_valve_tank_piece_3_texlist
+pointer  four_valve_tank_pieces  0x00000184  four_valve_tank_piece_3_model
+pointer  four_valve_tank_pieces  0x000001a0  four_valve_tank_piece_4_texlist
+pointer  four_valve_tank_pieces  0x000001a4  four_valve_tank_piece_4_model
+pointer  four_valve_tank_pieces  0x000001c0  four_valve_tank_piece_4_texlist
+pointer  four_valve_tank_pieces  0x000001c4  four_valve_tank_piece_4_model

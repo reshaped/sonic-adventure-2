@@ -1,0 +1,10 @@
+datum  rock_miu128_fr004  C  0x00000000  16
+datum  rock_miu128_fr005  C  0x00000010  16
+datum  rock_miu128_fr006  C  0x00000020  16
+datum  rock_miu128_fr007  C  0x00000030  13
+datum  textures  D  0x00000000  48
+datum  boulder_texlist  D  0x00000030  8
+datum  boulder_polygons  D  0x00000038  2034
+datum  boulder_vertices  D  0x0000082c  3516
+datum  boulder_mesh  D  0x000015e8  24
+datum  boulder_object  D  0x00001600  52

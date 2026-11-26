@@ -1,0 +1,7 @@
+datum  biolizard_arena_center  C  0x00000000  12
+datum  current_exit  C  0x00000010  12
+datum  east_current_points  D  0x000000a0  220
+datum  east_current  D  0x0000017c  16
+datum  west_current_points  D  0x0000018c  220
+datum  west_current  D  0x00000268  16
+datum  currents  D  0x00000278  12

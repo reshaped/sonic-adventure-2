@@ -1,0 +1,54 @@
+text  HOVER_LIFT_TEXTURE_JUNGLE128_13  13
+text  HOVER_LIFT_TEXTURE_JUNGLE128_5  12
+text  HOVER_LIFT_TEXTURE_JUNGLE256_6  12
+text  HOVER_LIFT_TEXTURE_MIU64_GREEN007  15
+
+pointer  hover_lift_textures_0  0x00000000  HOVER_LIFT_TEXTURE_JUNGLE128_13
+pointer  hover_lift_textures_0  0x0000000c  HOVER_LIFT_TEXTURE_JUNGLE128_5
+pointer  hover_lift_textures_0  0x00000018  HOVER_LIFT_TEXTURE_JUNGLE256_6
+pointer  hover_lift_texlist_0  0x00000000  hover_lift_textures_0
+pointer  hover_lift_model_0  0x00000000  hover_lift_vertices_0
+pointer  hover_lift_model_0  0x00000004  hover_lift_polygons_0
+pointer  hover_lift_object_0  0x00000004  hover_lift_model_0
+pointer  hover_lift_collision_0_meshsets  0x00000004  hover_lift_collision_0_indices_0
+pointer  hover_lift_collision_0_model  0x00000000  hover_lift_collision_0_points
+pointer  hover_lift_collision_0_model  0x00000004  hover_lift_collision_0_normals
+pointer  hover_lift_collision_0_model  0x0000000c  hover_lift_collision_0_meshsets
+pointer  hover_lift_collision_0_model  0x00000010  hover_lift_collision_0_materials
+pointer  hover_lift_collision_0  0x00000004  hover_lift_collision_0_model
+pointer  hover_lift_textures_1  0x00000000  HOVER_LIFT_TEXTURE_JUNGLE128_13
+pointer  hover_lift_textures_1  0x0000000c  HOVER_LIFT_TEXTURE_JUNGLE128_5
+pointer  hover_lift_textures_1  0x00000018  HOVER_LIFT_TEXTURE_JUNGLE256_6
+pointer  hover_lift_texlist_1  0x00000000  hover_lift_textures_1
+pointer  hover_lift_model_1  0x00000000  hover_lift_vertices_1
+pointer  hover_lift_model_1  0x00000004  hover_lift_polygons_1
+pointer  hover_lift_object_1  0x00000004  hover_lift_model_1
+pointer  hover_lift_collision_1_meshsets  0x00000004  hover_lift_collision_1_indices_0
+pointer  hover_lift_collision_1_model  0x00000000  hover_lift_collision_1_points
+pointer  hover_lift_collision_1_model  0x00000004  hover_lift_collision_1_normals
+pointer  hover_lift_collision_1_model  0x0000000c  hover_lift_collision_1_meshsets
+pointer  hover_lift_collision_1_model  0x00000010  hover_lift_collision_1_materials
+pointer  hover_lift_collision_1  0x00000004  hover_lift_collision_1_model
+pointer  hover_lift_textures_2  0x00000000  HOVER_LIFT_TEXTURE_JUNGLE128_13
+pointer  hover_lift_textures_2  0x0000000c  HOVER_LIFT_TEXTURE_JUNGLE128_5
+pointer  hover_lift_textures_2  0x00000018  HOVER_LIFT_TEXTURE_JUNGLE256_6
+pointer  hover_lift_textures_2  0x00000024  HOVER_LIFT_TEXTURE_MIU64_GREEN007
+pointer  hover_lift_texlist_2  0x00000000  hover_lift_textures_2
+pointer  hover_lift_model_2  0x00000000  hover_lift_vertices_2
+pointer  hover_lift_model_2  0x00000004  hover_lift_polygons_2
+pointer  hover_lift_object_2  0x00000004  hover_lift_model_2
+pointer  hover_lift_collision_2_meshsets  0x00000004  hover_lift_collision_2_indices_0
+pointer  hover_lift_collision_2_model  0x00000000  hover_lift_collision_2_points
+pointer  hover_lift_collision_2_model  0x00000004  hover_lift_collision_2_normals
+pointer  hover_lift_collision_2_model  0x0000000c  hover_lift_collision_2_meshsets
+pointer  hover_lift_collision_2_model  0x00000010  hover_lift_collision_2_materials
+pointer  hover_lift_collision_2  0x00000004  hover_lift_collision_2_model
+pointer  collisions  0x00000000  hover_lift_collision_0
+pointer  collisions  0x00000004  hover_lift_collision_1
+pointer  collisions  0x00000008  hover_lift_collision_2
+pointer  models  0x00000000  hover_lift_model_0
+pointer  models  0x00000004  hover_lift_model_1
+pointer  models  0x00000008  hover_lift_model_2
+pointer  hover_lift_texlists  0x00000000  hover_lift_texlist_0
+pointer  hover_lift_texlists  0x00000004  hover_lift_texlist_1
+pointer  hover_lift_texlists  0x00000008  hover_lift_texlist_2

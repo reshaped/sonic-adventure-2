@@ -1,0 +1,2 @@
+datum  textures  D  0x00000000  36
+datum  box_part_1_texlist  D  0x00000024  8

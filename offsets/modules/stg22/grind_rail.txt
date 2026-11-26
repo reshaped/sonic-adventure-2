@@ -1,0 +1,7 @@
+text  RAIL_EDITOR_AXLE_ANGLE  C  0x00000000  11
+text  RAIL_EDITOR_YAW  C  0x0000000c  11
+text  RAIL_EDITOR_SCALE  C  0x00000018  9
+datum  rail_points  D  0x00000000  40
+datum  rail_path  D  0x00000028  16
+datum  gadget_grind_rail_texlists  D  0x00000038  8
+datum  rail_shape  D  0x00000040  48

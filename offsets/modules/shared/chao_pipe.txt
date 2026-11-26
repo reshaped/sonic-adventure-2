@@ -1,0 +1,16 @@
+# Texture names and editor captions occupy C; the pipe and its collision shape occupy D.
+text  CHAO_PIPE_EDIT_ANGLE_X  C  0x00000000  11
+text  CHAO_PIPE_EDIT_ANGLE_Y  C  0x0000000c  11
+text  CHAO_PIPE_EDIT_ANGLE_Z  C  0x00000018  11
+text  CHAO_PIPE_EDIT_ANIMAL_LEVEL  C  0x00000024  17
+text  CHAO_PIPE_TEXTURE_01  C  0x00000038  14
+text  CHAO_PIPE_TEXTURE_15  C  0x00000048  13
+datum  chao_pipe_textures  D  0x00000000  24
+datum  chao_pipe_texlist  D  0x00000018  8
+datum  chao_pipe_polygons  D  0x00000020  1106
+datum  chao_pipe_vertices  D  0x00000474  1548
+datum  chao_pipe_model  D  0x00000a80  24
+datum  chao_pipe_object  D  0x00000a98  52
+datum  chao_pipe_release_point  D  0x00000acc  12
+datum  chao_pipe_texlists  D  0x00000ad8  8
+datum  chao_pipe_shapes  D  0x00000ae0  48

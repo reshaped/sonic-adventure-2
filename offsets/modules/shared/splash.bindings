@@ -1,0 +1,17 @@
+text  SPLASH_TEXTURE_01  11
+text  SPLASH_TEXTURE_02  11
+text  SPLASH_TEXTURE_03  11
+text  SPLASH_TEXTURE_04  11
+text  SPLASH_TEXTURE_05  11
+text  SPLASH_TEXTURE_06  11
+text  SPLASH_TEXTURE_07  11
+text  SPLASH_TEXTURE_08  11
+pointer  splash_texnames  0x00000000  SPLASH_TEXTURE_01
+pointer  splash_texnames  0x0000000c  SPLASH_TEXTURE_02
+pointer  splash_texnames  0x00000018  SPLASH_TEXTURE_03
+pointer  splash_texnames  0x00000024  SPLASH_TEXTURE_04
+pointer  splash_texnames  0x00000030  SPLASH_TEXTURE_05
+pointer  splash_texnames  0x0000003c  SPLASH_TEXTURE_06
+pointer  splash_texnames  0x00000048  SPLASH_TEXTURE_07
+pointer  splash_texnames  0x00000054  SPLASH_TEXTURE_08
+pointer  splash_texlist  0x00000000  splash_texnames

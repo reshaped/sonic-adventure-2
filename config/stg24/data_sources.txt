@@ -1,0 +1,6 @@
+modules/stg24/engine_wall_hatch.c
+modules/stg24/eternal_engine_paths.c
+modules/stg24/hatch_art.c
+modules/stg24/poison_tex.c
+modules/stg24/pulse_tex.c
+modules/stg24/terrain.c

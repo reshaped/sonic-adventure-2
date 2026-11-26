@@ -1,0 +1,12 @@
+datum  cave_pyramid_texture_names  D  0x00000000  24
+datum  cave_pyramid_texlist  D  0x00000018  8
+datum  cave_pyramid_polygons  D  0x00000020  142
+datum  cave_pyramid_vertices  D  0x000000b0  220
+datum  cave_pyramid_model  D  0x0000018c  24
+datum  cave_pyramid_object  D  0x000001a4  52
+datum  cave_pyramid_texlists  D  0x000001d8  8
+datum  cave_pyramid_shapes  D  0x000001e0  144
+text  CAVE_PYRAMID_EDITOR_ANGLE_Y  C  0x00000000  11
+text  CAVE_PYRAMID_EDITOR_MINIMAL_APPEARANCE_LEVEL  C  0x0000000c  25
+text  CAVE_PYRAMID_TEXTURE_DZ_PC_PYRAMIDEYE64  C  0x00000028  19
+text  CAVE_PYRAMID_TEXTURE_DZ_PC_SKIN64  C  0x0000003c  13

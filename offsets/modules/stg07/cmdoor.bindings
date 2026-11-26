@@ -1,0 +1,22 @@
+text  CMDOOR_EDITOR_ROT_Y  9
+text  CMDOOR_TEXTURE_MIU128_LOCO002  15
+text  CMDOOR_TEXTURE_MIU64_LOCO002  14
+text  CMDOOR_TEXTURE_MIU128_AM001  13
+text  CMDOOR_TEXTURE_MIU128_AM002  13
+text  CMDOOR_TEXTURE_MIU64_MO002  12
+
+pointer  cmdoor_texlists  0x00000000  cmdoor_texlist
+pointer  cmdoor_texlists  0x00000004  mine_sign_texlist
+pointer  cmdoor_texlist_names  0x00000000  CMDOOR_TEXTURE_MIU128_LOCO002
+pointer  cmdoor_texlist_names  0x0000000c  CMDOOR_TEXTURE_MIU64_LOCO002
+pointer  cmdoor_texlist  0x00000000  cmdoor_texlist_names
+pointer  cmdoor_model  0x00000000  cmdoor_vertices
+pointer  cmdoor_model  0x00000004  cmdoor_polygons
+pointer  cmdoor_object  0x00000004  cmdoor_model
+pointer  mine_sign_texlist_names  0x00000000  CMDOOR_TEXTURE_MIU128_AM001
+pointer  mine_sign_texlist_names  0x0000000c  CMDOOR_TEXTURE_MIU128_AM002
+pointer  mine_sign_texlist_names  0x00000018  CMDOOR_TEXTURE_MIU64_MO002
+pointer  mine_sign_texlist  0x00000000  mine_sign_texlist_names
+pointer  mine_sign_model  0x00000000  mine_sign_vertices
+pointer  mine_sign_model  0x00000004  mine_sign_polygons
+pointer  mine_sign_object  0x00000004  mine_sign_model

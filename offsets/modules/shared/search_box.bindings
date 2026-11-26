@@ -1,0 +1,42 @@
+text  SEARCH_BOX_TEXT_SIKAKE_01_128  14
+text  SEARCH_BOX_TEXT_SIKAKE_02_128  14
+text  SEARCH_BOX_TEXT_SIKAKE_03_64  13
+text  SEARCH_BOX_TEXT_SIKAKE_04_64  13
+text  SEARCH_BOX_TEXT_SIKAKE_12_64  13
+text  SEARCH_BOX_TEXT_SIKAKE_13_64  13
+text  SEARCH_BOX_TEXT_SIKAKE_16_64  13
+
+pointer  search_box_texnames  0x00000000  SEARCH_BOX_TEXT_SIKAKE_01_128
+pointer  search_box_texnames  0x0000000c  SEARCH_BOX_TEXT_SIKAKE_02_128
+pointer  search_box_texnames  0x00000018  SEARCH_BOX_TEXT_SIKAKE_03_64
+pointer  search_box_texnames  0x00000024  SEARCH_BOX_TEXT_SIKAKE_04_64
+pointer  search_box_texnames  0x00000030  SEARCH_BOX_TEXT_SIKAKE_12_64
+pointer  search_box_texnames  0x0000003c  SEARCH_BOX_TEXT_SIKAKE_13_64
+pointer  search_box_texnames  0x00000048  SEARCH_BOX_TEXT_SIKAKE_16_64
+pointer  search_box_texlist  0x00000000  search_box_texnames
+pointer  search_box_top_model  0x00000000  search_box_top_vertices
+pointer  search_box_top_model  0x00000004  search_box_top_polygons
+pointer  search_box_top_object  0x00000004  search_box_top_model
+pointer  search_box_model  0x00000000  search_box_vertices
+pointer  search_box_model  0x00000004  search_box_polygons
+pointer  search_box_object  0x00000004  search_box_model
+pointer  search_box_object  0x0000002c  search_box_top_object
+pointer  search_box_panel_texname  0x00000000  SEARCH_BOX_TEXT_SIKAKE_13_64
+pointer  search_box_panel_texlist  0x00000000  search_box_panel_texname
+pointer  search_box_panel_model  0x00000000  search_box_panel_vertices
+pointer  search_box_panel_model  0x00000004  search_box_panel_polygons
+pointer  search_box_panel_object  0x00000004  search_box_panel_model
+pointer  search_box_texlists  0x00000000  search_box_texlist
+pointer  search_box_texlists  0x00000004  search_box_panel_texlist
+pointer  search_box_builds  0x00000004  search_box_texlist
+pointer  search_box_builds  0x00000008  search_box_object
+pointer  search_box_builds  0x00000014  search_box_texlist
+pointer  search_box_builds  0x00000018  search_box_top_object
+pointer  search_box_builds  0x00000024  search_box_panel_texlist
+pointer  search_box_builds  0x00000028  search_box_panel_object
+pointer  search_box_faded_builds  0x00000004  search_box_texlist
+pointer  search_box_faded_builds  0x00000008  search_box_object
+pointer  search_box_faded_builds  0x00000014  search_box_texlist
+pointer  search_box_faded_builds  0x00000018  search_box_top_object
+pointer  search_box_faded_builds  0x00000024  search_box_panel_texlist
+pointer  search_box_faded_builds  0x00000028  search_box_panel_object

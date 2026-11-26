@@ -1,0 +1,19 @@
+# Checkup menus, prescription display and six remedy choices.
+datum  examine_label  C  0x00000000  44
+datum  leave_label  C  0x0000002c  44
+datum  exit_text  C  0x00000058  8
+datum  medicine_archive  C  0x00000060  24
+datum  medicine_frame  C  0x00000078  108
+datum  medicine_label  C  0x000000e4  44
+datum  medicine_backdrop  C  0x00000110  108
+datum  first_texture  C  0x0000017c  12
+datum  second_texture  C  0x00000188  12
+datum  third_texture  C  0x00000194  12
+datum  texture_names  D  0x00000000  36
+datum  medicine_textures  D  0x00000024  8
+datum  menu_frame  D  0x00000030  28
+datum  menu_box  D  0x0000004c  108
+datum  first_button  D  0x000000b8  108
+datum  button_colors  D  0x00000124  8
+datum  medicine_models  D  0x0000012c  24
+datum  illness_messages  D  0x00000144  24

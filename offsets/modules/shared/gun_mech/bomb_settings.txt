@@ -1,0 +1,2 @@
+datum  bomb_uvs  D  0x00000000  948
+datum  mech_boss_beam_bomb_anim  D  0x000003b4  36

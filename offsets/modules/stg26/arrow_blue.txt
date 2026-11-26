@@ -1,0 +1,11 @@
+datum  textures  D  0x00000000  24
+datum  arrow_blue_texlist  D  0x00000018  8
+datum  arrow_blue_light_polygons  D  0x00000020  50
+datum  arrow_blue_light_vertices  D  0x00000054  76
+datum  arrow_blue_light  D  0x000000a0  24
+datum  arrow_blue_light_object  D  0x000000b8  52
+datum  arrow_blue_base_polygons  D  0x000000ec  50
+datum  arrow_blue_base_vertices  D  0x00000120  76
+datum  arrow_blue_base  D  0x0000016c  24
+datum  arrow_blue_base_object  D  0x00000184  52
+datum  arrow_blue_root  D  0x000001b8  52

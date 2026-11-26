@@ -1,0 +1,50 @@
+text  HERD_TEXTURE_METEO32_1  10
+text  HERD_TEXTURE_MIU128_MEH003  14
+text  HERD_TEXTURE_MIU128_MEH005  14
+text  HERD_TEXTURE_MIU128_MEH006  14
+text  HERD_TEXTURE_MIU128_MEH007  14
+text  HERD_TEXTURE_MIU32_MEH002  13
+text  HERD_TEXTURE_MIU128_MEH004  14
+pointer  meteor_container_names  0x00000000  HERD_TEXTURE_METEO32_1
+pointer  meteor_container_names  0x0000000c  HERD_TEXTURE_MIU128_MEH003
+pointer  meteor_container_names  0x00000018  HERD_TEXTURE_MIU128_MEH005
+pointer  meteor_container_names  0x00000024  HERD_TEXTURE_MIU128_MEH006
+pointer  meteor_container_names  0x00000030  HERD_TEXTURE_MIU128_MEH007
+pointer  meteor_container_names  0x0000003c  HERD_TEXTURE_MIU32_MEH002
+pointer  meteor_container_texlist  0x00000000  meteor_container_names
+pointer  meteor_container_lamp_model  0x00000000  meteor_container_lamp_vertices
+pointer  meteor_container_lamp_model  0x00000004  meteor_container_lamp_polygons
+pointer  meteor_container_lamp  0x00000004  meteor_container_lamp_model
+pointer  meteor_container_housing_model  0x00000000  meteor_container_housing_vertices
+pointer  meteor_container_housing_model  0x00000004  meteor_container_housing_polygons
+pointer  meteor_container_housing  0x00000004  meteor_container_housing_model
+pointer  meteor_container_housing  0x0000002c  meteor_container_lamp
+pointer  meteor_container_shadow_model  0x00000000  meteor_container_shadow_vertices
+pointer  meteor_container_shadow_model  0x00000004  meteor_container_shadow_polygons
+pointer  meteor_container_shadow  0x00000004  meteor_container_shadow_model
+pointer  meteor_container_collision_meshsets  0x00000004  meteor_container_collision_faces
+pointer  meteor_container_collision_model  0x00000000  meteor_container_collision_points
+pointer  meteor_container_collision_model  0x00000004  meteor_container_collision_normals
+pointer  meteor_container_collision_model  0x0000000c  meteor_container_collision_meshsets
+pointer  meteor_container_collision_model  0x00000010  meteor_container_collision_materials
+pointer  meteor_container_collision  0x00000004  meteor_container_collision_model
+pointer  meteor_container_side_names  0x00000000  HERD_TEXTURE_MIU128_MEH004
+pointer  meteor_container_side_names  0x0000000c  HERD_TEXTURE_MIU128_MEH005
+pointer  meteor_container_side_names  0x00000018  HERD_TEXTURE_MIU128_MEH006
+pointer  meteor_container_side_names  0x00000024  HERD_TEXTURE_MIU128_MEH007
+pointer  meteor_container_side_texlist  0x00000000  meteor_container_side_names
+pointer  meteor_container_side  0x00000000  meteor_container_side_vertices
+pointer  meteor_container_side  0x00000004  meteor_container_side_polygons
+pointer  meteor_container_side_object  0x00000004  meteor_container_side
+pointer  meteor_container_corner_names  0x00000000  HERD_TEXTURE_MIU128_MEH005
+pointer  meteor_container_corner_names  0x0000000c  HERD_TEXTURE_MIU128_MEH006
+pointer  meteor_container_corner_texlist  0x00000000  meteor_container_corner_names
+pointer  meteor_container_corner  0x00000000  meteor_container_corner_vertices
+pointer  meteor_container_corner  0x00000004  meteor_container_corner_polygons
+pointer  meteor_container_corner_object  0x00000004  meteor_container_corner
+pointer  meteor_container_lid_names  0x00000000  HERD_TEXTURE_MIU128_MEH004
+pointer  meteor_container_lid_names  0x0000000c  HERD_TEXTURE_MIU128_MEH007
+pointer  meteor_container_lid_texlist  0x00000000  meteor_container_lid_names
+pointer  meteor_container_lid  0x00000000  meteor_container_lid_vertices
+pointer  meteor_container_lid  0x00000004  meteor_container_lid_polygons
+pointer  meteor_container_lid_object  0x00000004  meteor_container_lid

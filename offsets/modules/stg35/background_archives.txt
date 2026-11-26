@@ -1,0 +1,4 @@
+text  BACKGROUND_ARCHIVE  C  0x00000000  8
+datum  machinery_lists  D  0x00000000  40
+datum  core_eggman_bg_groups  D  0x00000028  8
+datum  core_eggman_bg_pvms  D  0x00000030  24

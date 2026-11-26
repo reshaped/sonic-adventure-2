@@ -1,0 +1,58 @@
+text  MINE_TRUCK_EDITOR_ANGLE_X  11
+text  MINE_TRUCK_EDITOR_ANGLE_Y  11
+text  MINE_TRUCK_EDITOR_ANGLE_Z  11
+text  MINE_TRUCK_TEXTURE_MIU128_MI006  13
+text  MINE_TRUCK_TEXTURE_MIU64_LOCO005  14
+text  MINE_TRUCK_TEXTURE_MIU64_MI006  12
+text  MINE_TRUCK_TEXTURE_PUM32_1  8
+
+pointer  mine_truck_texlists  0x00000000  mine_truck_texlist
+pointer  mine_truck_texlists  0x00000004  mine_truck_piece_0_texlist
+pointer  mine_truck_texlists  0x00000008  mine_truck_piece_1_texlist
+pointer  mine_truck_texlists  0x0000000c  mine_truck_piece_2_texlist
+pointer  mine_truck_pieces  0x00000000  mine_truck_piece_1_texlist
+pointer  mine_truck_pieces  0x00000004  mine_truck_piece_1_model
+pointer  mine_truck_pieces  0x00000020  mine_truck_piece_1_texlist
+pointer  mine_truck_pieces  0x00000024  mine_truck_piece_1_model
+pointer  mine_truck_pieces  0x00000040  mine_truck_piece_2_texlist
+pointer  mine_truck_pieces  0x00000044  mine_truck_piece_2_model
+pointer  mine_truck_pieces  0x00000060  mine_truck_piece_1_texlist
+pointer  mine_truck_pieces  0x00000064  mine_truck_piece_1_model
+pointer  mine_truck_pieces  0x00000080  mine_truck_piece_2_texlist
+pointer  mine_truck_pieces  0x00000084  mine_truck_piece_2_model
+pointer  mine_truck_pieces  0x000000a0  mine_truck_piece_1_texlist
+pointer  mine_truck_pieces  0x000000a4  mine_truck_piece_1_model
+pointer  mine_truck_pieces  0x000000c0  mine_truck_piece_0_texlist
+pointer  mine_truck_pieces  0x000000c4  mine_truck_piece_0_model
+pointer  mine_truck_texlist_names  0x00000000  MINE_TRUCK_TEXTURE_MIU128_MI006
+pointer  mine_truck_texlist_names  0x0000000c  MINE_TRUCK_TEXTURE_MIU64_LOCO005
+pointer  mine_truck_texlist_names  0x00000018  MINE_TRUCK_TEXTURE_MIU64_MI006
+pointer  mine_truck_texlist_names  0x00000024  MINE_TRUCK_TEXTURE_PUM32_1
+pointer  mine_truck_texlist  0x00000000  mine_truck_texlist_names
+pointer  mine_truck_model  0x00000000  mine_truck_vertices
+pointer  mine_truck_model  0x00000004  mine_truck_polygons
+pointer  mine_truck_object  0x00000004  mine_truck_model
+pointer  mine_truck_collision_faces  0x00000004  mine_truck_collision_strips
+pointer  mine_truck_collision_model  0x00000000  mine_truck_collision_points
+pointer  mine_truck_collision_model  0x00000004  mine_truck_collision_normals
+pointer  mine_truck_collision_model  0x0000000c  mine_truck_collision_faces
+pointer  mine_truck_collision_model  0x00000010  mine_truck_collision_materials
+pointer  mine_truck_collision  0x00000004  mine_truck_collision_model
+pointer  mine_truck_piece_0_texlist_names  0x00000000  MINE_TRUCK_TEXTURE_MIU128_MI006
+pointer  mine_truck_piece_0_texlist_names  0x0000000c  MINE_TRUCK_TEXTURE_MIU64_LOCO005
+pointer  mine_truck_piece_0_texlist_names  0x00000018  MINE_TRUCK_TEXTURE_MIU64_MI006
+pointer  mine_truck_piece_0_texlist_names  0x00000024  MINE_TRUCK_TEXTURE_PUM32_1
+pointer  mine_truck_piece_0_texlist  0x00000000  mine_truck_piece_0_texlist_names
+pointer  mine_truck_piece_0_model  0x00000000  mine_truck_piece_0_vertices
+pointer  mine_truck_piece_0_model  0x00000004  mine_truck_piece_0_polygons
+pointer  mine_truck_piece_0_object  0x00000004  mine_truck_piece_0_model
+pointer  mine_truck_piece_1_texlist_names  0x00000000  MINE_TRUCK_TEXTURE_MIU128_MI006
+pointer  mine_truck_piece_1_texlist  0x00000000  mine_truck_piece_1_texlist_names
+pointer  mine_truck_piece_1_model  0x00000000  mine_truck_piece_1_vertices
+pointer  mine_truck_piece_1_model  0x00000004  mine_truck_piece_1_polygons
+pointer  mine_truck_piece_1_object  0x00000004  mine_truck_piece_1_model
+pointer  mine_truck_piece_2_texlist_names  0x00000000  MINE_TRUCK_TEXTURE_MIU128_MI006
+pointer  mine_truck_piece_2_texlist  0x00000000  mine_truck_piece_2_texlist_names
+pointer  mine_truck_piece_2_model  0x00000000  mine_truck_piece_2_vertices
+pointer  mine_truck_piece_2_model  0x00000004  mine_truck_piece_2_polygons
+pointer  mine_truck_piece_2_object  0x00000004  mine_truck_piece_2_model

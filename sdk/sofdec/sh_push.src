@@ -1,0 +1,65 @@
+; the save and restore of FR12 to FR15 and of the other bank's sixteen
+; registers, which DCTAFZ_DenseCbp changes. each call needs FPSCR's PR and SZ
+; clear, and returns with SZ clear.
+;
+; both calls move MPV_FPU_SAVE_BYTES bytes from the first PAIR_BYTES boundary
+; at or past area. so area must address those 80 bytes and the up to 7 before
+; the boundary: 87 bytes, or 84 where area lies on a 4-byte boundary, as a
+; struct mpv_fpu_save does. each call moves the registers as pairs between two
+; FSCHGs, which flip FPSCR.SZ
+
+; the bytes the calls move, as sofdec.h defines them, and a pair's bytes. an
+; FMOV of a pair needs a PAIR_BYTES boundary
+MPV_FPU_SAVE_BYTES: .EQU    80
+PAIR_BYTES:         .EQU    8
+
+        .EXPORT     _UTY_PushFr
+        .EXPORT     _UTY_PopFr
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void UTY_PushFr(struct mpv_fpu_save *area)
+; store FR12 to FR15 at the top of the bytes it moves, and the other bank's
+; registers below them
+; @asm operand: fschg-pairs, FMOV DR12,@-R4 at 0x8c158f84 stores FR12 and
+; FR13 as a pair
+_UTY_PushFr:
+        FSCHG
+        ADD         #MPV_FPU_SAVE_BYTES+PAIR_BYTES-1,R4
+        MOV         #-PAIR_BYTES,R1
+        AND         R1,R4
+        FMOV        DR12,@-R4
+        FMOV        DR14,@-R4
+        FMOV        XD0,@-R4
+        FMOV        XD2,@-R4
+        FMOV        XD4,@-R4
+        FMOV        XD6,@-R4
+        FMOV        XD8,@-R4
+        FMOV        XD10,@-R4
+        FMOV        XD12,@-R4
+        FMOV        XD14,@-R4
+        RTS
+        FSCHG
+
+; void UTY_PopFr(struct mpv_fpu_save *area)
+; load back the registers UTY_PushFr stored in area
+; @asm operand: fschg-pairs, FMOV @R4+,DR14 at 0x8c158fb4 loads FR14 and
+; FR15 as a pair
+_UTY_PopFr:
+        FSCHG
+        ADD         #PAIR_BYTES-1,R4
+        MOV         #-PAIR_BYTES,R1
+        AND         R1,R4
+        FMOV        @R4+,XD14
+        FMOV        @R4+,XD12
+        FMOV        @R4+,XD10
+        FMOV        @R4+,XD8
+        FMOV        @R4+,XD6
+        FMOV        @R4+,XD4
+        FMOV        @R4+,XD2
+        FMOV        @R4+,XD0
+        FMOV        @R4+,DR14
+        FMOV        @R4+,DR12
+        RTS
+        FSCHG
+        .END

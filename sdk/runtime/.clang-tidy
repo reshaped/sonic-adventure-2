@@ -1,0 +1,5 @@
+InheritParentConfig: true
+Checks: >
+  -misc-use-internal-linkage,
+# the C runtime's members serve one another by name, and consts.c defines its
+# constants by their bits, as no header can declare them

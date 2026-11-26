@@ -1,0 +1,17 @@
+include  objtex_common
+include  efftex_common
+include  weapons_bed_groups
+include  carrier_deck_archive
+include  carrier_versus_deck_archive
+
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_OBJTEX_STG15P  14
+
+pointer  carrier_pvms  0x00000000  ARCHIVE_EFFTEX_COMMON
+pointer  carrier_pvms  0x00000004  efftex_common_texlist
+pointer  carrier_pvms  0x00000008  ARCHIVE_OBJTEX_COMMON
+pointer  carrier_pvms  0x0000000c  objtex_common_texlist
+pointer  carrier_pvms  0x00000010  ARCHIVE_OBJTEX_STG15P
+pointer  carrier_pvms  0x00000014  deck_texlist
+pointer  carrier_pvms  0x0000001c  carrier_land_texlist

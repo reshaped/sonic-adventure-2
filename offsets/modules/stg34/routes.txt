@@ -1,0 +1,13 @@
+datum  upper_rail_points  D  0x00000000  280
+datum  upper_rail  D  0x00000118  16
+datum  lower_rail_points  D  0x00000128  260
+datum  lower_rail  D  0x0000022c  16
+datum  upper_current_points  D  0x0000023c  80
+datum  upper_current  D  0x0000028c  16
+datum  return_current_points  D  0x0000029c  140
+datum  return_current  D  0x00000328  16
+datum  descending_current_points  D  0x00000338  100
+datum  descending_current  D  0x0000039c  16
+datum  lower_current_points  D  0x000003ac  2340
+datum  lower_current  D  0x00000cd0  16
+datum  core_sonic_paths  D  0x00000ce0  28

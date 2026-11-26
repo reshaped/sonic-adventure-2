@@ -1,0 +1,16 @@
+# The effect and skin slots shared by both Egg Golem archives.
+pointer  object_textures  0x00000000  golem_effect_materials
+pointer  object_textures  0x0000000c  golem_effect_materials+0x8
+pointer  object_textures  0x00000018  golem_effect_materials+0x14
+pointer  object_textures  0x00000024  golem_effect_materials+0x20
+pointer  object_textures  0x00000030  golem_effect_materials+0x30
+pointer  object_textures  0x0000003c  golem_effect_materials+0x38
+pointer  object_textures  0x00000048  golem_effect_materials+0x40
+pointer  object_textures  0x00000054  golem_effect_materials+0x48
+pointer  object_textures  0x00000060  golem_skin_names
+pointer  object_textures  0x0000006c  golem_skin_names+0xc
+pointer  object_textures  0x00000078  golem_skin_names+0x18
+pointer  object_textures  0x00000084  golem_skin_names+0x24
+pointer  object_textures  0x00000090  golem_skin_names+0x30
+pointer  object_textures  0x0000009c  golem_skin_names+0x3c
+pointer  object_textures  0x000000a8  golem_flash_texture

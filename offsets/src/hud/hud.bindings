@@ -1,0 +1,27 @@
+text  RESULT_MUSIC  13
+text  WINNER_TEXTURE_ARCHIVE  10
+text  RESULT_TEXTURE_ARCHIVE  7
+text  BOSS_RESULT_TEXTURE_ARCHIVE  11
+text  BOSS_RESULT_TEXTURE_NAME  29
+
+pointer  life_icons  0x00000000  zanki_sonic_texlist
+pointer  life_icons  0x00000004  zanki_shadow_texlist
+pointer  life_icons  0x00000008  zanki_tails_texlist
+pointer  life_icons  0x0000000c  zanki_egg_texlist
+pointer  life_icons  0x00000010  zanki_knuckle_texlist
+pointer  life_icons  0x00000014  zanki_rouge_texlist
+pointer  life_icons  0x00000018  zanki_tails_texlist
+pointer  life_icons  0x0000001c  zanki_egg_texlist
+pointer  life_icons  0x00000020  zanki_amy_texlist
+pointer  life_icons  0x00000024  zanki_sonic_texlist
+pointer  life_icons  0x00000028  zanki_shadow_texlist
+pointer  life_icons  0x0000002c  zanki_amy_texlist
+pointer  life_icons  0x00000030  zanki_metal_texlist
+pointer  life_icons  0x00000034  zanki_chao_texlist
+pointer  life_icons  0x00000038  zanki_big_texlist
+pointer  life_icons  0x0000003c  zanki_tical_texlist
+pointer  life_icons  0x00000040  zanki_chaos0_texlist
+pointer  technique_sprite  0x00000018  console_texlist
+pointer  technique_sprite  0x0000001c  technique_labels
+pointer  boss_result_texname  0x00000000  BOSS_RESULT_TEXTURE_NAME
+pointer  boss_result_texlist  0x00000000  boss_result_texname

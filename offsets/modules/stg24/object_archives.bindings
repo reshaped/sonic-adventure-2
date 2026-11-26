@@ -1,0 +1,123 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_EYE_RIGHT  10
+text  STAGE_TEXTURE_EYE_RIGHT2  11
+text  STAGE_TEXTURE_LTAM  5
+text  STAGE_TEXTURE_MIU128_CG003  13
+text  STAGE_TEXTURE_MIU128_EE001  13
+text  STAGE_TEXTURE_MIU128_EE002  13
+text  STAGE_TEXTURE_MIU128_EE003  13
+text  STAGE_TEXTURE_MIU256_CG005  13
+text  STAGE_TEXTURE_MIU256_CG006  13
+text  STAGE_TEXTURE_MIU32_CG001  12
+text  STAGE_TEXTURE_MIU32_EE001  12
+text  STAGE_TEXTURE_MIU64_CG005  12
+text  STAGE_TEXTURE_MIU64_CG006  12
+text  STAGE_TEXTURE_MIU64_CG014  12
+text  STAGE_TEXTURE_MIU64_CG019  12
+text  STAGE_TEXTURE_MIU64_CG020  12
+text  STAGE_TEXTURE_MIU64_CG021  12
+text  STAGE_TEXTURE_MIU64_EE001  12
+text  STAGE_TEXTURE_MIU64_EE002  12
+text  STAGE_TEXTURE_MIU64_EE003  12
+text  STAGE_TEXTURE_P_SHADOW  9
+text  STAGE_TEXTURE_TAMA  5
+text  STAGE_TEXTURE_TAMA1  6
+text  PVM_OBJTEX_STG24  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+
+pointer  stage_archive_names  0x00000000  STAGE_TEXTURE_EYE_RIGHT
+pointer  stage_archive_names  0x0000000c  STAGE_TEXTURE_EYE_RIGHT2
+pointer  stage_archive_names  0x00000018  STAGE_TEXTURE_LTAM
+pointer  stage_archive_names  0x00000024  STAGE_TEXTURE_MIU128_CG003
+pointer  stage_archive_names  0x00000030  STAGE_TEXTURE_MIU128_EE001
+pointer  stage_archive_names  0x0000003c  STAGE_TEXTURE_MIU128_EE002
+pointer  stage_archive_names  0x00000048  STAGE_TEXTURE_MIU128_EE003
+pointer  stage_archive_names  0x00000054  STAGE_TEXTURE_MIU256_CG005
+pointer  stage_archive_names  0x00000060  STAGE_TEXTURE_MIU256_CG006
+pointer  stage_archive_names  0x0000006c  STAGE_TEXTURE_MIU32_CG001
+pointer  stage_archive_names  0x00000078  STAGE_TEXTURE_MIU32_EE001
+pointer  stage_archive_names  0x00000084  STAGE_TEXTURE_MIU64_CG005
+pointer  stage_archive_names  0x00000090  STAGE_TEXTURE_MIU64_CG006
+pointer  stage_archive_names  0x0000009c  STAGE_TEXTURE_MIU64_CG014
+pointer  stage_archive_names  0x000000a8  STAGE_TEXTURE_MIU64_CG019
+pointer  stage_archive_names  0x000000b4  STAGE_TEXTURE_MIU64_CG020
+pointer  stage_archive_names  0x000000c0  STAGE_TEXTURE_MIU64_CG021
+pointer  stage_archive_names  0x000000cc  STAGE_TEXTURE_MIU64_EE001
+pointer  stage_archive_names  0x000000d8  STAGE_TEXTURE_MIU64_EE002
+pointer  stage_archive_names  0x000000e4  STAGE_TEXTURE_MIU64_EE003
+pointer  stage_archive_names  0x000000f0  STAGE_TEXTURE_P_SHADOW
+pointer  stage_archive_names  0x000000fc  STAGE_TEXTURE_TAMA
+pointer  stage_archive_names  0x00000108  STAGE_TEXTURE_TAMA1
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  engine_object_groups  0x00000000  stage_textures
+pointer  engine_object_groups  0x00000004  goal_ring_texlists
+pointer  engine_object_groups  0x00000008  emerald_texlists
+pointer  engine_object_groups  0x0000000c  item_box_texlists
+pointer  engine_object_groups  0x00000010  item_box_air_texlists
+pointer  engine_object_groups  0x00000014  weight_texlists
+pointer  engine_object_groups  0x00000018  iron_ball_texlists
+pointer  engine_object_groups  0x0000001c  triple_spring_texlists
+pointer  engine_object_groups  0x00000020  dynamite_texlists
+pointer  engine_object_groups  0x00000024  reel_texlists
+pointer  engine_object_groups  0x00000028  chao_pipe_texlists
+pointer  engine_object_groups  0x0000002c  cage_texlists
+pointer  engine_object_groups  0x00000030  wood_box_texlists
+pointer  engine_object_groups  0x00000034  iron_box_texlists
+pointer  engine_object_groups  0x00000038  upgrade_texlists
+pointer  engine_object_groups  0x0000003c  missile_texlists
+pointer  engine_object_groups  0x00000040  skull_texlists
+pointer  engine_object_groups  0x00000044  rocket_texlists
+pointer  engine_object_groups  0x00000048  search_box_texlists
+pointer  engine_object_groups  0x0000004c  hint_box_texlists
+pointer  engine_object_groups  0x00000050  knudai_texlists
+pointer  engine_object_groups  0x00000054  knudai_foothold_texlists
+pointer  engine_object_groups  0x00000058  knudai_warp_hole_texlists
+pointer  engine_object_groups  0x0000005c  knudai_door_texlists
+pointer  engine_object_groups  0x00000060  chao_box_texlists
+pointer  engine_object_groups  0x00000064  chao_key_texlists
+pointer  engine_object_groups  0x00000068  object_effect_texlists
+pointer  engine_object_groups  0x0000006c  messenger_texlists
+pointer  engine_object_groups  0x00000070  ring_effect_texlists
+pointer  engine_object_groups  0x00000074  solid_box_texlists
+pointer  engine_object_groups  0x00000078  empty_object_texlists
+pointer  engine_object_groups  0x0000007c  engine_step_texlists
+pointer  engine_object_groups  0x00000080  engine_hatch_texlists
+pointer  engine_object_groups  0x00000084  dynamite_bridge_texlists
+pointer  engine_object_groups  0x00000088  engine_reactor_texlists
+pointer  engine_object_groups  0x0000008c  core_shutter_texlists
+pointer  engine_object_groups  0x00000090  engine_kazobj_texlists
+pointer  engine_object_groups  0x00000094  last_step_texlists
+pointer  engine_object_groups  0x00000098  patrol_camera_texlists
+pointer  engine_object_groups  0x0000009c  capsule_bomb_texlists
+pointer  engine_object_groups  0x000000a0  engine_lamp_texlists
+pointer  engine_object_groups  0x000000a4  rolling_drum_texlists
+pointer  engine_object_groups  0x000000a8  engine_ditch_texlists
+pointer  engine_object_groups  0x000000ac  engine_machine_texlists
+pointer  engine_object_groups  0x000000b0  core_laser_texlists
+pointer  engine_object_groups  0x000000b4  four_valve_tank_texlists
+pointer  engine_object_pvms  0x00000000  PVM_OBJTEX_STG24
+pointer  engine_object_pvms  0x00000004  stage_archive
+pointer  engine_object_pvms  0x00000008  PVM_EFFTEX_COMMON
+pointer  engine_object_pvms  0x0000000c  efftex_common_texlist
+pointer  engine_object_pvms  0x00000010  PVM_OBJTEX_COMMON
+pointer  engine_object_pvms  0x00000014  objtex_common_texlist
+pointer  engine_object_pvms  0x0000001c  eternal_engine_land_texlist
+pointer  engine_object_pvms  0x00000024  engine_background_archive

@@ -1,0 +1,3 @@
+datum  light_cell  D  0x00000294  20
+datum  player_markers  D  0x000001e4  8
+datum  light_positions  D  0x0000023c  72

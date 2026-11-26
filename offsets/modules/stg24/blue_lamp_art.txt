@@ -1,0 +1,6 @@
+datum  blue_lamp_polygons  D  0x00000000  322
+datum  blue_lamp_vertices  D  0x00000144  780
+datum  blue_lamp_model  D  0x00000450  24
+datum  blue_lamp_object  D  0x00000468  52
+datum  blue_lamp_scroll_uv_keys  D  0x0000049c  212
+datum  blue_lamp_scroll  D  0x00000570  36

@@ -1,0 +1,17 @@
+text TREE_EDITOR_ANGLE_Y 11
+text STREET_TEXTURE_MIU256_CE001 13
+text STREET_TEXTURE_MIU32_CE003 12
+text STREET_TEXTURE_MIU64_MS009 12
+
+pointer  street_tree_textures  0x00000000  STREET_TEXTURE_MIU256_CE001
+pointer  street_tree_textures  0x0000000c  STREET_TEXTURE_MIU32_CE003
+pointer  street_tree_textures  0x00000018  STREET_TEXTURE_MIU64_MS009
+pointer  street_tree_texlist  0x00000000  street_tree_textures
+pointer  street_tree_billboard_mesh  0x00000000  street_tree_billboard_vertices
+pointer  street_tree_billboard_mesh  0x00000004  street_tree_billboard_polygons
+pointer  street_tree_billboard  0x00000004  street_tree_billboard_mesh
+pointer  street_tree_root_mesh  0x00000000  street_tree_root_vertices
+pointer  street_tree_root_mesh  0x00000004  street_tree_root_polygons
+pointer  street_tree_root  0x00000004  street_tree_root_mesh
+pointer  street_tree_root  0x0000002c  street_tree_billboard
+pointer  street_tree_texlists  0x00000000  street_tree_texlist

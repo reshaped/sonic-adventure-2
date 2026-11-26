@@ -1,0 +1,10 @@
+text  MAD_SPACE_STARS_TEXTURE_SPACE128_2  C  0x00000000  11
+text  MAD_SPACE_STARS_TEXTURE_SPACE128_4  C  0x0000000c  11
+text  MAD_SPACE_STARS_TEXTURE_SPACE256_5  C  0x00000018  11
+text  MAD_SPACE_STARS_TEXTURE_SPACE256_7  C  0x00000024  11
+datum  textures  D  0x00000000  132
+datum  background_1_texlist  D  0x00000084  8
+datum  stars_polygons  D  0x0000008c  7358
+datum  stars_vertices  D  0x00001d4c  13884
+datum  sky_stars_mesh  D  0x00005388  24
+datum  background_1_object  D  0x000053a0  52

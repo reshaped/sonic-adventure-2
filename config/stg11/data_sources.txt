@@ -1,0 +1,2 @@
+modules/stg11/player_motions.c
+modules/stg11/terrain.c

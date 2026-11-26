@@ -1,0 +1,77 @@
+; the system code a boot ROM keeps at H'1000, copied over the system's RAM
+; before anything else starts
+
+        .EXPORT     _rom_system_reload
+
+; the boot ROM through P2, the view of memory that bypasses the caches: the
+; long word that tags it, and the code it keeps for the system
+ROM_TAG:        .EQU    H'A00007C0
+ROM_SYSTEM:     .EQU    H'A0001000
+; the long word at ROM_TAG, less its low byte, in a ROM this reload is for:
+; "KAB" in the ROM's byte order. the byte TAG_DIGIT past ROM_TAG must hold
+; DIGIT_0, the character "0"
+TAG_KAB:        .EQU    H'42414B00
+TAG_DIGIT:      .EQU    14
+DIGIT_0:        .EQU    H'30
+; where the system keeps that code in RAM, and its size: 12 KB, in long
+; words and in the cache's lines of LINE_BYTES
+RAM_SYSTEM:     .EQU    H'8C001000
+SYSTEM_WORDS:   .EQU    H'0C00
+SYSTEM_LINES:   .EQU    H'0180
+LINE_BYTES:     .EQU    32
+
+        .SECTION    P,CODE,ALIGN=4
+
+; void rom_system_reload(void)
+; where the ROM holds TAG_KAB and DIGIT_0, copy SYSTEM_WORDS long words from
+; ROM_SYSTEM to RAM_SYSTEM, then write its SYSTEM_LINES cache lines back
+; @asm opcode: cache-line, OCBP @R2 at 0x8c0c0d98 writes a copied line back
+; to RAM and drops it from the cache
+_rom_system_reload:
+        MOV.L       ?tag,R1
+        MOV.L       ?tag_address,R0
+        MOV.L       @R0,R2
+        SHLR8       R2
+        SHLL8       R2                      ; the tag, less its low byte
+        CMP/EQ      R1,R2
+        BF          ?done
+        ADD         #TAG_DIGIT,R0
+        MOV         #DIGIT_0,R2
+        MOV.B       @R0,R1
+        CMP/EQ      R1,R2
+        BF          ?done
+        MOV.L       ?rom,R1
+        MOV.L       ?ram,R2
+        MOV.L       ?words,R3
+?copy:
+        MOV.L       @R1+,R0
+        MOV.L       R0,@R2
+        DT          R3
+        BF/S        ?copy
+        ADD         #4,R2
+        MOV.L       ?ram,R2
+        MOV.L       ?lines,R1
+?write_back:
+        OCBP        @R2
+        DT          R1
+        BF/S        ?write_back
+        ADD         #LINE_BYTES,R2
+?done:
+        RTS
+        NOP
+; the literals, in the order the image holds them, not the order the
+; code loads them
+?rom:
+        .DATA.L     ROM_SYSTEM
+?ram:
+        .DATA.L     RAM_SYSTEM
+?words:
+        .DATA.L     SYSTEM_WORDS
+?lines:
+        .DATA.L     SYSTEM_LINES
+?tag_address:
+        .DATA.L     ROM_TAG
+?tag:
+        .DATA.L     TAG_KAB
+
+        .END

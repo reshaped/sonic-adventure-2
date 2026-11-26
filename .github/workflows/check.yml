@@ -1,0 +1,76 @@
+name: check
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    timeout-minutes: 120
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+      - run: make test
+      - name: Check matching objects
+        run: make -j"$(nproc)" check
+        env:
+          RETRY_WIBO_TIMEOUT: '1'
+      - run: make -j"$(nproc)" lint
+      # without the disc, nothing else builds these
+      - run: make build/gdi build/prskit
+
+  dreamcast-gcc:
+    timeout-minutes: 240
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+      - id: toolchain
+        name: Hash the toolchain recipe and source pins
+        shell: bash
+        run: |
+          make -nB tools/sh-elf/bin/sh-elf-gcc > "$RUNNER_TEMP/sh-elf-recipe"
+          grep ' tools/sh-elf.src/' tools/SHA256SUMS >> "$RUNNER_TEMP/sh-elf-recipe"
+          sum=$(sha256sum "$RUNNER_TEMP/sh-elf-recipe")
+          echo "key=sh-elf-${sum%% *}" >> "$GITHUB_OUTPUT"
+      - id: toolchain-cache
+        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5.1.0
+        with:
+          path: tools/sh-elf
+          key: ${{ steps.toolchain.outputs.key }}
+      - if: steps.toolchain-cache.outputs.cache-hit != 'true'
+        run: make -j"$(nproc)" tools/sh-elf/bin/sh-elf-gcc
+      - if: steps.toolchain-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@caa296126883cff596d87d8935842f9db880ef25 # v5.1.0
+        with:
+          path: tools/sh-elf
+          key: ${{ steps.toolchain.outputs.key }}
+      - id: sh4zam
+        name: Hash SH4ZAM's file pins
+        shell: bash
+        run: |
+          sum=$(grep ' tools/sh4zam/' tools/SHA256SUMS | sha256sum)
+          echo "key=sh4zam-${sum%% *}" >> "$GITHUB_OUTPUT"
+      - id: sh4zam-cache
+        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5.1.0
+        with:
+          path: tools/sh4zam
+          key: ${{ steps.sh4zam.outputs.key }}
+      - if: steps.sh4zam-cache.outputs.cache-hit != 'true'
+        run: make tools/sh4zam/fetched.txt
+      - if: steps.sh4zam-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@caa296126883cff596d87d8935842f9db880ef25 # v5.1.0
+        with:
+          path: tools/sh4zam
+          key: ${{ steps.sh4zam.outputs.key }}
+      - id: dc-check
+        name: Link the disc-free GCC censuses
+        run: make -j"$(nproc)" dc-check
+      # The tests need the toolchain and SH4ZAM, and nothing dc-check builds
+      - name: Run tests with the SH-4 compiler and linker
+        if: success() || (!cancelled() && steps.dc-check.outcome == 'failure')
+        run: make test SH_ELF="$PWD/tools/sh-elf"

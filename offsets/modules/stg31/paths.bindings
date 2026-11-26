@@ -1,0 +1,6 @@
+pointer  join_path  0x00000008  join_path_points
+pointer  join_path  0x0000000c  path_join_step
+pointer  green_hill_ride_z  0x00000008  ride_z_points
+pointer  green_hill_ride_x_upper  0x00000008  ride_x_upper_points
+pointer  green_hill_ride_x_lower  0x00000008  ride_x_lower_points
+pointer  green_hill_paths  0x00000000  join_path

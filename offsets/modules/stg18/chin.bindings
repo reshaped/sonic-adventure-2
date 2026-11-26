@@ -1,0 +1,14 @@
+text CHIN_TEX_KD_DL_HASIRA3_VQ 17
+text CHIN_TEX_KD_DL_IDO2_VQ 14
+pointer chin_texlist_names 0x00000000 CHIN_TEX_KD_DL_HASIRA3_VQ
+pointer chin_texlist_names 0x0000000c CHIN_TEX_KD_DL_IDO2_VQ
+pointer chin_texlist 0x00000000 chin_texlist_names
+pointer chin_model 0x00000000 chin_vertices
+pointer chin_model 0x00000004 chin_polygons
+pointer chin_object 0x00000004 chin_model
+pointer chin_collision_faces 0x00000004 chin_collision_strips
+pointer chin_collision_model 0x00000000 chin_collision_points
+pointer chin_collision_model 0x00000004 chin_collision_normals
+pointer chin_collision_model 0x0000000c chin_collision_faces
+pointer chin_collision_model 0x00000010 chin_collision_materials
+pointer chin_collision 0x00000004 chin_collision_model

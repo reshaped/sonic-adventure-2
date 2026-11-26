@@ -1,0 +1,5 @@
+datum  time_stop_screen  D  0x00002414  64
+datum  sonic_animations  D  0x00000014  2960
+datum  shadow_animations  D  0x00000ba4  2960
+datum  amy_animations  D  0x00001734  3168
+datum  sonic_shapes  D  0x00002394  96

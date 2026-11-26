@@ -1,0 +1,4 @@
+pointer  dark_water  0x00000000  dark_water_a
+pointer  dark_water  0x00000004  dark_land_texlist
+pointer  dark_water  0x00000028  dark_water_b
+pointer  dark_water  0x0000002c  dark_land_texlist

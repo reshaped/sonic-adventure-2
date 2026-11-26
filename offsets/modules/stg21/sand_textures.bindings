@@ -1,0 +1,233 @@
+include  objtex_common
+include  efftex_common
+text  SAND_TEXTURE_KD_SO_ASIBA1  13
+text  SAND_TEXTURE_KD_SO_ASIBA2  13
+text  SAND_TEXTURE_KD_SO_ASIBA3  13
+text  SAND_TEXTURE_KD_SO_ASIBA4  13
+text  SAND_TEXTURE_KD_SO_BAKUHA1  14
+text  SAND_TEXTURE_KD_SO_HATA1  12
+text  SAND_TEXTURE_KD_SO_HIKARI1  14
+text  SAND_TEXTURE_KD_SO_KABE4  12
+text  SAND_TEXTURE_KD_SO_KAGE1  12
+text  SAND_TEXTURE_KD_SO_KAGE2  12
+text  SAND_TEXTURE_KD_SO_KAGE3  12
+text  SAND_TEXTURE_KD_SO_KUSARI1  14
+text  SAND_TEXTURE_KD_SO_MIKOSI1  14
+text  SAND_TEXTURE_KD_SO_OTHER1  13
+text  SAND_TEXTURE_KD_SO_SAKU1  12
+text  SAND_TEXTURE_KD_SO_SARA1  12
+text  SAND_TEXTURE_KD_SO_SEKIHI1  14
+text  SAND_TEXTURE_KD_SO_SEKIHI2  14
+text  SAND_TEXTURE_KD_SO_SEKIHI3  14
+text  SAND_TEXTURE_KD_SO_SEKIHI4  14
+text  SAND_TEXTURE_KD_SO_SEKIHI5  14
+text  SAND_TEXTURE_KD_SO_TUBO1  12
+text  SAND_TEXTURE_KD_SO_HI_01  12
+text  SAND_TEXTURE_KD_SO_HI_02  12
+text  SAND_TEXTURE_KD_SO_HI_03  12
+text  SAND_TEXTURE_KD_SO_HI_04  12
+text  SAND_TEXTURE_KD_SO_HI_05  12
+text  SAND_TEXTURE_KD_SO_HI_06  12
+text  SAND_TEXTURE_KD_SO_HI_07  12
+text  SAND_TEXTURE_KD_SO_HI_08  12
+text  SAND_TEXTURE_KD_SO_HI_09  12
+text  SAND_TEXTURE_KD_SO_HI_10  12
+text  SAND_TEXTURE_KD_SO_HI_11  12
+text  SAND_TEXTURE_KD_SO_HI_12  12
+text  SAND_TEXTURE_KD_SO_HI_13  12
+text  SAND_TEXTURE_KD_SO_HI_14  12
+text  SAND_TEXTURE_KD_SO_HI_15  12
+text  SAND_TEXTURE_KD_SO_HI_16  12
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0001  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0002  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0003  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0004  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0005  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0006  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0007  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0008  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0009  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0010  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0011  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0012  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0013  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0014  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0015  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0016  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0017  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0018  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0019  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0020  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0021  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0022  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0023  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0024  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0025  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0026  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0027  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0028  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0029  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0030  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0031  18
+text  SAND_TEXTURE_DZ_SO_RYUUSA_0032  18
+text  SAND_TEXTURE_KD_SO_YUKA1  12
+text  SAND_TEXTURE_LEVUPDAI_TMTEX  15
+text  SAND_TEXTURE_OBJTEX_STG21  13
+text  SAND_TEXTURE_EFFTEX_COMMON  14
+text  SAND_TEXTURE_OBJTEX_COMMON  14
+text  SAND_TEXTURE_STG21_FIRE  11
+text  SAND_TEXTURE_STG21_RYUUSA  13
+pointer  stage_materials_names  0x00000000  SAND_TEXTURE_KD_SO_ASIBA1
+pointer  stage_materials_names  0x0000000c  SAND_TEXTURE_KD_SO_ASIBA2
+pointer  stage_materials_names  0x00000018  SAND_TEXTURE_KD_SO_ASIBA3
+pointer  stage_materials_names  0x00000024  SAND_TEXTURE_KD_SO_ASIBA4
+pointer  stage_materials_names  0x00000030  SAND_TEXTURE_KD_SO_BAKUHA1
+pointer  stage_materials_names  0x0000003c  SAND_TEXTURE_KD_SO_HATA1
+pointer  stage_materials_names  0x00000048  SAND_TEXTURE_KD_SO_HIKARI1
+pointer  stage_materials_names  0x00000054  SAND_TEXTURE_KD_SO_KABE4
+pointer  stage_materials_names  0x00000060  SAND_TEXTURE_KD_SO_KAGE1
+pointer  stage_materials_names  0x0000006c  SAND_TEXTURE_KD_SO_KAGE2
+pointer  stage_materials_names  0x00000078  SAND_TEXTURE_KD_SO_KAGE3
+pointer  stage_materials_names  0x00000084  SAND_TEXTURE_KD_SO_KUSARI1
+pointer  stage_materials_names  0x00000090  SAND_TEXTURE_KD_SO_MIKOSI1
+pointer  stage_materials_names  0x0000009c  SAND_TEXTURE_KD_SO_OTHER1
+pointer  stage_materials_names  0x000000a8  SAND_TEXTURE_KD_SO_SAKU1
+pointer  stage_materials_names  0x000000b4  SAND_TEXTURE_KD_SO_SARA1
+pointer  stage_materials_names  0x000000c0  SAND_TEXTURE_KD_SO_SEKIHI1
+pointer  stage_materials_names  0x000000cc  SAND_TEXTURE_KD_SO_SEKIHI2
+pointer  stage_materials_names  0x000000d8  SAND_TEXTURE_KD_SO_SEKIHI3
+pointer  stage_materials_names  0x000000e4  SAND_TEXTURE_KD_SO_SEKIHI4
+pointer  stage_materials_names  0x000000f0  SAND_TEXTURE_KD_SO_SEKIHI5
+pointer  stage_materials_names  0x000000fc  SAND_TEXTURE_KD_SO_TUBO1
+pointer  stage_materials  0x00000000  stage_materials_names
+pointer  ocean_fire_texlist_names  0x00000000  SAND_TEXTURE_KD_SO_HI_01
+pointer  ocean_fire_texlist_names  0x0000000c  SAND_TEXTURE_KD_SO_HI_02
+pointer  ocean_fire_texlist_names  0x00000018  SAND_TEXTURE_KD_SO_HI_03
+pointer  ocean_fire_texlist_names  0x00000024  SAND_TEXTURE_KD_SO_HI_04
+pointer  ocean_fire_texlist_names  0x00000030  SAND_TEXTURE_KD_SO_HI_05
+pointer  ocean_fire_texlist_names  0x0000003c  SAND_TEXTURE_KD_SO_HI_06
+pointer  ocean_fire_texlist_names  0x00000048  SAND_TEXTURE_KD_SO_HI_07
+pointer  ocean_fire_texlist_names  0x00000054  SAND_TEXTURE_KD_SO_HI_08
+pointer  ocean_fire_texlist_names  0x00000060  SAND_TEXTURE_KD_SO_HI_09
+pointer  ocean_fire_texlist_names  0x0000006c  SAND_TEXTURE_KD_SO_HI_10
+pointer  ocean_fire_texlist_names  0x00000078  SAND_TEXTURE_KD_SO_HI_11
+pointer  ocean_fire_texlist_names  0x00000084  SAND_TEXTURE_KD_SO_HI_12
+pointer  ocean_fire_texlist_names  0x00000090  SAND_TEXTURE_KD_SO_HI_13
+pointer  ocean_fire_texlist_names  0x0000009c  SAND_TEXTURE_KD_SO_HI_14
+pointer  ocean_fire_texlist_names  0x000000a8  SAND_TEXTURE_KD_SO_HI_15
+pointer  ocean_fire_texlist_names  0x000000b4  SAND_TEXTURE_KD_SO_HI_16
+pointer  ocean_fire_texlist  0x00000000  ocean_fire_texlist_names
+pointer  ocean_quicksand_texlist_names  0x00000000  SAND_TEXTURE_DZ_SO_RYUUSA_0001
+pointer  ocean_quicksand_texlist_names  0x0000000c  SAND_TEXTURE_DZ_SO_RYUUSA_0002
+pointer  ocean_quicksand_texlist_names  0x00000018  SAND_TEXTURE_DZ_SO_RYUUSA_0003
+pointer  ocean_quicksand_texlist_names  0x00000024  SAND_TEXTURE_DZ_SO_RYUUSA_0004
+pointer  ocean_quicksand_texlist_names  0x00000030  SAND_TEXTURE_DZ_SO_RYUUSA_0005
+pointer  ocean_quicksand_texlist_names  0x0000003c  SAND_TEXTURE_DZ_SO_RYUUSA_0006
+pointer  ocean_quicksand_texlist_names  0x00000048  SAND_TEXTURE_DZ_SO_RYUUSA_0007
+pointer  ocean_quicksand_texlist_names  0x00000054  SAND_TEXTURE_DZ_SO_RYUUSA_0008
+pointer  ocean_quicksand_texlist_names  0x00000060  SAND_TEXTURE_DZ_SO_RYUUSA_0009
+pointer  ocean_quicksand_texlist_names  0x0000006c  SAND_TEXTURE_DZ_SO_RYUUSA_0010
+pointer  ocean_quicksand_texlist_names  0x00000078  SAND_TEXTURE_DZ_SO_RYUUSA_0011
+pointer  ocean_quicksand_texlist_names  0x00000084  SAND_TEXTURE_DZ_SO_RYUUSA_0012
+pointer  ocean_quicksand_texlist_names  0x00000090  SAND_TEXTURE_DZ_SO_RYUUSA_0013
+pointer  ocean_quicksand_texlist_names  0x0000009c  SAND_TEXTURE_DZ_SO_RYUUSA_0014
+pointer  ocean_quicksand_texlist_names  0x000000a8  SAND_TEXTURE_DZ_SO_RYUUSA_0015
+pointer  ocean_quicksand_texlist_names  0x000000b4  SAND_TEXTURE_DZ_SO_RYUUSA_0016
+pointer  ocean_quicksand_texlist_names  0x000000c0  SAND_TEXTURE_DZ_SO_RYUUSA_0017
+pointer  ocean_quicksand_texlist_names  0x000000cc  SAND_TEXTURE_DZ_SO_RYUUSA_0018
+pointer  ocean_quicksand_texlist_names  0x000000d8  SAND_TEXTURE_DZ_SO_RYUUSA_0019
+pointer  ocean_quicksand_texlist_names  0x000000e4  SAND_TEXTURE_DZ_SO_RYUUSA_0020
+pointer  ocean_quicksand_texlist_names  0x000000f0  SAND_TEXTURE_DZ_SO_RYUUSA_0021
+pointer  ocean_quicksand_texlist_names  0x000000fc  SAND_TEXTURE_DZ_SO_RYUUSA_0022
+pointer  ocean_quicksand_texlist_names  0x00000108  SAND_TEXTURE_DZ_SO_RYUUSA_0023
+pointer  ocean_quicksand_texlist_names  0x00000114  SAND_TEXTURE_DZ_SO_RYUUSA_0024
+pointer  ocean_quicksand_texlist_names  0x00000120  SAND_TEXTURE_DZ_SO_RYUUSA_0025
+pointer  ocean_quicksand_texlist_names  0x0000012c  SAND_TEXTURE_DZ_SO_RYUUSA_0026
+pointer  ocean_quicksand_texlist_names  0x00000138  SAND_TEXTURE_DZ_SO_RYUUSA_0027
+pointer  ocean_quicksand_texlist_names  0x00000144  SAND_TEXTURE_DZ_SO_RYUUSA_0028
+pointer  ocean_quicksand_texlist_names  0x00000150  SAND_TEXTURE_DZ_SO_RYUUSA_0029
+pointer  ocean_quicksand_texlist_names  0x0000015c  SAND_TEXTURE_DZ_SO_RYUUSA_0030
+pointer  ocean_quicksand_texlist_names  0x00000168  SAND_TEXTURE_DZ_SO_RYUUSA_0031
+pointer  ocean_quicksand_texlist_names  0x00000174  SAND_TEXTURE_DZ_SO_RYUUSA_0032
+pointer  ocean_quicksand_texlist_names  0x00000180  SAND_TEXTURE_KD_SO_YUKA1
+pointer  ocean_quicksand_texlist  0x00000000  ocean_quicksand_texlist_names
+pointer  common_group  0x00000000  spring_texlist
+pointer  common_group  0x00000004  ring_texlist
+pointer  common_group  0x00000008  switch_texlist
+pointer  common_group  0x0000000c  dash_panel_texlist
+pointer  common_group  0x00000010  dash_panel_anim_texlist
+pointer  common_group  0x00000014  save_point_texlist
+pointer  common_group  0x00000018  big_jump_anim_texlist
+pointer  common_group  0x0000001c  big_jump_texlist
+pointer  common_group  0x00000020  dirt_texlist
+pointer  common_group  0x00000024  ring_shadow_texlist
+pointer  common_group  0x00000028  effect_texlist
+pointer  common_group  0x0000002c  item_balloon_texlist
+pointer  common_group  0x00000030  ring_sparkle_texlist
+pointer  common_group  0x00000034  burst_texlist
+pointer  common_group  0x00000038  lens_flare_texlist
+pointer  sand_ocean_texture_groups  0x00000000  common_group
+pointer  sand_ocean_texture_groups  0x00000004  goal_ring_texlists
+pointer  sand_ocean_texture_groups  0x00000008  emerald_texlists
+pointer  sand_ocean_texture_groups  0x0000000c  item_box_texlists
+pointer  sand_ocean_texture_groups  0x00000010  item_box_air_texlists
+pointer  sand_ocean_texture_groups  0x00000014  weight_texlists
+pointer  sand_ocean_texture_groups  0x00000018  iron_ball_texlists
+pointer  sand_ocean_texture_groups  0x0000001c  triple_spring_texlists
+pointer  sand_ocean_texture_groups  0x00000020  ocean_charge_texlists
+pointer  sand_ocean_texture_groups  0x00000024  reel_texlists
+pointer  sand_ocean_texture_groups  0x00000028  chao_pipe_texlists
+pointer  sand_ocean_texture_groups  0x0000002c  cage_texlists
+pointer  sand_ocean_texture_groups  0x00000030  wood_box_texlists
+pointer  sand_ocean_texture_groups  0x00000034  iron_box_texlists
+pointer  sand_ocean_texture_groups  0x00000038  upgrade_texlists
+pointer  sand_ocean_texture_groups  0x0000003c  missile_texlists
+pointer  sand_ocean_texture_groups  0x00000040  skull_texlists
+pointer  sand_ocean_texture_groups  0x00000044  rocket_texlists
+pointer  sand_ocean_texture_groups  0x00000048  search_box_texlists
+pointer  sand_ocean_texture_groups  0x0000004c  hint_box_texlists
+pointer  sand_ocean_texture_groups  0x00000050  knudai_texlists
+pointer  sand_ocean_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  sand_ocean_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  sand_ocean_texture_groups  0x0000005c  knudai_door_texlists
+pointer  sand_ocean_texture_groups  0x00000060  chao_box_texlists
+pointer  sand_ocean_texture_groups  0x00000064  chao_key_texlists
+pointer  sand_ocean_texture_groups  0x00000068  object_effect_texlists
+pointer  sand_ocean_texture_groups  0x0000006c  messenger_texlists
+pointer  sand_ocean_texture_groups  0x00000070  ring_effect_texlists
+pointer  sand_ocean_texture_groups  0x00000074  ocean_pillar_texlists
+pointer  sand_ocean_texture_groups  0x00000078  ocean_fence_texlists
+pointer  sand_ocean_texture_groups  0x0000007c  corner_texlists
+pointer  sand_ocean_texture_groups  0x00000080  moving_foothold_texlists
+pointer  sand_ocean_texture_groups  0x00000084  turning_platform_texlists
+pointer  sand_ocean_texture_groups  0x00000088  wall_fire_texlists
+pointer  sand_ocean_texture_groups  0x0000008c  chain_fire_texlists
+pointer  sand_ocean_texture_groups  0x00000090  post_fire_texlists
+pointer  sand_ocean_texture_groups  0x00000094  fire_dish_texlists
+pointer  sand_ocean_texture_groups  0x00000098  chimney_texlists
+pointer  sand_ocean_texture_groups  0x0000009c  chimney_blast_texlists
+pointer  sand_ocean_texture_groups  0x000000a0  grave_texlists
+pointer  sand_ocean_texture_groups  0x000000a4  ocean_pot_texlists
+pointer  sand_ocean_texture_groups  0x000000a8  stone_box_texlists
+pointer  sand_ocean_texture_groups  0x000000ac  stacked_platform_texlists
+pointer  sand_ocean_texture_groups  0x000000b0  ocean_flag_texlists
+pointer  sand_ocean_texture_groups  0x000000b4  tilted_flag_texlists
+pointer  sand_ocean_texture_groups  0x000000b8  flag_stand_texlists
+pointer  sand_ocean_texture_groups  0x000000bc  pillar2_texlists
+pointer  sand_ocean_texture_groups  0x000000c0  pillar3_texlists
+pointer  sand_ocean_texture_groups  0x000000c4  pillar4_texlists
+pointer  sand_ocean_texture_groups  0x000000c8  swaying_light_texlists
+pointer  sand_ocean_texture_groups  0x000000cc  solid_box_texlists
+pointer  sand_ocean_pvms  0x00000000  SAND_TEXTURE_LEVUPDAI_TMTEX
+pointer  sand_ocean_pvms  0x00000004  upgrade_melody_texlist
+pointer  sand_ocean_pvms  0x00000008  SAND_TEXTURE_OBJTEX_STG21
+pointer  sand_ocean_pvms  0x0000000c  stage_materials
+pointer  sand_ocean_pvms  0x00000010  SAND_TEXTURE_EFFTEX_COMMON
+pointer  sand_ocean_pvms  0x00000014  efftex_common_texlist
+pointer  sand_ocean_pvms  0x00000018  SAND_TEXTURE_OBJTEX_COMMON
+pointer  sand_ocean_pvms  0x0000001c  objtex_common_texlist
+pointer  sand_ocean_pvms  0x00000020  SAND_TEXTURE_STG21_FIRE
+pointer  sand_ocean_pvms  0x00000024  ocean_fire_texlist
+pointer  sand_ocean_pvms  0x00000028  SAND_TEXTURE_STG21_RYUUSA
+pointer  sand_ocean_pvms  0x0000002c  ocean_quicksand_texlist
+pointer  sand_ocean_pvms  0x00000034  sand_ocean_land_texlist

@@ -1,0 +1,5 @@
+include store_box_textures
+pointer  store_box_green_texlist  0x00000000  textures
+pointer  store_box_green_model  0x00000000  store_box_green_vertices
+pointer  store_box_green_model  0x00000004  store_box_green_polygons
+pointer  store_box_green_object  0x00000004  store_box_green_model

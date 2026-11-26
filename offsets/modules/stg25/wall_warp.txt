@@ -1,0 +1,8 @@
+text  CHAMBER_WALL_WARP_DZ_VERTICAL_WARPWALL  C  0x00000078  21
+datum  chamber_warp_texture_names  D  0x00000000  12
+datum  chamber_warp_texlist  D  0x0000000c  8
+datum  chamber_warp_polygons  D  0x00000014  154
+datum  chamber_warp_vertices  D  0x000000b0  140
+datum  chamber_warp_model  D  0x0000013c  24
+datum  chamber_warp_object  D  0x00000154  52
+datum  chamber_wall_warp_texlists  D  0x00000188  8

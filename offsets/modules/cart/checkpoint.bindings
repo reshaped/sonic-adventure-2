@@ -1,0 +1,6 @@
+pointer  checkpoint_mesh  0x00000004  checkpoint_strips
+pointer  checkpoint_arch  0x00000000  checkpoint_points
+pointer  checkpoint_arch  0x00000004  checkpoint_normals
+pointer  checkpoint_arch  0x0000000c  checkpoint_mesh
+pointer  checkpoint_arch  0x00000010  checkpoint_material
+pointer  checkpoint_land  0x00000004  checkpoint_arch

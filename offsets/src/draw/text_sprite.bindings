@@ -1,0 +1,16 @@
+text  KANJI_FONT_NAME  22
+text  LATIN_FONT_NAME  23
+text  ASCII_FONT_NAME  23
+pointer  font_files  0x00000000  KANJI_FONT_NAME
+pointer  font_files  0x00000008  LATIN_FONT_NAME
+pointer  font_files  0x00000010  ASCII_FONT_NAME
+pointer  fonts  0x00000004  ascii_widths
+pointer  fonts  0x00000010  kanji_widths
+pointer  fonts  0x00000024  latin_widths
+pointer  fonts  0x00000030  kanji_widths
+pointer  fonts  0x00000044  latin_widths
+pointer  fonts  0x00000050  kanji_widths
+pointer  fonts  0x00000064  latin_widths
+pointer  fonts  0x00000070  kanji_widths
+pointer  fonts  0x00000084  latin_widths
+pointer  fonts  0x00000090  kanji_widths

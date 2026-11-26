@@ -1,0 +1,30 @@
+text  REVOLVING_VINE_TEXTURE_MIU64_GREEN006  15
+text  REVOLVING_VINE_TEXTURE_MIU64_GREEN009  15
+
+pointer  vine_texnames  0x00000000  REVOLVING_VINE_TEXTURE_MIU64_GREEN006
+pointer  revolving_vine_texlist  0x00000000  vine_texnames
+pointer  vine_part_6_model  0x00000000  vine_part_6_vertices
+pointer  vine_part_6_model  0x00000004  vine_part_6_polygons
+pointer  vine_part_6  0x00000004  vine_part_6_model
+pointer  vine_part_6  0x0000002c  vine_part_7
+pointer  vine_part_5_model  0x00000000  vine_part_5_vertices
+pointer  vine_part_5  0x00000004  vine_part_5_model
+pointer  vine_part_5  0x0000002c  vine_part_6
+pointer  vine_part_4_model  0x00000000  vine_part_4_vertices
+pointer  vine_part_4  0x00000004  vine_part_4_model
+pointer  vine_part_4  0x0000002c  vine_part_5
+pointer  vine_part_3_model  0x00000000  vine_part_3_vertices
+pointer  vine_part_3  0x00000004  vine_part_3_model
+pointer  vine_part_3  0x0000002c  vine_part_4
+pointer  vine_part_2_model  0x00000000  vine_part_2_vertices
+pointer  vine_part_2  0x00000004  vine_part_2_model
+pointer  vine_part_2  0x0000002c  vine_part_3
+pointer  vine_part_1  0x0000002c  vine_part_2
+pointer  vine_part_0_model  0x00000004  vine_part_0_polygons
+pointer  vine_part_0  0x00000004  vine_part_0_model
+pointer  vine_part_0  0x0000002c  vine_part_1
+pointer  panel_texnames  0x00000000  REVOLVING_VINE_TEXTURE_MIU64_GREEN009
+pointer  panel_texlist  0x00000000  panel_texnames
+pointer  panel_model  0x00000000  panel_vertices
+pointer  panel_model  0x00000004  panel_polygons
+pointer  panel_object  0x00000004  panel_model

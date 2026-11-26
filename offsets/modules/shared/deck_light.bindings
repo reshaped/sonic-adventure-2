@@ -1,0 +1,25 @@
+text  DECK_LIGHT_TEXTURE_MIU64_IG018  12
+text  DECK_LIGHT_TEXTURE_PR64_19  8
+
+pointer  deck_light_textures  0x00000000  DECK_LIGHT_TEXTURE_MIU64_IG018
+pointer  deck_light_textures  0x0000000c  DECK_LIGHT_TEXTURE_PR64_19
+pointer  deck_light_texlist  0x00000000  deck_light_textures
+pointer  deck_light_lens_model  0x00000000  deck_light_lens_vertices
+pointer  deck_light_lens_model  0x00000004  deck_light_lens_polygons
+pointer  deck_light_lens  0x00000004  deck_light_lens_model
+pointer  deck_light_model  0x00000000  deck_light_vertices
+pointer  deck_light_model  0x00000004  deck_light_polygons
+pointer  deck_light_object  0x00000004  deck_light_model
+pointer  deck_light_object  0x0000002c  deck_light_lens
+pointer  deck_light_w_textures  0x00000000  DECK_LIGHT_TEXTURE_MIU64_IG018
+pointer  deck_light_w_textures  0x0000000c  DECK_LIGHT_TEXTURE_PR64_19
+pointer  deck_light_w_texlist  0x00000000  deck_light_w_textures
+pointer  deck_light_w_lens_model  0x00000000  deck_light_w_lens_vertices
+pointer  deck_light_w_lens_model  0x00000004  deck_light_w_lens_polygons
+pointer  deck_light_w_lens  0x00000004  deck_light_w_lens_model
+pointer  deck_light_w_model  0x00000000  deck_light_w_vertices
+pointer  deck_light_w_model  0x00000004  deck_light_w_polygons
+pointer  deck_light_w_object  0x00000004  deck_light_w_model
+pointer  deck_light_w_object  0x0000002c  deck_light_w_lens
+pointer  deck_light_texlists  0x00000000  deck_light_texlist
+pointer  deck_light_texlists  0x00000004  deck_light_w_texlist

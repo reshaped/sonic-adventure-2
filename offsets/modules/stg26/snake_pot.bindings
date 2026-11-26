@@ -1,0 +1,36 @@
+# Snake pot materials, model graphs, textures and collision hulls.
+text  SNAKE_POT_TEXTURE_HI_RED01  15
+text  SNAKE_POT_TEXTURE_SNAKE_FIREPOT256  23
+text  SNAKE_POT_TEXTURE_SNAKE_FIREPOTTOP256  26
+text  SNAKE_POT_TEXTURE_SNAKE_POT_WALL128  24
+text  SNAKE_POT_TEXTURE_HASIRA10  15
+text  SNAKE_POT_TEXTURE_HASIRA3  14
+pointer flame_texture  0x00000000  SNAKE_POT_TEXTURE_HI_RED01
+pointer snake_pot_flame_texlist  0x00000000  flame_texture
+pointer snake_pot_flame_model  0x00000000  snake_pot_flame_vertices
+pointer snake_pot_flame_model  0x00000004  snake_pot_flame_polygons
+pointer snake_pot_flame_object  0x00000004  snake_pot_flame_model
+pointer pot_textures  0x00000000  SNAKE_POT_TEXTURE_SNAKE_FIREPOT256
+pointer pot_textures  0x0000000c  SNAKE_POT_TEXTURE_SNAKE_FIREPOTTOP256
+pointer pot_textures  0x00000018  SNAKE_POT_TEXTURE_SNAKE_POT_WALL128
+pointer pot_textures  0x00000024  SNAKE_POT_TEXTURE_HASIRA10
+pointer pot_textures  0x00000030  SNAKE_POT_TEXTURE_HASIRA3
+pointer snake_pot_texlist  0x00000000  pot_textures
+pointer snake_pot_model  0x00000000  snake_pot_vertices
+pointer snake_pot_model  0x00000004  snake_pot_polygons
+pointer snake_pot_object  0x00000004  snake_pot_model
+pointer snake_pot_collision_meshsets  0x00000004  snake_pot_collision_faces
+pointer snake_pot_collision_model  0x00000000  snake_pot_collision_points
+pointer snake_pot_collision_model  0x00000004  snake_pot_collision_normals
+pointer snake_pot_collision_model  0x0000000c  snake_pot_collision_meshsets
+pointer snake_pot_collision_model  0x00000010  snake_pot_collision_materials
+pointer snake_pot_collision  0x00000004  snake_pot_collision_model
+pointer snake_pot_inner_collision_meshsets  0x00000004  snake_pot_inner_collision_faces
+pointer snake_pot_inner_collision_model  0x00000000  snake_pot_inner_collision_points
+pointer snake_pot_inner_collision_model  0x00000004  snake_pot_inner_collision_normals
+pointer snake_pot_inner_collision_model  0x0000000c  snake_pot_inner_collision_meshsets
+pointer snake_pot_inner_collision_model  0x00000010  snake_pot_inner_collision_materials
+pointer snake_pot_inner_collision  0x00000004  snake_pot_inner_collision_model
+pointer quarters_snake_pot_texlists  0x00000000  snake_pot_texlist
+pointer pot_build  0x00000004  snake_pot_texlist
+pointer pot_build  0x00000008  snake_pot_object

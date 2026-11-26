@@ -1,0 +1,39 @@
+text  HIGHWAY_TEXTURE_MIU32_RH001  12
+text  HIGHWAY_TEXTURE_MIU32_RH004  12
+text  HIGHWAY_TEXTURE_MIU32_RH009  12
+text  HIGHWAY_TEXTURE_MIU64_RH017  12
+pointer  nights_textures  0x00000000  HIGHWAY_TEXTURE_MIU32_RH001
+pointer  nights_textures  0x0000000c  HIGHWAY_TEXTURE_MIU32_RH004
+pointer  nights_textures  0x00000018  HIGHWAY_TEXTURE_MIU32_RH009
+pointer  nights_textures  0x00000024  HIGHWAY_TEXTURE_MIU64_RH017
+pointer  nights_texlist  0x00000000  nights_textures
+pointer  nights_part_2_model  0x00000000  nights_part_2_vertices
+pointer  nights_part_2_model  0x00000004  nights_part_2_polygons
+pointer  nights_part_2_object  0x00000004  nights_part_2_model
+pointer  nights_part_1_model  0x00000000  nights_part_1_vertices
+pointer  nights_part_1_model  0x00000004  nights_part_1_polygons
+pointer  nights_part_1_object  0x00000004  nights_part_1_model
+pointer  nights_part_1_object  0x00000030  nights_part_2_object
+pointer  nights_part_3_model  0x00000000  nights_part_3_vertices
+pointer  nights_part_3_model  0x00000004  nights_part_3_polygons
+pointer  nights_part_3_object  0x00000004  nights_part_3_model
+pointer  nights_part_3_object  0x00000030  nights_part_1_object
+pointer  nights_part_4_model  0x00000000  nights_part_4_vertices
+pointer  nights_part_4_model  0x00000004  nights_part_4_polygons
+pointer  nights_part_4_object  0x00000004  nights_part_4_model
+pointer  nights_part_4_object  0x00000030  nights_part_3_object
+pointer  nights_part_5_model  0x00000000  nights_part_5_vertices
+pointer  nights_part_5_model  0x00000004  nights_part_5_polygons
+pointer  nights_part_5_object  0x00000004  nights_part_5_model
+pointer  nights_part_5_object  0x00000030  nights_part_4_object
+pointer  nights_part_0_model  0x00000000  nights_part_0_vertices
+pointer  nights_part_0_model  0x00000004  nights_part_0_polygons
+pointer  nights_part_0_object  0x00000004  nights_part_0_model
+pointer  nights_part_0_object  0x0000002c  nights_part_5_object
+pointer  nights_texlists  0x00000000  nights_texlist
+pointer  nights_parts  0x00000000  nights_part_0_model
+pointer  nights_parts  0x00000004  nights_part_1_model
+pointer  nights_parts  0x00000008  nights_part_2_model
+pointer  nights_parts  0x0000000c  nights_part_3_model
+pointer  nights_parts  0x00000010  nights_part_4_model
+pointer  nights_parts  0x00000014  nights_part_5_model

@@ -1,0 +1,11 @@
+datum finalhazard_sphere_filenames C 0x00000000 8
+datum  sphere_names  D  0x00000000  12
+datum  sphere_textures  D  0x0000000c  8
+datum  sphere_near_polygons  D  0x00000014  850
+datum  sphere_near_vertices  D  0x00000368  1068
+datum  sphere_near_mesh  D  0x00000794  24
+datum  finalhazard_sphere_near  D  0x000007ac  52
+datum  sphere_far_polygons  D  0x000007e0  330
+datum  sphere_far_vertices  D  0x0000092c  516
+datum  sphere_far_mesh  D  0x00000b30  24
+datum  finalhazard_sphere_far  D  0x00000b48  52

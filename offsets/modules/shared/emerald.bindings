@@ -1,0 +1,116 @@
+text  EMERALD_OBJECT_NAME  14
+text  EMERALD_DEBUG_KIND_ID  17
+text  EMERALD_DEBUG_RADIUS  15
+text  EMERALD_SIGN_NAME  15
+text  EMERALD_DEBUG_YAW  11
+text  EMERALD_DEBUG_ROLL  11
+text  EMERALD_DEBUG_SCALE_X  8
+text  EMERALD_DEBUG_SCALE_Z  8
+text  EMERALD_DEBUG_PATH_ID  15
+text  EMERALD_DEBUG_SPEED  16
+text  EMERALD_DEBUG_CENTER  24
+text  EMERALD_TEXTURE  13
+text  EMERALD_KIND_NAME_B_NORMAL  9
+text  EMERALD_KIND_NAME_C_NORMAL  9
+text  EMERALD_KIND_NAME_B_HIDDEN  9
+text  EMERALD_KIND_NAME_C_HIDDEN  9
+text  EMERALD_KIND_NAME_A_UNDERGROUND  11
+text  EMERALD_KIND_NAME_B_UNDERGROUND  11
+text  EMERALD_KIND_NAME_A_VERSUS_UNDERGROUND  12
+text  EMERALD_KIND_NAME_A_PATH  11
+text  EMERALD_KIND_NAME_A_TECH  10
+text  EMERALD_KIND_NAME_FINAL  8
+text  EMERALD_KIND_NAME_IN_ENEMY  10
+pointer  emerald_texname_b  0x00000000  EMERALD_TEXTURE
+pointer  emerald_texlist_b  0x00000000  emerald_texname_b
+pointer  emerald_texname_a  0x00000000  EMERALD_TEXTURE
+pointer  emerald_texlist_a  0x00000000  emerald_texname_a
+pointer  emerald_texname_c  0x00000000  EMERALD_TEXTURE
+pointer  emerald_texlist_c  0x00000000  emerald_texname_c
+pointer  emerald_model  0x00000000  emerald_vertices
+pointer  emerald_model  0x00000004  emerald_polygons
+pointer  emerald_object  0x00000004  emerald_model
+pointer  emerald_texlists  0x00000000  emerald_texlist_b
+pointer  emerald_texlists  0x00000004  emerald_texlist_a
+pointer  emerald_texlists  0x00000008  emerald_texlist_c
+pointer  emerald_texlists  0x0000000c  ring_sparkle_texlist
+pointer  emerald_texlists  0x00000010  sparkle_texlist
+pointer  emerald_look_default  0x00000004  emerald_model
+pointer  emerald_look_default  0x00000008  emerald_model
+pointer  emerald_look_default  0x0000000c  emerald_model
+pointer  emerald_look_default  0x0000001c  emerald_texlist_b
+pointer  emerald_look_default  0x00000020  emerald_texlist_a
+pointer  emerald_look_default  0x00000024  emerald_texlist_c
+pointer  emerald_look  0x00000004  emerald_model
+pointer  emerald_look  0x00000008  emerald_model
+pointer  emerald_look  0x0000000c  emerald_model
+pointer  emerald_look  0x0000001c  emerald_texlist_b
+pointer  emerald_look  0x00000020  emerald_texlist_a
+pointer  emerald_look  0x00000024  emerald_texlist_c
+pointer  emerald_kinds  0x00000004  EMERALD_KIND_NAME_B_NORMAL
+pointer  emerald_kinds  0x00000008  emerald_plain_init
+pointer  emerald_kinds  0x0000000c  emerald_plain_debug
+pointer  emerald_kinds  0x00000014  emerald_plain_step
+pointer  emerald_kinds  0x00000018  emerald_plain_draw
+pointer  emerald_kinds  0x0000001c  emerald_plain_destroy
+pointer  emerald_kinds  0x00000028  EMERALD_KIND_NAME_C_NORMAL
+pointer  emerald_kinds  0x0000002c  emerald_plain_init
+pointer  emerald_kinds  0x00000030  emerald_plain_debug
+pointer  emerald_kinds  0x00000038  emerald_plain_step
+pointer  emerald_kinds  0x0000003c  emerald_plain_draw
+pointer  emerald_kinds  0x00000040  emerald_plain_destroy
+pointer  emerald_kinds  0x0000004c  EMERALD_KIND_NAME_B_HIDDEN
+pointer  emerald_kinds  0x00000050  emerald_plain_init
+pointer  emerald_kinds  0x00000054  emerald_plain_debug
+pointer  emerald_kinds  0x0000005c  emerald_plain_step
+pointer  emerald_kinds  0x00000060  emerald_plain_draw
+pointer  emerald_kinds  0x00000064  emerald_plain_destroy
+pointer  emerald_kinds  0x00000070  EMERALD_KIND_NAME_C_HIDDEN
+pointer  emerald_kinds  0x00000074  emerald_plain_init
+pointer  emerald_kinds  0x00000078  emerald_plain_debug
+pointer  emerald_kinds  0x00000080  emerald_plain_step
+pointer  emerald_kinds  0x00000084  emerald_plain_draw
+pointer  emerald_kinds  0x00000088  emerald_plain_destroy
+pointer  emerald_kinds  0x00000094  EMERALD_KIND_NAME_A_UNDERGROUND
+pointer  emerald_kinds  0x00000098  emerald_plain_init
+pointer  emerald_kinds  0x0000009c  emerald_plain_debug
+pointer  emerald_kinds  0x000000a4  emerald_plain_step
+pointer  emerald_kinds  0x000000a8  emerald_plain_draw
+pointer  emerald_kinds  0x000000ac  emerald_plain_destroy
+pointer  emerald_kinds  0x000000b8  EMERALD_KIND_NAME_B_UNDERGROUND
+pointer  emerald_kinds  0x000000bc  emerald_plain_init
+pointer  emerald_kinds  0x000000c0  emerald_plain_debug
+pointer  emerald_kinds  0x000000c8  emerald_plain_step
+pointer  emerald_kinds  0x000000cc  emerald_plain_draw
+pointer  emerald_kinds  0x000000d0  emerald_plain_destroy
+pointer  emerald_kinds  0x000000dc  EMERALD_KIND_NAME_A_VERSUS_UNDERGROUND
+pointer  emerald_kinds  0x000000e0  emerald_spread_init
+pointer  emerald_kinds  0x000000e4  emerald_spread_debug
+pointer  emerald_kinds  0x000000ec  emerald_spread_step
+pointer  emerald_kinds  0x000000f0  emerald_spread_draw
+pointer  emerald_kinds  0x000000f4  emerald_spread_destroy
+pointer  emerald_kinds  0x00000100  EMERALD_KIND_NAME_A_PATH
+pointer  emerald_kinds  0x00000104  emerald_path_init
+pointer  emerald_kinds  0x00000108  emerald_path_debug
+pointer  emerald_kinds  0x0000010c  emerald_path_reset
+pointer  emerald_kinds  0x00000110  emerald_path_step
+pointer  emerald_kinds  0x00000114  emerald_path_draw
+pointer  emerald_kinds  0x00000118  emerald_path_destroy
+pointer  emerald_kinds  0x00000124  EMERALD_KIND_NAME_A_TECH
+pointer  emerald_kinds  0x00000128  emerald_plain_init
+pointer  emerald_kinds  0x0000012c  emerald_plain_debug
+pointer  emerald_kinds  0x00000134  emerald_plain_step
+pointer  emerald_kinds  0x00000138  emerald_plain_draw
+pointer  emerald_kinds  0x0000013c  emerald_plain_destroy
+pointer  emerald_kinds  0x00000148  EMERALD_KIND_NAME_FINAL
+pointer  emerald_kinds  0x0000014c  emerald_plain_init
+pointer  emerald_kinds  0x00000150  emerald_plain_debug
+pointer  emerald_kinds  0x00000158  emerald_plain_step
+pointer  emerald_kinds  0x0000015c  emerald_final_draw
+pointer  emerald_kinds  0x00000160  emerald_plain_destroy
+pointer  emerald_kinds  0x0000016c  EMERALD_KIND_NAME_IN_ENEMY
+pointer  emerald_kinds  0x00000170  emerald_enemy_init
+pointer  emerald_kinds  0x00000174  emerald_plain_debug
+pointer  emerald_kinds  0x0000017c  emerald_enemy_step
+pointer  emerald_kinds  0x00000180  emerald_enemy_draw
+pointer  emerald_kinds  0x00000184  emerald_enemy_destroy

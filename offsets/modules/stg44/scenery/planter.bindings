@@ -1,0 +1,4 @@
+pointer  planter_object_1_model  0x00000000  planter_object_1_vertices
+pointer  planter_object_1_model  0x00000004  planter_object_1_polygons
+pointer  planter_object_1  0x00000004  planter_object_1_model
+pointer  planter_object  0x0000002c  planter_object_1

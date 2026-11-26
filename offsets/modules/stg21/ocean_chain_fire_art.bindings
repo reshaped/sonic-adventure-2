@@ -1,0 +1,3 @@
+pointer  chain_fire_model  0x00000000  chain_fire_vertices
+pointer  chain_fire_model  0x00000004  chain_fire_polygons
+pointer  chain_fire_object  0x00000004  chain_fire_model

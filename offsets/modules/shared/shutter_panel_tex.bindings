@@ -1,0 +1,13 @@
+pointer  textures  0x00000000  miu128_cg004
+pointer  textures  0x0000000c  miu128_cg008
+pointer  textures  0x00000018  miu128_cg016
+pointer  textures  0x00000024  miu128_cg022
+pointer  textures  0x00000030  shutter_miu256_cg004
+pointer  textures  0x0000003c  shutter_miu256_cg005
+pointer  textures  0x00000048  shutter_miu256_cg006
+pointer  textures  0x00000054  shutter_miu32_cg001
+pointer  textures  0x00000060  shutter_miu64_cg009
+pointer  textures  0x0000006c  shutter_miu64_cg019
+pointer  textures  0x00000078  miu64_cg021
+pointer  core_shutter_texlist  0x00000000  textures
+include core_shutter_near

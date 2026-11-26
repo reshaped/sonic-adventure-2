@@ -1,0 +1,12 @@
+datum  bomb_polygons  D  0x00000000  1314
+datum  bomb_vertices  D  0x00000524  1740
+datum  mech_boss_beam_bomb_model  D  0x00000bf0  24
+datum  bomb  D  0x00000c08  52
+datum  beam_pillar_polygons  D  0x00000c3c  158
+datum  beam_pillar_vertices  D  0x00000cdc  492
+datum  beam_pillar_mesh  D  0x00000ec8  24
+datum  mech_boss_beam_pillar_object  D  0x00000ee0  52
+datum  beam_torus_polygons  D  0x00000f14  158
+datum  beam_torus_vertices  D  0x00000fb4  492
+datum  beam_torus_mesh  D  0x000011a0  24
+datum  mech_boss_beam_torus_object  D  0x000011b8  52

@@ -1,0 +1,3 @@
+pointer  models  0x00000000  red_model
+pointer  models  0x00000004  green_model
+pointer  models  0x00000008  blue_model

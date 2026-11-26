@@ -1,0 +1,8 @@
+datum  head_model_textures  D  0x00000000  60
+datum  golem_head_model_texlist  D  0x0000003c  8
+datum  head_model_polygons  D  0x00000044  824
+datum  head_model_vertices  D  0x0000037c  1188
+datum  head_model_model  D  0x00000820  24
+datum  golem_head_model_object  D  0x00000838  52
+datum  head_model_uvs  D  0x0000086c  80
+datum  head_cap_scroll  D  0x000008bc  36

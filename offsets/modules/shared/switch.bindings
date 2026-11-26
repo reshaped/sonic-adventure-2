@@ -1,0 +1,25 @@
+text  SWITCH_TEXT_SIKAKE_01_128  14
+text  SWITCH_TEXT_TOGGLE_TYPE  12
+text  SWITCH_TEXT_PUSH_TYPE  10
+text  SWITCH_TEXT_OFF_AFTER_A_WHILE  18
+text  SWITCH_TEXT_TURN_ON_ONLY  13
+text  SWITCH_TEXT_UNDEFIND_TYPE  14
+
+pointer  switch_texname  0x00000000  SWITCH_TEXT_SIKAKE_01_128
+pointer  switch_texlist  0x00000000  switch_texname
+pointer  switch_pad_model  0x00000000  switch_pad_vertices
+pointer  switch_pad_model  0x00000004  switch_pad_polygons
+pointer  switch_pad_object  0x00000004  switch_pad_model
+pointer  switch_cap_model  0x00000000  switch_cap_vertices
+pointer  switch_cap_model  0x00000004  switch_cap_polygons
+pointer  switch_cap_object  0x00000004  switch_cap_model
+pointer  switch_cap_object  0x00000030  switch_pad_object
+pointer  switch_base_model  0x00000000  switch_base_vertices
+pointer  switch_base_model  0x00000004  switch_base_polygons
+pointer  switch_base_object  0x00000004  switch_base_model
+pointer  switch_base_object  0x0000002c  switch_cap_object
+pointer  switch_kind_names  0x00000000  SWITCH_TEXT_TOGGLE_TYPE
+pointer  switch_kind_names  0x00000004  SWITCH_TEXT_PUSH_TYPE
+pointer  switch_kind_names  0x00000008  SWITCH_TEXT_OFF_AFTER_A_WHILE
+pointer  switch_kind_names  0x0000000c  SWITCH_TEXT_TURN_ON_ONLY
+pointer  switch_kind_names  0x00000010  SWITCH_TEXT_UNDEFIND_TYPE

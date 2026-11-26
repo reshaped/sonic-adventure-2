@@ -1,0 +1,17 @@
+text  WOOD_FENCE_TEXTURE_JUNGLE128_9  C  0x0000000c  12
+text  WOOD_FENCE_TEXTURE_JUNGLE64_1  C  0x00000018  11
+datum  wood_fence_textures  D  0x00000000  24
+datum  wood_fence_texlist  D  0x00000018  8
+datum  wood_fence_polygons  D  0x00000020  450
+datum  wood_fence_vertices  D  0x000001e4  684
+datum  wood_fence_model  D  0x00000490  24
+datum  wood_fence_object  D  0x000004a8  52
+datum  wood_fence_collision_materials  D  0x000004dc  20
+datum  wood_fence_collision_indices_0  D  0x000004f0  38
+datum  wood_fence_collision_meshsets  D  0x00000518  24
+datum  wood_fence_collision_points  D  0x00000530  96
+datum  wood_fence_collision_normals  D  0x00000590  96
+datum  wood_fence_collision_model  D  0x000005f0  40
+datum  wood_fence_collision  D  0x00000618  52
+datum  wood_fence_texlists  D  0x0000064c  8
+datum  wood_fence_shape  D  0x00000654  48

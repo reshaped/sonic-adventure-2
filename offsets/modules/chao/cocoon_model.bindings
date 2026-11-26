@@ -1,0 +1,3 @@
+pointer  cocoon_mesh  0x00000000  cocoon_model_vertices
+pointer  cocoon_mesh  0x00000004  cocoon_model_polygons
+pointer  cocoon_model  0x00000004  cocoon_mesh

@@ -1,0 +1,22 @@
+text  HINT_BOX_TEXT_SIKAKE_02_128  14
+text  HINT_BOX_TEXT_SIKAKE_03_64  13
+text  HINT_BOX_TEXT_SIKAKE_04_64  13
+text  HINT_BOX_TEXT_SIKAKE_11_64  13
+text  HINT_BOX_TEXT_SIKAKE_12_64  13
+
+pointer  hint_box_texnames  0x00000000  HINT_BOX_TEXT_SIKAKE_02_128
+pointer  hint_box_texnames  0x0000000c  HINT_BOX_TEXT_SIKAKE_03_64
+pointer  hint_box_texnames  0x00000018  HINT_BOX_TEXT_SIKAKE_04_64
+pointer  hint_box_texnames  0x00000024  HINT_BOX_TEXT_SIKAKE_11_64
+pointer  hint_box_texnames  0x00000030  HINT_BOX_TEXT_SIKAKE_12_64
+pointer  hint_box_texlist  0x00000000  hint_box_texnames
+pointer  hint_box_model  0x00000000  hint_box_vertices
+pointer  hint_box_model  0x00000004  hint_box_polygons
+pointer  hint_box_object  0x00000004  hint_box_model
+pointer  hint_box_panel_texname  0x00000000  HINT_BOX_TEXT_SIKAKE_12_64
+pointer  hint_box_panel_texlist  0x00000000  hint_box_panel_texname
+pointer  hint_box_panel_model  0x00000000  hint_box_panel_vertices
+pointer  hint_box_panel_model  0x00000004  hint_box_panel_polygons
+pointer  hint_box_panel_object  0x00000004  hint_box_panel_model
+pointer  hint_box_texlists  0x00000000  hint_box_texlist
+pointer  hint_box_texlists  0x00000004  hint_box_panel_texlist

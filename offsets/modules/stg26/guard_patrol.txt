@@ -1,0 +1,4 @@
+datum  guard_path_points  D  0x00000000  3612
+datum  guard_path  D  0x00000e1c  16
+datum  guard_texlists  D  0x00000e30  20
+datum  guard_model_builds  D  0x00000e80  16

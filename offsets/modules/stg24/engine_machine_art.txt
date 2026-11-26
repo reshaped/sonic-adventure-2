@@ -1,0 +1,11 @@
+datum  engine_machine_object_child_sibling_polygons  D  0x00000000  50
+datum  engine_machine_object_child_sibling_vertices  D  0x00000034  76
+datum  engine_machine_object_child_sibling_model  D  0x00000080  24
+datum  engine_machine_object_child_sibling  D  0x00000098  52
+datum  engine_machine_object_child_polygons  D  0x000000cc  202
+datum  engine_machine_object_child_vertices  D  0x00000198  396
+datum  engine_machine_object_child_model  D  0x00000324  24
+datum  engine_machine_object_child  D  0x0000033c  52
+datum  engine_machine_object  D  0x00000370  52
+datum  engine_machine_scroll_uv_keys  D  0x000003a4  132
+datum  engine_machine_scroll  D  0x00000428  36

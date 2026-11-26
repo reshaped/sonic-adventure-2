@@ -1,0 +1,14 @@
+text  PLATFORMS_SWING_TEXTURE_FILENAME  C  0x00000000  14
+datum  textures  D  0x00000000  12
+datum  base_swing_texlist  D  0x0000000c  8
+datum  swing_polygons  D  0x00000014  198
+datum  swing_vertices  D  0x000000dc  588
+datum  swing_model  D  0x00000328  24
+datum  swing_object  D  0x00000340  52
+datum  swing_collision_materials  D  0x00000374  20
+datum  swing_collision_faces  D  0x00000388  42
+datum  swing_collision_meshsets  D  0x000003b4  24
+datum  swing_collision_points  D  0x000003cc  96
+datum  swing_collision_normals  D  0x0000042c  96
+datum  swing_collision_model  D  0x0000048c  40
+datum  swing_collision  D  0x000004b4  52

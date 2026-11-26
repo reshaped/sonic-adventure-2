@@ -1,0 +1,3 @@
+datum  base_models  D  0x00000000  12
+datum  light_models  D  0x0000000c  12
+datum  quarters_arrow_texlists  D  0x00000018  16

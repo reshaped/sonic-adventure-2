@@ -1,0 +1,3 @@
+pointer  motions  0x00000000  finalhazard_camera_first
+pointer  motions  0x00000004  finalhazard_camera_second
+pointer  motions  0x00000008  finalhazard_camera_third

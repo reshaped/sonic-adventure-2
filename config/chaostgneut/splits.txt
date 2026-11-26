@@ -1,0 +1,24 @@
+file                               SONIC2/CHAOSTGNEUT.PRS
+
+# section                          start       end
+DHEAD                              0x0c9c0000  0x0c9c0020
+P                                  0x0c9c0020  0x0c9c1060
+C                                  0x0c9c1060  0x0c9c1260
+D                                  0x0c9c1260  0x0c9cd0a0
+
+# source                           section     start       end
+modules/chaostgneut/head.c         DHEAD       0x0c9c0000  0x0c9c0014
+modules/chaostgneut/garden.c       P           0x0c9c0020  0x0c9c0600
+modules/shared/object_light.c      P           0x0c9c0600  0x0c9c0e20
+modules/shared/collision_object.c  P           0x0c9c0e20  0x0c9c1060
+modules/chaostgneut/garden.c       C           0x0c9c1060  0x0c9c1122
+modules/chaostgneut/textures.c     C           0x0c9c1124  0x0c9c11b4
+modules/chaostgneut/objects.c      C           0x0c9c11b4  0x0c9c11f8
+modules/shared/object_light.c      C           0x0c9c11f8  0x0c9c1207
+modules/shared/collision_object.c       C           0x0c9c1208  0x0c9c1260
+modules/chaostgneut/garden.c       D           0x0c9c1260  0x0c9c1344
+modules/chaostgneut/textures.c     D           0x0c9c1344  0x0c9ccf08
+modules/chaostgneut/objects.c      D           0x0c9ccf08  0x0c9ccf78
+modules/shared/object_light.c      D           0x0c9ccf78  0x0c9ccf7c
+modules/shared/dat_collision_object_1.c  D           0x0c9ccf7c  0x0c9ccf80
+modules/shared/collision_object.c  D           0x0c9ccf80  0x0c9cd0a0

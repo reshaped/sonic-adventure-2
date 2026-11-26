@@ -1,0 +1,9 @@
+datum  knudai_warp_hole_texname  D  0x00000000  12
+datum  knudai_warp_hole_texlist  D  0x0000000c  8
+datum  knudai_warp_hole_texlists  D  0x00000014  16
+text  KNUDAI_WARP_HOLE_DEBUG_ID  C  0x00000000  6
+text  KNUDAI_WARP_HOLE_DEBUG_YAW  C  0x00000008  11
+text  KNUDAI_WARP_HOLE_DEBUG_EXIT_X  C  0x00000014  12
+text  KNUDAI_WARP_HOLE_DEBUG_EXIT_Y  C  0x00000020  12
+text  KNUDAI_WARP_HOLE_DEBUG_EXIT_Z  C  0x0000002c  12
+text  KNUDAI_WARP_HOLE_TEXTURE_33  C  0x00000038  14

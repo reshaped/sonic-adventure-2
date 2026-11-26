@@ -1,0 +1,115 @@
+text  TRUCK_TEXTURE_GUN_LOGO001  12
+text  TRUCK_TEXTURE_GUN_T1  7
+text  TRUCK_TEXTURE_LIGHT1  7
+text  TRUCK_TEXTURE_MIU32_CE002  12
+text  TRUCK_TEXTURE_MIU32_CE006  12
+text  TRUCK_TEXTURE_SIKAKE_20_128  14
+text  TRUCK_TEXTURE_TRUCK1  7
+text  TRUCK_TEXTURE_TRUCK2  7
+text  TRUCK_TEXTURE_TRUCK3  7
+text  TRUCK_TEXTURE_WHEEL1  7
+text  TRUCK_TEXTURE_LIGHT2  7
+text  TRUCK_TEXTURE_TRUCK_TES02  12
+text  TRUCK_TEXTURE_TRUCK5  7
+text  TRUCK_TEXTURE_MIU128_RH004  13
+text  TRUCK_TEXTURE_MIU32_RH003  12
+
+pointer truck_path  0x00000008  truck_path_points
+pointer truck_texture_names  0x00000000  TRUCK_TEXTURE_GUN_LOGO001
+pointer truck_texture_names  0x0000000c  TRUCK_TEXTURE_GUN_T1
+pointer truck_texture_names  0x00000018  TRUCK_TEXTURE_LIGHT1
+pointer truck_texture_names  0x00000024  TRUCK_TEXTURE_MIU32_CE002
+pointer truck_texture_names  0x00000030  TRUCK_TEXTURE_MIU32_CE006
+pointer truck_texture_names  0x0000003c  TRUCK_TEXTURE_SIKAKE_20_128
+pointer truck_texture_names  0x00000048  TRUCK_TEXTURE_TRUCK1
+pointer truck_texture_names  0x00000054  TRUCK_TEXTURE_TRUCK2
+pointer truck_texture_names  0x00000060  TRUCK_TEXTURE_TRUCK3
+pointer truck_texture_names  0x0000006c  TRUCK_TEXTURE_WHEEL1
+pointer truck_texture_names  0x00000078  TRUCK_TEXTURE_LIGHT1
+pointer truck_texlist  0x00000000  truck_texture_names
+pointer truck_unlit_texture_names  0x00000000  TRUCK_TEXTURE_GUN_LOGO001
+pointer truck_unlit_texture_names  0x0000000c  TRUCK_TEXTURE_GUN_T1
+pointer truck_unlit_texture_names  0x00000018  TRUCK_TEXTURE_LIGHT1
+pointer truck_unlit_texture_names  0x00000024  TRUCK_TEXTURE_MIU32_CE002
+pointer truck_unlit_texture_names  0x00000030  TRUCK_TEXTURE_MIU32_CE006
+pointer truck_unlit_texture_names  0x0000003c  TRUCK_TEXTURE_SIKAKE_20_128
+pointer truck_unlit_texture_names  0x00000048  TRUCK_TEXTURE_TRUCK1
+pointer truck_unlit_texture_names  0x00000054  TRUCK_TEXTURE_TRUCK2
+pointer truck_unlit_texture_names  0x00000060  TRUCK_TEXTURE_TRUCK3
+pointer truck_unlit_texture_names  0x0000006c  TRUCK_TEXTURE_WHEEL1
+pointer truck_unlit_texture_names  0x00000078  TRUCK_TEXTURE_LIGHT2
+pointer truck_unlit_texlist  0x00000000  truck_unlit_texture_names
+pointer truck_front_wheel_2_model  0x00000000  truck_front_wheel_2_vertices
+pointer truck_front_wheel_2_model  0x00000004  truck_front_wheel_2_polygons
+pointer truck_front_wheel_2  0x00000004  truck_front_wheel_2_model
+pointer truck_front_wheel_1_model  0x00000000  truck_front_wheel_1_vertices
+pointer truck_front_wheel_1_model  0x00000004  truck_front_wheel_1_polygons
+pointer truck_front_wheel_1  0x00000004  truck_front_wheel_1_model
+pointer truck_front_wheel_1  0x00000030  truck_front_wheel_2
+pointer truck_front_model  0x00000000  truck_front_vertices
+pointer truck_front_model  0x00000004  truck_front_polygons
+pointer truck_front_object  0x00000004  truck_front_model
+pointer truck_front_object  0x00000030  truck_front_wheel_1
+pointer truck_rear_wheel_2_model  0x00000000  truck_rear_wheel_2_vertices
+pointer truck_rear_wheel_2_model  0x00000004  truck_rear_wheel_2_polygons
+pointer truck_rear_wheel_2  0x00000004  truck_rear_wheel_2_model
+pointer truck_rear_wheel_2  0x00000030  truck_front_object
+pointer truck_back_model  0x00000000  truck_back_vertices
+pointer truck_back_model  0x00000004  truck_back_polygons
+pointer truck_back_object  0x00000004  truck_back_model
+pointer truck_back_object  0x00000030  truck_rear_wheel_2
+pointer truck_trailer_model  0x00000000  truck_trailer_vertices
+pointer truck_trailer_model  0x00000004  truck_trailer_polygons
+pointer truck_trailer_object  0x00000004  truck_trailer_model
+pointer truck_trailer_object  0x00000030  truck_back_object
+pointer truck_rear_wheel_1_model  0x00000000  truck_rear_wheel_1_vertices
+pointer truck_rear_wheel_1_model  0x00000004  truck_rear_wheel_1_polygons
+pointer truck_rear_wheel_1  0x00000004  truck_rear_wheel_1_model
+pointer truck_rear_wheel_1  0x00000030  truck_trailer_object
+pointer truck_model  0x00000000  truck_vertices
+pointer truck_model  0x00000004  truck_polygons
+pointer truck_object  0x00000004  truck_model
+pointer truck_object  0x0000002c  truck_rear_wheel_1
+pointer truck_roof_texture_names  0x00000000  TRUCK_TEXTURE_TRUCK3
+pointer truck_roof_texture_names  0x0000000c  TRUCK_TEXTURE_TRUCK_TES02
+pointer truck_roof_texlist  0x00000000  truck_roof_texture_names
+pointer truck_roof_model  0x00000000  truck_roof_vertices
+pointer truck_roof_model  0x00000004  truck_roof_polygons
+pointer truck_roof_object  0x00000004  truck_roof_model
+pointer truck_roof_anim  0x00000010  truck_roof_uvs
+pointer truck_scroll_texture_names_1  0x00000000  TRUCK_TEXTURE_TRUCK5
+pointer truck_scroll_texture_names_1  0x0000000c  TRUCK_TEXTURE_TRUCK_TES02
+pointer truck_scroll_texlist_1  0x00000000  truck_scroll_texture_names_1
+pointer truck_scroll_1_model  0x00000000  truck_scroll_1_vertices
+pointer truck_scroll_1_model  0x00000004  truck_scroll_1_polygons
+pointer truck_scroll_object_1  0x00000004  truck_scroll_1_model
+pointer truck_scroll_anim_1  0x00000010  truck_scroll_uvs_1
+pointer truck_scroll_texture_names_2  0x00000000  TRUCK_TEXTURE_TRUCK5
+pointer truck_scroll_texture_names_2  0x0000000c  TRUCK_TEXTURE_TRUCK_TES02
+pointer truck_scroll_texlist_2  0x00000000  truck_scroll_texture_names_2
+pointer truck_scroll_2_model  0x00000000  truck_scroll_2_vertices
+pointer truck_scroll_2_model  0x00000004  truck_scroll_2_polygons
+pointer truck_scroll_object_2  0x00000004  truck_scroll_2_model
+pointer truck_scroll_anim_2  0x00000010  truck_scroll_uvs_2
+pointer truck_scroll_texture_names_3  0x00000000  TRUCK_TEXTURE_TRUCK5
+pointer truck_scroll_texture_names_3  0x0000000c  TRUCK_TEXTURE_TRUCK_TES02
+pointer truck_scroll_texlist_3  0x00000000  truck_scroll_texture_names_3
+pointer truck_scroll_3_model  0x00000000  truck_scroll_3_vertices
+pointer truck_scroll_3_model  0x00000004  truck_scroll_3_polygons
+pointer truck_scroll_object_3  0x00000004  truck_scroll_3_model
+pointer truck_scroll_anim_3  0x00000010  truck_scroll_uvs_3
+pointer lamp_texture_names  0x00000000  TRUCK_TEXTURE_MIU128_RH004
+pointer lamp_texture_names  0x0000000c  TRUCK_TEXTURE_MIU32_RH003
+pointer lamp_texlist  0x00000000  lamp_texture_names
+pointer truck_texlists  0x00000000  truck_texlist
+pointer truck_texlists  0x00000004  truck_unlit_texlist
+pointer truck_texlists  0x00000008  truck_scroll_texlist_1
+pointer truck_texlists  0x0000000c  truck_scroll_texlist_2
+pointer truck_texlists  0x00000010  truck_scroll_texlist_3
+pointer truck_texlists  0x00000014  dust_texlist
+pointer truck_texlists  0x00000018  truck_roof_texlist
+pointer truck_texlists  0x0000001c  lamp_texlist
+pointer lamp_trail_style  0x00000014  lamp_texlist
+pointer truck_specs  0x00000004  truck_shapes
+pointer truck_paths  0x00000000  truck_path
+pointer truck_paths  0x00000004  car_path_1

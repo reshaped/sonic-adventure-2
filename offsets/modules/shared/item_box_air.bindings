@@ -1,0 +1,41 @@
+# The air box owns the capsule meshes and the callbacks for all eleven items.
+text BOX_ANGLE_Y_LABEL 11
+text BOX_ANGLE_Z_LABEL 11
+text BOX_ITEM_LABEL 8
+text BOX_RING_TEXTURE 13
+text BOX_CAP_TEXTURE 14
+text BOX_CAPSULE_TEXTURE 13
+
+pointer item_box_air_textures  0x00000000  BOX_RING_TEXTURE
+pointer item_box_air_textures  0x0000000c  BOX_CAP_TEXTURE
+pointer item_box_air_textures  0x00000018  BOX_CAPSULE_TEXTURE
+pointer item_box_air_texlist  0x00000000  item_box_air_textures
+pointer item_box_air_middle_model  0x00000000  item_box_air_middle_vertices
+pointer item_box_air_middle_model  0x00000004  item_box_air_middle_polygons
+pointer item_box_air_middle_object  0x00000004  item_box_air_middle_model
+pointer item_box_air_icon_model  0x00000000  item_box_air_icon_vertices
+pointer item_box_air_icon_model  0x00000004  item_box_air_icon_polygons
+pointer item_box_air_icon_object  0x00000004  item_box_air_icon_model
+pointer item_box_air_icon_object  0x00000030  item_box_air_middle_object
+pointer item_box_air_upper_model  0x00000000  item_box_air_upper_vertices
+pointer item_box_air_upper_model  0x00000004  item_box_air_upper_polygons
+pointer item_box_air_upper_object  0x00000004  item_box_air_upper_model
+pointer item_box_air_upper_object  0x00000030  item_box_air_icon_object
+pointer item_box_air_lower_model  0x00000000  item_box_air_lower_vertices
+pointer item_box_air_lower_model  0x00000004  item_box_air_lower_polygons
+pointer item_box_air_lower_object  0x00000004  item_box_air_lower_model
+pointer item_box_air_lower_object  0x0000002c  item_box_air_upper_object
+pointer item_box_air_texlists  0x00000000  item_box_air_texlist
+pointer item_box_air_texlists  0x00000004  item_icon_texlist
+pointer item_box_air_texlists  0x00000008  white_breath_texlist
+pointer item_box_air_items  0x00000004  item_box_air_give_speed_up
+pointer item_box_air_items  0x0000000c  item_box_air_give_5_rings
+pointer item_box_air_items  0x00000014  item_box_air_give_1up
+pointer item_box_air_items  0x0000001c  item_box_air_give_10_rings
+pointer item_box_air_items  0x00000024  item_box_air_give_20_rings
+pointer item_box_air_items  0x0000002c  item_box_air_give_barrier
+pointer item_box_air_items  0x00000034  item_box_air_give_bomb
+pointer item_box_air_items  0x0000003c  item_box_air_give_life
+pointer item_box_air_items  0x00000044  item_box_air_give_magnetic_barrier
+pointer item_box_air_items  0x0000004c  item_box_air_give_nothing
+pointer item_box_air_items  0x00000054  item_box_air_give_invincibility

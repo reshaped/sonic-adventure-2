@@ -1,0 +1,269 @@
+; the output of a macroblock predicted from two reference pictures: the
+; average of its two predictions, with its residuals added
+
+; byte offsets of struct mpv_mb's fields
+MB_CLIP:        .EQU    0
+MB_BLOCKS:      .EQU    4
+MB_PREDICTION:  .EQU    8
+MB_BACKWARD_PREDICTION: .EQU 12
+; MPV_BLOCKS and MPV_COEFS are sofdec.h's counts of a macroblock's blocks and
+; of a block's coefficients, and so of its pixels. a block has BLK_LINES rows
+; of ROW_BYTES pixels
+MPV_BLOCKS:     .EQU    6
+MPV_COEFS:      .EQU    64
+BLK_LINES:      .EQU    8
+ROW_BYTES:      .EQU    8
+
+        .EXPORT     _MPVACMC_BiMakeMbTaSub
+
+        .SECTION    PSGSFD00,CODE,ALIGN=4
+
+; void MPVACMC_BiMakeMbTaSub(Uint8 *out, const struct mpv_mb *mb, Uint32 cbp)
+; the call is MPVACMC_OneMakeMbTaSub for two predictions. it first sets each
+; pixel a at mb->prediction to (a + b + 1) >> 1. b is the pixel at a's place
+; in mb->backward_prediction. unlike MPVACMC_OneMakeMbTaSub, the call reads
+; nothing past a block.
+; the first FSCHG sets FPSCR.SZ, so each FMOV of a DR register moves a row's
+; 8 bytes
+; @asm operand: zero-displacement, MOV.L @(MB_CLIP,R5),R0 at 0x8c18a4f8 loads
+; mb->clip through a displacement of 0
+_MPVACMC_BiMakeMbTaSub:
+        MOV.L       R14,@-R15
+        MOV         R6,R14
+        MOV.L       @(MB_CLIP,R5),R0
+        FSCHG
+        MOV.L       @(MB_BLOCKS,R5),R7
+        MOV.L       @(MB_BACKWARD_PREDICTION,R5),R6
+        MOV.L       @(MB_PREDICTION,R5),R5
+        MOV.L       R13,@-R15
+        MOV         #MPV_COEFS,R13
+        MOV.L       R12,@-R15
+        MOV         R5,R3
+        MOV.L       R11,@-R15
+        SHLL        R13
+        MOV.L       R10,@-R15
+        MOV         #MPV_BLOCKS,R11
+        MOV.L       R9,@-R15
+        SHLL        R14
+?block:
+        BT/S        ?add_row
+        MOV         #BLK_LINES,R12
+        ADD         R13,R7
+?average_row:
+        MOV.B       @R6+,R2
+        MOV.B       @R5+,R1
+        EXTU.B      R2,R2
+        MOV.B       @R6+,R10
+        EXTU.B      R1,R1
+        MOV.B       @R5+,R9
+        ADD         R2,R1
+        ADD         #1,R1
+        SHAR        R1
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        MOV.B       @R6+,R2
+        EXTU.B      R10,R10
+        MOV.B       @R5+,R1
+        EXTU.B      R9,R9
+        ADD         R10,R9
+        ADD         #1,R9
+        SHAR        R9
+        MOV.B       R9,@R3
+        ADD         #1,R3
+        EXTU.B      R2,R2
+        MOV.B       @R6+,R10
+        EXTU.B      R1,R1
+        MOV.B       @R5+,R9
+        ADD         R2,R1
+        ADD         #1,R1
+        SHAR        R1
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        EXTU.B      R10,R10
+        MOV.B       @R6+,R2
+        EXTU.B      R9,R9
+        MOV.B       @R5+,R1
+        ADD         R10,R9
+        ADD         #1,R9
+        SHAR        R9
+        MOV.B       R9,@R3
+        ADD         #1,R3
+        EXTU.B      R2,R2
+        MOV.B       @R6+,R10
+        EXTU.B      R1,R1
+        MOV.B       @R5+,R9
+        ADD         R2,R1
+        ADD         #1,R1
+        SHAR        R1
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        EXTU.B      R10,R10
+        MOV.B       @R6+,R2
+        EXTU.B      R9,R9
+        MOV.B       @R5+,R1
+        ADD         R10,R9
+        ADD         #1,R9
+        SHAR        R9
+        MOV.B       R9,@R3
+        ADD         #1,R3
+        EXTU.B      R2,R2
+        MOV.B       @R6+,R10
+        EXTU.B      R1,R1
+        MOV.B       @R5+,R9
+        ADD         R2,R1
+        ADD         #1,R1
+        SHAR        R1
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        EXTU.B      R10,R10
+        EXTU.B      R9,R9
+        ADD         R10,R9
+        ADD         #1,R9
+        SHAR        R9
+        DT          R12
+        MOV.B       R9,@R3
+        BF/S        ?average_row
+        ADD         #1,R3
+        BRA         ?copy
+        NOP
+?add_row:
+        MOV.B       @R6+,R2
+        MOV.B       @R5+,R1
+        EXTU.B      R2,R2
+        MOV.B       @R6+,R10
+        EXTU.B      R1,R1
+        MOV.B       @R5+,R9
+        ADD         R2,R1
+        MOV.W       @R7+,R2
+        ADD         #1,R1
+        SHAR        R1
+        ADD         R2,R1
+        EXTU.B      R10,R10
+        MOV.B       @(R0,R1),R1
+        EXTU.B      R9,R9
+        ADD         R10,R9
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        MOV.W       @R7+,R10
+        ADD         #1,R9
+        MOV.B       @R6+,R2
+        SHAR        R9
+        MOV.B       @R5+,R1
+        ADD         R10,R9
+        EXTU.B      R2,R2
+        MOV.B       @(R0,R9),R9
+        EXTU.B      R1,R1
+        ADD         R2,R1
+        MOV.B       R9,@R3
+        ADD         #1,R3
+        MOV.W       @R7+,R2
+        ADD         #1,R1
+        MOV.B       @R6+,R10
+        SHAR        R1
+        MOV.B       @R5+,R9
+        ADD         R2,R1
+        EXTU.B      R10,R10
+        MOV.B       @(R0,R1),R1
+        EXTU.B      R9,R9
+        ADD         R10,R9
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        MOV.W       @R7+,R10
+        ADD         #1,R9
+        MOV.B       @R6+,R2
+        SHAR        R9
+        MOV.B       @R5+,R1
+        ADD         R10,R9
+        EXTU.B      R2,R2
+        MOV.B       @(R0,R9),R9
+        EXTU.B      R1,R1
+        ADD         R2,R1
+        MOV.B       R9,@R3
+        ADD         #1,R3
+        MOV.W       @R7+,R2
+        ADD         #1,R1
+        MOV.B       @R6+,R10
+        SHAR        R1
+        MOV.B       @R5+,R9
+        ADD         R2,R1
+        EXTU.B      R9,R9
+        MOV.B       @(R0,R1),R1
+        EXTU.B      R10,R10
+        ADD         R10,R9
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        MOV.W       @R7+,R10
+        ADD         #1,R9
+        MOV.B       @R6+,R2
+        SHAR        R9
+        MOV.B       @R5+,R1
+        ADD         R10,R9
+        EXTU.B      R2,R2
+        MOV.B       @(R0,R9),R9
+        EXTU.B      R1,R1
+        ADD         R2,R1
+        MOV.B       R9,@R3
+        ADD         #1,R3
+        MOV.W       @R7+,R2
+        ADD         #1,R1
+        MOV.B       @R6+,R10
+        SHAR        R1
+        MOV.B       @R5+,R9
+        ADD         R2,R1
+        EXTU.B      R10,R10
+        MOV.B       @(R0,R1),R1
+        EXTU.B      R9,R9
+        ADD         R10,R9
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        MOV.W       @R7+,R10
+        ADD         #1,R9
+        SHAR        R9
+        ADD         R10,R9
+        MOV.B       @(R0,R9),R9
+        DT          R12
+        MOV.B       R9,@R3
+        BF/S        ?add_row
+        ADD         #1,R3
+?copy:
+        ADD         #-MPV_COEFS,R5
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        DR0,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR2,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR4,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR6,@R4
+        PREF        @R4
+        ADD         #ROW_BYTES,R4
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        DR0,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR2,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR4,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR6,@R4
+        DT          R11
+        PREF        @R4
+        BT/S        ?done
+        ADD         #ROW_BYTES,R4
+        BRA         ?block
+        SHLL        R14
+?done:
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R10
+        MOV.L       @R15+,R11
+        MOV.L       @R15+,R12
+        FSCHG
+        MOV.L       @R15+,R13
+        RTS
+        MOV.L       @R15+,R14
+        .END

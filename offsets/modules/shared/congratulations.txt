@@ -1,0 +1,8 @@
+datum  congratulations_cells  D  0x00000020  60
+text   CONGRATULATIONS_ARCHIVE  C  0x00000000  16
+text   TITLE_TEXTURE  C  0x0000001c  29
+text   RAINBOW_TEXTURE  C  0x0000003c  29
+datum  congratulations_texnames  D  0x00000000  24
+datum  congratulations_texlist  D  0x00000018  8
+datum  title_sprite  D  0x000001c8  40
+datum  rainbow_sprite  D  0x000001f0  40

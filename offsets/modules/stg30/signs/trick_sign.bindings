@@ -1,0 +1,6 @@
+pointer textures 0x00000000 trick_sign_miu32_fr006
+pointer trick_sign_texlist 0x00000000 textures
+pointer trick_sign_mesh 0x00000000 trick_sign_vertices
+pointer trick_sign_mesh 0x00000004 trick_sign_polygons
+pointer trick_sign_object 0x00000004 trick_sign_mesh
+pointer trick_sign_anim 0x00000010 trick_sign_uvs

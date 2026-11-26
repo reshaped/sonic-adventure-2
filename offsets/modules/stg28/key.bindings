@@ -1,0 +1,65 @@
+text KEY_TEXTURE_DZ_PC_DOORKEY_KANKYOU64 24
+text KEY_TEXTURE_DZ_PC_IRONBAR_DISH128 22
+text KEY_TEXTURE_DZ_PC_HASIRA128 16
+text KEY_TEXTURE_KD_PC_HASIRA3 14
+text KEY_LABEL_BLUE 6
+text KEY_LABEL_GREEN 6
+
+pointer cave_key_texture_names_blue  0x00000000  KEY_TEXTURE_DZ_PC_DOORKEY_KANKYOU64
+pointer cave_key_texture_names_blue  0x0000000c  KEY_TEXTURE_DZ_PC_IRONBAR_DISH128
+pointer cave_key_texlist_blue  0x00000000  cave_key_texture_names_blue
+pointer cave_key_model_blue  0x00000000  cave_key_model_blue_vertices
+pointer cave_key_model_blue  0x00000004  cave_key_model_blue_polygons
+pointer cave_key_blue_object  0x00000004  cave_key_model_blue
+pointer cave_key_unlit_model_blue  0x00000000  cave_key_unlit_model_blue_vertices
+pointer cave_key_unlit_model_blue  0x00000004  cave_key_unlit_model_blue_polygons
+pointer cave_key_unlit_blue_object  0x00000004  cave_key_unlit_model_blue
+pointer cave_key_unlit_blue_object  0x00000030  cave_key_blue_object
+pointer cave_key_unlit_blue_assembly  0x0000002c  cave_key_unlit_blue_object
+pointer cave_key_texture_names_green  0x00000000  KEY_TEXTURE_DZ_PC_DOORKEY_KANKYOU64
+pointer cave_key_texture_names_green  0x0000000c  KEY_TEXTURE_DZ_PC_IRONBAR_DISH128
+pointer cave_key_texlist_green  0x00000000  cave_key_texture_names_green
+pointer cave_key_model_green  0x00000000  cave_key_model_green_vertices
+pointer cave_key_model_green  0x00000004  cave_key_model_green_polygons
+pointer cave_key_green_object  0x00000004  cave_key_model_green
+pointer cave_key_unlit_model_green  0x00000000  cave_key_unlit_model_green_vertices
+pointer cave_key_unlit_model_green  0x00000004  cave_key_unlit_model_green_polygons
+pointer cave_key_unlit_green_object  0x00000004  cave_key_unlit_model_green
+pointer cave_key_unlit_green_object  0x00000030  cave_key_green_object
+pointer cave_key_unlit_green_assembly  0x0000002c  cave_key_unlit_green_object
+pointer cave_key_stand_texture_names_blue  0x00000000  KEY_TEXTURE_DZ_PC_HASIRA128
+pointer cave_key_stand_texture_names_blue  0x0000000c  KEY_TEXTURE_KD_PC_HASIRA3
+pointer cave_key_stand_texlist_blue  0x00000000  cave_key_stand_texture_names_blue
+pointer cave_key_stand_model_blue  0x00000000  cave_key_stand_model_blue_vertices
+pointer cave_key_stand_model_blue  0x00000004  cave_key_stand_model_blue_polygons
+pointer cave_key_stand_blue_object  0x00000004  cave_key_stand_model_blue
+pointer cave_key_stand_texture_names_green  0x00000000  KEY_TEXTURE_DZ_PC_HASIRA128
+pointer cave_key_stand_texture_names_green  0x0000000c  KEY_TEXTURE_KD_PC_HASIRA3
+pointer cave_key_stand_texlist_green  0x00000000  cave_key_stand_texture_names_green
+pointer cave_key_stand_model_green  0x00000000  cave_key_stand_model_green_vertices
+pointer cave_key_stand_model_green  0x00000004  cave_key_stand_model_green_polygons
+pointer cave_key_stand_green_object  0x00000004  cave_key_stand_model_green
+pointer key_models  0x00000000  cave_key_model_blue
+pointer key_models  0x00000004  cave_key_model_green
+pointer key_unlit_models  0x00000000  cave_key_unlit_model_blue
+pointer key_unlit_models  0x00000004  cave_key_unlit_model_green
+pointer cave_key_texlists  0x00000000  cave_key_texlist_blue
+pointer cave_key_texlists  0x00000004  cave_key_texlist_green
+pointer cave_key_texlists  0x00000008  cave_key_stand_texlist_blue
+pointer cave_key_texlists  0x0000000c  cave_key_stand_texlist_green
+pointer stand_models  0x00000000  cave_key_stand_model_blue
+pointer stand_models  0x00000004  cave_key_stand_model_green
+pointer stand_texlists  0x00000000  cave_key_stand_texlist_blue
+pointer stand_texlists  0x00000004  cave_key_stand_texlist_green
+pointer color_names  0x00000000  KEY_LABEL_BLUE
+pointer color_names  0x00000004  KEY_LABEL_GREEN
+pointer key_mode_starts  0x00000000  key_loose_start
+pointer key_mode_starts  0x00000004  key_fly_start
+pointer key_mode_starts  0x00000008  key_sink_start
+pointer key_mode_starts  0x0000000c  key_lock_start
+pointer key_mode_starts  0x00000010  key_return_start
+pointer key_mode_steps  0x00000000  key_loose_step
+pointer key_mode_steps  0x00000004  key_fly_step
+pointer key_mode_steps  0x00000008  key_sink_step
+pointer key_mode_steps  0x0000000c  key_lock_step
+pointer key_mode_steps  0x00000010  key_return_step

@@ -1,0 +1,11 @@
+text  HARBOR_TEXTURE_MIU128_MH001  13
+pointer  harbor_board_textures  0x00000000  HARBOR_TEXTURE_MIU128_MH001
+pointer  harbor_board_texlist  0x00000000  harbor_board_textures
+pointer  harbor_board_deck_mesh  0x00000000  harbor_board_deck_vertices
+pointer  harbor_board_deck_mesh  0x00000004  harbor_board_deck_polygons
+pointer  harbor_board_deck  0x00000004  harbor_board_deck_mesh
+pointer  harbor_board_root  0x0000002c  harbor_board_deck
+pointer  harbor_board_shadow_mesh  0x00000000  harbor_board_shadow_vertices
+pointer  harbor_board_shadow_mesh  0x00000004  harbor_board_shadow_polygons
+pointer  harbor_board_shadow_object  0x00000004  harbor_board_shadow_mesh
+pointer  harbor_board_texlists  0x00000000  harbor_board_texlist

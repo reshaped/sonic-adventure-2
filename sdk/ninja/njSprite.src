@@ -1,0 +1,1645 @@
+; Ninja's sprites. a draw sends cell n of an NJS_SPRITE's tanim as one
+; polygon of textured vertices, through the store queues
+;
+; a draw makes the cell's texture current and sets the color mode. a starter,
+; njStartVertexTexOpaqueIntens or njStartVertexTexTransIntens, opens the
+; polygon. an emitter sends its vertices, and njEndVertex closes it. the
+; emitters are sprite_emit_2d, sprite_emit_billboard and
+; sprite_emit_transformed
+;
+; the cursor is the store queue address the next vertex goes to. a draw
+; starts it where the starter returns. the emitters and sprite_clip_near take
+; the cursor in R2 and return it there, past the vertices they sent. SHC
+; returns nothing in R2, so no C declaration fits them
+;
+; an emitter takes sp in R4, n in R5 and the draw's flags in R6. t is
+; sp->tanim[n], the cell. the emitter sends t's four corners about t's point
+; (t.cx, t.cy). a corner's x is x1 = -t.cx * sp->sx or
+; x2 = (t.sx - t.cx) * sp->sx. its y is
+; y1 = -t.cy * sp->sy or y2 = (t.sy - t.cy) * sp->sy. the corners go in the
+; order (x1, y1), (x1, y2), (x2, y1) and (x2, y2). their u and v are
+; (u1, v1), (u1, v2), (u2, v1) and (u2, v2). NJD_SPRITE_HFLIP swaps u1 and
+; u2, and NJD_SPRITE_VFLIP swaps v1 and v2. NJD_SPRITE_ANGLE turns the
+; corners about the cell's point by sp->ang
+
+; byte offsets of NJS_SPRITE's fields, and of NJS_TEXANIM's. NJS_TEXANIM's
+; sx, sy, cx and cy lie from byte 0. its u1, v1, u2 and v2 lie from TA_U1
+SP_SX:          .EQU    12
+SP_SY:          .EQU    16
+SP_ANG:         .EQU    20
+SP_TLIST:       .EQU    24
+SP_TANIM:       .EQU    28
+TA_U1:          .EQU    8
+TA_TEXID:       .EQU    16
+
+; the byte offset of NJS_SCREEN's cx. cy lies right after it
+SC_CX:          .EQU    12
+
+; the draw flags, as ninja.h defines them
+NJD_SPRITE_ANGLE:   .EQU    H'01
+NJD_SPRITE_COLOR:   .EQU    H'02
+NJD_SPRITE_HFLIP:   .EQU    H'04
+NJD_SPRITE_VFLIP:   .EQU    H'08
+NJD_SPRITE_SCALE:   .EQU    H'10
+NJD_SPRITE_ALPHA:   .EQU    H'20
+
+; the color modes a draw sets, as ninja.h defines them
+NJD_COLOR_MODE_FLAT_INTENSITY_TEXTURE:          .EQU    H'00080028
+NJD_COLOR_MODE_FLAT_INTENSITY_TEXTURE_TRANS:    .EQU    H'02100028
+
+; a vertex as the tile accelerator takes it, VERTEX_SIZE bytes. word 0 is its
+; parameter control word. words 1 to 6 hold x and y on the screen, 1/z, u,
+; v and an intensity of 1. this file writes words 0 to 6, the first
+; VERTEX_WRITTEN bytes, from word 6 down. word 7 goes out as the store queue
+; held it
+VERTEX_SIZE:    .EQU    32
+VERTEX_WRITTEN: .EQU    28
+; the parameter control word of a strip's vertices but its last
+KM_VERTEXPARAM_NORMAL:      .EQU    H'E0000000
+; the parameter control word of a strip's last vertex
+KM_VERTEXPARAM_ENDOFSTRIP:  .EQU    H'F0000000
+
+; a draw's frame keeps DRAW_PAD bytes below the registers it saves, which no
+; instruction reads
+DRAW_PAD:       .EQU    4
+
+; an emitter keeps its corners' u and v on the stack, in UV_BYTES bytes, as
+; floats of FLOAT_SIZE bytes. the first corner's u and v lie at the top, and
+; the others' follow down
+UV_BYTES:       .EQU    32
+FLOAT_SIZE:     .EQU    4
+
+; a corner as sprite_clip_near takes it, laid out as a vertex. its x and y on
+; the screen, 1/z, u and v lie in words 1 to 5: x from byte CORNER_X, u from
+; CORNER_U, and v up to CORNER_END. words 0, 6 and 7 go unwritten
+CORNER_SIZE:    .EQU    VERTEX_SIZE
+CORNER_X:       .EQU    4
+CORNER_U:       .EQU    16
+CORNER_END:     .EQU    24
+
+; corner bits mark the corners a clip test holds for. a quad's first corner
+; takes 8, down to 1 for its last. a triangle's first corner takes 4, down to
+; 1 for its third. QUAD_CORNERS marks a quad's four corners, and
+; TRIANGLE_CORNERS a triangle's three
+QUAD_CORNERS:   .EQU    H'0F
+TRIANGLE_CORNERS:   .EQU    H'07
+
+; sprite_clip_near sends a quad as QUAD_TRIANGLES triangles of
+; TRIANGLE_SIDES sides each. its count of a triangle's points reaches
+; THIRD_POINT at p3
+QUAD_TRIANGLES: .EQU    2
+TRIANGLE_SIDES: .EQU    3
+THIRD_POINT:    .EQU    3
+
+; sprite_clip_near keeps a corner's x, y and z in the view in VIEW_SIZE bytes.
+; its frame holds, from R15 up, CLIP_LOCALS bytes of locals, the point that
+; waits to be sent, as a corner, and then the four corners' x, y and z in the
+; view. the locals are the count of triangles left, which includes the
+; triangle being sent, then from byte CLIP_NEAR the near clip, cx and cy
+VIEW_SIZE:      .EQU    12
+CLIP_NEAR:      .EQU    4
+CLIP_LOCALS:    .EQU    16
+
+        .IMPORT     _njEndVertex
+        .IMPORT     _njGetkmPointer
+        .IMPORT     _njSetTexture
+        .IMPORT     _njSetkmColorMode
+        .IMPORT     _njSetkmPointer
+        .IMPORT     _njSetkmTextureNum
+        .IMPORT     _njStartVertexTexOpaqueIntens
+        .IMPORT     _njStartVertexTexTransIntens
+        .IMPORT     __nj_2d_clip_           ; least x and y, then greatest
+        .IMPORT     __nj_constant_material_
+        .IMPORT     __nj_far_clip_
+        .IMPORT     __nj_near_clip_
+        .IMPORT     __nj_scr_aspect_x_
+        .IMPORT     __nj_scr_aspect_y_
+        .IMPORT     __nj_screen_
+        .IMPORT     _sprite_white
+        .IMPORT     _sprite_clip_orders
+        .EXPORT     _njDrawSprite2D
+        .EXPORT     _njDrawSprite3D
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void njDrawSprite2D(NJS_SPRITE *sp, Int n, Float pri, Uint32 attr)
+; @asm operand: integer-constant, MOV.L at 0x8c11b8e0 loads NJD_SPRITE_ALPHA,
+; 32, from the pool
+_njDrawSprite2D:
+        FMOV.S      FR12,@-R15
+        MOV.L       R10,@-R15
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        STS.L       PR,@-R15
+        ADD         #-DRAW_PAD,R15
+        MOV         R4,R8
+        MOV         R5,R9
+        MOV         R6,R10
+        FMOV.S      FR4,FR12
+        MOV.L       #_njGetkmPointer,R3
+        JSR         @R3
+        MOV         R10,R0
+        ; make texture sp->tanim[n].texid of sp->tlist current
+        MOV.L       #_njSetTexture,R3
+        JSR         @R3
+        MOV.L       @(SP_TLIST,R8),R4
+        MOV.L       #_njSetkmTextureNum,R3
+        MOV.L       @(SP_TANIM,R8),R1
+        MOV         R9,R4
+        SHLL2       R4
+        ADD         R9,R4
+        SHLL2       R4
+        ADD         R4,R1
+        MOV.W       @(TA_TEXID,R1),R0
+        JSR         @R3
+        MOV         R0,R4
+        ; pick the color mode and the starter by NJD_SPRITE_ALPHA, and the
+        ; starter's face by NJD_SPRITE_COLOR
+        MOV.L       #NJD_SPRITE_ALPHA,R1
+        TST         R10,R1
+        BT          ?opaque
+        MOV.L       #NJD_COLOR_MODE_FLAT_INTENSITY_TEXTURE_TRANS,R4
+        MOV.L       #_njStartVertexTexTransIntens,R5
+        BRA         ?mode
+        NOP
+?opaque:
+        MOV.L       #NJD_COLOR_MODE_FLAT_INTENSITY_TEXTURE,R4
+        MOV.L       #_njStartVertexTexOpaqueIntens,R5
+?mode:
+        MOV.L       #_njSetkmColorMode,R3
+        JSR         @R3
+        MOV.L       R5,@-R15
+        MOV.L       #NJD_SPRITE_COLOR,R1
+        TST         R10,R1
+        MOV.L       #__nj_constant_material_,R4
+        BF/S        ?start
+        MOV.L       @R15+,R3
+        MOV.L       #_sprite_white,R4
+?start:
+        JSR         @R3
+        NOP
+        MOV.L       #_sprite_emit_2d,R3
+        MOV         R8,R4
+        MOV         R9,R5
+        MOV         R10,R6
+        MOV         R0,R2                   ; the cursor, at the first vertex
+        JSR         @R3
+        FMOV.S      FR12,FR4
+        MOV.L       #_njEndVertex,R3
+        JSR         @R3
+        MOV         R2,R4                   ; the cursor, past the last vertex
+        MOV.L       #_njSetkmPointer,R3
+        JSR         @R3
+        ADD         #DRAW_PAD,R15
+        LDS.L       @R15+,PR
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R10
+        RTS
+        FMOV.S      @R15+,FR12
+
+; void njDrawSprite3D(NJS_SPRITE *sp, Int n, Uint32 attr)
+; @asm opcode: rotcl, ROTCL R1 at 0x8c11bbcc, in sprite_emit_billboard below,
+; shifts an edge test's T into a corner's outcode, as the 15 after it do
+_njDrawSprite3D:
+        MOV.L       R10,@-R15
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        STS.L       PR,@-R15
+        ADD         #-DRAW_PAD,R15
+        MOV         R4,R8
+        MOV.L       #_njGetkmPointer,R3
+        MOV         R5,R9
+        JSR         @R3
+        MOV         R6,R10
+        ; make texture sp->tanim[n].texid of sp->tlist current
+        MOV.L       #_njSetTexture,R3
+        JSR         @R3
+        MOV.L       @(SP_TLIST,R8),R4
+        MOV.L       #_njSetkmTextureNum,R3
+        MOV.L       @(SP_TANIM,R8),R1
+        MOV         R9,R4
+        SHLL2       R4
+        ADD         R9,R4
+        SHLL2       R4
+        ADD         R4,R1
+        MOV.W       @(TA_TEXID,R1),R0
+        JSR         @R3
+        MOV         R0,R4
+        ; pick the color mode and the starter by NJD_SPRITE_ALPHA, and the
+        ; starter's face by NJD_SPRITE_COLOR
+        MOV.L       #NJD_SPRITE_ALPHA,R1
+        TST         R10,R1
+        BT          ?opaque
+        MOV.L       #NJD_COLOR_MODE_FLAT_INTENSITY_TEXTURE_TRANS,R4
+        MOV.L       #_njStartVertexTexTransIntens,R5
+        BRA         ?mode
+        NOP
+?opaque:
+        MOV.L       #NJD_COLOR_MODE_FLAT_INTENSITY_TEXTURE,R4
+        MOV.L       #_njStartVertexTexOpaqueIntens,R5
+?mode:
+        MOV.L       #_njSetkmColorMode,R3
+        JSR         @R3
+        MOV.L       R5,@-R15
+        MOV.L       #NJD_SPRITE_COLOR,R1
+        TST         R10,R1
+        MOV.L       #__nj_constant_material_,R4
+        BF/S        ?start
+        MOV.L       @R15+,R3
+        MOV.L       #_sprite_white,R4
+?start:
+        JSR         @R3
+        NOP
+        MOV         R0,R2                   ; the cursor, at the first vertex
+        MOV         #NJD_SPRITE_SCALE,R1
+        TST         R10,R1
+        MOV.L       #_sprite_emit_billboard,R3
+        BF/S        ?send
+        MOV         R8,R4
+        MOV.L       #_sprite_emit_transformed,R3
+?send:
+        MOV         R9,R5
+        JSR         @R3
+        MOV         R10,R6
+        ; R0 = 0: the emitter sent nothing. skipping njEndVertex leaves the
+        ; list's next address where the starter's parameter starts
+        TST         R0,R0
+        BT          ?end
+        MOV.L       #_njEndVertex,R3
+        JSR         @R3
+        MOV         R2,R4
+?end:
+        MOV.L       #_njSetkmPointer,R3
+        JSR         @R3
+        ADD         #DRAW_PAD,R15
+        LDS.L       @R15+,PR
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        RTS
+        MOV.L       @R15+,R10
+
+; send the cell facing the screen, its point where sp->p projects. R0 = 1
+; when the cell is sent, and 0 when nothing is
+;
+; the current matrix takes sp->p to (x, y, z), and every corner takes that
+; point's 1/z. x and y scale by the screen's distance over z, and then by
+; _nj_scr_aspect_x_ and _nj_scr_aspect_y_. the corners scale by the same two,
+; and NJD_SPRITE_ANGLE turns them between the two scales
+;
+; the cell isn't sent where z lies above _nj_far_clip_ or below
+; _nj_near_clip_. nor is it sent where all four corners lie past the same
+; edge of _nj_2d_clip_
+;
+; R8 steps through the corners' u and v on the stack. R9 holds the cursor,
+; which R2 takes back at the exit
+_sprite_emit_billboard:
+        FMOV.S      FR15,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR12,@-R15
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        MOV         R2,R9
+        MOV         R15,R8
+        ADD         #-UV_BYTES,R15
+        ; FR0 to FR3 take the cell's u1, v1, u2 and v2 over 256, swapped by
+        ; the flip flags
+        MOV         R5,R1
+        SHLL2       R5
+        ADD         R1,R5
+        SHLL2       R5
+        MOV.L       @(SP_TANIM,R4),R1
+        MOVA        ?uv_unit,R0
+        ADD         R1,R5
+        FMOV.S      @R0,FR4
+        ADD         #TA_U1,R5
+        MOV.W       @R5+,R2
+        LDS         R2,FPUL
+        MOV.W       @R5+,R1
+        FLOAT       FPUL,FR0
+        LDS         R1,FPUL
+        FMUL        FR4,FR0
+        MOV.W       @R5+,R2
+        FLOAT       FPUL,FR1
+        LDS         R2,FPUL
+        FMUL        FR4,FR1
+        MOV.W       @R5+,R1
+        FLOAT       FPUL,FR2
+        LDS         R1,FPUL
+        FMUL        FR4,FR2
+        ADD         #-TA_TEXID,R5           ; from texid back to the cell's sx
+        FLOAT       FPUL,FR3
+        MOV         #NJD_SPRITE_HFLIP,R1
+        FMUL        FR4,FR3
+        TST         R6,R1
+        BT          ?flip_v
+        FMOV.S      FR0,FR4
+        FMOV.S      FR2,FR0
+        FMOV.S      FR4,FR2
+?flip_v:
+        MOV         #NJD_SPRITE_VFLIP,R1
+        TST         R6,R1
+        BT          ?size
+        FMOV.S      FR1,FR4
+        FMOV.S      FR3,FR1
+        FMOV.S      FR4,FR3
+?size:
+        ; push each corner's u and v, and put x1, y1, x2 and y2 in FR0 to FR3
+        MOV.W       @R5+,R2
+        MOV.W       @R5+,R3
+        MOV.W       @R5+,R0
+        MOV.W       @R5+,R1
+        FMOV.S      FR0,@-R8
+        FMOV.S      FR1,@-R8
+        NEG         R0,R0
+        FMOV.S      FR0,@-R8
+        NEG         R1,R1
+        FMOV.S      FR3,@-R8
+        ADD         R0,R2
+        FMOV.S      FR2,@-R8
+        ADD         R1,R3
+        FMOV.S      FR1,@-R8
+        LDS         R0,FPUL
+        FMOV.S      FR2,@-R8
+        FLOAT       FPUL,FR0
+        FMOV.S      FR3,@-R8
+        LDS         R1,FPUL
+        MOV         #SP_SX,R0
+        FLOAT       FPUL,FR1
+        FMOV.S      @(R0,R4),FR4
+        LDS         R2,FPUL
+        ADD         #SP_SY-SP_SX,R0
+        FMOV.S      @(R0,R4),FR5
+        FLOAT       FPUL,FR2
+        FMUL        FR4,FR0
+        LDS         R3,FPUL
+        FMUL        FR4,FR2
+        FLOAT       FPUL,FR3
+        FMUL        FR5,FR1
+        MOV         #SP_SY,R0               ; dead: R0 takes ?far before a read
+        FMUL        FR5,FR3
+        ; sp->p through XMTRX
+        FMOV.S      @R4+,FR4
+        FMOV.S      @R4+,FR5
+        FMOV.S      @R4+,FR6
+        ADD         #-SP_SX,R4              ; from sp->sx back to sp
+        FLDI1       FR7
+        FTRV        XMTRX,FV4
+        MOV.L       ?far,R0
+        MOV.L       ?near,R1
+        FMOV.S      @R0,FR8
+        FMOV.S      @R1,FR9
+        FLDI1       FR7
+        FDIV        FR6,FR7                 ; 1/z
+        FCMP/GT     FR8,FR6
+        BT          ?unseen
+        FCMP/GT     FR6,FR9
+        BT          ?unseen
+        BRA         ?seen
+        NOP
+?uv_unit:
+        .FDATA.S    F'0.00390625
+?far:
+        .DATA.L     __nj_far_clip_
+?near:
+        .DATA.L     __nj_near_clip_
+?unseen:
+        BRA         ?done
+        MOV         #0,R0
+?seen:
+        ; scale the corners and sp->p by the screen's distance over z. sp->p
+        ; takes the aspect too, and then the screen's center
+        MOV.L       #__nj_screen_,R2
+        FMOV.S      @R2,FR10
+        MOV.L       #__nj_scr_aspect_x_,R0
+        FMUL        FR7,FR10
+        MOV.L       #__nj_scr_aspect_y_,R1
+        FMUL        FR10,FR0
+        FMOV.S      @R0,FR8
+        FMUL        FR10,FR1
+        FMOV.S      @R1,FR9
+        FMUL        FR10,FR2
+        ADD         #SC_CX,R2
+        FMUL        FR10,FR3
+        FMUL        FR10,FR8
+        FMUL        FR10,FR9
+        FMUL        FR8,FR4
+        FMOV.S      @R2+,FR10
+        FMUL        FR9,FR5
+        FMOV.S      @R2+,FR11
+        FADD        FR10,FR4
+        FMOV.S      FR7,@-R15
+        FADD        FR11,FR5
+        FMOV.S      FR5,@-R15
+        FMOV.S      FR4,@-R15
+        ; the corners' x and y go to FR0-FR1, FR4-FR5, FR8-FR9 and
+        ; FR12-FR13, turned by sp->ang under NJD_SPRITE_ANGLE
+        MOV         #NJD_SPRITE_ANGLE,R0
+        TST         R0,R6
+        BT          ?unturned
+        MOV.L       @(SP_ANG,R4),R1
+        EXTU.W      R1,R1
+        LDS         R1,FPUL
+        FSCA        FPUL,DR10
+        FMOV.S      FR1,FR7
+        FMOV.S      FR0,FR1
+        FMOV.S      FR2,FR8
+        FMOV.S      FR2,FR9
+        FMUL        FR11,FR0
+        FMUL        FR10,FR1
+        FMUL        FR11,FR8
+        FMUL        FR10,FR9
+        FMOV.S      FR7,FR14
+        FMOV.S      FR3,FR15
+        FMUL        FR10,FR7
+        FMUL        FR11,FR14
+        FMUL        FR10,FR3
+        FMUL        FR11,FR15
+        FMOV.S      FR0,FR4
+        FSUB        FR3,FR4
+        FMOV.S      FR1,FR5
+        FADD        FR15,FR5
+        FSUB        FR7,FR0
+        FADD        FR14,FR1
+        FMOV.S      FR8,FR12
+        FSUB        FR3,FR12
+        FMOV.S      FR9,FR13
+        FADD        FR15,FR13
+        FSUB        FR7,FR8
+        BRA         ?placed
+        FADD        FR14,FR9
+?unturned:
+        FMOV.S      FR0,FR4
+        FMOV.S      FR3,FR5
+        FMOV.S      FR2,FR8
+        FMOV.S      FR1,FR9
+        FMOV.S      FR2,FR12
+        FMOV.S      FR3,FR13
+?placed:
+        ; scale the corners by the aspect, and move them to where sp->p lands
+        ; on the screen
+        FMOV.S      @R15+,FR3
+        FMOV.S      @R15+,FR7
+        MOV.L       #__nj_scr_aspect_x_,R0
+        FMOV.S      @R0,FR6
+        MOV.L       #__nj_scr_aspect_y_,R1
+        FMOV.S      @R1,FR10
+        FMUL        FR6,FR0
+        FADD        FR3,FR0
+        FMUL        FR10,FR1
+        FADD        FR7,FR1
+        FMUL        FR6,FR4
+        FADD        FR3,FR4
+        FMUL        FR10,FR5
+        FADD        FR7,FR5
+        FMUL        FR6,FR8
+        FADD        FR3,FR8
+        FMUL        FR10,FR9
+        FADD        FR7,FR9
+        FMUL        FR6,FR12
+        FADD        FR3,FR12
+        FMUL        FR10,FR13
+        FADD        FR7,FR13
+        ; R1 takes a corner's outcode: a bit for each edge of _nj_2d_clip_
+        ; the corner lies past. R2 takes the AND of the four outcodes, which
+        ; keeps a bit only when all four corners lie past that edge
+        MOV.L       #__nj_2d_clip_,R1
+        FMOV.S      @R1+,FR15
+        FMOV.S      @R1+,FR7
+        FMOV.S      @R1+,FR11
+        FMOV.S      @R1+,FR3
+        MOV.L       #H'FFFFFFFF,R2
+        MOV.L       #0,R1
+        FCMP/GT     FR3,FR1
+        ROTCL       R1
+        FCMP/GT     FR1,FR7
+        ROTCL       R1
+        FCMP/GT     FR11,FR0
+        ROTCL       R1
+        FCMP/GT     FR0,FR15
+        ROTCL       R1
+        AND         R1,R2
+        MOV.L       #0,R1
+        FCMP/GT     FR3,FR5
+        ROTCL       R1
+        FCMP/GT     FR5,FR7
+        ROTCL       R1
+        FCMP/GT     FR11,FR4
+        ROTCL       R1
+        FCMP/GT     FR4,FR15
+        ROTCL       R1
+        AND         R1,R2
+        MOV.L       #0,R1
+        FCMP/GT     FR3,FR9
+        ROTCL       R1
+        FCMP/GT     FR9,FR7
+        ROTCL       R1
+        FCMP/GT     FR11,FR8
+        ROTCL       R1
+        FCMP/GT     FR8,FR15
+        ROTCL       R1
+        AND         R1,R2
+        MOV.L       #0,R1
+        FCMP/GT     FR3,FR13
+        ROTCL       R1
+        FCMP/GT     FR13,FR7
+        ROTCL       R1
+        FCMP/GT     FR11,FR12
+        ROTCL       R1
+        FCMP/GT     FR12,FR15
+        ROTCL       R1
+        AND         R1,R2
+        TST         R2,R2
+        FMOV.S      @R15+,FR2               ; sp->p's 1/z, for all four
+        BT          ?send
+        BRA         ?done
+        MOV         #0,R0
+?send:
+        MOV         R9,R7
+        ADD         #2*VERTEX_SIZE,R9       ; past four vertices, in two ADDs
+        ADD         #2*VERTEX_SIZE,R9
+        ADD         #VERTEX_WRITTEN,R7
+        FLDI1       FR15
+        MOV.L       #KM_VERTEXPARAM_NORMAL,R1
+        MOV.L       #KM_VERTEXPARAM_ENDOFSTRIP,R2
+        ADD         #UV_BYTES-FLOAT_SIZE,R8 ; the first corner's u
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR2,@-R7
+        FMOV.S      FR1,@-R7
+        FMOV.S      FR0,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR2,@-R7
+        FMOV.S      FR5,@-R7
+        FMOV.S      FR4,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR2,@-R7
+        FMOV.S      FR9,@-R7
+        FMOV.S      FR8,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR2,@-R7
+        FMOV.S      FR13,@-R7
+        FMOV.S      FR12,@-R7
+        MOV.L       R2,@-R7
+        PREF        @R7
+        MOV         #1,R0
+?done:
+        ADD         #UV_BYTES,R15
+        MOV         R9,R2
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        FMOV.S      @R15+,FR12
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR14
+        RTS
+        FMOV.S      @R15+,FR15
+
+; send the cell in the plane z = sp->p.z, its point at sp->p, through the
+; current matrix. each corner takes its own 1/z. R0 = 1 when the cell is
+; sent, and 0 when nothing is
+;
+; the cell isn't sent where every corner's z lies above _nj_far_clip_, or
+; where every one lies below _nj_near_clip_. nor is it sent where all four
+; corners lie past the same edge of _nj_2d_clip_. where only some corners' z
+; lie below the near clip, sprite_clip_near sends the cell
+;
+; R8 steps through the corners' u and v on the stack. R9 holds the cursor,
+; which R2 takes back at the exit
+_sprite_emit_transformed:
+        FMOV.S      FR15,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR12,@-R15
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        MOV         R2,R9
+        MOV         R15,R8
+        ADD         #-UV_BYTES,R15
+        ; FR0 to FR3 take the cell's u1, v1, u2 and v2 over 256, swapped by
+        ; the flip flags
+        MOV         R5,R1
+        SHLL2       R5
+        ADD         R1,R5
+        SHLL2       R5
+        MOV.L       @(SP_TANIM,R4),R1
+        MOVA        ?uv_unit,R0
+        ADD         R1,R5
+        FMOV.S      @R0,FR4
+        ADD         #TA_U1,R5
+        MOV.W       @R5+,R2
+        LDS         R2,FPUL
+        FLOAT       FPUL,FR0
+        MOV.W       @R5+,R1
+        LDS         R1,FPUL
+        FMUL        FR4,FR0
+        MOV.W       @R5+,R2
+        FLOAT       FPUL,FR1
+        LDS         R2,FPUL
+        FMUL        FR4,FR1
+        MOV.W       @R5+,R1
+        FLOAT       FPUL,FR2
+        LDS         R1,FPUL
+        FMUL        FR4,FR2
+        ADD         #-TA_TEXID,R5           ; from texid back to the cell's sx
+        FLOAT       FPUL,FR3
+        MOV         #NJD_SPRITE_HFLIP,R1
+        FMUL        FR4,FR3
+        TST         R6,R1
+        BT          ?flip_v
+        FMOV.S      FR0,FR4
+        FMOV.S      FR2,FR0
+        FMOV.S      FR4,FR2
+?flip_v:
+        MOV         #NJD_SPRITE_VFLIP,R1
+        TST         R6,R1
+        BT          ?size
+        FMOV.S      FR1,FR4
+        FMOV.S      FR3,FR1
+        FMOV.S      FR4,FR3
+?size:
+        ; push each corner's u and v, and put x1, y1, x2 and y2 in FR0 to FR3
+        MOV.W       @R5+,R2
+        MOV.W       @R5+,R3
+        MOV.W       @R5+,R0
+        MOV.W       @R5+,R1
+        NEG         R0,R0
+        FMOV.S      FR0,@-R8
+        NEG         R1,R1
+        FMOV.S      FR1,@-R8
+        ADD         R0,R2
+        FMOV.S      FR0,@-R8
+        ADD         R1,R3
+        FMOV.S      FR3,@-R8
+        LDS         R0,FPUL
+        FMOV.S      FR2,@-R8
+        FMOV.S      FR1,@-R8
+        FLOAT       FPUL,FR0
+        LDS         R1,FPUL
+        FMOV.S      FR2,@-R8
+        FMOV.S      FR3,@-R8
+        FLOAT       FPUL,FR1
+        LDS         R2,FPUL
+        MOV         #SP_SX,R0
+        FMOV.S      @(R0,R4),FR4
+        FLOAT       FPUL,FR2
+        LDS         R3,FPUL
+        MOV         #SP_SY,R0
+        FMOV.S      @(R0,R4),FR5
+        FLOAT       FPUL,FR3
+        FMUL        FR4,FR0
+        FMUL        FR4,FR2
+        FMUL        FR5,FR1
+        FMUL        FR5,FR3
+        ; the corners' x and y go to FR0-FR1, FR4-FR5, FR8-FR9 and
+        ; FR12-FR13, turned by sp->ang under NJD_SPRITE_ANGLE
+        MOV         #NJD_SPRITE_ANGLE,R0
+        TST         R0,R6
+        BT          ?unturned
+        MOV.L       @(SP_ANG,R4),R1
+        EXTU.W      R1,R1
+        LDS         R1,FPUL
+        FSCA        FPUL,DR10
+        FMOV.S      FR1,FR7
+        FMOV.S      FR0,FR1
+        FMOV.S      FR2,FR8
+        FMOV.S      FR2,FR9
+        FMUL        FR11,FR0
+        FMUL        FR10,FR1
+        FMUL        FR11,FR8
+        FMUL        FR10,FR9
+        FMOV.S      FR7,FR14
+        FMOV.S      FR3,FR15
+        FMUL        FR10,FR7
+        FMUL        FR11,FR14
+        FMUL        FR10,FR3
+        FMUL        FR11,FR15
+        FMOV.S      FR0,FR4
+        FSUB        FR3,FR4
+        FMOV.S      FR1,FR5
+        FADD        FR15,FR5
+        FSUB        FR7,FR0
+        FADD        FR14,FR1
+        FMOV.S      FR8,FR12
+        FSUB        FR3,FR12
+        FMOV.S      FR9,FR13
+        FADD        FR15,FR13
+        FSUB        FR7,FR8
+        BRA         ?placed
+        FADD        FR14,FR9
+        ; a halfword of 0 puts ?uv_unit on the 4-byte boundary MOVA needs
+        .DATA.W     0
+?uv_unit:
+        .FDATA.S    F'0.00390625
+?unturned:
+        FMOV.S      FR0,FR4
+        FMOV.S      FR3,FR5
+        FMOV.S      FR2,FR8
+        FMOV.S      FR1,FR9
+        FMOV.S      FR2,FR12
+        FMOV.S      FR3,FR13
+?placed:
+        ; each corner is (x, y, 0) about the cell's point. move it by sp->p,
+        ; put it through XMTRX and take its 1/z. R2 takes a corner's bit where
+        ; its z lies above the far clip. R3 takes the bit where z lies below
+        ; the near clip
+        FMOV.S      @R4+,FR3
+        FMOV.S      @R4+,FR7
+        FADD        FR3,FR0
+        FADD        FR7,FR1
+        FMOV.S      @R4+,FR2
+        FADD        FR3,FR4
+        FADD        FR7,FR5
+        FMOV.S      FR2,FR6
+        FADD        FR3,FR8
+        FADD        FR7,FR9
+        FMOV.S      FR2,FR10
+        FADD        FR3,FR12
+        FADD        FR7,FR13
+        FMOV.S      FR2,FR14
+        MOV         #0,R2
+        MOV         #0,R3
+        MOV.L       #__nj_far_clip_,R0
+        MOV.L       #__nj_near_clip_,R1
+        FMOV.S      @R0,FR11
+        FMOV.S      @R1,FR15
+        FLDI1       FR3
+        FTRV        XMTRX,FV0
+        FLDI1       FR3
+        FDIV        FR2,FR3
+        FCMP/GT     FR11,FR2
+        ROTCL       R2
+        FCMP/GT     FR2,FR15
+        ROTCL       R3
+        FMOV.S      FR3,FR2
+        FLDI1       FR7
+        FTRV        XMTRX,FV4
+        FLDI1       FR7
+        FDIV        FR6,FR7
+        FCMP/GT     FR11,FR6
+        ROTCL       R2
+        FCMP/GT     FR6,FR15
+        ROTCL       R3
+        FMOV.S      FR7,FR6
+        FMOV.S      @R0,FR3
+        FMOV.S      @R1,FR7
+        FLDI1       FR11
+        FTRV        XMTRX,FV8
+        FLDI1       FR11
+        FDIV        FR10,FR11
+        FCMP/GT     FR3,FR10
+        ROTCL       R2
+        FCMP/GT     FR10,FR7
+        ROTCL       R3
+        FMOV.S      FR11,FR10
+        FLDI1       FR15
+        FTRV        XMTRX,FV12
+        FLDI1       FR15
+        FDIV        FR14,FR15
+        FCMP/GT     FR3,FR14
+        ROTCL       R2
+        FCMP/GT     FR14,FR7
+        ROTCL       R3
+        FMOV.S      FR15,FR14
+        MOV         #QUAD_CORNERS,R1
+        CMP/EQ      R1,R2
+        BT          ?unseen
+        CMP/EQ      R1,R3
+        BF          ?seen
+?unseen:
+        BRA         ?done
+        MOV         #0,R0
+?seen:
+        ; onto the screen: x and y times the 1/z, the screen's distance and
+        ; the aspect, plus the screen's center
+        MOV.L       #__nj_screen_,R2
+        FMOV.S      @R2,FR3
+        FMOV.S      FR3,FR7
+        MOV.L       #__nj_scr_aspect_x_,R0
+        MOV.L       #__nj_scr_aspect_y_,R1
+        FMOV.S      @R0,FR11
+        FMOV.S      @R1,FR15
+        FMUL        FR11,FR3
+        FMUL        FR15,FR7
+        ADD         #SC_CX,R2
+        FMOV.S      @R2+,FR11
+        FMOV.S      @R2+,FR15
+        FMUL        FR2,FR0
+        FMUL        FR2,FR1
+        FMUL        FR3,FR0
+        FMUL        FR7,FR1
+        FMUL        FR6,FR4
+        FADD        FR11,FR0
+        FADD        FR15,FR1
+        FMUL        FR6,FR5
+        FMUL        FR3,FR4
+        FMUL        FR7,FR5
+        FMUL        FR10,FR8
+        FADD        FR11,FR4
+        FADD        FR15,FR5
+        FMUL        FR10,FR9
+        FMUL        FR3,FR8
+        FMUL        FR7,FR9
+        FMUL        FR14,FR12
+        FADD        FR11,FR8
+        FADD        FR15,FR9
+        FMUL        FR14,FR13
+        FMUL        FR3,FR12
+        FMUL        FR7,FR13
+        FADD        FR11,FR12
+        FADD        FR15,FR13
+        ; R1 takes a corner's outcode: a bit for each edge of _nj_2d_clip_
+        ; the corner lies past. R2 takes the AND of the four outcodes, which
+        ; keeps a bit only when all four corners lie past that edge
+        MOV.L       #__nj_2d_clip_,R1
+        FMOV.S      @R1+,FR15
+        FMOV.S      @R1+,FR7
+        FMOV.S      @R1+,FR11
+        FMOV.S      @R1+,FR3
+        MOV.L       #H'FFFFFFFF,R2
+        MOV.L       #0,R1
+        FCMP/GT     FR3,FR1
+        ROTCL       R1
+        FCMP/GT     FR1,FR7
+        ROTCL       R1
+        FCMP/GT     FR11,FR0
+        ROTCL       R1
+        FCMP/GT     FR0,FR15
+        ROTCL       R1
+        AND         R1,R2
+        MOV.L       #0,R1
+        FCMP/GT     FR3,FR5
+        ROTCL       R1
+        FCMP/GT     FR5,FR7
+        ROTCL       R1
+        FCMP/GT     FR11,FR4
+        ROTCL       R1
+        FCMP/GT     FR4,FR15
+        ROTCL       R1
+        AND         R1,R2
+        MOV.L       #0,R1
+        FCMP/GT     FR3,FR9
+        ROTCL       R1
+        FCMP/GT     FR9,FR7
+        ROTCL       R1
+        FCMP/GT     FR11,FR8
+        ROTCL       R1
+        FCMP/GT     FR8,FR15
+        ROTCL       R1
+        AND         R1,R2
+        MOV.L       #0,R1
+        FCMP/GT     FR3,FR13
+        ROTCL       R1
+        FCMP/GT     FR13,FR7
+        ROTCL       R1
+        FCMP/GT     FR11,FR12
+        ROTCL       R1
+        FCMP/GT     FR12,FR15
+        ROTCL       R1
+        AND         R1,R2
+        TST         R2,R2
+        BT          ?in_view
+        BRA         ?done
+        MOV         #0,R0
+?in_view:
+        TST         R3,R3
+        BF          ?clip
+        MOV         R9,R7
+        ADD         #2*VERTEX_SIZE,R9       ; past four vertices, in two ADDs
+        ADD         #2*VERTEX_SIZE,R9
+        ADD         #VERTEX_WRITTEN,R7
+        FLDI1       FR15
+        MOV.L       #KM_VERTEXPARAM_NORMAL,R1
+        MOV.L       #KM_VERTEXPARAM_ENDOFSTRIP,R2
+        ADD         #UV_BYTES-FLOAT_SIZE,R8 ; the first corner's u
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR2,@-R7
+        FMOV.S      FR1,@-R7
+        FMOV.S      FR0,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR5,@-R7
+        FMOV.S      FR4,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR10,@-R7
+        FMOV.S      FR9,@-R7
+        FMOV.S      FR8,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR14,@-R7
+        FMOV.S      FR13,@-R7
+        FMOV.S      FR12,@-R7
+        MOV.L       R2,@-R7
+        PREF        @R7
+        BRA         ?done
+        MOV         #1,R0
+?clip:
+        ; push the corners as sprite_clip_near takes them, the last first.
+        ; each ADD steps over words a corner leaves unwritten
+        ADD         #CORNER_END-CORNER_SIZE,R15
+        FMOV.S      @R8+,FR7
+        FMOV.S      @R8+,FR3
+        FMOV.S      FR7,@-R15
+        FMOV.S      FR3,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR12,@-R15
+        ADD         #CORNER_END-CORNER_SIZE-CORNER_X,R15
+        FMOV.S      @R8+,FR7
+        FMOV.S      @R8+,FR3
+        FMOV.S      FR7,@-R15
+        FMOV.S      FR3,@-R15
+        FMOV.S      FR10,@-R15
+        FMOV.S      FR9,@-R15
+        FMOV.S      FR8,@-R15
+        ADD         #CORNER_END-CORNER_SIZE-CORNER_X,R15
+        FMOV.S      @R8+,FR7
+        FMOV.S      @R8+,FR3
+        FMOV.S      FR7,@-R15
+        FMOV.S      FR3,@-R15
+        FMOV.S      FR6,@-R15
+        FMOV.S      FR5,@-R15
+        FMOV.S      FR4,@-R15
+        ADD         #CORNER_END-CORNER_SIZE-CORNER_X,R15
+        FMOV.S      @R8+,FR7
+        FMOV.S      @R8+,FR3
+        FMOV.S      FR7,@-R15
+        FMOV.S      FR3,@-R15
+        FMOV.S      FR2,@-R15
+        FMOV.S      FR1,@-R15
+        FMOV.S      FR0,@-R15
+        ADD         #-CORNER_X,R15
+        MOV         R15,R5
+        MOV         R9,R2
+        MOV.L       #_sprite_clip_near,R1
+        STS.L       PR,@-R15
+        JSR         @R1
+        MOV         R3,R4
+        LDS.L       @R15+,PR
+        ADD         #2*CORNER_SIZE,R15      ; drop the corners, in two ADDs
+        ADD         #2*CORNER_SIZE,R15
+        MOV         R2,R9
+        MOV         #1,R0
+?done:
+        MOV         R9,R2
+        ADD         #UV_BYTES,R15
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        FMOV.S      @R15+,FR12
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR14
+        RTS
+        FMOV.S      @R15+,FR15
+
+; send the quad of the four corners at R5, some of which lie below the near
+; clip: their z lies below _nj_near_clip_. R4 holds those corners' bits. the
+; quad goes as two triangles, its first three corners and then its last
+; three. the call doesn't keep R8 or FR12 to FR15, though SHC's calling
+; convention keeps them. its caller must not rely on them
+;
+; a crossing is the point where a triangle's side meets the near clip. it
+; takes the u and v the side has there, and 1/near as its 1/z. a triangle
+; sends its crossings and its corners not below the near clip, in the order
+; sprite_clip_orders gives them around it. it sends none where all three
+; corners lie below the near clip. three points go as a strip in their order.
+; four points p1 to p4 go as the strip p1, p2, p4, p3, whose two triangles
+; split their quad. so p3 waits to be sent last
+;
+; R0 counts the triangle's points so far. R1 points to the near clip, cx and
+; cy. R9 holds the triangle's entry of sprite_clip_orders, and each SHAR
+; shifts its next bit into T. R10 and R11 point to a side's start and end in
+; the view. R12 and R13 point to the same two corners at R5. R14 points to
+; the point that waits
+_sprite_clip_near:
+        MOV.L       R14,@-R15
+        MOV.L       R13,@-R15
+        MOV.L       R12,@-R15
+        MOV.L       R11,@-R15
+        MOV.L       R10,@-R15
+        MOV.L       R9,@-R15
+        MOV         R15,R6
+        ADD         #-4*VIEW_SIZE,R15
+        ADD         #-CORNER_SIZE,R15
+        MOV         R15,R7
+        MOV         R15,R1
+        ADD         #-CLIP_LOCALS,R15
+        ; FR8 and FR9 scale a view x and y at the near clip onto the screen.
+        ; FR14 and FR15 scale a screen x and y, less the center, back to a
+        ; view x and y at z = 1
+        MOV.L       #__nj_near_clip_,R10
+        MOV.L       #__nj_screen_,R11
+        MOV.L       #__nj_scr_aspect_x_,R12
+        MOV.L       #__nj_scr_aspect_y_,R13
+        FMOV.S      @R11,FR7
+        FMOV.S      @R12,FR8
+        FMOV.S      @R13,FR9
+        ADD         #SC_CX,R11
+        FMOV.S      @R11+,FR10
+        FMOV.S      @R11+,FR11
+        FMOV.S      @R10,FR12
+        FLDI1       FR13
+        FDIV        FR12,FR13               ; 1/near
+        FMOV.S      FR11,@-R1
+        FMOV.S      FR10,@-R1
+        FMOV.S      FR12,@-R1
+        FMUL        FR7,FR8
+        FMUL        FR7,FR9
+        FLDI1       FR14
+        FLDI1       FR15
+        FDIV        FR8,FR14
+        FDIV        FR9,FR15
+        FMUL        FR13,FR8
+        FMUL        FR13,FR9
+        ; store each corner's x, y and z in the view, from the last corner
+        ; down
+        ADD         #3*CORNER_SIZE+CORNER_X,R5
+        FMOV.S      @R5+,FR0
+        FMOV.S      @R5+,FR1
+        FMOV.S      @R5+,FR3
+        FLDI1       FR2
+        FDIV        FR3,FR2                 ; z
+        FSUB        FR10,FR0
+        FSUB        FR11,FR1
+        FMUL        FR14,FR0
+        FMUL        FR15,FR1
+        FMUL        FR2,FR0
+        FMUL        FR2,FR1
+        FMOV.S      FR2,@-R6
+        FMOV.S      FR1,@-R6
+        FMOV.S      FR0,@-R6
+        ADD         #CORNER_X-CORNER_U-CORNER_SIZE,R5
+        FMOV.S      @R5+,FR4
+        FMOV.S      @R5+,FR5
+        FMOV.S      @R5+,FR7
+        FLDI1       FR6
+        FDIV        FR7,FR6
+        FSUB        FR10,FR4
+        FSUB        FR11,FR5
+        FMUL        FR14,FR4
+        FMUL        FR15,FR5
+        FMUL        FR6,FR4
+        FMUL        FR6,FR5
+        FMOV.S      FR6,@-R6
+        FMOV.S      FR5,@-R6
+        FMOV.S      FR4,@-R6
+        ADD         #CORNER_X-CORNER_U-CORNER_SIZE,R5
+        FMOV.S      @R5+,FR0
+        FMOV.S      @R5+,FR1
+        FMOV.S      @R5+,FR3
+        FLDI1       FR2
+        FDIV        FR3,FR2
+        FSUB        FR10,FR0
+        FSUB        FR11,FR1
+        FMUL        FR14,FR0
+        FMUL        FR15,FR1
+        FMUL        FR2,FR0
+        FMUL        FR2,FR1
+        FMOV.S      FR2,@-R6
+        FMOV.S      FR1,@-R6
+        FMOV.S      FR0,@-R6
+        ADD         #CORNER_X-CORNER_U-CORNER_SIZE,R5
+        FMOV.S      @R5+,FR4
+        FMOV.S      @R5+,FR5
+        FMOV.S      @R5+,FR7
+        FLDI1       FR6
+        FDIV        FR7,FR6
+        FSUB        FR10,FR4
+        FSUB        FR11,FR5
+        FMUL        FR14,FR4
+        FMUL        FR15,FR5
+        FMUL        FR6,FR4
+        FMUL        FR6,FR5
+        FMOV.S      FR6,@-R6
+        FMOV.S      FR5,@-R6
+        FMOV.S      FR4,@-R6
+        ADD         #-CORNER_U,R5           ; back to the first corner
+        MOV         R5,R13
+        MOV         R6,R11
+        MOV         R4,R9
+        MOV         #QUAD_TRIANGLES,R8
+        BRA         ?triangle
+        SHLR        R9                      ; the first three corners' bits
+?triangle:
+        MOV.L       R8,@R15
+        MOV         #2*VIEW_SIZE,R10
+        ADD         R11,R10
+        MOV         #2*CORNER_SIZE,R12
+        ADD         R13,R12
+        MOV.L       #_sprite_clip_orders,R8
+        ADD         R8,R9
+        MOV.B       @R9,R9
+        EXTS.B      R9,R9
+        MOV.L       #KM_VERTEXPARAM_NORMAL,R3
+        MOV         #0,R0
+        MOV         #TRIANGLE_SIDES,R8
+?side:
+        SHAR        R9                      ; T: send this side's crossing
+        BF          ?corner
+        ; the crossing's x and y on the screen go to FR11 and FR12, and its
+        ; u and v to FR14 and FR15. its 1/z is FR13
+        FMOV.S      @R1+,FR10
+        FMOV.S      @R10+,FR0
+        FMOV.S      @R10+,FR1
+        FMOV.S      @R10+,FR2
+        ADD         #-VIEW_SIZE,R10
+        FMOV.S      @R11+,FR4
+        FMOV.S      @R11+,FR5
+        FMOV.S      @R11+,FR6
+        ADD         #-VIEW_SIZE,R11
+        FSUB        FR2,FR10
+        FMOV.S      FR6,FR11
+        FSUB        FR2,FR11
+        FDIV        FR11,FR10               ; how far along the side, 0 to 1
+        FMOV.S      FR4,FR11
+        FMOV.S      FR5,FR12
+        FSUB        FR0,FR11
+        FSUB        FR1,FR12
+        FMUL        FR10,FR11
+        FMUL        FR10,FR12
+        FADD        FR0,FR11
+        FADD        FR1,FR12
+        FMUL        FR8,FR11
+        FMUL        FR9,FR12
+        FMOV.S      @R1+,FR14
+        FMOV.S      @R1+,FR15
+        ADD         #CLIP_NEAR-CLIP_LOCALS,R1
+        FADD        FR14,FR11
+        FADD        FR15,FR12
+        ADD         #CORNER_U,R12
+        FMOV.S      @R12+,FR3
+        FMOV.S      @R12+,FR7
+        ADD         #-CORNER_END,R12
+        ADD         #CORNER_U,R13
+        FMOV.S      @R13+,FR14
+        FMOV.S      @R13+,FR15
+        ADD         #-CORNER_END,R13
+        FSUB        FR3,FR14
+        FSUB        FR7,FR15
+        FMUL        FR10,FR14
+        FMUL        FR10,FR15
+        FADD        FR3,FR14
+        FADD        FR7,FR15
+        ADD         #1,R0
+        CMP/EQ      #THIRD_POINT,R0
+        BF          ?cross_send
+        CMP/PZ      R9
+        BT          ?cross_last
+        ADD         #CORNER_END,R7          ; p3 waits, as a corner at R7
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR14,@-R7
+        FMOV.S      FR13,@-R7
+        FMOV.S      FR12,@-R7
+        FMOV.S      FR11,@-R7
+        ADD         #-CORNER_X,R7
+        BRA         ?corner
+        MOV         R7,R14
+?cross_last:
+        MOV.L       #KM_VERTEXPARAM_ENDOFSTRIP,R3
+?cross_send:
+        ADD         #VERTEX_WRITTEN,R2
+        FLDI1       FR10
+        FMOV.S      FR10,@-R2
+        FMOV.S      FR15,@-R2
+        FMOV.S      FR14,@-R2
+        FMOV.S      FR13,@-R2
+        FMOV.S      FR12,@-R2
+        FMOV.S      FR11,@-R2
+        MOV.L       R3,@-R2
+        PREF        @R2
+        ADD         #VERTEX_SIZE,R2
+?corner:
+        SHAR        R9                      ; T: send the corner it ends at
+        BF          ?next_side
+        ADD         #1,R0
+        CMP/EQ      #THIRD_POINT,R0
+        BF          ?corner_send
+        CMP/PZ      R9
+        BT          ?corner_last
+        BRA         ?next_side
+        MOV         R13,R14
+?corner_last:
+        MOV.L       #KM_VERTEXPARAM_ENDOFSTRIP,R3
+?corner_send:
+        ADD         #CORNER_X,R13
+        FMOV.S      @R13+,FR11
+        FMOV.S      @R13+,FR12
+        FMOV.S      @R13+,FR7
+        FMOV.S      @R13+,FR14
+        FMOV.S      @R13+,FR15
+        ADD         #VERTEX_WRITTEN,R2
+        ADD         #-CORNER_END,R13
+        FLDI1       FR10
+        FMOV.S      FR10,@-R2
+        FMOV.S      FR15,@-R2
+        FMOV.S      FR14,@-R2
+        FMOV.S      FR7,@-R2
+        FMOV.S      FR12,@-R2
+        FMOV.S      FR11,@-R2
+        MOV.L       R3,@-R2
+        PREF        @R2
+        ADD         #VERTEX_SIZE,R2
+?next_side:
+        MOV         R11,R10
+        ADD         #VIEW_SIZE,R11
+        DT          R8
+        MOV         R13,R12
+        BF/S        ?side
+        ADD         #CORNER_SIZE,R13
+        ; the point that waited ends the strip
+        CMP/PZ      R9
+        BT          ?next_triangle
+        ADD         #CORNER_X,R14
+        FMOV.S      @R14+,FR11
+        FMOV.S      @R14+,FR12
+        ; @bug logic: the second triangle's crossings take the 1/z of the
+        ; first triangle's p3, where p3 is a corner, in place of 1/near. this
+        ; load of p3's 1/z, at 0x8c11c1e8, overwrites the 1/near FR13 held
+        FMOV.S      @R14+,FR13
+        FMOV.S      @R14+,FR14
+        FMOV.S      @R14+,FR15
+        MOV.L       #KM_VERTEXPARAM_ENDOFSTRIP,R3
+        ADD         #VERTEX_WRITTEN,R2
+        FLDI1       FR10
+        FMOV.S      FR10,@-R2
+        FMOV.S      FR15,@-R2
+        FMOV.S      FR14,@-R2
+        FMOV.S      FR13,@-R2
+        FMOV.S      FR12,@-R2
+        FMOV.S      FR11,@-R2
+        MOV.L       R3,@-R2
+        PREF        @R2
+        ADD         #VERTEX_SIZE,R2
+?next_triangle:
+        ; then the second triangle, the last three corners
+        MOV.L       @R15,R8
+        DT          R8
+        BT          ?done
+        MOV         #CORNER_SIZE,R13
+        MOV         #VIEW_SIZE,R11
+        ADD         R5,R13
+        ADD         R6,R11
+        MOV         #TRIANGLE_CORNERS,R9
+        BRA         ?triangle
+        AND         R4,R9                   ; the last three corners' bits
+?done:
+        ADD         #CLIP_LOCALS+CORNER_SIZE+4*VIEW_SIZE,R15
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R10
+        MOV.L       @R15+,R11
+        MOV.L       @R15+,R12
+        MOV.L       @R15+,R13
+        RTS
+        MOV.L       @R15+,R14
+
+; FR4 = pri. send the cell on the screen, its point at sp->p.x and sp->p.y,
+; with no clip test. every corner's 1/z is -1/pri where pri is below -1, and
+; 1 otherwise. it always sends the cell, so it returns nothing in R0
+;
+; R8 steps through the corners' u and v on the stack. R9 holds the cursor,
+; which R2 takes back at the exit
+_sprite_emit_2d:
+        FMOV.S      FR15,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR12,@-R15
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        MOV         R2,R9
+        MOV         R15,R8
+        ADD         #-UV_BYTES,R15
+        FNEG        FR4
+        FLDI1       FR6
+        FCMP/GT     FR4,FR6
+        BT          ?depth
+        FDIV        FR4,FR6
+?depth:
+        ; FR0 to FR3 take the cell's u1, v1, u2 and v2 over 256, swapped by
+        ; the flip flags
+        MOV         R5,R1
+        SHLL2       R5
+        ADD         R1,R5
+        SHLL2       R5
+        MOV.L       @(SP_TANIM,R4),R1
+        ADD         R1,R5
+        MOVA        ?uv_unit,R0
+        FMOV.S      @R0,FR4
+        ADD         #TA_U1,R5
+        MOV.W       @R5+,R2
+        LDS         R2,FPUL
+        FLOAT       FPUL,FR0
+        MOV.W       @R5+,R1
+        LDS         R1,FPUL
+        FMUL        FR4,FR0
+        MOV.W       @R5+,R2
+        FLOAT       FPUL,FR1
+        LDS         R2,FPUL
+        FMUL        FR4,FR1
+        MOV.W       @R5+,R1
+        FLOAT       FPUL,FR2
+        LDS         R1,FPUL
+        FMUL        FR4,FR2
+        ADD         #-TA_TEXID,R5           ; from texid back to the cell's sx
+        FLOAT       FPUL,FR3
+        MOV         #NJD_SPRITE_HFLIP,R1
+        FMUL        FR4,FR3
+        TST         R6,R1
+        BT          ?flip_v
+        FMOV.S      FR0,FR4
+        FMOV.S      FR2,FR0
+        FMOV.S      FR4,FR2
+?flip_v:
+        MOV         #NJD_SPRITE_VFLIP,R1
+        TST         R6,R1
+        BT          ?size
+        FMOV.S      FR1,FR4
+        FMOV.S      FR3,FR1
+        FMOV.S      FR4,FR3
+?size:
+        ; push each corner's u and v, and put x1, y1, x2 and y2 in FR0 to FR3
+        MOV.W       @R5+,R2
+        MOV.W       @R5+,R3
+        MOV.W       @R5+,R0
+        MOV.W       @R5+,R1
+        NEG         R0,R0
+        FMOV.S      FR0,@-R8
+        NEG         R1,R1
+        FMOV.S      FR1,@-R8
+        ADD         R0,R2
+        FMOV.S      FR0,@-R8
+        ADD         R1,R3
+        FMOV.S      FR3,@-R8
+        LDS         R0,FPUL
+        FMOV.S      FR2,@-R8
+        FMOV.S      FR1,@-R8
+        FLOAT       FPUL,FR0
+        LDS         R1,FPUL
+        FMOV.S      FR2,@-R8
+        FMOV.S      FR3,@-R8
+        FLOAT       FPUL,FR1
+        LDS         R2,FPUL
+        MOV         #SP_SX,R0
+        FMOV.S      @(R0,R4),FR4
+        FLOAT       FPUL,FR2
+        LDS         R3,FPUL
+        MOV         #SP_SY,R0
+        FMOV.S      @(R0,R4),FR5
+        FLOAT       FPUL,FR3
+        FMUL        FR4,FR0
+        FMUL        FR4,FR2
+        FMUL        FR5,FR1
+        FMUL        FR5,FR3
+        MOV         #NJD_SPRITE_ANGLE,R0
+        TST         R0,R6
+        BF          ?turned
+        ; without NJD_SPRITE_ANGLE, move the corners by sp->p.x and sp->p.y
+        MOV         R9,R7
+        ADD         #2*VERTEX_SIZE,R9       ; past four vertices, in two ADDs
+        ADD         #2*VERTEX_SIZE,R9
+        ADD         #VERTEX_WRITTEN,R7
+        MOV.L       ?normal,R1
+        MOV.L       ?end_of_strip,R2
+        FMOV.S      @R4+,FR4
+        FMOV.S      @R4+,FR5
+        FADD        FR4,FR0
+        FADD        FR5,FR1
+        FADD        FR4,FR2
+        FADD        FR5,FR3
+        FLDI1       FR15
+        ADD         #UV_BYTES-FLOAT_SIZE,R8 ; the first corner's u
+        FMOV.S      @R8,FR4
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR4,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR1,@-R7
+        FMOV.S      FR0,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR4
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR4,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR0,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR4
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR4,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR1,@-R7
+        FMOV.S      FR2,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR4
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR4,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR2,@-R7
+        MOV.L       R2,@-R7
+        BRA         ?done
+        PREF        @R7
+        ; a halfword of 0 puts ?uv_unit on the 4-byte boundary MOVA needs
+        .DATA.W     0
+?uv_unit:
+        .FDATA.S    F'0.00390625
+?normal:
+        .DATA.L     KM_VERTEXPARAM_NORMAL
+?end_of_strip:
+        .DATA.L     KM_VERTEXPARAM_ENDOFSTRIP
+?turned:
+        MOV.L       @(SP_ANG,R4),R1
+        EXTU.W      R1,R1
+        LDS         R1,FPUL
+        FSCA        FPUL,DR10
+        FMOV.S      FR1,FR7
+        FMOV.S      FR0,FR1
+        FMOV.S      FR2,FR8
+        FMOV.S      FR2,FR9
+        FMUL        FR11,FR0
+        FMUL        FR10,FR1
+        FMUL        FR11,FR8
+        FMUL        FR10,FR9
+        FMOV.S      FR7,FR14
+        FMOV.S      FR3,FR15
+        FMUL        FR10,FR7
+        FMUL        FR11,FR14
+        FMUL        FR10,FR3
+        FMUL        FR11,FR15
+        FMOV.S      FR0,FR4
+        FSUB        FR3,FR4
+        FMOV.S      FR1,FR5
+        FADD        FR15,FR5
+        FSUB        FR7,FR0
+        FADD        FR14,FR1
+        FMOV.S      FR8,FR12
+        FSUB        FR3,FR12
+        FMOV.S      FR9,FR13
+        FADD        FR15,FR13
+        FSUB        FR7,FR8
+        FADD        FR14,FR9
+        ; move the turned corners by sp->p.x and sp->p.y
+        FMOV.S      @R4+,FR2
+        FMOV.S      @R4+,FR3
+        FADD        FR2,FR0
+        FADD        FR3,FR1
+        FADD        FR2,FR4
+        FADD        FR3,FR5
+        FADD        FR2,FR8
+        FADD        FR3,FR9
+        FADD        FR2,FR12
+        FADD        FR3,FR13
+        MOV         R9,R7
+        ADD         #2*VERTEX_SIZE,R9       ; past four vertices, in two ADDs
+        ADD         #2*VERTEX_SIZE,R9
+        ADD         #VERTEX_WRITTEN,R7
+        MOV.L       #KM_VERTEXPARAM_NORMAL,R1
+        MOV.L       #KM_VERTEXPARAM_ENDOFSTRIP,R2
+        FLDI1       FR15
+        ADD         #UV_BYTES-FLOAT_SIZE,R8 ; the first corner's u
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR1,@-R7
+        FMOV.S      FR0,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR5,@-R7
+        FMOV.S      FR4,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR9,@-R7
+        FMOV.S      FR8,@-R7
+        MOV.L       R1,@-R7
+        PREF        @R7
+        ADD         #VERTEX_SIZE+VERTEX_WRITTEN,R7
+        FMOV.S      @R8,FR3
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      @R8,FR7
+        ADD         #-FLOAT_SIZE,R8
+        FMOV.S      FR15,@-R7
+        FMOV.S      FR7,@-R7
+        FMOV.S      FR3,@-R7
+        FMOV.S      FR6,@-R7
+        FMOV.S      FR13,@-R7
+        FMOV.S      FR12,@-R7
+        MOV.L       R2,@-R7
+        PREF        @R7
+?done:
+        MOV         R9,R2
+        ADD         #UV_BYTES,R15
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        FMOV.S      @R15+,FR12
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR14
+        RTS
+        FMOV.S      @R15+,FR15
+
+        .END

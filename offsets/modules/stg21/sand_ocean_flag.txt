@@ -1,0 +1,9 @@
+text  SAND_OCEAN_FLAG_POLE_FILENAME  C  0x00000000  12
+text  SAND_OCEAN_FLAG_CLOTH_FILENAME  C  0x0000000c  12
+datum  flag_support_textures  D  0x00000000  12
+datum  flag_support_texlist  D  0x0000000c  8
+datum  flag_support_model_polygons  D  0x00000014  126
+datum  flag_support_model_vertices  D  0x00000094  140
+datum  flag_support_model  D  0x00000120  24
+datum  flag_support_root  D  0x00000138  52
+datum  flag_frames  D  0x0000016c  38160

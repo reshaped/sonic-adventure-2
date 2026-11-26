@@ -1,0 +1,26 @@
+text  EYE_TEXTURE_DC_PC_EYEBALL128  17
+text  EYE_TEXTURE_DC_PC_EYEBALLRID128  20
+text  EYE_TEXTURE_DC_PC_EYEBALLLIGHT64  21
+text  EYE_KIND_BLANK  2
+
+pointer cave_eye_texture_names  0x00000000  EYE_TEXTURE_DC_PC_EYEBALL128
+pointer cave_eye_texture_names  0x0000000c  EYE_TEXTURE_DC_PC_EYEBALLRID128
+pointer cave_eye_texlist  0x00000000  cave_eye_texture_names
+pointer cave_eye_model  0x00000000  cave_eye_vertices
+pointer cave_eye_model  0x00000004  cave_eye_polygons
+pointer cave_eye_object  0x00000004  cave_eye_model
+pointer cave_eye_light_texture_names  0x00000000  EYE_TEXTURE_DC_PC_EYEBALLLIGHT64
+pointer cave_eye_light_texlist  0x00000000  cave_eye_light_texture_names
+pointer cave_eye_light_model  0x00000000  cave_eye_light_vertices
+pointer cave_eye_light_model  0x00000004  cave_eye_light_polygons
+pointer cave_eye_light_object  0x00000004  cave_eye_light_model
+pointer cave_eye_collision_meshsets  0x00000004  cave_eye_collision_indices
+pointer cave_eye_collision_model  0x00000000  cave_eye_collision_points
+pointer cave_eye_collision_model  0x00000004  cave_eye_collision_normals
+pointer cave_eye_collision_model  0x0000000c  cave_eye_collision_meshsets
+pointer cave_eye_collision_model  0x00000010  cave_eye_collision_materials
+pointer cave_eye_collision  0x00000004  cave_eye_collision_model
+pointer eye_models  0x00000000  cave_eye_model
+pointer cave_eye_texlists  0x00000000  cave_eye_texlist
+pointer cave_eye_texlists  0x00000004  cave_eye_light_texlist
+pointer eye_kind_names  0x00000000  EYE_KIND_BLANK

@@ -1,0 +1,3 @@
+pointer  stone_box_model  0x00000000  stone_box_vertices
+pointer  stone_box_model  0x00000004  stone_box_polygons
+pointer  stone_box_object  0x00000004  stone_box_model

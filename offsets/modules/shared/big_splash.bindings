@@ -1,0 +1,44 @@
+text  SPLASH_ARCHIVE_FINAL  11
+text  SPLASH_ARCHIVE_LAGOON  10
+text  SPLASH_ARCHIVE  8
+text  SPLASH_TASK_NAME  5
+text  SPLASH_COLUMN_TEXTURE_1  8
+text  SPLASH_COLUMN_TEXTURE_2  8
+text  SPLASH_DROP_TEXTURE_1  8
+text  SPLASH_DROP_TEXTURE_2  8
+text  SPLASH_DROP_TEXTURE_3  8
+text  SPLASH_DROP_TEXTURE_4  8
+text  SPLASH_DROP_TEXTURE_5  8
+text  SPLASH_DROP_TEXTURE_6  8
+text  SPLASH_DROP_TEXTURE_7  8
+text  SPLASH_DROP_TEXTURE_8  8
+pointer  big_splash_texnames  0x00000000  SPLASH_COLUMN_TEXTURE_1
+pointer  big_splash_texnames  0x0000000c  SPLASH_COLUMN_TEXTURE_2
+pointer  big_splash_texnames  0x00000018  SPLASH_DROP_TEXTURE_1
+pointer  big_splash_texnames  0x00000024  SPLASH_DROP_TEXTURE_2
+pointer  big_splash_texnames  0x00000030  SPLASH_DROP_TEXTURE_3
+pointer  big_splash_texnames  0x0000003c  SPLASH_DROP_TEXTURE_4
+pointer  big_splash_texnames  0x00000048  SPLASH_DROP_TEXTURE_5
+pointer  big_splash_texnames  0x00000054  SPLASH_DROP_TEXTURE_6
+pointer  big_splash_texnames  0x00000060  SPLASH_DROP_TEXTURE_7
+pointer  big_splash_texnames  0x0000006c  SPLASH_DROP_TEXTURE_8
+pointer  big_splash_texlist  0x00000000  big_splash_texnames
+pointer  drop_texlist  0x00000000  big_splash_texnames+0x18
+pointer  dat_big_splash_0_texname  0x00000000  SPLASH_COLUMN_TEXTURE_1
+pointer  dat_big_splash_0_texlist  0x00000000  dat_big_splash_0_texname
+pointer  column_model  0x00000000  column_vertices
+pointer  column_model  0x00000004  column_polygons
+pointer  column_object  0x00000004  column_model
+pointer  column_shape_keys  0x00000004  column_shape_points
+pointer  column_shape_keys  0x0000000c  column_shape_points+0x120
+pointer  column_shape_keys  0x00000014  column_shape_points+0x240
+pointer  column_shape_keys  0x0000001c  column_shape_points+0x360
+pointer  column_shape_keys  0x00000024  column_shape_points+0x480
+pointer  column_shape_keys  0x0000002c  column_shape_points+0x5a0
+pointer  column_shape_keys  0x00000034  column_shape_points+0x6c0
+pointer  column_shape_keys  0x0000003c  column_shape_points+0x7e0
+pointer  column_shape_data  0x00000000  column_shape_keys
+pointer  column_shape  0x00000000  column_shape_data
+pointer  column_motion  0x00000000  column_motion_data
+pointer  drop_group  0x00000004  drop_texlist
+pointer  drop_group  0x00000020  drop_step

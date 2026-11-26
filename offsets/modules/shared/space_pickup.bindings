@@ -1,0 +1,3 @@
+pointer  space_pickup_textures  0x00000000  space_pickup_first_texlist
+pointer  space_pickup_textures  0x00000004  space_pickup_second_texlist
+pointer  space_pickup_textures  0x00000008  space_pickup_third_texlist

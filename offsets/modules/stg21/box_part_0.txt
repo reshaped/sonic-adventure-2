@@ -1,0 +1,3 @@
+datum  box_stone_texture  C  0x00000000  14
+datum  textures  D  0x00000000  36
+datum  box_part_0_texlist  D  0x00000024  8

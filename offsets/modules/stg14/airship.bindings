@@ -1,0 +1,28 @@
+text  HIGHWAY_TEXTURE_MIU128_RH007  13
+text  HIGHWAY_TEXTURE_MIU32_RH001  12
+text  HIGHWAY_TEXTURE_MIU64_RH016  12
+text  HIGHWAY_TEXTURE_MIU128_RH014  13
+pointer  airship_0_textures  0x00000000  HIGHWAY_TEXTURE_MIU128_RH007
+pointer  airship_0_textures  0x0000000c  HIGHWAY_TEXTURE_MIU32_RH001
+pointer  airship_0_textures  0x00000018  HIGHWAY_TEXTURE_MIU64_RH016
+pointer  airship_0_texlist  0x00000000  airship_0_textures
+pointer  airship_0_swing_mesh  0x00000000  airship_0_swing_vertices
+pointer  airship_0_swing_mesh  0x00000004  airship_0_swing_polygons
+pointer  airship_0_swing  0x00000004  airship_0_swing_mesh
+pointer  airship_0_mesh  0x00000000  airship_0_vertices
+pointer  airship_0_mesh  0x00000004  airship_0_polygons
+pointer  airship_0_object  0x00000004  airship_0_mesh
+pointer  airship_0_object  0x0000002c  airship_0_swing
+pointer  airship_1_textures  0x00000000  HIGHWAY_TEXTURE_MIU128_RH014
+pointer  airship_1_textures  0x0000000c  HIGHWAY_TEXTURE_MIU32_RH001
+pointer  airship_1_textures  0x00000018  HIGHWAY_TEXTURE_MIU64_RH016
+pointer  airship_1_texlist  0x00000000  airship_1_textures
+pointer  airship_1_swing_mesh  0x00000000  airship_1_swing_vertices
+pointer  airship_1_swing_mesh  0x00000004  airship_1_swing_polygons
+pointer  airship_1_swing  0x00000004  airship_1_swing_mesh
+pointer  airship_1_mesh  0x00000000  airship_1_vertices
+pointer  airship_1_mesh  0x00000004  airship_1_polygons
+pointer  airship_1_object  0x00000004  airship_1_mesh
+pointer  airship_1_object  0x0000002c  airship_1_swing
+pointer  airship_texlists  0x00000000  airship_0_texlist
+pointer  airship_texlists  0x00000004  airship_1_texlist

@@ -1,0 +1,18 @@
+text  SECURITY_CAMERA_TEXTURE_MIU64_IG006  12
+text  SECURITY_CAMERA_TEXTURE_MIU64_IG010  12
+text  SECURITY_CAMERA_TEXTURE_MIU64_IG011  12
+text  SECURITY_CAMERA_TEXTURE_MIU64_IG017  12
+
+pointer  security_camera_texlist_names  0x00000000  SECURITY_CAMERA_TEXTURE_MIU64_IG006
+pointer  security_camera_texlist_names  0x0000000c  SECURITY_CAMERA_TEXTURE_MIU64_IG010
+pointer  security_camera_texlist_names  0x00000018  SECURITY_CAMERA_TEXTURE_MIU64_IG011
+pointer  security_camera_texlist_names  0x00000024  SECURITY_CAMERA_TEXTURE_MIU64_IG017
+pointer  security_camera_texlist  0x00000000  security_camera_texlist_names
+pointer  security_camera_object_child_model  0x00000000  security_camera_object_child_vertices
+pointer  security_camera_object_child_model  0x00000004  security_camera_object_child_polygons
+pointer  security_camera_object_child  0x00000004  security_camera_object_child_model
+pointer  security_camera_model  0x00000000  security_camera_vertices
+pointer  security_camera_model  0x00000004  security_camera_polygons
+pointer  security_camera_object  0x00000004  security_camera_model
+pointer  security_camera_object  0x0000002c  security_camera_object_child
+pointer  security_camera_texlists  0x00000000  security_camera_texlist

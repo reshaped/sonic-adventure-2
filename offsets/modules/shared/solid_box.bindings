@@ -1,0 +1,10 @@
+text  SOLID_BOX_TEXT_SIKAKE_46_128  14
+text  SOLID_BOX_TEXT_SIKAKE_47_128  14
+
+pointer  solid_box_texnames  0x00000000  SOLID_BOX_TEXT_SIKAKE_46_128
+pointer  solid_box_texnames  0x0000000c  SOLID_BOX_TEXT_SIKAKE_47_128
+pointer  solid_box_texlist  0x00000000  solid_box_texnames
+pointer  solid_box_model  0x00000000  solid_box_vertices
+pointer  solid_box_model  0x00000004  solid_box_polygons
+pointer  solid_box_object  0x00000004  solid_box_model
+pointer  solid_box_texlists  0x00000000  solid_box_texlist

@@ -1,0 +1,33 @@
+text  SMOKE_TASK_NAME  10
+text  SAND_TASK_NAME  10
+text  DUST_TEXTURE_1  7
+text  DUST_TEXTURE_2  7
+text  DUST_TEXTURE_3  7
+text  DUST_TEXTURE_4  7
+text  DUST_TEXTURE_5  7
+text  DUST_TEXTURE_6  7
+text  DUST_TEXTURE_7  7
+text  DUST_TEXTURE_8  7
+pointer  dust_texnames  0x00000000  DUST_TEXTURE_1
+pointer  dust_texnames  0x0000000c  DUST_TEXTURE_2
+pointer  dust_texnames  0x00000018  DUST_TEXTURE_3
+pointer  dust_texnames  0x00000024  DUST_TEXTURE_4
+pointer  dust_texnames  0x00000030  DUST_TEXTURE_5
+pointer  dust_texnames  0x0000003c  DUST_TEXTURE_6
+pointer  dust_texnames  0x00000048  DUST_TEXTURE_7
+pointer  dust_texnames  0x00000054  DUST_TEXTURE_8
+pointer  dust_texlist  0x00000000  dust_texnames
+pointer  dust_smoke_group  0x00000004  dust_texlist
+pointer  dust_smoke_group  0x00000020  dust_fade_step
+pointer  dust_smoke_group  0x00000028  dust_smoke_template
+pointer  dust_sand_group  0x00000004  dust_texlist
+pointer  dust_sand_group  0x00000020  dust_fade_step
+pointer  dust_sand_group  0x00000028  dust_sand_template
+pointer  dust_group  0x00000004  dust_texlist
+pointer  dust_group  0x00000020  dust_fade_step
+pointer  dust_short_group  0x00000004  dust_texlist
+pointer  dust_short_group  0x00000020  dust_swing_step
+pointer  dust_steady_group  0x00000004  dust_texlist
+pointer  dust_steady_group  0x00000020  dust_steady_step
+pointer  dust_steady_gravity_group  0x00000004  dust_texlist
+pointer  dust_steady_gravity_group  0x00000020  dust_steady_gravity_step

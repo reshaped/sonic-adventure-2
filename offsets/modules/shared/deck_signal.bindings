@@ -1,0 +1,22 @@
+text  DECK_SIGNAL_TEXTURE_MIU32_WB002  12
+text  DECK_SIGNAL_TEXTURE_PR128_28  9
+text  DECK_SIGNAL_TEXTURE_PR32_1  7
+text  DECK_SIGNAL_TEXTURE_PR64_11  8
+text  DECK_SIGNAL_TEXTURE_PR64_21  8
+text  DECK_SIGNAL_TEXTURE_PR_3KAGE32  11
+
+pointer  deck_signal_textures  0x00000000  DECK_SIGNAL_TEXTURE_MIU32_WB002
+pointer  deck_signal_textures  0x0000000c  DECK_SIGNAL_TEXTURE_PR128_28
+pointer  deck_signal_textures  0x00000018  DECK_SIGNAL_TEXTURE_PR32_1
+pointer  deck_signal_textures  0x00000024  DECK_SIGNAL_TEXTURE_PR64_11
+pointer  deck_signal_textures  0x00000030  DECK_SIGNAL_TEXTURE_PR64_21
+pointer  deck_signal_textures  0x0000003c  DECK_SIGNAL_TEXTURE_PR_3KAGE32
+pointer  deck_signal_texlist  0x00000000  deck_signal_textures
+pointer  deck_signal_lens_model  0x00000000  deck_signal_lens_vertices
+pointer  deck_signal_lens_model  0x00000004  deck_signal_lens_polygons
+pointer  deck_signal_lens  0x00000004  deck_signal_lens_model
+pointer  deck_signal_model  0x00000000  deck_signal_vertices
+pointer  deck_signal_model  0x00000004  deck_signal_polygons
+pointer  deck_signal_object  0x00000004  deck_signal_model
+pointer  deck_signal_object  0x0000002c  deck_signal_lens
+pointer  deck_signal_texlists  0x00000000  deck_signal_texlist

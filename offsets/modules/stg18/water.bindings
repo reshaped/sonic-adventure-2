@@ -1,0 +1,123 @@
+text  LAGOON_TEXTURE_KD_DL_MIZU2_001  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_002  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_003  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_004  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_005  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_006  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_007  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_008  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_009  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_010  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_011  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_012  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_013  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_014  16
+text  LAGOON_TEXTURE_KD_DL_MIZU2_015  16
+text  LAGOON_TEXTURE_KD_DL_MIZU_001  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_002  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_003  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_004  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_005  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_006  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_007  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_008  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_009  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_010  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_011  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_012  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_013  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_014  15
+text  LAGOON_TEXTURE_TX_MINE001  11
+text  LAGOON_TEXTURE_TX_JUNGLE101  13
+pointer  lagoon_water_texlist_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU2_001
+pointer  lagoon_water_texlist_names  0x0000000c  LAGOON_TEXTURE_KD_DL_MIZU2_002
+pointer  lagoon_water_texlist_names  0x00000018  LAGOON_TEXTURE_KD_DL_MIZU2_003
+pointer  lagoon_water_texlist_names  0x00000024  LAGOON_TEXTURE_KD_DL_MIZU2_004
+pointer  lagoon_water_texlist_names  0x00000030  LAGOON_TEXTURE_KD_DL_MIZU2_005
+pointer  lagoon_water_texlist_names  0x0000003c  LAGOON_TEXTURE_KD_DL_MIZU2_006
+pointer  lagoon_water_texlist_names  0x00000048  LAGOON_TEXTURE_KD_DL_MIZU2_007
+pointer  lagoon_water_texlist_names  0x00000054  LAGOON_TEXTURE_KD_DL_MIZU2_008
+pointer  lagoon_water_texlist_names  0x00000060  LAGOON_TEXTURE_KD_DL_MIZU2_009
+pointer  lagoon_water_texlist_names  0x0000006c  LAGOON_TEXTURE_KD_DL_MIZU2_010
+pointer  lagoon_water_texlist_names  0x00000078  LAGOON_TEXTURE_KD_DL_MIZU2_011
+pointer  lagoon_water_texlist_names  0x00000084  LAGOON_TEXTURE_KD_DL_MIZU2_012
+pointer  lagoon_water_texlist_names  0x00000090  LAGOON_TEXTURE_KD_DL_MIZU2_013
+pointer  lagoon_water_texlist_names  0x0000009c  LAGOON_TEXTURE_KD_DL_MIZU2_014
+pointer  lagoon_water_texlist_names  0x000000a8  LAGOON_TEXTURE_KD_DL_MIZU2_015
+pointer  lagoon_water_texlist_names  0x000000b4  LAGOON_TEXTURE_KD_DL_MIZU_001
+pointer  lagoon_water_texlist_names  0x000000c0  LAGOON_TEXTURE_KD_DL_MIZU_002
+pointer  lagoon_water_texlist_names  0x000000cc  LAGOON_TEXTURE_KD_DL_MIZU_003
+pointer  lagoon_water_texlist_names  0x000000d8  LAGOON_TEXTURE_KD_DL_MIZU_004
+pointer  lagoon_water_texlist_names  0x000000e4  LAGOON_TEXTURE_KD_DL_MIZU_005
+pointer  lagoon_water_texlist_names  0x000000f0  LAGOON_TEXTURE_KD_DL_MIZU_006
+pointer  lagoon_water_texlist_names  0x000000fc  LAGOON_TEXTURE_KD_DL_MIZU_007
+pointer  lagoon_water_texlist_names  0x00000108  LAGOON_TEXTURE_KD_DL_MIZU_008
+pointer  lagoon_water_texlist_names  0x00000114  LAGOON_TEXTURE_KD_DL_MIZU_009
+pointer  lagoon_water_texlist_names  0x00000120  LAGOON_TEXTURE_KD_DL_MIZU_010
+pointer  lagoon_water_texlist_names  0x0000012c  LAGOON_TEXTURE_KD_DL_MIZU_011
+pointer  lagoon_water_texlist_names  0x00000138  LAGOON_TEXTURE_KD_DL_MIZU_012
+pointer  lagoon_water_texlist_names  0x00000144  LAGOON_TEXTURE_KD_DL_MIZU_013
+pointer  lagoon_water_texlist_names  0x00000150  LAGOON_TEXTURE_KD_DL_MIZU_014
+pointer  lagoon_water_texlist_names  0x0000015c  LAGOON_TEXTURE_TX_MINE001
+pointer  lagoon_water_texlist  0x00000000  lagoon_water_texlist_names
+pointer  water_texture_set_2_names  0x00000000  LAGOON_TEXTURE_TX_JUNGLE101
+pointer  water_texture_set_2_names  0x0000000c  LAGOON_TEXTURE_KD_DL_MIZU_001
+pointer  water_texture_set_2  0x00000000  water_texture_set_2_names
+pointer  lagoon_water_object_0_model  0x00000000  lagoon_water_object_0_vertices
+pointer  lagoon_water_object_0_model  0x00000004  lagoon_water_object_0_polygons
+pointer  lagoon_water_object_0  0x00000004  lagoon_water_object_0_model
+pointer  water_texture_set_3_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU_001
+pointer  water_texture_set_3  0x00000000  water_texture_set_3_names
+pointer  lagoon_water_object_1_model  0x00000000  lagoon_water_object_1_vertices
+pointer  lagoon_water_object_1_model  0x00000004  lagoon_water_object_1_polygons
+pointer  lagoon_water_object_1  0x00000004  lagoon_water_object_1_model
+pointer  water_texture_set_4_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU_001
+pointer  water_texture_set_4  0x00000000  water_texture_set_4_names
+pointer  lagoon_water_object_2_model  0x00000000  lagoon_water_object_2_vertices
+pointer  lagoon_water_object_2_model  0x00000004  lagoon_water_object_2_polygons
+pointer  lagoon_water_object_2  0x00000004  lagoon_water_object_2_model
+pointer  water_texture_set_5_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU_001
+pointer  water_texture_set_5  0x00000000  water_texture_set_5_names
+pointer  lagoon_water_object_3_model  0x00000000  lagoon_water_object_3_vertices
+pointer  lagoon_water_object_3_model  0x00000004  lagoon_water_object_3_polygons
+pointer  lagoon_water_object_3  0x00000004  lagoon_water_object_3_model
+pointer  water_texture_set_6_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU_001
+pointer  water_texture_set_6  0x00000000  water_texture_set_6_names
+pointer  lagoon_water_object_4_model  0x00000000  lagoon_water_object_4_vertices
+pointer  lagoon_water_object_4_model  0x00000004  lagoon_water_object_4_polygons
+pointer  lagoon_water_object_4  0x00000004  lagoon_water_object_4_model
+pointer  water_texture_set_7_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU_001
+pointer  water_texture_set_7  0x00000000  water_texture_set_7_names
+pointer  lagoon_water_object_5_model  0x00000000  lagoon_water_object_5_vertices
+pointer  lagoon_water_object_5_model  0x00000004  lagoon_water_object_5_polygons
+pointer  lagoon_water_object_5  0x00000004  lagoon_water_object_5_model
+pointer  water_texture_set_8_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU2_001
+pointer  water_texture_set_8  0x00000000  water_texture_set_8_names
+pointer  lagoon_water_object_6_model  0x00000000  lagoon_water_object_6_vertices
+pointer  lagoon_water_object_6_model  0x00000004  lagoon_water_object_6_polygons
+pointer  lagoon_water_object_6  0x00000004  lagoon_water_object_6_model
+pointer  water_texture_set_9_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU2_001
+pointer  water_texture_set_9  0x00000000  water_texture_set_9_names
+pointer  lagoon_water_object_7_model  0x00000000  lagoon_water_object_7_vertices
+pointer  lagoon_water_object_7_model  0x00000004  lagoon_water_object_7_polygons
+pointer  lagoon_water_object_7  0x00000004  lagoon_water_object_7_model
+pointer  water_texture_set_10_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU2_001
+pointer  water_texture_set_10  0x00000000  water_texture_set_10_names
+pointer  lagoon_water_object_8_model  0x00000000  lagoon_water_object_8_vertices
+pointer  lagoon_water_object_8_model  0x00000004  lagoon_water_object_8_polygons
+pointer  lagoon_water_object_8  0x00000004  lagoon_water_object_8_model
+pointer  water_texture_set_11_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU2_001
+pointer  water_texture_set_11  0x00000000  water_texture_set_11_names
+pointer  lagoon_water_object_9_model  0x00000000  lagoon_water_object_9_vertices
+pointer  lagoon_water_object_9_model  0x00000004  lagoon_water_object_9_polygons
+pointer  lagoon_water_object_9  0x00000004  lagoon_water_object_9_model
+pointer  water_texture_set_12_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU2_001
+pointer  water_texture_set_12  0x00000000  water_texture_set_12_names
+pointer  lagoon_water_object_10_model  0x00000000  lagoon_water_object_10_vertices
+pointer  lagoon_water_object_10_model  0x00000004  lagoon_water_object_10_polygons
+pointer  lagoon_water_object_10  0x00000004  lagoon_water_object_10_model
+pointer  water_texture_set_13_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU2_001
+pointer  water_texture_set_13  0x00000000  water_texture_set_13_names
+pointer  lagoon_water_object_11_model  0x00000000  lagoon_water_object_11_vertices
+pointer  lagoon_water_object_11_model  0x00000004  lagoon_water_object_11_polygons
+pointer  lagoon_water_object_11  0x00000004  lagoon_water_object_11_model

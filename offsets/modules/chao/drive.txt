@@ -1,0 +1,2 @@
+datum  drive_glow_cell  C  0x00000090  20
+text  GARDEN_DRIVE_TASK_NAME  C  0x000000a4  23

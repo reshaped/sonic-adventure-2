@@ -1,0 +1,20 @@
+text  EMBLEM_ARCHIVE  5
+text  EMBLEM_MANAGER  14
+text  EMBLEM_FONT_TEXTURE  29
+text  EMBLEM_FACE_TEXTURE  29
+text  EMBLEM_SHINE_TEXTURE  29
+text  EMBLEM_RIM_TEXTURE  29
+text  EMBLEM_BACK_TEXTURE  29
+text  EMBLEM_BODY_TEXTURE  29
+pointer  emblem_texnames  0x00000000  EMBLEM_FONT_TEXTURE
+pointer  emblem_texnames  0x0000000c  EMBLEM_FACE_TEXTURE
+pointer  emblem_texnames  0x00000018  EMBLEM_SHINE_TEXTURE
+pointer  emblem_texnames  0x00000024  EMBLEM_RIM_TEXTURE
+pointer  emblem_texnames  0x00000030  EMBLEM_BACK_TEXTURE
+pointer  emblem_texnames  0x0000003c  EMBLEM_BODY_TEXTURE
+pointer  emblem_texlist  0x00000000  emblem_texnames
+pointer  emblem_model  0x00000000  emblem_vertices
+pointer  emblem_model  0x00000004  emblem_polygons
+pointer  emblem_object  0x00000004  emblem_model
+pointer  emblem_motion_data  0x00000004  emblem_ang_keys
+pointer  emblem_motion  0x00000000  emblem_motion_data

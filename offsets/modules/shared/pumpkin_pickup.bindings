@@ -1,0 +1,12 @@
+text  PUMPKIN_PICKUP_TEXTURE_MIU64_MO007  12
+text  PUMPKIN_PICKUP_TEXTURE_MIU64_MO008  12
+text  PUMPKIN_PICKUP_TEXTURE_MIU64_MO009  12
+
+pointer  pumpkin_pickup_texlist_names  0x00000000  PUMPKIN_PICKUP_TEXTURE_MIU64_MO007
+pointer  pumpkin_pickup_texlist_names  0x0000000c  PUMPKIN_PICKUP_TEXTURE_MIU64_MO008
+pointer  pumpkin_pickup_texlist_names  0x00000018  PUMPKIN_PICKUP_TEXTURE_MIU64_MO009
+pointer  pumpkin_pickup_texlist  0x00000000  pumpkin_pickup_texlist_names
+pointer  pumpkin_pickup_model  0x00000000  pumpkin_pickup_vertices
+pointer  pumpkin_pickup_model  0x00000004  pumpkin_pickup_polygons
+pointer  pumpkin_pickup_object  0x00000004  pumpkin_pickup_model
+pointer  pumpkin_pickup_texlists  0x00000000  pumpkin_pickup_texlist

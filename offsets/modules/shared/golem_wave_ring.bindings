@@ -1,0 +1,5 @@
+pointer  ring_texture  0x00000000  golem_wave_texture
+pointer  golem_wave_ring_texlist  0x00000000  ring_texture
+pointer  golem_wave_ring_model  0x00000000  ring_vertices
+pointer  golem_wave_ring_model  0x00000004  ring_polygons
+pointer  ring_object  0x00000004  golem_wave_ring_model

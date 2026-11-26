@@ -1,0 +1,2 @@
+modules/stg03/player_motions.c
+modules/stg03/terrain.c

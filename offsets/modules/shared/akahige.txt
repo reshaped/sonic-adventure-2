@@ -1,0 +1,5 @@
+datum  hornet_3_pieces  D  0x00000180  20
+datum  hornet_6_pieces  D  0x00000194  20
+datum  bomb_mounts  D  0x00000254  72
+datum  bomb_rolls  D  0x0000029c  24
+datum  dat_hornet_1  D  0x00000208  72

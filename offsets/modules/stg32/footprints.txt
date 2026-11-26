@@ -1,0 +1,6 @@
+datum  knuckles_first  D  0x0000001c  96
+datum  knuckles_second  D  0x0000007c  96
+datum  rouge_first  D  0x000000dc  96
+datum  rouge_second  D  0x0000013c  96
+text  MATERIAL_01  C  0x00000014  16
+datum  textures  D  0x00000000  12

@@ -1,0 +1,4 @@
+modules/stg13/dat_8c691cb0.c
+modules/stg13/dat_8c691d00.c
+modules/stg13/paths.c
+modules/stg13/terrain.c

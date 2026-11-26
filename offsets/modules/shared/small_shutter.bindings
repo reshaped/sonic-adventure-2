@@ -1,0 +1,32 @@
+text  SMALL_SHUTTER_TEXTURE_MIU128_WB002  13
+text  SMALL_SHUTTER_TEXTURE_MIU64_WB002  12
+
+pointer  deck_shutter_small_textures  0x00000000  SMALL_SHUTTER_TEXTURE_MIU128_WB002
+pointer  deck_shutter_small_textures  0x0000000c  SMALL_SHUTTER_TEXTURE_MIU64_WB002
+pointer  deck_shutter_small_texlist  0x00000000  deck_shutter_small_textures
+pointer  deck_shutter_small_model  0x00000000  deck_shutter_small_vertices
+pointer  deck_shutter_small_model  0x00000004  deck_shutter_small_polygons
+pointer  deck_shutter_small_object  0x00000004  deck_shutter_small_model
+pointer  shutter_end_textures  0x00000000  SMALL_SHUTTER_TEXTURE_MIU128_WB002
+pointer  shutter_end_texlist  0x00000000  shutter_end_textures
+pointer  shutter_end_model  0x00000000  shutter_end_vertices
+pointer  shutter_end_model  0x00000004  shutter_end_polygons
+pointer  shutter_end_piece_object  0x00000004  shutter_end_model
+pointer  shutter_small_piece_textures  0x00000000  SMALL_SHUTTER_TEXTURE_MIU128_WB002
+pointer  shutter_small_piece_texlist  0x00000000  shutter_small_piece_textures
+pointer  shutter_small_piece_model  0x00000000  shutter_small_piece_vertices
+pointer  shutter_small_piece_model  0x00000004  shutter_small_piece_polygons
+pointer  shutter_small_piece_piece_object  0x00000004  shutter_small_piece_model
+pointer  deck_shutter_small_texlists  0x00000000  deck_shutter_small_texlist
+pointer  deck_shutter_small_texlists  0x00000004  shutter_end_texlist
+pointer  deck_shutter_small_texlists  0x00000008  shutter_small_piece_texlist
+pointer  parts  0x00000000  shutter_small_piece_texlist
+pointer  parts  0x00000004  shutter_small_piece_model
+pointer  parts  0x00000020  shutter_small_piece_texlist
+pointer  parts  0x00000024  shutter_small_piece_model
+pointer  parts  0x00000040  shutter_small_piece_texlist
+pointer  parts  0x00000044  shutter_small_piece_model
+pointer  parts  0x00000060  shutter_end_texlist
+pointer  parts  0x00000064  shutter_end_model
+pointer  parts  0x00000080  shutter_end_texlist
+pointer  parts  0x00000084  shutter_end_model

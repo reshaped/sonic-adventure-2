@@ -1,0 +1,23 @@
+text  DYNAMITE_TEXT_SIKAKE_02_128  14
+text  DYNAMITE_TEXT_SIKAKE_51_64  13
+text  DYNAMITE_TEXT_SIKAKE_52_32  13
+
+pointer  dynamite_texnames  0x00000000  DYNAMITE_TEXT_SIKAKE_02_128
+pointer  dynamite_texnames  0x0000000c  DYNAMITE_TEXT_SIKAKE_51_64
+pointer  dynamite_texlist  0x00000000  dynamite_texnames
+pointer  dynamite_model  0x00000000  dynamite_vertices
+pointer  dynamite_model  0x00000004  dynamite_polygons
+pointer  dynamite_object  0x00000004  dynamite_model
+pointer  dynamite_glow_texname  0x00000000  DYNAMITE_TEXT_SIKAKE_52_32
+pointer  dynamite_glow_texlist  0x00000000  dynamite_glow_texname
+pointer  dynamite_glow_model  0x00000000  dynamite_glow_vertices
+pointer  dynamite_glow_model  0x00000004  dynamite_glow_polygons
+pointer  dynamite_glow_object  0x00000004  dynamite_glow_model
+pointer  dynamite_blink_texname  0x00000000  DYNAMITE_TEXT_SIKAKE_02_128
+pointer  dynamite_blink_texlist  0x00000000  dynamite_blink_texname
+pointer  dynamite_blink_model  0x00000000  dynamite_blink_vertices
+pointer  dynamite_blink_model  0x00000004  dynamite_blink_polygons
+pointer  dynamite_blink_object  0x00000004  dynamite_blink_model
+pointer  dat_dynamite_1  0x00000010  dat_dynamite_0
+pointer  dynamite_flare_texname  0x00000000  DYNAMITE_TEXT_SIKAKE_52_32
+pointer  dynamite_flare_texlist  0x00000000  dynamite_flare_texname

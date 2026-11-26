@@ -1,0 +1,42 @@
+text TORCH_TEXTURE_MIU64_GREEN008 15
+text TORCH_TEXTURE_J_TORCH01 10
+text TORCH_TEXTURE_J_TORCH02 10
+text TORCH_TEXTURE_J_TORCH03 10
+text TORCH_TEXTURE_J_TORCH04 10
+text TORCH_TEXTURE_J_TORCH05 10
+text TORCH_TEXTURE_J_TORCH06 10
+text TORCH_TEXTURE_J_TORCH07 10
+text TORCH_TEXTURE_J_TORCH08 10
+text TORCH_TEXTURE_J_TORCH09 10
+text TORCH_TEXTURE_J_TORCH10 10
+text TORCH_TEXTURE_J_TORCH11 10
+text TORCH_TEXTURE_J_TORCH12 10
+text TORCH_TEXTURE_J_TORCH13 10
+text TORCH_TEXTURE_J_TORCH14 10
+text TORCH_TEXTURE_J_TORCH15 10
+text TORCH_TEXTURE_J_TORCH16 10
+
+pointer  model_textures  0x00000000  TORCH_TEXTURE_MIU64_GREEN008
+pointer  torch_texlist  0x00000000  model_textures
+pointer  post_mesh  0x00000000  post_vertices
+pointer  post_mesh  0x00000004  post_polygons
+pointer  torch_object  0x00000004  post_mesh
+pointer  flame_texnames  0x00000000  TORCH_TEXTURE_J_TORCH01
+pointer  flame_texnames  0x0000000c  TORCH_TEXTURE_J_TORCH02
+pointer  flame_texnames  0x00000018  TORCH_TEXTURE_J_TORCH03
+pointer  flame_texnames  0x00000024  TORCH_TEXTURE_J_TORCH04
+pointer  flame_texnames  0x00000030  TORCH_TEXTURE_J_TORCH05
+pointer  flame_texnames  0x0000003c  TORCH_TEXTURE_J_TORCH06
+pointer  flame_texnames  0x00000048  TORCH_TEXTURE_J_TORCH07
+pointer  flame_texnames  0x00000054  TORCH_TEXTURE_J_TORCH08
+pointer  flame_texnames  0x00000060  TORCH_TEXTURE_J_TORCH09
+pointer  flame_texnames  0x0000006c  TORCH_TEXTURE_J_TORCH10
+pointer  flame_texnames  0x00000078  TORCH_TEXTURE_J_TORCH11
+pointer  flame_texnames  0x00000084  TORCH_TEXTURE_J_TORCH12
+pointer  flame_texnames  0x00000090  TORCH_TEXTURE_J_TORCH13
+pointer  flame_texnames  0x0000009c  TORCH_TEXTURE_J_TORCH14
+pointer  flame_texnames  0x000000a8  TORCH_TEXTURE_J_TORCH15
+pointer  flame_texnames  0x000000b4  TORCH_TEXTURE_J_TORCH16
+pointer  flame_texlist  0x00000000  flame_texnames
+pointer  torch_texlists  0x00000000  torch_texlist
+pointer  torch_texlists  0x00000004  flame_texlist

@@ -1,0 +1,106 @@
+        .IMPORT     __errno
+        .EXPORT     __divls
+
+; errno.h's code for a division by zero
+EDIV:           .EQU    1102
+
+        .SECTION    P,CODE,ALIGN=4
+
+; signed division for compiled code: R0 = R1 / R0, rounded toward zero. it
+; changes R0, R1 and SR's Q, M and T bits, and no other register. a zero
+; divisor sets errno to EDIV and returns 0
+; @asm opcode: rotcl, ROTCL R1 at 0x8c0c0dce and the 32 after it shift the
+; dividend out of R1 through T, and the quotient into R1
+__divls:
+        TST         R0,R0
+        MOV.L       R2,@-R15
+        BT          ?divide_by_zero
+        MOV.L       R3,@-R15
+        MOV         #0,R2
+        DIV0S       R2,R1           ; T and Q, the dividend's sign
+        SUBC        R3,R3           ; R3, the dividend's sign extension
+        SUBC        R2,R1           ; a negative dividend to one's complement
+        DIV0S       R0,R3           ; Q and M, the signs of both operands
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        DIV1        R0,R3
+        ROTCL       R1
+        ADDC        R2,R1           ; a negative quotient to two's complement
+        MOV         R1,R0
+        MOV.L       @R15+,R3
+        RTS
+        MOV.L       @R15+,R2
+?divide_by_zero:
+        MOV.L       ?errno_address,R1
+        MOV.L       ?errno_value,R2
+        MOV         #0,R0
+        MOV.L       R2,@R1
+        RTS
+        MOV.L       @R15+,R2
+        .ALIGN      4
+?errno_address:
+        .DATA.L     __errno
+?errno_value:
+        .DATA.L     EDIV
+        .END

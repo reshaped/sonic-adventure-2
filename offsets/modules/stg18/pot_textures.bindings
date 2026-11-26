@@ -1,0 +1,6 @@
+text  LAGOON_TEXTURE_DZ_DL_TUBO_SMALL32  19
+pointer  textures  0x00000000  LAGOON_TEXTURE_DZ_DL_TUBO_SMALL32
+pointer  small_pot_texlist  0x00000000  textures
+pointer  small_pot_model  0x00000000  small_pot_vertices
+pointer  small_pot_model  0x00000004  small_pot_polygons
+pointer  small_pot_object  0x00000004  small_pot_model

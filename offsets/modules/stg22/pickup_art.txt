@@ -1,0 +1,8 @@
+text  GADGET_PICKUP_ART_MIU128_CG002  C  0x00000000  13
+text  GADGET_PICKUP_ART_MIU128_CG003  C  0x00000010  13
+datum  materials  D  0x00000000  24
+datum  pickup_object_2_texlist  D  0x00000018  8
+datum  pickup_polygons  D  0x00000020  438
+datum  pickup_vertices  D  0x000001d8  220
+datum  pickup_object_2_model  D  0x000002b4  24
+datum  pickup_object_node  D  0x000002cc  52

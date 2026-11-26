@@ -1,0 +1,6 @@
+datum  sky_names  D  0x00000000  24
+datum  carrier_sky_texlist  D  0x00000018  8
+datum  sky_polygons  D  0x00000020  1646
+datum  sky_vertices  D  0x00000690  1836
+datum  sky_model  D  0x00000dbc  24
+datum  carrier_sky  D  0x00000dd4  52

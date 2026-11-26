@@ -1,0 +1,4 @@
+datum  eye_beam_polygons  D  0x00000000  78
+datum  eye_beam_vertices  D  0x00000050  140
+datum  guard_eye_beam_model  D  0x000000dc  24
+datum  guard_eye_beam_object  D  0x000000f4  52

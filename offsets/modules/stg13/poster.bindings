@@ -1,0 +1,27 @@
+text  TEXTURE_MIU128_CE005  13
+text  TEXTURE_MIU128_CE008  13
+text  TEXTURE_MIU128_CE009  13
+text  TEXTURE_MIU128_CE010  13
+text  TEXTURE_MIU128_CE011  13
+text  TEXTURE_MIU128_CE013  13
+text  TEXTURE_MIU128_CE014  13
+text  TEXTURE_MIU128_CE015  13
+text  TEXTURE_MIU64_CE051  12
+text  TEXTURE_NIGHTS1  8
+text  TEXTURE_SCITY_KAGE32  13
+
+pointer  poster_texnames  0x00000000  TEXTURE_MIU128_CE005
+pointer  poster_texnames  0x0000000c  TEXTURE_MIU128_CE008
+pointer  poster_texnames  0x00000018  TEXTURE_MIU128_CE009
+pointer  poster_texnames  0x00000024  TEXTURE_MIU128_CE010
+pointer  poster_texnames  0x00000030  TEXTURE_MIU128_CE011
+pointer  poster_texnames  0x0000003c  TEXTURE_MIU128_CE013
+pointer  poster_texnames  0x00000048  TEXTURE_MIU128_CE014
+pointer  poster_texnames  0x00000054  TEXTURE_MIU128_CE015
+pointer  poster_texnames  0x00000060  TEXTURE_MIU64_CE051
+pointer  poster_texnames  0x0000006c  TEXTURE_NIGHTS1
+pointer  poster_texlist  0x00000000  poster_texnames
+pointer  poster_3_texnames  0x00000000  TEXTURE_SCITY_KAGE32
+pointer  poster_3_texlist  0x00000000  poster_3_texnames
+pointer  poster_texlists  0x00000000  poster_texlist
+pointer  poster_texlists  0x00000004  poster_3_texlist

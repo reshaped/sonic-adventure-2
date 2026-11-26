@@ -1,0 +1,6 @@
+pointer  sensor_model  0x00000000  sensor_vertices
+pointer  sensor_model  0x00000004  sensor_polygons
+pointer  guard_sensor_objects  0x00000004  sensor_model
+pointer  shadow_model  0x00000000  shadow_vertices
+pointer  shadow_model  0x00000004  shadow_polygons
+pointer  guard_shadow_objects  0x00000004  shadow_model

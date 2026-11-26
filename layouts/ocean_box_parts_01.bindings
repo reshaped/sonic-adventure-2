@@ -1,0 +1,3 @@
+pointer  textures  0x00000000  box_wall_texture
+pointer  textures  0x0000000c  box_shrine_texture
+pointer  textures  0x00000018  box_stone_texture

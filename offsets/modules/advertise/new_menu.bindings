@@ -1,0 +1,45 @@
+text NEW_MENU_ARCHIVE 8
+text NEW_MENU_TEXTURE_MAINMENU_BUTTON_ALL 29
+text NEW_MENU_TEXTURE_MAINMENU_BUTTON_ALL_I 29
+text NEW_MENU_TEXTURE_MAINMENU_BUTTON_ALL_JP 29
+text NEW_MENU_TEXTURE_MAINMENU_BUTTON_ALL_JP_I 29
+text NEW_MENU_TEXTURE_MAINMENU_BUTTON_MARU 29
+text NEW_MENU_TEXTURE_MAINMENU_BUTTON_MARU_I 29
+text NEW_MENU_TEXTURE_MAINMENU_BUTTON_SIKAKU 29
+text NEW_MENU_TEXTURE_MAINMENU_CSOL 29
+text NEW_MENU_TEXTURE_MAINMENU_SCREEN 29
+text NEW_MENU_TEXTURE_MAINMENU_TITLE_ALL 29
+text NEW_MENU_TEXTURE_MENU_BOTTAN 29
+text NEW_MENU_TEXTURE_MENU_TITLE 29
+
+pointer  groups  0x00000000  top_layout
+pointer  groups  0x00000008  new_menu_swings
+pointer  groups  0x0000000c  new_menu_work+0x14
+pointer  groups  0x00000010  single_layout
+pointer  groups  0x00000018  new_menu_swings+0x68
+pointer  groups  0x0000001c  new_menu_work+0x30
+pointer  groups  0x00000020  versus_layout
+pointer  groups  0x00000028  new_menu_swings+0xd0
+pointer  groups  0x0000002c  new_menu_work+0x4c
+pointer  groups  0x00000030  extras_layout
+pointer  groups  0x00000038  new_menu_swings+0x138
+pointer  groups  0x0000003c  new_menu_work+0x68
+pointer  groups  0x00000048  new_menu_swings+0x1a0
+pointer  groups  0x0000004c  new_menu_work+0x84
+pointer  layouts_by_count  0x00000004  layout_1
+pointer  layouts_by_count  0x00000008  layout_2
+pointer  layouts_by_count  0x0000000c  layout_3
+pointer  layouts_by_count  0x00000010  layout_4
+pointer  texlist  0x00000000  texnames
+pointer  texnames  0x00000000  NEW_MENU_TEXTURE_MAINMENU_BUTTON_ALL
+pointer  texnames  0x0000000c  NEW_MENU_TEXTURE_MAINMENU_BUTTON_ALL_I
+pointer  texnames  0x00000018  NEW_MENU_TEXTURE_MAINMENU_BUTTON_ALL_JP
+pointer  texnames  0x00000024  NEW_MENU_TEXTURE_MAINMENU_BUTTON_ALL_JP_I
+pointer  texnames  0x00000030  NEW_MENU_TEXTURE_MAINMENU_BUTTON_MARU
+pointer  texnames  0x0000003c  NEW_MENU_TEXTURE_MAINMENU_BUTTON_MARU_I
+pointer  texnames  0x00000048  NEW_MENU_TEXTURE_MAINMENU_BUTTON_SIKAKU
+pointer  texnames  0x00000054  NEW_MENU_TEXTURE_MAINMENU_CSOL
+pointer  texnames  0x00000060  NEW_MENU_TEXTURE_MAINMENU_SCREEN
+pointer  texnames  0x0000006c  NEW_MENU_TEXTURE_MAINMENU_TITLE_ALL
+pointer  texnames  0x00000078  NEW_MENU_TEXTURE_MENU_BOTTAN
+pointer  texnames  0x00000084  NEW_MENU_TEXTURE_MENU_TITLE

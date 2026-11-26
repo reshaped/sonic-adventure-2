@@ -1,0 +1,4 @@
+datum  colored_flash_polygons  D  0x00000000  74
+datum  colored_flash_vertices  D  0x0000004c  300
+datum  colored_flash_mesh  D  0x00000178  24
+datum  colored_flash  D  0x00000190  52

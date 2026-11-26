@@ -1,0 +1,5 @@
+datum  tails_pieces  D  0x00000000  321
+datum  rouge_pieces  D  0x00000141  369
+datum  beginner_pieces  D  0x000002b2  88
+datum  standard_pieces  D  0x0000030a  112
+datum  expert_pieces  D  0x0000037a  123

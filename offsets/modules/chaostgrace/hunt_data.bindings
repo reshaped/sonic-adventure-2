@@ -1,0 +1,4 @@
+pointer  scavenger_panels  0x00000000  scavenger_panel_a
+pointer  scavenger_panels  0x00000004  scavenger_panel_b
+pointer  scavenger_panels  0x00000008  scavenger_panel_c
+pointer  scavenger_panels  0x0000000c  scavenger_panel_d

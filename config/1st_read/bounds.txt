@@ -1,0 +1,41 @@
+# where the link laid out each section whose bounds sdk/shinobi/strt1.src's
+# tables hold, by STARTOF and SIZEOF, in its order
+
+# section                                           start       end
+DSGLH                                               0x8c010000  0x8c010060
+DSGLE                                               0x8c010060  0x8c010080
+D                                                   0x8c0d17c0  0x8c1004e0
+D32                                                 0x8c1004e0  0x8c1004e0
+DSG_INIT_                                           0x8c1004e0  0x8c1004e0
+DSG_END_                                            0x8c1004e0  0x8c1004e0
+D_INIT_                                             0x8c1004e0  0x8c1004e0
+D_END_                                              0x8c1004e0  0x8c1004e0
+R                                                   0x8c1004e0  0x8c1004e0
+R32                                                 0x8c1004e0  0x8c1004e0
+# DSG's bound ends with the last data a source places, sd_pstm_reset_prm_wrk.c's.
+# DSG32 starts on 32 after it. fill.txt verifies the eight intervening alignment bytes.
+DSG                                                 0x8c17eac0  0x8c1893f8
+DSG32                                               0x8c189400  0x8c189480
+RSG                                                 0x8c189480  0x8c189480
+RSG32                                               0x8c189480  0x8c189480
+PSGSFD00                                            0x8c189480  0x8c18ae52
+PSGSFD01                                            0x8c18ae54  0x8c18b482
+PSGSFD02                                            0x8c18b484  0x8c191484
+PSGSFD03                                            0x8c191484  0x8c191484
+PSGSFD04                                            0x8c191484  0x8c191484
+PSGSFD05                                            0x8c191484  0x8c191484
+PSGSFD06                                            0x8c191484  0x8c191484
+PSGSFD07                                            0x8c191484  0x8c191484
+PSGSFD08                                            0x8c191484  0x8c191484
+PSGSFD09                                            0x8c191484  0x8c191484
+PSGSFD10                                            0x8c191484  0x8c191484
+PSGSFD11                                            0x8c191484  0x8c191484
+PSGSFD12                                            0x8c191484  0x8c191484
+PSGSFD13                                            0x8c191484  0x8c191484
+PSGSFD14                                            0x8c191484  0x8c191484
+PSGSFD15                                            0x8c191484  0x8c191484
+$G0                                                 0x8c1914a0  0x8c1914a0
+B                                                   0x8c1914a0  0x8c279924
+B32                                                 0x8c279940  0x8c27b940
+BSG                                                 0x8c27b940  0x8c2e3bd4
+BSG32                                               0x8c2e3be0  0x8c2e4ac0

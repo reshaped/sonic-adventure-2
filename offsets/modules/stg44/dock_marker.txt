@@ -1,0 +1,2 @@
+datum  mad_space_marker_textures  D  0x00000000  20
+datum  models  D  0x00000014  16

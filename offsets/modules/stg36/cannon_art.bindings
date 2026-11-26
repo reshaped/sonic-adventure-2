@@ -1,0 +1,43 @@
+text  CORE_CANNON_TEXTURE_TAMA  5
+text  CORE_CANNON_TEXTURE_LTAM  5
+text  CORE_CANNON_TEXTURE_TAMA1  6
+text  CORE_CANNON_TEXTURE_MIU128_CG009  13
+text  CORE_CANNON_TEXTURE_MIU64_CG012  12
+text  CORE_CANNON_TEXTURE_MIU64_CG003  12
+text  CORE_CANNON_TEXTURE_MIU64_CG021  12
+
+pointer  cannon_shot_bright_names  0x00000000  CORE_CANNON_TEXTURE_TAMA
+pointer  cannon_shot_bright_names  0x0000000c  CORE_CANNON_TEXTURE_LTAM
+pointer  cannon_shot_bright  0x00000000  cannon_shot_bright_names
+pointer  cannon_shot_dim_names  0x00000000  CORE_CANNON_TEXTURE_TAMA1
+pointer  cannon_shot_dim_names  0x0000000c  CORE_CANNON_TEXTURE_LTAM
+pointer  cannon_shot_dim  0x00000000  cannon_shot_dim_names
+pointer  shot_spark_down_model  0x00000000  shot_spark_down_vertices
+pointer  shot_spark_down_model  0x00000004  shot_spark_down_polygons
+pointer  shot_spark_down  0x00000004  shot_spark_down_model
+pointer  shot_spark_back_model  0x00000000  shot_spark_back_vertices
+pointer  shot_spark_back_model  0x00000004  shot_spark_back_polygons
+pointer  shot_spark_back  0x00000004  shot_spark_back_model
+pointer  shot_spark_back  0x00000030  shot_spark_down
+pointer  shot_spark_front_model  0x00000000  shot_spark_front_vertices
+pointer  shot_spark_front_model  0x00000004  shot_spark_front_polygons
+pointer  shot_spark_front  0x00000004  shot_spark_front_model
+pointer  shot_spark_front  0x00000030  shot_spark_back
+pointer  shot_spark_up_model  0x00000000  shot_spark_up_vertices
+pointer  shot_spark_up_model  0x00000004  shot_spark_up_polygons
+pointer  shot_spark_up  0x00000004  shot_spark_up_model
+pointer  shot_spark_up  0x00000030  shot_spark_front
+pointer  shot_center_model  0x00000000  cannon_shot_model_vertices
+pointer  shot_center_model  0x00000004  cannon_shot_model_polygons
+pointer  cannon_shot_model  0x00000004  shot_center_model
+pointer  cannon_shot_model  0x0000002c  shot_spark_up
+pointer  barrel_names  0x00000000  CORE_CANNON_TEXTURE_MIU128_CG009
+pointer  barrel_names  0x0000000c  CORE_CANNON_TEXTURE_MIU64_CG012
+pointer  barrel_names  0x00000018  CORE_CANNON_TEXTURE_MIU128_CG009
+pointer  barrel_names  0x00000024  CORE_CANNON_TEXTURE_MIU64_CG003
+pointer  barrel_names  0x00000030  CORE_CANNON_TEXTURE_MIU64_CG021
+pointer  cannon_texlist  0x00000000  barrel_names
+pointer  cannon_barrel  0x00000000  barrel_vertices
+pointer  cannon_barrel  0x00000004  barrel_polygons
+pointer  barrel_object  0x00000004  cannon_barrel
+pointer  cannon_barrel_anim  0x00000010  barrel_uv_keys

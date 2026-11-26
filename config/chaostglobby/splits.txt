@@ -1,0 +1,35 @@
+file                           SONIC2/CHAOSTGLOBBY.PRS
+
+# section                      start       end
+DHEAD                          0x0c9c0000  0x0c9c0020
+P                              0x0c9c0020  0x0c9c2440
+C                              0x0c9c2440  0x0c9c2620
+D                              0x0c9c2620  0x0c9f29b4
+
+# source                       section     start       end
+modules/chaostglobby/head.c    DHEAD       0x0c9c0000  0x0c9c000c
+modules/chaostglobby/lobby.c   P           0x0c9c0020  0x0c9c0540
+modules/chaostglobby/exit.c    P           0x0c9c0540  0x0c9c0b60
+modules/chaostglobby/dark.c    P           0x0c9c0b60  0x0c9c0ec0
+modules/chaostglobby/hero.c    P           0x0c9c0ec0  0x0c9c1120
+modules/chaostglobby/kinder.c  P           0x0c9c1120  0x0c9c12a0
+modules/chaostglobby/neutral.c P           0x0c9c12a0  0x0c9c13e0
+modules/chaostglobby/prompt.c  P           0x0c9c13e0  0x0c9c1c20
+modules/shared/object_light.c  P           0x0c9c1c20  0x0c9c2440
+modules/chaostglobby/lobby.c   C           0x0c9c2440  0x0c9c2542
+modules/chaostglobby/exit.c    C           0x0c9c2544  0x0c9c255a
+modules/chaostglobby/dark.c    C           0x0c9c255c  0x0c9c2576
+modules/chaostglobby/hero.c    C           0x0c9c2578  0x0c9c2592
+modules/chaostglobby/kinder.c  C           0x0c9c2594  0x0c9c25b0
+modules/chaostglobby/neutral.c C           0x0c9c25b0  0x0c9c25ca
+modules/chaostglobby/prompt.c  C           0x0c9c25cc  0x0c9c260e
+modules/shared/object_light.c  C           0x0c9c2610  0x0c9c261f
+modules/chaostglobby/lobby.c   D           0x0c9c2620  0x0c9c2660
+modules/chaostglobby/chao_lobby_exit_art.c  D           0x0c9c2660  0x0c9cd114
+modules/chaostglobby/exit.c    D           0x0c9cd114  0x0c9cd3c4
+modules/chaostglobby/gate_art.c  D           0x0c9cd3c4  0x0c9db5f4
+modules/chaostglobby/dark.c    D           0x0c9db5f4  0x0c9db8e4
+modules/chaostglobby/chao_lobby_garden_art.c  D           0x0c9db8e4  0x0c9f2828
+modules/chaostglobby/neutral.c D           0x0c9f2828  0x0c9f29ac
+modules/chaostglobby/prompt.c  D           0x0c9f29ac  0x0c9f29b0
+modules/shared/object_light.c  D           0x0c9f29b0  0x0c9f29b4

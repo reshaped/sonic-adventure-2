@@ -1,0 +1,11 @@
+datum  sign_end_2_miu32_fr004  C  0x00000000  12
+datum  textures  D  0x00000000  48
+datum  sign_end_2_texlist  D  0x00000030  8
+datum  sign_end_2_face_polygons  D  0x00000038  74
+datum  sign_end_2_face_vertices  D  0x00000084  140
+datum  sign_end_2_face_mesh  D  0x00000110  24
+datum  sign_end_2_face  D  0x00000128  52
+datum  sign_end_2_polygons  D  0x0000015c  850
+datum  sign_end_2_vertices  D  0x000004b0  1356
+datum  sign_end_2_mesh  D  0x000009fc  24
+datum  sign_end_2_object  D  0x00000a14  52

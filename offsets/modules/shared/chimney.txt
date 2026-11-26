@@ -1,0 +1,4 @@
+datum  chimney_models  D  0x00000000  44
+datum  chimney_texlists  D  0x0000002c  48
+datum  chimney_blast_models  D  0x0000005c  40
+datum  chimney_blast_texlists  D  0x00000084  44

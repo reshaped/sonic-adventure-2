@@ -1,0 +1,19 @@
+text  CITY_TEXTURE_MIU128_CE002  13
+text  CITY_TEXTURE_MIU32_CE007  12
+text  CITY_TEXTURE_MIU64_CE003  12
+text  CITY_TEXTURE_SCITY64_15  11
+pointer  ramp_collision_meshsets  0x00000004  ramp_collision_indices
+pointer  ramp_collision_model  0x00000000  ramp_collision_points
+pointer  ramp_collision_model  0x00000004  ramp_collision_normals
+pointer  ramp_collision_model  0x0000000c  ramp_collision_meshsets
+pointer  ramp_collision_model  0x00000010  ramp_collision_materials
+pointer  ramp_collision  0x00000004  ramp_collision_model
+pointer  ramp_texture_names  0x00000000  CITY_TEXTURE_MIU128_CE002
+pointer  ramp_texture_names  0x0000000c  CITY_TEXTURE_MIU32_CE007
+pointer  ramp_texture_names  0x00000018  CITY_TEXTURE_MIU64_CE003
+pointer  ramp_texture_names  0x00000024  CITY_TEXTURE_SCITY64_15
+pointer  ramp_texlist  0x00000000  ramp_texture_names
+pointer  ramp_model  0x00000000  ramp_display_vertices
+pointer  ramp_model  0x00000004  ramp_display_polygons
+pointer  ramp_object  0x00000004  ramp_model
+pointer  ramp_texlists  0x00000000  ramp_texlist

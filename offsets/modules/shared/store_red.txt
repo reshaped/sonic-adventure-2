@@ -1,0 +1,13 @@
+datum  textures  D  0x00000000  36
+datum  store_box_red_texlist  D  0x00000024  8
+datum  store_box_red_polygons  D  0x0000002c  758
+datum  store_box_red_vertices  D  0x00000324  1340
+datum  store_box_red_model  D  0x00000860  24
+datum  store_box_red_object  D  0x00000878  52
+datum  store_box_collision_materials  D  0x000008ac  20
+datum  store_box_collision_indices  D  0x000008c0  52
+datum  store_box_collision_meshsets  D  0x000008f4  24
+datum  store_box_collision_points  D  0x0000090c  144
+datum  store_box_collision_normals  D  0x0000099c  144
+datum  store_box_collision_model  D  0x00000a2c  40
+datum  store_box_collision  D  0x00000a54  52

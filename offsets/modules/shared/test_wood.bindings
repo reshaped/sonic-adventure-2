@@ -1,0 +1,11 @@
+text  TEST_WOOD_TEXTURE_JUNGLE128_12  13
+text  TEST_WOOD_TEXTURE_JUNGLE128_14  13
+text  TEST_WOOD_TEXTURE_JUNGLE128_9  12
+
+pointer  test_wood_textures  0x00000000  TEST_WOOD_TEXTURE_JUNGLE128_12
+pointer  test_wood_textures  0x0000000c  TEST_WOOD_TEXTURE_JUNGLE128_14
+pointer  test_wood_textures  0x00000018  TEST_WOOD_TEXTURE_JUNGLE128_9
+pointer  test_wood_texlist  0x00000000  test_wood_textures
+pointer  test_wood_model  0x00000000  test_wood_vertices
+pointer  test_wood_model  0x00000004  test_wood_polygons
+pointer  test_wood_object  0x00000004  test_wood_model

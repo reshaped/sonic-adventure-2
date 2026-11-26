@@ -1,0 +1,91 @@
+text BIG_ARCHIVE_NAME 9
+text BIG_TASK_NAME 7
+text BIG_ANGLE_X_LABEL 9
+text BIG_ANGLE_Y_LABEL 9
+text BIG_ANGLE_Z_LABEL 9
+text BIG_TYPE_LABEL 17
+text BIG_BELT_TEXTURE 10
+text BIG_RING_TEXTURE 8
+text BIG_BIG_TEXTURE 4
+text BIG_SKIN_TEXTURE 10
+text BIG_BTX_SIMS_TEXTURE 9
+text BIG_FISHING_ROD_TEXTURE 8
+text BIG_ACTION_NORMAL_LABEL 21
+text BIG_ACTION_SHAKE_LABEL 20
+text BIG_ACTION_DANCE_LABEL 20
+text BIG_ACTION_FISH_LABEL 19
+text BIG_ACTION_LOOK_ROD_LABEL 23
+text BIG_ACTION_SASURI_LABEL 21
+text BIG_ACTION_UTUBUSE_LABEL 22
+text BIG_ACTION_YATTA_LABEL 21
+text BIG_ACTION_MAENARAE_LABEL 23
+text BIG_ACTION_KOSHIFURI_LABEL 24
+text BIG_ACTION_BYEBYE_LABEL 21
+text BIG_ACTION_MUNEPORI_LABEL 23
+text BIG_ACTION_SHIRIPORI_LABEL 24
+text BIG_ACTION_ACHI_LABEL 20
+text BIG_ACTION_WATAFUTA_LABEL 23
+text BIG_ACTION_RUN_LABEL 18
+text BIG_ACTION_MIAGE_LABEL 20
+text BIG_ACTION_MISAGE_LABEL 21
+text BIG_ACTION_AOMUKE_LABEL 21
+text BIG_ACTION_TURI_LABEL 19
+text BIG_ACTION_YOKOMUKI_TURI_LABEL 28
+text BIG_ACTION_TAKAITAKAI_LABEL 25
+text BIG_ACTION_UNKNOWN_LABEL 19
+text BIG_ACTION_CHEAP_LABEL 20
+pointer textures 0x00000000 BIG_BELT_TEXTURE
+pointer textures 0x0000000c BIG_RING_TEXTURE
+pointer textures 0x00000018 BIG_BIG_TEXTURE
+pointer textures 0x00000024 BIG_SKIN_TEXTURE
+pointer textures 0x00000030 BIG_BTX_SIMS_TEXTURE
+pointer textures 0x0000003c BIG_FISHING_ROD_TEXTURE
+pointer big_texlist 0x00000000 textures
+pointer big_actions 0x00000000 big_motion_action_00
+pointer big_actions 0x00000010 big_motion_shake
+pointer big_actions 0x00000020 big_motion_action_02
+pointer big_actions 0x00000030 big_motion_action_03
+pointer big_actions 0x00000040 big_motion_action_04
+pointer big_actions 0x00000050 big_motion_action_05
+pointer big_actions 0x00000060 big_motion_action_06
+pointer big_actions 0x00000070 big_motion_action_07
+pointer big_actions 0x00000080 big_motion_action_08
+pointer big_actions 0x00000090 big_motion_action_09
+pointer big_actions 0x000000a0 big_motion_action_10
+pointer big_actions 0x000000b0 big_motion_action_11
+pointer big_actions 0x000000c0 big_motion_action_12
+pointer big_actions 0x000000d0 big_motion_action_13
+pointer big_actions 0x000000e0 big_motion_action_14
+pointer big_actions 0x000000f0 big_motion_action_15
+pointer big_actions 0x00000100 big_motion_action_16
+pointer big_actions 0x00000110 big_motion_action_17
+pointer big_actions 0x00000120 big_motion_action_18
+pointer big_actions 0x00000130 big_motion_action_03
+pointer big_actions 0x00000140 big_motion_action_20
+pointer big_actions 0x00000150 big_motion_action_21
+pointer big_actions 0x00000160 big_motion_action_22
+pointer big_actions 0x00000170 big_motion_action_00
+pointer big_action_names 0x00000000 BIG_ACTION_NORMAL_LABEL
+pointer big_action_names 0x00000004 BIG_ACTION_SHAKE_LABEL
+pointer big_action_names 0x00000008 BIG_ACTION_DANCE_LABEL
+pointer big_action_names 0x0000000c BIG_ACTION_FISH_LABEL
+pointer big_action_names 0x00000010 BIG_ACTION_LOOK_ROD_LABEL
+pointer big_action_names 0x00000014 BIG_ACTION_SASURI_LABEL
+pointer big_action_names 0x00000018 BIG_ACTION_UTUBUSE_LABEL
+pointer big_action_names 0x0000001c BIG_ACTION_YATTA_LABEL
+pointer big_action_names 0x00000020 BIG_ACTION_MAENARAE_LABEL
+pointer big_action_names 0x00000024 BIG_ACTION_KOSHIFURI_LABEL
+pointer big_action_names 0x00000028 BIG_ACTION_BYEBYE_LABEL
+pointer big_action_names 0x0000002c BIG_ACTION_MUNEPORI_LABEL
+pointer big_action_names 0x00000030 BIG_ACTION_SHIRIPORI_LABEL
+pointer big_action_names 0x00000034 BIG_ACTION_ACHI_LABEL
+pointer big_action_names 0x00000038 BIG_ACTION_WATAFUTA_LABEL
+pointer big_action_names 0x0000003c BIG_ACTION_RUN_LABEL
+pointer big_action_names 0x00000040 BIG_ACTION_MIAGE_LABEL
+pointer big_action_names 0x00000044 BIG_ACTION_MISAGE_LABEL
+pointer big_action_names 0x00000048 BIG_ACTION_AOMUKE_LABEL
+pointer big_action_names 0x0000004c BIG_ACTION_TURI_LABEL
+pointer big_action_names 0x00000050 BIG_ACTION_YOKOMUKI_TURI_LABEL
+pointer big_action_names 0x00000054 BIG_ACTION_TAKAITAKAI_LABEL
+pointer big_action_names 0x00000058 BIG_ACTION_UNKNOWN_LABEL
+pointer big_action_names 0x0000005c BIG_ACTION_CHEAP_LABEL

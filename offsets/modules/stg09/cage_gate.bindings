@@ -1,0 +1,26 @@
+text CAGE_GATE_EDITOR_ENE_ID 10
+text CAGE_GATE_EDITOR_ANGLE_Y 11
+text CAGE_GATE_EDITOR_SHUT_SPEED 14
+text CAGE_GATE_TEXTURE_MIU64_IG002 12
+text CAGE_GATE_TEXTURE_MIU64_IG016 12
+text CAGE_GATE_TEXTURE_PR128_2 8
+text CAGE_GATE_TEXTURE_PR128_8 8
+text CAGE_GATE_TEXTURE_PR32_1 7
+text CAGE_GATE_TEXTURE_PR64_6 7
+
+pointer cage_gate_names 0x00000000 CAGE_GATE_TEXTURE_MIU64_IG002
+pointer cage_gate_names 0x0000000c CAGE_GATE_TEXTURE_MIU64_IG016
+pointer cage_gate_names 0x00000018 CAGE_GATE_TEXTURE_PR128_2
+pointer cage_gate_names 0x00000024 CAGE_GATE_TEXTURE_PR128_8
+pointer cage_gate_names 0x00000030 CAGE_GATE_TEXTURE_PR32_1
+pointer cage_gate_names 0x0000003c CAGE_GATE_TEXTURE_PR64_6
+pointer cage_gate_texlist 0x00000000 cage_gate_names
+pointer cage_gate_panel_model 0x00000000 cage_gate_panel_vertices
+pointer cage_gate_panel_model 0x00000004 cage_gate_panel_polygons
+pointer cage_gate_panel_object 0x00000004 cage_gate_panel_model
+pointer cage_gate_model 0x00000000 cage_gate_vertices
+pointer cage_gate_model 0x00000004 cage_gate_polygons
+pointer cage_gate_object 0x00000004 cage_gate_model
+pointer cage_gate_object 0x0000002c cage_gate_panel_object
+pointer cage_gate_texlists 0x00000000 cage_gate_texlist
+pointer cage_gate_texlists 0x00000004 dust_texlist

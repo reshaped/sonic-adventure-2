@@ -1,0 +1,3 @@
+pointer  mech_boss_beam_charge_model  0x00000000  charge_vertices
+pointer  mech_boss_beam_charge_model  0x00000004  charge_polygons
+pointer  charge  0x00000004  mech_boss_beam_charge_model

@@ -1,0 +1,15 @@
+text  CITY_TEXTURE_CE64_ITA001  C  0x0000000c  12
+text  CITY_TEXTURE_CE64_ITA002  C  0x00000018  12
+text  CITY_TEXTURE_CE64_ITA003  C  0x00000024  12
+datum  board_texnames  D  0x00000000  36
+datum  board_texlist  D  0x00000024  8
+datum  board_polygons  D  0x0000002c  562
+datum  board_vertices  D  0x00000260  1196
+datum  board_model  D  0x0000070c  24
+datum  board_object  D  0x00000724  52
+datum  board_root  D  0x00000758  52
+datum  board_shadow_polygons  D  0x0000078c  118
+datum  board_shadow_vertices  D  0x00000804  144
+datum  board_shadow_model  D  0x00000894  24
+datum  board_shadow_object  D  0x000008ac  52
+datum  board_texlists  D  0x000008e0  8

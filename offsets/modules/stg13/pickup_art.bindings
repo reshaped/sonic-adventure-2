@@ -1,0 +1,8 @@
+text  CITY_TEXTURE_MIU32_CE011  12
+text  CITY_TEXTURE_MIU32_CE002  12
+pointer  pickup_textures  0x00000000  CITY_TEXTURE_MIU32_CE011
+pointer  pickup_textures  0x0000000c  CITY_TEXTURE_MIU32_CE002
+pointer  pickup_texlist  0x00000000  pickup_textures
+pointer  pickup_model  0x00000000  pickup_vertices
+pointer  pickup_model  0x00000004  pickup_polygons
+pointer  pickup_object  0x00000004  pickup_model

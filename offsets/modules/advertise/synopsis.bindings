@@ -1,0 +1,199 @@
+text SYNOPSIS_TEXTURE_AMY00 29
+text SYNOPSIS_TEXTURE_AMY01 29
+text SYNOPSIS_TEXTURE_AMY02 29
+text SYNOPSIS_TEXTURE_AMY03 29
+text SYNOPSIS_TEXTURE_AMY04 29
+text SYNOPSIS_TEXTURE_AMY05 29
+text SYNOPSIS_TEXTURE_AMY06 29
+text SYNOPSIS_TEXTURE_AMY07 29
+text SYNOPSIS_TEXTURE_EGG00 29
+text SYNOPSIS_TEXTURE_EGG01 29
+text SYNOPSIS_TEXTURE_EGG02 29
+text SYNOPSIS_TEXTURE_EGG03 29
+text SYNOPSIS_TEXTURE_EGG04 29
+text SYNOPSIS_TEXTURE_EGG05 29
+text SYNOPSIS_TEXTURE_EGG06 29
+text SYNOPSIS_TEXTURE_EGG07 29
+text SYNOPSIS_TEXTURE_KNUCK00 29
+text SYNOPSIS_TEXTURE_KNUCK01 29
+text SYNOPSIS_TEXTURE_KNUCK02 29
+text SYNOPSIS_TEXTURE_KNUCK03 29
+text SYNOPSIS_TEXTURE_KNUCK04 29
+text SYNOPSIS_TEXTURE_KNUCK05 29
+text SYNOPSIS_TEXTURE_KNUCK06 29
+text SYNOPSIS_TEXTURE_KNUCK07 29
+text SYNOPSIS_TEXTURE_ROUGE00 29
+text SYNOPSIS_TEXTURE_ROUGE01 29
+text SYNOPSIS_TEXTURE_ROUGE02 29
+text SYNOPSIS_TEXTURE_ROUGE03 29
+text SYNOPSIS_TEXTURE_ROUGE04 29
+text SYNOPSIS_TEXTURE_ROUGE05 29
+text SYNOPSIS_TEXTURE_ROUGE06 29
+text SYNOPSIS_TEXTURE_ROUGE07 29
+text SYNOPSIS_TEXTURE_SHADOW00 29
+text SYNOPSIS_TEXTURE_SHADOW01 29
+text SYNOPSIS_TEXTURE_SHADOW02 29
+text SYNOPSIS_TEXTURE_SHADOW03 29
+text SYNOPSIS_TEXTURE_SHADOW04 29
+text SYNOPSIS_TEXTURE_SHADOW05 29
+text SYNOPSIS_TEXTURE_SHADOW06 29
+text SYNOPSIS_TEXTURE_SHADOW07 29
+text SYNOPSIS_TEXTURE_SON00 29
+text SYNOPSIS_TEXTURE_SON01 29
+text SYNOPSIS_TEXTURE_SON02 29
+text SYNOPSIS_TEXTURE_SON03 29
+text SYNOPSIS_TEXTURE_SON04 29
+text SYNOPSIS_TEXTURE_SON05 29
+text SYNOPSIS_TEXTURE_SON06 29
+text SYNOPSIS_TEXTURE_SON07 29
+text SYNOPSIS_TEXTURE_TAILS00 29
+text SYNOPSIS_TEXTURE_TAILS01 29
+text SYNOPSIS_TEXTURE_TAILS02 29
+text SYNOPSIS_TEXTURE_TAILS03 29
+text SYNOPSIS_TEXTURE_TAILS04 29
+text SYNOPSIS_TEXTURE_TAILS05 29
+text SYNOPSIS_TEXTURE_TAILS06 29
+text SYNOPSIS_TEXTURE_TAILS07 29
+text SYNOPSIS_ARCHIVE_SONIC 13
+text SYNOPSIS_ARCHIVE_SHADOW 14
+text SYNOPSIS_ARCHIVE_TAILS 13
+text SYNOPSIS_ARCHIVE_EGGMAN 14
+text SYNOPSIS_ARCHIVE_KNUCKLES 16
+text SYNOPSIS_ARCHIVE_ROUGE 13
+text SYNOPSIS_ARCHIVE_AMY 11
+
+pointer  amy_texnames  0x00000000  SYNOPSIS_TEXTURE_AMY00
+pointer  amy_texnames  0x0000000c  SYNOPSIS_TEXTURE_AMY01
+pointer  amy_texnames  0x00000018  SYNOPSIS_TEXTURE_AMY02
+pointer  amy_texnames  0x00000024  SYNOPSIS_TEXTURE_AMY03
+pointer  amy_texnames  0x00000030  SYNOPSIS_TEXTURE_AMY04
+pointer  amy_texnames  0x0000003c  SYNOPSIS_TEXTURE_AMY05
+pointer  amy_texnames  0x00000048  SYNOPSIS_TEXTURE_AMY06
+pointer  amy_texnames  0x00000054  SYNOPSIS_TEXTURE_AMY07
+pointer  amy_texlist  0x00000000  amy_texnames
+pointer  egg_texnames  0x00000000  SYNOPSIS_TEXTURE_EGG00
+pointer  egg_texnames  0x0000000c  SYNOPSIS_TEXTURE_EGG01
+pointer  egg_texnames  0x00000018  SYNOPSIS_TEXTURE_EGG02
+pointer  egg_texnames  0x00000024  SYNOPSIS_TEXTURE_EGG03
+pointer  egg_texnames  0x00000030  SYNOPSIS_TEXTURE_EGG04
+pointer  egg_texnames  0x0000003c  SYNOPSIS_TEXTURE_EGG05
+pointer  egg_texnames  0x00000048  SYNOPSIS_TEXTURE_EGG06
+pointer  egg_texnames  0x00000054  SYNOPSIS_TEXTURE_EGG07
+pointer  egg_texlist  0x00000000  egg_texnames
+pointer  knuck_texnames  0x00000000  SYNOPSIS_TEXTURE_KNUCK00
+pointer  knuck_texnames  0x0000000c  SYNOPSIS_TEXTURE_KNUCK01
+pointer  knuck_texnames  0x00000018  SYNOPSIS_TEXTURE_KNUCK02
+pointer  knuck_texnames  0x00000024  SYNOPSIS_TEXTURE_KNUCK03
+pointer  knuck_texnames  0x00000030  SYNOPSIS_TEXTURE_KNUCK04
+pointer  knuck_texnames  0x0000003c  SYNOPSIS_TEXTURE_KNUCK05
+pointer  knuck_texnames  0x00000048  SYNOPSIS_TEXTURE_KNUCK06
+pointer  knuck_texnames  0x00000054  SYNOPSIS_TEXTURE_KNUCK07
+pointer  knuck_texlist  0x00000000  knuck_texnames
+pointer  rouge_texnames  0x00000000  SYNOPSIS_TEXTURE_ROUGE00
+pointer  rouge_texnames  0x0000000c  SYNOPSIS_TEXTURE_ROUGE01
+pointer  rouge_texnames  0x00000018  SYNOPSIS_TEXTURE_ROUGE02
+pointer  rouge_texnames  0x00000024  SYNOPSIS_TEXTURE_ROUGE03
+pointer  rouge_texnames  0x00000030  SYNOPSIS_TEXTURE_ROUGE04
+pointer  rouge_texnames  0x0000003c  SYNOPSIS_TEXTURE_ROUGE05
+pointer  rouge_texnames  0x00000048  SYNOPSIS_TEXTURE_ROUGE06
+pointer  rouge_texnames  0x00000054  SYNOPSIS_TEXTURE_ROUGE07
+pointer  rouge_texlist  0x00000000  rouge_texnames
+pointer  shadow_texnames  0x00000000  SYNOPSIS_TEXTURE_SHADOW00
+pointer  shadow_texnames  0x0000000c  SYNOPSIS_TEXTURE_SHADOW01
+pointer  shadow_texnames  0x00000018  SYNOPSIS_TEXTURE_SHADOW02
+pointer  shadow_texnames  0x00000024  SYNOPSIS_TEXTURE_SHADOW03
+pointer  shadow_texnames  0x00000030  SYNOPSIS_TEXTURE_SHADOW04
+pointer  shadow_texnames  0x0000003c  SYNOPSIS_TEXTURE_SHADOW05
+pointer  shadow_texnames  0x00000048  SYNOPSIS_TEXTURE_SHADOW06
+pointer  shadow_texnames  0x00000054  SYNOPSIS_TEXTURE_SHADOW07
+pointer  shadow_texlist  0x00000000  shadow_texnames
+pointer  son_texnames  0x00000000  SYNOPSIS_TEXTURE_SON00
+pointer  son_texnames  0x0000000c  SYNOPSIS_TEXTURE_SON01
+pointer  son_texnames  0x00000018  SYNOPSIS_TEXTURE_SON02
+pointer  son_texnames  0x00000024  SYNOPSIS_TEXTURE_SON03
+pointer  son_texnames  0x00000030  SYNOPSIS_TEXTURE_SON04
+pointer  son_texnames  0x0000003c  SYNOPSIS_TEXTURE_SON05
+pointer  son_texnames  0x00000048  SYNOPSIS_TEXTURE_SON06
+pointer  son_texnames  0x00000054  SYNOPSIS_TEXTURE_SON07
+pointer  son_texlist  0x00000000  son_texnames
+pointer  tails_texnames  0x00000000  SYNOPSIS_TEXTURE_TAILS00
+pointer  tails_texnames  0x0000000c  SYNOPSIS_TEXTURE_TAILS01
+pointer  tails_texnames  0x00000018  SYNOPSIS_TEXTURE_TAILS02
+pointer  tails_texnames  0x00000024  SYNOPSIS_TEXTURE_TAILS03
+pointer  tails_texnames  0x00000030  SYNOPSIS_TEXTURE_TAILS04
+pointer  tails_texnames  0x0000003c  SYNOPSIS_TEXTURE_TAILS05
+pointer  tails_texnames  0x00000048  SYNOPSIS_TEXTURE_TAILS06
+pointer  tails_texnames  0x00000054  SYNOPSIS_TEXTURE_TAILS07
+pointer  tails_texlist  0x00000000  tails_texnames
+pointer  backdrops  0x00000000  SYNOPSIS_ARCHIVE_SONIC
+pointer  backdrops  0x00000004  son_texlist
+pointer  backdrops  0x00000008  SYNOPSIS_ARCHIVE_SHADOW
+pointer  backdrops  0x0000000c  shadow_texlist
+pointer  backdrops  0x00000010  SYNOPSIS_ARCHIVE_TAILS
+pointer  backdrops  0x00000014  tails_texlist
+pointer  backdrops  0x00000018  SYNOPSIS_ARCHIVE_EGGMAN
+pointer  backdrops  0x0000001c  egg_texlist
+pointer  backdrops  0x00000020  SYNOPSIS_ARCHIVE_KNUCKLES
+pointer  backdrops  0x00000024  knuck_texlist
+pointer  backdrops  0x00000028  SYNOPSIS_ARCHIVE_ROUGE
+pointer  backdrops  0x0000002c  rouge_texlist
+pointer  backdrops  0x00000030  SYNOPSIS_ARCHIVE_TAILS
+pointer  backdrops  0x00000034  tails_texlist
+pointer  backdrops  0x00000038  SYNOPSIS_ARCHIVE_EGGMAN
+pointer  backdrops  0x0000003c  egg_texlist
+pointer  backdrops  0x00000040  SYNOPSIS_ARCHIVE_AMY
+pointer  backdrops  0x00000044  amy_texlist
+pointer  backdrops  0x00000048  SYNOPSIS_ARCHIVE_SONIC
+pointer  backdrops  0x0000004c  son_texlist
+pointer  backdrops  0x00000050  SYNOPSIS_ARCHIVE_SHADOW
+pointer  backdrops  0x00000054  shadow_texlist
+
+pointer sets  0x0000000c  lines_hero_1
+pointer sets  0x00000020  lines_hero_2
+pointer sets  0x00000034  lines_hero_4
+pointer sets  0x00000048  lines_hero_6
+pointer sets  0x0000005c  lines_hero_8
+pointer sets  0x00000070  lines_hero_10
+pointer sets  0x00000084  lines_hero_11
+pointer sets  0x00000098  lines_hero_12
+pointer sets  0x000000ac  lines_hero_14
+pointer sets  0x000000c0  lines_hero_16
+pointer sets  0x000000d4  lines_hero_18
+pointer sets  0x000000e8  lines_hero_20
+pointer sets  0x000000fc  lines_hero_22
+pointer sets  0x00000110  lines_hero_23
+pointer sets  0x00000124  lines_hero_25
+pointer sets  0x00000138  lines_hero_26
+pointer sets  0x0000014c  lines_hero_28
+pointer sets  0x00000160  lines_hero_30
+pointer sets  0x00000174  lines_hero_32
+pointer sets  0x00000188  lines_hero_33
+pointer sets  0x0000019c  lines_hero_35
+pointer sets  0x000001b0  lines_hero_37
+pointer sets  0x000001c4  lines_hero_38
+pointer sets  0x000001d8  lines_hero_41
+pointer sets  0x000001ec  lines_dark_1
+pointer sets  0x00000200  lines_dark_3
+pointer sets  0x00000214  lines_dark_5
+pointer sets  0x00000228  lines_dark_7
+pointer sets  0x0000023c  lines_dark_9
+pointer sets  0x00000250  lines_dark_10
+pointer sets  0x00000264  lines_dark_12
+pointer sets  0x00000278  lines_dark_14
+pointer sets  0x0000028c  lines_dark_16
+pointer sets  0x000002a0  lines_dark_18
+pointer sets  0x000002b4  lines_dark_19
+pointer sets  0x000002c8  lines_dark_21
+pointer sets  0x000002dc  lines_dark_22
+pointer sets  0x000002f0  lines_dark_25
+pointer sets  0x00000304  lines_dark_26
+pointer sets  0x00000318  lines_dark_28
+pointer sets  0x0000032c  lines_dark_30
+pointer sets  0x00000340  lines_dark_31
+pointer sets  0x00000354  lines_dark_33
+pointer sets  0x00000368  lines_dark_35
+pointer sets  0x0000037c  lines_dark_37
+pointer sets  0x00000390  lines_dark_39
+pointer sets  0x000003a4  lines_last_1
+pointer sets  0x000003b8  lines_last_3
+pointer sets  0x000003cc  lines_last_5

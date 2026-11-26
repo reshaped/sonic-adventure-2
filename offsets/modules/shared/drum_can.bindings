@@ -1,0 +1,57 @@
+text  DRUM_TEXTURE_MIU32_MO003  12
+text  DRUM_TEXTURE_MIU64_LOCO004  14
+text  DRUM_TEXTURE_MIU64_MO004  12
+text  DRUM_TEXTURE_MIU64_MO014  12
+text  DRUM_TEXTURE_PUM32_1  8
+
+pointer  drum_can_texlist_names  0x00000000  DRUM_TEXTURE_MIU32_MO003
+pointer  drum_can_texlist_names  0x0000000c  DRUM_TEXTURE_MIU64_LOCO004
+pointer  drum_can_texlist_names  0x00000018  DRUM_TEXTURE_MIU64_MO004
+pointer  drum_can_texlist_names  0x00000024  DRUM_TEXTURE_MIU64_MO014
+pointer  drum_can_texlist_names  0x00000030  DRUM_TEXTURE_PUM32_1
+
+pointer  drum_can_texlist  0x00000000  drum_can_texlist_names
+
+pointer  drum_can_model  0x00000000  drum_can_vertices
+pointer  drum_can_model  0x00000004  drum_can_polygons
+
+pointer  drum_can_object  0x00000004  drum_can_model
+
+pointer  drum_can_piece_0_texlist_names  0x00000000  DRUM_TEXTURE_MIU64_LOCO004
+pointer  drum_can_piece_0_texlist_names  0x0000000c  DRUM_TEXTURE_PUM32_1
+
+pointer  drum_can_piece_0_texlist  0x00000000  drum_can_piece_0_texlist_names
+
+pointer  drum_can_piece_0_model  0x00000000  drum_can_piece_0_vertices
+pointer  drum_can_piece_0_model  0x00000004  drum_can_piece_0_polygons
+
+pointer  drum_can_piece_0_object  0x00000004  drum_can_piece_0_model
+
+pointer  drum_can_piece_1_texlist_names  0x00000000  DRUM_TEXTURE_MIU64_LOCO004
+pointer  drum_can_piece_1_texlist_names  0x0000000c  DRUM_TEXTURE_MIU64_MO004
+pointer  drum_can_piece_1_texlist_names  0x00000018  DRUM_TEXTURE_MIU64_MO014
+pointer  drum_can_piece_1_texlist_names  0x00000024  DRUM_TEXTURE_PUM32_1
+
+pointer  drum_can_piece_1_texlist  0x00000000  drum_can_piece_1_texlist_names
+
+pointer  drum_can_piece_1_model  0x00000000  drum_can_piece_1_vertices
+pointer  drum_can_piece_1_model  0x00000004  drum_can_piece_1_polygons
+
+pointer  drum_can_piece_1_object  0x00000004  drum_can_piece_1_model
+
+pointer  drum_can_texlists  0x00000000  drum_can_texlist
+pointer  drum_can_texlists  0x00000004  drum_can_piece_0_texlist
+pointer  drum_can_texlists  0x00000008  drum_can_piece_1_texlist
+
+pointer  drum_can_pieces  0x00000000  drum_can_piece_0_texlist
+pointer  drum_can_pieces  0x00000004  drum_can_piece_0_model
+pointer  drum_can_pieces  0x00000020  drum_can_piece_1_texlist
+pointer  drum_can_pieces  0x00000024  drum_can_piece_1_model
+pointer  drum_can_pieces  0x00000040  drum_can_piece_1_texlist
+pointer  drum_can_pieces  0x00000044  drum_can_piece_1_model
+pointer  drum_can_pieces  0x00000060  drum_can_piece_1_texlist
+pointer  drum_can_pieces  0x00000064  drum_can_piece_1_model
+pointer  drum_can_pieces  0x00000080  drum_can_piece_1_texlist
+pointer  drum_can_pieces  0x00000084  drum_can_piece_1_model
+pointer  drum_can_pieces  0x000000a0  drum_can_piece_1_texlist
+pointer  drum_can_pieces  0x000000a4  drum_can_piece_1_model

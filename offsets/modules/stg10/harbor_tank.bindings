@@ -1,0 +1,29 @@
+text  HARBOR_TEXTURE_PR128_12  9
+text  HARBOR_TEXTURE_PR128_27  9
+text  HARBOR_TEXTURE_PR128_34  9
+text  HARBOR_TEXTURE_PR128_7  8
+text  HARBOR_TEXTURE_PR32_2  7
+text  HARBOR_TEXTURE_PR64_14  8
+text  HARBOR_TEXTURE_PR_KAGE32  10
+pointer  harbor_tank_collision_meshsets  0x00000004  harbor_tank_collision_indices_0
+pointer  harbor_tank_collision_model  0x00000000  harbor_tank_collision_points
+pointer  harbor_tank_collision_model  0x00000004  harbor_tank_collision_normals
+pointer  harbor_tank_collision_model  0x0000000c  harbor_tank_collision_meshsets
+pointer  harbor_tank_collision_model  0x00000010  harbor_tank_collision_materials
+pointer  harbor_tank_collision  0x00000004  harbor_tank_collision_model
+pointer  harbor_tank_textures  0x00000000  HARBOR_TEXTURE_PR128_12
+pointer  harbor_tank_textures  0x0000000c  HARBOR_TEXTURE_PR128_27
+pointer  harbor_tank_textures  0x00000018  HARBOR_TEXTURE_PR128_34
+pointer  harbor_tank_textures  0x00000024  HARBOR_TEXTURE_PR128_7
+pointer  harbor_tank_textures  0x00000030  HARBOR_TEXTURE_PR32_2
+pointer  harbor_tank_textures  0x0000003c  HARBOR_TEXTURE_PR64_14
+pointer  harbor_tank_textures  0x00000048  HARBOR_TEXTURE_PR_KAGE32
+pointer  harbor_tank_texlist  0x00000000  harbor_tank_textures
+pointer  harbor_tank_object_node_1_mesh  0x00000000  harbor_tank_object_node_1_vertices
+pointer  harbor_tank_object_node_1_mesh  0x00000004  harbor_tank_object_node_1_polygons
+pointer  harbor_tank_object_node_1  0x00000004  harbor_tank_object_node_1_mesh
+pointer  harbor_tank_mesh  0x00000000  harbor_tank_vertices
+pointer  harbor_tank_mesh  0x00000004  harbor_tank_polygons
+pointer  harbor_tank_object  0x00000004  harbor_tank_mesh
+pointer  harbor_tank_object  0x0000002c  harbor_tank_object_node_1
+pointer  harbor_tank_texlists  0x00000000  harbor_tank_texlist

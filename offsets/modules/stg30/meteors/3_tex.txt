@@ -1,0 +1,6 @@
+datum  textures  D  0x00000000  24
+datum  meteor_3_texlist  D  0x00000018  8
+datum  meteor_3_polygons  D  0x00000020  1090
+datum  meteor_3_vertices  D  0x00000464  1260
+datum  meteor_3_mesh  D  0x00000950  24
+datum  meteor_3_object  D  0x00000968  52

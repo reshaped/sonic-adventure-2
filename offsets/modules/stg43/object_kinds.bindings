@@ -1,0 +1,230 @@
+text  SET_NAME_RING  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_3SPRING  8
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_UDREEL  7
+text  SET_NAME_ORI  4
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_ROCKET  10
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SCHBOX  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_MSGER  6
+text  SET_NAME_SOLIDBOX  9
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_SKULL  6
+text  SET_NAME_PSKULL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_STOPLSD  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MODMOD  8
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_EFLENSF0  9
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_E_CHAOS  8
+text  SET_NAME_E_PATH  7
+text  SET_NAME_E_NAMIE  8
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_STOPLOCKON  11
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_E_PATHCHAOS  12
+text  SET_NAME_ARROW  6
+text  SET_NAME_STAGE  6
+text  SET_NAME_DRILLCOL  9
+text  SET_NAME_SIGNEND  8
+text  SET_NAME_GATE  5
+text  SET_NAME_INDCTR  7
+text  SET_NAME_VULCAN  7
+text  SET_NAME_LOCKON  7
+text  SET_NAME_LAZER  6
+text  SET_NAME_METEOBULLET  12
+text  SET_NAME_METEOBULLET2  13
+text  SET_NAME_LOCKON_FAR  11
+pointer  cosmic_wall_kinds  0x00000008  ring_step
+pointer  cosmic_wall_kinds  0x0000000c  SET_NAME_RING
+pointer  cosmic_wall_kinds  0x00000018  ring_linear_init
+pointer  cosmic_wall_kinds  0x0000001c  SET_NAME_RING_LINEAR
+pointer  cosmic_wall_kinds  0x00000028  ring_circle_init
+pointer  cosmic_wall_kinds  0x0000002c  SET_NAME_RING_CIRCLE
+pointer  cosmic_wall_kinds  0x00000038  spring_a_step
+pointer  cosmic_wall_kinds  0x0000003c  SET_NAME_SPRA
+pointer  cosmic_wall_kinds  0x00000048  spring_b_step
+pointer  cosmic_wall_kinds  0x0000004c  SET_NAME_SPRB
+pointer  cosmic_wall_kinds  0x00000058  triple_spring_init
+pointer  cosmic_wall_kinds  0x0000005c  SET_NAME_3SPRING
+pointer  cosmic_wall_kinds  0x00000068  big_jump_step
+pointer  cosmic_wall_kinds  0x0000006c  SET_NAME_BIGJUMP
+pointer  cosmic_wall_kinds  0x00000078  dash_panel_step
+pointer  cosmic_wall_kinds  0x0000007c  SET_NAME_KASOKU
+pointer  cosmic_wall_kinds  0x00000088  save_point_step
+pointer  cosmic_wall_kinds  0x0000008c  SET_NAME_SAVEPOINT
+pointer  cosmic_wall_kinds  0x00000098  switch_step
+pointer  cosmic_wall_kinds  0x0000009c  SET_NAME_SWITCH
+pointer  cosmic_wall_kinds  0x000000a8  item_box_step
+pointer  cosmic_wall_kinds  0x000000ac  SET_NAME_ITEMBOX
+pointer  cosmic_wall_kinds  0x000000b8  item_box_air_step
+pointer  cosmic_wall_kinds  0x000000bc  SET_NAME_ITEMBOXAIR
+pointer  cosmic_wall_kinds  0x000000c8  item_balloon_step
+pointer  cosmic_wall_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  cosmic_wall_kinds  0x000000d8  upgrade_init
+pointer  cosmic_wall_kinds  0x000000dc  SET_NAME_LEVUPDAI
+pointer  cosmic_wall_kinds  0x000000e8  goal_ring_init
+pointer  cosmic_wall_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  cosmic_wall_kinds  0x000000f8  emerald_init
+pointer  cosmic_wall_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  cosmic_wall_kinds  0x00000108  reel_init
+pointer  cosmic_wall_kinds  0x0000010c  SET_NAME_UDREEL
+pointer  cosmic_wall_kinds  0x00000118  cage_init
+pointer  cosmic_wall_kinds  0x0000011c  SET_NAME_ORI
+pointer  cosmic_wall_kinds  0x00000128  dynamite_init
+pointer  cosmic_wall_kinds  0x0000012c  SET_NAME_DYNAMITE
+pointer  cosmic_wall_kinds  0x00000138  wood_box_init
+pointer  cosmic_wall_kinds  0x0000013c  SET_NAME_CONTWOOD
+pointer  cosmic_wall_kinds  0x00000148  iron_box_init
+pointer  cosmic_wall_kinds  0x0000014c  SET_NAME_CONTIRON
+pointer  cosmic_wall_kinds  0x00000158  rocket_init
+pointer  cosmic_wall_kinds  0x0000015c  SET_NAME_ROCKET
+pointer  cosmic_wall_kinds  0x00000168  missile_init
+pointer  cosmic_wall_kinds  0x0000016c  SET_NAME_ROCKETMISSSILE
+pointer  cosmic_wall_kinds  0x00000178  search_box_init
+pointer  cosmic_wall_kinds  0x0000017c  SET_NAME_SCHBOX
+pointer  cosmic_wall_kinds  0x00000188  hint_box_init
+pointer  cosmic_wall_kinds  0x0000018c  SET_NAME_HINTBOX
+pointer  cosmic_wall_kinds  0x00000198  messenger_init
+pointer  cosmic_wall_kinds  0x0000019c  SET_NAME_MSGER
+pointer  cosmic_wall_kinds  0x000001a8  solid_box_init
+pointer  cosmic_wall_kinds  0x000001ac  SET_NAME_SOLIDBOX
+pointer  cosmic_wall_kinds  0x000001b8  dummy_object_init
+pointer  cosmic_wall_kinds  0x000001bc  SET_NAME_DMYOBJ
+pointer  cosmic_wall_kinds  0x000001c8  skull_still_init
+pointer  cosmic_wall_kinds  0x000001cc  SET_NAME_SKULL
+pointer  cosmic_wall_kinds  0x000001d8  skull_lying_init
+pointer  cosmic_wall_kinds  0x000001dc  SET_NAME_PSKULL
+pointer  cosmic_wall_kinds  0x000001e8  chao_pipe_init
+pointer  cosmic_wall_kinds  0x000001ec  SET_NAME_CHAOPIPE
+pointer  cosmic_wall_kinds  0x000001f8  animal_init
+pointer  cosmic_wall_kinds  0x000001fc  SET_NAME_MINIMAL
+pointer  cosmic_wall_kinds  0x00000208  hidden_animal_init
+pointer  cosmic_wall_kinds  0x0000020c  SET_NAME_WSMMLS
+pointer  cosmic_wall_kinds  0x00000218  chao_box_init
+pointer  cosmic_wall_kinds  0x0000021c  SET_NAME_CONTCHAO
+pointer  cosmic_wall_kinds  0x00000228  stop_lsd_init
+pointer  cosmic_wall_kinds  0x0000022c  SET_NAME_STOPLSD
+pointer  cosmic_wall_kinds  0x00000238  knudai_init
+pointer  cosmic_wall_kinds  0x0000023c  SET_NAME_KNUDAI
+pointer  cosmic_wall_kinds  0x00000248  knudai_foothold_init
+pointer  cosmic_wall_kinds  0x0000024c  SET_NAME_KDASIBA
+pointer  cosmic_wall_kinds  0x00000258  knudai_warp_hole_init
+pointer  cosmic_wall_kinds  0x0000025c  SET_NAME_KDWARPHOLE
+pointer  cosmic_wall_kinds  0x00000268  knudai_door_init
+pointer  cosmic_wall_kinds  0x0000026c  SET_NAME_KDDOOR
+pointer  cosmic_wall_kinds  0x00000278  knudai_item_box_init
+pointer  cosmic_wall_kinds  0x0000027c  SET_NAME_KDITEMBOX
+pointer  cosmic_wall_kinds  0x00000288  knudai_ring_linear_init
+pointer  cosmic_wall_kinds  0x0000028c  SET_NAME_KDDRNGL
+pointer  cosmic_wall_kinds  0x00000298  knudai_ring_circle_init
+pointer  cosmic_wall_kinds  0x0000029c  SET_NAME_KDDRNGC
+pointer  cosmic_wall_kinds  0x000002a8  knudai_spring_init
+pointer  cosmic_wall_kinds  0x000002ac  SET_NAME_KDSPRING
+pointer  cosmic_wall_kinds  0x000002b8  knudai_spring_b_init
+pointer  cosmic_wall_kinds  0x000002bc  SET_NAME_KDSPRINGB
+pointer  cosmic_wall_kinds  0x000002c8  collision_sphere_step
+pointer  cosmic_wall_kinds  0x000002cc  SET_NAME_SPHERE
+pointer  cosmic_wall_kinds  0x000002d8  collision_cylinder_step
+pointer  cosmic_wall_kinds  0x000002dc  SET_NAME_CCYL
+pointer  cosmic_wall_kinds  0x000002e8  collision_cube_step
+pointer  cosmic_wall_kinds  0x000002ec  SET_NAME_CCUBE
+pointer  cosmic_wall_kinds  0x000002f8  collision_wall_step
+pointer  cosmic_wall_kinds  0x000002fc  SET_NAME_CWALL
+pointer  cosmic_wall_kinds  0x00000308  collision_circle_step
+pointer  cosmic_wall_kinds  0x0000030c  SET_NAME_CCIRCLE
+pointer  cosmic_wall_kinds  0x00000318  modifier_volume_init
+pointer  cosmic_wall_kinds  0x0000031c  SET_NAME_MODMOD
+pointer  cosmic_wall_kinds  0x00000328  effect_object_init
+pointer  cosmic_wall_kinds  0x0000032c  SET_NAME_EFFOBJ0
+pointer  cosmic_wall_kinds  0x00000338  lens_flare_init
+pointer  cosmic_wall_kinds  0x0000033c  SET_NAME_EFLENSF0
+pointer  cosmic_wall_kinds  0x00000348  weight_init
+pointer  cosmic_wall_kinds  0x0000034c  SET_NAME_BUNCHIN
+pointer  cosmic_wall_kinds  0x00000358  iron_ball_init
+pointer  cosmic_wall_kinds  0x0000035c  SET_NAME_IRONBALL2
+pointer  cosmic_wall_kinds  0x00000368  beetle_step
+pointer  cosmic_wall_kinds  0x0000036c  SET_NAME_E_KUMI
+pointer  cosmic_wall_kinds  0x00000378  gold_beetle_step
+pointer  cosmic_wall_kinds  0x0000037c  SET_NAME_E_GOLD
+pointer  cosmic_wall_kinds  0x00000388  chaos_step
+pointer  cosmic_wall_kinds  0x0000038c  SET_NAME_E_CHAOS
+pointer  cosmic_wall_kinds  0x00000398  path_enemy_step
+pointer  cosmic_wall_kinds  0x0000039c  SET_NAME_E_PATH
+pointer  cosmic_wall_kinds  0x000003a8  hornet_step
+pointer  cosmic_wall_kinds  0x000003ac  SET_NAME_E_NAMIE
+pointer  cosmic_wall_kinds  0x000003b8  technique_link_init
+pointer  cosmic_wall_kinds  0x000003bc  SET_NAME_LINKLINK
+pointer  cosmic_wall_kinds  0x000003c8  light_switch_init
+pointer  cosmic_wall_kinds  0x000003cc  SET_NAME_LIGHT_SW
+pointer  cosmic_wall_kinds  0x000003d8  stop_lockon_init
+pointer  cosmic_wall_kinds  0x000003dc  SET_NAME_STOPLOCKON
+pointer  cosmic_wall_kinds  0x000003e8  big_step
+pointer  cosmic_wall_kinds  0x000003ec  SET_NAME_BIG_THE_CAT
+pointer  cosmic_wall_kinds  0x000003f8  path_chaos_step
+pointer  cosmic_wall_kinds  0x000003fc  SET_NAME_E_PATHCHAOS
+pointer  cosmic_wall_kinds  0x00000408  arrow_init
+pointer  cosmic_wall_kinds  0x0000040c  SET_NAME_ARROW
+pointer  cosmic_wall_kinds  0x00000418  frstage_init
+pointer  cosmic_wall_kinds  0x0000041c  SET_NAME_STAGE
+pointer  cosmic_wall_kinds  0x00000428  cosmic_drill_trigger_init
+pointer  cosmic_wall_kinds  0x0000042c  SET_NAME_DRILLCOL
+pointer  cosmic_wall_kinds  0x00000438  sign_end_init
+pointer  cosmic_wall_kinds  0x0000043c  SET_NAME_SIGNEND
+pointer  cosmic_wall_kinds  0x00000448  cosmic_gate_init
+pointer  cosmic_wall_kinds  0x0000044c  SET_NAME_GATE
+pointer  cosmic_wall_kinds  0x00000458  cosmic_indicator_init
+pointer  cosmic_wall_kinds  0x0000045c  SET_NAME_INDCTR
+pointer  cosmic_wall_kinds  0x00000468  cosmic_vulcan_init
+pointer  cosmic_wall_kinds  0x0000046c  SET_NAME_VULCAN
+pointer  cosmic_wall_kinds  0x00000478  cosmic_lockon_init
+pointer  cosmic_wall_kinds  0x0000047c  SET_NAME_LOCKON
+pointer  cosmic_wall_kinds  0x00000488  cosmic_laser_init
+pointer  cosmic_wall_kinds  0x0000048c  SET_NAME_LAZER
+pointer  cosmic_wall_kinds  0x00000498  stop_lockon_init
+pointer  cosmic_wall_kinds  0x0000049c  SET_NAME_STOPLOCKON
+pointer  cosmic_wall_kinds  0x000004a8  cosmic_flaming_meteor_init
+pointer  cosmic_wall_kinds  0x000004ac  SET_NAME_METEOBULLET
+pointer  cosmic_wall_kinds  0x000004b8  cosmic_rock_init
+pointer  cosmic_wall_kinds  0x000004bc  SET_NAME_METEOBULLET2
+pointer  cosmic_wall_kinds  0x000004c8  cosmic_lockon_init
+pointer  cosmic_wall_kinds  0x000004cc  SET_NAME_LOCKON_FAR

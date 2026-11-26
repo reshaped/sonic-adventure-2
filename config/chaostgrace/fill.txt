@@ -1,0 +1,4 @@
+# The original overlay header points to an export in its first code input.
+DHEAD P inputs c2559cfa1c33221b329fe865a6405a3094bcdadfd29e7c43688cb18b7d9b39d1 _chaostgrace_step 0x0c9c0008
+# Complete constant inputs precede the first initialized data input.
+C D inputs 9df397786405e0e5060f24030878fbebb720836d761acfd175156a303df05ef2 D 0x0c9c1cb4

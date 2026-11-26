@@ -1,0 +1,9 @@
+modules/stg26/guard_art.c
+modules/stg26/hunt_routes.c
+modules/stg26/patrol_beam.c
+modules/stg26/patrol_body.c
+modules/stg26/patrol_exhaust.c
+modules/stg26/patrol_eye.c
+modules/stg26/patrol_sensor.c
+modules/stg26/player_motions.c
+modules/stg26/terrain.c

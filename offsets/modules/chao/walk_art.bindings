@@ -1,0 +1,6 @@
+pointer  walk_vmu_model_model  0x00000000  walk_vmu_model_vertices
+pointer  walk_vmu_model_model  0x00000004  walk_vmu_model_polygons
+pointer  walk_vmu_model  0x00000004  walk_vmu_model_model
+pointer  walk_multi_vmu_model_model  0x00000000  walk_multi_vmu_model_vertices
+pointer  walk_multi_vmu_model_model  0x00000004  walk_multi_vmu_model_polygons
+pointer  walk_multi_vmu_model  0x00000004  walk_multi_vmu_model_model

@@ -1,0 +1,4 @@
+datum  lens_polygons  D  0x00000000  50
+datum  lens_vertices  D  0x00000034  76
+datum  lens_model  D  0x00000080  24
+datum  quarters_guard_lens_object  D  0x00000098  52

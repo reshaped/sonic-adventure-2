@@ -1,0 +1,7 @@
+pointer  guard_path  0x00000008  guard_path_points
+pointer  guard_texlists  0x00000000  guard_texlist
+pointer  guard_texlists  0x00000004  guard_lens_texlist
+pointer  guard_texlists  0x00000008  guard_sensor_texlist
+pointer  guard_texlists  0x0000000c  guard_exhaust_texlist
+pointer  guard_model_builds  0x00000004  guard_texlist
+pointer  guard_model_builds  0x00000008  quarters_guard_object

@@ -1,0 +1,4 @@
+text  AKAHIGE_THREE_BOMB_LABEL  20
+text  AKAHIGE_SIX_BOMB_LABEL  20
+pointer  akahige_form_names  0x00000000  AKAHIGE_THREE_BOMB_LABEL
+pointer  akahige_form_names  0x00000004  AKAHIGE_SIX_BOMB_LABEL

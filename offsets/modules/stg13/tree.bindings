@@ -1,0 +1,15 @@
+text  CITY_TEXTURE_MIU256_CE001  13
+text  CITY_TEXTURE_MIU32_CE003  12
+text  CITY_TEXTURE_MIU64_CE001  12
+pointer  tree_texnames  0x00000000  CITY_TEXTURE_MIU256_CE001
+pointer  tree_texnames  0x0000000c  CITY_TEXTURE_MIU32_CE003
+pointer  tree_texnames  0x00000018  CITY_TEXTURE_MIU64_CE001
+pointer  tree_texlist  0x00000000  tree_texnames
+pointer  tree_model  0x00000000  tree_vertices
+pointer  tree_model  0x00000004  tree_polygons
+pointer  tree_object  0x00000004  tree_model
+pointer  tree_ground_model  0x00000000  tree_ground_vertices
+pointer  tree_ground_model  0x00000004  tree_ground_polygons
+pointer  tree_root  0x00000004  tree_ground_model
+pointer  tree_root  0x0000002c  tree_object
+pointer  tree_texlists  0x00000000  tree_texlist

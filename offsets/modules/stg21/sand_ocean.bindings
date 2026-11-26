@@ -1,0 +1,4 @@
+pointer  ocean_kill_areas  0x00000004  sand_ocean_kill_0
+pointer  ocean_kill_areas  0x0000000c  sand_ocean_kill_1
+pointer  ocean_kill_areas  0x00000014  sand_ocean_kill_2
+pointer  ocean_kill_areas  0x0000001c  sand_ocean_kill_3

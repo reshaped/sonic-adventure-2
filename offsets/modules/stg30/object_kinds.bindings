@@ -1,0 +1,261 @@
+text  SET_NAME_RING  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_3SPRING  8
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_UDREEL  7
+text  SET_NAME_ORI  4
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_ROCKET  10
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SCHBOX  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_MSGER  6
+text  SET_NAME_SSS  4
+text  SET_NAME_SOLIDBOX  9
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_SOAP_SW  8
+text  SET_NAME_SKULL  6
+text  SET_NAME_PSKULL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_STOPLSD  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MODMOD  8
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_EFLENSF0  9
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_E_CHAOS  8
+text  SET_NAME_E_PATH  7
+text  SET_NAME_E_NAMIE  8
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_STOPLOCKON  11
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_GLIND  6
+text  SET_NAME_GLINDRB  8
+text  SET_NAME_METEO_MOVE  11
+text  SET_NAME_METEO_SET  10
+text  SET_NAME_FRSTAGE  8
+text  SET_NAME_GLIND_B  8
+text  SET_NAME_STROCKET  9
+text  SET_NAME_SIGNEND  8
+text  SET_NAME_FRSTAGE_FAR  12
+text  SET_NAME_RINGKAZ  8
+text  SET_NAME_ARROW  6
+text  SET_NAME_BURST  6
+text  SET_NAME_SIGNENDE  9
+text  SET_NAME_LIGHTBAR  9
+text  SET_NAME_METEO_MOVE_FAR  15
+text  SET_NAME_METEO_SET_FAR  14
+text  SET_NAME_SIGNSHIP  9
+text  SET_NAME_SIGNTRICK  10
+text  SET_NAME_PIC  4
+text  SET_NAME_E_AI  5
+text  SET_NAME_SE_TUNNEL  10
+text  SET_NAME_E_KYOKO  8
+pointer  stg30_kinds  0x00000008  ring_step
+pointer  stg30_kinds  0x0000000c  SET_NAME_RING
+pointer  stg30_kinds  0x00000018  ring_linear_init
+pointer  stg30_kinds  0x0000001c  SET_NAME_RING_LINEAR
+pointer  stg30_kinds  0x00000028  ring_circle_init
+pointer  stg30_kinds  0x0000002c  SET_NAME_RING_CIRCLE
+pointer  stg30_kinds  0x00000038  spring_a_step
+pointer  stg30_kinds  0x0000003c  SET_NAME_SPRA
+pointer  stg30_kinds  0x00000048  spring_b_step
+pointer  stg30_kinds  0x0000004c  SET_NAME_SPRB
+pointer  stg30_kinds  0x00000058  triple_spring_init
+pointer  stg30_kinds  0x0000005c  SET_NAME_3SPRING
+pointer  stg30_kinds  0x00000068  big_jump_step
+pointer  stg30_kinds  0x0000006c  SET_NAME_BIGJUMP
+pointer  stg30_kinds  0x00000078  dash_panel_step
+pointer  stg30_kinds  0x0000007c  SET_NAME_KASOKU
+pointer  stg30_kinds  0x00000088  save_point_step
+pointer  stg30_kinds  0x0000008c  SET_NAME_SAVEPOINT
+pointer  stg30_kinds  0x00000098  switch_step
+pointer  stg30_kinds  0x0000009c  SET_NAME_SWITCH
+pointer  stg30_kinds  0x000000a8  item_box_step
+pointer  stg30_kinds  0x000000ac  SET_NAME_ITEMBOX
+pointer  stg30_kinds  0x000000b8  item_box_air_step
+pointer  stg30_kinds  0x000000bc  SET_NAME_ITEMBOXAIR
+pointer  stg30_kinds  0x000000c8  item_balloon_step
+pointer  stg30_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  stg30_kinds  0x000000d8  upgrade_init
+pointer  stg30_kinds  0x000000dc  SET_NAME_LEVUPDAI
+pointer  stg30_kinds  0x000000e8  goal_ring_init
+pointer  stg30_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  stg30_kinds  0x000000f8  emerald_init
+pointer  stg30_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  stg30_kinds  0x00000108  reel_init
+pointer  stg30_kinds  0x0000010c  SET_NAME_UDREEL
+pointer  stg30_kinds  0x00000118  cage_init
+pointer  stg30_kinds  0x0000011c  SET_NAME_ORI
+pointer  stg30_kinds  0x00000128  dynamite_init
+pointer  stg30_kinds  0x0000012c  SET_NAME_DYNAMITE
+pointer  stg30_kinds  0x00000138  wood_box_init
+pointer  stg30_kinds  0x0000013c  SET_NAME_CONTWOOD
+pointer  stg30_kinds  0x00000148  iron_box_init
+pointer  stg30_kinds  0x0000014c  SET_NAME_CONTIRON
+pointer  stg30_kinds  0x00000158  rocket_init
+pointer  stg30_kinds  0x0000015c  SET_NAME_ROCKET
+pointer  stg30_kinds  0x00000168  missile_init
+pointer  stg30_kinds  0x0000016c  SET_NAME_ROCKETMISSSILE
+pointer  stg30_kinds  0x00000178  search_box_init
+pointer  stg30_kinds  0x0000017c  SET_NAME_SCHBOX
+pointer  stg30_kinds  0x00000188  hint_box_init
+pointer  stg30_kinds  0x0000018c  SET_NAME_HINTBOX
+pointer  stg30_kinds  0x00000198  messenger_init
+pointer  stg30_kinds  0x0000019c  SET_NAME_MSGER
+pointer  stg30_kinds  0x000001a8  sss_init
+pointer  stg30_kinds  0x000001ac  SET_NAME_SSS
+pointer  stg30_kinds  0x000001b8  solid_box_init
+pointer  stg30_kinds  0x000001bc  SET_NAME_SOLIDBOX
+pointer  stg30_kinds  0x000001c8  dummy_object_init
+pointer  stg30_kinds  0x000001cc  SET_NAME_DMYOBJ
+pointer  stg30_kinds  0x000001d8  soap_switch_init
+pointer  stg30_kinds  0x000001dc  SET_NAME_SOAP_SW
+pointer  stg30_kinds  0x000001e8  skull_still_init
+pointer  stg30_kinds  0x000001ec  SET_NAME_SKULL
+pointer  stg30_kinds  0x000001f8  skull_lying_init
+pointer  stg30_kinds  0x000001fc  SET_NAME_PSKULL
+pointer  stg30_kinds  0x00000208  chao_pipe_init
+pointer  stg30_kinds  0x0000020c  SET_NAME_CHAOPIPE
+pointer  stg30_kinds  0x00000218  animal_init
+pointer  stg30_kinds  0x0000021c  SET_NAME_MINIMAL
+pointer  stg30_kinds  0x00000228  hidden_animal_init
+pointer  stg30_kinds  0x0000022c  SET_NAME_WSMMLS
+pointer  stg30_kinds  0x00000238  chao_box_init
+pointer  stg30_kinds  0x0000023c  SET_NAME_CONTCHAO
+pointer  stg30_kinds  0x00000248  stop_lsd_init
+pointer  stg30_kinds  0x0000024c  SET_NAME_STOPLSD
+pointer  stg30_kinds  0x00000258  knudai_init
+pointer  stg30_kinds  0x0000025c  SET_NAME_KNUDAI
+pointer  stg30_kinds  0x00000268  knudai_foothold_init
+pointer  stg30_kinds  0x0000026c  SET_NAME_KDASIBA
+pointer  stg30_kinds  0x00000278  knudai_warp_hole_init
+pointer  stg30_kinds  0x0000027c  SET_NAME_KDWARPHOLE
+pointer  stg30_kinds  0x00000288  knudai_door_init
+pointer  stg30_kinds  0x0000028c  SET_NAME_KDDOOR
+pointer  stg30_kinds  0x00000298  knudai_item_box_init
+pointer  stg30_kinds  0x0000029c  SET_NAME_KDITEMBOX
+pointer  stg30_kinds  0x000002a8  knudai_ring_linear_init
+pointer  stg30_kinds  0x000002ac  SET_NAME_KDDRNGL
+pointer  stg30_kinds  0x000002b8  knudai_ring_circle_init
+pointer  stg30_kinds  0x000002bc  SET_NAME_KDDRNGC
+pointer  stg30_kinds  0x000002c8  knudai_spring_init
+pointer  stg30_kinds  0x000002cc  SET_NAME_KDSPRING
+pointer  stg30_kinds  0x000002d8  knudai_spring_b_init
+pointer  stg30_kinds  0x000002dc  SET_NAME_KDSPRINGB
+pointer  stg30_kinds  0x000002e8  collision_sphere_step
+pointer  stg30_kinds  0x000002ec  SET_NAME_SPHERE
+pointer  stg30_kinds  0x000002f8  collision_cylinder_step
+pointer  stg30_kinds  0x000002fc  SET_NAME_CCYL
+pointer  stg30_kinds  0x00000308  collision_cube_step
+pointer  stg30_kinds  0x0000030c  SET_NAME_CCUBE
+pointer  stg30_kinds  0x00000318  collision_wall_step
+pointer  stg30_kinds  0x0000031c  SET_NAME_CWALL
+pointer  stg30_kinds  0x00000328  collision_circle_step
+pointer  stg30_kinds  0x0000032c  SET_NAME_CCIRCLE
+pointer  stg30_kinds  0x00000338  modifier_volume_init
+pointer  stg30_kinds  0x0000033c  SET_NAME_MODMOD
+pointer  stg30_kinds  0x00000348  effect_object_init
+pointer  stg30_kinds  0x0000034c  SET_NAME_EFFOBJ0
+pointer  stg30_kinds  0x00000358  lens_flare_init
+pointer  stg30_kinds  0x0000035c  SET_NAME_EFLENSF0
+pointer  stg30_kinds  0x00000368  weight_init
+pointer  stg30_kinds  0x0000036c  SET_NAME_BUNCHIN
+pointer  stg30_kinds  0x00000378  iron_ball_init
+pointer  stg30_kinds  0x0000037c  SET_NAME_IRONBALL2
+pointer  stg30_kinds  0x00000388  beetle_step
+pointer  stg30_kinds  0x0000038c  SET_NAME_E_KUMI
+pointer  stg30_kinds  0x00000398  gold_beetle_step
+pointer  stg30_kinds  0x0000039c  SET_NAME_E_GOLD
+pointer  stg30_kinds  0x000003a8  chaos_step
+pointer  stg30_kinds  0x000003ac  SET_NAME_E_CHAOS
+pointer  stg30_kinds  0x000003b8  path_enemy_step
+pointer  stg30_kinds  0x000003bc  SET_NAME_E_PATH
+pointer  stg30_kinds  0x000003c8  hornet_step
+pointer  stg30_kinds  0x000003cc  SET_NAME_E_NAMIE
+pointer  stg30_kinds  0x000003d8  technique_link_init
+pointer  stg30_kinds  0x000003dc  SET_NAME_LINKLINK
+pointer  stg30_kinds  0x000003e8  light_switch_init
+pointer  stg30_kinds  0x000003ec  SET_NAME_LIGHT_SW
+pointer  stg30_kinds  0x000003f8  stop_lockon_init
+pointer  stg30_kinds  0x000003fc  SET_NAME_STOPLOCKON
+pointer  stg30_kinds  0x00000408  big_step
+pointer  stg30_kinds  0x0000040c  SET_NAME_BIG_THE_CAT
+pointer  stg30_kinds  0x00000418  curved_rail_init
+pointer  stg30_kinds  0x0000041c  SET_NAME_GLIND
+pointer  stg30_kinds  0x00000428  grind_rail_init
+pointer  stg30_kinds  0x0000042c  SET_NAME_GLINDRB
+pointer  stg30_kinds  0x00000438  meteor_move_init
+pointer  stg30_kinds  0x0000043c  SET_NAME_METEO_MOVE
+pointer  stg30_kinds  0x00000448  meteor_set_init
+pointer  stg30_kinds  0x0000044c  SET_NAME_METEO_SET
+pointer  stg30_kinds  0x00000458  frstage_init
+pointer  stg30_kinds  0x0000045c  SET_NAME_FRSTAGE
+pointer  stg30_kinds  0x00000468  curved_rail_b_init
+pointer  stg30_kinds  0x0000046c  SET_NAME_GLIND_B
+pointer  stg30_kinds  0x00000478  stage_rocket_init
+pointer  stg30_kinds  0x0000047c  SET_NAME_STROCKET
+pointer  stg30_kinds  0x00000488  sign_end_init
+pointer  stg30_kinds  0x0000048c  SET_NAME_SIGNEND
+pointer  stg30_kinds  0x00000498  frstage_init
+pointer  stg30_kinds  0x0000049c  SET_NAME_FRSTAGE_FAR
+pointer  stg30_kinds  0x000004a8  ringkaz_init
+pointer  stg30_kinds  0x000004ac  SET_NAME_RINGKAZ
+pointer  stg30_kinds  0x000004b8  arrow_init
+pointer  stg30_kinds  0x000004bc  SET_NAME_ARROW
+pointer  stg30_kinds  0x000004c8  rockfall_init
+pointer  stg30_kinds  0x000004cc  SET_NAME_BURST
+pointer  stg30_kinds  0x000004d8  sign_end_e_init
+pointer  stg30_kinds  0x000004dc  SET_NAME_SIGNENDE
+pointer  stg30_kinds  0x000004e8  light_bar_init
+pointer  stg30_kinds  0x000004ec  SET_NAME_LIGHTBAR
+pointer  stg30_kinds  0x000004f8  meteor_move_init
+pointer  stg30_kinds  0x000004fc  SET_NAME_METEO_MOVE_FAR
+pointer  stg30_kinds  0x00000508  meteor_set_init
+pointer  stg30_kinds  0x0000050c  SET_NAME_METEO_SET_FAR
+pointer  stg30_kinds  0x00000518  pic_init
+pointer  stg30_kinds  0x0000051c  SET_NAME_SIGNSHIP
+pointer  stg30_kinds  0x00000528  trick_sign_init
+pointer  stg30_kinds  0x0000052c  SET_NAME_SIGNTRICK
+pointer  stg30_kinds  0x00000538  pickup_object_2_init
+pointer  stg30_kinds  0x0000053c  SET_NAME_PIC
+pointer  stg30_kinds  0x00000548  ai_step
+pointer  stg30_kinds  0x0000054c  SET_NAME_E_AI
+pointer  stg30_kinds  0x00000558  tunnel_sound_init
+pointer  stg30_kinds  0x0000055c  SET_NAME_SE_TUNNEL
+pointer  stg30_kinds  0x00000568  kyoko_step
+pointer  stg30_kinds  0x0000056c  SET_NAME_E_KYOKO

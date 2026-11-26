@@ -1,0 +1,53 @@
+text  CAGE_Y_ANGLE_LABEL  11
+text  CAGE_ID_LABEL  6
+text  CAGE_TEXTURE_FILENAME  13
+text  CAGE_BOUNCE_LABEL  22
+text  CAGE_THROUGH_LABEL  22
+text  CAGE_NO_PIECES_LABEL  20
+pointer  cage_textures  0x00000000  CAGE_TEXTURE_FILENAME
+pointer  cage_texlist  0x00000000  cage_textures
+pointer  cage_model  0x00000000  cage_vertices
+pointer  cage_model  0x00000004  cage_polygons
+pointer  cage_object  0x00000004  cage_model
+pointer  cage_piece1_textures  0x00000000  CAGE_TEXTURE_FILENAME
+pointer  cage_piece1_texlist  0x00000000  cage_piece1_textures
+pointer  cage_piece1_model  0x00000000  cage_piece1_vertices
+pointer  cage_piece1_model  0x00000004  cage_piece1_polygons
+pointer  cage_piece1_object  0x00000004  cage_piece1_model
+pointer  cage_piece2_textures  0x00000000  CAGE_TEXTURE_FILENAME
+pointer  cage_piece2_texlist  0x00000000  cage_piece2_textures
+pointer  cage_piece2_model  0x00000000  cage_piece2_vertices
+pointer  cage_piece2_model  0x00000004  cage_piece2_polygons
+pointer  cage_piece2_object  0x00000004  cage_piece2_model
+pointer  cage_piece3_textures  0x00000000  CAGE_TEXTURE_FILENAME
+pointer  cage_piece3_texlist  0x00000000  cage_piece3_textures
+pointer  cage_piece3_model  0x00000000  cage_piece3_vertices
+pointer  cage_piece3_model  0x00000004  cage_piece3_polygons
+pointer  cage_piece3_object  0x00000004  cage_piece3_model
+pointer  cage_bounds_meshset  0x00000004  cage_bounds_indices
+pointer  cage_bounds_model  0x00000000  cage_bounds_points
+pointer  cage_bounds_model  0x00000004  cage_bounds_normals
+pointer  cage_bounds_model  0x0000000c  cage_bounds_meshset
+pointer  cage_bounds_model  0x00000010  cage_bounds_material
+pointer  cage_bounds_object  0x00000004  cage_bounds_model
+pointer  cage_texlists  0x00000000  cage_texlist
+pointer  cage_texlists  0x00000004  cage_piece1_texlist
+pointer  cage_texlists  0x00000008  cage_piece2_texlist
+pointer  cage_texlists  0x0000000c  cage_piece3_texlist
+pointer  cage_pieces  0x00000000  cage_piece1_texlist
+pointer  cage_pieces  0x00000004  cage_piece1_model
+pointer  cage_pieces  0x0000000c  cage_piece2_texlist
+pointer  cage_pieces  0x00000010  cage_piece2_model
+pointer  cage_pieces  0x00000018  cage_piece3_texlist
+pointer  cage_pieces  0x0000001c  cage_piece3_model
+pointer  cage_builds  0x00000004  cage_texlist
+pointer  cage_builds  0x00000008  cage_object
+pointer  cage_builds  0x00000014  cage_piece1_texlist
+pointer  cage_builds  0x00000018  cage_piece1_object
+pointer  cage_builds  0x00000024  cage_piece2_texlist
+pointer  cage_builds  0x00000028  cage_piece2_object
+pointer  cage_builds  0x00000034  cage_piece3_texlist
+pointer  cage_builds  0x00000038  cage_piece3_object
+pointer  cage_crash_labels  0x00000000  CAGE_BOUNCE_LABEL
+pointer  cage_crash_labels  0x00000004  CAGE_THROUGH_LABEL
+pointer  cage_crash_labels  0x00000008  CAGE_NO_PIECES_LABEL

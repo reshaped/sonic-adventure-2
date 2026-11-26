@@ -1,0 +1,13 @@
+text CAGE_DOOR_EDITOR_ENE_ID 10
+text CAGE_DOOR_EDITOR_ANGLE_Y 11
+text CAGE_DOOR_EDITOR_SHUT_SPEED 14
+text CAGE_DOOR_TEXTURE_MIU128_IG001 13
+text CAGE_DOOR_TEXTURE_MIU64_IG019 12
+text CAGE_DOOR_TEXTURE_MIU64_PL001 12
+text CAGE_DOOR_TEXTURE_PR128_7 8
+text CAGE_DOOR_TEXTURE_PR128_8 8
+text CAGE_DOOR_TEXTURE_PR64_6 7
+
+include prison_cage_doors
+pointer cage_door_texlists 0x00000000 cage_door_texlist
+pointer cage_door_texlists 0x00000004 dust_texlist

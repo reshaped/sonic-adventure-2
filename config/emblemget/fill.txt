@@ -1,0 +1,4 @@
+# The original overlay header points to an export in its first code input.
+DHEAD P inputs 418e9994aa245ed889ee31bb519455b57c43f21e6fc31a40910ddd49b225ffc3 _emblemget_init 0x8c50000c
+# Complete constant inputs precede the first initialized data input.
+C D inputs a99009b125ac8b85dd827d14d81a63d6a616d3c9374215b4f03d7f8c22ef00d8 D 0x8c5210b8

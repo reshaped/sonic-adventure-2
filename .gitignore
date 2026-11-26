@@ -1,0 +1,42 @@
+.DS_Store
+/build/
+/orig/*
+!/orig/.gitkeep
+/tools/wibo-*
+/tools/shc-*
+/tools/llvm
+/tools/sh-elf*
+/tools/sh4zam
+
+# Python's bytecode from a tool run outside make, which puts it in build/
+__pycache__/
+
+# the disc's files stay out of git, wherever they land, by their formats.
+# the disc also holds .txt, .html, .gif, .jpg, .dat and .ini files, which no
+# rule here names, since the tree's own files may take those formats
+*.[Bb][Ii][Nn]
+*.[Pp][Rr][Ss]
+*.[Dd][Rr][Vv]
+*.[Aa][Dd][Xx]
+*.[Aa][Ff][Ss]
+*.[Dd][Pp][Ss]
+*.[Mm]1[Vv]
+*.[Mm][Ll][Tt]
+*.[Mm][Pp][Bb]
+*.[Nn][Jj]
+*.[Nn][Jj][Mm]
+*.[Pp][Vv][Mm]
+*.[Pp][Vv][Pp]
+*.[Pp][Vv][Rr]
+*.[Ss][Cc][Rr]
+*.[Ss][Ff][Dd]
+# so do a disc's image and its tracks
+*.[Gg][Dd][Ii]
+*.[Rr][Aa][Ww]
+*.[Cc][Hh][Dd]
+*.[Cc][Dd][Ii]
+*.[Cc][Uu][Ee]
+*.[Ii][Ss][Oo]
+# and a linked program and a memory card's save, outside build/
+*.[Ee][Ll][Ff]
+*.[Vv][Mm][Ss]

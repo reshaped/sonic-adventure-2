@@ -1,0 +1,6 @@
+include sandglass
+
+pointer sandglass_texlists  0x00000000  sandglass_frame_texlist
+pointer sandglass_texlists  0x00000004  sandglass_end_texlist
+pointer sandglass_texlists  0x00000008  sandglass_sand_texlist
+pointer sandglass_texlists  0x0000000c  sandglass_stream_texlist

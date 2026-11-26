@@ -1,0 +1,45 @@
+text  SHUTTER_TEXTURE_MIU128_IG001  13
+text  SHUTTER_TEXTURE_MIU128_IG003  13
+text  SHUTTER_TEXTURE_MIU128_IG004  13
+text  SHUTTER_TEXTURE_MIU64_IG001  12
+text  SHUTTER_TEXTURE_MIU64_IG009  12
+text  SHUTTER_TEXTURE_MIU64_IG011  12
+text  SHUTTER_TEXTURE_MIU64_IG012  12
+text  SHUTTER_TEXTURE_MIU64_IG013  12
+text  SHUTTER_TEXTURE_MIU128_IG005  13
+text  SHUTTER_TEXTURE_MIU128_IG006  13
+text  SHUTTER_TEXTURE_MIU128_IG007  13
+text  SHUTTER_TEXTURE_MIU128_IG008  13
+text  SHUTTER_TEXTURE_MIU64_IG014  12
+text  SHUTTER_TEXTURE_PR32_1  7
+include  iron_gate_shutters
+pointer  shutter_texlist  0x00000000  shutter_names
+pointer  shutter_lamp_0  0x00000030  shutter_plate_object
+pointer  shutter_lamp_2  0x00000030  shutter_lamp_0
+pointer  shutter_lamp_1  0x00000030  shutter_lamp_2
+pointer  shutter_lamp_3  0x00000030  shutter_lamp_1
+pointer  shutter_panel_2  0x00000030  shutter_lamp_3
+pointer  shutter_panel_3  0x00000030  shutter_panel_1
+pointer  shutter_panel_0  0x00000030  shutter_panel_3
+pointer  shutter_door_model  0x00000000  shutter_door_vertices
+pointer  shutter_door_model  0x00000004  shutter_door_polygons
+pointer  shutter_door_object  0x00000004  shutter_door_model
+pointer  shutter_door_object  0x0000002c  shutter_panel_0
+pointer  shutter_frame_names  0x00000000  SHUTTER_TEXTURE_MIU64_IG014
+pointer  shutter_frame_names  0x0000000c  SHUTTER_TEXTURE_PR32_1
+pointer  shutter_frame_texlist  0x00000000  shutter_frame_names
+pointer  shutter_frame_model  0x00000000  shutter_frame_vertices
+pointer  shutter_frame_model  0x00000004  shutter_frame_polygons
+pointer  shutter_frame_object  0x00000004  shutter_frame_model
+pointer  shutter_panels  0x00000000  shutter_panel_0
+pointer  shutter_panels  0x00000004  shutter_lamp_0
+pointer  shutter_panels  0x00000008  shutter_panel_1
+pointer  shutter_panels  0x0000000c  shutter_lamp_1
+pointer  shutter_panels  0x00000010  shutter_panel_2
+pointer  shutter_panels  0x00000014  shutter_lamp_2
+pointer  shutter_panels  0x00000018  shutter_panel_3
+pointer  shutter_panels  0x0000001c  shutter_lamp_3
+pointer  shutter_texlists  0x00000000  shutter_texlist
+pointer  shutter_texlists  0x00000004  shutter_frame_texlist
+pointer  shutter_texlists  0x00000008  dust_texlist
+pointer  shutter_texlists  0x0000000c  flash_texlist

@@ -1,0 +1,40 @@
+text  GADGET_SWITCH_TEXTURES_MIU128_CG007  13
+text  GADGET_SWITCH_TEXTURES_MIU128_CG019  13
+text  GADGET_SWITCH_TEXTURES_MIU64_CG005  12
+text  GADGET_SWITCH_TEXTURES_MIU64_CG007  12
+text  GADGET_SWITCH_TEXTURES_MIU64_CG009  12
+text  GADGET_SWITCH_TEXTURES_MIU64_CG010  12
+text  GADGET_SWITCH_TEXTURES_MIU64_CG012  12
+text  GADGET_SWITCH_TEXTURES_MIU64_CG017  12
+text  GADGET_SWITCH_TEXTURES_MIU64_CG018  12
+text  GADGET_SWITCH_TEXTURES_MIU64_CG019  12
+
+pointer  gadget_gravity_switch_texlist_names  0x00000000  GADGET_SWITCH_TEXTURES_MIU128_CG007
+pointer  gadget_gravity_switch_texlist_names  0x0000000c  GADGET_SWITCH_TEXTURES_MIU128_CG019
+pointer  gadget_gravity_switch_texlist_names  0x00000018  GADGET_SWITCH_TEXTURES_MIU64_CG005
+pointer  gadget_gravity_switch_texlist_names  0x00000024  GADGET_SWITCH_TEXTURES_MIU64_CG007
+pointer  gadget_gravity_switch_texlist_names  0x00000030  GADGET_SWITCH_TEXTURES_MIU64_CG009
+pointer  gadget_gravity_switch_texlist_names  0x0000003c  GADGET_SWITCH_TEXTURES_MIU64_CG010
+pointer  gadget_gravity_switch_texlist_names  0x00000048  GADGET_SWITCH_TEXTURES_MIU64_CG012
+pointer  gadget_gravity_switch_texlist_names  0x00000054  GADGET_SWITCH_TEXTURES_MIU64_CG017
+pointer  gadget_gravity_switch_texlist_names  0x00000060  GADGET_SWITCH_TEXTURES_MIU64_CG018
+pointer  gadget_gravity_switch_texlist_names  0x0000006c  GADGET_SWITCH_TEXTURES_MIU64_CG019
+pointer  gadget_gravity_switch_texlist  0x00000000  gadget_gravity_switch_texlist_names
+pointer  gadget_switch_arrow_node_1_mesh  0x00000000  gadget_switch_arrow_node_1_vertices
+pointer  gadget_switch_arrow_node_1_mesh  0x00000004  gadget_switch_arrow_node_1_polygons
+pointer  gadget_switch_arrow_node_1  0x00000004  gadget_switch_arrow_node_1_mesh
+pointer  gadget_switch_arrow_mesh  0x00000000  gadget_switch_arrow_vertices
+pointer  gadget_switch_arrow_mesh  0x00000004  gadget_switch_arrow_polygons
+pointer  gadget_switch_arrow  0x00000004  gadget_switch_arrow_mesh
+pointer  gadget_switch_arrow  0x00000030  gadget_switch_arrow_node_1
+pointer  gadget_switch_body_mesh  0x00000000  gadget_switch_body_vertices
+pointer  gadget_switch_body_mesh  0x00000004  gadget_switch_body_polygons
+pointer  gadget_switch_body  0x00000004  gadget_switch_body_mesh
+pointer  gadget_switch_body  0x0000002c  gadget_switch_arrow
+pointer  gadget_switch_scroll  0x00000010  gadget_switch_uvs
+pointer  gadget_switch_solid_meshsets  0x00000004  gadget_switch_solid_indices_0
+pointer  gadget_switch_solid_model  0x00000000  gadget_switch_solid_points
+pointer  gadget_switch_solid_model  0x00000004  gadget_switch_solid_normals
+pointer  gadget_switch_solid_model  0x0000000c  gadget_switch_solid_meshsets
+pointer  gadget_switch_solid_model  0x00000010  gadget_switch_solid_materials
+pointer  gadget_switch_solid  0x00000004  gadget_switch_solid_model

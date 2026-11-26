@@ -1,0 +1,15 @@
+text  PLAIN_TREE_ART_TEXTURE_MIU256_CE001  13
+text  PLAIN_TREE_ART_TEXTURE_MIU32_CE003  12
+text  PLAIN_TREE_ART_TEXTURE_MIU64_CE001  12
+
+pointer  plain_tree_textures  0x00000000  PLAIN_TREE_ART_TEXTURE_MIU256_CE001
+pointer  plain_tree_textures  0x0000000c  PLAIN_TREE_ART_TEXTURE_MIU32_CE003
+pointer  plain_tree_textures  0x00000018  PLAIN_TREE_ART_TEXTURE_MIU64_CE001
+pointer  plain_tree_texlist  0x00000000  plain_tree_textures
+pointer  plain_tree_object_child_model  0x00000000  plain_tree_object_child_vertices
+pointer  plain_tree_object_child_model  0x00000004  plain_tree_object_child_polygons
+pointer  plain_tree_object_child  0x00000004  plain_tree_object_child_model
+pointer  plain_tree_model  0x00000000  plain_tree_vertices
+pointer  plain_tree_model  0x00000004  plain_tree_polygons
+pointer  plain_tree_object  0x00000004  plain_tree_model
+pointer  plain_tree_object  0x0000002c  plain_tree_object_child

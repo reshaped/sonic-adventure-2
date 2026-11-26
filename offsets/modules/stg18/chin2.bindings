@@ -1,0 +1,14 @@
+text CHIN2_TEX_KD_DL_KABE3_VQ 15
+text CHIN2_TEX_KD_DL_KAO1_VQ 14
+pointer chin2_texlist_names 0x00000000 CHIN2_TEX_KD_DL_KABE3_VQ
+pointer chin2_texlist_names 0x0000000c CHIN2_TEX_KD_DL_KAO1_VQ
+pointer chin2_texlist 0x00000000 chin2_texlist_names
+pointer chin2_model 0x00000000 chin2_vertices
+pointer chin2_model 0x00000004 chin2_polygons
+pointer chin2_object 0x00000004 chin2_model
+pointer chin2_collision_faces 0x00000004 chin2_collision_strips
+pointer chin2_collision_model 0x00000000 chin2_collision_points
+pointer chin2_collision_model 0x00000004 chin2_collision_normals
+pointer chin2_collision_model 0x0000000c chin2_collision_faces
+pointer chin2_collision_model 0x00000010 chin2_collision_materials
+pointer chin2_collision 0x00000004 chin2_collision_model

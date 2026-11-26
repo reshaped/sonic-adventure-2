@@ -1,0 +1,4 @@
+datum  exhaust_polygons  D  0x00000000  54
+datum  exhaust_vertices  D  0x00000038  76
+datum  exhaust_model  D  0x00000084  24
+datum  quarters_guard_exhaust_object  D  0x0000009c  52

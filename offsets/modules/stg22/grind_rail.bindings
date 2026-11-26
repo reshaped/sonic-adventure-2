@@ -1,0 +1,6 @@
+text RAIL_EDITOR_AXLE_ANGLE 11
+text RAIL_EDITOR_YAW 11
+text RAIL_EDITOR_SCALE 9
+
+pointer  rail_path  0x00000008  rail_points
+pointer  gadget_grind_rail_texlists  0x00000000  gadget_grind_rail_texlist

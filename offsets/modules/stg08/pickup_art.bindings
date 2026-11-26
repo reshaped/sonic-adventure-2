@@ -1,0 +1,9 @@
+text  PICKUP_TEXTURE_MIU64_SH011  12
+text  PICKUP_TEXTURE_MIU64_SH012  12
+
+pointer  materials  0x00000000  PICKUP_TEXTURE_MIU64_SH011
+pointer  materials  0x0000000c  PICKUP_TEXTURE_MIU64_SH012
+pointer  pickup_object_2_texlist  0x00000000  materials
+pointer  pickup_object_2_model  0x00000000  pickup_vertices
+pointer  pickup_object_2_model  0x00000004  pickup_polygons
+pointer  pickup_object_node  0x00000004  pickup_object_2_model

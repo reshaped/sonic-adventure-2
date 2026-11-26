@@ -1,0 +1,3 @@
+modules/stg12/carrier_paths.c
+modules/stg12/player_motions.c
+modules/stg12/terrain.c

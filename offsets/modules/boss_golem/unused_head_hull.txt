@@ -1,0 +1,7 @@
+datum  upper_hull_materials  D  0x00000000  20
+datum  upper_hull_faces  D  0x00000014  268
+datum  upper_hull_meshes  D  0x00000120  24
+datum  upper_hull_points  D  0x00000138  780
+datum  upper_hull_normals  D  0x00000444  780
+datum  upper_hull_model  D  0x00000750  40
+datum  upper_hull  D  0x00000778  52

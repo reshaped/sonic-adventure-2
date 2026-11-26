@@ -1,0 +1,10 @@
+datum  step_et64_3  C  0x00000000  8
+datum  step_miu128_cg005  C  0x00000008  16
+datum  step_miu128_cg016  C  0x00000018  16
+datum  step_miu64_cg003  C  0x00000028  12
+datum  step_miu64_cg005  C  0x00000034  12
+datum  step_miu64_cg006  C  0x00000040  12
+datum  step_miu64_cg007  C  0x0000004c  12
+datum  step_miu64_cg010  C  0x00000058  12
+datum  step_miu64_cg020  C  0x00000064  12
+datum  textures  D  0x00000000  108

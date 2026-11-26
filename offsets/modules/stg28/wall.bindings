@@ -1,0 +1,57 @@
+# Pyramid Cave wall texture names, render models and collision mesh references.
+text WALL_TEX_CROUCHWALL128 20
+text WALL_TEX_CROUCHWALL64 19
+text WALL_TEX_CROUCHWALL_FRONT128 26
+text WALL_TEX_CROUCHWALL_LOW64 23
+text WALL_TEX_CROUCHWALL_PILLAR256 27
+text WALL_TEX_SHADOW64 15
+text WALL_TEX_DOORKEY_BASENEON32 25
+text WALL_TYPE_A 7
+text WALL_TYPE_B 7
+
+pointer cave_wall_texture_names_a  0x00000000  WALL_TEX_CROUCHWALL128
+pointer cave_wall_texture_names_a  0x0000000c  WALL_TEX_CROUCHWALL64
+pointer cave_wall_texture_names_a  0x00000018  WALL_TEX_CROUCHWALL_FRONT128
+pointer cave_wall_texture_names_a  0x00000024  WALL_TEX_CROUCHWALL_LOW64
+pointer cave_wall_texture_names_a  0x00000030  WALL_TEX_CROUCHWALL_PILLAR256
+pointer cave_wall_texture_names_a  0x0000003c  WALL_TEX_SHADOW64
+pointer cave_wall_texture_names_a  0x00000048  WALL_TEX_DOORKEY_BASENEON32
+pointer cave_wall_texlist_a  0x00000000  cave_wall_texture_names_a
+pointer cave_wall_model_a  0x00000000  cave_wall_model_a_vertices
+pointer cave_wall_model_a  0x00000004  cave_wall_model_a_polygons
+pointer cave_wall_a_object  0x00000004  cave_wall_model_a
+pointer cave_wall_pulse_model_a  0x00000000  cave_wall_pulse_model_a_vertices
+pointer cave_wall_pulse_model_a  0x00000004  cave_wall_pulse_model_a_polygons
+pointer cave_wall_pulse_a_object  0x00000004  cave_wall_pulse_model_a
+pointer cave_wall_pulse_a_object  0x00000030  cave_wall_a_object
+pointer cave_wall_pulse_a_assembly  0x0000002c  cave_wall_pulse_a_object
+pointer cave_wall_texture_names_b  0x00000000  WALL_TEX_CROUCHWALL128
+pointer cave_wall_texture_names_b  0x0000000c  WALL_TEX_CROUCHWALL64
+pointer cave_wall_texture_names_b  0x00000018  WALL_TEX_CROUCHWALL_FRONT128
+pointer cave_wall_texture_names_b  0x00000024  WALL_TEX_CROUCHWALL_LOW64
+pointer cave_wall_texture_names_b  0x00000030  WALL_TEX_CROUCHWALL_PILLAR256
+pointer cave_wall_texture_names_b  0x0000003c  WALL_TEX_SHADOW64
+pointer cave_wall_texture_names_b  0x00000048  WALL_TEX_DOORKEY_BASENEON32
+pointer cave_wall_texlist_b  0x00000000  cave_wall_texture_names_b
+pointer cave_wall_model_b  0x00000000  cave_wall_model_b_vertices
+pointer cave_wall_model_b  0x00000004  cave_wall_model_b_polygons
+pointer cave_wall_b_object  0x00000004  cave_wall_model_b
+pointer cave_wall_pulse_model_b  0x00000000  cave_wall_pulse_model_b_vertices
+pointer cave_wall_pulse_model_b  0x00000004  cave_wall_pulse_model_b_polygons
+pointer cave_wall_pulse_b_object  0x00000004  cave_wall_pulse_model_b
+pointer cave_wall_pulse_b_object  0x00000030  cave_wall_b_object
+pointer cave_wall_pulse_b_assembly  0x0000002c  cave_wall_pulse_b_object
+pointer cave_wall_collision_meshsets  0x00000004  cave_wall_collision_indices
+pointer cave_wall_collision_model  0x00000000  cave_wall_collision_points
+pointer cave_wall_collision_model  0x00000004  cave_wall_collision_normals
+pointer cave_wall_collision_model  0x0000000c  cave_wall_collision_meshsets
+pointer cave_wall_collision_model  0x00000010  cave_wall_collision_materials
+pointer cave_wall_collision  0x00000004  cave_wall_collision_model
+pointer wall_models  0x00000000  cave_wall_model_a
+pointer wall_models  0x00000004  cave_wall_model_b
+pointer pulse_models  0x00000000  cave_wall_pulse_model_a
+pointer pulse_models  0x00000004  cave_wall_pulse_model_b
+pointer cave_wall_texlists  0x00000000  cave_wall_texlist_a
+pointer cave_wall_texlists  0x00000004  cave_wall_texlist_b
+pointer wall_type_names  0x00000000  WALL_TYPE_A
+pointer wall_type_names  0x00000004  WALL_TYPE_B

@@ -1,0 +1,2 @@
+datum  race_prop_glow_cells  D  0x00000000  40
+datum  scenery_editor_labels  C  0x0000000c  88

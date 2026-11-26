@@ -1,0 +1,14 @@
+text  ENEMY_LIGHT_TEXTURE_ST_C20  7
+pointer  enemy_light_texname  0x00000000  ENEMY_LIGHT_TEXTURE_ST_C20
+pointer  enemy_light_texlist  0x00000000  enemy_light_texname
+text  ENEMY_LIGHT_TEXTURE_EYELIGHT1  10
+text  ENEMY_LIGHT_TEXTURE_EYELIGHT2  10
+text  ENEMY_LIGHT_TEXTURE_EYELIGHT3  10
+text  ENEMY_LIGHT_TEXTURE_EYELIGHT4  10
+pointer  eyelight_texname  0x00000000  ENEMY_LIGHT_TEXTURE_EYELIGHT1
+pointer  eyelight_texname  0x0000000c  ENEMY_LIGHT_TEXTURE_EYELIGHT2
+pointer  eyelight_texname  0x00000018  ENEMY_LIGHT_TEXTURE_EYELIGHT3
+pointer  eyelight_texname  0x00000024  ENEMY_LIGHT_TEXTURE_EYELIGHT4
+pointer  eyelight_texlist  0x00000000  eyelight_texname
+pointer  enemy_light_sprite  0x00000018  enemy_light_texlist
+pointer  enemy_light_sprite  0x0000001c  enemy_light_texanim

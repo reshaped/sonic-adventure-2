@@ -1,0 +1,5 @@
+include prison_kill_surfaces
+
+pointer  iron_gate_kill_areas  0x00000004  kill_area_0
+pointer  iron_gate_kill_areas  0x0000000c  kill_area_2
+pointer  iron_gate_kill_areas  0x00000014  kill_area_1

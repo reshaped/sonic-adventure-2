@@ -1,0 +1,6 @@
+pointer  textures  0x00000000  rock_miu128_fr004
+pointer  textures  0x0000000c  rock_miu128_fr005
+pointer  shard_b_texlist  0x00000000  textures
+pointer  shard_b_mesh  0x00000000  shard_b_vertices
+pointer  shard_b_mesh  0x00000004  shard_b_polygons
+pointer  shard_b_object  0x00000004  shard_b_mesh

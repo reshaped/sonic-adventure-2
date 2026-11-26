@@ -1,0 +1,5 @@
+pointer  textures  0x00000000  sky_orbit_texture
+
+pointer  sky_orbit_64_chase_mesh  0x00000000  sky_orbit_64_chase_vertices
+pointer  sky_orbit_64_chase_mesh  0x00000004  sky_orbit_64_chase_polygons
+pointer  background_3_object  0x00000004  sky_orbit_64_chase_mesh

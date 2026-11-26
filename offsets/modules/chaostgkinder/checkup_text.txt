@@ -1,0 +1,2 @@
+datum  checkup_messages  D  0x00000000  888
+datum  last_entries  D  0x00000378  92

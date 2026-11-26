@@ -1,0 +1,16 @@
+text  CHIN3_TEX_KD_DL_KABE4_VQ  C  0x00000000  15
+text  CHIN3_TEX_KD_DL_KABE6_VQ  C  0x00000010  15
+text  CHIN3_TEX_KD_DL_KAO1_VQ  C  0x00000020  14
+datum  chin3_texlist_names  D  0x00000000  36
+datum  chin3_texlist  D  0x00000024  8
+datum  chin3_polygons  D  0x0000002c  306
+datum  chin3_vertices  D  0x00000160  380
+datum  chin3_model  D  0x000002dc  24
+datum  chin3_object  D  0x000002f4  52
+datum  chin3_collision_materials  D  0x00000328  20
+datum  chin3_collision_strips  D  0x0000033c  86
+datum  chin3_collision_faces  D  0x00000394  24
+datum  chin3_collision_points  D  0x000003ac  120
+datum  chin3_collision_normals  D  0x00000424  120
+datum  chin3_collision_model  D  0x0000049c  40
+datum  chin3_collision  D  0x000004c4  52

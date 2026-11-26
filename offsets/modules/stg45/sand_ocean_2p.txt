@@ -1,0 +1,13 @@
+text  SAND_OCEAN_LIGHT_FILE  C  0x00000020  16
+text  SAND_OCEAN_FOG_FILE  C  0x00000044  14
+datum  quicksand_anim  D  0x00000000  36
+datum  background_texture_groups  D  0x0000002c  4
+datum  background_pvms  D  0x00000030  8
+datum  kill_area_material  D  0x00000038  20
+datum  kill_area_mesh  D  0x0000004c  10
+datum  kill_area_meshset  D  0x00000058  24
+datum  kill_area_points  D  0x00000070  48
+datum  kill_area_normals  D  0x000000a0  48
+datum  kill_area_model  D  0x000000d0  40
+datum  kill_area_object  D  0x000000f8  52
+datum  sand_ocean_2p_kill_areas  D  0x0000012c  16

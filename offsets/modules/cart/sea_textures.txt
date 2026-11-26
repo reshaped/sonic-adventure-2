@@ -1,0 +1,13 @@
+datum  cart_floor_texture_filenames  C  0x00000000  640
+datum  floor_polygons  D  0x00000000  1354
+datum  floor_vertices  D  0x0000054c  1948
+datum  floor_model  D  0x00000ce8  24
+datum  cart_floor  D  0x00000d00  52
+datum  floor_slots  D  0x00000d34  240
+datum  cart_floor_textures  D  0x00000e24  8
+datum  sky_polygons  D  0x00000e2c  1678
+datum  sky_vertices  D  0x000014bc  1836
+datum  sky_model  D  0x00001be8  24
+datum  cart_sky  D  0x00001c00  52
+datum  sky_slots  D  0x00001c34  24
+datum  cart_sky_textures  D  0x00001c4c  8

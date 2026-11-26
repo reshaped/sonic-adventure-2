@@ -1,0 +1,3 @@
+datum  race_narrow_offsets  D  0x00000000  96
+datum  race_podium  C  0x00000000  96
+datum  race_wide_offsets  D  0x00000060  96

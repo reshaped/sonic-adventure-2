@@ -1,0 +1,1729 @@
+text CHAO_NAME_STAND 6
+text CHAO_NAME_OSYABURI 9
+text CHAO_NAME_HATENA_HATE 12
+text CHAO_NAME_HATENA_HATE2 13
+text CHAO_NAME_HATENA_AEARE 13
+text CHAO_NAME_HATENA_MODORU 14
+text CHAO_NAME_HIMATATI_PATA 14
+text CHAO_NAME_HIMATATI_PATA_LOOP 19
+text CHAO_NAME_HIMATATI_PATA2MOJI 19
+text CHAO_NAME_HIMATATI_MOJI 14
+text CHAO_NAME_HIMATATI_END 13
+text CHAO_NAME_OSYABURI_S 11
+text CHAO_NAME_OSYABURI_L 11
+text CHAO_NAME_HIRAMEKI 9
+text CHAO_NAME_HIRAMEKI_END 13
+text CHAO_NAME_SIT_AKUBI 10
+text CHAO_NAME_SIT_AKUBI_LOOP 15
+text CHAO_NAME_SIT_AKUBI_END 14
+text CHAO_NAME_SLEEP 6
+text CHAO_NAME_SLEEP_LOOP 11
+text CHAO_NAME_SIT_SLEEP 10
+text CHAO_NAME_MEKOSURI 9
+text CHAO_NAME_UTOUTO 7
+text CHAO_NAME_UTOUTO_KOKKURI 15
+text CHAO_NAME_UTUBUSE_NEGAERI 16
+text CHAO_NAME_UTUBUSE_SLEEP 14
+text CHAO_NAME_UTUBUSE_END 12
+text CHAO_NAME_DAINOJI 8
+text CHAO_NAME_DAINOJI_NOBI 13
+text CHAO_NAME_DAINOJI_LOOP 13
+text CHAO_NAME_NOBI_SIT 9
+text CHAO_NAME_NERU_PORI_R 12
+text CHAO_NAME_NERU_PORI_R_LOOP 17
+text CHAO_NAME_NERU_PORI_R_END 16
+text CHAO_NAME_NERU_PORI_L 12
+text CHAO_NAME_NERU_PORI_L_LOOP 17
+text CHAO_NAME_NERU_PORI_L_END 16
+text CHAO_NAME_BATAN 6
+text CHAO_NAME_JUMP_UP 8
+text CHAO_NAME_AKUBI 6
+text CHAO_NAME_AKUBI_LOOP 11
+text CHAO_NAME_AKUBI_END 10
+text CHAO_NAME_OKIRU 6
+text CHAO_NAME_OKIRU_BURU_LOOP 16
+text CHAO_NAME_OKIRU_AKUBI 12
+text CHAO_NAME_OKIRU_AKUBI_LOOP 17
+text CHAO_NAME_OKIRU_END 10
+text CHAO_NAME_GENKI_SUWARI 13
+text CHAO_NAME_GENKI_TATI 11
+text CHAO_NAME_PORIPORI_TATI 14
+text CHAO_NAME_PORIPORI_TATI_LOOP 19
+text CHAO_NAME_PORIPORI_TATI_END 18
+text CHAO_NAME_NEGAERI_L 10
+text CHAO_NAME_NEGAERI_L_UTUBUSE 18
+text CHAO_NAME_NEGAERI_L_RETURN 17
+text CHAO_NAME_NEGAERI_R 10
+text CHAO_NAME_NEGAERI_R_UTUBUSE 18
+text CHAO_NAME_NEGAERI_R_RETURN 17
+text CHAO_NAME_OTAKAI_L 9
+text CHAO_NAME_OTAKAI_L_LOOP 14
+text CHAO_NAME_OTAKAI_R 9
+text CHAO_NAME_OTAKAI_R_LOOP 14
+text CHAO_NAME_HIMA_SIT 9
+text CHAO_NAME_HIMA_SIT_GUDE 14
+text CHAO_NAME_HIMA_SIT_PATA 14
+text CHAO_NAME_HIMA_SIT_PATAPATA 18
+text CHAO_NAME_HIMA_SIT_SWING 15
+text CHAO_NAME_HIMA_SIT_LOOK_R 16
+text CHAO_NAME_HIMA_SIT_LOOK_L 16
+text CHAO_NAME_HIMA_SIT_R2L 13
+text CHAO_NAME_HIMA_SIT_L2R 13
+text CHAO_NAME_HIMA_SIT_PORI 14
+text CHAO_NAME_HIMA_SLEEP_UPDOWN 18
+text CHAO_NAME_HIMA_SLEEP_BURABURA 20
+text CHAO_NAME_HIMA_SLEEP_TWIST 17
+text CHAO_NAME_HIMA_SLEEP_ALTER 17
+text CHAO_NAME_HIMA_SLEEP_BREATH 18
+text CHAO_NAME_HIMA_UTUBUSE_PATA 18
+text CHAO_NAME_HIMA_UTUBUSE_PATA_LOOP 23
+text CHAO_NAME_HIMA_UTUBUSE_END 17
+text CHAO_NAME_SITDOWN 8
+text CHAO_NAME_SITDOWN_SLOW 13
+text CHAO_NAME_STANDUP 8
+text CHAO_NAME_STANDUP_SHIRI 14
+text CHAO_NAME_NOBI_STAND 11
+text CHAO_NAME_SLEEP_KUBI 11
+text CHAO_NAME_SLEEP_KUBI_LOOP 16
+text CHAO_NAME_SLEEP_KUBI_PORI 16
+text CHAO_NAME_SLEEP_KUBI_PORI_LOOP 21
+text CHAO_NAME_SLEEP_KUBI_END 15
+text CHAO_NAME_NAKINEIRI_BREATH 17
+text CHAO_NAME_NAKINEIRI_HIKKU 16
+text CHAO_NAME_NAKINEIRI_HIKKUHIKKU 21
+text CHAO_NAME_NAKINEIRI_MEOSMESO 19
+text CHAO_NAME_GUTA_A 7
+text CHAO_NAME_GUTA_B 7
+text CHAO_NAME_GUTA_C 7
+text CHAO_NAME_GUTA_D 7
+text CHAO_NAME_ONSEN_LOOP 11
+text CHAO_NAME_ONSEN_FUU 10
+text CHAO_NAME_ARUKU 6
+text CHAO_NAME_HASIRU 7
+text CHAO_NAME_HASIRU_HIROGE 14
+text CHAO_NAME_HASIRU_FURIMUKI 16
+text CHAO_NAME_SHINOBI 8
+text CHAO_NAME_TOBOTOBO 9
+text CHAO_NAME_RUN_BANZAI 11
+text CHAO_NAME_RUN_BANZAI2 12
+text CHAO_NAME_RUN_BANZAI_LOOP 16
+text CHAO_NAME_RUN_BANZAI_END 15
+text CHAO_NAME_HAIHAI_KOKE 12
+text CHAO_NAME_HAIHAI_SHIRI_UP 16
+text CHAO_NAME_HAIHAI_SHIRI_DOWN 18
+text CHAO_NAME_HAIHAI_SORU_UP 15
+text CHAO_NAME_HAIHAI_SORU_DOWN 17
+text CHAO_NAME_HAIHAI 7
+text CHAO_NAME_HAIHAI_LOOP 12
+text CHAO_NAME_SKIP 5
+text CHAO_NAME_OIKAKE 7
+text CHAO_NAME_RUN 4
+text CHAO_NAME_RHYTHM_WALK_A 14
+text CHAO_NAME_RHYTHM_WALK_B 14
+text CHAO_NAME_BRAKE 6
+text CHAO_NAME_BRAKE_LOOP 11
+text CHAO_NAME_BRAKE_BATABATA 15
+text CHAO_NAME_ANGER_WALK 11
+text CHAO_NAME_ANGER_WALK_CHIKUSYOU 21
+text CHAO_NAME_YORO_WALK 10
+text CHAO_NAME_YORO_WALK_LOOP 15
+text CHAO_NAME_DASH 5
+text CHAO_NAME_TOBU 5
+text CHAO_NAME_TOBIAGARU 10
+text CHAO_NAME_LOOKUP_JUMP 12
+text CHAO_NAME_LOOKUP_JUMP_LOOP 17
+text CHAO_NAME_LOOKUP_JUMP_LANDING 20
+text CHAO_NAME_LOOKDOWN_JUMP 14
+text CHAO_NAME_LOOKDOWN_JUMP_LOOP 19
+text CHAO_NAME_LOOKDOWN_JUMP_LANDING 22
+text CHAO_NAME_HABATOBI_JUMP 14
+text CHAO_NAME_HABATOBI_AIR 13
+text CHAO_NAME_HABATOBI_LANDING 17
+text CHAO_NAME_HABATOBI_BOUND 15
+text CHAO_NAME_OBORERU 8
+text CHAO_NAME_BATAASHI 9
+text CHAO_NAME_BATAASHI_IKITUGI 17
+text CHAO_NAME_CRAWL 6
+text CHAO_NAME_SEOYOGI_KAITEN 15
+text CHAO_NAME_SEOYOGI 8
+text CHAO_NAME_BATAASHI_B 11
+text CHAO_NAME_CRAWL_B 8
+text CHAO_NAME_DRIFT 6
+text CHAO_NAME_DOZAEMON 9
+text CHAO_NAME_PUHA_ALL 9
+text CHAO_NAME_PUHA_RISE 10
+text CHAO_NAME_PUHA_PUHA 10
+text CHAO_NAME_NOBORU 7
+text CHAO_NAME_NOBORIKIRU 11
+text CHAO_NAME_CLIMB 6
+text CHAO_NAME_CLIMB_END 10
+text CHAO_NAME_KOKE 5
+text CHAO_NAME_KOKEOKI 8
+text CHAO_NAME_SHIRIKOKE_AIR 14
+text CHAO_NAME_SHIRIKOKR_LAND 15
+text CHAO_NAME_GOO 4
+text CHAO_NAME_MANPUKU 8
+text CHAO_NAME_MANPUKU_LOOP 13
+text CHAO_NAME_MANPUKU_SURI 13
+text CHAO_NAME_MANPUKU_SURILOOP 17
+text CHAO_NAME_MANPUKU_END 12
+text CHAO_NAME_TABERU_SUWARU 14
+text CHAO_NAME_TABERU_TATU 12
+text CHAO_NAME_TABERU_TABERU 14
+text CHAO_NAME_TABERU_MIAGE 13
+text CHAO_NAME_TABERU_MODORU 14
+text CHAO_NAME_EAT_SITDOWN 12
+text CHAO_NAME_EAT 4
+text CHAO_NAME_EAT_LOOKUP_R 13
+text CHAO_NAME_EAT_LOOKUP_L 13
+text CHAO_NAME_EAT_PEPPE 10
+text CHAO_NAME_EAT_GATUGATU 13
+text CHAO_NAME_EAT_KUNKUN 11
+text CHAO_NAME_EAT_KUNKUN_LOOP 16
+text CHAO_NAME_EAT_KUNKUN_UPPER 17
+text CHAO_NAME_EAT_TUMARU 11
+text CHAO_NAME_EAT_TUMARU_LOOP 16
+text CHAO_NAME_EAT_TUMARU_END 15
+text CHAO_NAME_SUTERU_SIT 11
+text CHAO_NAME_KUNKUN_TATI 12
+text CHAO_NAME_HIROU_KAGAMU 13
+text CHAO_NAME_HIROU_AGERU 12
+text CHAO_NAME_MOTU 5
+text CHAO_NAME_HAKOBU 7
+text CHAO_NAME_SUTERU_STAND 13
+text CHAO_NAME_OTOSU 6
+text CHAO_NAME_OTOSU_MIRU 11
+text CHAO_NAME_OTOSU_AWATE 12
+text CHAO_NAME_OTOSU_ASHIKAKAE 16
+text CHAO_NAME_OTOSU_ASHIKAKAE_LOOP 21
+text CHAO_NAME_OTOSU_END 10
+text CHAO_NAME_KABURU 7
+text CHAO_NAME_KABURU_END 11
+text CHAO_NAME_THROW 6
+text CHAO_NAME_CAPTURE_MORAU 14
+text CHAO_NAME_CAPTURE_SURISURI 17
+text CHAO_NAME_CAPTURE_KURUN 14
+text CHAO_NAME_UMARERU_KYORO 14
+text CHAO_NAME_UMARERU_PON 12
+text CHAO_NAME_ESAJUMP 8
+text CHAO_NAME_ESAJUMP_AIR 12
+text CHAO_NAME_ESAJUMP_FALL 13
+text CHAO_NAME_ESAJUMP_LAND 13
+text CHAO_NAME_YURASU_TUKAMU 14
+text CHAO_NAME_YURASU_TUKAMI 14
+text CHAO_NAME_YURASU_SWING 13
+text CHAO_NAME_YURASU_END 11
+text CHAO_NAME_LOOKUP 7
+text CHAO_NAME_LOOKUP_LOOP 12
+text CHAO_NAME_LOOKUP_KASHIGE 15
+text CHAO_NAME_LOOKUP_HAND 12
+text CHAO_NAME_TREE_DANCE_NYOKI 17
+text CHAO_NAME_TREE_DANCE_TONTON 18
+text CHAO_NAME_FRUIT_OTOSU 12
+text CHAO_NAME_FRUIT_OTOSU_LOOP 17
+text CHAO_NAME_FRUIT_OTOSU_FALL 17
+text CHAO_NAME_FRUIT_OTOSU_END 16
+text CHAO_NAME_KOKAGE_L_MOJI 14
+text CHAO_NAME_KOKAGE_L_NOZOKU 16
+text CHAO_NAME_KOKAGE_L_NOZOKU_LOOP 21
+text CHAO_NAME_KOKAGE_L_END 13
+text CHAO_NAME_SEED_UERU_START 16
+text CHAO_NAME_SEED_UERU_HORU_LOOP 20
+text CHAO_NAME_SEED_UERU_UERU 15
+text CHAO_NAME_SEED_UERU_UMERU_START 22
+text CHAO_NAME_SEED_UERU_UMERU_LOOP 21
+text CHAO_NAME_SEED_UERU_END 14
+text CHAO_NAME_JYOURO_START 13
+text CHAO_NAME_JYOURO_LOOP 12
+text CHAO_NAME_JYOURO_END 11
+text CHAO_NAME_KYOROKYORO_UP 14
+text CHAO_NAME_KYOROKYORO_DOWN 16
+text CHAO_NAME_OSYABURI_UP 12
+text CHAO_NAME_OSYABURI_LOOP 14
+text CHAO_NAME_KUSYAMI_SIT 12
+text CHAO_NAME_KUSYAMI_STAND 14
+text CHAO_NAME_SEKI_SIT_ALL 13
+text CHAO_NAME_SEKI_SIT_KEHON 15
+text CHAO_NAME_SEKI_STAND_ALL 15
+text CHAO_NAME_SEKI_STAND_KEHON 17
+text CHAO_NAME_SYAKKURI_SIT 13
+text CHAO_NAME_SYAKKURI_STAND 15
+text CHAO_NAME_NADE_GLAD 10
+text CHAO_NAME_NADE_GLAD_HAND 15
+text CHAO_NAME_NADE_KIMOCHII 14
+text CHAO_NAME_NADE_TERE 10
+text CHAO_NAME_NADE_IYA 9
+text CHAO_NAME_NADE_IYA_LOOP 14
+text CHAO_NAME_NADE_IYA_END 13
+text CHAO_NAME_DAKKO 6
+text CHAO_NAME_DAKKO_KIMO_LR 14
+text CHAO_NAME_DAKKO_KIMO_FB 14
+text CHAO_NAME_DAKKO_KIMO_JITABATA 20
+text CHAO_NAME_DAKKO_GLAD 11
+text CHAO_NAME_DAKKO_GLAD_LOOP 16
+text CHAO_NAME_DAKKO_GLAD_CLAP 16
+text CHAO_NAME_DAKKO_GLAD_CLAP_LOOP 21
+text CHAO_NAME_DAKKO_IYA 10
+text CHAO_NAME_DAKKO_IYA_LR 13
+text CHAO_NAME_DAKKO_IYA_UD 13
+text CHAO_NAME_DAKKO_IYA_HAND 15
+text CHAO_NAME_DAKKO_IYA_L 12
+text CHAO_NAME_DAKKO_IYA_R 12
+text CHAO_NAME_THROWN 7
+text CHAO_NAME_THROWN_FALL 12
+text CHAO_NAME_THROWN_LAND 12
+text CHAO_NAME_FUTTOBU 8
+text CHAO_NAME_CRASH 6
+text CHAO_NAME_PIYO 5
+text CHAO_NAME_PIYO_LOOP 10
+text CHAO_NAME_PIYO_END 9
+text CHAO_NAME_URUSAI 7
+text CHAO_NAME_KAOARAU 8
+text CHAO_NAME_KAOARAU_LOOP 13
+text CHAO_NAME_DRAMING 8
+text CHAO_NAME_DRAMING_LOOP 13
+text CHAO_NAME_DRAMING_WOO 12
+text CHAO_NAME_FIRE 5
+text CHAO_NAME_FIRE2 6
+text CHAO_NAME_FIRE3 6
+text CHAO_NAME_TOGU 5
+text CHAO_NAME_UTAU_HIDARI 12
+text CHAO_NAME_UTAU_HIDARI2 13
+text CHAO_NAME_UTAU_MIGI 10
+text CHAO_NAME_UTAU_MIGI2 11
+text CHAO_NAME_UTAU_LEFT 10
+text CHAO_NAME_UTAU_LEFT2 11
+text CHAO_NAME_UTAU_RIGHT 11
+text CHAO_NAME_UTAU_RIGHT2 12
+text CHAO_NAME_BOXING1 8
+text CHAO_NAME_BOXING2 8
+text CHAO_NAME_SUMO_HAKKEYOI 14
+text CHAO_NAME_SUMO_NOKOTTA 13
+text CHAO_NAME_SUMO_DOSUKOI 13
+text CHAO_NAME_ONARA 6
+text CHAO_NAME_BAKUTEN 8
+text CHAO_NAME_BAKUTEN_AIR 12
+text CHAO_NAME_BAKUTEN_LAND 13
+text CHAO_NAME_DENGURI 8
+text CHAO_NAME_DENGURI_LOOP 13
+text CHAO_NAME_DENGURI_END 12
+text CHAO_NAME_PYONPYON 9
+text CHAO_NAME_FUKKIN 7
+text CHAO_NAME_FUKKIN_LOOP 12
+text CHAO_NAME_TAISOU 7
+text CHAO_NAME_TAISOU_YOKO 12
+text CHAO_NAME_TAISOU_YOKO2KOKI 17
+text CHAO_NAME_TAISOU_KOKI_R 14
+text CHAO_NAME_TAISOU_KOKI_L 14
+text CHAO_NAME_TAISOU_MAE 11
+text CHAO_NAME_ON_YOUR_MARK 13
+text CHAO_NAME_READY 6
+text CHAO_NAME_GO 3
+text CHAO_NAME_GOROGORO 9
+text CHAO_NAME_GOROGORO_LOOP 14
+text CHAO_NAME_RAKUGAKI_JYUNBI 16
+text CHAO_NAME_RAKUGAKI_JYUNBI2 17
+text CHAO_NAME_RAKUGAKI 9
+text CHAO_NAME_SYABON_JYABU 13
+text CHAO_NAME_SYABON_FUU 11
+text CHAO_NAME_DOLL_YOSHIYOSHI 16
+text CHAO_NAME_DOLL_TAKAITAKAI 16
+text CHAO_NAME_GARAGARA 9
+text CHAO_NAME_HANABI 7
+text CHAO_NAME_HOPPING 8
+text CHAO_NAME_HOPPING_LOOP 13
+text CHAO_NAME_HOUKI 6
+text CHAO_NAME_MINICAR 8
+text CHAO_NAME_MINICAR_MIAGE 14
+text CHAO_NAME_BOOK_START 11
+text CHAO_NAME_BOOK_YOMU 10
+text CHAO_NAME_BOOK_MEKURI 12
+text CHAO_NAME_PIANO 6
+text CHAO_NAME_ORGAN 6
+text CHAO_NAME_HORSE_JUMP 11
+text CHAO_NAME_HORSE_AIR 10
+text CHAO_NAME_HORSE_START 12
+text CHAO_NAME_HORSE_YURAYURA 15
+text CHAO_NAME_HORSE_FINISH 13
+text CHAO_NAME_MARACAS_JUMP_A 15
+text CHAO_NAME_MARACAS_JUMP_B 15
+text CHAO_NAME_MARACAS_SHAKA_UP 17
+text CHAO_NAME_MARACAS_SHAKA_DOWN 19
+text CHAO_NAME_BELL_UP 8
+text CHAO_NAME_BELL_DOWN 10
+text CHAO_NAME_DRUM_LR 8
+text CHAO_NAME_DRUM_DOUBLE 12
+text CHAO_NAME_FUE_LR 7
+text CHAO_NAME_FUE_UD 7
+text CHAO_NAME_CASTANETS_WAIT 15
+text CHAO_NAME_CASTANETS_PON 14
+text CHAO_NAME_CASTANETS_PONPON 17
+text CHAO_NAME_RAPPA_FB 9
+text CHAO_NAME_RAPPA_UP 9
+text CHAO_NAME_RAPPA_DOWN 11
+text CHAO_NAME_CYMBAL_WAIT 12
+text CHAO_NAME_CYMBAL_PAN 11
+text CHAO_NAME_CYMBAL_PANPAN 14
+text CHAO_NAME_CYMBAL_PAPAPAN 15
+text CHAO_NAME_TAMBOURINE_PAN 15
+text CHAO_NAME_TAMBOURINE_SHAKA 17
+text CHAO_NAME_HAND_DANCE_UP 14
+text CHAO_NAME_HAND_DANCE_UP2 15
+text CHAO_NAME_HAND_DANCE_DOWN 16
+text CHAO_NAME_HAND_DANCE_DOWN2 17
+text CHAO_NAME_HAND_DANCE_RIGHT 17
+text CHAO_NAME_HAND_DANCE_RIGHT2 18
+text CHAO_NAME_HAND_DANCE_LEFT 16
+text CHAO_NAME_HAND_DANCE_LEFT2 17
+text CHAO_NAME_ROUND_DANCE_LEFT 17
+text CHAO_NAME_ROUND_DANCE_LEFT2 18
+text CHAO_NAME_ROUND_DANCE_RIHGT 18
+text CHAO_NAME_ROUND_DANCE_RIGHT2 19
+text CHAO_NAME_ROUND_DANCE_LEFT_TURN 22
+text CHAO_NAME_ROUND_DANCE_RIHGT_TURN 23
+text CHAO_NAME_MUSIC_STAND 12
+text CHAO_NAME_MUSIC_STAND_LOOP 17
+text CHAO_NAME_MUSIC_SIT 10
+text CHAO_NAME_MUSIC_SIT_LOOP 15
+text CHAO_NAME_BOX_DANCE 10
+text CHAO_NAME_GOGO_DANCE 11
+text CHAO_NAME_GOGO_DANCE2 12
+text CHAO_NAME_GOGO_DANCE3 12
+text CHAO_NAME_HIP_DANCE 10
+text CHAO_NAME_OTETE_L_WALK 13
+text CHAO_NAME_OTETE_L_NE 11
+text CHAO_NAME_OTETE_R_WALK 13
+text CHAO_NAME_OTETE_R_NE 11
+text CHAO_NAME_OJIGI 6
+text CHAO_NAME_HELLO 6
+text CHAO_NAME_GIVEME_P 9
+text CHAO_NAME_GIVEME_P_NE 12
+text CHAO_NAME_SURISURI 9
+text CHAO_NAME_AGERU 6
+text CHAO_NAME_AKUSYU 7
+text CHAO_NAME_AKUSYU_LOOP 12
+text CHAO_NAME_HISOHISO_L_LOOP 16
+text CHAO_NAME_HISOHISO_L_CHIRA 17
+text CHAO_NAME_MOGOMOGO_L_LOOP 16
+text CHAO_NAME_MOGOMOGO_L_CHIRA 17
+text CHAO_NAME_HISOHISO_R_LOOP 16
+text CHAO_NAME_HISOHISO_R_CHIRA 17
+text CHAO_NAME_MOGOMOGO_R_LOOP 16
+text CHAO_NAME_MOGOMOGO_R_CHIRA 17
+text CHAO_NAME_HOUYOU 7
+text CHAO_NAME_HOUYOU_LOOP 12
+text CHAO_NAME_NADERU 7
+text CHAO_NAME_NEE_L 6
+text CHAO_NAME_NEE_R 6
+text CHAO_NAME_NEE_P_L 8
+text CHAO_NAME_NEE_P_R 8
+text CHAO_NAME_NOZOKU_L 9
+text CHAO_NAME_NOZOKU_L_LOOP 14
+text CHAO_NAME_NOZOKU_R 9
+text CHAO_NAME_NOZOKU_R_LOOP 14
+text CHAO_NAME_HI 3
+text CHAO_NAME_WATAWATA_TALK 14
+text CHAO_NAME_SIT_TALK 9
+text CHAO_NAME_SIT_TALK_WAHAHA 16
+text CHAO_NAME_SIT_TALK_WATAWATA 18
+text CHAO_NAME_SIT_TALK_DARO 14
+text CHAO_NAME_SIT_TALK_YADA 14
+text CHAO_NAME_SIT_TALK_KUSUKUSU 18
+text CHAO_NAME_SIT_TALK_OITOITE 17
+text CHAO_NAME_STAND_TALK 11
+text CHAO_NAME_STAND_TALK_WAHAHA 18
+text CHAO_NAME_STAND_TALK_WATAWATA 20
+text CHAO_NAME_STAND_TALK_DARO 16
+text CHAO_NAME_STAND_TALK_YADA 16
+text CHAO_NAME_STAND_TALK_KUSUKUSU 20
+text CHAO_NAME_STAND_TALK_OITOITE 19
+text CHAO_NAME_UNAZUKU 8
+text CHAO_NAME_UNAZUKU2 9
+text CHAO_NAME_PUNCH 6
+text CHAO_NAME_PUNCH_YARARE 13
+text CHAO_NAME_GENKOTU 8
+text CHAO_NAME_GENKOTU_YARARE 15
+text CHAO_NAME_KICK 5
+text CHAO_NAME_KICK_YARARE 12
+text CHAO_NAME_AKANBE 7
+text CHAO_NAME_AKANBE2 8
+text CHAO_NAME_ODOROKASU 10
+text CHAO_NAME_PUI 4
+text CHAO_NAME_POKAPOKA 9
+text CHAO_NAME_IGAMI 6
+text CHAO_NAME_IGAMI_LOOP 11
+text CHAO_NAME_PANPAN 7
+text CHAO_NAME_PANPAN_LOOP 12
+text CHAO_NAME_PANPAN_END 11
+text CHAO_NAME_SENOBI 7
+text CHAO_NAME_SENOBI_END 11
+text CHAO_NAME_LAUGH_SIT 10
+text CHAO_NAME_LAUGH_SIT_LOOP 15
+text CHAO_NAME_LAUGH_STAND 12
+text CHAO_NAME_LAUGH_STAND_LOOP 17
+text CHAO_NAME_GLAD_STAND 11
+text CHAO_NAME_GLAD_STAND_LOOP 16
+text CHAO_NAME_BAKUSYOU_ALL 13
+text CHAO_NAME_BAKUSYOU 9
+text CHAO_NAME_BAKUSYOU_KORAE 15
+text CHAO_NAME_HASYAGU_JUMP 13
+text CHAO_NAME_HASYAGU_PATA 13
+text CHAO_NAME_HASYAGU_LAND 13
+text CHAO_NAME_KUSUKUSU_SIT 13
+text CHAO_NAME_KUSUKUSU_SIT_LOOP 18
+text CHAO_NAME_KUSUKUSU_STAND_A 17
+text CHAO_NAME_KUSUKUSU_STAND_A_LOOP 22
+text CHAO_NAME_KUSUKUSU_STAND_B 17
+text CHAO_NAME_DADA 5
+text CHAO_NAME_MOJIMOJI 9
+text CHAO_NAME_MOJIMOJI_LOOKUP 16
+text CHAO_NAME_MOJIMOJI_LOOKUP_END 20
+text CHAO_NAME_JIDANDA 8
+text CHAO_NAME_ATAFUTA 8
+text CHAO_NAME_ATAFUTA_LOOP 13
+text CHAO_NAME_IYAIYA_A 9
+text CHAO_NAME_IYAIYA_B 9
+text CHAO_NAME_BUTUBUTU_FUGA 14
+text CHAO_NAME_BUTUBUTU_ASHIBUMI 18
+text CHAO_NAME_GAKKARI 8
+text CHAO_NAME_FURAFURA 9
+text CHAO_NAME_FURAFURA_LOOP 14
+text CHAO_NAME_GUTTARI_STAND 14
+text CHAO_NAME_GUTTARI_STAND_LOOP 19
+text CHAO_NAME_BANZAI_JUMP 12
+text CHAO_NAME_IJIKE_SIT 10
+text CHAO_NAME_IJIKE_SIT_LOOP 15
+text CHAO_NAME_IJIKE_SIT_HEAD 15
+text CHAO_NAME_IJIKE_SIT_HEAD_LOOP 20
+text CHAO_NAME_BURUBURU 9
+text CHAO_NAME_BURUBURU_AGO 13
+text CHAO_NAME_BURUBURU_AGO2KUCHI 19
+text CHAO_NAME_BURUBURU_KUCHI2AGO 19
+text CHAO_NAME_BURUBURU_KUCHI 15
+text CHAO_NAME_TAMEIKI_STAND 14
+text CHAO_NAME_TAMEIKI_STAND_LOOP 19
+text CHAO_NAME_TAMEIKI_STAND_END 18
+text CHAO_NAME_TAMEIKI_SIT 12
+text CHAO_NAME_TAMEIKI_SIT_LOOP 17
+text CHAO_NAME_TAMEIKI_SIT_END 16
+text CHAO_NAME_NO 3
+text CHAO_NAME_NO_END 7
+text CHAO_NAME_EHHEN_STAND 12
+text CHAO_NAME_EHHEN_STAND_END 16
+text CHAO_NAME_EHHEN_WALK 11
+text CHAO_NAME_IRANAI 7
+text CHAO_NAME_IRANAI_END 11
+text CHAO_NAME_ANGRY_STAND 12
+text CHAO_NAME_ANGRY_STAND_LOOP 17
+text CHAO_NAME_ANGRY_STAND_END 16
+text CHAO_NAME_BIKU 5
+text CHAO_NAME_JUMP_BIKU 10
+text CHAO_NAME_ATOZUSARI 10
+text CHAO_NAME_ATOZUSARI_LOOP 15
+text CHAO_NAME_ATOZUSARI_BURUBURU 19
+text CHAO_NAME_CRY_STAND_START 16
+text CHAO_NAME_CRY_STAND_HIKKUHIKKU 21
+text CHAO_NAME_CRY_STAND_HIKKU2SHIKU 22
+text CHAO_NAME_CRY_STAND_SHIKUSHIKU 21
+text CHAO_NAME_CRY_STAND_MESOMESO 19
+text CHAO_NAME_CRY_SIT_START 14
+text CHAO_NAME_CRY_SIT_HIKKUHIKKU 19
+text CHAO_NAME_CRY_SIT_HEAD 13
+text CHAO_NAME_CRY_SIT_SHIKUSHIKU 19
+text CHAO_NAME_CRY_SIT_MESOMESO 17
+text CHAO_NAME_CRY_SIT_JITABATA 17
+text CHAO_NAME_CRY_WALK_A 11
+text CHAO_NAME_CRY_WALK_A2B 13
+text CHAO_NAME_CRY_WALK_B 11
+text CHAO_NAME_CRY_WALK_B2A 13
+text CHAO_NAME_NAKU_START 11
+text CHAO_NAME_NAKU_UD 8
+text CHAO_NAME_NAKU_LR 8
+text CHAO_NAME_NAKU_LOOKUP 12
+text CHAO_NAME_NAKU_LOOKUP_END 16
+text CHAO_NAME_NAKU_END 9
+text CHAO_NAME_MESO_STAND_START 17
+text CHAO_NAME_MESO_STAND_HIKKU 17
+text CHAO_NAME_MESO_STAND_MEKOSURI 20
+text CHAO_NAME_MESO_STAND_MEKOSURI_HIKKU 26
+text CHAO_NAME_MESO_STAND_HIKKU_TATE 22
+text CHAO_NAME_MESO_SIT_START 15
+text CHAO_NAME_MESO_SIT_HIKKU 15
+text CHAO_NAME_MESO_SIT_MEKOSURI 18
+text CHAO_NAME_MESO_SIT_MEKOSURI_HIKKU 24
+text CHAO_NAME_MESO_SIT_HIKKU_TATE 20
+text CHAO_NAME_TERE_MOJIMOJI 14
+text CHAO_NAME_TERE_MOJIMOJI_LOOP 19
+text CHAO_NAME_TERE_MOJI2PORI 15
+text CHAO_NAME_TERE_PORIPORI_LOOP 19
+text CHAO_NAME_TERE_PORI2EHE 14
+text CHAO_NAME_TERE_EHE 9
+text CHAO_NAME_ITAI_PIYO 10
+text CHAO_NAME_ITAI_PITO2HEAD 15
+text CHAO_NAME_ITAI_BURUBURU 14
+text CHAO_NAME_ITAI_ATAMAPONPON 17
+text CHAO_NAME_ITAI_KOSHIPONPON 17
+text CHAO_NAME_KUSAI 6
+text CHAO_NAME_KUSAI_BURUBURU 15
+text CHAO_NAME_KUSAI_BURUBURU_END 19
+text CHAO_NAME_KUSAI_BATAN 12
+text CHAO_NAME_KUSAI_KYUU 11
+text CHAO_NAME_IRAIRA_HAND 12
+text CHAO_NAME_IRAIRA_FOOT 12
+text CHAO_NAME_IRAIRA_B 9
+text CHAO_NAME_HAKUSYU_SIT 12
+text CHAO_NAME_HAKUSYU_STAND 14
+text CHAO_NAME_TAIL 5
+
+pointer chao_motion_table 0x00000000 chao_clip_stand
+pointer chao_motion_table 0x0000001c chao_clip_osyaburi
+pointer chao_motion_table 0x00000038 chao_clip_hatena_hate
+pointer chao_motion_table 0x00000054 chao_clip_hatena_hate
+pointer chao_motion_table 0x00000070 chao_clip_hatena_hate
+pointer chao_motion_table 0x0000008c chao_clip_hatena_hate
+pointer chao_motion_table 0x000000a8 chao_clip_himatati_pata
+pointer chao_motion_table 0x000000c4 chao_clip_himatati_pata
+pointer chao_motion_table 0x000000e0 chao_clip_himatati_pata
+pointer chao_motion_table 0x000000fc chao_clip_himatati_pata
+pointer chao_motion_table 0x00000118 chao_clip_himatati_pata
+pointer chao_motion_table 0x00000134 chao_clip_osyaburi_s
+pointer chao_motion_table 0x00000150 chao_clip_osyaburi_s
+pointer chao_motion_table 0x0000016c chao_clip_hirameki
+pointer chao_motion_table 0x00000188 chao_clip_hirameki
+pointer chao_motion_table 0x000001a4 chao_clip_sit_akubi
+pointer chao_motion_table 0x000001c0 chao_clip_sit_akubi
+pointer chao_motion_table 0x000001dc chao_clip_sit_akubi
+pointer chao_motion_table 0x000001f8 chao_clip_sleep
+pointer chao_motion_table 0x00000214 chao_clip_sleep
+pointer chao_motion_table 0x00000230 chao_clip_sit_sleep
+pointer chao_motion_table 0x0000024c chao_clip_mekosuri
+pointer chao_motion_table 0x00000268 chao_clip_utouto
+pointer chao_motion_table 0x00000284 chao_clip_utouto
+pointer chao_motion_table 0x000002a0 chao_clip_utubuse_negaeri
+pointer chao_motion_table 0x000002bc chao_clip_utubuse_negaeri
+pointer chao_motion_table 0x000002d8 chao_clip_utubuse_negaeri
+pointer chao_motion_table 0x000002f4 chao_clip_dainoji
+pointer chao_motion_table 0x00000310 chao_clip_dainoji
+pointer chao_motion_table 0x0000032c chao_clip_dainoji
+pointer chao_motion_table 0x00000348 chao_clip_nobi_sit
+pointer chao_motion_table 0x00000364 chao_clip_neru_pori_r
+pointer chao_motion_table 0x00000380 chao_clip_neru_pori_r
+pointer chao_motion_table 0x0000039c chao_clip_neru_pori_r
+pointer chao_motion_table 0x000003b8 chao_clip_neru_pori_l
+pointer chao_motion_table 0x000003d4 chao_clip_neru_pori_l
+pointer chao_motion_table 0x000003f0 chao_clip_neru_pori_l
+pointer chao_motion_table 0x0000040c chao_clip_batan
+pointer chao_motion_table 0x00000428 chao_clip_batan
+pointer chao_motion_table 0x00000444 chao_clip_akubi
+pointer chao_motion_table 0x00000460 chao_clip_akubi
+pointer chao_motion_table 0x0000047c chao_clip_akubi
+pointer chao_motion_table 0x00000498 chao_clip_okiru
+pointer chao_motion_table 0x000004b4 chao_clip_okiru
+pointer chao_motion_table 0x000004d0 chao_clip_okiru
+pointer chao_motion_table 0x000004ec chao_clip_okiru
+pointer chao_motion_table 0x00000508 chao_clip_okiru
+pointer chao_motion_table 0x00000524 chao_clip_genki_suwari
+pointer chao_motion_table 0x00000540 chao_clip_genki_suwari
+pointer chao_motion_table 0x0000055c chao_clip_poripori_tati
+pointer chao_motion_table 0x00000578 chao_clip_poripori_tati
+pointer chao_motion_table 0x00000594 chao_clip_poripori_tati
+pointer chao_motion_table 0x000005b0 chao_clip_negaeri_l
+pointer chao_motion_table 0x000005cc chao_clip_negaeri_l
+pointer chao_motion_table 0x000005e8 chao_clip_negaeri_l
+pointer chao_motion_table 0x00000604 chao_clip_negaeri_r
+pointer chao_motion_table 0x00000620 chao_clip_negaeri_r
+pointer chao_motion_table 0x0000063c chao_clip_negaeri_r
+pointer chao_motion_table 0x00000658 chao_clip_otakai_l
+pointer chao_motion_table 0x00000674 chao_clip_otakai_l
+pointer chao_motion_table 0x00000690 chao_clip_otakai_r
+pointer chao_motion_table 0x000006ac chao_clip_otakai_r
+pointer chao_motion_table 0x000006c8 chao_clip_hima_sit
+pointer chao_motion_table 0x000006e4 chao_clip_hima_sit
+pointer chao_motion_table 0x00000700 chao_clip_hima_sit
+pointer chao_motion_table 0x0000071c chao_clip_hima_sit
+pointer chao_motion_table 0x00000738 chao_clip_hima_sit
+pointer chao_motion_table 0x00000754 chao_clip_hima_sit
+pointer chao_motion_table 0x00000770 chao_clip_hima_sit
+pointer chao_motion_table 0x0000078c chao_clip_hima_sit
+pointer chao_motion_table 0x000007a8 chao_clip_hima_sit
+pointer chao_motion_table 0x000007c4 chao_clip_hima_sit
+pointer chao_motion_table 0x000007e0 chao_clip_hima_sleep_updown
+pointer chao_motion_table 0x000007fc chao_clip_hima_sleep_updown
+pointer chao_motion_table 0x00000818 chao_clip_hima_sleep_updown
+pointer chao_motion_table 0x00000834 chao_clip_hima_sleep_updown
+pointer chao_motion_table 0x00000850 chao_clip_hima_sleep_updown
+pointer chao_motion_table 0x0000086c chao_clip_hima_utubuse_pata
+pointer chao_motion_table 0x00000888 chao_clip_hima_utubuse_pata
+pointer chao_motion_table 0x000008a4 chao_clip_hima_utubuse_pata
+pointer chao_motion_table 0x000008c0 chao_clip_sitdown
+pointer chao_motion_table 0x000008dc chao_clip_sitdown_slow
+pointer chao_motion_table 0x000008f8 chao_clip_standup
+pointer chao_motion_table 0x00000914 chao_clip_standup
+pointer chao_motion_table 0x00000930 chao_clip_nobi_stand
+pointer chao_motion_table 0x0000094c chao_clip_sleep_kubi
+pointer chao_motion_table 0x00000968 chao_clip_sleep_kubi
+pointer chao_motion_table 0x00000984 chao_clip_sleep_kubi
+pointer chao_motion_table 0x000009a0 chao_clip_sleep_kubi
+pointer chao_motion_table 0x000009bc chao_clip_sleep_kubi
+pointer chao_motion_table 0x000009d8 chao_clip_nakineiri_breath
+pointer chao_motion_table 0x000009f4 chao_clip_nakineiri_breath
+pointer chao_motion_table 0x00000a10 chao_clip_nakineiri_breath
+pointer chao_motion_table 0x00000a2c chao_clip_nakineiri_breath
+pointer chao_motion_table 0x00000a48 chao_clip_guta_a
+pointer chao_motion_table 0x00000a64 chao_clip_guta_a
+pointer chao_motion_table 0x00000a80 chao_clip_guta_a
+pointer chao_motion_table 0x00000a9c chao_clip_guta_a
+pointer chao_motion_table 0x00000ab8 chao_clip_onsen_loop
+pointer chao_motion_table 0x00000ad4 chao_clip_onsen_loop
+pointer chao_motion_table 0x00000af0 chao_clip_aruku
+pointer chao_motion_table 0x00000b0c chao_clip_hasiru
+pointer chao_motion_table 0x00000b28 chao_clip_hasiru
+pointer chao_motion_table 0x00000b44 chao_clip_hasiru
+pointer chao_motion_table 0x00000b60 chao_clip_shinobi
+pointer chao_motion_table 0x00000b7c chao_clip_tobotobo
+pointer chao_motion_table 0x00000b98 chao_clip_run_banzai
+pointer chao_motion_table 0x00000bb4 chao_clip_run_banzai
+pointer chao_motion_table 0x00000bd0 chao_clip_run_banzai
+pointer chao_motion_table 0x00000bec chao_clip_run_banzai
+pointer chao_motion_table 0x00000c08 chao_clip_haihai_koke
+pointer chao_motion_table 0x00000c24 chao_clip_haihai_koke
+pointer chao_motion_table 0x00000c40 chao_clip_haihai_koke
+pointer chao_motion_table 0x00000c5c chao_clip_haihai_koke
+pointer chao_motion_table 0x00000c78 chao_clip_haihai_koke
+pointer chao_motion_table 0x00000c94 chao_clip_haihai_koke
+pointer chao_motion_table 0x00000cb0 chao_clip_haihai_koke
+pointer chao_motion_table 0x00000ccc chao_clip_skip
+pointer chao_motion_table 0x00000ce8 chao_clip_oikake
+pointer chao_motion_table 0x00000d04 chao_clip_run
+pointer chao_motion_table 0x00000d20 chao_clip_rhythm_walk_a
+pointer chao_motion_table 0x00000d3c chao_clip_rhythm_walk_b
+pointer chao_motion_table 0x00000d58 chao_clip_brake
+pointer chao_motion_table 0x00000d74 chao_clip_brake
+pointer chao_motion_table 0x00000d90 chao_clip_brake
+pointer chao_motion_table 0x00000dac chao_clip_anger_walk
+pointer chao_motion_table 0x00000dc8 chao_clip_anger_walk
+pointer chao_motion_table 0x00000de4 chao_clip_yoro_walk
+pointer chao_motion_table 0x00000e00 chao_clip_yoro_walk
+pointer chao_motion_table 0x00000e1c chao_clip_dash
+pointer chao_motion_table 0x00000e38 chao_clip_tobu
+pointer chao_motion_table 0x00000e54 chao_clip_tobiagaru
+pointer chao_motion_table 0x00000e70 chao_clip_lookup_jump
+pointer chao_motion_table 0x00000e8c chao_clip_lookup_jump
+pointer chao_motion_table 0x00000ea8 chao_clip_lookup_jump
+pointer chao_motion_table 0x00000ec4 chao_clip_lookdown_jump
+pointer chao_motion_table 0x00000ee0 chao_clip_lookdown_jump
+pointer chao_motion_table 0x00000efc chao_clip_lookdown_jump
+pointer chao_motion_table 0x00000f18 chao_clip_habatobi_jump
+pointer chao_motion_table 0x00000f34 chao_clip_habatobi_jump
+pointer chao_motion_table 0x00000f50 chao_clip_habatobi_jump
+pointer chao_motion_table 0x00000f6c chao_clip_habatobi_jump
+pointer chao_motion_table 0x00000f88 chao_clip_oboreru
+pointer chao_motion_table 0x00000fa4 chao_clip_bataashi
+pointer chao_motion_table 0x00000fc0 chao_clip_bataashi
+pointer chao_motion_table 0x00000fdc chao_clip_crawl
+pointer chao_motion_table 0x00000ff8 chao_clip_seoyogi_kaiten
+pointer chao_motion_table 0x00001014 chao_clip_seoyogi_kaiten
+pointer chao_motion_table 0x00001030 chao_clip_bataashi_b
+pointer chao_motion_table 0x0000104c chao_clip_crawl_b
+pointer chao_motion_table 0x00001068 chao_clip_drift
+pointer chao_motion_table 0x00001084 chao_clip_dozaemon
+pointer chao_motion_table 0x000010a0 chao_clip_puha_all
+pointer chao_motion_table 0x000010bc chao_clip_puha_all
+pointer chao_motion_table 0x000010d8 chao_clip_puha_all
+pointer chao_motion_table 0x000010f4 chao_clip_noboru
+pointer chao_motion_table 0x00001110 chao_clip_noboru
+pointer chao_motion_table 0x0000112c chao_clip_climb
+pointer chao_motion_table 0x00001148 chao_clip_climb
+pointer chao_motion_table 0x00001164 chao_clip_koke
+pointer chao_motion_table 0x00001180 chao_clip_kokeoki
+pointer chao_motion_table 0x0000119c chao_clip_shirikoke_air
+pointer chao_motion_table 0x000011b8 chao_clip_shirikoke_air
+pointer chao_motion_table 0x000011d4 chao_clip_goo
+pointer chao_motion_table 0x000011f0 chao_clip_manpuku
+pointer chao_motion_table 0x0000120c chao_clip_manpuku
+pointer chao_motion_table 0x00001228 chao_clip_manpuku
+pointer chao_motion_table 0x00001244 chao_clip_manpuku
+pointer chao_motion_table 0x00001260 chao_clip_manpuku
+pointer chao_motion_table 0x0000127c chao_clip_taberu_suwaru
+pointer chao_motion_table 0x00001298 chao_clip_taberu_suwaru
+pointer chao_motion_table 0x000012b4 chao_clip_taberu_suwaru
+pointer chao_motion_table 0x000012d0 chao_clip_taberu_suwaru
+pointer chao_motion_table 0x000012ec chao_clip_taberu_suwaru
+pointer chao_motion_table 0x00001308 chao_clip_eat_sitdown
+pointer chao_motion_table 0x00001324 chao_clip_eat_sitdown
+pointer chao_motion_table 0x00001340 chao_clip_eat_sitdown
+pointer chao_motion_table 0x0000135c chao_clip_eat_sitdown
+pointer chao_motion_table 0x00001378 chao_clip_eat_peppe
+pointer chao_motion_table 0x00001394 chao_clip_eat_gatugatu
+pointer chao_motion_table 0x000013b0 chao_clip_eat_kunkun
+pointer chao_motion_table 0x000013cc chao_clip_eat_kunkun
+pointer chao_motion_table 0x000013e8 chao_clip_eat_kunkun
+pointer chao_motion_table 0x00001404 chao_clip_eat_tumaru
+pointer chao_motion_table 0x00001420 chao_clip_eat_tumaru
+pointer chao_motion_table 0x0000143c chao_clip_eat_tumaru
+pointer chao_motion_table 0x00001458 chao_clip_suteru_sit
+pointer chao_motion_table 0x00001474 chao_clip_kunkun_tati
+pointer chao_motion_table 0x00001490 chao_clip_hirou_kagamu
+pointer chao_motion_table 0x000014ac chao_clip_hirou_kagamu
+pointer chao_motion_table 0x000014c8 chao_clip_motu
+pointer chao_motion_table 0x000014e4 chao_clip_hakobu
+pointer chao_motion_table 0x00001500 chao_clip_suteru_stand
+pointer chao_motion_table 0x0000151c chao_clip_otosu
+pointer chao_motion_table 0x00001538 chao_clip_otosu
+pointer chao_motion_table 0x00001554 chao_clip_otosu
+pointer chao_motion_table 0x00001570 chao_clip_otosu
+pointer chao_motion_table 0x0000158c chao_clip_otosu
+pointer chao_motion_table 0x000015a8 chao_clip_otosu
+pointer chao_motion_table 0x000015c4 chao_clip_kaburu
+pointer chao_motion_table 0x000015e0 chao_clip_kaburu
+pointer chao_motion_table 0x000015fc chao_clip_throw
+pointer chao_motion_table 0x00001618 chao_clip_capture_morau
+pointer chao_motion_table 0x00001634 chao_clip_capture_morau
+pointer chao_motion_table 0x00001650 chao_clip_capture_morau
+pointer chao_motion_table 0x0000166c chao_clip_umareru_kyoro
+pointer chao_motion_table 0x00001688 chao_clip_umareru_pon
+pointer chao_motion_table 0x000016a4 chao_clip_esajump
+pointer chao_motion_table 0x000016c0 chao_clip_esajump
+pointer chao_motion_table 0x000016dc chao_clip_esajump
+pointer chao_motion_table 0x000016f8 chao_clip_esajump
+pointer chao_motion_table 0x00001714 chao_clip_yurasu_tukamu
+pointer chao_motion_table 0x00001730 chao_clip_yurasu_tukamu
+pointer chao_motion_table 0x0000174c chao_clip_yurasu_tukamu
+pointer chao_motion_table 0x00001768 chao_clip_yurasu_tukamu
+pointer chao_motion_table 0x00001784 chao_clip_lookup
+pointer chao_motion_table 0x000017a0 chao_clip_lookup
+pointer chao_motion_table 0x000017bc chao_clip_lookup
+pointer chao_motion_table 0x000017d8 chao_clip_lookup
+pointer chao_motion_table 0x000017f4 chao_clip_tree_dance_nyoki
+pointer chao_motion_table 0x00001810 chao_clip_tree_dance_nyoki
+pointer chao_motion_table 0x0000182c chao_clip_fruit_otosu
+pointer chao_motion_table 0x00001848 chao_clip_fruit_otosu
+pointer chao_motion_table 0x00001864 chao_clip_fruit_otosu
+pointer chao_motion_table 0x00001880 chao_clip_fruit_otosu
+pointer chao_motion_table 0x0000189c chao_clip_kokage_l_moji
+pointer chao_motion_table 0x000018b8 chao_clip_kokage_l_moji
+pointer chao_motion_table 0x000018d4 chao_clip_kokage_l_moji
+pointer chao_motion_table 0x000018f0 chao_clip_kokage_l_moji
+pointer chao_motion_table 0x0000190c chao_clip_seed_ueru_start
+pointer chao_motion_table 0x00001928 chao_clip_seed_ueru_start
+pointer chao_motion_table 0x00001944 chao_clip_seed_ueru_start
+pointer chao_motion_table 0x00001960 chao_clip_seed_ueru_start
+pointer chao_motion_table 0x0000197c chao_clip_seed_ueru_start
+pointer chao_motion_table 0x00001998 chao_clip_seed_ueru_start
+pointer chao_motion_table 0x000019b4 chao_clip_jyouro_start
+pointer chao_motion_table 0x000019d0 chao_clip_jyouro_start
+pointer chao_motion_table 0x000019ec chao_clip_jyouro_start
+pointer chao_motion_table 0x00001a08 chao_clip_kyorokyoro_up
+pointer chao_motion_table 0x00001a24 chao_clip_kyorokyoro_down
+pointer chao_motion_table 0x00001a40 chao_clip_osyaburi_up
+pointer chao_motion_table 0x00001a5c chao_clip_osyaburi_up
+pointer chao_motion_table 0x00001a78 chao_clip_kusyami_sit
+pointer chao_motion_table 0x00001a94 chao_clip_kusyami_stand
+pointer chao_motion_table 0x00001ab0 chao_clip_seki_sit_all
+pointer chao_motion_table 0x00001acc chao_clip_seki_sit_all
+pointer chao_motion_table 0x00001ae8 chao_clip_seki_stand_all
+pointer chao_motion_table 0x00001b04 chao_clip_seki_stand_all
+pointer chao_motion_table 0x00001b20 chao_clip_syakkuri_sit
+pointer chao_motion_table 0x00001b3c chao_clip_syakkuri_stand
+pointer chao_motion_table 0x00001b58 chao_clip_nade_glad
+pointer chao_motion_table 0x00001b74 chao_clip_nade_glad
+pointer chao_motion_table 0x00001b90 chao_clip_nade_kimochii
+pointer chao_motion_table 0x00001bac chao_clip_nade_tere
+pointer chao_motion_table 0x00001bc8 chao_clip_nade_iya
+pointer chao_motion_table 0x00001be4 chao_clip_nade_iya
+pointer chao_motion_table 0x00001c00 chao_clip_nade_iya
+pointer chao_motion_table 0x00001c1c chao_clip_dakko
+pointer chao_motion_table 0x00001c38 chao_clip_dakko
+pointer chao_motion_table 0x00001c54 chao_clip_dakko
+pointer chao_motion_table 0x00001c70 chao_clip_dakko
+pointer chao_motion_table 0x00001c8c chao_clip_dakko_glad
+pointer chao_motion_table 0x00001ca8 chao_clip_dakko_glad
+pointer chao_motion_table 0x00001cc4 chao_clip_dakko_glad
+pointer chao_motion_table 0x00001ce0 chao_clip_dakko_glad
+pointer chao_motion_table 0x00001cfc chao_clip_dakko_iya
+pointer chao_motion_table 0x00001d18 chao_clip_dakko_iya
+pointer chao_motion_table 0x00001d34 chao_clip_dakko_iya
+pointer chao_motion_table 0x00001d50 chao_clip_dakko_iya
+pointer chao_motion_table 0x00001d6c chao_clip_dakko_iya
+pointer chao_motion_table 0x00001d88 chao_clip_dakko_iya
+pointer chao_motion_table 0x00001da4 chao_clip_thrown
+pointer chao_motion_table 0x00001dc0 chao_clip_thrown
+pointer chao_motion_table 0x00001ddc chao_clip_thrown
+pointer chao_motion_table 0x00001df8 chao_clip_futtobu
+pointer chao_motion_table 0x00001e14 chao_clip_crash
+pointer chao_motion_table 0x00001e30 chao_clip_piyo
+pointer chao_motion_table 0x00001e4c chao_clip_piyo
+pointer chao_motion_table 0x00001e68 chao_clip_piyo
+pointer chao_motion_table 0x00001e84 chao_clip_urusai
+pointer chao_motion_table 0x00001ea0 chao_clip_kaoarau
+pointer chao_motion_table 0x00001ebc chao_clip_kaoarau
+pointer chao_motion_table 0x00001ed8 chao_clip_draming
+pointer chao_motion_table 0x00001ef4 chao_clip_draming
+pointer chao_motion_table 0x00001f10 chao_clip_draming
+pointer chao_motion_table 0x00001f2c chao_clip_fire
+pointer chao_motion_table 0x00001f48 chao_clip_fire
+pointer chao_motion_table 0x00001f64 chao_clip_fire
+pointer chao_motion_table 0x00001f80 chao_clip_togu
+pointer chao_motion_table 0x00001f9c chao_clip_utau_hidari
+pointer chao_motion_table 0x00001fb8 chao_clip_utau_hidari
+pointer chao_motion_table 0x00001fd4 chao_clip_utau_hidari
+pointer chao_motion_table 0x00001ff0 chao_clip_utau_hidari
+pointer chao_motion_table 0x0000200c chao_clip_utau_hidari
+pointer chao_motion_table 0x00002028 chao_clip_utau_hidari
+pointer chao_motion_table 0x00002044 chao_clip_utau_hidari
+pointer chao_motion_table 0x00002060 chao_clip_utau_hidari
+pointer chao_motion_table 0x0000207c chao_clip_boxing1
+pointer chao_motion_table 0x00002098 chao_clip_boxing1
+pointer chao_motion_table 0x000020b4 chao_clip_sumo_hakkeyoi
+pointer chao_motion_table 0x000020d0 chao_clip_sumo_hakkeyoi
+pointer chao_motion_table 0x000020ec chao_clip_sumo_hakkeyoi
+pointer chao_motion_table 0x00002108 chao_clip_onara
+pointer chao_motion_table 0x00002124 chao_clip_bakuten
+pointer chao_motion_table 0x00002140 chao_clip_bakuten
+pointer chao_motion_table 0x0000215c chao_clip_bakuten
+pointer chao_motion_table 0x00002178 chao_clip_denguri
+pointer chao_motion_table 0x00002194 chao_clip_denguri
+pointer chao_motion_table 0x000021b0 chao_clip_denguri
+pointer chao_motion_table 0x000021cc chao_clip_pyonpyon
+pointer chao_motion_table 0x000021e8 chao_clip_fukkin
+pointer chao_motion_table 0x00002204 chao_clip_fukkin
+pointer chao_motion_table 0x00002220 chao_clip_taisou
+pointer chao_motion_table 0x0000223c chao_clip_taisou
+pointer chao_motion_table 0x00002258 chao_clip_taisou
+pointer chao_motion_table 0x00002274 chao_clip_taisou
+pointer chao_motion_table 0x00002290 chao_clip_taisou
+pointer chao_motion_table 0x000022ac chao_clip_taisou
+pointer chao_motion_table 0x000022c8 chao_clip_on_your_mark
+pointer chao_motion_table 0x000022e4 chao_clip_on_your_mark
+pointer chao_motion_table 0x00002300 chao_clip_on_your_mark
+pointer chao_motion_table 0x0000231c chao_clip_gorogoro
+pointer chao_motion_table 0x00002338 chao_clip_gorogoro
+pointer chao_motion_table 0x00002354 chao_clip_rakugaki_jyunbi
+pointer chao_motion_table 0x00002370 chao_clip_rakugaki_jyunbi
+pointer chao_motion_table 0x0000238c chao_clip_rakugaki
+pointer chao_motion_table 0x000023a8 chao_clip_syabon_jyabu
+pointer chao_motion_table 0x000023c4 chao_clip_syabon_jyabu
+pointer chao_motion_table 0x000023e0 chao_clip_doll_yoshiyoshi
+pointer chao_motion_table 0x000023fc chao_clip_doll_yoshiyoshi
+pointer chao_motion_table 0x00002418 chao_clip_garagara
+pointer chao_motion_table 0x00002434 chao_clip_hanabi
+pointer chao_motion_table 0x00002450 chao_clip_hopping
+pointer chao_motion_table 0x0000246c chao_clip_hopping
+pointer chao_motion_table 0x00002488 chao_clip_houki
+pointer chao_motion_table 0x000024a4 chao_clip_minicar
+pointer chao_motion_table 0x000024c0 chao_clip_minicar
+pointer chao_motion_table 0x000024dc chao_clip_book_start
+pointer chao_motion_table 0x000024f8 chao_clip_book_start
+pointer chao_motion_table 0x00002514 chao_clip_book_start
+pointer chao_motion_table 0x00002530 chao_clip_piano
+pointer chao_motion_table 0x0000254c chao_clip_organ
+pointer chao_motion_table 0x00002568 chao_clip_horse_jump
+pointer chao_motion_table 0x00002584 chao_clip_horse_jump
+pointer chao_motion_table 0x000025a0 chao_clip_horse_jump
+pointer chao_motion_table 0x000025bc chao_clip_horse_jump
+pointer chao_motion_table 0x000025d8 chao_clip_horse_jump
+pointer chao_motion_table 0x000025f4 chao_clip_maracas_jump_a
+pointer chao_motion_table 0x00002610 chao_clip_maracas_jump_a
+pointer chao_motion_table 0x0000262c chao_clip_maracas_jump_a
+pointer chao_motion_table 0x00002648 chao_clip_maracas_jump_a
+pointer chao_motion_table 0x00002664 chao_clip_bell_up
+pointer chao_motion_table 0x00002680 chao_clip_bell_up
+pointer chao_motion_table 0x0000269c chao_clip_drum_lr
+pointer chao_motion_table 0x000026b8 chao_clip_drum_lr
+pointer chao_motion_table 0x000026d4 chao_clip_fue_lr
+pointer chao_motion_table 0x000026f0 chao_clip_fue_lr
+pointer chao_motion_table 0x0000270c chao_clip_castanets_wait
+pointer chao_motion_table 0x00002728 chao_clip_castanets_wait
+pointer chao_motion_table 0x00002744 chao_clip_castanets_wait
+pointer chao_motion_table 0x00002760 chao_clip_rappa_fb
+pointer chao_motion_table 0x0000277c chao_clip_rappa_fb
+pointer chao_motion_table 0x00002798 chao_clip_rappa_fb
+pointer chao_motion_table 0x000027b4 chao_clip_cymbal_wait
+pointer chao_motion_table 0x000027d0 chao_clip_cymbal_wait
+pointer chao_motion_table 0x000027ec chao_clip_cymbal_wait
+pointer chao_motion_table 0x00002808 chao_clip_cymbal_wait
+pointer chao_motion_table 0x00002824 chao_clip_tambourine_pan
+pointer chao_motion_table 0x00002840 chao_clip_tambourine_pan
+pointer chao_motion_table 0x0000285c chao_clip_hand_dance_up
+pointer chao_motion_table 0x00002878 chao_clip_hand_dance_up
+pointer chao_motion_table 0x00002894 chao_clip_hand_dance_up
+pointer chao_motion_table 0x000028b0 chao_clip_hand_dance_up
+pointer chao_motion_table 0x000028cc chao_clip_hand_dance_up
+pointer chao_motion_table 0x000028e8 chao_clip_hand_dance_up
+pointer chao_motion_table 0x00002904 chao_clip_hand_dance_up
+pointer chao_motion_table 0x00002920 chao_clip_hand_dance_up
+pointer chao_motion_table 0x0000293c chao_clip_round_dance_left
+pointer chao_motion_table 0x00002958 chao_clip_round_dance_left
+pointer chao_motion_table 0x00002974 chao_clip_round_dance_left
+pointer chao_motion_table 0x00002990 chao_clip_round_dance_left
+pointer chao_motion_table 0x000029ac chao_clip_round_dance_left
+pointer chao_motion_table 0x000029c8 chao_clip_round_dance_left
+pointer chao_motion_table 0x000029e4 chao_clip_music_stand
+pointer chao_motion_table 0x00002a00 chao_clip_music_stand
+pointer chao_motion_table 0x00002a1c chao_clip_music_sit
+pointer chao_motion_table 0x00002a38 chao_clip_music_sit
+pointer chao_motion_table 0x00002a54 chao_clip_box_dance
+pointer chao_motion_table 0x00002a70 chao_clip_gogo_dance
+pointer chao_motion_table 0x00002a8c chao_clip_gogo_dance
+pointer chao_motion_table 0x00002aa8 chao_clip_gogo_dance
+pointer chao_motion_table 0x00002ac4 chao_clip_hip_dance
+pointer chao_motion_table 0x00002ae0 chao_clip_otete_l_walk
+pointer chao_motion_table 0x00002afc chao_clip_otete_l_walk
+pointer chao_motion_table 0x00002b18 chao_clip_otete_r_walk
+pointer chao_motion_table 0x00002b34 chao_clip_otete_r_walk
+pointer chao_motion_table 0x00002b50 chao_clip_ojigi
+pointer chao_motion_table 0x00002b6c chao_clip_hello
+pointer chao_motion_table 0x00002b88 chao_clip_giveme_p
+pointer chao_motion_table 0x00002ba4 chao_clip_giveme_p
+pointer chao_motion_table 0x00002bc0 chao_clip_surisuri
+pointer chao_motion_table 0x00002bdc chao_clip_ageru
+pointer chao_motion_table 0x00002bf8 chao_clip_akusyu
+pointer chao_motion_table 0x00002c14 chao_clip_akusyu
+pointer chao_motion_table 0x00002c30 chao_clip_hisohiso_l_loop
+pointer chao_motion_table 0x00002c4c chao_clip_hisohiso_l_loop
+pointer chao_motion_table 0x00002c68 chao_clip_hisohiso_l_loop
+pointer chao_motion_table 0x00002c84 chao_clip_hisohiso_l_loop
+pointer chao_motion_table 0x00002ca0 chao_clip_hisohiso_r_loop
+pointer chao_motion_table 0x00002cbc chao_clip_hisohiso_r_loop
+pointer chao_motion_table 0x00002cd8 chao_clip_hisohiso_r_loop
+pointer chao_motion_table 0x00002cf4 chao_clip_hisohiso_r_loop
+pointer chao_motion_table 0x00002d10 chao_clip_houyou
+pointer chao_motion_table 0x00002d2c chao_clip_houyou
+pointer chao_motion_table 0x00002d48 chao_clip_naderu
+pointer chao_motion_table 0x00002d64 chao_clip_nee_l
+pointer chao_motion_table 0x00002d80 chao_clip_nee_r
+pointer chao_motion_table 0x00002d9c chao_clip_nee_p_l
+pointer chao_motion_table 0x00002db8 chao_clip_nee_p_r
+pointer chao_motion_table 0x00002dd4 chao_clip_nozoku_l
+pointer chao_motion_table 0x00002df0 chao_clip_nozoku_l
+pointer chao_motion_table 0x00002e0c chao_clip_nozoku_r
+pointer chao_motion_table 0x00002e28 chao_clip_nozoku_r
+pointer chao_motion_table 0x00002e44 chao_clip_hi
+pointer chao_motion_table 0x00002e60 chao_clip_hi
+pointer chao_motion_table 0x00002e7c chao_clip_sit_talk
+pointer chao_motion_table 0x00002e98 chao_clip_sit_talk
+pointer chao_motion_table 0x00002eb4 chao_clip_sit_talk
+pointer chao_motion_table 0x00002ed0 chao_clip_sit_talk
+pointer chao_motion_table 0x00002eec chao_clip_sit_talk
+pointer chao_motion_table 0x00002f08 chao_clip_sit_talk
+pointer chao_motion_table 0x00002f24 chao_clip_sit_talk
+pointer chao_motion_table 0x00002f40 chao_clip_stand_talk
+pointer chao_motion_table 0x00002f5c chao_clip_stand_talk
+pointer chao_motion_table 0x00002f78 chao_clip_stand_talk
+pointer chao_motion_table 0x00002f94 chao_clip_stand_talk
+pointer chao_motion_table 0x00002fb0 chao_clip_stand_talk
+pointer chao_motion_table 0x00002fcc chao_clip_stand_talk
+pointer chao_motion_table 0x00002fe8 chao_clip_stand_talk
+pointer chao_motion_table 0x00003004 chao_clip_unazuku
+pointer chao_motion_table 0x00003020 chao_clip_unazuku
+pointer chao_motion_table 0x0000303c chao_clip_punch
+pointer chao_motion_table 0x00003058 chao_clip_punch_yarare
+pointer chao_motion_table 0x00003074 chao_clip_genkotu
+pointer chao_motion_table 0x00003090 chao_clip_genkotu_yarare
+pointer chao_motion_table 0x000030ac chao_clip_kick
+pointer chao_motion_table 0x000030c8 chao_clip_kick_yarare
+pointer chao_motion_table 0x000030e4 chao_clip_akanbe
+pointer chao_motion_table 0x00003100 chao_clip_akanbe2
+pointer chao_motion_table 0x0000311c chao_clip_odorokasu
+pointer chao_motion_table 0x00003138 chao_clip_pui
+pointer chao_motion_table 0x00003154 chao_clip_pokapoka
+pointer chao_motion_table 0x00003170 chao_clip_igami
+pointer chao_motion_table 0x0000318c chao_clip_igami
+pointer chao_motion_table 0x000031a8 chao_clip_panpan
+pointer chao_motion_table 0x000031c4 chao_clip_panpan
+pointer chao_motion_table 0x000031e0 chao_clip_panpan
+pointer chao_motion_table 0x000031fc chao_clip_senobi
+pointer chao_motion_table 0x00003218 chao_clip_senobi
+pointer chao_motion_table 0x00003234 chao_clip_laugh_sit
+pointer chao_motion_table 0x00003250 chao_clip_laugh_sit
+pointer chao_motion_table 0x0000326c chao_clip_laugh_stand
+pointer chao_motion_table 0x00003288 chao_clip_laugh_stand
+pointer chao_motion_table 0x000032a4 chao_clip_glad_stand
+pointer chao_motion_table 0x000032c0 chao_clip_glad_stand
+pointer chao_motion_table 0x000032dc chao_clip_bakusyou_all
+pointer chao_motion_table 0x000032f8 chao_clip_bakusyou_all
+pointer chao_motion_table 0x00003314 chao_clip_bakusyou_all
+pointer chao_motion_table 0x00003330 chao_clip_hasyagu_jump
+pointer chao_motion_table 0x0000334c chao_clip_hasyagu_jump
+pointer chao_motion_table 0x00003368 chao_clip_hasyagu_jump
+pointer chao_motion_table 0x00003384 chao_clip_osyaburi_s
+pointer chao_motion_table 0x000033a0 chao_clip_osyaburi_s
+pointer chao_motion_table 0x000033bc chao_clip_kusukusu_stand_a
+pointer chao_motion_table 0x000033d8 chao_clip_kusukusu_stand_a
+pointer chao_motion_table 0x000033f4 chao_clip_kusukusu_stand_b
+pointer chao_motion_table 0x00003410 chao_clip_dada
+pointer chao_motion_table 0x0000342c chao_clip_mojimoji
+pointer chao_motion_table 0x00003448 chao_clip_mojimoji
+pointer chao_motion_table 0x00003464 chao_clip_mojimoji
+pointer chao_motion_table 0x00003480 chao_clip_jidanda
+pointer chao_motion_table 0x0000349c chao_clip_atafuta
+pointer chao_motion_table 0x000034b8 chao_clip_atafuta
+pointer chao_motion_table 0x000034d4 chao_clip_iyaiya_a
+pointer chao_motion_table 0x000034f0 chao_clip_iyaiya_a
+pointer chao_motion_table 0x0000350c chao_clip_butubutu_fuga
+pointer chao_motion_table 0x00003528 chao_clip_butubutu_fuga
+pointer chao_motion_table 0x00003544 chao_clip_gakkari
+pointer chao_motion_table 0x00003560 chao_clip_furafura
+pointer chao_motion_table 0x0000357c chao_clip_furafura
+pointer chao_motion_table 0x00003598 chao_clip_guttari_stand
+pointer chao_motion_table 0x000035b4 chao_clip_guttari_stand
+pointer chao_motion_table 0x000035d0 chao_clip_banzai_jump
+pointer chao_motion_table 0x000035ec chao_clip_ijike_sit
+pointer chao_motion_table 0x00003608 chao_clip_ijike_sit
+pointer chao_motion_table 0x00003624 chao_clip_ijike_sit
+pointer chao_motion_table 0x00003640 chao_clip_ijike_sit
+pointer chao_motion_table 0x0000365c chao_clip_buruburu
+pointer chao_motion_table 0x00003678 chao_clip_buruburu
+pointer chao_motion_table 0x00003694 chao_clip_buruburu
+pointer chao_motion_table 0x000036b0 chao_clip_buruburu
+pointer chao_motion_table 0x000036cc chao_clip_buruburu
+pointer chao_motion_table 0x000036e8 chao_clip_tameiki_stand
+pointer chao_motion_table 0x00003704 chao_clip_tameiki_stand
+pointer chao_motion_table 0x00003720 chao_clip_tameiki_stand
+pointer chao_motion_table 0x0000373c chao_clip_tameiki_sit
+pointer chao_motion_table 0x00003758 chao_clip_tameiki_sit
+pointer chao_motion_table 0x00003774 chao_clip_tameiki_sit
+pointer chao_motion_table 0x00003790 chao_clip_no
+pointer chao_motion_table 0x000037ac chao_clip_no
+pointer chao_motion_table 0x000037c8 chao_clip_ehhen_stand
+pointer chao_motion_table 0x000037e4 chao_clip_ehhen_stand
+pointer chao_motion_table 0x00003800 chao_clip_ehhen_walk
+pointer chao_motion_table 0x0000381c chao_clip_iranai
+pointer chao_motion_table 0x00003838 chao_clip_iranai
+pointer chao_motion_table 0x00003854 chao_clip_angry_stand
+pointer chao_motion_table 0x00003870 chao_clip_angry_stand
+pointer chao_motion_table 0x0000388c chao_clip_angry_stand
+pointer chao_motion_table 0x000038a8 chao_clip_biku
+pointer chao_motion_table 0x000038c4 chao_clip_jump_biku
+pointer chao_motion_table 0x000038e0 chao_clip_atozusari
+pointer chao_motion_table 0x000038fc chao_clip_atozusari
+pointer chao_motion_table 0x00003918 chao_clip_atozusari
+pointer chao_motion_table 0x00003934 chao_clip_cry_stand_start
+pointer chao_motion_table 0x00003950 chao_clip_cry_stand_start
+pointer chao_motion_table 0x0000396c chao_clip_cry_stand_start
+pointer chao_motion_table 0x00003988 chao_clip_cry_stand_start
+pointer chao_motion_table 0x000039a4 chao_clip_cry_stand_start
+pointer chao_motion_table 0x000039c0 chao_clip_cry_sit_start
+pointer chao_motion_table 0x000039dc chao_clip_cry_sit_start
+pointer chao_motion_table 0x000039f8 chao_clip_cry_sit_start
+pointer chao_motion_table 0x00003a14 chao_clip_cry_sit_start
+pointer chao_motion_table 0x00003a30 chao_clip_cry_sit_start
+pointer chao_motion_table 0x00003a4c chao_clip_cry_sit_start
+pointer chao_motion_table 0x00003a68 chao_clip_cry_walk_a
+pointer chao_motion_table 0x00003a84 chao_clip_cry_walk_a
+pointer chao_motion_table 0x00003aa0 chao_clip_cry_walk_a
+pointer chao_motion_table 0x00003abc chao_clip_cry_walk_a
+pointer chao_motion_table 0x00003ad8 chao_clip_naku_start
+pointer chao_motion_table 0x00003af4 chao_clip_naku_start
+pointer chao_motion_table 0x00003b10 chao_clip_naku_start
+pointer chao_motion_table 0x00003b2c chao_clip_naku_start
+pointer chao_motion_table 0x00003b48 chao_clip_naku_start
+pointer chao_motion_table 0x00003b64 chao_clip_naku_start
+pointer chao_motion_table 0x00003b80 chao_clip_meso_stand_start
+pointer chao_motion_table 0x00003b9c chao_clip_meso_stand_start
+pointer chao_motion_table 0x00003bb8 chao_clip_meso_stand_start
+pointer chao_motion_table 0x00003bd4 chao_clip_meso_stand_start
+pointer chao_motion_table 0x00003bf0 chao_clip_meso_stand_start
+pointer chao_motion_table 0x00003c0c chao_clip_meso_sit_start
+pointer chao_motion_table 0x00003c28 chao_clip_meso_sit_start
+pointer chao_motion_table 0x00003c44 chao_clip_meso_sit_start
+pointer chao_motion_table 0x00003c60 chao_clip_meso_sit_start
+pointer chao_motion_table 0x00003c7c chao_clip_meso_sit_start
+pointer chao_motion_table 0x00003c98 chao_clip_tere_mojimoji
+pointer chao_motion_table 0x00003cb4 chao_clip_tere_mojimoji
+pointer chao_motion_table 0x00003cd0 chao_clip_tere_mojimoji
+pointer chao_motion_table 0x00003cec chao_clip_tere_mojimoji
+pointer chao_motion_table 0x00003d08 chao_clip_tere_mojimoji
+pointer chao_motion_table 0x00003d24 chao_clip_tere_mojimoji
+pointer chao_motion_table 0x00003d40 chao_clip_itai_piyo
+pointer chao_motion_table 0x00003d5c chao_clip_itai_piyo
+pointer chao_motion_table 0x00003d78 chao_clip_itai_piyo
+pointer chao_motion_table 0x00003d94 chao_clip_itai_piyo
+pointer chao_motion_table 0x00003db0 chao_clip_itai_piyo
+pointer chao_motion_table 0x00003dcc chao_clip_kusai
+pointer chao_motion_table 0x00003de8 chao_clip_kusai
+pointer chao_motion_table 0x00003e04 chao_clip_kusai
+pointer chao_motion_table 0x00003e20 chao_clip_kusai
+pointer chao_motion_table 0x00003e3c chao_clip_kusai
+pointer chao_motion_table 0x00003e58 chao_clip_iraira_hand
+pointer chao_motion_table 0x00003e74 chao_clip_iraira_hand
+pointer chao_motion_table 0x00003e90 chao_clip_iraira_b
+pointer chao_motion_table 0x00003eac chao_clip_hakusyu_sit
+pointer chao_motion_table 0x00003ec8 chao_clip_hakusyu_stand
+pointer chao_motion_table 0x00003ee4 chao_clip_tail
+pointer chao_motion_names 0x00000000 CHAO_NAME_STAND
+pointer chao_motion_names 0x00000004 CHAO_NAME_OSYABURI
+pointer chao_motion_names 0x00000008 CHAO_NAME_HATENA_HATE
+pointer chao_motion_names 0x0000000c CHAO_NAME_HATENA_HATE2
+pointer chao_motion_names 0x00000010 CHAO_NAME_HATENA_AEARE
+pointer chao_motion_names 0x00000014 CHAO_NAME_HATENA_MODORU
+pointer chao_motion_names 0x00000018 CHAO_NAME_HIMATATI_PATA
+pointer chao_motion_names 0x0000001c CHAO_NAME_HIMATATI_PATA_LOOP
+pointer chao_motion_names 0x00000020 CHAO_NAME_HIMATATI_PATA2MOJI
+pointer chao_motion_names 0x00000024 CHAO_NAME_HIMATATI_MOJI
+pointer chao_motion_names 0x00000028 CHAO_NAME_HIMATATI_END
+pointer chao_motion_names 0x0000002c CHAO_NAME_OSYABURI_S
+pointer chao_motion_names 0x00000030 CHAO_NAME_OSYABURI_L
+pointer chao_motion_names 0x00000034 CHAO_NAME_HIRAMEKI
+pointer chao_motion_names 0x00000038 CHAO_NAME_HIRAMEKI_END
+pointer chao_motion_names 0x0000003c CHAO_NAME_SIT_AKUBI
+pointer chao_motion_names 0x00000040 CHAO_NAME_SIT_AKUBI_LOOP
+pointer chao_motion_names 0x00000044 CHAO_NAME_SIT_AKUBI_END
+pointer chao_motion_names 0x00000048 CHAO_NAME_SLEEP
+pointer chao_motion_names 0x0000004c CHAO_NAME_SLEEP_LOOP
+pointer chao_motion_names 0x00000050 CHAO_NAME_SIT_SLEEP
+pointer chao_motion_names 0x00000054 CHAO_NAME_MEKOSURI
+pointer chao_motion_names 0x00000058 CHAO_NAME_UTOUTO
+pointer chao_motion_names 0x0000005c CHAO_NAME_UTOUTO_KOKKURI
+pointer chao_motion_names 0x00000060 CHAO_NAME_UTUBUSE_NEGAERI
+pointer chao_motion_names 0x00000064 CHAO_NAME_UTUBUSE_SLEEP
+pointer chao_motion_names 0x00000068 CHAO_NAME_UTUBUSE_END
+pointer chao_motion_names 0x0000006c CHAO_NAME_DAINOJI
+pointer chao_motion_names 0x00000070 CHAO_NAME_DAINOJI_NOBI
+pointer chao_motion_names 0x00000074 CHAO_NAME_DAINOJI_LOOP
+pointer chao_motion_names 0x00000078 CHAO_NAME_NOBI_SIT
+pointer chao_motion_names 0x0000007c CHAO_NAME_NERU_PORI_R
+pointer chao_motion_names 0x00000080 CHAO_NAME_NERU_PORI_R_LOOP
+pointer chao_motion_names 0x00000084 CHAO_NAME_NERU_PORI_R_END
+pointer chao_motion_names 0x00000088 CHAO_NAME_NERU_PORI_L
+pointer chao_motion_names 0x0000008c CHAO_NAME_NERU_PORI_L_LOOP
+pointer chao_motion_names 0x00000090 CHAO_NAME_NERU_PORI_L_END
+pointer chao_motion_names 0x00000094 CHAO_NAME_BATAN
+pointer chao_motion_names 0x00000098 CHAO_NAME_JUMP_UP
+pointer chao_motion_names 0x0000009c CHAO_NAME_AKUBI
+pointer chao_motion_names 0x000000a0 CHAO_NAME_AKUBI_LOOP
+pointer chao_motion_names 0x000000a4 CHAO_NAME_AKUBI_END
+pointer chao_motion_names 0x000000a8 CHAO_NAME_OKIRU
+pointer chao_motion_names 0x000000ac CHAO_NAME_OKIRU_BURU_LOOP
+pointer chao_motion_names 0x000000b0 CHAO_NAME_OKIRU_AKUBI
+pointer chao_motion_names 0x000000b4 CHAO_NAME_OKIRU_AKUBI_LOOP
+pointer chao_motion_names 0x000000b8 CHAO_NAME_OKIRU_END
+pointer chao_motion_names 0x000000bc CHAO_NAME_GENKI_SUWARI
+pointer chao_motion_names 0x000000c0 CHAO_NAME_GENKI_TATI
+pointer chao_motion_names 0x000000c4 CHAO_NAME_PORIPORI_TATI
+pointer chao_motion_names 0x000000c8 CHAO_NAME_PORIPORI_TATI_LOOP
+pointer chao_motion_names 0x000000cc CHAO_NAME_PORIPORI_TATI_END
+pointer chao_motion_names 0x000000d0 CHAO_NAME_NEGAERI_L
+pointer chao_motion_names 0x000000d4 CHAO_NAME_NEGAERI_L_UTUBUSE
+pointer chao_motion_names 0x000000d8 CHAO_NAME_NEGAERI_L_RETURN
+pointer chao_motion_names 0x000000dc CHAO_NAME_NEGAERI_R
+pointer chao_motion_names 0x000000e0 CHAO_NAME_NEGAERI_R_UTUBUSE
+pointer chao_motion_names 0x000000e4 CHAO_NAME_NEGAERI_R_RETURN
+pointer chao_motion_names 0x000000e8 CHAO_NAME_OTAKAI_L
+pointer chao_motion_names 0x000000ec CHAO_NAME_OTAKAI_L_LOOP
+pointer chao_motion_names 0x000000f0 CHAO_NAME_OTAKAI_R
+pointer chao_motion_names 0x000000f4 CHAO_NAME_OTAKAI_R_LOOP
+pointer chao_motion_names 0x000000f8 CHAO_NAME_HIMA_SIT
+pointer chao_motion_names 0x000000fc CHAO_NAME_HIMA_SIT_GUDE
+pointer chao_motion_names 0x00000100 CHAO_NAME_HIMA_SIT_PATA
+pointer chao_motion_names 0x00000104 CHAO_NAME_HIMA_SIT_PATAPATA
+pointer chao_motion_names 0x00000108 CHAO_NAME_HIMA_SIT_SWING
+pointer chao_motion_names 0x0000010c CHAO_NAME_HIMA_SIT_LOOK_R
+pointer chao_motion_names 0x00000110 CHAO_NAME_HIMA_SIT_LOOK_L
+pointer chao_motion_names 0x00000114 CHAO_NAME_HIMA_SIT_R2L
+pointer chao_motion_names 0x00000118 CHAO_NAME_HIMA_SIT_L2R
+pointer chao_motion_names 0x0000011c CHAO_NAME_HIMA_SIT_PORI
+pointer chao_motion_names 0x00000120 CHAO_NAME_HIMA_SLEEP_UPDOWN
+pointer chao_motion_names 0x00000124 CHAO_NAME_HIMA_SLEEP_BURABURA
+pointer chao_motion_names 0x00000128 CHAO_NAME_HIMA_SLEEP_TWIST
+pointer chao_motion_names 0x0000012c CHAO_NAME_HIMA_SLEEP_ALTER
+pointer chao_motion_names 0x00000130 CHAO_NAME_HIMA_SLEEP_BREATH
+pointer chao_motion_names 0x00000134 CHAO_NAME_HIMA_UTUBUSE_PATA
+pointer chao_motion_names 0x00000138 CHAO_NAME_HIMA_UTUBUSE_PATA_LOOP
+pointer chao_motion_names 0x0000013c CHAO_NAME_HIMA_UTUBUSE_END
+pointer chao_motion_names 0x00000140 CHAO_NAME_SITDOWN
+pointer chao_motion_names 0x00000144 CHAO_NAME_SITDOWN_SLOW
+pointer chao_motion_names 0x00000148 CHAO_NAME_STANDUP
+pointer chao_motion_names 0x0000014c CHAO_NAME_STANDUP_SHIRI
+pointer chao_motion_names 0x00000150 CHAO_NAME_NOBI_STAND
+pointer chao_motion_names 0x00000154 CHAO_NAME_SLEEP_KUBI
+pointer chao_motion_names 0x00000158 CHAO_NAME_SLEEP_KUBI_LOOP
+pointer chao_motion_names 0x0000015c CHAO_NAME_SLEEP_KUBI_PORI
+pointer chao_motion_names 0x00000160 CHAO_NAME_SLEEP_KUBI_PORI_LOOP
+pointer chao_motion_names 0x00000164 CHAO_NAME_SLEEP_KUBI_END
+pointer chao_motion_names 0x00000168 CHAO_NAME_NAKINEIRI_BREATH
+pointer chao_motion_names 0x0000016c CHAO_NAME_NAKINEIRI_HIKKU
+pointer chao_motion_names 0x00000170 CHAO_NAME_NAKINEIRI_HIKKUHIKKU
+pointer chao_motion_names 0x00000174 CHAO_NAME_NAKINEIRI_MEOSMESO
+pointer chao_motion_names 0x00000178 CHAO_NAME_GUTA_A
+pointer chao_motion_names 0x0000017c CHAO_NAME_GUTA_B
+pointer chao_motion_names 0x00000180 CHAO_NAME_GUTA_C
+pointer chao_motion_names 0x00000184 CHAO_NAME_GUTA_D
+pointer chao_motion_names 0x00000188 CHAO_NAME_ONSEN_LOOP
+pointer chao_motion_names 0x0000018c CHAO_NAME_ONSEN_FUU
+pointer chao_motion_names 0x00000190 CHAO_NAME_ARUKU
+pointer chao_motion_names 0x00000194 CHAO_NAME_HASIRU
+pointer chao_motion_names 0x00000198 CHAO_NAME_HASIRU_HIROGE
+pointer chao_motion_names 0x0000019c CHAO_NAME_HASIRU_FURIMUKI
+pointer chao_motion_names 0x000001a0 CHAO_NAME_SHINOBI
+pointer chao_motion_names 0x000001a4 CHAO_NAME_TOBOTOBO
+pointer chao_motion_names 0x000001a8 CHAO_NAME_RUN_BANZAI
+pointer chao_motion_names 0x000001ac CHAO_NAME_RUN_BANZAI2
+pointer chao_motion_names 0x000001b0 CHAO_NAME_RUN_BANZAI_LOOP
+pointer chao_motion_names 0x000001b4 CHAO_NAME_RUN_BANZAI_END
+pointer chao_motion_names 0x000001b8 CHAO_NAME_HAIHAI_KOKE
+pointer chao_motion_names 0x000001bc CHAO_NAME_HAIHAI_SHIRI_UP
+pointer chao_motion_names 0x000001c0 CHAO_NAME_HAIHAI_SHIRI_DOWN
+pointer chao_motion_names 0x000001c4 CHAO_NAME_HAIHAI_SORU_UP
+pointer chao_motion_names 0x000001c8 CHAO_NAME_HAIHAI_SORU_DOWN
+pointer chao_motion_names 0x000001cc CHAO_NAME_HAIHAI
+pointer chao_motion_names 0x000001d0 CHAO_NAME_HAIHAI_LOOP
+pointer chao_motion_names 0x000001d4 CHAO_NAME_SKIP
+pointer chao_motion_names 0x000001d8 CHAO_NAME_OIKAKE
+pointer chao_motion_names 0x000001dc CHAO_NAME_RUN
+pointer chao_motion_names 0x000001e0 CHAO_NAME_RHYTHM_WALK_A
+pointer chao_motion_names 0x000001e4 CHAO_NAME_RHYTHM_WALK_B
+pointer chao_motion_names 0x000001e8 CHAO_NAME_BRAKE
+pointer chao_motion_names 0x000001ec CHAO_NAME_BRAKE_LOOP
+pointer chao_motion_names 0x000001f0 CHAO_NAME_BRAKE_BATABATA
+pointer chao_motion_names 0x000001f4 CHAO_NAME_ANGER_WALK
+pointer chao_motion_names 0x000001f8 CHAO_NAME_ANGER_WALK_CHIKUSYOU
+pointer chao_motion_names 0x000001fc CHAO_NAME_YORO_WALK
+pointer chao_motion_names 0x00000200 CHAO_NAME_YORO_WALK_LOOP
+pointer chao_motion_names 0x00000204 CHAO_NAME_DASH
+pointer chao_motion_names 0x00000208 CHAO_NAME_TOBU
+pointer chao_motion_names 0x0000020c CHAO_NAME_TOBIAGARU
+pointer chao_motion_names 0x00000210 CHAO_NAME_LOOKUP_JUMP
+pointer chao_motion_names 0x00000214 CHAO_NAME_LOOKUP_JUMP_LOOP
+pointer chao_motion_names 0x00000218 CHAO_NAME_LOOKUP_JUMP_LANDING
+pointer chao_motion_names 0x0000021c CHAO_NAME_LOOKDOWN_JUMP
+pointer chao_motion_names 0x00000220 CHAO_NAME_LOOKDOWN_JUMP_LOOP
+pointer chao_motion_names 0x00000224 CHAO_NAME_LOOKDOWN_JUMP_LANDING
+pointer chao_motion_names 0x00000228 CHAO_NAME_HABATOBI_JUMP
+pointer chao_motion_names 0x0000022c CHAO_NAME_HABATOBI_AIR
+pointer chao_motion_names 0x00000230 CHAO_NAME_HABATOBI_LANDING
+pointer chao_motion_names 0x00000234 CHAO_NAME_HABATOBI_BOUND
+pointer chao_motion_names 0x00000238 CHAO_NAME_OBORERU
+pointer chao_motion_names 0x0000023c CHAO_NAME_BATAASHI
+pointer chao_motion_names 0x00000240 CHAO_NAME_BATAASHI_IKITUGI
+pointer chao_motion_names 0x00000244 CHAO_NAME_CRAWL
+pointer chao_motion_names 0x00000248 CHAO_NAME_SEOYOGI_KAITEN
+pointer chao_motion_names 0x0000024c CHAO_NAME_SEOYOGI
+pointer chao_motion_names 0x00000250 CHAO_NAME_BATAASHI_B
+pointer chao_motion_names 0x00000254 CHAO_NAME_CRAWL_B
+pointer chao_motion_names 0x00000258 CHAO_NAME_DRIFT
+pointer chao_motion_names 0x0000025c CHAO_NAME_DOZAEMON
+pointer chao_motion_names 0x00000260 CHAO_NAME_PUHA_ALL
+pointer chao_motion_names 0x00000264 CHAO_NAME_PUHA_RISE
+pointer chao_motion_names 0x00000268 CHAO_NAME_PUHA_PUHA
+pointer chao_motion_names 0x0000026c CHAO_NAME_NOBORU
+pointer chao_motion_names 0x00000270 CHAO_NAME_NOBORIKIRU
+pointer chao_motion_names 0x00000274 CHAO_NAME_CLIMB
+pointer chao_motion_names 0x00000278 CHAO_NAME_CLIMB_END
+pointer chao_motion_names 0x0000027c CHAO_NAME_KOKE
+pointer chao_motion_names 0x00000280 CHAO_NAME_KOKEOKI
+pointer chao_motion_names 0x00000284 CHAO_NAME_SHIRIKOKE_AIR
+pointer chao_motion_names 0x00000288 CHAO_NAME_SHIRIKOKR_LAND
+pointer chao_motion_names 0x0000028c CHAO_NAME_GOO
+pointer chao_motion_names 0x00000290 CHAO_NAME_MANPUKU
+pointer chao_motion_names 0x00000294 CHAO_NAME_MANPUKU_LOOP
+pointer chao_motion_names 0x00000298 CHAO_NAME_MANPUKU_SURI
+pointer chao_motion_names 0x0000029c CHAO_NAME_MANPUKU_SURILOOP
+pointer chao_motion_names 0x000002a0 CHAO_NAME_MANPUKU_END
+pointer chao_motion_names 0x000002a4 CHAO_NAME_TABERU_SUWARU
+pointer chao_motion_names 0x000002a8 CHAO_NAME_TABERU_TATU
+pointer chao_motion_names 0x000002ac CHAO_NAME_TABERU_TABERU
+pointer chao_motion_names 0x000002b0 CHAO_NAME_TABERU_MIAGE
+pointer chao_motion_names 0x000002b4 CHAO_NAME_TABERU_MODORU
+pointer chao_motion_names 0x000002b8 CHAO_NAME_EAT_SITDOWN
+pointer chao_motion_names 0x000002bc CHAO_NAME_EAT
+pointer chao_motion_names 0x000002c0 CHAO_NAME_EAT_LOOKUP_R
+pointer chao_motion_names 0x000002c4 CHAO_NAME_EAT_LOOKUP_L
+pointer chao_motion_names 0x000002c8 CHAO_NAME_EAT_PEPPE
+pointer chao_motion_names 0x000002cc CHAO_NAME_EAT_GATUGATU
+pointer chao_motion_names 0x000002d0 CHAO_NAME_EAT_KUNKUN
+pointer chao_motion_names 0x000002d4 CHAO_NAME_EAT_KUNKUN_LOOP
+pointer chao_motion_names 0x000002d8 CHAO_NAME_EAT_KUNKUN_UPPER
+pointer chao_motion_names 0x000002dc CHAO_NAME_EAT_TUMARU
+pointer chao_motion_names 0x000002e0 CHAO_NAME_EAT_TUMARU_LOOP
+pointer chao_motion_names 0x000002e4 CHAO_NAME_EAT_TUMARU_END
+pointer chao_motion_names 0x000002e8 CHAO_NAME_SUTERU_SIT
+pointer chao_motion_names 0x000002ec CHAO_NAME_KUNKUN_TATI
+pointer chao_motion_names 0x000002f0 CHAO_NAME_HIROU_KAGAMU
+pointer chao_motion_names 0x000002f4 CHAO_NAME_HIROU_AGERU
+pointer chao_motion_names 0x000002f8 CHAO_NAME_MOTU
+pointer chao_motion_names 0x000002fc CHAO_NAME_HAKOBU
+pointer chao_motion_names 0x00000300 CHAO_NAME_SUTERU_STAND
+pointer chao_motion_names 0x00000304 CHAO_NAME_OTOSU
+pointer chao_motion_names 0x00000308 CHAO_NAME_OTOSU_MIRU
+pointer chao_motion_names 0x0000030c CHAO_NAME_OTOSU_AWATE
+pointer chao_motion_names 0x00000310 CHAO_NAME_OTOSU_ASHIKAKAE
+pointer chao_motion_names 0x00000314 CHAO_NAME_OTOSU_ASHIKAKAE_LOOP
+pointer chao_motion_names 0x00000318 CHAO_NAME_OTOSU_END
+pointer chao_motion_names 0x0000031c CHAO_NAME_KABURU
+pointer chao_motion_names 0x00000320 CHAO_NAME_KABURU_END
+pointer chao_motion_names 0x00000324 CHAO_NAME_THROW
+pointer chao_motion_names 0x00000328 CHAO_NAME_CAPTURE_MORAU
+pointer chao_motion_names 0x0000032c CHAO_NAME_CAPTURE_SURISURI
+pointer chao_motion_names 0x00000330 CHAO_NAME_CAPTURE_KURUN
+pointer chao_motion_names 0x00000334 CHAO_NAME_UMARERU_KYORO
+pointer chao_motion_names 0x00000338 CHAO_NAME_UMARERU_PON
+pointer chao_motion_names 0x0000033c CHAO_NAME_ESAJUMP
+pointer chao_motion_names 0x00000340 CHAO_NAME_ESAJUMP_AIR
+pointer chao_motion_names 0x00000344 CHAO_NAME_ESAJUMP_FALL
+pointer chao_motion_names 0x00000348 CHAO_NAME_ESAJUMP_LAND
+pointer chao_motion_names 0x0000034c CHAO_NAME_YURASU_TUKAMU
+pointer chao_motion_names 0x00000350 CHAO_NAME_YURASU_TUKAMI
+pointer chao_motion_names 0x00000354 CHAO_NAME_YURASU_SWING
+pointer chao_motion_names 0x00000358 CHAO_NAME_YURASU_END
+pointer chao_motion_names 0x0000035c CHAO_NAME_LOOKUP
+pointer chao_motion_names 0x00000360 CHAO_NAME_LOOKUP_LOOP
+pointer chao_motion_names 0x00000364 CHAO_NAME_LOOKUP_KASHIGE
+pointer chao_motion_names 0x00000368 CHAO_NAME_LOOKUP_HAND
+pointer chao_motion_names 0x0000036c CHAO_NAME_TREE_DANCE_NYOKI
+pointer chao_motion_names 0x00000370 CHAO_NAME_TREE_DANCE_TONTON
+pointer chao_motion_names 0x00000374 CHAO_NAME_FRUIT_OTOSU
+pointer chao_motion_names 0x00000378 CHAO_NAME_FRUIT_OTOSU_LOOP
+pointer chao_motion_names 0x0000037c CHAO_NAME_FRUIT_OTOSU_FALL
+pointer chao_motion_names 0x00000380 CHAO_NAME_FRUIT_OTOSU_END
+pointer chao_motion_names 0x00000384 CHAO_NAME_KOKAGE_L_MOJI
+pointer chao_motion_names 0x00000388 CHAO_NAME_KOKAGE_L_NOZOKU
+pointer chao_motion_names 0x0000038c CHAO_NAME_KOKAGE_L_NOZOKU_LOOP
+pointer chao_motion_names 0x00000390 CHAO_NAME_KOKAGE_L_END
+pointer chao_motion_names 0x00000394 CHAO_NAME_SEED_UERU_START
+pointer chao_motion_names 0x00000398 CHAO_NAME_SEED_UERU_HORU_LOOP
+pointer chao_motion_names 0x0000039c CHAO_NAME_SEED_UERU_UERU
+pointer chao_motion_names 0x000003a0 CHAO_NAME_SEED_UERU_UMERU_START
+pointer chao_motion_names 0x000003a4 CHAO_NAME_SEED_UERU_UMERU_LOOP
+pointer chao_motion_names 0x000003a8 CHAO_NAME_SEED_UERU_END
+pointer chao_motion_names 0x000003ac CHAO_NAME_JYOURO_START
+pointer chao_motion_names 0x000003b0 CHAO_NAME_JYOURO_LOOP
+pointer chao_motion_names 0x000003b4 CHAO_NAME_JYOURO_END
+pointer chao_motion_names 0x000003b8 CHAO_NAME_KYOROKYORO_UP
+pointer chao_motion_names 0x000003bc CHAO_NAME_KYOROKYORO_DOWN
+pointer chao_motion_names 0x000003c0 CHAO_NAME_OSYABURI_UP
+pointer chao_motion_names 0x000003c4 CHAO_NAME_OSYABURI_LOOP
+pointer chao_motion_names 0x000003c8 CHAO_NAME_KUSYAMI_SIT
+pointer chao_motion_names 0x000003cc CHAO_NAME_KUSYAMI_STAND
+pointer chao_motion_names 0x000003d0 CHAO_NAME_SEKI_SIT_ALL
+pointer chao_motion_names 0x000003d4 CHAO_NAME_SEKI_SIT_KEHON
+pointer chao_motion_names 0x000003d8 CHAO_NAME_SEKI_STAND_ALL
+pointer chao_motion_names 0x000003dc CHAO_NAME_SEKI_STAND_KEHON
+pointer chao_motion_names 0x000003e0 CHAO_NAME_SYAKKURI_SIT
+pointer chao_motion_names 0x000003e4 CHAO_NAME_SYAKKURI_STAND
+pointer chao_motion_names 0x000003e8 CHAO_NAME_NADE_GLAD
+pointer chao_motion_names 0x000003ec CHAO_NAME_NADE_GLAD_HAND
+pointer chao_motion_names 0x000003f0 CHAO_NAME_NADE_KIMOCHII
+pointer chao_motion_names 0x000003f4 CHAO_NAME_NADE_TERE
+pointer chao_motion_names 0x000003f8 CHAO_NAME_NADE_IYA
+pointer chao_motion_names 0x000003fc CHAO_NAME_NADE_IYA_LOOP
+pointer chao_motion_names 0x00000400 CHAO_NAME_NADE_IYA_END
+pointer chao_motion_names 0x00000404 CHAO_NAME_DAKKO
+pointer chao_motion_names 0x00000408 CHAO_NAME_DAKKO_KIMO_LR
+pointer chao_motion_names 0x0000040c CHAO_NAME_DAKKO_KIMO_FB
+pointer chao_motion_names 0x00000410 CHAO_NAME_DAKKO_KIMO_JITABATA
+pointer chao_motion_names 0x00000414 CHAO_NAME_DAKKO_GLAD
+pointer chao_motion_names 0x00000418 CHAO_NAME_DAKKO_GLAD_LOOP
+pointer chao_motion_names 0x0000041c CHAO_NAME_DAKKO_GLAD_CLAP
+pointer chao_motion_names 0x00000420 CHAO_NAME_DAKKO_GLAD_CLAP_LOOP
+pointer chao_motion_names 0x00000424 CHAO_NAME_DAKKO_IYA
+pointer chao_motion_names 0x00000428 CHAO_NAME_DAKKO_IYA_LR
+pointer chao_motion_names 0x0000042c CHAO_NAME_DAKKO_IYA_UD
+pointer chao_motion_names 0x00000430 CHAO_NAME_DAKKO_IYA_HAND
+pointer chao_motion_names 0x00000434 CHAO_NAME_DAKKO_IYA_L
+pointer chao_motion_names 0x00000438 CHAO_NAME_DAKKO_IYA_R
+pointer chao_motion_names 0x0000043c CHAO_NAME_THROWN
+pointer chao_motion_names 0x00000440 CHAO_NAME_THROWN_FALL
+pointer chao_motion_names 0x00000444 CHAO_NAME_THROWN_LAND
+pointer chao_motion_names 0x00000448 CHAO_NAME_FUTTOBU
+pointer chao_motion_names 0x0000044c CHAO_NAME_CRASH
+pointer chao_motion_names 0x00000450 CHAO_NAME_PIYO
+pointer chao_motion_names 0x00000454 CHAO_NAME_PIYO_LOOP
+pointer chao_motion_names 0x00000458 CHAO_NAME_PIYO_END
+pointer chao_motion_names 0x0000045c CHAO_NAME_URUSAI
+pointer chao_motion_names 0x00000460 CHAO_NAME_KAOARAU
+pointer chao_motion_names 0x00000464 CHAO_NAME_KAOARAU_LOOP
+pointer chao_motion_names 0x00000468 CHAO_NAME_DRAMING
+pointer chao_motion_names 0x0000046c CHAO_NAME_DRAMING_LOOP
+pointer chao_motion_names 0x00000470 CHAO_NAME_DRAMING_WOO
+pointer chao_motion_names 0x00000474 CHAO_NAME_FIRE
+pointer chao_motion_names 0x00000478 CHAO_NAME_FIRE2
+pointer chao_motion_names 0x0000047c CHAO_NAME_FIRE3
+pointer chao_motion_names 0x00000480 CHAO_NAME_TOGU
+pointer chao_motion_names 0x00000484 CHAO_NAME_UTAU_HIDARI
+pointer chao_motion_names 0x00000488 CHAO_NAME_UTAU_HIDARI2
+pointer chao_motion_names 0x0000048c CHAO_NAME_UTAU_MIGI
+pointer chao_motion_names 0x00000490 CHAO_NAME_UTAU_MIGI2
+pointer chao_motion_names 0x00000494 CHAO_NAME_UTAU_LEFT
+pointer chao_motion_names 0x00000498 CHAO_NAME_UTAU_LEFT2
+pointer chao_motion_names 0x0000049c CHAO_NAME_UTAU_RIGHT
+pointer chao_motion_names 0x000004a0 CHAO_NAME_UTAU_RIGHT2
+pointer chao_motion_names 0x000004a4 CHAO_NAME_BOXING1
+pointer chao_motion_names 0x000004a8 CHAO_NAME_BOXING2
+pointer chao_motion_names 0x000004ac CHAO_NAME_SUMO_HAKKEYOI
+pointer chao_motion_names 0x000004b0 CHAO_NAME_SUMO_NOKOTTA
+pointer chao_motion_names 0x000004b4 CHAO_NAME_SUMO_DOSUKOI
+pointer chao_motion_names 0x000004b8 CHAO_NAME_ONARA
+pointer chao_motion_names 0x000004bc CHAO_NAME_BAKUTEN
+pointer chao_motion_names 0x000004c0 CHAO_NAME_BAKUTEN_AIR
+pointer chao_motion_names 0x000004c4 CHAO_NAME_BAKUTEN_LAND
+pointer chao_motion_names 0x000004c8 CHAO_NAME_DENGURI
+pointer chao_motion_names 0x000004cc CHAO_NAME_DENGURI_LOOP
+pointer chao_motion_names 0x000004d0 CHAO_NAME_DENGURI_END
+pointer chao_motion_names 0x000004d4 CHAO_NAME_PYONPYON
+pointer chao_motion_names 0x000004d8 CHAO_NAME_FUKKIN
+pointer chao_motion_names 0x000004dc CHAO_NAME_FUKKIN_LOOP
+pointer chao_motion_names 0x000004e0 CHAO_NAME_TAISOU
+pointer chao_motion_names 0x000004e4 CHAO_NAME_TAISOU_YOKO
+pointer chao_motion_names 0x000004e8 CHAO_NAME_TAISOU_YOKO2KOKI
+pointer chao_motion_names 0x000004ec CHAO_NAME_TAISOU_KOKI_R
+pointer chao_motion_names 0x000004f0 CHAO_NAME_TAISOU_KOKI_L
+pointer chao_motion_names 0x000004f4 CHAO_NAME_TAISOU_MAE
+pointer chao_motion_names 0x000004f8 CHAO_NAME_ON_YOUR_MARK
+pointer chao_motion_names 0x000004fc CHAO_NAME_READY
+pointer chao_motion_names 0x00000500 CHAO_NAME_GO
+pointer chao_motion_names 0x00000504 CHAO_NAME_GOROGORO
+pointer chao_motion_names 0x00000508 CHAO_NAME_GOROGORO_LOOP
+pointer chao_motion_names 0x0000050c CHAO_NAME_RAKUGAKI_JYUNBI
+pointer chao_motion_names 0x00000510 CHAO_NAME_RAKUGAKI_JYUNBI2
+pointer chao_motion_names 0x00000514 CHAO_NAME_RAKUGAKI
+pointer chao_motion_names 0x00000518 CHAO_NAME_SYABON_JYABU
+pointer chao_motion_names 0x0000051c CHAO_NAME_SYABON_FUU
+pointer chao_motion_names 0x00000520 CHAO_NAME_DOLL_YOSHIYOSHI
+pointer chao_motion_names 0x00000524 CHAO_NAME_DOLL_TAKAITAKAI
+pointer chao_motion_names 0x00000528 CHAO_NAME_GARAGARA
+pointer chao_motion_names 0x0000052c CHAO_NAME_HANABI
+pointer chao_motion_names 0x00000530 CHAO_NAME_HOPPING
+pointer chao_motion_names 0x00000534 CHAO_NAME_HOPPING_LOOP
+pointer chao_motion_names 0x00000538 CHAO_NAME_HOUKI
+pointer chao_motion_names 0x0000053c CHAO_NAME_MINICAR
+pointer chao_motion_names 0x00000540 CHAO_NAME_MINICAR_MIAGE
+pointer chao_motion_names 0x00000544 CHAO_NAME_BOOK_START
+pointer chao_motion_names 0x00000548 CHAO_NAME_BOOK_YOMU
+pointer chao_motion_names 0x0000054c CHAO_NAME_BOOK_MEKURI
+pointer chao_motion_names 0x00000550 CHAO_NAME_PIANO
+pointer chao_motion_names 0x00000554 CHAO_NAME_ORGAN
+pointer chao_motion_names 0x00000558 CHAO_NAME_HORSE_JUMP
+pointer chao_motion_names 0x0000055c CHAO_NAME_HORSE_AIR
+pointer chao_motion_names 0x00000560 CHAO_NAME_HORSE_START
+pointer chao_motion_names 0x00000564 CHAO_NAME_HORSE_YURAYURA
+pointer chao_motion_names 0x00000568 CHAO_NAME_HORSE_FINISH
+pointer chao_motion_names 0x0000056c CHAO_NAME_MARACAS_JUMP_A
+pointer chao_motion_names 0x00000570 CHAO_NAME_MARACAS_JUMP_B
+pointer chao_motion_names 0x00000574 CHAO_NAME_MARACAS_SHAKA_UP
+pointer chao_motion_names 0x00000578 CHAO_NAME_MARACAS_SHAKA_DOWN
+pointer chao_motion_names 0x0000057c CHAO_NAME_BELL_UP
+pointer chao_motion_names 0x00000580 CHAO_NAME_BELL_DOWN
+pointer chao_motion_names 0x00000584 CHAO_NAME_DRUM_LR
+pointer chao_motion_names 0x00000588 CHAO_NAME_DRUM_DOUBLE
+pointer chao_motion_names 0x0000058c CHAO_NAME_FUE_LR
+pointer chao_motion_names 0x00000590 CHAO_NAME_FUE_UD
+pointer chao_motion_names 0x00000594 CHAO_NAME_CASTANETS_WAIT
+pointer chao_motion_names 0x00000598 CHAO_NAME_CASTANETS_PON
+pointer chao_motion_names 0x0000059c CHAO_NAME_CASTANETS_PONPON
+pointer chao_motion_names 0x000005a0 CHAO_NAME_RAPPA_FB
+pointer chao_motion_names 0x000005a4 CHAO_NAME_RAPPA_UP
+pointer chao_motion_names 0x000005a8 CHAO_NAME_RAPPA_DOWN
+pointer chao_motion_names 0x000005ac CHAO_NAME_CYMBAL_WAIT
+pointer chao_motion_names 0x000005b0 CHAO_NAME_CYMBAL_PAN
+pointer chao_motion_names 0x000005b4 CHAO_NAME_CYMBAL_PANPAN
+pointer chao_motion_names 0x000005b8 CHAO_NAME_CYMBAL_PAPAPAN
+pointer chao_motion_names 0x000005bc CHAO_NAME_TAMBOURINE_PAN
+pointer chao_motion_names 0x000005c0 CHAO_NAME_TAMBOURINE_SHAKA
+pointer chao_motion_names 0x000005c4 CHAO_NAME_HAND_DANCE_UP
+pointer chao_motion_names 0x000005c8 CHAO_NAME_HAND_DANCE_UP2
+pointer chao_motion_names 0x000005cc CHAO_NAME_HAND_DANCE_DOWN
+pointer chao_motion_names 0x000005d0 CHAO_NAME_HAND_DANCE_DOWN2
+pointer chao_motion_names 0x000005d4 CHAO_NAME_HAND_DANCE_RIGHT
+pointer chao_motion_names 0x000005d8 CHAO_NAME_HAND_DANCE_RIGHT2
+pointer chao_motion_names 0x000005dc CHAO_NAME_HAND_DANCE_LEFT
+pointer chao_motion_names 0x000005e0 CHAO_NAME_HAND_DANCE_LEFT2
+pointer chao_motion_names 0x000005e4 CHAO_NAME_ROUND_DANCE_LEFT
+pointer chao_motion_names 0x000005e8 CHAO_NAME_ROUND_DANCE_LEFT2
+pointer chao_motion_names 0x000005ec CHAO_NAME_ROUND_DANCE_RIHGT
+pointer chao_motion_names 0x000005f0 CHAO_NAME_ROUND_DANCE_RIGHT2
+pointer chao_motion_names 0x000005f4 CHAO_NAME_ROUND_DANCE_LEFT_TURN
+pointer chao_motion_names 0x000005f8 CHAO_NAME_ROUND_DANCE_RIHGT_TURN
+pointer chao_motion_names 0x000005fc CHAO_NAME_MUSIC_STAND
+pointer chao_motion_names 0x00000600 CHAO_NAME_MUSIC_STAND_LOOP
+pointer chao_motion_names 0x00000604 CHAO_NAME_MUSIC_SIT
+pointer chao_motion_names 0x00000608 CHAO_NAME_MUSIC_SIT_LOOP
+pointer chao_motion_names 0x0000060c CHAO_NAME_BOX_DANCE
+pointer chao_motion_names 0x00000610 CHAO_NAME_GOGO_DANCE
+pointer chao_motion_names 0x00000614 CHAO_NAME_GOGO_DANCE2
+pointer chao_motion_names 0x00000618 CHAO_NAME_GOGO_DANCE3
+pointer chao_motion_names 0x0000061c CHAO_NAME_HIP_DANCE
+pointer chao_motion_names 0x00000620 CHAO_NAME_OTETE_L_WALK
+pointer chao_motion_names 0x00000624 CHAO_NAME_OTETE_L_NE
+pointer chao_motion_names 0x00000628 CHAO_NAME_OTETE_R_WALK
+pointer chao_motion_names 0x0000062c CHAO_NAME_OTETE_R_NE
+pointer chao_motion_names 0x00000630 CHAO_NAME_OJIGI
+pointer chao_motion_names 0x00000634 CHAO_NAME_HELLO
+pointer chao_motion_names 0x00000638 CHAO_NAME_GIVEME_P
+pointer chao_motion_names 0x0000063c CHAO_NAME_GIVEME_P_NE
+pointer chao_motion_names 0x00000640 CHAO_NAME_SURISURI
+pointer chao_motion_names 0x00000644 CHAO_NAME_AGERU
+pointer chao_motion_names 0x00000648 CHAO_NAME_AKUSYU
+pointer chao_motion_names 0x0000064c CHAO_NAME_AKUSYU_LOOP
+pointer chao_motion_names 0x00000650 CHAO_NAME_HISOHISO_L_LOOP
+pointer chao_motion_names 0x00000654 CHAO_NAME_HISOHISO_L_CHIRA
+pointer chao_motion_names 0x00000658 CHAO_NAME_MOGOMOGO_L_LOOP
+pointer chao_motion_names 0x0000065c CHAO_NAME_MOGOMOGO_L_CHIRA
+pointer chao_motion_names 0x00000660 CHAO_NAME_HISOHISO_R_LOOP
+pointer chao_motion_names 0x00000664 CHAO_NAME_HISOHISO_R_CHIRA
+pointer chao_motion_names 0x00000668 CHAO_NAME_MOGOMOGO_R_LOOP
+pointer chao_motion_names 0x0000066c CHAO_NAME_MOGOMOGO_R_CHIRA
+pointer chao_motion_names 0x00000670 CHAO_NAME_HOUYOU
+pointer chao_motion_names 0x00000674 CHAO_NAME_HOUYOU_LOOP
+pointer chao_motion_names 0x00000678 CHAO_NAME_NADERU
+pointer chao_motion_names 0x0000067c CHAO_NAME_NEE_L
+pointer chao_motion_names 0x00000680 CHAO_NAME_NEE_R
+pointer chao_motion_names 0x00000684 CHAO_NAME_NEE_P_L
+pointer chao_motion_names 0x00000688 CHAO_NAME_NEE_P_R
+pointer chao_motion_names 0x0000068c CHAO_NAME_NOZOKU_L
+pointer chao_motion_names 0x00000690 CHAO_NAME_NOZOKU_L_LOOP
+pointer chao_motion_names 0x00000694 CHAO_NAME_NOZOKU_R
+pointer chao_motion_names 0x00000698 CHAO_NAME_NOZOKU_R_LOOP
+pointer chao_motion_names 0x0000069c CHAO_NAME_HI
+pointer chao_motion_names 0x000006a0 CHAO_NAME_WATAWATA_TALK
+pointer chao_motion_names 0x000006a4 CHAO_NAME_SIT_TALK
+pointer chao_motion_names 0x000006a8 CHAO_NAME_SIT_TALK_WAHAHA
+pointer chao_motion_names 0x000006ac CHAO_NAME_SIT_TALK_WATAWATA
+pointer chao_motion_names 0x000006b0 CHAO_NAME_SIT_TALK_DARO
+pointer chao_motion_names 0x000006b4 CHAO_NAME_SIT_TALK_YADA
+pointer chao_motion_names 0x000006b8 CHAO_NAME_SIT_TALK_KUSUKUSU
+pointer chao_motion_names 0x000006bc CHAO_NAME_SIT_TALK_OITOITE
+pointer chao_motion_names 0x000006c0 CHAO_NAME_STAND_TALK
+pointer chao_motion_names 0x000006c4 CHAO_NAME_STAND_TALK_WAHAHA
+pointer chao_motion_names 0x000006c8 CHAO_NAME_STAND_TALK_WATAWATA
+pointer chao_motion_names 0x000006cc CHAO_NAME_STAND_TALK_DARO
+pointer chao_motion_names 0x000006d0 CHAO_NAME_STAND_TALK_YADA
+pointer chao_motion_names 0x000006d4 CHAO_NAME_STAND_TALK_KUSUKUSU
+pointer chao_motion_names 0x000006d8 CHAO_NAME_STAND_TALK_OITOITE
+pointer chao_motion_names 0x000006dc CHAO_NAME_UNAZUKU
+pointer chao_motion_names 0x000006e0 CHAO_NAME_UNAZUKU2
+pointer chao_motion_names 0x000006e4 CHAO_NAME_PUNCH
+pointer chao_motion_names 0x000006e8 CHAO_NAME_PUNCH_YARARE
+pointer chao_motion_names 0x000006ec CHAO_NAME_GENKOTU
+pointer chao_motion_names 0x000006f0 CHAO_NAME_GENKOTU_YARARE
+pointer chao_motion_names 0x000006f4 CHAO_NAME_KICK
+pointer chao_motion_names 0x000006f8 CHAO_NAME_KICK_YARARE
+pointer chao_motion_names 0x000006fc CHAO_NAME_AKANBE
+pointer chao_motion_names 0x00000700 CHAO_NAME_AKANBE2
+pointer chao_motion_names 0x00000704 CHAO_NAME_ODOROKASU
+pointer chao_motion_names 0x00000708 CHAO_NAME_PUI
+pointer chao_motion_names 0x0000070c CHAO_NAME_POKAPOKA
+pointer chao_motion_names 0x00000710 CHAO_NAME_IGAMI
+pointer chao_motion_names 0x00000714 CHAO_NAME_IGAMI_LOOP
+pointer chao_motion_names 0x00000718 CHAO_NAME_PANPAN
+pointer chao_motion_names 0x0000071c CHAO_NAME_PANPAN_LOOP
+pointer chao_motion_names 0x00000720 CHAO_NAME_PANPAN_END
+pointer chao_motion_names 0x00000724 CHAO_NAME_SENOBI
+pointer chao_motion_names 0x00000728 CHAO_NAME_SENOBI_END
+pointer chao_motion_names 0x0000072c CHAO_NAME_LAUGH_SIT
+pointer chao_motion_names 0x00000730 CHAO_NAME_LAUGH_SIT_LOOP
+pointer chao_motion_names 0x00000734 CHAO_NAME_LAUGH_STAND
+pointer chao_motion_names 0x00000738 CHAO_NAME_LAUGH_STAND_LOOP
+pointer chao_motion_names 0x0000073c CHAO_NAME_GLAD_STAND
+pointer chao_motion_names 0x00000740 CHAO_NAME_GLAD_STAND_LOOP
+pointer chao_motion_names 0x00000744 CHAO_NAME_BAKUSYOU_ALL
+pointer chao_motion_names 0x00000748 CHAO_NAME_BAKUSYOU
+pointer chao_motion_names 0x0000074c CHAO_NAME_BAKUSYOU_KORAE
+pointer chao_motion_names 0x00000750 CHAO_NAME_HASYAGU_JUMP
+pointer chao_motion_names 0x00000754 CHAO_NAME_HASYAGU_PATA
+pointer chao_motion_names 0x00000758 CHAO_NAME_HASYAGU_LAND
+pointer chao_motion_names 0x0000075c CHAO_NAME_KUSUKUSU_SIT
+pointer chao_motion_names 0x00000760 CHAO_NAME_KUSUKUSU_SIT_LOOP
+pointer chao_motion_names 0x00000764 CHAO_NAME_KUSUKUSU_STAND_A
+pointer chao_motion_names 0x00000768 CHAO_NAME_KUSUKUSU_STAND_A_LOOP
+pointer chao_motion_names 0x0000076c CHAO_NAME_KUSUKUSU_STAND_B
+pointer chao_motion_names 0x00000770 CHAO_NAME_DADA
+pointer chao_motion_names 0x00000774 CHAO_NAME_MOJIMOJI
+pointer chao_motion_names 0x00000778 CHAO_NAME_MOJIMOJI_LOOKUP
+pointer chao_motion_names 0x0000077c CHAO_NAME_MOJIMOJI_LOOKUP_END
+pointer chao_motion_names 0x00000780 CHAO_NAME_JIDANDA
+pointer chao_motion_names 0x00000784 CHAO_NAME_ATAFUTA
+pointer chao_motion_names 0x00000788 CHAO_NAME_ATAFUTA_LOOP
+pointer chao_motion_names 0x0000078c CHAO_NAME_IYAIYA_A
+pointer chao_motion_names 0x00000790 CHAO_NAME_IYAIYA_B
+pointer chao_motion_names 0x00000794 CHAO_NAME_BUTUBUTU_FUGA
+pointer chao_motion_names 0x00000798 CHAO_NAME_BUTUBUTU_ASHIBUMI
+pointer chao_motion_names 0x0000079c CHAO_NAME_GAKKARI
+pointer chao_motion_names 0x000007a0 CHAO_NAME_FURAFURA
+pointer chao_motion_names 0x000007a4 CHAO_NAME_FURAFURA_LOOP
+pointer chao_motion_names 0x000007a8 CHAO_NAME_GUTTARI_STAND
+pointer chao_motion_names 0x000007ac CHAO_NAME_GUTTARI_STAND_LOOP
+pointer chao_motion_names 0x000007b0 CHAO_NAME_BANZAI_JUMP
+pointer chao_motion_names 0x000007b4 CHAO_NAME_IJIKE_SIT
+pointer chao_motion_names 0x000007b8 CHAO_NAME_IJIKE_SIT_LOOP
+pointer chao_motion_names 0x000007bc CHAO_NAME_IJIKE_SIT_HEAD
+pointer chao_motion_names 0x000007c0 CHAO_NAME_IJIKE_SIT_HEAD_LOOP
+pointer chao_motion_names 0x000007c4 CHAO_NAME_BURUBURU
+pointer chao_motion_names 0x000007c8 CHAO_NAME_BURUBURU_AGO
+pointer chao_motion_names 0x000007cc CHAO_NAME_BURUBURU_AGO2KUCHI
+pointer chao_motion_names 0x000007d0 CHAO_NAME_BURUBURU_KUCHI2AGO
+pointer chao_motion_names 0x000007d4 CHAO_NAME_BURUBURU_KUCHI
+pointer chao_motion_names 0x000007d8 CHAO_NAME_TAMEIKI_STAND
+pointer chao_motion_names 0x000007dc CHAO_NAME_TAMEIKI_STAND_LOOP
+pointer chao_motion_names 0x000007e0 CHAO_NAME_TAMEIKI_STAND_END
+pointer chao_motion_names 0x000007e4 CHAO_NAME_TAMEIKI_SIT
+pointer chao_motion_names 0x000007e8 CHAO_NAME_TAMEIKI_SIT_LOOP
+pointer chao_motion_names 0x000007ec CHAO_NAME_TAMEIKI_SIT_END
+pointer chao_motion_names 0x000007f0 CHAO_NAME_NO
+pointer chao_motion_names 0x000007f4 CHAO_NAME_NO_END
+pointer chao_motion_names 0x000007f8 CHAO_NAME_EHHEN_STAND
+pointer chao_motion_names 0x000007fc CHAO_NAME_EHHEN_STAND_END
+pointer chao_motion_names 0x00000800 CHAO_NAME_EHHEN_WALK
+pointer chao_motion_names 0x00000804 CHAO_NAME_IRANAI
+pointer chao_motion_names 0x00000808 CHAO_NAME_IRANAI_END
+pointer chao_motion_names 0x0000080c CHAO_NAME_ANGRY_STAND
+pointer chao_motion_names 0x00000810 CHAO_NAME_ANGRY_STAND_LOOP
+pointer chao_motion_names 0x00000814 CHAO_NAME_ANGRY_STAND_END
+pointer chao_motion_names 0x00000818 CHAO_NAME_BIKU
+pointer chao_motion_names 0x0000081c CHAO_NAME_JUMP_BIKU
+pointer chao_motion_names 0x00000820 CHAO_NAME_ATOZUSARI
+pointer chao_motion_names 0x00000824 CHAO_NAME_ATOZUSARI_LOOP
+pointer chao_motion_names 0x00000828 CHAO_NAME_ATOZUSARI_BURUBURU
+pointer chao_motion_names 0x0000082c CHAO_NAME_CRY_STAND_START
+pointer chao_motion_names 0x00000830 CHAO_NAME_CRY_STAND_HIKKUHIKKU
+pointer chao_motion_names 0x00000834 CHAO_NAME_CRY_STAND_HIKKU2SHIKU
+pointer chao_motion_names 0x00000838 CHAO_NAME_CRY_STAND_SHIKUSHIKU
+pointer chao_motion_names 0x0000083c CHAO_NAME_CRY_STAND_MESOMESO
+pointer chao_motion_names 0x00000840 CHAO_NAME_CRY_SIT_START
+pointer chao_motion_names 0x00000844 CHAO_NAME_CRY_SIT_HIKKUHIKKU
+pointer chao_motion_names 0x00000848 CHAO_NAME_CRY_SIT_HEAD
+pointer chao_motion_names 0x0000084c CHAO_NAME_CRY_SIT_SHIKUSHIKU
+pointer chao_motion_names 0x00000850 CHAO_NAME_CRY_SIT_MESOMESO
+pointer chao_motion_names 0x00000854 CHAO_NAME_CRY_SIT_JITABATA
+pointer chao_motion_names 0x00000858 CHAO_NAME_CRY_WALK_A
+pointer chao_motion_names 0x0000085c CHAO_NAME_CRY_WALK_A2B
+pointer chao_motion_names 0x00000860 CHAO_NAME_CRY_WALK_B
+pointer chao_motion_names 0x00000864 CHAO_NAME_CRY_WALK_B2A
+pointer chao_motion_names 0x00000868 CHAO_NAME_NAKU_START
+pointer chao_motion_names 0x0000086c CHAO_NAME_NAKU_UD
+pointer chao_motion_names 0x00000870 CHAO_NAME_NAKU_LR
+pointer chao_motion_names 0x00000874 CHAO_NAME_NAKU_LOOKUP
+pointer chao_motion_names 0x00000878 CHAO_NAME_NAKU_LOOKUP_END
+pointer chao_motion_names 0x0000087c CHAO_NAME_NAKU_END
+pointer chao_motion_names 0x00000880 CHAO_NAME_MESO_STAND_START
+pointer chao_motion_names 0x00000884 CHAO_NAME_MESO_STAND_HIKKU
+pointer chao_motion_names 0x00000888 CHAO_NAME_MESO_STAND_MEKOSURI
+pointer chao_motion_names 0x0000088c CHAO_NAME_MESO_STAND_MEKOSURI_HIKKU
+pointer chao_motion_names 0x00000890 CHAO_NAME_MESO_STAND_HIKKU_TATE
+pointer chao_motion_names 0x00000894 CHAO_NAME_MESO_SIT_START
+pointer chao_motion_names 0x00000898 CHAO_NAME_MESO_SIT_HIKKU
+pointer chao_motion_names 0x0000089c CHAO_NAME_MESO_SIT_MEKOSURI
+pointer chao_motion_names 0x000008a0 CHAO_NAME_MESO_SIT_MEKOSURI_HIKKU
+pointer chao_motion_names 0x000008a4 CHAO_NAME_MESO_SIT_HIKKU_TATE
+pointer chao_motion_names 0x000008a8 CHAO_NAME_TERE_MOJIMOJI
+pointer chao_motion_names 0x000008ac CHAO_NAME_TERE_MOJIMOJI_LOOP
+pointer chao_motion_names 0x000008b0 CHAO_NAME_TERE_MOJI2PORI
+pointer chao_motion_names 0x000008b4 CHAO_NAME_TERE_PORIPORI_LOOP
+pointer chao_motion_names 0x000008b8 CHAO_NAME_TERE_PORI2EHE
+pointer chao_motion_names 0x000008bc CHAO_NAME_TERE_EHE
+pointer chao_motion_names 0x000008c0 CHAO_NAME_ITAI_PIYO
+pointer chao_motion_names 0x000008c4 CHAO_NAME_ITAI_PITO2HEAD
+pointer chao_motion_names 0x000008c8 CHAO_NAME_ITAI_BURUBURU
+pointer chao_motion_names 0x000008cc CHAO_NAME_ITAI_ATAMAPONPON
+pointer chao_motion_names 0x000008d0 CHAO_NAME_ITAI_KOSHIPONPON
+pointer chao_motion_names 0x000008d4 CHAO_NAME_KUSAI
+pointer chao_motion_names 0x000008d8 CHAO_NAME_KUSAI_BURUBURU
+pointer chao_motion_names 0x000008dc CHAO_NAME_KUSAI_BURUBURU_END
+pointer chao_motion_names 0x000008e0 CHAO_NAME_KUSAI_BATAN
+pointer chao_motion_names 0x000008e4 CHAO_NAME_KUSAI_KYUU
+pointer chao_motion_names 0x000008e8 CHAO_NAME_IRAIRA_HAND
+pointer chao_motion_names 0x000008ec CHAO_NAME_IRAIRA_FOOT
+pointer chao_motion_names 0x000008f0 CHAO_NAME_IRAIRA_B
+pointer chao_motion_names 0x000008f4 CHAO_NAME_HAKUSYU_SIT
+pointer chao_motion_names 0x000008f8 CHAO_NAME_HAKUSYU_STAND
+pointer chao_motion_names 0x000008fc CHAO_NAME_TAIL

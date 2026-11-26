@@ -1,0 +1,11 @@
+text  ROAD_TEXTURE_MIU64_RH007  C  0x00000018  12
+text  ROAD_TEXTURE_MIU64_RH013  C  0x00000024  12
+datum  pulsing_light_textures  D  0x00000000  12
+datum  pulsing_light_texlist  D  0x0000000c  8
+datum  pulsing_light_polygons  D  0x00000014  166
+datum  pulsing_light_vertices  D  0x000000bc  284
+datum  pulsing_light_model  D  0x000001d8  24
+datum  pulsing_light_object  D  0x000001f0  52
+datum  pulsing_light_glow_textures  D  0x00000224  12
+datum  pulsing_light_glow_texlist  D  0x00000230  8
+datum  highway_pulsing_light_texlists  D  0x00000238  12

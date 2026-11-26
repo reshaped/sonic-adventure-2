@@ -1,0 +1,6 @@
+datum  textures  D  0x00000000  36
+datum  store_box_green_texlist  D  0x00000024  8
+datum  store_box_green_polygons  D  0x0000002c  746
+datum  store_box_green_vertices  D  0x00000318  1372
+datum  store_box_green_model  D  0x00000874  24
+datum  store_box_green_object  D  0x0000088c  52

@@ -1,0 +1,7 @@
+datum  luminance  DSG  0x00000000  256
+datum  alpha3  DSG  0x00000100  256
+datum  alpha5  DSG  0x00000200  256
+datum  spread_bits  DSG  0x00000300  128
+datum  tile_steps  DSG  0x00000380  256
+datum  alpha3_luma  DSG  0x00000480  256
+datum  alpha5_luma  DSG  0x00000580  256

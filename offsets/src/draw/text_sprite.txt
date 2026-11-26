@@ -1,0 +1,11 @@
+datum  shadow_corners  D  0x000000e0  16
+datum  sprite_corners  C  0x00000140  16
+datum  text_corners  C  0x00000150  16
+datum  kanji_widths  B  0x00000001  3423
+datum  ascii_widths  C  0x00000000  96
+datum  latin_widths  C  0x00000060  224
+datum  font_files  D  0x00000008  24
+datum  fonts  D  0x00000020  160
+text  KANJI_FONT_NAME  C  0x0000017c  22
+text  LATIN_FONT_NAME  C  0x00000194  23
+text  ASCII_FONT_NAME  C  0x000001ac  23

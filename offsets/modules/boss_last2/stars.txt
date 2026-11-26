@@ -1,0 +1,2 @@
+text   STAR_TEXTURE  C  0x0000000c  7
+datum  star_name  D  0x00000000  12

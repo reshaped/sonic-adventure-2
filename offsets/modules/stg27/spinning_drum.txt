@@ -1,0 +1,16 @@
+text  COLONY_TEXT_MIU256_CG006  C  0x00000018  13
+text  COLONY_TEXT_MIU128_CG009  C  0x00000028  13
+text  COLONY_TEXT_MIU128_CG010  C  0x00000038  13
+text  COLONY_TEXT_MIU128_CG017  C  0x00000048  13
+text  COLONY_TEXT_MIU256_CG001  C  0x00000058  13
+text  COLONY_TEXT_MIU256_CG004  C  0x00000068  13
+text  COLONY_TEXT_MIU64_CG004  C  0x00000078  12
+text  COLONY_TEXT_MIU64_CG009  C  0x00000084  12
+text  COLONY_TEXT_MIU64_CG020  C  0x00000090  12
+datum  spinning_drum_names  D  0x00000000  108
+datum  spinning_drum_texlist  D  0x0000006c  8
+datum  spinning_drum_polygons  D  0x00000074  1114
+datum  spinning_drum_vertices  D  0x000004d0  2108
+datum  spinning_drum_model  D  0x00000d0c  24
+datum  spinning_drum_object  D  0x00000d24  52
+datum  spinning_drum_texlists  D  0x00000d58  8

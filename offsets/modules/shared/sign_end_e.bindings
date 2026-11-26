@@ -1,0 +1,13 @@
+text  SIGN_END_E_TEXTURE_MIU32_FR007  12
+text  SIGN_END_E_TEXTURE_MIU32_FR006  12
+
+pointer  sign_end_e_textures  0x00000000  SIGN_END_E_TEXTURE_MIU32_FR007
+pointer  sign_end_e_texlist  0x00000000  sign_end_e_textures
+pointer  sign_end_e_2_textures  0x00000000  SIGN_END_E_TEXTURE_MIU32_FR006
+pointer  sign_end_e_2_texlist  0x00000000  sign_end_e_2_textures
+pointer  sign_end_e_mesh  0x00000000  sign_end_e_vertices
+pointer  sign_end_e_mesh  0x00000004  sign_end_e_polygons
+pointer  sign_end_e_object  0x00000004  sign_end_e_mesh
+pointer  sign_end_e_anim  0x00000010  sign_end_e_uvs
+pointer  sign_end_e_texlists  0x00000000  sign_end_e_texlist
+pointer  sign_end_e_texlists  0x00000004  sign_end_e_2_texlist

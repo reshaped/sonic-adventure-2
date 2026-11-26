@@ -1,0 +1,5 @@
+datum  halo_view  D  0x00000000  724
+datum  neutral_colors  D  0x000002d4  108
+datum  hero_colors  D  0x00000340  108
+datum  dark_colors  D  0x000003ac  108
+datum  dark_icon_frames  D  0x00000430  32

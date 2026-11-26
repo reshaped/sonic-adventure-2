@@ -1,0 +1,464 @@
+include  objtex_common
+include  efftex_common
+text  HIGHWAY_TEXT_MIU128_CE002  13
+text  HIGHWAY_TEXT_MIU128_MS001  13
+text  HIGHWAY_TEXT_MIU128_RH001  13
+text  HIGHWAY_TEXT_MIU128_RH002  13
+text  HIGHWAY_TEXT_MIU128_RH003  13
+text  HIGHWAY_TEXT_MIU128_RH004  13
+text  HIGHWAY_TEXT_MIU128_RH005  13
+text  HIGHWAY_TEXT_MIU128_RH006  13
+text  HIGHWAY_TEXT_MIU128_RH007  13
+text  HIGHWAY_TEXT_MIU128_RH008  13
+text  HIGHWAY_TEXT_MIU128_RH009  13
+text  HIGHWAY_TEXT_MIU128_RH010  13
+text  HIGHWAY_TEXT_MIU128_RH011  13
+text  HIGHWAY_TEXT_MIU128_RH012  13
+text  HIGHWAY_TEXT_MIU128_RH013  13
+text  HIGHWAY_TEXT_MIU128_RH014  13
+text  HIGHWAY_TEXT_MIU128_RH015  13
+text  HIGHWAY_TEXT_MIU256_RH001  13
+text  HIGHWAY_TEXT_MIU256_RH002  13
+text  HIGHWAY_TEXT_MIU32_RH001  12
+text  HIGHWAY_TEXT_MIU32_RH002  12
+text  HIGHWAY_TEXT_MIU32_RH003  12
+text  HIGHWAY_TEXT_MIU32_RH004  12
+text  HIGHWAY_TEXT_MIU32_RH005  12
+text  HIGHWAY_TEXT_MIU32_RH006  12
+text  HIGHWAY_TEXT_MIU32_RH007  12
+text  HIGHWAY_TEXT_MIU32_RH008  12
+text  HIGHWAY_TEXT_MIU32_RH009  12
+text  HIGHWAY_TEXT_MIU32_RH010  12
+text  HIGHWAY_TEXT_MIU64_CE003  12
+text  HIGHWAY_TEXT_MIU64_MS001  12
+text  HIGHWAY_TEXT_MIU64_MS002  12
+text  HIGHWAY_TEXT_MIU64_RH001  12
+text  HIGHWAY_TEXT_MIU64_RH002  12
+text  HIGHWAY_TEXT_MIU64_RH003  12
+text  HIGHWAY_TEXT_MIU64_RH004  12
+text  HIGHWAY_TEXT_MIU64_RH005  12
+text  HIGHWAY_TEXT_MIU64_RH006  12
+text  HIGHWAY_TEXT_MIU64_RH007  12
+text  HIGHWAY_TEXT_MIU64_RH008  12
+text  HIGHWAY_TEXT_MIU64_RH009  12
+text  HIGHWAY_TEXT_MIU64_RH010  12
+text  HIGHWAY_TEXT_MIU64_RH011  12
+text  HIGHWAY_TEXT_MIU64_RH012  12
+text  HIGHWAY_TEXT_MIU64_RH013  12
+text  HIGHWAY_TEXT_MIU64_RH014  12
+text  HIGHWAY_TEXT_MIU64_RH015  12
+text  HIGHWAY_TEXT_MIU64_RH016  12
+text  HIGHWAY_TEXT_MIU64_RH017  12
+text  HIGHWAY_TEXT_MIU64_RH018  12
+text  HIGHWAY_TEXT_MIU64_RH019  12
+text  HIGHWAY_TEXT_MIU64_RH020  12
+text  HIGHWAY_TEXT_MIU64_RH021  12
+text  HIGHWAY_TEXT_MIU64_RH022  12
+text  HIGHWAY_TEXT_PR128_37  9
+text  HIGHWAY_TEXT_SCITY64_16  11
+text  HIGHWAY_TEXT_OBJTEX_STG14  13
+text  HIGHWAY_TEXT_EFFTEX_COMMON  14
+text  HIGHWAY_TEXT_OBJTEX_COMMON  14
+text  HIGHWAY_TEXT_RING  8
+text  HIGHWAY_TEXT_RING_LINEAR  12
+text  HIGHWAY_TEXT_RING_CIRCLE  12
+text  HIGHWAY_TEXT_SPRA  8
+text  HIGHWAY_TEXT_SPRB  8
+text  HIGHWAY_TEXT_3SPRING  8
+text  HIGHWAY_TEXT_BIGJUMP  11
+text  HIGHWAY_TEXT_KASOKU  8
+text  HIGHWAY_TEXT_SAVEPOINT  10
+text  HIGHWAY_TEXT_SWITCH  10
+text  HIGHWAY_TEXT_ITEMBOX  11
+text  HIGHWAY_TEXT_ITEMBOXAIR  14
+text  HIGHWAY_TEXT_ITEMBOXBALLOON  15
+text  HIGHWAY_TEXT_LEVUPDAI  9
+text  HIGHWAY_TEXT_GOALRING  9
+text  HIGHWAY_TEXT_EMERALD  8
+text  HIGHWAY_TEXT_UDREEL  7
+text  HIGHWAY_TEXT_ORI  4
+text  HIGHWAY_TEXT_DYNAMITE  9
+text  HIGHWAY_TEXT_CONTWOOD  9
+text  HIGHWAY_TEXT_CONTIRON  9
+text  HIGHWAY_TEXT_ROCKET  10
+text  HIGHWAY_TEXT_ROCKETMISSSILE  15
+text  HIGHWAY_TEXT_SCHBOX  7
+text  HIGHWAY_TEXT_HINTBOX  8
+text  HIGHWAY_TEXT_MSGER  6
+text  HIGHWAY_TEXT_SSS  4
+text  HIGHWAY_TEXT_SOLIDBOX  9
+text  HIGHWAY_TEXT_DMYOBJ  7
+text  HIGHWAY_TEXT_SOAP_SW  8
+text  HIGHWAY_TEXT_SKULL  6
+text  HIGHWAY_TEXT_PSKULL  7
+text  HIGHWAY_TEXT_CHAOPIPE  9
+text  HIGHWAY_TEXT_MINIMAL  8
+text  HIGHWAY_TEXT_WSMMLS  7
+text  HIGHWAY_TEXT_CONTCHAO  9
+text  HIGHWAY_TEXT_STOPLSD  8
+text  HIGHWAY_TEXT_KNUDAI  7
+text  HIGHWAY_TEXT_KDASIBA  8
+text  HIGHWAY_TEXT_KDWARPHOLE  11
+text  HIGHWAY_TEXT_KDDOOR  7
+text  HIGHWAY_TEXT_KDITEMBOX  10
+text  HIGHWAY_TEXT_KDDRNGL  8
+text  HIGHWAY_TEXT_KDDRNGC  8
+text  HIGHWAY_TEXT_KDSPRING  9
+text  HIGHWAY_TEXT_KDSPRINGB  10
+text  HIGHWAY_TEXT_SPHERE  7
+text  HIGHWAY_TEXT_CCYL  5
+text  HIGHWAY_TEXT_CCUBE  6
+text  HIGHWAY_TEXT_CWALL  6
+text  HIGHWAY_TEXT_CCIRCLE  8
+text  HIGHWAY_TEXT_MODMOD  8
+text  HIGHWAY_TEXT_EFFOBJ0  8
+text  HIGHWAY_TEXT_EFLENSF0  9
+text  HIGHWAY_TEXT_BUNCHIN  8
+text  HIGHWAY_TEXT_IRONBALL2  10
+text  HIGHWAY_TEXT_E_KUMI  7
+text  HIGHWAY_TEXT_E_AI  5
+text  HIGHWAY_TEXT_TJUMPDAI  9
+text  HIGHWAY_TEXT_WIND  5
+text  HIGHWAY_TEXT_HAMMER  7
+text  HIGHWAY_TEXT_HAMMER2  8
+text  HIGHWAY_TEXT_E_SHOUKO  9
+text  HIGHWAY_TEXT_E_SW_SHOUKO  12
+text  HIGHWAY_TEXT_WIND2  6
+text  HIGHWAY_TEXT_IRONBAR  8
+text  HIGHWAY_TEXT_POLE  5
+text  HIGHWAY_TEXT_TOLLGATE  9
+text  HIGHWAY_TEXT_FORKED  7
+text  HIGHWAY_TEXT_RBLK  5
+text  HIGHWAY_TEXT_ROBJ  5
+text  HIGHWAY_TEXT_GLIGHT  7
+text  HIGHWAY_TEXT_AIRSHIP  8
+text  HIGHWAY_TEXT_NIGHTS  7
+text  HIGHWAY_TEXT_RLIGHT  7
+text  HIGHWAY_TEXT_LIGHT_SW  9
+text  HIGHWAY_TEXT_PANEL  6
+text  HIGHWAY_TEXT_FUN  4
+text  HIGHWAY_TEXT_ARROW  6
+text  HIGHWAY_TEXT_POSTER  7
+text  HIGHWAY_TEXT_LINKLINK  9
+text  HIGHWAY_TEXT_BIG_THE_CAT  12
+text  HIGHWAY_TEXT_ARROWH3  8
+text  HIGHWAY_TEXT_ROBJ_S  7
+text  HIGHWAY_TEXT_ROBJ_M  7
+text  HIGHWAY_TEXT_SCOL  5
+text  HIGHWAY_TEXT_SLANE  6
+text  HIGHWAY_TEXT_RBR  4
+text  HIGHWAY_TEXT_E_GOLD  7
+text  HIGHWAY_TEXT_SE_TOPPU  9
+text  HIGHWAY_TEXT_PIC  4
+text  HIGHWAY_TEXT_NOINPCOL  9
+pointer  stage_names  0x00000000  HIGHWAY_TEXT_MIU128_CE002
+pointer  stage_names  0x0000000c  HIGHWAY_TEXT_MIU128_MS001
+pointer  stage_names  0x00000018  HIGHWAY_TEXT_MIU128_RH001
+pointer  stage_names  0x00000024  HIGHWAY_TEXT_MIU128_RH002
+pointer  stage_names  0x00000030  HIGHWAY_TEXT_MIU128_RH003
+pointer  stage_names  0x0000003c  HIGHWAY_TEXT_MIU128_RH004
+pointer  stage_names  0x00000048  HIGHWAY_TEXT_MIU128_RH005
+pointer  stage_names  0x00000054  HIGHWAY_TEXT_MIU128_RH006
+pointer  stage_names  0x00000060  HIGHWAY_TEXT_MIU128_RH007
+pointer  stage_names  0x0000006c  HIGHWAY_TEXT_MIU128_RH008
+pointer  stage_names  0x00000078  HIGHWAY_TEXT_MIU128_RH009
+pointer  stage_names  0x00000084  HIGHWAY_TEXT_MIU128_RH010
+pointer  stage_names  0x00000090  HIGHWAY_TEXT_MIU128_RH011
+pointer  stage_names  0x0000009c  HIGHWAY_TEXT_MIU128_RH012
+pointer  stage_names  0x000000a8  HIGHWAY_TEXT_MIU128_RH013
+pointer  stage_names  0x000000b4  HIGHWAY_TEXT_MIU128_RH014
+pointer  stage_names  0x000000c0  HIGHWAY_TEXT_MIU128_RH015
+pointer  stage_names  0x000000cc  HIGHWAY_TEXT_MIU256_RH001
+pointer  stage_names  0x000000d8  HIGHWAY_TEXT_MIU256_RH002
+pointer  stage_names  0x000000e4  HIGHWAY_TEXT_MIU32_RH001
+pointer  stage_names  0x000000f0  HIGHWAY_TEXT_MIU32_RH002
+pointer  stage_names  0x000000fc  HIGHWAY_TEXT_MIU32_RH003
+pointer  stage_names  0x00000108  HIGHWAY_TEXT_MIU32_RH004
+pointer  stage_names  0x00000114  HIGHWAY_TEXT_MIU32_RH005
+pointer  stage_names  0x00000120  HIGHWAY_TEXT_MIU32_RH006
+pointer  stage_names  0x0000012c  HIGHWAY_TEXT_MIU32_RH007
+pointer  stage_names  0x00000138  HIGHWAY_TEXT_MIU32_RH008
+pointer  stage_names  0x00000144  HIGHWAY_TEXT_MIU32_RH009
+pointer  stage_names  0x00000150  HIGHWAY_TEXT_MIU32_RH010
+pointer  stage_names  0x0000015c  HIGHWAY_TEXT_MIU64_CE003
+pointer  stage_names  0x00000168  HIGHWAY_TEXT_MIU64_MS001
+pointer  stage_names  0x00000174  HIGHWAY_TEXT_MIU64_MS002
+pointer  stage_names  0x00000180  HIGHWAY_TEXT_MIU64_RH001
+pointer  stage_names  0x0000018c  HIGHWAY_TEXT_MIU64_RH002
+pointer  stage_names  0x00000198  HIGHWAY_TEXT_MIU64_RH003
+pointer  stage_names  0x000001a4  HIGHWAY_TEXT_MIU64_RH004
+pointer  stage_names  0x000001b0  HIGHWAY_TEXT_MIU64_RH005
+pointer  stage_names  0x000001bc  HIGHWAY_TEXT_MIU64_RH006
+pointer  stage_names  0x000001c8  HIGHWAY_TEXT_MIU64_RH007
+pointer  stage_names  0x000001d4  HIGHWAY_TEXT_MIU64_RH008
+pointer  stage_names  0x000001e0  HIGHWAY_TEXT_MIU64_RH009
+pointer  stage_names  0x000001ec  HIGHWAY_TEXT_MIU64_RH010
+pointer  stage_names  0x000001f8  HIGHWAY_TEXT_MIU64_RH011
+pointer  stage_names  0x00000204  HIGHWAY_TEXT_MIU64_RH012
+pointer  stage_names  0x00000210  HIGHWAY_TEXT_MIU64_RH013
+pointer  stage_names  0x0000021c  HIGHWAY_TEXT_MIU64_RH014
+pointer  stage_names  0x00000228  HIGHWAY_TEXT_MIU64_RH015
+pointer  stage_names  0x00000234  HIGHWAY_TEXT_MIU64_RH016
+pointer  stage_names  0x00000240  HIGHWAY_TEXT_MIU64_RH017
+pointer  stage_names  0x0000024c  HIGHWAY_TEXT_MIU64_RH018
+pointer  stage_names  0x00000258  HIGHWAY_TEXT_MIU64_RH019
+pointer  stage_names  0x00000264  HIGHWAY_TEXT_MIU64_RH020
+pointer  stage_names  0x00000270  HIGHWAY_TEXT_MIU64_RH021
+pointer  stage_names  0x0000027c  HIGHWAY_TEXT_MIU64_RH022
+pointer  stage_names  0x00000288  HIGHWAY_TEXT_PR128_37
+pointer  stage_names  0x00000294  HIGHWAY_TEXT_SCITY64_16
+pointer  stage_archive  0x00000000  stage_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  radical_highway_texture_groups  0x00000000  stage_textures
+pointer  radical_highway_texture_groups  0x00000004  goal_ring_texlists
+pointer  radical_highway_texture_groups  0x00000008  emerald_texlists
+pointer  radical_highway_texture_groups  0x0000000c  item_box_texlists
+pointer  radical_highway_texture_groups  0x00000010  item_box_air_texlists
+pointer  radical_highway_texture_groups  0x00000014  weight_texlists
+pointer  radical_highway_texture_groups  0x00000018  iron_ball_texlists
+pointer  radical_highway_texture_groups  0x0000001c  triple_spring_texlists
+pointer  radical_highway_texture_groups  0x00000020  dynamite_texlists
+pointer  radical_highway_texture_groups  0x00000024  reel_texlists
+pointer  radical_highway_texture_groups  0x00000028  chao_pipe_texlists
+pointer  radical_highway_texture_groups  0x0000002c  cage_texlists
+pointer  radical_highway_texture_groups  0x00000030  wood_box_texlists
+pointer  radical_highway_texture_groups  0x00000034  iron_box_texlists
+pointer  radical_highway_texture_groups  0x00000038  upgrade_texlists
+pointer  radical_highway_texture_groups  0x0000003c  missile_texlists
+pointer  radical_highway_texture_groups  0x00000040  skull_texlists
+pointer  radical_highway_texture_groups  0x00000044  rocket_texlists
+pointer  radical_highway_texture_groups  0x00000048  search_box_texlists
+pointer  radical_highway_texture_groups  0x0000004c  hint_box_texlists
+pointer  radical_highway_texture_groups  0x00000050  knudai_texlists
+pointer  radical_highway_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  radical_highway_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  radical_highway_texture_groups  0x0000005c  knudai_door_texlists
+pointer  radical_highway_texture_groups  0x00000060  chao_box_texlists
+pointer  radical_highway_texture_groups  0x00000064  chao_key_texlists
+pointer  radical_highway_texture_groups  0x00000068  object_effect_texlists
+pointer  radical_highway_texture_groups  0x0000006c  messenger_texlists
+pointer  radical_highway_texture_groups  0x00000070  ring_effect_texlists
+pointer  radical_highway_texture_groups  0x00000074  highway_hammer_texlists
+pointer  radical_highway_texture_groups  0x00000078  spinning_hammer_texlists
+pointer  radical_highway_texture_groups  0x0000007c  highway_ramp_texlists
+pointer  radical_highway_texture_groups  0x00000080  highway_iron_bar_texlists
+pointer  radical_highway_texture_groups  0x00000084  highway_scenery_texlists
+pointer  radical_highway_texture_groups  0x00000088  highway_prop_texlists
+pointer  radical_highway_texture_groups  0x0000008c  highway_glow_light_texlists
+pointer  radical_highway_texture_groups  0x00000090  airship_texlists
+pointer  radical_highway_texture_groups  0x00000094  nights_texlists
+pointer  radical_highway_texture_groups  0x00000098  solid_box_texlists
+pointer  radical_highway_texture_groups  0x0000009c  chase_light_texlists
+pointer  radical_highway_texture_groups  0x000000a0  highway_pulsing_light_texlists
+pointer  radical_highway_texture_groups  0x000000a4  highway_pole_texlists
+pointer  radical_highway_texture_groups  0x000000a8  highway_fan_texlists
+pointer  radical_highway_texture_groups  0x000000ac  highway_arrow_texlists
+pointer  radical_highway_texture_groups  0x000000b0  highway_poster_texlists
+pointer  radical_highway_texture_groups  0x000000b4  highway_lane_texlists
+pointer  radical_highway_texture_groups  0x000000b8  highway_rail_texlists
+pointer  radical_highway_texture_groups  0x000000bc  pickup_object_texlists
+pointer  radical_highway_pvms  0x00000000  HIGHWAY_TEXT_OBJTEX_STG14
+pointer  radical_highway_pvms  0x00000004  stage_archive
+pointer  radical_highway_pvms  0x00000008  HIGHWAY_TEXT_EFFTEX_COMMON
+pointer  radical_highway_pvms  0x0000000c  efftex_common_texlist
+pointer  radical_highway_pvms  0x00000010  HIGHWAY_TEXT_OBJTEX_COMMON
+pointer  radical_highway_pvms  0x00000014  objtex_common_texlist
+pointer  radical_highway_pvms  0x0000001c  radical_highway_terrain_textures
+pointer  radical_highway_kinds  0x00000008  ring_step
+pointer  radical_highway_kinds  0x0000000c  HIGHWAY_TEXT_RING
+pointer  radical_highway_kinds  0x00000018  ring_linear_init
+pointer  radical_highway_kinds  0x0000001c  HIGHWAY_TEXT_RING_LINEAR
+pointer  radical_highway_kinds  0x00000028  ring_circle_init
+pointer  radical_highway_kinds  0x0000002c  HIGHWAY_TEXT_RING_CIRCLE
+pointer  radical_highway_kinds  0x00000038  spring_a_step
+pointer  radical_highway_kinds  0x0000003c  HIGHWAY_TEXT_SPRA
+pointer  radical_highway_kinds  0x00000048  spring_b_step
+pointer  radical_highway_kinds  0x0000004c  HIGHWAY_TEXT_SPRB
+pointer  radical_highway_kinds  0x00000058  triple_spring_init
+pointer  radical_highway_kinds  0x0000005c  HIGHWAY_TEXT_3SPRING
+pointer  radical_highway_kinds  0x00000068  big_jump_step
+pointer  radical_highway_kinds  0x0000006c  HIGHWAY_TEXT_BIGJUMP
+pointer  radical_highway_kinds  0x00000078  dash_panel_step
+pointer  radical_highway_kinds  0x0000007c  HIGHWAY_TEXT_KASOKU
+pointer  radical_highway_kinds  0x00000088  save_point_step
+pointer  radical_highway_kinds  0x0000008c  HIGHWAY_TEXT_SAVEPOINT
+pointer  radical_highway_kinds  0x00000098  switch_step
+pointer  radical_highway_kinds  0x0000009c  HIGHWAY_TEXT_SWITCH
+pointer  radical_highway_kinds  0x000000a8  item_box_step
+pointer  radical_highway_kinds  0x000000ac  HIGHWAY_TEXT_ITEMBOX
+pointer  radical_highway_kinds  0x000000b8  item_box_air_step
+pointer  radical_highway_kinds  0x000000bc  HIGHWAY_TEXT_ITEMBOXAIR
+pointer  radical_highway_kinds  0x000000c8  item_balloon_step
+pointer  radical_highway_kinds  0x000000cc  HIGHWAY_TEXT_ITEMBOXBALLOON
+pointer  radical_highway_kinds  0x000000d8  upgrade_init
+pointer  radical_highway_kinds  0x000000dc  HIGHWAY_TEXT_LEVUPDAI
+pointer  radical_highway_kinds  0x000000e8  goal_ring_init
+pointer  radical_highway_kinds  0x000000ec  HIGHWAY_TEXT_GOALRING
+pointer  radical_highway_kinds  0x000000f8  emerald_init
+pointer  radical_highway_kinds  0x000000fc  HIGHWAY_TEXT_EMERALD
+pointer  radical_highway_kinds  0x00000108  reel_init
+pointer  radical_highway_kinds  0x0000010c  HIGHWAY_TEXT_UDREEL
+pointer  radical_highway_kinds  0x00000118  cage_init
+pointer  radical_highway_kinds  0x0000011c  HIGHWAY_TEXT_ORI
+pointer  radical_highway_kinds  0x00000128  dynamite_init
+pointer  radical_highway_kinds  0x0000012c  HIGHWAY_TEXT_DYNAMITE
+pointer  radical_highway_kinds  0x00000138  wood_box_init
+pointer  radical_highway_kinds  0x0000013c  HIGHWAY_TEXT_CONTWOOD
+pointer  radical_highway_kinds  0x00000148  iron_box_init
+pointer  radical_highway_kinds  0x0000014c  HIGHWAY_TEXT_CONTIRON
+pointer  radical_highway_kinds  0x00000158  rocket_init
+pointer  radical_highway_kinds  0x0000015c  HIGHWAY_TEXT_ROCKET
+pointer  radical_highway_kinds  0x00000168  missile_init
+pointer  radical_highway_kinds  0x0000016c  HIGHWAY_TEXT_ROCKETMISSSILE
+pointer  radical_highway_kinds  0x00000178  search_box_init
+pointer  radical_highway_kinds  0x0000017c  HIGHWAY_TEXT_SCHBOX
+pointer  radical_highway_kinds  0x00000188  hint_box_init
+pointer  radical_highway_kinds  0x0000018c  HIGHWAY_TEXT_HINTBOX
+pointer  radical_highway_kinds  0x00000198  messenger_init
+pointer  radical_highway_kinds  0x0000019c  HIGHWAY_TEXT_MSGER
+pointer  radical_highway_kinds  0x000001a8  sss_init
+pointer  radical_highway_kinds  0x000001ac  HIGHWAY_TEXT_SSS
+pointer  radical_highway_kinds  0x000001b8  solid_box_init
+pointer  radical_highway_kinds  0x000001bc  HIGHWAY_TEXT_SOLIDBOX
+pointer  radical_highway_kinds  0x000001c8  dummy_object_init
+pointer  radical_highway_kinds  0x000001cc  HIGHWAY_TEXT_DMYOBJ
+pointer  radical_highway_kinds  0x000001d8  soap_switch_init
+pointer  radical_highway_kinds  0x000001dc  HIGHWAY_TEXT_SOAP_SW
+pointer  radical_highway_kinds  0x000001e8  skull_still_init
+pointer  radical_highway_kinds  0x000001ec  HIGHWAY_TEXT_SKULL
+pointer  radical_highway_kinds  0x000001f8  skull_lying_init
+pointer  radical_highway_kinds  0x000001fc  HIGHWAY_TEXT_PSKULL
+pointer  radical_highway_kinds  0x00000208  chao_pipe_init
+pointer  radical_highway_kinds  0x0000020c  HIGHWAY_TEXT_CHAOPIPE
+pointer  radical_highway_kinds  0x00000218  animal_init
+pointer  radical_highway_kinds  0x0000021c  HIGHWAY_TEXT_MINIMAL
+pointer  radical_highway_kinds  0x00000228  hidden_animal_init
+pointer  radical_highway_kinds  0x0000022c  HIGHWAY_TEXT_WSMMLS
+pointer  radical_highway_kinds  0x00000238  chao_box_init
+pointer  radical_highway_kinds  0x0000023c  HIGHWAY_TEXT_CONTCHAO
+pointer  radical_highway_kinds  0x00000248  stop_lsd_init
+pointer  radical_highway_kinds  0x0000024c  HIGHWAY_TEXT_STOPLSD
+pointer  radical_highway_kinds  0x00000258  knudai_init
+pointer  radical_highway_kinds  0x0000025c  HIGHWAY_TEXT_KNUDAI
+pointer  radical_highway_kinds  0x00000268  knudai_foothold_init
+pointer  radical_highway_kinds  0x0000026c  HIGHWAY_TEXT_KDASIBA
+pointer  radical_highway_kinds  0x00000278  knudai_warp_hole_init
+pointer  radical_highway_kinds  0x0000027c  HIGHWAY_TEXT_KDWARPHOLE
+pointer  radical_highway_kinds  0x00000288  knudai_door_init
+pointer  radical_highway_kinds  0x0000028c  HIGHWAY_TEXT_KDDOOR
+pointer  radical_highway_kinds  0x00000298  knudai_item_box_init
+pointer  radical_highway_kinds  0x0000029c  HIGHWAY_TEXT_KDITEMBOX
+pointer  radical_highway_kinds  0x000002a8  knudai_ring_linear_init
+pointer  radical_highway_kinds  0x000002ac  HIGHWAY_TEXT_KDDRNGL
+pointer  radical_highway_kinds  0x000002b8  knudai_ring_circle_init
+pointer  radical_highway_kinds  0x000002bc  HIGHWAY_TEXT_KDDRNGC
+pointer  radical_highway_kinds  0x000002c8  knudai_spring_init
+pointer  radical_highway_kinds  0x000002cc  HIGHWAY_TEXT_KDSPRING
+pointer  radical_highway_kinds  0x000002d8  knudai_spring_b_init
+pointer  radical_highway_kinds  0x000002dc  HIGHWAY_TEXT_KDSPRINGB
+pointer  radical_highway_kinds  0x000002e8  collision_sphere_step
+pointer  radical_highway_kinds  0x000002ec  HIGHWAY_TEXT_SPHERE
+pointer  radical_highway_kinds  0x000002f8  collision_cylinder_step
+pointer  radical_highway_kinds  0x000002fc  HIGHWAY_TEXT_CCYL
+pointer  radical_highway_kinds  0x00000308  collision_cube_step
+pointer  radical_highway_kinds  0x0000030c  HIGHWAY_TEXT_CCUBE
+pointer  radical_highway_kinds  0x00000318  collision_wall_step
+pointer  radical_highway_kinds  0x0000031c  HIGHWAY_TEXT_CWALL
+pointer  radical_highway_kinds  0x00000328  collision_circle_step
+pointer  radical_highway_kinds  0x0000032c  HIGHWAY_TEXT_CCIRCLE
+pointer  radical_highway_kinds  0x00000338  modifier_volume_init
+pointer  radical_highway_kinds  0x0000033c  HIGHWAY_TEXT_MODMOD
+pointer  radical_highway_kinds  0x00000348  effect_object_init
+pointer  radical_highway_kinds  0x0000034c  HIGHWAY_TEXT_EFFOBJ0
+pointer  radical_highway_kinds  0x00000358  lens_flare_init
+pointer  radical_highway_kinds  0x0000035c  HIGHWAY_TEXT_EFLENSF0
+pointer  radical_highway_kinds  0x00000368  weight_init
+pointer  radical_highway_kinds  0x0000036c  HIGHWAY_TEXT_BUNCHIN
+pointer  radical_highway_kinds  0x00000378  iron_ball_init
+pointer  radical_highway_kinds  0x0000037c  HIGHWAY_TEXT_IRONBALL2
+pointer  radical_highway_kinds  0x00000388  beetle_step
+pointer  radical_highway_kinds  0x0000038c  HIGHWAY_TEXT_E_KUMI
+pointer  radical_highway_kinds  0x00000398  ai_step
+pointer  radical_highway_kinds  0x0000039c  HIGHWAY_TEXT_E_AI
+pointer  radical_highway_kinds  0x000003a8  highway_ramp_init
+pointer  radical_highway_kinds  0x000003ac  HIGHWAY_TEXT_TJUMPDAI
+pointer  radical_highway_kinds  0x000003b8  highway_updraft_init
+pointer  radical_highway_kinds  0x000003bc  HIGHWAY_TEXT_WIND
+pointer  radical_highway_kinds  0x000003c8  highway_hammer_init
+pointer  radical_highway_kinds  0x000003cc  HIGHWAY_TEXT_HAMMER
+pointer  radical_highway_kinds  0x000003d8  spinning_hammer_init
+pointer  radical_highway_kinds  0x000003dc  HIGHWAY_TEXT_HAMMER2
+pointer  radical_highway_kinds  0x000003e8  shouko_step
+pointer  radical_highway_kinds  0x000003ec  HIGHWAY_TEXT_E_SHOUKO
+pointer  radical_highway_kinds  0x000003f8  shouko_switch_init
+pointer  radical_highway_kinds  0x000003fc  HIGHWAY_TEXT_E_SW_SHOUKO
+pointer  radical_highway_kinds  0x00000408  highway_updraft_box_init
+pointer  radical_highway_kinds  0x0000040c  HIGHWAY_TEXT_WIND2
+pointer  radical_highway_kinds  0x00000418  highway_iron_bar_init
+pointer  radical_highway_kinds  0x0000041c  HIGHWAY_TEXT_IRONBAR
+pointer  radical_highway_kinds  0x00000428  highway_pole_init
+pointer  radical_highway_kinds  0x0000042c  HIGHWAY_TEXT_POLE
+pointer  radical_highway_kinds  0x00000438  tollgate_init
+pointer  radical_highway_kinds  0x0000043c  HIGHWAY_TEXT_TOLLGATE
+pointer  radical_highway_kinds  0x00000448  forked_init
+pointer  radical_highway_kinds  0x0000044c  HIGHWAY_TEXT_FORKED
+pointer  radical_highway_kinds  0x00000458  chase_light_init
+pointer  radical_highway_kinds  0x0000045c  HIGHWAY_TEXT_RBLK
+pointer  radical_highway_kinds  0x00000468  highway_prop_init
+pointer  radical_highway_kinds  0x0000046c  HIGHWAY_TEXT_ROBJ
+pointer  radical_highway_kinds  0x00000478  highway_glow_light_init
+pointer  radical_highway_kinds  0x0000047c  HIGHWAY_TEXT_GLIGHT
+pointer  radical_highway_kinds  0x00000488  airship_init
+pointer  radical_highway_kinds  0x0000048c  HIGHWAY_TEXT_AIRSHIP
+pointer  radical_highway_kinds  0x00000498  nights_init
+pointer  radical_highway_kinds  0x0000049c  HIGHWAY_TEXT_NIGHTS
+pointer  radical_highway_kinds  0x000004a8  highway_pulsing_light_init
+pointer  radical_highway_kinds  0x000004ac  HIGHWAY_TEXT_RLIGHT
+pointer  radical_highway_kinds  0x000004b8  light_switch_init
+pointer  radical_highway_kinds  0x000004bc  HIGHWAY_TEXT_LIGHT_SW
+pointer  radical_highway_kinds  0x000004c8  panel_init
+pointer  radical_highway_kinds  0x000004cc  HIGHWAY_TEXT_PANEL
+pointer  radical_highway_kinds  0x000004d8  highway_fan_init
+pointer  radical_highway_kinds  0x000004dc  HIGHWAY_TEXT_FUN
+pointer  radical_highway_kinds  0x000004e8  highway_arrow_init
+pointer  radical_highway_kinds  0x000004ec  HIGHWAY_TEXT_ARROW
+pointer  radical_highway_kinds  0x000004f8  highway_poster_init
+pointer  radical_highway_kinds  0x000004fc  HIGHWAY_TEXT_POSTER
+pointer  radical_highway_kinds  0x00000508  technique_link_init
+pointer  radical_highway_kinds  0x0000050c  HIGHWAY_TEXT_LINKLINK
+pointer  radical_highway_kinds  0x00000518  big_step
+pointer  radical_highway_kinds  0x0000051c  HIGHWAY_TEXT_BIG_THE_CAT
+pointer  radical_highway_kinds  0x00000528  highway_arrow_h3_init
+pointer  radical_highway_kinds  0x0000052c  HIGHWAY_TEXT_ARROWH3
+pointer  radical_highway_kinds  0x00000538  highway_prop_init
+pointer  radical_highway_kinds  0x0000053c  HIGHWAY_TEXT_ROBJ_S
+pointer  radical_highway_kinds  0x00000548  highway_prop_init
+pointer  radical_highway_kinds  0x0000054c  HIGHWAY_TEXT_ROBJ_M
+pointer  radical_highway_kinds  0x00000558  highway_lane_quake_init
+pointer  radical_highway_kinds  0x0000055c  HIGHWAY_TEXT_SCOL
+pointer  radical_highway_kinds  0x00000568  highway_lane_init
+pointer  radical_highway_kinds  0x0000056c  HIGHWAY_TEXT_SLANE
+pointer  radical_highway_kinds  0x00000578  highway_rail_init
+pointer  radical_highway_kinds  0x0000057c  HIGHWAY_TEXT_RBR
+pointer  radical_highway_kinds  0x00000588  gold_beetle_step
+pointer  radical_highway_kinds  0x0000058c  HIGHWAY_TEXT_E_GOLD
+pointer  radical_highway_kinds  0x00000598  highway_gust_sound_init
+pointer  radical_highway_kinds  0x0000059c  HIGHWAY_TEXT_SE_TOPPU
+pointer  radical_highway_kinds  0x000005a8  pickup_object_init
+pointer  radical_highway_kinds  0x000005ac  HIGHWAY_TEXT_PIC
+pointer  radical_highway_kinds  0x000005b8  no_input_init
+pointer  radical_highway_kinds  0x000005bc  HIGHWAY_TEXT_NOINPCOL

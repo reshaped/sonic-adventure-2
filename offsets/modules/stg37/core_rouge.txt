@@ -1,0 +1,15 @@
+datum  kill_upper_material  D  0x00000000  20
+datum  kill_upper_strips  D  0x00000014  10
+datum  kill_upper_face  D  0x00000020  24
+datum  kill_upper_points  D  0x00000038  48
+datum  kill_upper_normals  D  0x00000068  48
+datum  kill_upper_model  D  0x00000098  40
+datum  kill_upper  D  0x000000c0  52
+datum  kill_lower_material  D  0x000000f4  20
+datum  kill_lower_strips  D  0x00000108  10
+datum  kill_lower_face  D  0x00000114  24
+datum  kill_lower_points  D  0x0000012c  48
+datum  kill_lower_normals  D  0x0000015c  48
+datum  kill_lower_model  D  0x0000018c  40
+datum  kill_lower  D  0x000001b4  52
+datum  route_kill_areas  D  0x000001e8  24

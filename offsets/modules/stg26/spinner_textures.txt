@@ -1,0 +1,16 @@
+text  SPINNER_TEXTURE_128B  C  0x00000000  19
+text  SPINNER_TEXTURE_64D  C  0x00000014  18
+datum  textures  D  0x00000000  24
+datum  spinner_texlist  D  0x00000018  8
+datum  spinner_object_child_sibling_polygons  D  0x00000020  50
+datum  spinner_object_child_sibling_vertices  D  0x00000054  76
+datum  spinner_object_child_sibling_model  D  0x000000a0  24
+datum  spinner_object_child_sibling  D  0x000000b8  52
+datum  spinner_object_child_polygons  D  0x000000ec  858
+datum  spinner_object_child_vertices  D  0x00000448  1932
+datum  spinner_object_child_model  D  0x00000bd4  24
+datum  spinner_object_child  D  0x00000bec  52
+datum  spinner_object  D  0x00000c20  52
+datum  spinner_object_child_sibling_angle_keys  D  0x00000c54  1600
+datum  spinner_tracks  D  0x00001294  72
+datum  spinner_motion  D  0x000012dc  12

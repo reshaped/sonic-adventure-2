@@ -1,0 +1,2 @@
+datum  black_wave_texanim  D  0x00000000  20
+datum  black_wave_sprite  D  0x00000014  32

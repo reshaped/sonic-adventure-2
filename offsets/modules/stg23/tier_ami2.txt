@@ -1,0 +1,1 @@
+datum  tier_ami2  C  0x00000000  11

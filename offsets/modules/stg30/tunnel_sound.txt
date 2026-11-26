@@ -1,0 +1,2 @@
+datum  rush_sounds  C  0x00000000  88
+datum  final_rush_sound_list  C  0x00000058  8

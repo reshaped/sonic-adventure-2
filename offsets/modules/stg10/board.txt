@@ -1,0 +1,13 @@
+text  HARBOR_TEXTURE_MIU128_MH001  C  0x0000000c  13
+datum  harbor_board_textures  D  0x00000000  12
+datum  harbor_board_texlist  D  0x0000000c  8
+datum  harbor_board_deck_polygons  D  0x00000014  478
+datum  harbor_board_deck_vertices  D  0x000001f4  924
+datum  harbor_board_deck_mesh  D  0x00000590  24
+datum  harbor_board_deck  D  0x000005a8  52
+datum  harbor_board_root  D  0x000005dc  52
+datum  harbor_board_shadow_polygons  D  0x00000610  118
+datum  harbor_board_shadow_vertices  D  0x00000688  144
+datum  harbor_board_shadow_mesh  D  0x00000718  24
+datum  harbor_board_shadow_object  D  0x00000730  52
+datum  harbor_board_texlists  D  0x00000764  8

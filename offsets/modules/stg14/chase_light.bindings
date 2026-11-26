@@ -1,0 +1,31 @@
+text  HIGHWAY_TEXT_MIU128_RH002  13
+text  HIGHWAY_TEXT_MIU128_RH003  13
+text  HIGHWAY_TEXT_MIU32_RH009  12
+text  HIGHWAY_TEXT_MIU64_RH008  12
+text  HIGHWAY_TEXT_MIU64_RH010  12
+text  HIGHWAY_TEXT_MIU64_RH019  12
+pointer  chase_light_textures  0x00000000  HIGHWAY_TEXT_MIU128_RH002
+pointer  chase_light_textures  0x0000000c  HIGHWAY_TEXT_MIU128_RH003
+pointer  chase_light_textures  0x00000018  HIGHWAY_TEXT_MIU32_RH009
+pointer  chase_light_textures  0x00000024  HIGHWAY_TEXT_MIU64_RH008
+pointer  chase_light_textures  0x00000030  HIGHWAY_TEXT_MIU64_RH010
+pointer  chase_light_texlist  0x00000000  chase_light_textures
+pointer  chase_light_lamp_3_mesh  0x00000000  chase_light_lamp_3_vertices
+pointer  chase_light_lamp_3_mesh  0x00000004  chase_light_lamp_3_polygons
+pointer  chase_light_lamp_3  0x00000004  chase_light_lamp_3_mesh
+pointer  chase_light_lamp_2_mesh  0x00000000  chase_light_lamp_2_vertices
+pointer  chase_light_lamp_2_mesh  0x00000004  chase_light_lamp_2_polygons
+pointer  chase_light_lamp_2  0x00000004  chase_light_lamp_2_mesh
+pointer  chase_light_lamp_2  0x00000030  chase_light_lamp_3
+pointer  chase_light_lamp_1_mesh  0x00000000  chase_light_lamp_1_vertices
+pointer  chase_light_lamp_1_mesh  0x00000004  chase_light_lamp_1_polygons
+pointer  chase_light_lamp_1  0x00000004  chase_light_lamp_1_mesh
+pointer  chase_light_lamp_1  0x00000030  chase_light_lamp_2
+pointer  chase_light_mesh  0x00000000  chase_light_vertices
+pointer  chase_light_mesh  0x00000004  chase_light_polygons
+pointer  chase_light_object  0x00000004  chase_light_mesh
+pointer  chase_light_object  0x0000002c  chase_light_lamp_1
+pointer  chase_light_glow_textures  0x00000000  HIGHWAY_TEXT_MIU64_RH019
+pointer  chase_light_glow_texlist  0x00000000  chase_light_glow_textures
+pointer  chase_light_texlists  0x00000000  chase_light_texlist
+pointer  chase_light_texlists  0x00000004  chase_light_glow_texlist

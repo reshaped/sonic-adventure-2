@@ -1,0 +1,4 @@
+datum  stone_box_polygons  D  0x00000000  730
+datum  stone_box_vertices  D  0x000002dc  1468
+datum  stone_box_model  D  0x00000898  24
+datum  stone_box_object  D  0x000008b0  52

@@ -1,0 +1,2 @@
+.shadow_filename  texture_filename  12
+.pole_filename  texture_filename  12

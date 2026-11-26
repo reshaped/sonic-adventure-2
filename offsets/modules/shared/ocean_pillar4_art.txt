@@ -1,0 +1,17 @@
+datum  material_hasira1  C  0x00000000  16
+datum  material_kabe2  C  0x00000010  12
+datum  material_kage3  C  0x0000001c  12
+datum  material_sekihi5  C  0x00000028  14
+datum  pillar4_textures  D  0x00000000  48
+datum  pillar4_texlist  D  0x00000030  8
+datum  pillar4_polygons  D  0x00000038  534
+datum  pillar4_vertices  D  0x00000250  1132
+datum  pillar4_model  D  0x000006bc  24
+datum  pillar4_display  D  0x000006d4  52
+datum  pillar4_object_materials  D  0x00000708  20
+datum  pillar4_object_faces  D  0x0000071c  118
+datum  pillar4_object_meshsets  D  0x00000794  24
+datum  pillar4_object_points  D  0x000007ac  384
+datum  pillar4_object_normals  D  0x0000092c  384
+datum  pillar4_object_model  D  0x00000aac  40
+datum  pillar4_object  D  0x00000ad4  52

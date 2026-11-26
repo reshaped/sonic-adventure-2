@@ -1,0 +1,11 @@
+datum  et64_3  C  0x00000000  8
+datum  miu128_cg005  C  0x00000008  16
+datum  miu128_cg016  C  0x00000018  16
+datum  miu256_cg001  C  0x00000028  16
+datum  miu64_cg005  C  0x00000038  12
+datum  miu64_cg006  C  0x00000044  12
+datum  miu64_cg007  C  0x00000050  12
+datum  miu64_cg010  C  0x0000005c  12
+datum  miu64_cg020  C  0x00000068  12
+datum  textures  D  0x00000000  108
+datum  step_texlist  D  0x0000006c  8

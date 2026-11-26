@@ -1,0 +1,110 @@
+text MECH_TITLE_TEXTURE_BSSPEC_F6 10
+text MECH_TITLE_TEXTURE_TITLE_F6A0 11
+text MECH_TITLE_TEXTURE_TITLE_F6A1 11
+text MECH_TITLE_TEXTURE_TITLE_F6B0 11
+text MECH_TITLE_TEXTURE_TITLE_F6B1 11
+text MECH_TITLE_TEXTURE_TITLE_F6C0 11
+text MECH_TITLE_TEXTURE_TITLE_F6C1 11
+text MECH_TITLE_TEXTURE_TITLE_F6D0 11
+text MECH_TITLE_TEXTURE_TITLE_F6D1 11
+text MECH_TITLE_TEXTURE_BSSPEC_B3 10
+text MECH_TITLE_TEXTURE_TITLE_B3A0 11
+text MECH_TITLE_TEXTURE_TITLE_B3A1 11
+text MECH_TITLE_TEXTURE_TITLE_B3B0 11
+text MECH_TITLE_TEXTURE_TITLE_B3B1 11
+text MECH_TITLE_TEXTURE_TITLE_B3C0 11
+text MECH_TITLE_TEXTURE_TITLE_B3C1 11
+text MECH_TITLE_TEXTURE_TITLE_B3D0 11
+text MECH_TITLE_TEXTURE_TITLE_B3D1 11
+text MECH_TITLE_TEXTURE_BSSPEC_R1 10
+text MECH_TITLE_TEXTURE_TITLE_R1A0 11
+text MECH_TITLE_TEXTURE_TITLE_R1A1 11
+text MECH_TITLE_TEXTURE_TITLE_R1B0 11
+text MECH_TITLE_TEXTURE_TITLE_R1B1 11
+text MECH_TITLE_TEXTURE_TITLE_R1C0 11
+text MECH_TITLE_TEXTURE_TITLE_R1C1 11
+text MECH_TITLE_TEXTURE_TITLE_R1D0 11
+text MECH_TITLE_TEXTURE_TITLE_R1D1 11
+text MECH_TITLE_TEXTURE_MOJI_1 7
+text MECH_TITLE_TEXTURE_MOJI_3 7
+text MECH_TITLE_TEXTURE_MOJI_6 7
+text MECH_TITLE_TEXTURE_MOJI_B 7
+text MECH_TITLE_TEXTURE_MOJI_D 7
+text MECH_TITLE_TEXTURE_MOJI_F 7
+text MECH_TITLE_TEXTURE_MOJI_G 7
+text MECH_TITLE_TEXTURE_MOJI_H 7
+text MECH_TITLE_TEXTURE_MOJI_I 7
+text MECH_TITLE_TEXTURE_MOJI_L 7
+text MECH_TITLE_TEXTURE_MOJI_N 7
+text MECH_TITLE_TEXTURE_MOJI_O 7
+text MECH_TITLE_TEXTURE_MOJI_R 7
+text MECH_TITLE_TEXTURE_MOJI_S 7
+text MECH_TITLE_TEXTURE_MOJI_T 7
+text MECH_TITLE_TEXTURE_MOJI_Y 7
+text MECH_TITLE_TEXTURE_MOJI_XT 8
+text MECH_TITLE_TEXTURE_MOJI_XX 8
+text MECH_TITLE_TEXTURE_MOJI_A 7
+text MECH_TITLE_TEXTURE_LOCKON01 9
+text MECH_TITLE_TEXTURE_LOCKON02 9
+text MECH_TITLE_TEXTURE_LOCKON03 9
+text MECH_TITLE_TEXTURE_SHOT_EFF01 11
+text MECH_TITLE_TEXTURE_SHOT_EFF02 11
+text MECH_TITLE_TEXTURE_SHOT_EFF03 11
+
+pointer  bigfoot_title_textures  0x00000000  MECH_TITLE_TEXTURE_BSSPEC_F6
+pointer  bigfoot_title_textures  0x0000000c  MECH_TITLE_TEXTURE_TITLE_F6A0
+pointer  bigfoot_title_textures  0x00000018  MECH_TITLE_TEXTURE_TITLE_F6A1
+pointer  bigfoot_title_textures  0x00000024  MECH_TITLE_TEXTURE_TITLE_F6B0
+pointer  bigfoot_title_textures  0x00000030  MECH_TITLE_TEXTURE_TITLE_F6B1
+pointer  bigfoot_title_textures  0x0000003c  MECH_TITLE_TEXTURE_TITLE_F6C0
+pointer  bigfoot_title_textures  0x00000048  MECH_TITLE_TEXTURE_TITLE_F6C1
+pointer  bigfoot_title_textures  0x00000054  MECH_TITLE_TEXTURE_TITLE_F6D0
+pointer  bigfoot_title_textures  0x00000060  MECH_TITLE_TEXTURE_TITLE_F6D1
+pointer  bigfoot_title_texlist  0x00000000  bigfoot_title_textures
+pointer  hotshot_title_textures  0x00000000  MECH_TITLE_TEXTURE_BSSPEC_B3
+pointer  hotshot_title_textures  0x0000000c  MECH_TITLE_TEXTURE_TITLE_B3A0
+pointer  hotshot_title_textures  0x00000018  MECH_TITLE_TEXTURE_TITLE_B3A1
+pointer  hotshot_title_textures  0x00000024  MECH_TITLE_TEXTURE_TITLE_B3B0
+pointer  hotshot_title_textures  0x00000030  MECH_TITLE_TEXTURE_TITLE_B3B1
+pointer  hotshot_title_textures  0x0000003c  MECH_TITLE_TEXTURE_TITLE_B3C0
+pointer  hotshot_title_textures  0x00000048  MECH_TITLE_TEXTURE_TITLE_B3C1
+pointer  hotshot_title_textures  0x00000054  MECH_TITLE_TEXTURE_TITLE_B3D0
+pointer  hotshot_title_textures  0x00000060  MECH_TITLE_TEXTURE_TITLE_B3D1
+pointer  hotshot_title_texlist  0x00000000  hotshot_title_textures
+pointer  fdog_title_textures  0x00000000  MECH_TITLE_TEXTURE_BSSPEC_R1
+pointer  fdog_title_textures  0x0000000c  MECH_TITLE_TEXTURE_TITLE_R1A0
+pointer  fdog_title_textures  0x00000018  MECH_TITLE_TEXTURE_TITLE_R1A1
+pointer  fdog_title_textures  0x00000024  MECH_TITLE_TEXTURE_TITLE_R1B0
+pointer  fdog_title_textures  0x00000030  MECH_TITLE_TEXTURE_TITLE_R1B1
+pointer  fdog_title_textures  0x0000003c  MECH_TITLE_TEXTURE_TITLE_R1C0
+pointer  fdog_title_textures  0x00000048  MECH_TITLE_TEXTURE_TITLE_R1C1
+pointer  fdog_title_textures  0x00000054  MECH_TITLE_TEXTURE_TITLE_R1D0
+pointer  fdog_title_textures  0x00000060  MECH_TITLE_TEXTURE_TITLE_R1D1
+pointer  fdog_title_texlist  0x00000000  fdog_title_textures
+pointer  grobo_title_moji_textures  0x00000000  MECH_TITLE_TEXTURE_MOJI_1
+pointer  grobo_title_moji_textures  0x0000000c  MECH_TITLE_TEXTURE_MOJI_3
+pointer  grobo_title_moji_textures  0x00000018  MECH_TITLE_TEXTURE_MOJI_6
+pointer  grobo_title_moji_textures  0x00000024  MECH_TITLE_TEXTURE_MOJI_B
+pointer  grobo_title_moji_textures  0x00000030  MECH_TITLE_TEXTURE_MOJI_D
+pointer  grobo_title_moji_textures  0x0000003c  MECH_TITLE_TEXTURE_MOJI_F
+pointer  grobo_title_moji_textures  0x00000048  MECH_TITLE_TEXTURE_MOJI_G
+pointer  grobo_title_moji_textures  0x00000054  MECH_TITLE_TEXTURE_MOJI_H
+pointer  grobo_title_moji_textures  0x00000060  MECH_TITLE_TEXTURE_MOJI_I
+pointer  grobo_title_moji_textures  0x0000006c  MECH_TITLE_TEXTURE_MOJI_L
+pointer  grobo_title_moji_textures  0x00000078  MECH_TITLE_TEXTURE_MOJI_N
+pointer  grobo_title_moji_textures  0x00000084  MECH_TITLE_TEXTURE_MOJI_O
+pointer  grobo_title_moji_textures  0x00000090  MECH_TITLE_TEXTURE_MOJI_R
+pointer  grobo_title_moji_textures  0x0000009c  MECH_TITLE_TEXTURE_MOJI_S
+pointer  grobo_title_moji_textures  0x000000a8  MECH_TITLE_TEXTURE_MOJI_T
+pointer  grobo_title_moji_textures  0x000000b4  MECH_TITLE_TEXTURE_MOJI_Y
+pointer  grobo_title_moji_textures  0x000000c0  MECH_TITLE_TEXTURE_MOJI_XT
+pointer  grobo_title_moji_textures  0x000000cc  MECH_TITLE_TEXTURE_MOJI_XX
+pointer  grobo_title_moji_textures  0x000000d8  MECH_TITLE_TEXTURE_MOJI_A
+pointer  grobo_title_moji_texlist  0x00000000  grobo_title_moji_textures
+pointer  grobo_eff2_textures  0x00000000  MECH_TITLE_TEXTURE_LOCKON01
+pointer  grobo_eff2_textures  0x0000000c  MECH_TITLE_TEXTURE_LOCKON02
+pointer  grobo_eff2_textures  0x00000018  MECH_TITLE_TEXTURE_LOCKON03
+pointer  grobo_eff2_textures  0x00000024  MECH_TITLE_TEXTURE_SHOT_EFF01
+pointer  grobo_eff2_textures  0x00000030  MECH_TITLE_TEXTURE_SHOT_EFF02
+pointer  grobo_eff2_textures  0x0000003c  MECH_TITLE_TEXTURE_SHOT_EFF03
+pointer  grobo_eff2_texlist  0x00000000  grobo_eff2_textures

@@ -1,0 +1,7 @@
+pointer  textures  0x00000000  gadget_poison_materials+0x10
+pointer  textures  0x0000000c  gadget_poison_materials+0x20
+pointer  textures  0x00000018  gadget_poison_materials+0x2c
+pointer  gadget_poison_body_texlist  0x00000000  textures
+pointer  gadget_poison_body_fragment  0x00000000  gadget_poison_body_fragment_vertices
+pointer  gadget_poison_body_fragment  0x00000004  gadget_poison_body_fragment_polygons
+pointer  gadget_poison_body_fragment_object  0x00000004  gadget_poison_body_fragment

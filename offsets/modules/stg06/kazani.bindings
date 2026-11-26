@@ -1,0 +1,7 @@
+text  KAZANI_TEXTURE_MIU64_SR001  12
+
+pointer  kazani_texlist_names  0x00000000  KAZANI_TEXTURE_MIU64_SR001
+pointer  kazani_texlist  0x00000000  kazani_texlist_names
+pointer  kazani_model  0x00000000  kazani_vertices
+pointer  kazani_model  0x00000004  kazani_polygons
+pointer  kazani_object  0x00000004  kazani_model

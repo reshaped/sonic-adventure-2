@@ -1,0 +1,3 @@
+text  CHAMBER_FAN_TEXTURE_DZ_EQ_MECHANIX64C  C  0x00000000  18
+datum  textures  D  0x00000000  12
+datum  fan_texlist  D  0x0000000c  8

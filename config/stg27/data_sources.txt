@@ -1,0 +1,6 @@
+modules/stg27/dat_8c542cf4.c
+modules/stg27/dat_8c583338.c
+modules/stg27/lamp_land.c
+modules/stg27/poison_land.c
+modules/stg27/sky_land.c
+modules/stg27/terrain.c

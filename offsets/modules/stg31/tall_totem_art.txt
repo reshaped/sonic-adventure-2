@@ -1,0 +1,4 @@
+datum  tall_totem_polygons  D  0x00000000  438
+datum  tall_totem_vertices  D  0x000001b8  700
+datum  tall_totem_model  D  0x00000474  24
+datum  green_hill_tall_totem_object  D  0x0000048c  52

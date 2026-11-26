@@ -1,0 +1,20 @@
+text  GADGET_SIGN_PANEL_ART_TEXTURE_1  12
+
+pointer  panel_name  0x00000000  GADGET_SIGN_PANEL_ART_TEXTURE_1
+pointer  gadget_sign_panel_texlist  0x00000000  panel_name
+pointer  gadget_sign_e_node_4_mesh  0x00000000  gadget_sign_e_node_4_vertices
+pointer  gadget_sign_e_node_4_mesh  0x00000004  gadget_sign_e_node_4_polygons
+pointer  gadget_sign_e_node_4  0x00000004  gadget_sign_e_node_4_mesh
+pointer  gadget_sign_e_node_3_mesh  0x00000000  gadget_sign_e_node_3_vertices
+pointer  gadget_sign_e_node_3_mesh  0x00000004  gadget_sign_e_node_3_polygons
+pointer  gadget_sign_e_node_3  0x00000004  gadget_sign_e_node_3_mesh
+pointer  gadget_sign_e_node_3  0x00000030  gadget_sign_e_node_4
+pointer  gadget_sign_e_node_2_mesh  0x00000000  gadget_sign_e_node_2_vertices
+pointer  gadget_sign_e_node_2_mesh  0x00000004  gadget_sign_e_node_2_polygons
+pointer  gadget_sign_e_node_2  0x00000004  gadget_sign_e_node_2_mesh
+pointer  gadget_sign_e_node_2  0x00000030  gadget_sign_e_node_3
+pointer  gadget_sign_e_node_1_mesh  0x00000000  gadget_sign_e_node_1_vertices
+pointer  gadget_sign_e_node_1_mesh  0x00000004  gadget_sign_e_node_1_polygons
+pointer  gadget_sign_e_node_1  0x00000004  gadget_sign_e_node_1_mesh
+pointer  gadget_sign_e_node_1  0x00000030  gadget_sign_e_node_2
+pointer  gadget_sign_e  0x0000002c  gadget_sign_e_node_1

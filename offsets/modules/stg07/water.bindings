@@ -1,0 +1,194 @@
+text  WATER_TEXTURE_TX_MINE001  11
+text  WATER_TEXTURE_TX_MINE002  11
+text  WATER_TEXTURE_TX_MINE003  11
+text  WATER_TEXTURE_TX_MINE004  11
+text  WATER_TEXTURE_TX_MINE005  11
+text  WATER_TEXTURE_TX_MINE006  11
+text  WATER_TEXTURE_TX_MINE007  11
+text  WATER_TEXTURE_TX_MINE008  11
+text  WATER_TEXTURE_TX_MINE009  11
+text  WATER_TEXTURE_TX_MINE010  11
+text  WATER_TEXTURE_TX_MINE011  11
+text  WATER_TEXTURE_TX_MINE012  11
+text  WATER_TEXTURE_TX_MINE013  11
+text  WATER_TEXTURE_TX_MINE014  11
+text  WATER_TEXTURE_TX_MINE015  11
+text  WATER_TEXTURE_TX_MINEMIZU001  15
+text  WATER_TEXTURE_TX_MINEMIZU002  15
+text  WATER_TEXTURE_TX_MINEMIZU003  15
+text  WATER_TEXTURE_TX_MINEMIZU004  15
+text  WATER_TEXTURE_TX_MINEMIZU005  15
+text  WATER_TEXTURE_TX_MINEMIZU006  15
+text  WATER_TEXTURE_TX_MINEMIZU007  15
+text  WATER_TEXTURE_TX_MINEMIZU008  15
+text  WATER_TEXTURE_TX_MINEMIZU009  15
+text  WATER_TEXTURE_TX_MINEMIZU010  15
+text  WATER_TEXTURE_TX_MINEMIZU011  15
+text  WATER_TEXTURE_TX_MINEMIZU012  15
+text  WATER_TEXTURE_TX_MINEMIZU013  15
+text  WATER_TEXTURE_TX_MINEMIZU014  15
+text  WATER_TEXTURE_TX_JUNGLE101  13
+
+pointer  water_texlist_names  0x00000000  WATER_TEXTURE_TX_MINE001
+pointer  water_texlist_names  0x0000000c  WATER_TEXTURE_TX_MINE002
+pointer  water_texlist_names  0x00000018  WATER_TEXTURE_TX_MINE003
+pointer  water_texlist_names  0x00000024  WATER_TEXTURE_TX_MINE004
+pointer  water_texlist_names  0x00000030  WATER_TEXTURE_TX_MINE005
+pointer  water_texlist_names  0x0000003c  WATER_TEXTURE_TX_MINE006
+pointer  water_texlist_names  0x00000048  WATER_TEXTURE_TX_MINE007
+pointer  water_texlist_names  0x00000054  WATER_TEXTURE_TX_MINE008
+pointer  water_texlist_names  0x00000060  WATER_TEXTURE_TX_MINE009
+pointer  water_texlist_names  0x0000006c  WATER_TEXTURE_TX_MINE010
+pointer  water_texlist_names  0x00000078  WATER_TEXTURE_TX_MINE011
+pointer  water_texlist_names  0x00000084  WATER_TEXTURE_TX_MINE012
+pointer  water_texlist_names  0x00000090  WATER_TEXTURE_TX_MINE013
+pointer  water_texlist_names  0x0000009c  WATER_TEXTURE_TX_MINE014
+pointer  water_texlist_names  0x000000a8  WATER_TEXTURE_TX_MINE015
+pointer  water_texlist_names  0x000000b4  WATER_TEXTURE_TX_MINEMIZU001
+pointer  water_texlist_names  0x000000c0  WATER_TEXTURE_TX_MINEMIZU002
+pointer  water_texlist_names  0x000000cc  WATER_TEXTURE_TX_MINEMIZU003
+pointer  water_texlist_names  0x000000d8  WATER_TEXTURE_TX_MINEMIZU004
+pointer  water_texlist_names  0x000000e4  WATER_TEXTURE_TX_MINEMIZU005
+pointer  water_texlist_names  0x000000f0  WATER_TEXTURE_TX_MINEMIZU006
+pointer  water_texlist_names  0x000000fc  WATER_TEXTURE_TX_MINEMIZU007
+pointer  water_texlist_names  0x00000108  WATER_TEXTURE_TX_MINEMIZU008
+pointer  water_texlist_names  0x00000114  WATER_TEXTURE_TX_MINEMIZU009
+pointer  water_texlist_names  0x00000120  WATER_TEXTURE_TX_MINEMIZU010
+pointer  water_texlist_names  0x0000012c  WATER_TEXTURE_TX_MINEMIZU011
+pointer  water_texlist_names  0x00000138  WATER_TEXTURE_TX_MINEMIZU012
+pointer  water_texlist_names  0x00000144  WATER_TEXTURE_TX_MINEMIZU013
+pointer  water_texlist_names  0x00000150  WATER_TEXTURE_TX_MINEMIZU014
+pointer  water_texlist  0x00000000  water_texlist_names
+pointer  water_pieces  0x00000004  water_piece_0
+pointer  water_pieces  0x00000010  water_piece_1
+pointer  water_pieces  0x0000001c  water_piece_2
+pointer  water_pieces  0x00000028  water_piece_3
+pointer  water_pieces  0x00000034  water_piece_4
+pointer  water_pieces  0x00000040  water_piece_5
+pointer  water_pieces  0x0000004c  water_piece_6
+pointer  water_pieces  0x00000058  water_piece_7
+pointer  water_pieces  0x00000064  water_piece_8
+pointer  water_pieces  0x00000070  water_piece_9
+pointer  water_pieces  0x0000007c  water_piece_10
+pointer  water_pieces  0x00000088  water_piece_11
+pointer  water_pieces  0x00000094  water_piece_12
+pointer  water_pieces  0x000000a0  water_piece_13
+pointer  water_pieces  0x000000ac  water_piece_14
+pointer  water_pieces  0x000000b8  water_piece_15
+pointer  water_texture_set_2_names  0x00000000  WATER_TEXTURE_TX_JUNGLE101
+pointer  water_texture_set_2_names  0x0000000c  WATER_TEXTURE_TX_MINE001
+pointer  water_texture_set_2  0x00000000  water_texture_set_2_names
+pointer  water_ring_model  0x00000000  water_ring_vertices
+pointer  water_ring_model  0x00000004  water_ring_polygons
+pointer  water_ring_object  0x00000004  water_ring_model
+pointer  water_texture_set_3_names  0x00000000  WATER_TEXTURE_TX_JUNGLE101
+pointer  water_texture_set_3  0x00000000  water_texture_set_3_names
+pointer  water_plain_model  0x00000000  water_plain_vertices
+pointer  water_plain_model  0x00000004  water_plain_polygons
+pointer  water_plain_object  0x00000004  water_plain_model
+pointer  water_texture_set_4_names  0x00000000  WATER_TEXTURE_TX_MINE001
+pointer  water_texture_set_4  0x00000000  water_texture_set_4_names
+pointer  water_level_0_model  0x00000000  water_level_0_vertices
+pointer  water_level_0_model  0x00000004  water_level_0_polygons
+pointer  water_level_0_object  0x00000004  water_level_0_model
+pointer  water_texture_set_5_names  0x00000000  WATER_TEXTURE_TX_MINE001
+pointer  water_texture_set_5  0x00000000  water_texture_set_5_names
+pointer  water_level_1_model  0x00000000  water_level_1_vertices
+pointer  water_level_1_model  0x00000004  water_level_1_polygons
+pointer  water_level_1_object  0x00000004  water_level_1_model
+pointer  water_piece_0_faces  0x00000004  water_piece_0_strips
+pointer  water_piece_0_model  0x00000000  water_piece_0_points
+pointer  water_piece_0_model  0x00000004  water_piece_0_normals
+pointer  water_piece_0_model  0x0000000c  water_piece_0_faces
+pointer  water_piece_0_model  0x00000010  water_piece_0_materials
+pointer  water_piece_0  0x00000004  water_piece_0_model
+pointer  water_piece_1_faces  0x00000004  water_piece_1_strips
+pointer  water_piece_1_model  0x00000000  water_piece_1_points
+pointer  water_piece_1_model  0x00000004  water_piece_1_normals
+pointer  water_piece_1_model  0x0000000c  water_piece_1_faces
+pointer  water_piece_1_model  0x00000010  water_piece_1_materials
+pointer  water_piece_1  0x00000004  water_piece_1_model
+pointer  water_piece_2_faces  0x00000004  water_piece_2_strips
+pointer  water_piece_2_model  0x00000000  water_piece_2_points
+pointer  water_piece_2_model  0x00000004  water_piece_2_normals
+pointer  water_piece_2_model  0x0000000c  water_piece_2_faces
+pointer  water_piece_2_model  0x00000010  water_piece_2_materials
+pointer  water_piece_2  0x00000004  water_piece_2_model
+pointer  water_piece_3_faces  0x00000004  water_piece_3_strips
+pointer  water_piece_3_model  0x00000000  water_piece_3_points
+pointer  water_piece_3_model  0x00000004  water_piece_3_normals
+pointer  water_piece_3_model  0x0000000c  water_piece_3_faces
+pointer  water_piece_3_model  0x00000010  water_piece_3_materials
+pointer  water_piece_3  0x00000004  water_piece_3_model
+pointer  water_piece_4_faces  0x00000004  water_piece_4_strips
+pointer  water_piece_4_model  0x00000000  water_piece_4_points
+pointer  water_piece_4_model  0x00000004  water_piece_4_normals
+pointer  water_piece_4_model  0x0000000c  water_piece_4_faces
+pointer  water_piece_4_model  0x00000010  water_piece_4_materials
+pointer  water_piece_4  0x00000004  water_piece_4_model
+pointer  water_piece_5_faces  0x00000004  water_piece_5_strips
+pointer  water_piece_5_model  0x00000000  water_piece_5_points
+pointer  water_piece_5_model  0x00000004  water_piece_5_normals
+pointer  water_piece_5_model  0x0000000c  water_piece_5_faces
+pointer  water_piece_5_model  0x00000010  water_piece_5_materials
+pointer  water_piece_5  0x00000004  water_piece_5_model
+pointer  water_piece_6_faces  0x00000004  water_piece_6_strips
+pointer  water_piece_6_model  0x00000000  water_piece_6_points
+pointer  water_piece_6_model  0x00000004  water_piece_6_normals
+pointer  water_piece_6_model  0x0000000c  water_piece_6_faces
+pointer  water_piece_6_model  0x00000010  water_piece_6_materials
+pointer  water_piece_6  0x00000004  water_piece_6_model
+pointer  water_piece_7_faces  0x00000004  water_piece_7_strips
+pointer  water_piece_7_model  0x00000000  water_piece_7_points
+pointer  water_piece_7_model  0x00000004  water_piece_7_normals
+pointer  water_piece_7_model  0x0000000c  water_piece_7_faces
+pointer  water_piece_7_model  0x00000010  water_piece_7_materials
+pointer  water_piece_7  0x00000004  water_piece_7_model
+pointer  water_piece_8_faces  0x00000004  water_piece_8_strips
+pointer  water_piece_8_model  0x00000000  water_piece_8_points
+pointer  water_piece_8_model  0x00000004  water_piece_8_normals
+pointer  water_piece_8_model  0x0000000c  water_piece_8_faces
+pointer  water_piece_8_model  0x00000010  water_piece_8_materials
+pointer  water_piece_8  0x00000004  water_piece_8_model
+pointer  water_piece_9_faces  0x00000004  water_piece_9_strips
+pointer  water_piece_9_model  0x00000000  water_piece_9_points
+pointer  water_piece_9_model  0x00000004  water_piece_9_normals
+pointer  water_piece_9_model  0x0000000c  water_piece_9_faces
+pointer  water_piece_9_model  0x00000010  water_piece_9_materials
+pointer  water_piece_9  0x00000004  water_piece_9_model
+pointer  water_piece_10_faces  0x00000004  water_piece_10_strips
+pointer  water_piece_10_model  0x00000000  water_piece_10_points
+pointer  water_piece_10_model  0x00000004  water_piece_10_normals
+pointer  water_piece_10_model  0x0000000c  water_piece_10_faces
+pointer  water_piece_10_model  0x00000010  water_piece_10_materials
+pointer  water_piece_10  0x00000004  water_piece_10_model
+pointer  water_piece_11_faces  0x00000004  water_piece_11_strips
+pointer  water_piece_11_model  0x00000000  water_piece_11_points
+pointer  water_piece_11_model  0x00000004  water_piece_11_normals
+pointer  water_piece_11_model  0x0000000c  water_piece_11_faces
+pointer  water_piece_11_model  0x00000010  water_piece_11_materials
+pointer  water_piece_11  0x00000004  water_piece_11_model
+pointer  water_piece_12_faces  0x00000004  water_piece_12_strips
+pointer  water_piece_12_model  0x00000000  water_piece_12_points
+pointer  water_piece_12_model  0x00000004  water_piece_12_normals
+pointer  water_piece_12_model  0x0000000c  water_piece_12_faces
+pointer  water_piece_12_model  0x00000010  water_piece_12_materials
+pointer  water_piece_12  0x00000004  water_piece_12_model
+pointer  water_piece_13_faces  0x00000004  water_piece_13_strips
+pointer  water_piece_13_model  0x00000000  water_piece_13_points
+pointer  water_piece_13_model  0x00000004  water_piece_13_normals
+pointer  water_piece_13_model  0x0000000c  water_piece_13_faces
+pointer  water_piece_13_model  0x00000010  water_piece_13_materials
+pointer  water_piece_13  0x00000004  water_piece_13_model
+pointer  water_piece_14_faces  0x00000004  water_piece_14_strips
+pointer  water_piece_14_model  0x00000000  water_piece_14_points
+pointer  water_piece_14_model  0x00000004  water_piece_14_normals
+pointer  water_piece_14_model  0x0000000c  water_piece_14_faces
+pointer  water_piece_14_model  0x00000010  water_piece_14_materials
+pointer  water_piece_14  0x00000004  water_piece_14_model
+pointer  water_piece_15_faces  0x00000004  water_piece_15_strips
+pointer  water_piece_15_model  0x00000000  water_piece_15_points
+pointer  water_piece_15_model  0x00000004  water_piece_15_normals
+pointer  water_piece_15_model  0x0000000c  water_piece_15_faces
+pointer  water_piece_15_model  0x00000010  water_piece_15_materials
+pointer  water_piece_15  0x00000004  water_piece_15_model

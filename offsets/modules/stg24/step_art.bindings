@@ -1,0 +1,4 @@
+pointer step_model  0x00000000  deck_vertices
+pointer step_model  0x00000004  deck_polygons
+pointer deck_object  0x00000004  step_model
+include step_rail_collision

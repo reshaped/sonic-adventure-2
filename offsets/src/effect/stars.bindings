@@ -1,0 +1,9 @@
+text  CRASH_STAR_TASK_NAME  10
+text  CONFU_STAR_TASK_NAME  10
+
+pointer  yellow_star_model  0x00000000  yellow_star_vertices
+pointer  yellow_star_model  0x00000004  yellow_star_polygons
+pointer  yellow_star_object  0x00000004  yellow_star_model
+pointer  orange_star_model  0x00000000  orange_star_vertices
+pointer  orange_star_model  0x00000004  orange_star_polygons
+pointer  orange_star_object  0x00000004  orange_star_model

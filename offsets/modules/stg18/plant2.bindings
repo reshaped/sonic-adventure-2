@@ -1,0 +1,16 @@
+text AQUATIC_STEM_TEXTURE 22
+text AQUATIC_LEAF_TEXTURE 24
+
+pointer  plant2_names  0x00000000  AQUATIC_STEM_TEXTURE
+pointer  plant2_names  0x0000000c  AQUATIC_LEAF_TEXTURE
+pointer  sway_texlist  0x00000000  plant2_names
+pointer  plant2_model  0x00000000  plant2_vertices
+pointer  plant2_model  0x00000004  plant2_polygons
+pointer  sway_object  0x00000004  plant2_model
+pointer  plant2_shape_keys  0x00000004  plant2_pose_0
+pointer  plant2_shape_keys  0x0000000c  plant2_pose_9
+pointer  plant2_shape_keys  0x00000014  plant2_pose_18
+pointer  plant2_shape_tracks  0x00000000  plant2_shape_keys
+pointer  sway_shape  0x00000000  plant2_shape_tracks
+pointer  sway_motion  0x00000000  plant2_motion_tracks
+pointer  plant2_texlists  0x00000000  sway_texlist

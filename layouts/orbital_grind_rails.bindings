@@ -1,0 +1,81 @@
+# Five distinct filenames reused by all three rails in the same stage.
+text RAIL_TRIM_TEXTURE 12
+text RAIL_TEXTURE_MIU32_FR002 12
+text RAIL_TEXTURE_MIU64_FR001 12
+text RAIL_TEXTURE_MIU64_FR004 12
+text RAIL_TEXTURE_MIU64_FR011 12
+
+pointer grind_rail_0_textures  0x00000000  RAIL_TRIM_TEXTURE
+pointer grind_rail_0_textures  0x0000000c  RAIL_TEXTURE_MIU32_FR002
+pointer grind_rail_0_textures  0x00000018  RAIL_TEXTURE_MIU64_FR001
+pointer grind_rail_0_textures  0x00000024  RAIL_TEXTURE_MIU64_FR004
+pointer grind_rail_0_textures  0x00000030  RAIL_TEXTURE_MIU64_FR011
+
+pointer grind_rail_0_texlist  0x00000000  grind_rail_0_textures
+
+pointer grind_rail_0_light_mesh  0x00000000  grind_rail_0_light_vertices
+pointer grind_rail_0_light_mesh  0x00000004  grind_rail_0_light_polygons
+
+pointer grind_rail_0_light  0x00000004  grind_rail_0_light_mesh
+
+pointer grind_rail_0_scroll_mesh  0x00000000  grind_rail_0_scroll_vertices
+pointer grind_rail_0_scroll_mesh  0x00000004  grind_rail_0_scroll_polygons
+
+pointer grind_rail_0_scroll  0x00000004  grind_rail_0_scroll_mesh
+pointer grind_rail_0_scroll  0x00000030  grind_rail_0_light
+
+pointer grind_rail_0_mesh  0x00000000  grind_rail_0_vertices
+pointer grind_rail_0_mesh  0x00000004  grind_rail_0_polygons
+
+pointer grind_rail_0_object  0x00000004  grind_rail_0_mesh
+pointer grind_rail_0_object  0x0000002c  grind_rail_0_scroll
+
+pointer grind_rail_1_textures  0x00000000  RAIL_TRIM_TEXTURE
+pointer grind_rail_1_textures  0x0000000c  RAIL_TEXTURE_MIU32_FR002
+pointer grind_rail_1_textures  0x00000018  RAIL_TEXTURE_MIU64_FR001
+pointer grind_rail_1_textures  0x00000024  RAIL_TEXTURE_MIU64_FR004
+pointer grind_rail_1_textures  0x00000030  RAIL_TEXTURE_MIU64_FR011
+
+pointer grind_rail_1_texlist  0x00000000  grind_rail_1_textures
+
+pointer grind_rail_1_light_mesh  0x00000000  grind_rail_1_light_vertices
+pointer grind_rail_1_light_mesh  0x00000004  grind_rail_1_light_polygons
+
+pointer grind_rail_1_light  0x00000004  grind_rail_1_light_mesh
+
+pointer grind_rail_1_scroll_mesh  0x00000000  grind_rail_1_scroll_vertices
+pointer grind_rail_1_scroll_mesh  0x00000004  grind_rail_1_scroll_polygons
+
+pointer grind_rail_1_scroll  0x00000004  grind_rail_1_scroll_mesh
+pointer grind_rail_1_scroll  0x00000030  grind_rail_1_light
+
+pointer grind_rail_1_mesh  0x00000000  grind_rail_1_vertices
+pointer grind_rail_1_mesh  0x00000004  grind_rail_1_polygons
+
+pointer grind_rail_1_object  0x00000004  grind_rail_1_mesh
+pointer grind_rail_1_object  0x0000002c  grind_rail_1_scroll
+
+pointer grind_rail_2_textures  0x00000000  RAIL_TRIM_TEXTURE
+pointer grind_rail_2_textures  0x0000000c  RAIL_TEXTURE_MIU32_FR002
+pointer grind_rail_2_textures  0x00000018  RAIL_TEXTURE_MIU64_FR001
+pointer grind_rail_2_textures  0x00000024  RAIL_TEXTURE_MIU64_FR004
+pointer grind_rail_2_textures  0x00000030  RAIL_TEXTURE_MIU64_FR011
+
+pointer grind_rail_2_texlist  0x00000000  grind_rail_2_textures
+
+pointer grind_rail_2_light_mesh  0x00000000  grind_rail_2_light_vertices
+pointer grind_rail_2_light_mesh  0x00000004  grind_rail_2_light_polygons
+
+pointer grind_rail_2_light  0x00000004  grind_rail_2_light_mesh
+
+pointer grind_rail_2_scroll_mesh  0x00000000  grind_rail_2_scroll_vertices
+pointer grind_rail_2_scroll_mesh  0x00000004  grind_rail_2_scroll_polygons
+
+pointer grind_rail_2_scroll  0x00000004  grind_rail_2_scroll_mesh
+pointer grind_rail_2_scroll  0x00000030  grind_rail_2_light
+
+pointer grind_rail_2_mesh  0x00000000  grind_rail_2_vertices
+pointer grind_rail_2_mesh  0x00000004  grind_rail_2_polygons
+
+pointer grind_rail_2_object  0x00000004  grind_rail_2_mesh
+pointer grind_rail_2_object  0x0000002c  grind_rail_2_scroll

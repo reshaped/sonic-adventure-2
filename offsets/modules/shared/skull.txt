@@ -1,0 +1,10 @@
+datum  skull_shapes  D  0x00000974  144
+datum  skull_still_shape  D  0x00000a04  48
+datum  skull_polygons  D  0x00000014  1078
+datum  skull_vertices  D  0x0000044c  1236
+text  SKULL_TEXT_SIKAKE_25_64  C  0x0000004c  13
+datum  skull_texname  D  0x00000000  12
+datum  skull_texlist  D  0x0000000c  8
+datum  skull_model  D  0x00000920  24
+datum  skull_object  D  0x00000938  52
+datum  skull_texlists  D  0x0000096c  8

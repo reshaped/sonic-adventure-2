@@ -1,0 +1,6 @@
+pointer  enemy_scrap_gray_model  0x00000000  gray_vertices
+pointer  enemy_scrap_gray_model  0x00000004  gray_faces
+pointer  gray_fragment  0x00000004  enemy_scrap_gray_model
+pointer  enemy_scrap_red_model  0x00000000  red_vertices
+pointer  enemy_scrap_red_model  0x00000004  red_faces
+pointer  red_fragment  0x00000004  enemy_scrap_red_model

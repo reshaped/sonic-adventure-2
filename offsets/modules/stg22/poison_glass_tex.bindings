@@ -1,0 +1,5 @@
+pointer  textures  0x00000000  gadget_poison_materials
+pointer  gadget_poison_glass_texlist  0x00000000  textures
+pointer  gadget_poison_glass_fragment  0x00000000  gadget_poison_glass_fragment_vertices
+pointer  gadget_poison_glass_fragment  0x00000004  gadget_poison_glass_fragment_polygons
+pointer  gadget_poison_glass_fragment_object  0x00000004  gadget_poison_glass_fragment

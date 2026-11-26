@@ -1,0 +1,8 @@
+text SIGN_EDITOR_ROT_X 9
+text SIGN_EDITOR_ROT_Y 9
+text SIGN_EDITOR_ROT_Z 9
+text SIGN_TEXTURE_MIU64_IG018 12
+text SIGN_TEXTURE_PR128_12 9
+
+include prison_sign
+pointer sign_texlists 0x00000000 sign_texlist

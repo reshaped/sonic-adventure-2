@@ -1,0 +1,9 @@
+datum  tower_eggwall  C  0x00000000  20
+datum  tower_hasira4  C  0x00000014  16
+datum  tower_hasira5  C  0x00000024  16
+datum  tower_kabe1  C  0x00000034  12
+datum  tower_cut_face  C  0x00000040  24
+datum  tower_kabe2  C  0x00000058  12
+datum  plinth_hasira5  C  0x00000064  16
+datum  plinth_kage1  C  0x00000074  12
+datum  plinth_sekihi3  C  0x00000080  14

@@ -1,0 +1,6 @@
+datum  meteor_polygons  D  0x00000014  5534
+datum  meteor_vertices  D  0x000015b4  6652
+datum  sky_meteor_mesh  D  0x00002fb0  24
+datum  meteor_sky_meteor  D  0x00002fc8  52
+text  MATERIAL_01  C  0x00000000  11
+datum  textures  D  0x00000000  12

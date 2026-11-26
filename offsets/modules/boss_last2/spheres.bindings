@@ -1,0 +1,6 @@
+pointer  sphere_sprite  0x00000018  finalhazard_effect_texlist
+pointer  sphere_sprite  0x0000001c  sphere_cell
+pointer  ring  0x00000018  finalhazard_effect_texlist
+pointer  ring  0x0000001c  ring_cell
+pointer  sphere_models  0x00000000  finalhazard_sphere_near
+pointer  sphere_models  0x00000004  finalhazard_sphere_far

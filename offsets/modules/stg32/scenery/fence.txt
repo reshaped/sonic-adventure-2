@@ -1,0 +1,8 @@
+datum  herd_fence_object_1_polygons  D  0x00000000  210
+datum  herd_fence_object_1_vertices  D  0x000000d4  396
+datum  herd_fence_object_1_model  D  0x00000260  24
+datum  herd_fence_object_1  D  0x00000278  52
+datum  herd_fence_object_polygons  D  0x000002ac  774
+datum  herd_fence_object_vertices  D  0x000005b4  1388
+datum  herd_fence_object_model  D  0x00000b20  24
+datum  herd_fence_object  D  0x00000b38  52

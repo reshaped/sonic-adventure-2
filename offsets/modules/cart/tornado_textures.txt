@@ -1,0 +1,2 @@
+datum  aircraft  C  0x00000000  448
+datum  tornado_slots  D  0x00000000  252

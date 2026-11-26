@@ -1,0 +1,6 @@
+datum  entrance_common_cells  C  0x00000000  3120
+datum  entrance_english_cells  C  0x0000134c  820
+datum  entrance_english_title_cells  C  0x0000120c  320
+datum  entrance_japanese_cells  C  0x00000f28  740
+datum  entrance_japanese_title_cells  C  0x00000dc0  360
+datum  entrance_rival_cells  C  0x00000c30  400

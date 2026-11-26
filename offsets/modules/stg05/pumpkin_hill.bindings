@@ -1,0 +1,45 @@
+text BACKGROUND_ARCHIVE 8
+text PUMPKIN_TEXTURE_PUM8_1 7
+text PUMPKIN_TEXTURE_PUM8_2 7
+text PUMPKIN_TEXTURE_PUM_NBG1 9
+text PUMPKIN_TEXTURE_PUM128_16 10
+
+pointer  pumpkin_hill_emerald_path_0  0x00000008  pumpkin_hill_emerald_path_0_points
+pointer  pumpkin_hill_emerald_path_1  0x00000008  pumpkin_hill_emerald_path_1_points
+pointer  pumpkin_hill_emerald_path_2  0x00000008  pumpkin_hill_emerald_path_2_points
+pointer  pumpkin_hill_emerald_path_3  0x00000008  pumpkin_hill_emerald_path_3_points
+pointer  pumpkin_hill_emerald_path_4  0x00000008  pumpkin_hill_emerald_path_4_points
+pointer  pumpkin_hill_emerald_paths  0x00000000  pumpkin_hill_emerald_path_0
+pointer  pumpkin_hill_emerald_paths  0x00000004  pumpkin_hill_emerald_path_1
+pointer  pumpkin_hill_emerald_paths  0x00000008  pumpkin_hill_emerald_path_2
+pointer  pumpkin_hill_emerald_paths  0x0000000c  pumpkin_hill_emerald_path_3
+pointer  pumpkin_hill_emerald_paths  0x00000010  pumpkin_hill_emerald_path_4
+pointer  background_texnames  0x00000000  PUMPKIN_TEXTURE_PUM8_1
+pointer  background_texnames  0x0000000c  PUMPKIN_TEXTURE_PUM8_2
+pointer  background_texnames  0x00000018  PUMPKIN_TEXTURE_PUM_NBG1
+pointer  background_texnames  0x00000024  PUMPKIN_TEXTURE_PUM128_16
+pointer  background_texlist  0x00000000  background_texnames
+pointer  background_0_model  0x00000000  background_0_vertices
+pointer  background_0_model  0x00000004  background_0_polygons
+pointer  background_0  0x00000004  background_0_model
+pointer  background_1_model  0x00000000  background_1_vertices
+pointer  background_1_model  0x00000004  background_1_polygons
+pointer  background_1  0x00000004  background_1_model
+pointer  background_2_model  0x00000000  background_2_vertices
+pointer  background_2_model  0x00000004  background_2_polygons
+pointer  background_2  0x00000004  background_2_model
+pointer  background_builds  0x00000004  background_texlist
+pointer  background_builds  0x00000008  background_0
+pointer  background_builds  0x00000014  background_texlist
+pointer  background_builds  0x00000018  background_1
+pointer  background_builds  0x00000024  background_texlist
+pointer  background_builds  0x00000028  background_2
+pointer  kill_area_meshset  0x00000004  kill_area_meshes
+pointer  kill_area_model  0x00000000  kill_area_points
+pointer  kill_area_model  0x00000004  kill_area_normals
+pointer  kill_area_model  0x0000000c  kill_area_meshset
+pointer  kill_area_model  0x00000010  kill_area_material
+pointer  kill_area  0x00000004  kill_area_model
+pointer  pumpkin_hill_kill_areas  0x00000004  kill_area
+
+stop  pumpkin_hill_hints  kind  HUNT_HINT_END

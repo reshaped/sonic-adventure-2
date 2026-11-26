@@ -1,0 +1,1 @@
+datum  minimal_clips  D  0x00000054  112

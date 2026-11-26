@@ -1,0 +1,10 @@
+text  CHAMBER_LION_HEAD_DZ_DC_LIONHEAD64  C  0x00000028  17
+datum  chamber_lion_head_texture_names  D  0x00000000  12
+datum  chamber_lion_head_texlist  D  0x0000000c  8
+datum  chamber_lion_head_polygons  D  0x00000014  506
+datum  chamber_lion_head_vertices  D  0x00000210  492
+datum  chamber_lion_head_model  D  0x000003fc  24
+datum  chamber_lion_head_object  D  0x00000414  52
+datum  chamber_lion_head_texlists  D  0x00000448  8
+datum  chamber_lion_head_shapes  D  0x00000450  144
+datum  chamber_lion_head_builds  D  0x000004e8  16

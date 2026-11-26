@@ -1,0 +1,8 @@
+datum  flash_cells  D  0x00001e54  20
+datum  icon_cells  D  0x00001e68  60
+datum  radar_quads  D  0x00001d94  192
+datum  flash_quads  D  0x00001cf4  128
+datum  shade_quad  D  0x00001c94  64
+datum  knuckles_anims  D  0x00000078  3472
+datum  rouge_anims  D  0x00000e08  3472
+datum  hunter_shapes  D  0x00001b98  240

@@ -1,0 +1,32 @@
+text TIER_KIND_FRONT 6
+text TIER_KIND_SIDE 6
+
+pointer  shells  0x00000000  tier_front_shell
+pointer  shells  0x00000004  tier_side_shell
+pointer  bases  0x00000000  tier_front_base
+pointer  bases  0x00000004  tier_side_base
+pointer  shell_texlists  0x00000000  tier_front_shell_texlist
+pointer  shell_texlists  0x00000004  tier_side_shell_texlist
+pointer  base_texlists  0x00000000  tier_front_base_texlist
+pointer  base_texlists  0x00000004  tier_side_base_texlist
+pointer  kind_names  0x00000000  TIER_KIND_FRONT
+pointer  kind_names  0x00000004  TIER_KIND_SIDE
+pointer  fragments  0x00000000  tier_fragments_texlist
+pointer  fragments  0x00000004  tier_fragment_0
+pointer  fragments  0x00000020  tier_fragments_texlist
+pointer  fragments  0x00000024  tier_fragment_1
+pointer  fragments  0x00000040  tier_fragments_texlist
+pointer  fragments  0x00000044  tier_fragment_2
+pointer  fragments  0x00000060  tier_fragments_texlist
+pointer  fragments  0x00000064  tier_fragment_3
+pointer  fragments  0x00000080  tier_fragments_texlist
+pointer  fragments  0x00000084  tier_fragment_4
+pointer  fragments  0x000000a0  tier_fragments_texlist
+pointer  fragments  0x000000a4  tier_fragment_5
+pointer  fragments  0x000000c0  tier_fragments_texlist
+pointer  fragments  0x000000c4  tier_fragment_6
+pointer  stacked_platform_texlists  0x00000000  tier_front_shell_texlist
+pointer  stacked_platform_texlists  0x00000004  tier_side_shell_texlist
+pointer  stacked_platform_texlists  0x00000008  tier_front_base_texlist
+pointer  stacked_platform_texlists  0x0000000c  tier_side_base_texlist
+pointer  stacked_platform_texlists  0x00000010  tier_fragments_texlist

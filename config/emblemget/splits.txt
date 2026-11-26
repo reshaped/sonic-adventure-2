@@ -1,0 +1,41 @@
+file                              SONIC2/EMBLEMGET.PRS
+
+# section                         start       end
+DHEAD                             0x8c500000  0x8c500020
+P                                 0x8c500020  0x8c5015e0
+C                                  0x8c5015e0  0x8c520ca4
+D                                 0x8c520ca4  0x8c527bec
+B                                 0x8c527bec  0x8c527c3c
+
+# source                          section     start       end
+modules/emblemget/head.c          DHEAD       0x8c500000  0x8c500018
+modules/emblemget/emblemget.c     P           0x8c500020  0x8c500180
+modules/shared/sparkle.c          P           0x8c500180  0x8c500360
+modules/shared/emblem.c           P           0x8c500360  0x8c5009c0
+modules/shared/congratulations.c  P           0x8c5009c0  0x8c500cc0
+modules/shared/message_sprite.c   P           0x8c500cc0  0x8c5011c0
+modules/shared/screen_sprite.c    P           0x8c5011c0  0x8c5015e0
+modules/emblemget/emblemget.c     C           0x8c5015e0  0x8c501fbe
+modules/shared/sparkle.c          C           0x8c501fc0  0x8c501fe0
+modules/shared/emblem.c           C           0x8c501fe0  0x8c5020b5
+modules/shared/congratulations.c  C           0x8c5020b8  0x8c502111
+modules/shared/message_sprite.c   C           0x8c502114  0x8c502120
+modules/shared/messages/japanese.c       C           0x8c502120  0x8c5082ca
+modules/shared/messages/english.c        C           0x8c5082cc  0x8c50e052
+modules/shared/messages/french.c         C           0x8c50e054  0x8c51487a
+modules/shared/messages/spanish.c        C           0x8c51487c  0x8c51aae6
+modules/shared/messages/german.c         C           0x8c51aae8  0x8c520ca2
+modules/emblemget/emblemget.c     D           0x8c520ca4  0x8c52169c
+modules/shared/sparkle.c          D           0x8c52169c  0x8c52170c
+modules/shared/emblem.c           D           0x8c52170c  0x8c524e18
+modules/shared/congratulations.c  D           0x8c524e18  0x8c525030
+modules/shared/message_sprite.c   D           0x8c525030  0x8c525034
+modules/shared/screen_sprite.c    D           0x8c525034  0x8c525054
+modules/shared/messages/tables.c         D           0x8c525054  0x8c525068
+modules/shared/messages/japanese.c       D           0x8c525068  0x8c52591c
+modules/shared/messages/english.c        D           0x8c52591c  0x8c5261d0
+modules/shared/messages/french.c         D           0x8c5261d0  0x8c526a84
+modules/shared/messages/spanish.c        D           0x8c526a84  0x8c527338
+modules/shared/messages/german.c         D           0x8c527338  0x8c527bec
+modules/shared/emblem.c           B           0x8c527bec  0x8c527c30
+modules/shared/congratulations.c  B           0x8c527c30  0x8c527c3c

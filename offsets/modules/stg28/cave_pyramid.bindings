@@ -1,0 +1,12 @@
+text  CAVE_PYRAMID_EDITOR_ANGLE_Y  11
+text  CAVE_PYRAMID_EDITOR_MINIMAL_APPEARANCE_LEVEL  25
+text  CAVE_PYRAMID_TEXTURE_DZ_PC_PYRAMIDEYE64  19
+text  CAVE_PYRAMID_TEXTURE_DZ_PC_SKIN64  13
+
+pointer cave_pyramid_texture_names  0x00000000  CAVE_PYRAMID_TEXTURE_DZ_PC_PYRAMIDEYE64
+pointer cave_pyramid_texture_names  0x0000000c  CAVE_PYRAMID_TEXTURE_DZ_PC_SKIN64
+pointer cave_pyramid_texlist  0x00000000  cave_pyramid_texture_names
+pointer cave_pyramid_model  0x00000000  cave_pyramid_vertices
+pointer cave_pyramid_model  0x00000004  cave_pyramid_polygons
+pointer cave_pyramid_object  0x00000004  cave_pyramid_model
+pointer cave_pyramid_texlists  0x00000000  cave_pyramid_texlist

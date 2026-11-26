@@ -1,0 +1,11 @@
+datum  platform_polygons  D  0x00000000  602
+datum  platform_vertices  D  0x0000025c  1164
+datum  platform_model  D  0x000006e8  24
+datum  green_hill_platform_object  D  0x00000700  52
+datum  platform_collision_materials  D  0x00000734  20
+datum  platform_collision_faces  D  0x00000748  42
+datum  platform_collision_meshsets  D  0x00000774  24
+datum  platform_collision_points  D  0x0000078c  96
+datum  platform_collision_normals  D  0x000007ec  96
+datum  platform_collision_model  D  0x0000084c  40
+datum  green_hill_platform_collision  D  0x00000874  52

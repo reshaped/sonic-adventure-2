@@ -1,0 +1,24 @@
+text RAIL_EDITOR_PITCH 11
+text RAIL_EDITOR_YAW 11
+text RAIL_EDITOR_ROLL 11
+text RAIL_EDITOR_SIZE 13
+text RAIL_EDITOR_UV_SPEED 9
+
+pointer  grind_rail_0_path  0x00000008  grind_rail_0_points
+pointer  grind_rail_1_path  0x00000008  grind_rail_1_points
+pointer  grind_rail_2_path  0x00000008  grind_rail_2_points
+pointer  grind_rail_2_anim  0x00000010  grind_rail_2_uvs
+pointer  grind_rail_1_anim  0x00000010  grind_rail_1_uvs
+pointer  grind_rail_0_anim  0x00000010  grind_rail_0_uvs
+pointer  grind_rail_texlists  0x00000000  grind_rail_0_texlist
+pointer  grind_rail_texlists  0x00000004  grind_rail_1_texlist
+pointer  grind_rail_texlists  0x00000008  grind_rail_2_texlist
+pointer  objects  0x00000000  grind_rail_0_object
+pointer  objects  0x00000004  grind_rail_1_object
+pointer  objects  0x00000008  grind_rail_2_object
+pointer  anims  0x00000000  grind_rail_0_anim
+pointer  anims  0x00000004  grind_rail_1_anim
+pointer  anims  0x00000008  grind_rail_2_anim
+pointer  paths  0x00000000  grind_rail_0_path
+pointer  paths  0x00000004  grind_rail_1_path
+pointer  paths  0x00000008  grind_rail_2_path

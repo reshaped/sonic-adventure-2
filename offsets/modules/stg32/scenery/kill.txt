@@ -1,0 +1,7 @@
+datum  meteor_herd_kill_object_materials  D  0x00000000  20
+datum  meteor_herd_kill_object_faces  D  0x00000014  18
+datum  meteor_herd_kill_object_meshsets  D  0x00000028  24
+datum  meteor_herd_kill_object_points  D  0x00000040  96
+datum  meteor_herd_kill_object_normals  D  0x000000a0  96
+datum  meteor_herd_kill_object_model  D  0x00000100  40
+datum  meteor_herd_kill_object  D  0x00000128  52

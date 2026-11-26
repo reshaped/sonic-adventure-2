@@ -1,0 +1,4 @@
+datum  spikes_polygons  D  0x00000000  554
+datum  spikes_vertices  D  0x0000022c  940
+datum  spikes_model  D  0x000005d8  24
+datum  green_hill_spikes_object  D  0x000005f0  52

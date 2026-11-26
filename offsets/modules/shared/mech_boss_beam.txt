@@ -1,0 +1,5 @@
+datum  shot_cell  D  0x00000450  20
+datum  trail_points  D  0x00000484  128
+datum  charge_anim_uvs  D  0x00000018  948
+datum  shot_sprite  D  0x00000464  32
+datum  charge_anim  D  0x000003cc  36

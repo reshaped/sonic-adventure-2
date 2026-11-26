@@ -1,0 +1,6 @@
+datum  body_motions  C  0x0000000c  112
+datum title_bar D 0x00000000 208
+datum title_letters D 0x000000d0 240
+datum  body_title  D  0x000001c0  44
+datum body_shapes D 0x00000210 1632
+datum body_joints D 0x00000870 1088

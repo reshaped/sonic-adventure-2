@@ -1,0 +1,3 @@
+datum  effects  D  0x00000004  12
+datum  race_effect_groups  D  0x00000010  8
+datum  race_effect_textures  D  0x00000018  16

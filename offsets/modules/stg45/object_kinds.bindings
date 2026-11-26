@@ -1,0 +1,135 @@
+text  SET_NAME_RING  5
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_SPRA  5
+text  SET_NAME_SPRB  5
+text  SET_NAME_3SPRING  8
+text  SET_NAME_BIGJUMP  8
+text  SET_NAME_KASOKU  7
+text  SET_NAME_SWITCH  7
+text  SET_NAME_ITEMBOX  8
+text  SET_NAME_ITEMBOXAIR  11
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_ITEMBOXBAL_GEN  15
+text  SET_NAME_UDREEL  7
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_ORI  4
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_SOLIDBOX  9
+text  SET_NAME_ROCKET  10
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MODMOD  8
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_STOPLOCKON  11
+text  SET_NAME_EFLENSF0  9
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_KAITEN  7
+text  SET_NAME_FENCE  6
+text  SET_NAME_ASHIBA  7
+text  SET_NAME_CHIMNEY  8
+text  SET_NAME_TSUBO  6
+text  SET_NAME_PILLAR2  8
+text  SET_NAME_PILLAR3  8
+text  SET_NAME_PILLAR4  8
+text  SET_NAME_FIRE4  6
+text  SET_NAME_TAIMATSU  9
+pointer  sand_ocean_2p_kinds  0x00000008  ring_step
+pointer  sand_ocean_2p_kinds  0x0000000c  SET_NAME_RING
+pointer  sand_ocean_2p_kinds  0x00000018  ring_linear_init
+pointer  sand_ocean_2p_kinds  0x0000001c  SET_NAME_RING_LINEAR
+pointer  sand_ocean_2p_kinds  0x00000028  ring_circle_init
+pointer  sand_ocean_2p_kinds  0x0000002c  SET_NAME_RING_CIRCLE
+pointer  sand_ocean_2p_kinds  0x00000038  spring_a_step
+pointer  sand_ocean_2p_kinds  0x0000003c  SET_NAME_SPRA
+pointer  sand_ocean_2p_kinds  0x00000048  spring_b_step
+pointer  sand_ocean_2p_kinds  0x0000004c  SET_NAME_SPRB
+pointer  sand_ocean_2p_kinds  0x00000058  triple_spring_init
+pointer  sand_ocean_2p_kinds  0x0000005c  SET_NAME_3SPRING
+pointer  sand_ocean_2p_kinds  0x00000068  big_jump_step
+pointer  sand_ocean_2p_kinds  0x0000006c  SET_NAME_BIGJUMP
+pointer  sand_ocean_2p_kinds  0x00000078  dash_panel_step
+pointer  sand_ocean_2p_kinds  0x0000007c  SET_NAME_KASOKU
+pointer  sand_ocean_2p_kinds  0x00000088  switch_step
+pointer  sand_ocean_2p_kinds  0x0000008c  SET_NAME_SWITCH
+pointer  sand_ocean_2p_kinds  0x00000098  item_box_step
+pointer  sand_ocean_2p_kinds  0x0000009c  SET_NAME_ITEMBOX
+pointer  sand_ocean_2p_kinds  0x000000a8  item_box_air_step
+pointer  sand_ocean_2p_kinds  0x000000ac  SET_NAME_ITEMBOXAIR
+pointer  sand_ocean_2p_kinds  0x000000b8  item_balloon_step
+pointer  sand_ocean_2p_kinds  0x000000bc  SET_NAME_ITEMBOXBALLOON
+pointer  sand_ocean_2p_kinds  0x000000c8  item_balloon_generator_init
+pointer  sand_ocean_2p_kinds  0x000000cc  SET_NAME_ITEMBOXBAL_GEN
+pointer  sand_ocean_2p_kinds  0x000000d8  reel_init
+pointer  sand_ocean_2p_kinds  0x000000dc  SET_NAME_UDREEL
+pointer  sand_ocean_2p_kinds  0x000000e8  dynamite_init
+pointer  sand_ocean_2p_kinds  0x000000ec  SET_NAME_DYNAMITE
+pointer  sand_ocean_2p_kinds  0x000000f8  cage_init
+pointer  sand_ocean_2p_kinds  0x000000fc  SET_NAME_ORI
+pointer  sand_ocean_2p_kinds  0x00000108  wood_box_init
+pointer  sand_ocean_2p_kinds  0x0000010c  SET_NAME_CONTWOOD
+pointer  sand_ocean_2p_kinds  0x00000118  iron_box_init
+pointer  sand_ocean_2p_kinds  0x0000011c  SET_NAME_CONTIRON
+pointer  sand_ocean_2p_kinds  0x00000128  solid_box_init
+pointer  sand_ocean_2p_kinds  0x0000012c  SET_NAME_SOLIDBOX
+pointer  sand_ocean_2p_kinds  0x00000138  rocket_init
+pointer  sand_ocean_2p_kinds  0x0000013c  SET_NAME_ROCKET
+pointer  sand_ocean_2p_kinds  0x00000148  missile_init
+pointer  sand_ocean_2p_kinds  0x0000014c  SET_NAME_ROCKETMISSSILE
+pointer  sand_ocean_2p_kinds  0x00000158  weight_init
+pointer  sand_ocean_2p_kinds  0x0000015c  SET_NAME_BUNCHIN
+pointer  sand_ocean_2p_kinds  0x00000168  iron_ball_init
+pointer  sand_ocean_2p_kinds  0x0000016c  SET_NAME_IRONBALL2
+pointer  sand_ocean_2p_kinds  0x00000178  collision_sphere_step
+pointer  sand_ocean_2p_kinds  0x0000017c  SET_NAME_SPHERE
+pointer  sand_ocean_2p_kinds  0x00000188  collision_cylinder_step
+pointer  sand_ocean_2p_kinds  0x0000018c  SET_NAME_CCYL
+pointer  sand_ocean_2p_kinds  0x00000198  collision_cube_step
+pointer  sand_ocean_2p_kinds  0x0000019c  SET_NAME_CCUBE
+pointer  sand_ocean_2p_kinds  0x000001a8  collision_wall_step
+pointer  sand_ocean_2p_kinds  0x000001ac  SET_NAME_CWALL
+pointer  sand_ocean_2p_kinds  0x000001b8  collision_circle_step
+pointer  sand_ocean_2p_kinds  0x000001bc  SET_NAME_CCIRCLE
+pointer  sand_ocean_2p_kinds  0x000001c8  modifier_volume_init
+pointer  sand_ocean_2p_kinds  0x000001cc  SET_NAME_MODMOD
+pointer  sand_ocean_2p_kinds  0x000001d8  light_switch_init
+pointer  sand_ocean_2p_kinds  0x000001dc  SET_NAME_LIGHT_SW
+pointer  sand_ocean_2p_kinds  0x000001e8  stop_lockon_init
+pointer  sand_ocean_2p_kinds  0x000001ec  SET_NAME_STOPLOCKON
+pointer  sand_ocean_2p_kinds  0x000001f8  lens_flare_init
+pointer  sand_ocean_2p_kinds  0x000001fc  SET_NAME_EFLENSF0
+pointer  sand_ocean_2p_kinds  0x00000208  effect_object_init
+pointer  sand_ocean_2p_kinds  0x0000020c  SET_NAME_EFFOBJ0
+pointer  sand_ocean_2p_kinds  0x00000218  dummy_object_init
+pointer  sand_ocean_2p_kinds  0x0000021c  SET_NAME_DMYOBJ
+pointer  sand_ocean_2p_kinds  0x00000228  big_step
+pointer  sand_ocean_2p_kinds  0x0000022c  SET_NAME_BIG_THE_CAT
+pointer  sand_ocean_2p_kinds  0x00000238  turning_platform_init
+pointer  sand_ocean_2p_kinds  0x0000023c  SET_NAME_KAITEN
+pointer  sand_ocean_2p_kinds  0x00000248  ocean_fence_init
+pointer  sand_ocean_2p_kinds  0x0000024c  SET_NAME_FENCE
+pointer  sand_ocean_2p_kinds  0x00000258  moving_foothold_init
+pointer  sand_ocean_2p_kinds  0x0000025c  SET_NAME_ASHIBA
+pointer  sand_ocean_2p_kinds  0x00000268  chimney_init
+pointer  sand_ocean_2p_kinds  0x0000026c  SET_NAME_CHIMNEY
+pointer  sand_ocean_2p_kinds  0x00000278  ocean_pot_init
+pointer  sand_ocean_2p_kinds  0x0000027c  SET_NAME_TSUBO
+pointer  sand_ocean_2p_kinds  0x00000288  pillar2_init
+pointer  sand_ocean_2p_kinds  0x0000028c  SET_NAME_PILLAR2
+pointer  sand_ocean_2p_kinds  0x00000298  pillar3_init
+pointer  sand_ocean_2p_kinds  0x0000029c  SET_NAME_PILLAR3
+pointer  sand_ocean_2p_kinds  0x000002a8  pillar4_init
+pointer  sand_ocean_2p_kinds  0x000002ac  SET_NAME_PILLAR4
+pointer  sand_ocean_2p_kinds  0x000002b8  fire_dish_init
+pointer  sand_ocean_2p_kinds  0x000002bc  SET_NAME_FIRE4
+pointer  sand_ocean_2p_kinds  0x000002c8  torch_light_init
+pointer  sand_ocean_2p_kinds  0x000002cc  SET_NAME_TAIMATSU

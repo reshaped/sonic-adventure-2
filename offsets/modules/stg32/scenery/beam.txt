@@ -1,0 +1,7 @@
+text  HERD_TEXTURE_G_L  C  0x00000000  4
+datum  herd_beam_names  D  0x00000000  12
+datum  herd_beam_texlist  D  0x0000000c  8
+datum  herd_beam_object_polygons  D  0x00000014  62
+datum  herd_beam_object_vertices  D  0x00000054  108
+datum  herd_beam_object_model  D  0x000000c0  24
+datum  herd_beam_object  D  0x000000d8  52

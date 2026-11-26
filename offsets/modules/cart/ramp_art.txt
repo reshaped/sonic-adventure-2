@@ -1,0 +1,7 @@
+datum  ramp_material  D  0x00000000  20
+datum  ramp_indices  D  0x00000014  18
+datum  ramp_strips  D  0x00000028  24
+datum  ramp_points  D  0x00000040  72
+datum  ramp_normals  D  0x00000088  72
+datum  ramp_model  D  0x000000d0  40
+datum  cart_jump_land  D  0x000000f8  52

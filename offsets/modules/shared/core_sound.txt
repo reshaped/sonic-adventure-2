@@ -1,0 +1,2 @@
+datum  core_sounds  C  0x00000000  192
+datum  core_sound_list  C  0x000000c0  8

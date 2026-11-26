@@ -1,0 +1,151 @@
+text  EFFECT_TEXTURE_S_BALL_A  9
+text  EFFECT_TEXTURE_S_BALL_B  9
+text  EFFECT_TEXTURE_S_DASH01  9
+text  EFFECT_TEXTURE_S_DASH02  9
+text  EFFECT_TEXTURE_S_DASH03  9
+text  EFFECT_TEXTURE_S_DASH04  9
+text  EFFECT_TEXTURE_S_DASH05  9
+text  EFFECT_TEXTURE_S_DASH06  9
+text  EFFECT_TEXTURE_S_DASH07  9
+text  EFFECT_TEXTURE_S_DASH08  9
+text  EFFECT_TEXTURE_S_DASH09  9
+text  EFFECT_TEXTURE_S_DASH10  9
+text  EFFECT_TEXTURE_S_DASH11  9
+text  EFFECT_TEXTURE_S_DASH12  9
+text  EFFECT_TEXTURE_S_DASH13  9
+text  EFFECT_TEXTURE_S_DASH14  9
+text  EFFECT_TEXTURE_S_DASH15  9
+text  EFFECT_TEXTURE_S_DASH16  9
+text  EFFECT_TEXTURE_S_DASH17  9
+text  EFFECT_TEXTURE_S_DASH18  9
+text  EFFECT_TEXTURE_S_DASH19  9
+text  EFFECT_TEXTURE_S_DASH20  9
+text  EFFECT_TEXTURE_S_DASH21  9
+text  EFFECT_TEXTURE_S_DASH22  9
+text  EFFECT_TEXTURE_S_DASH23  9
+text  EFFECT_TEXTURE_LCHARGE01  10
+text  EFFECT_TEXTURE_LCHARGE02  10
+text  EFFECT_TEXTURE_FIRE_SS01  10
+text  EFFECT_TEXTURE_FIRE_SS02  10
+text  EFFECT_TEXTURE_FIRE_SS03  10
+text  EFFECT_TEXTURE_FIRE_SS04  10
+text  EFFECT_TEXTURE_FIRE_SS05  10
+text  EFFECT_TEXTURE_FIRE_SS06  10
+text  EFFECT_TEXTURE_FIRE_SS07  10
+text  EFFECT_TEXTURE_FIRE_SS08  10
+text  EFFECT_TEXTURE_CC_GLIGHT  10
+text  EFFECT_TEXTURE_CC_PARTICLE0  13
+text  EFFECT_TEXTURE_CC_RING  8
+text  EFFECT_TEXTURE_EF_FIRESUM  11
+text  EFFECT_TEXTURE_SH_BALL_A  10
+text  EFFECT_TEXTURE_SH_BALL_B  10
+text  EFFECT_TEXTURE_SH_DASH01  10
+text  EFFECT_TEXTURE_SH_DASH02  10
+text  EFFECT_TEXTURE_SH_DASH03  10
+text  EFFECT_TEXTURE_SH_DASH04  10
+text  EFFECT_TEXTURE_SH_DASH05  10
+text  EFFECT_TEXTURE_SH_DASH06  10
+text  EFFECT_TEXTURE_SH_DASH07  10
+text  EFFECT_TEXTURE_SH_DASH08  10
+text  EFFECT_TEXTURE_SH_DASH09  10
+text  EFFECT_TEXTURE_SH_DASH10  10
+text  EFFECT_TEXTURE_SH_DASH11  10
+text  EFFECT_TEXTURE_SH_DASH12  10
+text  EFFECT_TEXTURE_SH_DASH13  10
+text  EFFECT_TEXTURE_SH_DASH14  10
+text  EFFECT_TEXTURE_SH_DASH15  10
+text  EFFECT_TEXTURE_SH_DASH16  10
+text  EFFECT_TEXTURE_SH_DASH17  10
+text  EFFECT_TEXTURE_SH_DASH18  10
+text  EFFECT_TEXTURE_SH_DASH19  10
+text  EFFECT_TEXTURE_SH_DASH20  10
+text  EFFECT_TEXTURE_SH_DASH21  10
+text  EFFECT_TEXTURE_SH_DASH22  10
+text  EFFECT_TEXTURE_SH_DASH23  10
+text  EFFECT_TEXTURE_LCHARGE03  10
+text  EFFECT_TEXTURE_LCHARGE04  10
+
+pointer  s_efftex_texname  0x00000000  EFFECT_TEXTURE_S_BALL_A
+pointer  s_efftex_texname  0x0000000c  EFFECT_TEXTURE_S_BALL_B
+pointer  s_efftex_texname  0x00000018  EFFECT_TEXTURE_S_DASH01
+pointer  s_efftex_texname  0x00000024  EFFECT_TEXTURE_S_DASH02
+pointer  s_efftex_texname  0x00000030  EFFECT_TEXTURE_S_DASH03
+pointer  s_efftex_texname  0x0000003c  EFFECT_TEXTURE_S_DASH04
+pointer  s_efftex_texname  0x00000048  EFFECT_TEXTURE_S_DASH05
+pointer  s_efftex_texname  0x00000054  EFFECT_TEXTURE_S_DASH06
+pointer  s_efftex_texname  0x00000060  EFFECT_TEXTURE_S_DASH07
+pointer  s_efftex_texname  0x0000006c  EFFECT_TEXTURE_S_DASH08
+pointer  s_efftex_texname  0x00000078  EFFECT_TEXTURE_S_DASH09
+pointer  s_efftex_texname  0x00000084  EFFECT_TEXTURE_S_DASH10
+pointer  s_efftex_texname  0x00000090  EFFECT_TEXTURE_S_DASH11
+pointer  s_efftex_texname  0x0000009c  EFFECT_TEXTURE_S_DASH12
+pointer  s_efftex_texname  0x000000a8  EFFECT_TEXTURE_S_DASH13
+pointer  s_efftex_texname  0x000000b4  EFFECT_TEXTURE_S_DASH14
+pointer  s_efftex_texname  0x000000c0  EFFECT_TEXTURE_S_DASH15
+pointer  s_efftex_texname  0x000000cc  EFFECT_TEXTURE_S_DASH16
+pointer  s_efftex_texname  0x000000d8  EFFECT_TEXTURE_S_DASH17
+pointer  s_efftex_texname  0x000000e4  EFFECT_TEXTURE_S_DASH18
+pointer  s_efftex_texname  0x000000f0  EFFECT_TEXTURE_S_DASH19
+pointer  s_efftex_texname  0x000000fc  EFFECT_TEXTURE_S_DASH20
+pointer  s_efftex_texname  0x00000108  EFFECT_TEXTURE_S_DASH21
+pointer  s_efftex_texname  0x00000114  EFFECT_TEXTURE_S_DASH22
+pointer  s_efftex_texname  0x00000120  EFFECT_TEXTURE_S_DASH23
+pointer  s_efftex_texname  0x0000012c  EFFECT_TEXTURE_LCHARGE01
+pointer  s_efftex_texname  0x00000138  EFFECT_TEXTURE_LCHARGE02
+pointer  s_efftex_texname  0x00000144  EFFECT_TEXTURE_FIRE_SS01
+pointer  s_efftex_texname  0x00000150  EFFECT_TEXTURE_FIRE_SS02
+pointer  s_efftex_texname  0x0000015c  EFFECT_TEXTURE_FIRE_SS03
+pointer  s_efftex_texname  0x00000168  EFFECT_TEXTURE_FIRE_SS04
+pointer  s_efftex_texname  0x00000174  EFFECT_TEXTURE_FIRE_SS05
+pointer  s_efftex_texname  0x00000180  EFFECT_TEXTURE_FIRE_SS06
+pointer  s_efftex_texname  0x0000018c  EFFECT_TEXTURE_FIRE_SS07
+pointer  s_efftex_texname  0x00000198  EFFECT_TEXTURE_FIRE_SS08
+pointer  s_efftex_texname  0x000001a4  EFFECT_TEXTURE_CC_GLIGHT
+pointer  s_efftex_texname  0x000001b0  EFFECT_TEXTURE_CC_PARTICLE0
+pointer  s_efftex_texname  0x000001bc  EFFECT_TEXTURE_CC_RING
+pointer  s_efftex_texname  0x000001c8  EFFECT_TEXTURE_EF_FIRESUM
+pointer  s_efftex_texlist  0x00000000  s_efftex_texname
+pointer  sh_efftex_texname  0x00000000  EFFECT_TEXTURE_SH_BALL_A
+pointer  sh_efftex_texname  0x0000000c  EFFECT_TEXTURE_SH_BALL_B
+pointer  sh_efftex_texname  0x00000018  EFFECT_TEXTURE_SH_DASH01
+pointer  sh_efftex_texname  0x00000024  EFFECT_TEXTURE_SH_DASH02
+pointer  sh_efftex_texname  0x00000030  EFFECT_TEXTURE_SH_DASH03
+pointer  sh_efftex_texname  0x0000003c  EFFECT_TEXTURE_SH_DASH04
+pointer  sh_efftex_texname  0x00000048  EFFECT_TEXTURE_SH_DASH05
+pointer  sh_efftex_texname  0x00000054  EFFECT_TEXTURE_SH_DASH06
+pointer  sh_efftex_texname  0x00000060  EFFECT_TEXTURE_SH_DASH07
+pointer  sh_efftex_texname  0x0000006c  EFFECT_TEXTURE_SH_DASH08
+pointer  sh_efftex_texname  0x00000078  EFFECT_TEXTURE_SH_DASH09
+pointer  sh_efftex_texname  0x00000084  EFFECT_TEXTURE_SH_DASH10
+pointer  sh_efftex_texname  0x00000090  EFFECT_TEXTURE_SH_DASH11
+pointer  sh_efftex_texname  0x0000009c  EFFECT_TEXTURE_SH_DASH12
+pointer  sh_efftex_texname  0x000000a8  EFFECT_TEXTURE_SH_DASH13
+pointer  sh_efftex_texname  0x000000b4  EFFECT_TEXTURE_SH_DASH14
+pointer  sh_efftex_texname  0x000000c0  EFFECT_TEXTURE_SH_DASH15
+pointer  sh_efftex_texname  0x000000cc  EFFECT_TEXTURE_SH_DASH16
+pointer  sh_efftex_texname  0x000000d8  EFFECT_TEXTURE_SH_DASH17
+pointer  sh_efftex_texname  0x000000e4  EFFECT_TEXTURE_SH_DASH18
+pointer  sh_efftex_texname  0x000000f0  EFFECT_TEXTURE_SH_DASH19
+pointer  sh_efftex_texname  0x000000fc  EFFECT_TEXTURE_SH_DASH20
+pointer  sh_efftex_texname  0x00000108  EFFECT_TEXTURE_SH_DASH21
+pointer  sh_efftex_texname  0x00000114  EFFECT_TEXTURE_SH_DASH22
+pointer  sh_efftex_texname  0x00000120  EFFECT_TEXTURE_SH_DASH23
+pointer  sh_efftex_texname  0x0000012c  EFFECT_TEXTURE_LCHARGE03
+pointer  sh_efftex_texname  0x00000138  EFFECT_TEXTURE_LCHARGE04
+pointer  sh_efftex_texname  0x00000144  EFFECT_TEXTURE_FIRE_SS01
+pointer  sh_efftex_texname  0x00000150  EFFECT_TEXTURE_FIRE_SS02
+pointer  sh_efftex_texname  0x0000015c  EFFECT_TEXTURE_FIRE_SS03
+pointer  sh_efftex_texname  0x00000168  EFFECT_TEXTURE_FIRE_SS04
+pointer  sh_efftex_texname  0x00000174  EFFECT_TEXTURE_FIRE_SS05
+pointer  sh_efftex_texname  0x00000180  EFFECT_TEXTURE_FIRE_SS06
+pointer  sh_efftex_texname  0x0000018c  EFFECT_TEXTURE_FIRE_SS07
+pointer  sh_efftex_texname  0x00000198  EFFECT_TEXTURE_FIRE_SS08
+pointer  sh_efftex_texname  0x000001a4  EFFECT_TEXTURE_CC_GLIGHT
+pointer  sh_efftex_texname  0x000001b0  EFFECT_TEXTURE_CC_PARTICLE0
+pointer  sh_efftex_texname  0x000001bc  EFFECT_TEXTURE_CC_RING
+pointer  sh_efftex_texname  0x000001c8  EFFECT_TEXTURE_EF_FIRESUM
+pointer  sh_efftex_texlist  0x00000000  sh_efftex_texname
+pointer  flame_ring_anim  0x00000010  flame_ring_uvs
+pointer  flame_ring_model  0x00000000  flame_ring_vertices
+pointer  flame_ring_model  0x00000004  flame_ring_polygons
+pointer  flame_ring_object  0x00000004  flame_ring_model

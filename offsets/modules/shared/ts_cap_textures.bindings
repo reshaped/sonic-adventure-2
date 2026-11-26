@@ -1,0 +1,22 @@
+text  CORE_TEXTURE_DZ_CC_TSWITCHA16  17
+text  CORE_TEXTURE_DZ_CC_TSWITCHB16  17
+text  CORE_TEXTURE_DZ_CC_TSWITCHBALL32  20
+text  CORE_TEXTURE_DZ_CC_TSWITCHD32  17
+pointer  textures  0x00000000  CORE_TEXTURE_DZ_CC_TSWITCHA16
+pointer  textures  0x0000000c  CORE_TEXTURE_DZ_CC_TSWITCHB16
+pointer  textures  0x00000018  CORE_TEXTURE_DZ_CC_TSWITCHBALL32
+pointer  textures  0x00000024  CORE_TEXTURE_DZ_CC_TSWITCHD32
+pointer  time_switch_cap_texlist  0x00000000  textures
+pointer  time_switch_cap_model  0x00000000  time_switch_cap_vertices
+pointer  time_switch_cap_model  0x00000004  time_switch_cap_polygons
+pointer  time_switch_cap  0x00000004  time_switch_cap_model
+pointer  time_switch_fast_ring_model  0x00000000  time_switch_fast_ring_vertices
+pointer  time_switch_fast_ring_model  0x00000004  time_switch_fast_ring_polygons
+pointer  time_switch_fast_ring  0x00000004  time_switch_fast_ring_model
+pointer  time_switch_ring_model  0x00000000  time_switch_ring_vertices
+pointer  time_switch_ring_model  0x00000004  time_switch_ring_polygons
+pointer  time_switch_ring  0x00000004  time_switch_ring_model
+pointer  time_switch_slow_ring_model  0x00000000  time_switch_slow_ring_vertices
+pointer  time_switch_slow_ring_model  0x00000004  time_switch_slow_ring_polygons
+pointer  time_switch_slow_ring  0x00000004  time_switch_slow_ring_model
+pointer  ring_assembly  0x0000002c  time_switch_slow_ring

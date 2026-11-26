@@ -1,0 +1,6 @@
+pointer  vms_geometry  0x00000000  vms_vertices
+pointer  vms_geometry  0x00000004  vms_polygons
+pointer  entrance_vms_model  0x00000004  vms_geometry
+pointer  multibank_geometry  0x00000000  multibank_vertices
+pointer  multibank_geometry  0x00000004  multibank_polygons
+pointer  entrance_multibank_model  0x00000004  multibank_geometry

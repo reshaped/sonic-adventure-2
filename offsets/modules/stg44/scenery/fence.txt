@@ -1,0 +1,8 @@
+datum  mad_space_fence_object_1_polygons  D  0x00000000  78
+datum  mad_space_fence_object_1_vertices  D  0x00000050  140
+datum  mad_space_fence_object_1_model  D  0x000000dc  24
+datum  mad_space_fence_object_1  D  0x000000f4  52
+datum  mad_space_fence_object_polygons  D  0x00000128  706
+datum  mad_space_fence_object_vertices  D  0x000003ec  1468
+datum  mad_space_fence_object_model  D  0x000009a8  24
+datum  mad_space_fence_object  D  0x000009c0  52

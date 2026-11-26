@@ -1,0 +1,10 @@
+text  OCEAN_TEXTURE_KD_SO_KAGE3  12
+text  OCEAN_TEXTURE_KD_SO_MIKOSI1  14
+text  OCEAN_TEXTURE_KD_SO_SEKIHI3  14
+pointer  textures  0x00000000  OCEAN_TEXTURE_KD_SO_KAGE3
+pointer  textures  0x0000000c  OCEAN_TEXTURE_KD_SO_MIKOSI1
+pointer  textures  0x00000018  OCEAN_TEXTURE_KD_SO_SEKIHI3
+pointer  flag_stand_texlist  0x00000000  textures
+pointer  flag_stand_model  0x00000000  flag_stand_model_vertices
+pointer  flag_stand_model  0x00000004  flag_stand_model_polygons
+pointer  flag_stand_root  0x00000004  flag_stand_model

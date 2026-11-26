@@ -1,0 +1,12 @@
+datum  gadget_poison_materials  C  0x00000000  56
+datum  animation  C  0x00000038  208
+datum  textures  D  0x00000000  204
+datum  gadget_poison_texlist  D  0x000000cc  8
+datum  gadget_poison_tank_node_1_polygons  D  0x000000d4  782
+datum  gadget_poison_tank_node_1_vertices  D  0x000003e4  1116
+datum  gadget_poison_tank_node_1_mesh  D  0x00000840  24
+datum  gadget_poison_tank_node_1  D  0x00000858  52
+datum  gadget_poison_tank_polygons  D  0x0000088c  50
+datum  gadget_poison_tank_vertices  D  0x000008c0  76
+datum  gadget_poison_tank_mesh  D  0x0000090c  24
+datum  gadget_poison_tank  D  0x00000924  52

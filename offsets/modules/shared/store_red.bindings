@@ -1,0 +1,11 @@
+include store_box_textures
+pointer  store_box_red_texlist  0x00000000  textures
+pointer  store_box_red_model  0x00000000  store_box_red_vertices
+pointer  store_box_red_model  0x00000004  store_box_red_polygons
+pointer  store_box_red_object  0x00000004  store_box_red_model
+pointer  store_box_collision_meshsets  0x00000004  store_box_collision_indices
+pointer  store_box_collision_model  0x00000000  store_box_collision_points
+pointer  store_box_collision_model  0x00000004  store_box_collision_normals
+pointer  store_box_collision_model  0x0000000c  store_box_collision_meshsets
+pointer  store_box_collision_model  0x00000010  store_box_collision_materials
+pointer  store_box_collision  0x00000004  store_box_collision_model

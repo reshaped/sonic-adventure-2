@@ -1,0 +1,9 @@
+text  PROJECTILE_TEXTURE_ENEMY5  7
+pointer  bullet_texname  0x00000000  PROJECTILE_TEXTURE_ENEMY5
+pointer  bullet_texlist  0x00000000  bullet_texname
+pointer  bullet_model  0x00000000  bullet_vertices
+pointer  bullet_model  0x00000004  bullet_polygons
+pointer  bullet_object  0x00000004  bullet_model
+pointer  streak_model  0x00000000  streak_vertices
+pointer  streak_model  0x00000004  streak_polygons
+pointer  streak_object  0x00000004  streak_model

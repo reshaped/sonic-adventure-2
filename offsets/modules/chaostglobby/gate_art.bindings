@@ -1,0 +1,6 @@
+pointer  lobby_dark_arch_model  0x00000000  lobby_dark_arch_vertices
+pointer  lobby_dark_arch_model  0x00000004  lobby_dark_arch_polygons
+pointer  lobby_dark_arch  0x00000004  lobby_dark_arch_model
+pointer  lobby_dark_threshold_model  0x00000000  lobby_dark_threshold_vertices
+pointer  lobby_dark_threshold_model  0x00000004  lobby_dark_threshold_polygons
+pointer  lobby_dark_threshold  0x00000004  lobby_dark_threshold_model

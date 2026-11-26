@@ -1,0 +1,18 @@
+text  LAGOON_TEXTURE_DZ_DL_FISH01  13
+text  LAGOON_TEXTURE_DZ_DL_FISH02  13
+text  LAGOON_TEXTURE_DZ_DL_FISH03  13
+pointer  lagoon_fish_textures_1_names  0x00000000  LAGOON_TEXTURE_DZ_DL_FISH01
+pointer  lagoon_fish_textures_1  0x00000000  lagoon_fish_textures_1_names
+pointer  lagoon_fish_model_1_model  0x00000000  lagoon_fish_model_1_vertices
+pointer  lagoon_fish_model_1_model  0x00000004  lagoon_fish_model_1_polygons
+pointer  lagoon_fish_model_1  0x00000004  lagoon_fish_model_1_model
+pointer  lagoon_fish_textures_2_names  0x00000000  LAGOON_TEXTURE_DZ_DL_FISH02
+pointer  lagoon_fish_textures_2  0x00000000  lagoon_fish_textures_2_names
+pointer  lagoon_fish_model_2_model  0x00000000  lagoon_fish_model_2_vertices
+pointer  lagoon_fish_model_2_model  0x00000004  lagoon_fish_model_2_polygons
+pointer  lagoon_fish_model_2  0x00000004  lagoon_fish_model_2_model
+pointer  lagoon_fish_textures_3_names  0x00000000  LAGOON_TEXTURE_DZ_DL_FISH03
+pointer  lagoon_fish_textures_3  0x00000000  lagoon_fish_textures_3_names
+pointer  lagoon_fish_model_3_model  0x00000000  lagoon_fish_model_3_vertices
+pointer  lagoon_fish_model_3_model  0x00000004  lagoon_fish_model_3_polygons
+pointer  lagoon_fish_model_3  0x00000004  lagoon_fish_model_3_model

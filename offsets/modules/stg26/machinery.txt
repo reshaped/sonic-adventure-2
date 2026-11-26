@@ -1,0 +1,12 @@
+datum  machinery_curve_polygons  D  0x00000000  1322
+datum  machinery_curve_vertices  D  0x0000052c  2252
+datum  machinery_curve_model  D  0x00000df8  24
+datum  machinery_curve_object  D  0x00000e10  52
+datum  straight_textures  D  0x00000e44  36
+datum  machinery_straight_texlist  D  0x00000e68  8
+datum  machinery_straight_polygons  D  0x00000e70  954
+datum  machinery_straight_vertices  D  0x0000122c  1676
+datum  machinery_straight_model  D  0x000018b8  24
+datum  machinery_straight_object  D  0x000018d0  52
+datum  models  D  0x00001904  8
+datum  quarters_machinery_texlists  D  0x0000190c  12

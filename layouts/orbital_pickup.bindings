@@ -1,0 +1,3 @@
+pointer pickup_object_2_model 0x00000000 pickup_vertices
+pointer pickup_object_2_model 0x00000004 pickup_polygons
+pointer pickup_object_node 0x00000004 pickup_object_2_model

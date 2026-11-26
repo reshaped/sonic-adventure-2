@@ -1,0 +1,158 @@
+# The numbers for RAM that the port's sources, tables and generated data
+# hold, and why each keeps its meaning where make dc's links lay out the
+# images anew. tools/addresses.py checks the table, and its docstring names
+# the numbers it reads.
+#
+# A row is FILE START [END] COUNT, then a disposition, then the reason. It
+# explains the COUNT numbers FILE holds that are START, or that lie from
+# START up to END. Each lies in START's view of RAM: 0x0c, 0x8c or 0xac.
+# COUNT is a decimal number above 0, with no leading 0. The disposition is
+# one of
+#
+#   anchor NAME  an area, a word or a bound of memory that no link places, so
+#                that it keeps its address in the port. NAME is the macro or
+#                symbol the sources name it by
+#   placed NAME  a name a table gives, which the non-matching side takes as
+#                NAME, a name the port's link places
+#   data         no address, whatever its bits
+#
+# file                                           start       end         count  disposition, then the reason
+# low memory, which the boot ROM and the system keep below 1ST_READ.BIN's
+# image. The port links the resident at 0x8c010000 too
+sdk/include/app_root.h                           0x8c0080f0                  1  anchor  APP_ROOT_INFO         the app root record
+sdk/include/sg_ov.h                              0x8c00fc00                  1  anchor  OVD_DEF_LIBTBL_ADR    the library table's default place
+sdk/include/sg_ov.h                              0x8c00fff0  0x8c00fff8      2  anchor  OVD_LIBTBL_ADR_PTR    the two words that give every module the library table's address and capacity
+sdk/network/ntutl.c                              0x8c008200                  1  anchor  UTL_ADDRESS           the ntUtl record
+sdk/network/sg_dpldr.c                           0x8c008300                  1  anchor  LD_ADDRESS            where the network loader is read and run, past the ntUtl record
+sdk/shinobi/gdc_lib.src                          0x8c0000bc                  1  anchor  GDC_VECTOR            the word that holds the boot ROM's entry for the drive
+sdk/shinobi/kcfg.src                             0x8c0000b0                  1  anchor  CFG_VECTOR            the word that holds the boot ROM's entry for the settings' services
+sdk/shinobi/sg_sybt.c                            0x8c000064                  1  anchor  DAT_8C000064          a word that syBtExit sets to DAT_8C008000 before it calls the boot ROM
+sdk/shinobi/sg_sybt.c                            0x8c0000e0                  1  anchor  BOOT_SYSTEM           the boot ROM's system call vector
+sdk/shinobi/sg_sybt.c                            0x8c008000                  1  anchor  DAT_8C008000          the address syBtExit writes to DAT_8C000064
+sdk/shinobi/sg_sybt.c                            0x8c0080fc  0x8c0080ff      2  anchor  APP_ROOT_MODE         the app root record's mode and unk_e: APP_ROOT_MODE and APP_ROOT_UNK_E
+sdk/shinobi/sg_sybt.c                            0x8c008300                  1  anchor  FUN_8C008300          the code at LD_ADDRESS, which syBtExit calls where the app root record asks it to
+sdk/shinobi/sg_sycf.c                            0x8c00007d  0x8c00007f      2  anchor  CFG_LANGUAGE          the language and the sound mode in the settings' copy, CFG_LANGUAGE and CFG_SOUND_MODE
+sdk/shinobi/strt2.c                              0x8c00c000                  1  anchor  STACK_BOTTOM          the stack's lowest word
+sdk/shinobi/strt2.c                              0x8c00f400                  1  anchor  STACK_TOP             the word past the stack's top
+sdk/shinobi/sybtfl.src                           0x8c0000b8                  1  anchor  FLASH_VECTOR          the word that holds the boot ROM's entry for the flash memory's services
+sdk/shinobi/syIntIsr.src                         0xac004000                  1  anchor  HOOK                  where the interrupt stubs' unreached calls go, through P2
+src/system/rom_system.src                        0x8c001000                  1  anchor  RAM_SYSTEM            where the system keeps the boot ROM's system code, which rom_system_reload copies there
+# main memory's bounds
+engine/dc/crash.c                                0x0c000000                  1  anchor  MEMORY                main memory's start
+modules/shared/card_warning.c                    0x8c000000                  1  anchor  RAM                   main memory's start, through P1. a long of the mcwarn file below it is its text's offset in the file
+sdk/include/zam.h                                0x0c000000                  1  anchor  ZAM_SYSTEM_RAM        the bits that ZAM_SYSTEM_RAM_BITS picks of an address that reaches main memory
+sdk/ninja/njSystem.c                             0x8c000000                  1  anchor  RAM_P1                main memory's start, through P1, where _NJ_GO_TO_LOOP jumps
+sdk/shinobi/mpapi.c                              0x0cff0000                  1  anchor  PARKED_FRAME          the last 64 KB of main memory, where mpdrv_exit points the DMA table
+sdk/shinobi/sySq.c                               0x0c000000                  1  anchor  RAM                   main memory's start, the first area the pages map
+sdk/shinobi/sySq.c                               0x8c000000                  1  anchor  RAM_P1                main memory's start, through P1
+sdk/shinobi/sy_g2_sys_init.c                     0x0c000000                  1  anchor  MAIN_MEM_FIRST        main memory's first byte, which syG2DmaSetProtect takes
+sdk/shinobi/sy_g2_sys_init.c                     0x0cffffff                  1  anchor  MAIN_MEM_LAST         main memory's last byte
+sdk/shinobi/syhw.c                               0x0cff0000                  1  anchor  IDLE_MEMORY           the last 64 KB of main memory, which sygHwRegs gives every idle DMA register
+src/player/player.c                              0x0c000000                  1  anchor  FILE_OFFSET_LIMIT     main memory's start. a pointer of a model or motion file below it is an offset from the file's start
+src/system/relocate.c                            0x0c000000                  1  anchor  MEMORY_FIRST          main memory's start. a pointer of loaded Ninja data below it is an offset
+# the game's areas
+src/system/areas.h                               0x8c300000                  1  anchor  WORK_AREA             a 2 MB scratch area, below which config/1st_read/image.ld ends the resident
+src/system/areas.h                               0x8c400000                  1  anchor  WORK_AREA_FILE        WORK_AREA + 0x100000, its second megabyte, where the loader reads a stage's camera file, each animal's file and the block grid's bitmap
+src/system/areas.h                               0x8c500000                  2  anchor  STAGE_SLOT            WORK_AREA_END and STAGE_SLOT, where the overlays load, and where tools/dc_overlay.py links them
+src/system/areas.h                               0x8c698700                  1  anchor  CHAO_MODEL_SLOT       where Chao_model.PRS loads, through P1. config/chao/image.ld reserves it through P0
+src/system/areas.h                               0x8c8ba800                  1  anchor  CHAO_MOTION_SLOT      where Chao_motion.PRS loads, through P1. config/chao/image.ld reserves it through P0
+src/system/areas.h                               0x8c900000                  1  anchor  CONFIG_WORK           the work system_boot_init gives syCfgInit, which the SDK keeps until syCfgExit
+src/system/areas.h                               0x8ca40000                  1  anchor  CHAO_RACE_LAND_AREA   where the Chao race loads its land file
+src/system/areas.h                               0x8ca80000                  1  anchor  CHAO_LOBBY_LAND_AREA  where the Chao lobby loads its land file
+src/system/areas.h                               0x8caa0000                  1  anchor  CHAO_LAND_BUILD_AREA  where the Chao race and the lobby compile their land
+src/system/areas.h                               0x8cb00000                  1  anchor  DEMO_AREA             an area many uses read a file into, and where world_build_land stops a model
+src/system/areas.h                               0x0cbd0000  0x0cbe0000      3  anchor  MESSAGE_AREA          a mini event's messages, script and requests: MESSAGE_AREA, SCRIPT_AREA and REQUEST_AREA
+src/system/areas.h                               0x8cbe0000  0x8cc00000      5  anchor  CAMSET_AREA           a stage's camera files, as loader_read_camera_files reads them: CAMSET_AREA to CAMLIN_AREA_1
+src/system/areas.h                               0x8cc00000                  1  anchor  CAMLIN_AREA_END       the camera files' end
+modules/cart/track.c                             0x8c980000                  1  anchor  BUILD_AREA            where cart_build_course compiles the pieces' direct models, up to DEMO_AREA
+modules/chao/garden.c                            0x8c698700                  1  anchor  CHAO_MODEL_ARCHIVE    where the matching side's chao_init loads Chao_model.PRS, at CHAO_MODEL_SLOT
+modules/chao/garden.c                            0x8c8ba800                  1  anchor  CHAO_MOTION_ARCHIVE   where the matching side's chao_init loads Chao_motion.PRS, at CHAO_MOTION_SLOT
+modules/chao/garden.c                            0x8c9c0000                  1  anchor  CHAO_AREA_SLOT        the slot the Chao areas load into, through P1. tools/dc_overlay.py links each there, through P0
+modules/event/areas.h                            0x8c5a0000  0x8c600000      2  anchor  EVENT_TRACK_AREA      an event's tracks, then its script's work at EVENT_SCRIPT_AREA, where the tracks end
+modules/event/areas.h                            0x8c600000                  1  anchor  EVENT_SCENE_AREA      the 4 MB the loader reads an event's files into in turn
+modules/event/areas.h                            0x8cbc0000                  1  anchor  EVENT_TEXLIST_AREA    where the loader reads e<n>texlist.prs
+modules/event/areas.h                            0x8cbd0000                  1  anchor  EVENT_MESSAGE_AREA    an event's messages
+modules/event/movie_scene.c                      0x8c880000                  1  anchor  LARGE_MOVIE_WORK      the player's work for a movie of MOVIE_MASKED
+modules/event/movie_scene.c                      0x8c9c0000                  1  anchor  SMALL_MOVIE_WORK      the player's work for any other movie
+# the SDK's buffers
+sdk/ninja/internal_kamui_lib.c                   0xacc00000                  1  anchor  vertex_base           Kamui's vertex buffer where the profile gives no BufferBase: the last 4 MB of main memory, through P2
+# the names a symbols.txt gives outside its image and the images loaded
+# beside it. The non-matching side names each by its area, or by the name in
+# the row, as src/system/areas.h, modules/chao/area.h and
+# modules/chaostgkinder/network_layout.h give them
+config/1st_read/symbols.txt                      0x8c400000  0x8c500000      5  anchor  WORK_AREA_FILE        the block grid's, an animal's and a stage's camera file, and the block grid file's parts
+config/1st_read/symbols.txt                      0x8c500000                  1  anchor  STAGE_SLOT            stage_slot
+config/chao/symbols.txt                          0x0c698700  0x0c8ba394    118  anchor  CHAO_MODEL_SLOT       the models in Chao_model.PRS, through P0, which tools/chao_banks.py places at their offsets in the archive
+config/chao/symbols.txt                          0x0c8ba800  0x0c9bead0    241  anchor  CHAO_MOTION_SLOT      the motions in Chao_motion.PRS, as above
+config/chao/symbols.txt                          0x8c9c0000                  1  anchor  CHAO_AREA_SLOT        chao_area_slot
+config/chaostgentrance/symbols.txt               0x0c9fb9e0                  1  placed  end                   the land's buffer, past the image
+config/chaostghero/symbols.txt                   0x0c9d3e80                  1  placed  end                   the land's buffer, past the image
+config/chaostgkinder/symbols.txt                 0x0cb78f40                  1  placed  kinder_sg_bss_end     the land's buffer, past the image's SDK BSS
+config/chaostglobby/symbols.txt                  0x8ca80000                  1  anchor  CHAO_LOBBY_LAND_AREA  lobby_land_file
+config/chaostglobby/symbols.txt                  0x8caa0000                  1  anchor  CHAO_LAND_BUILD_AREA  lobby_land_buffer
+config/chaostgneut/symbols.txt                   0x0c9cd0a0                  1  placed  end                   the land's buffer, past the image
+config/chaostgrace/symbols.txt                   0x0c698700  0x0c8ba394      5  anchor  CHAO_MODEL_SLOT       the race's models in Chao_model.PRS, as config/chao/symbols.txt's
+config/chaostgrace/symbols.txt                   0x0ca40000  0x0caa0000      9  anchor  CHAO_RACE_LAND_AREA   the pitfall's texture list and covers in the race's land file, through P0
+config/chaostgrace/symbols.txt                   0x8ca40000                  1  anchor  CHAO_RACE_LAND_AREA   race_land_file
+config/chaostgrace/symbols.txt                   0x8caa0000                  1  anchor  CHAO_LAND_BUILD_AREA  race_land_buffer
+config/event/symbols.txt                         0x8cbc0000                  1  anchor  EVENT_TEXLIST_AREA    event_texlist_area
+config/stg22/symbols.txt                         0x8c300000                  1  anchor  WORK_AREA             gadget_light_build_a, the first pulse's build
+config/stg22/symbols.txt                         0x8c310000                  1  anchor  WORK_AREA             gadget_light_build_b, the second pulse's, PULSE_B_OFFSET past it
+# the model workspace past each stage's and boss's image. The non-matching
+# side's STAGE_MODEL_BUILD_AREA rounds end, which the image's layout places
+# past its data and BSS, up to 32 bytes
+config/boss_bigbogy/symbols.txt                  0x8c64e5a0                  1  placed  end                   the workspace past the image
+config/boss_bigfoot/symbols.txt                  0x8c601d80                  1  placed  end                   the workspace past the image
+config/boss_fdog/symbols.txt                     0x8c5de000                  1  placed  end                   the workspace past the image
+config/boss_golem/symbols.txt                    0x8c695680                  1  placed  end                   the workspace past the image
+config/boss_golem_e/symbols.txt                  0x8c6927c0                  1  placed  end                   the workspace past the image
+config/boss_hotshot/symbols.txt                  0x8c5e9260                  1  placed  end                   the workspace past the image
+config/boss_last1/symbols.txt                    0x8c6c15a0                  1  placed  end                   the workspace past the image
+config/boss_last2/symbols.txt                    0x8c5deea0                  1  placed  end                   the workspace past the image
+config/stg03/symbols.txt                         0x8c6b7940                  1  placed  end                   the workspace past the image
+config/stg04/symbols.txt                         0x8c663600                  1  placed  end                   the workspace past the image
+config/stg05/symbols.txt                         0x8c6318c0                  1  placed  end                   the workspace past the image
+config/stg06/symbols.txt                         0x8c643900                  1  placed  end                   the workspace past the image
+config/stg07/symbols.txt                         0x8c631520                  1  placed  end                   the workspace past the image
+config/stg08/symbols.txt                         0x8c640f20                  1  placed  end                   the workspace past the image
+config/stg09/symbols.txt                         0x8c647a20                  1  placed  end                   the workspace past the image
+config/stg10/symbols.txt                         0x8c6aaac0                  1  placed  end                   the workspace past the image
+config/stg11/symbols.txt                         0x8c64b2c0                  1  placed  end                   the workspace past the image
+config/stg12/symbols.txt                         0x8c636180                  1  placed  end                   the workspace past the image
+config/stg13/symbols.txt                         0x8c746f00                  1  placed  end                   the workspace past the image
+config/stg14/symbols.txt                         0x8c687820                  1  placed  end                   the workspace past the image
+config/stg15/symbols.txt                         0x8c625520                  1  placed  end                   the workspace past the image
+config/stg16/symbols.txt                         0x8c64aa80                  1  placed  end                   the workspace past the image
+config/stg17/symbols.txt                         0x8c662fa0                  1  placed  end                   the workspace past the image
+config/stg18/symbols.txt                         0x8c6c3720                  1  placed  end                   the workspace past the image
+config/stg19/symbols.txt                         0x8c5a6a80                  1  placed  end                   the workspace past the image
+config/stg20/symbols.txt                         0x8c5c6120                  1  placed  end                   the workspace past the image
+config/stg21/symbols.txt                         0x8c64f400                  1  placed  end                   the workspace past the image
+config/stg22/symbols.txt                         0x8c6b80e0                  1  placed  end                   the workspace past the image
+config/stg23/symbols.txt                         0x8c68df00                  1  placed  end                   the workspace past the image
+config/stg24/symbols.txt                         0x8c67fd00                  1  placed  end                   the workspace past the image
+config/stg25/symbols.txt                         0x8c6ac6c0                  1  placed  end                   the workspace past the image
+config/stg26/symbols.txt                         0x8c6a7220                  1  placed  end                   the workspace past the image
+config/stg27/symbols.txt                         0x8c63a820                  1  placed  end                   the workspace past the image
+config/stg28/symbols.txt                         0x8c6a8840                  1  placed  end                   the workspace past the image
+config/stg29/symbols.txt                         0x8c5bba40                  1  placed  end                   the workspace past the image
+config/stg30/symbols.txt                         0x8c6db8e0                  1  placed  end                   the workspace past the image
+config/stg31/symbols.txt                         0x8c64d7a0                  1  placed  end                   the workspace past the image
+config/stg32/symbols.txt                         0x8c66f420                  1  placed  end                   the workspace past the image
+config/stg33/symbols.txt                         0x8c5ab5e0                  1  placed  end                   the workspace past the image
+config/stg34/symbols.txt                         0x8c78d780                  1  placed  end                   the workspace past the image
+config/stg35/symbols.txt                         0x8c6b9d20                  1  placed  end                   the workspace past the image
+config/stg36/symbols.txt                         0x8c6a99e0                  1  placed  end                   the workspace past the image
+config/stg37/symbols.txt                         0x8c6b06a0                  1  placed  end                   the workspace past the image
+config/stg38/symbols.txt                         0x8c6bdc60                  1  placed  end                   the workspace past the image
+config/stg39/symbols.txt                         0x8c5d2d60                  1  placed  end                   the workspace past the image
+config/stg40/symbols.txt                         0x8c693e80                  1  placed  end                   the workspace past the image
+config/stg41/symbols.txt                         0x8c6403a0                  1  placed  end                   the workspace past the image
+config/stg42/symbols.txt                         0x8c59bec0                  1  placed  end                   the workspace past the image
+config/stg43/symbols.txt                         0x8c65b660                  1  placed  end                   the workspace past the image
+config/stg44/symbols.txt                         0x8c684220                  1  placed  end                   the workspace past the image
+config/stg45/symbols.txt                         0x8c5b5580                  1  placed  end                   the workspace past the image
+# the bodies make writes from the disc
+build/gen/modules/cart/dat_8c7a1df4/dat_8c7a1df4.inc  0x8c800000                  1  data  the word between traffic.c's data and ramp_art.c's, which nothing in CART.PRS or 1ST_READ.BIN names
+build/gen/sdk/network/ask_connections/connections.inc  0x0c010024                  1  data  connections' bits, a bit for each kind of word an ending can follow
+build/gen/modules/stg26/terrain/entries.inc       0x0c000002                  2  data  the blocks of two of the land's entries, a bit for each land block that draws the entry: blocks 1, 26 and 27

@@ -1,0 +1,12 @@
+text  KNUDAI_RING_GROUP_DEBUG_PITCH  11
+text  KNUDAI_RING_GROUP_DEBUG_YAW  11
+text  KNUDAI_RING_GROUP_DEBUG_ID  6
+text  KNUDAI_RING_GROUP_DEBUG_SPACING  12
+text  KNUDAI_RING_GROUP_DEBUG_WAVE_SIZE  13
+text  KNUDAI_RING_GROUP_DEBUG_RING_COUNT  14
+text  KNUDAI_RING_GROUP_RING_TASK_NAME  5
+text  KNUDAI_RING_GROUP_DEBUG_RADIUS  10
+text  KNUDAI_RING_GROUP_DEBUG_ROTATION  17
+pointer  ring_effect_texlists  0x00000000  ring_texlist
+pointer  ring_effect_texlists  0x00000004  ring_shadow_texlist
+pointer  ring_effect_texlists  0x00000008  ring_sparkle_texlist

@@ -1,0 +1,7 @@
+datum  mad_space_kill_object_materials  D  0x00000000  20
+datum  mad_space_kill_object_faces  D  0x00000014  54
+datum  mad_space_kill_object_meshsets  D  0x0000004c  24
+datum  mad_space_kill_object_points  D  0x00000064  156
+datum  mad_space_kill_object_normals  D  0x00000100  156
+datum  mad_space_kill_object_model  D  0x0000019c  40
+datum  mad_space_kill_object  D  0x000001c4  52

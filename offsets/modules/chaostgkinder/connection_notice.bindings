@@ -1,0 +1,32 @@
+pointer  wait_panel  0x00000000  kinder_widget_texlist
+pointer  wait_panel  0x00000004  wait_fill
+pointer  yes_style  0x00000004  kinder_widget_texlist
+pointer  yes_style  0x00000008  selected
+pointer  yes_style  0x00000010  unselected
+pointer  no_style  0x00000004  kinder_widget_texlist
+pointer  no_style  0x00000008  selected
+pointer  no_style  0x00000010  unselected
+pointer  confirm_panel  0x00000000  kinder_widget_texlist
+pointer  confirm_panel  0x00000004  confirm_fill
+pointer  fixed_wait_panel  0x00000000  kinder_widget_texlist
+pointer  fixed_wait_panel  0x00000004  fixed_wait_fill
+
+selector  confirm_dialog.kind  WIDGET_CONTAINER
+selector  confirm_label.kind  WIDGET_LABEL
+selector  no.kind  WIDGET_BUTTON
+selector  no.id  2
+selector  wait_dialog.kind  WIDGET_CONTAINER
+selector  wait_label.kind  WIDGET_LABEL
+selector  yes.kind  WIDGET_BUTTON
+selector  yes.id  1
+
+pointer  confirm_dialog  0x00000014  confirm_panel
+pointer  confirm_dialog  0x00000018  confirm_event
+pointer  confirm_label  0x00000014  confirm
+pointer  no  0x00000014  no_style
+pointer  no  0x00000018  keep_waiting
+pointer  wait_dialog  0x00000014  wait_panel
+pointer  wait_dialog  0x00000018  wait_event
+pointer  wait_label  0x00000014  waiting
+pointer  yes  0x00000014  yes_style
+pointer  yes  0x00000018  accept_cancel

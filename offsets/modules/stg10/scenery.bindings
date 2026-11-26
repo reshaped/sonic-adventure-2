@@ -1,0 +1,80 @@
+text  HARBOR_TEXTURE_MIU64_MH001  12
+text  HARBOR_TEXTURE_MIU64_MH005  12
+text  HARBOR_TEXTURE_PR128_14  9
+text  HARBOR_TEXTURE_PR128_15  9
+text  HARBOR_TEXTURE_PR128_17  9
+text  HARBOR_TEXTURE_MIU128_MH001  13
+text  HARBOR_TEXTURE_MIU256_MH001  13
+text  HARBOR_TEXTURE_MIU256_MH002  13
+text  HARBOR_TEXTURE_MIU32_MH001  12
+text  HARBOR_TEXTURE_MIU64_MH002  12
+text  HARBOR_TEXTURE_MIU64_MH007  12
+text  HARBOR_TEXTURE_MIU64_MH008  12
+text  HARBOR_TEXTURE_PR128_27  9
+text  HARBOR_TEXTURE_PR128_6  8
+text  HARBOR_TEXTURE_PR64_19  8
+text  HARBOR_TEXTURE_MIU64_MH003  12
+text  HARBOR_TEXTURE_PR_3KAGE32  11
+text  HARBOR_TEXTURE_MIU128_WB001  13
+text  HARBOR_TEXTURE_MIU32_WB001  12
+text  HARBOR_TEXTURE_MIU64_WB001  12
+text  HARBOR_TEXTURE_MIU64_WB010  12
+text  HARBOR_TEXTURE_MIU64_IG007  12
+text  HARBOR_TEXTURE_PR64_11  8
+pointer  cover_names  0x00000000  HARBOR_TEXTURE_MIU64_MH001
+pointer  cover_names  0x0000000c  HARBOR_TEXTURE_MIU64_MH005
+pointer  cover_names  0x00000018  HARBOR_TEXTURE_PR128_14
+pointer  cover_names  0x00000024  HARBOR_TEXTURE_PR128_15
+pointer  cover_names  0x00000030  HARBOR_TEXTURE_PR128_17
+pointer  cover_texlist  0x00000000  cover_names
+pointer  cover_model  0x00000000  cover_vertices
+pointer  cover_model  0x00000004  cover_polygons
+pointer  cover_object  0x00000004  cover_model
+pointer  cover_solid_faces  0x00000004  cover_solid_strips
+pointer  cover_solid_model  0x00000000  cover_solid_points
+pointer  cover_solid_model  0x00000004  cover_solid_normals
+pointer  cover_solid_model  0x0000000c  cover_solid_faces
+pointer  cover_solid_model  0x00000010  cover_solid_materials
+pointer  cover_collision  0x00000004  cover_solid_model
+pointer  dammy_names  0x00000000  HARBOR_TEXTURE_MIU128_MH001
+pointer  dammy_names  0x0000000c  HARBOR_TEXTURE_MIU256_MH001
+pointer  dammy_names  0x00000018  HARBOR_TEXTURE_MIU256_MH002
+pointer  dammy_names  0x00000024  HARBOR_TEXTURE_MIU32_MH001
+pointer  dammy_names  0x00000030  HARBOR_TEXTURE_MIU64_MH002
+pointer  dammy_names  0x0000003c  HARBOR_TEXTURE_MIU64_MH007
+pointer  dammy_names  0x00000048  HARBOR_TEXTURE_MIU64_MH008
+pointer  dammy_names  0x00000054  HARBOR_TEXTURE_PR128_14
+pointer  dammy_names  0x00000060  HARBOR_TEXTURE_PR128_27
+pointer  dammy_names  0x0000006c  HARBOR_TEXTURE_PR128_6
+pointer  dammy_names  0x00000078  HARBOR_TEXTURE_PR64_19
+pointer  dammy_texlist  0x00000000  dammy_names
+pointer  dammy_model  0x00000000  dammy_vertices
+pointer  dammy_model  0x00000004  dammy_polygons
+pointer  dammy_object  0x00000004  dammy_model
+pointer  cbri_names  0x00000000  HARBOR_TEXTURE_MIU64_MH003
+pointer  cbri_names  0x0000000c  HARBOR_TEXTURE_PR128_6
+pointer  cbri_names  0x00000018  HARBOR_TEXTURE_PR_3KAGE32
+pointer  cbri_texlist  0x00000000  cbri_names
+pointer  cbri_model  0x00000000  cbri_vertices
+pointer  cbri_model  0x00000004  cbri_polygons
+pointer  cbri_object  0x00000004  cbri_model
+pointer  island_names  0x00000000  HARBOR_TEXTURE_MIU128_WB001
+pointer  island_names  0x0000000c  HARBOR_TEXTURE_MIU32_WB001
+pointer  island_names  0x00000018  HARBOR_TEXTURE_MIU64_WB001
+pointer  island_names  0x00000024  HARBOR_TEXTURE_MIU64_WB010
+pointer  island_texlist  0x00000000  island_names
+pointer  island_model  0x00000000  island_vertices
+pointer  island_model  0x00000004  island_polygons
+pointer  island_object  0x00000004  island_model
+pointer  net_names  0x00000000  HARBOR_TEXTURE_MIU64_IG007
+pointer  net_names  0x0000000c  HARBOR_TEXTURE_PR128_6
+pointer  net_names  0x00000018  HARBOR_TEXTURE_PR64_11
+pointer  net_texlist  0x00000000  net_names
+pointer  net_model  0x00000000  net_vertices
+pointer  net_model  0x00000004  net_polygons
+pointer  net_object  0x00000004  net_model
+pointer  harbor_scenery_texlists  0x00000000  cover_texlist
+pointer  harbor_scenery_texlists  0x00000004  dammy_texlist
+pointer  harbor_scenery_texlists  0x00000008  cbri_texlist
+pointer  harbor_scenery_texlists  0x0000000c  net_texlist
+pointer  harbor_scenery_texlists  0x00000010  island_texlist

@@ -1,0 +1,5 @@
+# Death Chamber biribiri models and texture banks.
+text BIRIBIRI_TEXTURE_BIRIBIRI512  C  0x00000000  18
+datum chamber_biribiri_frames  D  0x00000000  14336
+datum chamber_biribiri_models  D  0x00003800  256
+datum chamber_biribiri_texlists  D  0x00003900  260

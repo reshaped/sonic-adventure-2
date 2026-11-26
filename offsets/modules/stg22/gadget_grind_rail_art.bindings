@@ -1,0 +1,17 @@
+text  GADGET_GRIND_RAIL_ART_TEXTURE_1  12
+text  GADGET_GRIND_RAIL_ART_TEXTURE_2  12
+
+pointer  textures  0x00000000  GADGET_GRIND_RAIL_ART_TEXTURE_1
+pointer  textures  0x0000000c  GADGET_GRIND_RAIL_ART_TEXTURE_2
+pointer  gadget_grind_rail_texlist  0x00000000  textures
+pointer  gadget_grind_rail_node_2_mesh  0x00000000  gadget_grind_rail_node_2_vertices
+pointer  gadget_grind_rail_node_2_mesh  0x00000004  gadget_grind_rail_node_2_polygons
+pointer  gadget_grind_rail_node_2  0x00000004  gadget_grind_rail_node_2_mesh
+pointer  gadget_grind_rail_node_1_mesh  0x00000000  gadget_grind_rail_node_1_vertices
+pointer  gadget_grind_rail_node_1_mesh  0x00000004  gadget_grind_rail_node_1_polygons
+pointer  gadget_grind_rail_node_1  0x00000004  gadget_grind_rail_node_1_mesh
+pointer  gadget_grind_rail_node_1  0x00000030  gadget_grind_rail_node_2
+pointer  gadget_grind_rail_mesh  0x00000000  gadget_grind_rail_vertices
+pointer  gadget_grind_rail_mesh  0x00000004  gadget_grind_rail_polygons
+pointer  gadget_grind_rail  0x00000004  gadget_grind_rail_mesh
+pointer  gadget_grind_rail  0x0000002c  gadget_grind_rail_node_1

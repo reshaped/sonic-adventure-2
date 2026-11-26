@@ -1,0 +1,17 @@
+datum  finalhazard_camera_second_joint_0_position  D  0x00000000  1040
+datum  finalhazard_camera_second_joint_0_target  D  0x00000410  1040
+datum  finalhazard_camera_second_joint_0_roll  D  0x00000820  16
+datum  finalhazard_camera_second_joint_0_fov  D  0x00000830  16
+datum  finalhazard_camera_second_tracks  D  0x00000840  32
+datum  finalhazard_camera_second  D  0x00000860  12
+datum  finalhazard_camera_third_joint_0_position  D  0x0000086c  2560
+datum  finalhazard_camera_third_joint_0_target  D  0x0000126c  2560
+datum  finalhazard_camera_third_joint_0_roll  D  0x00001c6c  16
+datum  finalhazard_camera_third_joint_0_fov  D  0x00001c7c  16
+datum  finalhazard_camera_third_tracks  D  0x00001c8c  32
+datum  finalhazard_camera_third  D  0x00001cac  12
+datum  finalhazard_camera_first_joint_0_position  D  0x00001cb8  96
+datum  finalhazard_camera_first_joint_0_target  D  0x00001d18  112
+datum  finalhazard_camera_first_joint_0_roll  D  0x00001d88  16
+datum  finalhazard_camera_first_tracks  D  0x00001d98  24
+datum  finalhazard_camera_first  D  0x00001db0  12

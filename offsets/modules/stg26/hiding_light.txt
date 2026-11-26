@@ -1,0 +1,2 @@
+datum  global_light_switch_shapes  D  0x00000000  192
+datum  dat_global_light_switch_1  D  0x000000d0  4

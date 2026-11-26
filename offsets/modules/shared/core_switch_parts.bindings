@@ -1,0 +1,26 @@
+text CORE_SWITCH_NORMAL  7
+
+pointer plate_model  0x00000000  plate_vertices
+pointer plate_model  0x00000004  plate_polygons
+pointer plate_object  0x00000004  plate_model
+pointer base_model  0x00000000  base_vertices
+pointer base_model  0x00000004  base_polygons
+pointer base_object  0x00000004  base_model
+pointer base_object  0x00000030  plate_object
+pointer switch_object  0x0000002c  base_object
+pointer base_collision_meshset  0x00000004  base_collision_strips
+pointer base_collision_model  0x00000000  base_collision_points
+pointer base_collision_model  0x00000004  base_collision_normals
+pointer base_collision_model  0x0000000c  base_collision_meshset
+pointer base_collision_model  0x00000010  base_collision_material
+pointer base_collision_object  0x00000004  base_collision_model
+pointer plate_collision_meshset  0x00000004  plate_collision_strips
+pointer plate_collision_model  0x00000000  plate_collision_points
+pointer plate_collision_model  0x00000004  plate_collision_normals
+pointer plate_collision_model  0x0000000c  plate_collision_meshset
+pointer plate_collision_model  0x00000010  plate_collision_material
+pointer core_switch_collision  0x00000004  plate_collision_model
+pointer core_switch_plates  0x00000000  plate_model
+pointer core_switch_bases  0x00000000  base_model
+pointer core_switch_texlists  0x00000000  core_switch_texlist
+pointer switch_kinds  0x00000000  CORE_SWITCH_NORMAL

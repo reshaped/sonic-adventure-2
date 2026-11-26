@@ -1,0 +1,7 @@
+pointer  textures  0x00000000  hatch_miu128_cg001
+pointer  textures  0x0000000c  hatch_miu128_cg005
+pointer  textures  0x00000018  hatch_miu128_cg007
+pointer  textures  0x00000024  hatch_miu128_ee001
+pointer  textures  0x00000030  hatch_miu128_ee003
+pointer  textures  0x0000003c  hatch_miu64_cg008
+pointer  textures  0x00000048  hatch_miu64_cg010

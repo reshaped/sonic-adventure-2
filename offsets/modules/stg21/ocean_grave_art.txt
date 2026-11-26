@@ -1,0 +1,4 @@
+datum  grave_polygons  D  0x00000000  3198
+datum  grave_vertices  D  0x00000c80  5052
+datum  grave_model  D  0x0000203c  24
+datum  grave_object  D  0x00002054  52

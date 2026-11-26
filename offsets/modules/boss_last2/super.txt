@@ -1,0 +1,3 @@
+datum super_sonic_actions D 0x00000000 1760
+datum super_shadow_actions D 0x000006e0 1872
+datum super_shapes D 0x00000e30 96

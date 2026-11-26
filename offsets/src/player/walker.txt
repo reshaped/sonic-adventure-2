@@ -1,0 +1,11 @@
+datum  ewalk_anims  D  0x00000000  2224
+datum  twalk_anims  D  0x000008b0  3040
+datum  walker_shapes  D  0x00001490  288
+datum  ewalk_missile_points  D  0x000015d0  72
+datum  ewalk_missile_dir  D  0x00001618  12
+datum  cwalk_missile_points  D  0x00001644  72
+datum  cwalk_missile_dir  D  0x0000168c  12
+datum  bwalk_missile_points  D  0x000016b8  72
+datum  bwalk_missile_dir  D  0x00001700  12
+datum  twalk_missile_points  D  0x0000172c  72
+datum  twalk_missile_dir  D  0x00001774  12

@@ -1,0 +1,11 @@
+text  HIDDEN_BASE_PILLAR_NAME_EGGHASIRA_SITA128  C  0x00000000  24
+text  HIDDEN_BASE_PILLAR_NAME_EGGHASIRA_UE128  C  0x00000018  22
+text  HIDDEN_BASE_PILLAR_NAME_HASIRA5  C  0x00000030  14
+text  HIDDEN_BASE_PILLAR_NAME_SEKIHI1  C  0x00000040  14
+text  HIDDEN_BASE_PILLAR_NAME_SEKIHI3  C  0x00000050  14
+datum  textures  D  0x00000000  60
+datum  base_pillar_texlist  D  0x0000003c  8
+datum  base_pillar_polygons  D  0x00000044  522
+datum  base_pillar_vertices  D  0x00000250  716
+datum  base_pillar_model  D  0x0000051c  24
+datum  base_pillar_object  D  0x00000534  52

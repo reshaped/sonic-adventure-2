@@ -1,0 +1,65 @@
+text BOMB_TEXTURE_MIU128_CG017  13
+text BOMB_TEXTURE_MIU128_CG022  13
+text BOMB_TEXTURE_MIU32_EE001  12
+text BOMB_TEXTURE_MIU64_CG003  12
+text BOMB_TEXTURE_MIU64_CG004  12
+text BOMB_TEXTURE_MIU64_CG009  12
+text BOMB_TEXTURE_MIU64_CG012  12
+text BOMB_TEXTURE_MIU64_EE002  12
+text BOMB_TEXTURE_MIU64_EE003  12
+text BOMB_TEXTURE_TX_POISON001  13
+text BOMB_TEXTURE_TX_POISON002  13
+text BOMB_TEXTURE_TX_POISON003  13
+text BOMB_TEXTURE_TX_POISON004  13
+text BOMB_TEXTURE_TX_POISON005  13
+text BOMB_TEXTURE_TX_POISON006  13
+text BOMB_TEXTURE_TX_POISON007  13
+text BOMB_TEXTURE_TX_POISON008  13
+text BOMB_TEXTURE_TX_POISON009  13
+text BOMB_TEXTURE_TX_POISON010  13
+text BOMB_TEXTURE_TX_POISON011  13
+text BOMB_TEXTURE_TX_POISON012  13
+text BOMB_TEXTURE_TX_POISON013  13
+
+include capsule_bomb_models
+
+pointer capsule_bomb_names  0x00000000  BOMB_TEXTURE_MIU128_CG017
+pointer capsule_bomb_names  0x0000000c  BOMB_TEXTURE_MIU128_CG022
+pointer capsule_bomb_names  0x00000018  BOMB_TEXTURE_MIU32_EE001
+pointer capsule_bomb_names  0x00000024  BOMB_TEXTURE_MIU64_CG003
+pointer capsule_bomb_names  0x00000030  BOMB_TEXTURE_MIU64_CG004
+pointer capsule_bomb_names  0x0000003c  BOMB_TEXTURE_MIU64_CG009
+pointer capsule_bomb_names  0x00000048  BOMB_TEXTURE_MIU64_CG012
+pointer capsule_bomb_names  0x00000054  BOMB_TEXTURE_MIU64_EE002
+pointer capsule_bomb_names  0x00000060  BOMB_TEXTURE_MIU64_EE003
+pointer capsule_bomb_names  0x0000006c  BOMB_TEXTURE_TX_POISON001
+pointer capsule_bomb_names  0x00000078  BOMB_TEXTURE_TX_POISON002
+pointer capsule_bomb_names  0x00000084  BOMB_TEXTURE_TX_POISON003
+pointer capsule_bomb_names  0x00000090  BOMB_TEXTURE_TX_POISON004
+pointer capsule_bomb_names  0x0000009c  BOMB_TEXTURE_TX_POISON005
+pointer capsule_bomb_names  0x000000a8  BOMB_TEXTURE_TX_POISON006
+pointer capsule_bomb_names  0x000000b4  BOMB_TEXTURE_TX_POISON007
+pointer capsule_bomb_names  0x000000c0  BOMB_TEXTURE_TX_POISON008
+pointer capsule_bomb_names  0x000000cc  BOMB_TEXTURE_TX_POISON009
+pointer capsule_bomb_names  0x000000d8  BOMB_TEXTURE_TX_POISON010
+pointer capsule_bomb_names  0x000000e4  BOMB_TEXTURE_TX_POISON011
+pointer capsule_bomb_names  0x000000f0  BOMB_TEXTURE_TX_POISON012
+pointer capsule_bomb_names  0x000000fc  BOMB_TEXTURE_TX_POISON013
+pointer capsule_bomb_texlists  0x00000000  capsule_bomb_texlist
+pointer capsule_bomb_texlists  0x00000004  capsule_bomb_shard_b_texlist
+pointer capsule_bomb_texlists  0x00000008  capsule_bomb_shard_a_texlist
+pointer capsule_bomb_texlists  0x0000000c  capsule_bomb_half_texlist
+pointer capsule_bomb_builds  0x00000004  capsule_bomb_texlist
+pointer capsule_bomb_builds  0x00000008  capsule_bomb_object
+pointer capsule_bomb_builds  0x00000014  capsule_bomb_texlist
+pointer capsule_bomb_builds  0x00000018  capsule_bomb_top_cap
+pointer capsule_bomb_builds  0x00000024  capsule_bomb_texlist
+pointer capsule_bomb_builds  0x00000028  capsule_bomb_bottom_cap
+pointer capsule_bomb_builds  0x00000034  capsule_bomb_half_texlist
+pointer capsule_bomb_builds  0x00000038  capsule_bomb_upper_half
+pointer capsule_bomb_builds  0x00000044  capsule_bomb_half_texlist
+pointer capsule_bomb_builds  0x00000048  capsule_bomb_lower_half
+pointer capsule_bomb_builds  0x00000054  capsule_bomb_shard_a_texlist
+pointer capsule_bomb_builds  0x00000058  capsule_bomb_shard_a
+pointer capsule_bomb_builds  0x00000064  capsule_bomb_shard_b_texlist
+pointer capsule_bomb_builds  0x00000068  capsule_bomb_shard_b

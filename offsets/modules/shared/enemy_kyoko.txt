@@ -1,0 +1,5 @@
+datum  kyoko_pieces  D  0x000000c0  40
+datum  kyoko_bullet_pieces  D  0x000000e8  44
+datum  kyoko_laser_pieces  D  0x00000114  44
+datum  kyoko_capture_pieces  D  0x00000140  44
+datum  kyoko_actions  D  0x0000016c  144

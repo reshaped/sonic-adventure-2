@@ -1,0 +1,9 @@
+text  PANELS_TEXTURE_MIU64_SH006  12
+
+pointer  security_panel_b_object_model  0x00000000  security_panel_b_object_vertices
+pointer  security_panel_b_object_model  0x00000004  security_panel_b_object_polygons
+pointer  security_panel_b_object  0x00000004  security_panel_b_object_model
+pointer  textures  0x00000000  security_panel_face
+pointer  textures  0x0000000c  PANELS_TEXTURE_MIU64_SH006
+pointer  textures  0x00000018  security_panel_border
+pointer  security_panel_b_texlist  0x00000000  textures

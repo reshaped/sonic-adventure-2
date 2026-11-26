@@ -1,0 +1,19 @@
+text  TEXTURE_AD_16ASCII  11
+text  TEXTURE_FUKIDASI  9
+text  TEXTURE_CR_YA01  8
+text  TEXTURE_CR_PADA  8
+text  TEXTURE_CR_PADB  8
+text  TEXTURE_CR_PADC  8
+text  TEXTURE_CR_PADD  8
+text  TEXTURE_CR_PAD1  8
+text  TEXTURE_CR_PAD2  8
+
+pointer  common_textures  0x00000000  TEXTURE_AD_16ASCII
+pointer  common_textures  0x0000000c  TEXTURE_FUKIDASI
+pointer  common_textures  0x00000018  TEXTURE_CR_YA01
+pointer  common_textures  0x00000024  TEXTURE_CR_PADA
+pointer  common_textures  0x00000030  TEXTURE_CR_PADB
+pointer  common_textures  0x0000003c  TEXTURE_CR_PADC
+pointer  common_textures  0x00000048  TEXTURE_CR_PADD
+pointer  common_textures  0x00000054  TEXTURE_CR_PAD1
+pointer  common_textures  0x00000060  TEXTURE_CR_PAD2

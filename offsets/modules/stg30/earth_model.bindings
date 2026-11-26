@@ -1,0 +1,3 @@
+pointer  sky_earth_mesh  0x00000000  sky_earth_vertices
+pointer  sky_earth_mesh  0x00000004  sky_earth_polygons
+pointer  rush_earth_object  0x00000004  sky_earth_mesh

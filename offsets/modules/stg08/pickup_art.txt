@@ -1,0 +1,8 @@
+text  PICKUP_TEXTURE_MIU64_SH011  C  0x00000000  12
+text  PICKUP_TEXTURE_MIU64_SH012  C  0x0000000c  12
+datum  materials  D  0x00000000  24
+datum  pickup_object_2_texlist  D  0x00000018  8
+datum  pickup_polygons  D  0x00000020  218
+datum  pickup_vertices  D  0x000000fc  460
+datum  pickup_object_2_model  D  0x000002c8  24
+datum  pickup_object_node  D  0x000002e0  52

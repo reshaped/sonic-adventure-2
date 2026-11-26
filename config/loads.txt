@@ -1,0 +1,69 @@
+# The loads of make dc's GCC build that give a file of the disc a room of
+# their own choosing, and the files each reads. The shipped loader reads
+# these files unchecked. The GCC build's refuses one that doesn't fit its
+# room, so a room smaller than a file of the disc loses the file.
+# tools/dc_loads.py holds the table to the tree, and the disc's files to
+# the table. Its docstring gives what a run checks.
+#
+# A row is FILES FORM BOUND HEADER ROOM SOURCE, then the file in words.
+#
+#   FILES   the files the load reads, as a pattern over the disc's paths in
+#           config/jp-disc.sha256. * stands for any run of characters, ? for
+#           any one, and [...] for one of those it lists
+#   FORM    how the load reads a file:
+#             file    loader_read_file_checked reads it into the room, in
+#                     whole sectors
+#             prs     loader_read_prs_checked reads it into WORK_AREA, in
+#                     whole sectors, and decodes it into the room
+#             buffer  loader_read_prs_buffer reads it into the room, in
+#                     whole sectors, and decodes it there
+#   BOUND   within, where the file may hold less than the room, or exactly,
+#           where the load takes only a file that decodes to the room's bytes
+#   HEADER  the header whose macros give the room
+#   ROOM    the room, in bytes: a macro of HEADER, or the difference of two,
+#           written NAME-NAME
+#   SOURCE  the source whose load passes the room. It names each macro of
+#           ROOM
+#
+# The table leaves out:
+#
+# - the programs, 1ST_READ.BIN and the 67 overlays, which the port builds.
+#   tools/dc_memory.py holds each to the RAM its loader gives it;
+# - a size the headers give no macro for, a struct's or an array's or a
+#   count the game reads: the bytes an event's tracks must decode to,
+#   e<event>_0.prs as a whole and each language's file, the bytes a stage's
+#   lights must hold, the kindergarten's kbdtext_<language>.prs and the walk
+#   game's image;
+# - a load through WORK_AREA of a file the shipped loader reads through it
+#   too, whose 2 MB both builds give: a texture archive, a set file, a sound
+#   bank, a font or a table read by its name;
+# - e0203.prs and e0210.prs, which no load reads: the event overlay reads
+#   e0203.bin and e0210.bin for events 203 and 210;
+# - what a load checks of a file's contents.
+#
+# files                                        form    bound    header                 room                                       source, then the file
+SONIC2/DEMO[0-9][0-9].PRS                      prs     exactly  src/system/areas.h     DEMO_FILE_BYTES                            src/system/loader.c            a stage's demo file
+SONIC2/CHAO_MODEL.PRS                          prs     exactly  src/system/areas.h     CHAO_MODEL_BYTES                           src/system/loader.c            the Chao world's model archive
+SONIC2/CHAO_MOTION.PRS                         prs     exactly  src/system/areas.h     CHAO_MOTION_BYTES                          src/system/loader.c            the Chao world's motion archive
+SONIC2/STG[0-9][0-9]CAM.PRS                    buffer  within   src/system/areas.h     WORK_AREA_END-WORK_AREA_FILE               src/system/loader.c            a stage's packed camera file
+SONIC2/STG[0-9][0-9]_LIGHT.BIN                 file    within   sdk/include/shinobi.h  GDD_FS_SCTSIZE                             modules/shared/object_light.c  a stage's lights
+SONIC2/TEXT_[EFGJS].PRS                        prs     within   src/system/text.h      TEXT_SIZE                                  src/system/text.c              a language's text file
+SONIC2/MCWARN_[EFGJS].PRS                      prs     within   src/system/text.h      MCWARN_SIZE                                src/system/text.c              a language's mcwarn file
+SONIC2/MISSION[EFGJS].PRS                      buffer  within   src/system/areas.h     WORK_AREA_END-WORK_AREA                    src/hud/mission_message.c      a language's mission messages
+SONIC2/MINIMAL_*.PRS                           buffer  within   src/system/areas.h     WORK_AREA_END-WORK_AREA_FILE               src/object/animal.c            an animal's file
+SONIC2/EVENT/ME[0-9][0-9][0-9][0-9].PRS        prs     within   src/system/areas.h     DEMO_AREA_BYTES                            src/event/mini_event.c         a mini event's scene
+SONIC2/EVENT/EVMES[DHL][0-4].PRS               prs     within   src/system/areas.h     SCRIPT_AREA-MESSAGE_AREA                   src/event/mini_event.c         a story's messages, for a mini event
+SONIC2/EVENT/ME[0-9][0-9][0-9][0-9]_[0-4].SCR  file    within   src/system/areas.h     REQUEST_AREA-SCRIPT_AREA                   src/event/mini_event.c         a mini event's script
+SONIC2/EVENT/EVMES[DHL][0-4].PRS               prs     within   modules/event/areas.h  EVENT_MESSAGE_BYTES                        modules/event/loader.c         a story's messages, for an event
+SONIC2/EVENT/E[0-9][0-9][0-9][0-9]_0.PRS       prs     within   modules/event/areas.h  EVENT_TRACK_BYTES                          modules/event/loader.c         an event's tracks
+SONIC2/EVENT/E[0-9][0-9][0-9][0-9]TEXLIST.PRS  prs     within   modules/event/areas.h  EVENT_TEXLIST_BYTES                        modules/event/loader.c         an event's texture list
+SONIC2/EVENT/E[0-9][0-9][0-9][0-9]TEXTURE.PRS  buffer  within   modules/event/areas.h  EVENT_SCENE_BYTES                          modules/event/loader.c         an event's texture archive
+SONIC2/EVENT/E0[013][0-9][0-9].PRS             prs     within   modules/event/areas.h  EVENT_SCENE_BYTES                          modules/event/loader.c         an event's scene
+SONIC2/EVENT/E020[0-24-9].PRS                  prs     within   modules/event/areas.h  EVENT_SCENE_BYTES                          modules/event/loader.c         an event's scene, 203's aside
+SONIC2/EVENT/E021[1-9].PRS                     prs     within   modules/event/areas.h  EVENT_SCENE_BYTES                          modules/event/loader.c         an event's scene, 210's aside
+SONIC2/EVENT/E[0-9][0-9][0-9][0-9].BIN         file    within   modules/event/areas.h  EVENT_SCENE_BYTES                          modules/event/loader.c         an event's scene, stored unpacked
+SONIC2/EVENT/EVEFF.PVM                         file    within   src/system/areas.h     WORK_AREA_END-WORK_AREA                    modules/event/loader.c         the events' effect textures
+SONIC2/EVENT/TAILSPLAIN.PRS                    prs     within   src/system/areas.h     DEMO_AREA_BYTES                            modules/event/fullscreen.c     the plane a movie draws
+SONIC2/EVENT/TAILSPLAIN.PVM                    file    within   src/system/areas.h     WORK_AREA_END-WORK_AREA                    modules/event/fullscreen.c     the plane's textures
+SONIC2/CHAOSTGRACELAND[DHN].PRS                prs     within   src/system/areas.h     CHAO_LAND_BUILD_AREA-CHAO_RACE_LAND_AREA   modules/chaostgrace/scene.c    a Chao race course's land
+SONIC2/CHAOSTGLOBBYLAND???.PRS                 prs     within   src/system/areas.h     CHAO_LAND_BUILD_AREA-CHAO_LOBBY_LAND_AREA  modules/chaostglobby/lobby.c   a Chao lobby layout's land

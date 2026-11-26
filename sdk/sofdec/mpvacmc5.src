@@ -1,0 +1,74 @@
+; the copy of a skipped macroblock's block in a P picture
+
+; byte offsets of struct mpv_mc's fields
+MC_OUT:         .EQU    20
+MC_SKIP_PITCH:  .EQU    28
+MC_SRC:         .EQU    36
+; a block has rows of ROW_BYTES pixels
+ROW_BYTES:      .EQU    8
+
+        .EXPORT     _MPVACMC_PpicSkipBlk
+
+        .SECTION    PSGSFD00,CODE,ALIGN=4
+
+; Uint8 *MPVACMC_PpicSkipBlk(struct mpv_mc *mc, Uint8 *block)
+; copy the block at mc->src, its rows mc->skip_pitch bytes apart, to mc->out
+; and to block. each destination takes 8 bytes a row. it returns the address
+; past the copy at mc->out. mc->out keeps its value. the rows of all three
+; must lie on 8-byte boundaries. a PREF after each 32 bytes at mc->out sends
+; them on where mc->out is a store queue address. the call needs FPSCR's PR
+; and SZ clear.
+; the first FSCHG sets FPSCR.SZ, so each FMOV of a DR register moves a row's
+; 8 bytes
+; @asm operand: fschg-slot, FSCHG at 0x8c18a728 restores SZ in the RTS slot
+_MPVACMC_PpicSkipBlk:
+        MOV.L       @(MC_SRC,R4),R2
+        FSCHG
+        MOV.L       @(MC_SKIP_PITCH,R4),R3
+        MOV.L       @(MC_OUT,R4),R0
+        FMOV        @R2,DR0
+        ADD         R3,R2
+        FMOV        @R2,DR2
+        ADD         R3,R2
+        FMOV        @R2,DR4
+        ADD         R3,R2
+        FMOV        @R2,DR6
+        ADD         R3,R2
+        FMOV        DR0,@R0
+        ADD         #ROW_BYTES,R0
+        FMOV        DR2,@R0
+        ADD         #ROW_BYTES,R0
+        FMOV        DR4,@R0
+        ADD         #ROW_BYTES,R0
+        FMOV        DR6,@R0
+        ADD         #3*ROW_BYTES,R5
+        PREF        @R0
+        ADD         #ROW_BYTES,R0
+        FMOV        DR6,@R5
+        FMOV        DR4,@-R5
+        FMOV        DR2,@-R5
+        FMOV        DR0,@-R5
+        FMOV        @R2,DR0
+        ADD         R3,R2
+        FMOV        @R2,DR2
+        ADD         R3,R2
+        FMOV        @R2,DR4
+        ADD         R3,R2
+        FMOV        @R2,DR6
+        FMOV        DR0,@R0
+        ADD         #ROW_BYTES,R0
+        FMOV        DR2,@R0
+        ADD         #ROW_BYTES,R0
+        FMOV        DR4,@R0
+        ADD         #ROW_BYTES,R0
+        FMOV        DR6,@R0
+        ADD         #7*ROW_BYTES,R5
+        PREF        @R0
+        FMOV        DR6,@R5
+        ADD         #ROW_BYTES,R0
+        FMOV        DR4,@-R5
+        FMOV        DR2,@-R5
+        FMOV        DR0,@-R5
+        RTS
+        FSCHG
+        .END

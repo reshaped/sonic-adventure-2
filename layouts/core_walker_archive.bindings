@@ -1,0 +1,24 @@
+text CORE_TEXTURE_KD_LS_UNIT303 14
+text CORE_TEXTURE_LTAM 5
+text CORE_TEXTURE_MIU128_CG009 13
+text CORE_TEXTURE_MIU128_CG017 13
+text CORE_TEXTURE_MIU32_EE001 12
+text CORE_TEXTURE_MIU64_CG004 12
+text CORE_TEXTURE_MIU64_CG009 12
+text CORE_TEXTURE_MIU64_EE002 12
+text CORE_TEXTURE_MIU64_EE003 12
+text CORE_TEXTURE_TAMA 5
+text CORE_TEXTURE_TAMA1 6
+
+pointer  walker_object_textures_names  0x00000000  CORE_TEXTURE_KD_LS_UNIT303
+pointer  walker_object_textures_names  0x0000000c  CORE_TEXTURE_LTAM
+pointer  walker_object_textures_names  0x00000018  CORE_TEXTURE_MIU128_CG009
+pointer  walker_object_textures_names  0x00000024  CORE_TEXTURE_MIU128_CG017
+pointer  walker_object_textures_names  0x00000030  CORE_TEXTURE_MIU32_EE001
+pointer  walker_object_textures_names  0x0000003c  CORE_TEXTURE_MIU64_CG004
+pointer  walker_object_textures_names  0x00000048  CORE_TEXTURE_MIU64_CG009
+pointer  walker_object_textures_names  0x00000054  CORE_TEXTURE_MIU64_EE002
+pointer  walker_object_textures_names  0x00000060  CORE_TEXTURE_MIU64_EE003
+pointer  walker_object_textures_names  0x0000006c  CORE_TEXTURE_TAMA
+pointer  walker_object_textures_names  0x00000078  CORE_TEXTURE_TAMA1
+pointer  walker_object_textures  0x00000000  walker_object_textures_names

@@ -1,0 +1,15 @@
+text  SPINNER_TEXTURE_128B  19
+text  SPINNER_TEXTURE_64D  18
+pointer  textures  0x00000000  SPINNER_TEXTURE_128B
+pointer  textures  0x0000000c  SPINNER_TEXTURE_64D
+pointer  spinner_texlist  0x00000000  textures
+pointer  spinner_object_child_sibling_model  0x00000000  spinner_object_child_sibling_vertices
+pointer  spinner_object_child_sibling_model  0x00000004  spinner_object_child_sibling_polygons
+pointer  spinner_object_child_sibling  0x00000004  spinner_object_child_sibling_model
+pointer  spinner_object_child_model  0x00000000  spinner_object_child_vertices
+pointer  spinner_object_child_model  0x00000004  spinner_object_child_polygons
+pointer  spinner_object_child  0x00000004  spinner_object_child_model
+pointer  spinner_object_child  0x00000030  spinner_object_child_sibling
+pointer  spinner_object  0x0000002c  spinner_object_child
+pointer  spinner_tracks  0x00000034  spinner_object_child_sibling_angle_keys
+pointer  spinner_motion  0x00000000  spinner_tracks

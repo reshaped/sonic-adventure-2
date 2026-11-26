@@ -1,0 +1,1 @@
+datum  shaft_column_texture_name  C  0x00000000  12

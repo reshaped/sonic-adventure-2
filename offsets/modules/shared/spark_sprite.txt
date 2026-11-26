@@ -1,0 +1,2 @@
+text  SPARK_SPRITE_MATERIAL_01  C  0x0000000c  6
+datum  spark_sprite_texname  D  0x00000000  12

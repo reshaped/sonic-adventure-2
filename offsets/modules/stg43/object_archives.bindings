@@ -1,0 +1,155 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_MIU128_CG005  13
+text  ARCHIVE_MIU128_CG009  13
+text  ARCHIVE_MIU128_CG016  13
+text  ARCHIVE_MIU128_CG017  13
+text  ARCHIVE_MIU128_CW001  13
+text  ARCHIVE_MIU128_CW002  13
+text  ARCHIVE_MIU128_CW003  13
+text  ARCHIVE_MIU128_CW004  13
+text  ARCHIVE_MIU128_CW005  13
+text  ARCHIVE_MIU128_FR002  13
+text  ARCHIVE_MIU128_MEH001  14
+text  ARCHIVE_MIU256_CW001  13
+text  ARCHIVE_MIU256_CW002  13
+text  ARCHIVE_MIU256_FR001  13
+text  ARCHIVE_MIU32_CW001  12
+text  ARCHIVE_MIU32_CW002  12
+text  ARCHIVE_MIU32_CW003  12
+text  ARCHIVE_MIU32_CW004  12
+text  ARCHIVE_MIU32_CW005  12
+text  ARCHIVE_MIU64_CG003  12
+text  ARCHIVE_MIU64_CG005  12
+text  ARCHIVE_MIU64_CG006  12
+text  ARCHIVE_MIU64_CG009  12
+text  ARCHIVE_MIU64_CG020  12
+text  ARCHIVE_MIU64_CG021  12
+text  ARCHIVE_MIU64_CW001  12
+text  ARCHIVE_MIU64_CW002  12
+text  ARCHIVE_MIU64_CW003  12
+text  ARCHIVE_MIU64_CW004  12
+text  ARCHIVE_MIU64_CW005  12
+text  ARCHIVE_MIU64_CW006  12
+text  ARCHIVE_MIU64_CW007  12
+text  ARCHIVE_MIU64_CW008  12
+text  ARCHIVE_MIU64_CW009  12
+text  ARCHIVE_MIU64_CW010  12
+text  ARCHIVE_MIU64_EE001  12
+text  ARCHIVE_MIU64_EE002  12
+text  ARCHIVE_MIU64_FC003  12
+text  ARCHIVE_MIU64_FR001  12
+text  ARCHIVE_MIU64_FR004  12
+text  ARCHIVE_MIU64_MEH001  13
+text  ARCHIVE_OBJTEX_STG43  13
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_LANDTX43_UV  12
+
+pointer  stage_archive_names  0x00000000  ARCHIVE_MIU128_CG005
+pointer  stage_archive_names  0x0000000c  ARCHIVE_MIU128_CG009
+pointer  stage_archive_names  0x00000018  ARCHIVE_MIU128_CG016
+pointer  stage_archive_names  0x00000024  ARCHIVE_MIU128_CG017
+pointer  stage_archive_names  0x00000030  ARCHIVE_MIU128_CW001
+pointer  stage_archive_names  0x0000003c  ARCHIVE_MIU128_CW002
+pointer  stage_archive_names  0x00000048  ARCHIVE_MIU128_CW003
+pointer  stage_archive_names  0x00000054  ARCHIVE_MIU128_CW004
+pointer  stage_archive_names  0x00000060  ARCHIVE_MIU128_CW005
+pointer  stage_archive_names  0x0000006c  ARCHIVE_MIU128_FR002
+pointer  stage_archive_names  0x00000078  ARCHIVE_MIU128_MEH001
+pointer  stage_archive_names  0x00000084  ARCHIVE_MIU256_CW001
+pointer  stage_archive_names  0x00000090  ARCHIVE_MIU256_CW002
+pointer  stage_archive_names  0x0000009c  ARCHIVE_MIU256_FR001
+pointer  stage_archive_names  0x000000a8  ARCHIVE_MIU32_CW001
+pointer  stage_archive_names  0x000000b4  ARCHIVE_MIU32_CW002
+pointer  stage_archive_names  0x000000c0  ARCHIVE_MIU32_CW003
+pointer  stage_archive_names  0x000000cc  ARCHIVE_MIU32_CW004
+pointer  stage_archive_names  0x000000d8  ARCHIVE_MIU32_CW005
+pointer  stage_archive_names  0x000000e4  ARCHIVE_MIU64_CG003
+pointer  stage_archive_names  0x000000f0  ARCHIVE_MIU64_CG005
+pointer  stage_archive_names  0x000000fc  ARCHIVE_MIU64_CG006
+pointer  stage_archive_names  0x00000108  ARCHIVE_MIU64_CG009
+pointer  stage_archive_names  0x00000114  ARCHIVE_MIU64_CG020
+pointer  stage_archive_names  0x00000120  ARCHIVE_MIU64_CG021
+pointer  stage_archive_names  0x0000012c  ARCHIVE_MIU64_CW001
+pointer  stage_archive_names  0x00000138  ARCHIVE_MIU64_CW002
+pointer  stage_archive_names  0x00000144  ARCHIVE_MIU64_CW003
+pointer  stage_archive_names  0x00000150  ARCHIVE_MIU64_CW004
+pointer  stage_archive_names  0x0000015c  ARCHIVE_MIU64_CW005
+pointer  stage_archive_names  0x00000168  ARCHIVE_MIU64_CW006
+pointer  stage_archive_names  0x00000174  ARCHIVE_MIU64_CW007
+pointer  stage_archive_names  0x00000180  ARCHIVE_MIU64_CW008
+pointer  stage_archive_names  0x0000018c  ARCHIVE_MIU64_CW009
+pointer  stage_archive_names  0x00000198  ARCHIVE_MIU64_CW010
+pointer  stage_archive_names  0x000001a4  ARCHIVE_MIU64_EE001
+pointer  stage_archive_names  0x000001b0  ARCHIVE_MIU64_EE002
+pointer  stage_archive_names  0x000001bc  ARCHIVE_MIU64_FC003
+pointer  stage_archive_names  0x000001c8  ARCHIVE_MIU64_FR001
+pointer  stage_archive_names  0x000001d4  ARCHIVE_MIU64_FR004
+pointer  stage_archive_names  0x000001e0  ARCHIVE_MIU64_MEH001
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  cosmic_wall_texture_groups  0x00000000  stage_textures
+pointer  cosmic_wall_texture_groups  0x00000004  goal_ring_texlists
+pointer  cosmic_wall_texture_groups  0x00000008  emerald_texlists
+pointer  cosmic_wall_texture_groups  0x0000000c  item_box_texlists
+pointer  cosmic_wall_texture_groups  0x00000010  item_box_air_texlists
+pointer  cosmic_wall_texture_groups  0x00000014  weight_texlists
+pointer  cosmic_wall_texture_groups  0x00000018  iron_ball_texlists
+pointer  cosmic_wall_texture_groups  0x0000001c  triple_spring_texlists
+pointer  cosmic_wall_texture_groups  0x00000020  dynamite_texlists
+pointer  cosmic_wall_texture_groups  0x00000024  reel_texlists
+pointer  cosmic_wall_texture_groups  0x00000028  chao_pipe_texlists
+pointer  cosmic_wall_texture_groups  0x0000002c  cage_texlists
+pointer  cosmic_wall_texture_groups  0x00000030  wood_box_texlists
+pointer  cosmic_wall_texture_groups  0x00000034  iron_box_texlists
+pointer  cosmic_wall_texture_groups  0x00000038  upgrade_texlists
+pointer  cosmic_wall_texture_groups  0x0000003c  missile_texlists
+pointer  cosmic_wall_texture_groups  0x00000040  skull_texlists
+pointer  cosmic_wall_texture_groups  0x00000044  rocket_texlists
+pointer  cosmic_wall_texture_groups  0x00000048  search_box_texlists
+pointer  cosmic_wall_texture_groups  0x0000004c  hint_box_texlists
+pointer  cosmic_wall_texture_groups  0x00000050  knudai_texlists
+pointer  cosmic_wall_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  cosmic_wall_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  cosmic_wall_texture_groups  0x0000005c  knudai_door_texlists
+pointer  cosmic_wall_texture_groups  0x00000060  chao_box_texlists
+pointer  cosmic_wall_texture_groups  0x00000064  chao_key_texlists
+pointer  cosmic_wall_texture_groups  0x00000068  object_effect_texlists
+pointer  cosmic_wall_texture_groups  0x0000006c  messenger_texlists
+pointer  cosmic_wall_texture_groups  0x00000070  ring_effect_texlists
+pointer  cosmic_wall_texture_groups  0x00000074  solid_box_texlists
+pointer  cosmic_wall_texture_groups  0x00000078  cosmic_drill_texlists
+pointer  cosmic_wall_texture_groups  0x0000007c  arrow_texlists
+pointer  cosmic_wall_texture_groups  0x00000080  frstage_texlists
+pointer  cosmic_wall_texture_groups  0x00000084  sign_end_texlists
+pointer  cosmic_wall_texture_groups  0x00000088  cosmic_gate_texlists
+pointer  cosmic_wall_texture_groups  0x0000008c  cosmic_indicator_texlists
+pointer  cosmic_wall_texture_groups  0x00000090  cosmic_vulcan_texlists
+pointer  cosmic_wall_texture_groups  0x00000094  cosmic_lockon_texlists
+pointer  cosmic_wall_texture_groups  0x00000098  cosmic_laser_texlists
+pointer  cosmic_wall_texture_groups  0x0000009c  cosmic_meteor_texlists
+pointer  cosmic_wall_pvms  0x00000000  ARCHIVE_OBJTEX_STG43
+pointer  cosmic_wall_pvms  0x00000004  stage_archive
+pointer  cosmic_wall_pvms  0x00000008  ARCHIVE_EFFTEX_COMMON
+pointer  cosmic_wall_pvms  0x0000000c  efftex_common_texlist
+pointer  cosmic_wall_pvms  0x00000010  ARCHIVE_OBJTEX_COMMON
+pointer  cosmic_wall_pvms  0x00000014  objtex_common_texlist
+pointer  cosmic_wall_pvms  0x00000018  ARCHIVE_LANDTX43_UV
+pointer  cosmic_wall_pvms  0x0000001c  cosmic_wall_animated_surface_texlist
+pointer  cosmic_wall_pvms  0x00000024  cosmic_wall_land_texlist

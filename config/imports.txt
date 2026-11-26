@@ -1,0 +1,7 @@
+# The names a disc-free census may hold, by image, with why each stays
+# undefined. A row is IMAGE NAME REASON: IMAGE is a census's file stem, and
+# REASON is the rest of the line. make dc-check fails on each census name
+# that no row gives for its image. It fails too on a row whose name its
+# image's census doesn't hold, and on a row of fewer than three fields.
+#
+# image        name                       reason

@@ -1,0 +1,4 @@
+# Native address, typed terrain or actor data, and dimensions or links.
+# Drawn terrain entries use chunk objects. The remaining terrain entries use Basic collision objects.
+0x8c5470a0  layout  egypt_flag_supports_filenames
+0x8c5ae7f8  layout  egypt_flag_supports

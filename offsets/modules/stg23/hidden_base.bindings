@@ -1,0 +1,7 @@
+pointer  base_kill_areas  0x00000004  base_sink_0
+pointer  base_kill_areas  0x0000000c  base_sink_1
+pointer  base_kill_areas  0x00000014  base_sink_2
+pointer  base_kill_areas  0x0000001c  base_sink_3
+pointer  base_kill_areas  0x00000024  base_sink_4
+pointer  base_kill_areas  0x0000002c  base_sink_5
+pointer  base_kill_areas  0x00000034  base_sink_6

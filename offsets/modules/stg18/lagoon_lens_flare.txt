@@ -1,0 +1,2 @@
+datum  canyon_flare_cells  D  0x00000000  160
+datum  canyon_flare_sprite  D  0x000000a0  32

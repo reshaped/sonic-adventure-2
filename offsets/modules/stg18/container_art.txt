@@ -1,0 +1,2 @@
+datum lagoon_container_texture_names C 0x00000068 64
+datum lagoon_container_variant_names C 0x000000a8 15

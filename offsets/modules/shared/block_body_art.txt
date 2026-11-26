@@ -1,0 +1,13 @@
+datum  body_polygons  D  0x00000000  194
+datum  body_vertices  D  0x000000c4  588
+datum  core_block_body  D  0x00000310  24
+datum  body_object  D  0x00000328  52
+datum  flash_late_polygons  D  0x0000035c  166
+datum  flash_late_vertices  D  0x00000404  492
+datum  core_block_flash_late  D  0x000005f0  24
+datum  flash_late_object  D  0x00000608  52
+datum  flash_early_polygons  D  0x0000063c  166
+datum  flash_early_vertices  D  0x000006e4  492
+datum  core_block_flash_early  D  0x000008d0  24
+datum  flash_early_object  D  0x000008e8  52
+datum  block_root  D  0x0000091c  52

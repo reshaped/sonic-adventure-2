@@ -1,0 +1,2109 @@
+; the window of the MPEG audio decoder's synthesis filter, which AHX data
+; plays through
+;
+; void mpeg_window_k(const Float *ring, const Float *window, Sint16 *pcm)
+; make 32 samples at pcm, for a phase k from 0 to 15. ring points at float
+; 64k of the filter's ring of 1024 floats, where mpeg_matrix has just written
+; 64 values. sample j's sum adds the 16 products of window[16j + i] and its
+; tap i, for i from 0 to 15. tap 0 of sample j is ring[j]. each next tap lies
+; 96 floats on from an even tap, and 32 from an odd one, so tap 15 is
+; ring[j + 992]. a tap past the ring's end wraps to its start, as phase k's
+; last k taps do.
+;
+; FIPR sums the products four at a time, and FADD adds the four sums in order
+; to 0. FTRC truncates sample j's sum toward 0 to a 32-bit integer,
+; saturating at H'7FFFFFFF and H'80000000. pcm[j] is that integer's high 16
+; bits: the integer divided by 65536, rounded toward minus infinity.
+; mpeg_synth_pcm's window is ISO/IEC 11172-3's synthesis window D times 2^31,
+; so a full-scale sample fills the 32 bits. window[16j + i] is D[j + 32i]
+; times 2^31: window[8] is H'4F128F00, D[256]'s 1.144989 times 2^31.
+;
+; window must be 8-byte aligned. the last sample's PREF reads the cache line
+; past window's 2048 bytes. FPSCR.PR and FPSCR.SZ must be clear, and SZ is
+; clear again on return. each call changes R0 to R7, FPUL, and FR0 to FR11 of
+; the bank FPSCR.FR selects.
+;
+; FSCHG sets SZ for window's pair loads and clears it for the taps. R4 steps
+; through a sample's taps, and R1 holds the next sample's tap 0. R0 holds
+; LONG_STEP. R3 starts as a copy of R7's count of SAMPLES, and
+; ADD #SHORT_STEP-SAMPLES turns it into the step SHORT_STEP. the step to a
+; tap that wraps adds R9 instead, its step less RING_BYTES. FR15 holds the
+; sum, and a pass of ?sample stores the sample before its own.
+
+; the samples a call makes, the bytes of an operand cache line, of a float,
+; of a sample, and of the ring
+SAMPLES:        .EQU    32
+CACHE_LINE:     .EQU    32
+FLOAT_BYTES:    .EQU    4
+SAMPLE_BYTES:   .EQU    2
+RING_BYTES:     .EQU    1024*FLOAT_BYTES
+; the bytes from an even tap to the next, and from an odd one
+LONG_STEP:      .EQU    96*FLOAT_BYTES
+SHORT_STEP:     .EQU    32*FLOAT_BYTES
+
+        .EXPORT     _mpeg_window_0
+        .EXPORT     _mpeg_window_1
+        .EXPORT     _mpeg_window_2
+        .EXPORT     _mpeg_window_3
+        .EXPORT     _mpeg_window_4
+        .EXPORT     _mpeg_window_5
+        .EXPORT     _mpeg_window_6
+        .EXPORT     _mpeg_window_7
+        .EXPORT     _mpeg_window_8
+        .EXPORT     _mpeg_window_9
+        .EXPORT     _mpeg_window_10
+        .EXPORT     _mpeg_window_11
+        .EXPORT     _mpeg_window_12
+        .EXPORT     _mpeg_window_13
+        .EXPORT     _mpeg_window_14
+        .EXPORT     _mpeg_window_15
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void mpeg_window_0(const Float *ring, const Float *window, Sint16 *pcm)
+; no step adds R9, so no tap wraps
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c178dfa takes sample 0's
+; first four products
+_mpeg_window_0:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_1(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 15 adds R9, so tap 15 wraps
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c178eec takes sample 0's
+; first four products
+_mpeg_window_1:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #LONG_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        FADD        FR7,FR15
+        ADD         R9,R4
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_2(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 14 adds R9, so taps 14 and 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c178fe0 takes sample 0's
+; first four products
+_mpeg_window_2:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #SHORT_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R9,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_3(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 13 adds R9, so taps 13 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c1790d4 takes sample 0's
+; first four products
+_mpeg_window_3:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #LONG_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R9,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_4(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 12 adds R9, so taps 12 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c1791c8 takes sample 0's
+; first four products
+_mpeg_window_4:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #SHORT_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        ADD         R9,R4
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_5(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 11 adds R9, so taps 11 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c1792bc takes sample 0's
+; first four products
+_mpeg_window_5:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #LONG_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R9,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_6(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 10 adds R9, so taps 10 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c1793b0 takes sample 0's
+; first four products
+_mpeg_window_6:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #SHORT_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R9,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_7(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 9 adds R9, so taps 9 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c1794a4 takes sample 0's
+; first four products
+_mpeg_window_7:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #LONG_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R9,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_8(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 8 adds R9, so taps 8 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c179598 takes sample 0's
+; first four products
+_mpeg_window_8:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #SHORT_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        NOP
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+?taps8:
+        PREF        @R8
+        ADD         R9,R4
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_9(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 7 adds R9, so taps 7 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c17968c takes sample 0's
+; first four products
+_mpeg_window_9:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #LONG_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R9,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        FADD        FR7,FR15
+        ADD         R9,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_10(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 6 adds R9, so taps 6 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c179780 takes sample 0's
+; first four products
+_mpeg_window_10:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #SHORT_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R9,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        FLDI0       FR15
+        ADD         R9,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_11(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 5 adds R9, so taps 5 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c179874 takes sample 0's
+; first four products
+_mpeg_window_11:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #LONG_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R9,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R9,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_12(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 4 adds R9, so taps 4 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c179966 takes sample 0's
+; first four products
+_mpeg_window_12:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #SHORT_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        ADD         R9,R4
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        ADD         R9,R4
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_13(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 3 adds R9, so taps 3 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c179a5c takes sample 0's
+; first four products
+_mpeg_window_13:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #LONG_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R9,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R9,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_14(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 2 adds R9, so taps 2 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c179b50 takes sample 0's
+; first four products
+_mpeg_window_14:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #SHORT_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R9,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R9,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+
+; void mpeg_window_15(const Float *ring, const Float *window, Sint16 *pcm)
+; the step to tap 1 adds R9, so taps 1 to 15 wrap
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c179c44 takes sample 0's
+; first four products
+_mpeg_window_15:
+        MOV.L       R8,@-R15
+        MOV.L       R9,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R5
+        MOV         R5,R8
+        MOV.W       #LONG_STEP-RING_BYTES,R9
+        MOV         #SAMPLES,R7
+        ADD         #CACHE_LINE,R8
+        MOV         R4,R1
+        MOV         R7,R3
+        ADD         #FLOAT_BYTES,R1
+        MOV.W       #LONG_STEP,R0
+        ADD         #SHORT_STEP-SAMPLES,R3
+        FLDI0       FR15
+        FMOV.S      @R4,FR0
+        ADD         R9,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        PREF        @R8
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        BRA         ?taps8
+        ADD         R3,R4
+?sample:
+        FADD        FR11,FR15
+        FMOV.S      @R4,FR0
+        ADD         R9,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+        FSCHG
+        FMOV        @R5+,DR4
+        FTRC        FR15,FPUL
+        FMOV        @R5+,DR6
+        ADD         #CACHE_LINE,R8
+        STS         FPUL,R2
+        FMOV        @R5+,DR8
+        SHLR16      R2
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        MOV.W       R2,@R6
+        ADD         #SAMPLE_BYTES,R6
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FLDI0       FR15
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        ADD         R3,R4
+?taps8:
+        PREF        @R8
+        FMOV.S      @R4,FR4
+        FIPR        FV0,FV8
+        ADD         R0,R4
+        FMOV.S      @R4,FR5
+        ADD         R3,R4
+        FMOV.S      @R4,FR6
+        ADD         R0,R4
+        FMOV.S      @R4,FR7
+        ADD         R3,R4
+        FADD        FR11,FR15
+        FSCHG
+        FMOV        @R5+,DR0
+        ADD         #CACHE_LINE,R8
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R5+,DR10
+        FSCHG
+        FMOV.S      @R4,FR0
+        ADD         R0,R4
+        FMOV.S      @R4,FR1
+        ADD         R3,R4
+        FMOV.S      @R4,FR2
+        ADD         R0,R4
+        FADD        FR7,FR15
+        FMOV.S      @R4,FR3
+        PREF        @R8
+        DT          R7
+        MOV         R1,R4
+        FIPR        FV0,FV8
+        BF/S        ?sample
+        ADD         #FLOAT_BYTES,R1
+        FADD        FR11,FR15
+        FTRC        FR15,FPUL
+        STS         FPUL,R2
+        SHLR16      R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R8
+        RTS
+        MOV.W       R2,@R6
+        .END

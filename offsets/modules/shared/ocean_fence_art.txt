@@ -1,0 +1,13 @@
+datum  material_saku1  C  0x00000000  12
+datum  ocean_fence_bright_textures  D  0x00000000  12
+datum  ocean_fence_bright_texlist  D  0x0000000c  8
+datum  ocean_fence_bright_polygons  D  0x00000014  586
+datum  ocean_fence_bright_vertices  D  0x00000260  1276
+datum  ocean_fence_bright_model  D  0x0000075c  24
+datum  ocean_fence_bright_object  D  0x00000774  52
+datum  ocean_fence_dark_textures  D  0x000007a8  12
+datum  ocean_fence_dark_texlist  D  0x000007b4  8
+datum  ocean_fence_dark_polygons  D  0x000007bc  586
+datum  ocean_fence_dark_vertices  D  0x00000a08  1324
+datum  ocean_fence_dark_model  D  0x00000f34  24
+datum  ocean_fence_dark_object  D  0x00000f4c  52

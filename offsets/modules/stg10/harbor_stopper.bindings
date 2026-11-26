@@ -1,0 +1,13 @@
+text  TEXTURE_MIU64_MH007  12
+text  TEXTURE_PR128_23  9
+text  TEXTURE_PR64_18  8
+pointer  stopper_textures  0x00000000  TEXTURE_MIU64_MH007
+pointer  stopper_textures  0x0000000c  TEXTURE_PR128_23
+pointer  stopper_textures  0x00000018  TEXTURE_PR64_18
+pointer  stopper_texlist  0x00000000  stopper_textures
+include  stopper_mesh
+pointer  harbor_stopper_object  0x00000004  body_mesh
+pointer  harbor_stopper_object  0x0000002c  lamp_object
+include  stopper_solid
+pointer  harbor_stopper_collision  0x00000004  stopper_hull
+pointer  harbor_stopper_texlists  0x00000000  stopper_texlist

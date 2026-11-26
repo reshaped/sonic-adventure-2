@@ -1,0 +1,18 @@
+text SLGATE_EDITOR_ANGLE_Y 11
+text SLGATE_TEXTURE_MIU32_KAGE001 14
+text SLGATE_TEXTURE_MIU64_GREEN011 15
+
+pointer  model_textures  0x00000000  SLGATE_TEXTURE_MIU32_KAGE001
+pointer  model_textures  0x0000000c  SLGATE_TEXTURE_MIU64_GREEN011
+pointer  slgate_texlist  0x00000000  model_textures
+pointer  slgate_model  0x00000000  gate_vertices
+pointer  slgate_model  0x00000004  gate_polygons
+pointer  gate_object  0x00000004  slgate_model
+pointer  gate_collision_meshset  0x00000004  gate_collision_indices
+pointer  gate_collision_model  0x00000000  gate_collision_points
+pointer  gate_collision_model  0x00000004  gate_collision_normals
+pointer  gate_collision_model  0x0000000c  gate_collision_meshset
+pointer  gate_collision_model  0x00000010  gate_collision_material
+pointer  slgate_collision  0x00000004  gate_collision_model
+pointer  slgate_parts  0x00000000  slgate_model
+pointer  slgate_parts  0x00000004  slgate_collision

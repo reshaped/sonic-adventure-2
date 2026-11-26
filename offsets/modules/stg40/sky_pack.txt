@@ -1,0 +1,8 @@
+datum  sky_earth_texture  C  0x00000000  12
+datum  sky_32_4  C  0x0000000c  12
+datum  sky_stars_20_texture  C  0x00000018  12
+datum  sky_orbit_128  C  0x00000024  12
+datum  sky_orbit_64  C  0x00000030  12
+datum  sky_cloud_texture  C  0x0000003c  9
+datum  textures  D  0x00000000  72
+datum  final_chase_background_pvm_texlist  D  0x00000048  8

@@ -1,0 +1,26 @@
+text  HARBOR_TEXTURE_MIU64_IG007  12
+text  HARBOR_TEXTURE_MIU64_MH001  12
+text  HARBOR_TEXTURE_MIU64_MH003  12
+text  HARBOR_TEXTURE_MIU64_MH005  12
+text  HARBOR_TEXTURE_MIU64_MH007  12
+text  HARBOR_TEXTURE_PR64_14  8
+pointer  stopper_faces  0x00000004  stopper_strips
+pointer  stopper_hull  0x00000000  stopper_points
+pointer  stopper_hull  0x00000004  stopper_normals
+pointer  stopper_hull  0x0000000c  stopper_faces
+pointer  stopper_hull  0x00000010  stopper_material
+pointer  stopper_collision  0x00000004  stopper_hull
+pointer  stopper_textures  0x00000000  HARBOR_TEXTURE_MIU64_IG007
+pointer  stopper_textures  0x0000000c  HARBOR_TEXTURE_MIU64_MH001
+pointer  stopper_textures  0x00000018  HARBOR_TEXTURE_MIU64_MH003
+pointer  stopper_textures  0x00000024  HARBOR_TEXTURE_MIU64_MH005
+pointer  stopper_textures  0x00000030  HARBOR_TEXTURE_MIU64_MH007
+pointer  stopper_textures  0x0000003c  HARBOR_TEXTURE_PR64_14
+pointer  stopper_texlist  0x00000000  stopper_textures
+pointer  lamp_mesh  0x00000000  lamp_vertices
+pointer  lamp_mesh  0x00000004  lamp_polygons
+pointer  lamp_object  0x00000004  lamp_mesh
+pointer  body_mesh  0x00000000  body_vertices
+pointer  body_mesh  0x00000004  body_polygons
+pointer  stopper_object  0x00000004  body_mesh
+pointer  stopper_object  0x0000002c  lamp_object

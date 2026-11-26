@@ -1,0 +1,21 @@
+text  TEXTURE_MIU32_MH004  12
+text  TEXTURE_PR128_28  9
+text  TEXTURE_PR32_4  7
+text  TEXTURE_PR64_11  8
+text  TEXTURE_PR64_21  8
+text  TEXTURE_PR_3KAGE32  11
+pointer  machine_names  0x00000000  TEXTURE_MIU32_MH004
+pointer  machine_names  0x0000000c  TEXTURE_PR128_28
+pointer  machine_names  0x00000018  TEXTURE_PR32_4
+pointer  machine_names  0x00000024  TEXTURE_PR64_11
+pointer  machine_names  0x00000030  TEXTURE_PR64_21
+pointer  machine_names  0x0000003c  TEXTURE_PR_3KAGE32
+pointer  machine_texlist  0x00000000  machine_names
+pointer  machine_lamp_model  0x00000000  machine_lamp_vertices
+pointer  machine_lamp_model  0x00000004  machine_lamp_polygons
+pointer  machine_lamp  0x00000004  machine_lamp_model
+pointer  machine_model  0x00000000  machine_vertices
+pointer  machine_model  0x00000004  machine_polygons
+pointer  machine_object  0x00000004  machine_model
+pointer  machine_object  0x0000002c  machine_lamp
+pointer  signal_texlists  0x00000000  machine_texlist

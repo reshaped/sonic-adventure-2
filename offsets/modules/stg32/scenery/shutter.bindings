@@ -1,0 +1,44 @@
+text  SHUTTER_TEXTURE_METEO128_11  12
+text  SHUTTER_TEXTURE_METEO128_5  11
+text  SHUTTER_TEXTURE_METEO64_2  10
+text  SHUTTER_TEXTURE_MIU128_MEH004  14
+text  SHUTTER_TEXTURE_MIU128_MEH006  14
+text  SHUTTER_TEXTURE_MIU128_MEH008  14
+pointer  meteor_shutter_names  0x00000000  SHUTTER_TEXTURE_METEO128_11
+pointer  meteor_shutter_names  0x0000000c  SHUTTER_TEXTURE_METEO128_5
+pointer  meteor_shutter_names  0x00000018  SHUTTER_TEXTURE_METEO64_2
+pointer  meteor_shutter_names  0x00000024  SHUTTER_TEXTURE_MIU128_MEH004
+pointer  meteor_shutter_names  0x00000030  SHUTTER_TEXTURE_MIU128_MEH006
+pointer  meteor_shutter_names  0x0000003c  SHUTTER_TEXTURE_MIU128_MEH008
+pointer  meteor_shutter_texlist  0x00000000  meteor_shutter_names
+pointer  meteor_shutter_first_light_model  0x00000000  meteor_shutter_first_light_vertices
+pointer  meteor_shutter_first_light_model  0x00000004  meteor_shutter_first_light_polygons
+pointer  meteor_shutter_first_light  0x00000004  meteor_shutter_first_light_model
+pointer  meteor_shutter_second_light_model  0x00000000  meteor_shutter_second_light_vertices
+pointer  meteor_shutter_second_light_model  0x00000004  meteor_shutter_second_light_polygons
+pointer  meteor_shutter_second_light  0x00000004  meteor_shutter_second_light_model
+pointer  meteor_shutter_second_light  0x00000030  meteor_shutter_first_light
+pointer  meteor_shutter_housing_model  0x00000000  meteor_shutter_housing_vertices
+pointer  meteor_shutter_housing_model  0x00000004  meteor_shutter_housing_polygons
+pointer  meteor_shutter_housing  0x00000004  meteor_shutter_housing_model
+pointer  meteor_shutter_housing  0x0000002c  meteor_shutter_second_light
+pointer  meteor_shutter_collision_meshsets  0x00000004  meteor_shutter_collision_faces
+pointer  meteor_shutter_collision_model  0x00000000  meteor_shutter_collision_points
+pointer  meteor_shutter_collision_model  0x00000004  meteor_shutter_collision_normals
+pointer  meteor_shutter_collision_model  0x0000000c  meteor_shutter_collision_meshsets
+pointer  meteor_shutter_collision_model  0x00000010  meteor_shutter_collision_materials
+pointer  meteor_shutter_collision  0x00000004  meteor_shutter_collision_model
+pointer  meteor_shutter_broken_names  0x00000000  SHUTTER_TEXTURE_METEO128_11
+pointer  meteor_shutter_broken_names  0x0000000c  SHUTTER_TEXTURE_METEO64_2
+pointer  meteor_shutter_broken_names  0x00000018  SHUTTER_TEXTURE_MIU128_MEH004
+pointer  meteor_shutter_broken_names  0x00000024  SHUTTER_TEXTURE_MIU128_MEH006
+pointer  meteor_shutter_broken_texlist  0x00000000  meteor_shutter_broken_names
+pointer  meteor_shutter_broken_model  0x00000000  meteor_shutter_broken_vertices
+pointer  meteor_shutter_broken_model  0x00000004  meteor_shutter_broken_polygons
+pointer  meteor_shutter_broken  0x00000004  meteor_shutter_broken_model
+pointer  meteor_shutter_broken_collision_meshsets  0x00000004  meteor_shutter_broken_collision_faces
+pointer  meteor_shutter_broken_collision_model  0x00000000  meteor_shutter_broken_collision_points
+pointer  meteor_shutter_broken_collision_model  0x00000004  meteor_shutter_broken_collision_normals
+pointer  meteor_shutter_broken_collision_model  0x0000000c  meteor_shutter_broken_collision_meshsets
+pointer  meteor_shutter_broken_collision_model  0x00000010  meteor_shutter_broken_collision_materials
+pointer  meteor_shutter_broken_collision  0x00000004  meteor_shutter_broken_collision_model

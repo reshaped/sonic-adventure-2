@@ -1,0 +1,3 @@
+pointer  store_box_blue_model  0x00000000  store_box_blue_vertices
+pointer  store_box_blue_model  0x00000004  store_box_blue_polygons
+pointer  store_box_blue_object  0x00000004  store_box_blue_model

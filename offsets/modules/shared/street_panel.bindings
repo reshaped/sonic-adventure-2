@@ -1,0 +1,7 @@
+text  ROAD_TEXTURE_MIU128_RH011  13
+pointer  street_panel_textures  0x00000000  ROAD_TEXTURE_MIU128_RH011
+pointer  street_panel_texlist  0x00000000  street_panel_textures
+pointer  street_panel_model  0x00000000  street_panel_vertices
+pointer  street_panel_model  0x00000004  street_panel_polygons
+pointer  street_panel_object  0x00000004  street_panel_model
+pointer  street_panel_texlists  0x00000000  street_panel_texlist

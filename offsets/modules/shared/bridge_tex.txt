@@ -1,0 +1,9 @@
+datum  et64_3  C  0x00000000  8
+datum  et64_4  C  0x00000008  8
+datum  miu128_cg022  C  0x00000010  16
+datum  miu512_cg001  C  0x00000020  16
+datum  miu512_cg003  C  0x00000030  16
+datum  miu64_cg007  C  0x00000040  12
+datum  miu64_cg010  C  0x0000004c  12
+datum  textures  D  0x00000000  84
+datum  dynamite_bridge_texlist  D  0x00000054  8

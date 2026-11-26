@@ -1,0 +1,55 @@
+text  SCENERY_TEXTURE_MIU128_MI002  13
+text  SCENERY_TEXTURE_MIU64_MI002  12
+text  SCENERY_TEXTURE_MIU64_MI003  12
+text  SCENERY_TEXTURE_PUM32_1  8
+text  SCENERY_TEXTURE_MIU128_MI003  13
+text  SCENERY_TEXTURE_PUM128_22  10
+text  SCENERY_TEXTURE_MIU32_MI002  12
+text  SCENERY_TEXTURE_MIU128_MI006  13
+text  SCENERY_TEXTURE_MIU64_LOCO005  14
+text  SCENERY_TEXTURE_MIU64_MI006  12
+
+pointer  scenery_texlists  0x00000000  miring_texlist
+pointer  scenery_texlists  0x00000004  mifence_texlist
+pointer  scenery_texlists  0x00000008  mirail_texlist
+pointer  scenery_texlists  0x0000000c  milatti_texlist
+pointer  scenery_texlists  0x00000010  mikusa_texlist
+pointer  scenery_texlists  0x00000014  mitruckp_texlist
+pointer  miring_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_MI002
+pointer  miring_texlist  0x00000000  miring_texlist_names
+pointer  miring_model  0x00000000  miring_vertices
+pointer  miring_model  0x00000004  miring_polygons
+pointer  miring_object  0x00000004  miring_model
+pointer  mifence_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_MI002
+pointer  mifence_texlist_names  0x0000000c  SCENERY_TEXTURE_MIU64_MI002
+pointer  mifence_texlist_names  0x00000018  SCENERY_TEXTURE_MIU64_MI003
+pointer  mifence_texlist  0x00000000  mifence_texlist_names
+pointer  mifence_model  0x00000000  mifence_vertices
+pointer  mifence_model  0x00000004  mifence_polygons
+pointer  mifence_object  0x00000004  mifence_model
+pointer  mirail_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_MI002
+pointer  mirail_texlist_names  0x0000000c  SCENERY_TEXTURE_PUM32_1
+pointer  mirail_texlist  0x00000000  mirail_texlist_names
+pointer  mirail_model  0x00000000  mirail_vertices
+pointer  mirail_model  0x00000004  mirail_polygons
+pointer  mirail_object  0x00000004  mirail_model
+pointer  milatti_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_MI002
+pointer  milatti_texlist_names  0x0000000c  SCENERY_TEXTURE_MIU128_MI003
+pointer  milatti_texlist_names  0x00000018  SCENERY_TEXTURE_PUM128_22
+pointer  milatti_texlist  0x00000000  milatti_texlist_names
+pointer  milatti_model  0x00000000  milatti_vertices
+pointer  milatti_model  0x00000004  milatti_polygons
+pointer  milatti_object  0x00000004  milatti_model
+pointer  mikusa_texlist_names  0x00000000  SCENERY_TEXTURE_MIU32_MI002
+pointer  mikusa_texlist  0x00000000  mikusa_texlist_names
+pointer  mikusa_model  0x00000000  mikusa_vertices
+pointer  mikusa_model  0x00000004  mikusa_polygons
+pointer  mikusa_object  0x00000004  mikusa_model
+pointer  mitruckp_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_MI006
+pointer  mitruckp_texlist_names  0x0000000c  SCENERY_TEXTURE_MIU64_LOCO005
+pointer  mitruckp_texlist_names  0x00000018  SCENERY_TEXTURE_MIU64_MI006
+pointer  mitruckp_texlist_names  0x00000024  SCENERY_TEXTURE_PUM32_1
+pointer  mitruckp_texlist  0x00000000  mitruckp_texlist_names
+pointer  mitruckp_model  0x00000000  mitruckp_vertices
+pointer  mitruckp_model  0x00000004  mitruckp_polygons
+pointer  mitruckp_object  0x00000004  mitruckp_model

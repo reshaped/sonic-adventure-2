@@ -1,0 +1,2 @@
+datum  bar_quad  C  0x00000060  96
+datum  letter_quad  C  0x00000000  96

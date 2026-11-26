@@ -1,0 +1,61 @@
+# The two ships share texture filenames and have independent meshes and motions.
+text SHIP_TEXTURE_DC_PC_CROUCHWALL64 19
+text SHIP_TEXTURE_DZ_PC_CHAIN8 13
+text SHIP_TEXTURE_DZ_PC_HASIRA128 16
+text SHIP_TEXTURE_DZ_PC_POT_WALL128 18
+text SHIP_TEXTURE_DZ_PC_SHIP128 14
+text SHIP_TEXTURE_DZ_PC_SHIPRUST64 17
+text SHIP_TEXTURE_DZ_PC_SKIN64 13
+text SHIP_TEXTURE_KD_PC_HASIRA1 14
+text SHIP_TEXTURE_KD_PC_HASIRA4 14
+text SHIP_TEXTURE_KD_PC_HEBI2 12
+text SHIP_TEXTURE_KD_PC_YUKA1 12
+text SHIP_TEXTURE_KD_PC_YUKA3 12
+text SHIP_TEXTURE_KD_PC_DOOR1 12
+text SHIP_KIND_NORMAL 7
+text SHIP_KIND_EGGMAN 7
+
+pointer cave_ship_normal_texture_names  0x00000000  SHIP_TEXTURE_DC_PC_CROUCHWALL64
+pointer cave_ship_normal_texture_names  0x0000000c  SHIP_TEXTURE_DZ_PC_CHAIN8
+pointer cave_ship_normal_texture_names  0x00000018  SHIP_TEXTURE_DZ_PC_HASIRA128
+pointer cave_ship_normal_texture_names  0x00000024  SHIP_TEXTURE_DZ_PC_POT_WALL128
+pointer cave_ship_normal_texture_names  0x00000030  SHIP_TEXTURE_DZ_PC_SHIP128
+pointer cave_ship_normal_texture_names  0x0000003c  SHIP_TEXTURE_DZ_PC_SHIPRUST64
+pointer cave_ship_normal_texture_names  0x00000048  SHIP_TEXTURE_DZ_PC_SKIN64
+pointer cave_ship_normal_texture_names  0x00000054  SHIP_TEXTURE_KD_PC_HASIRA1
+pointer cave_ship_normal_texture_names  0x00000060  SHIP_TEXTURE_KD_PC_HASIRA4
+pointer cave_ship_normal_texture_names  0x0000006c  SHIP_TEXTURE_KD_PC_HEBI2
+pointer cave_ship_normal_texture_names  0x00000078  SHIP_TEXTURE_KD_PC_YUKA1
+pointer cave_ship_normal_texture_names  0x00000084  SHIP_TEXTURE_KD_PC_YUKA3
+pointer cave_ship_normal_texlist  0x00000000  cave_ship_normal_texture_names
+pointer cave_ship_normal_model  0x00000000  cave_ship_normal_vertices
+pointer cave_ship_normal_model  0x00000004  cave_ship_normal_polygons
+pointer cave_ship_normal_object  0x00000004  cave_ship_normal_model
+pointer cave_ship_normal_motion_tracks  0x00000004  cave_ship_normal_motion_angle_keys
+pointer cave_ship_normal_motion  0x00000000  cave_ship_normal_motion_tracks
+pointer cave_ship_eggman_texture_names  0x00000000  SHIP_TEXTURE_DC_PC_CROUCHWALL64
+pointer cave_ship_eggman_texture_names  0x0000000c  SHIP_TEXTURE_DZ_PC_CHAIN8
+pointer cave_ship_eggman_texture_names  0x00000018  SHIP_TEXTURE_DZ_PC_HASIRA128
+pointer cave_ship_eggman_texture_names  0x00000024  SHIP_TEXTURE_DZ_PC_POT_WALL128
+pointer cave_ship_eggman_texture_names  0x00000030  SHIP_TEXTURE_DZ_PC_SHIP128
+pointer cave_ship_eggman_texture_names  0x0000003c  SHIP_TEXTURE_DZ_PC_SHIPRUST64
+pointer cave_ship_eggman_texture_names  0x00000048  SHIP_TEXTURE_DZ_PC_SKIN64
+pointer cave_ship_eggman_texture_names  0x00000054  SHIP_TEXTURE_KD_PC_DOOR1
+pointer cave_ship_eggman_texture_names  0x00000060  SHIP_TEXTURE_KD_PC_HASIRA1
+pointer cave_ship_eggman_texture_names  0x0000006c  SHIP_TEXTURE_KD_PC_HASIRA4
+pointer cave_ship_eggman_texture_names  0x00000078  SHIP_TEXTURE_KD_PC_YUKA1
+pointer cave_ship_eggman_texture_names  0x00000084  SHIP_TEXTURE_KD_PC_YUKA3
+pointer cave_ship_eggman_texlist  0x00000000  cave_ship_eggman_texture_names
+pointer cave_ship_eggman_model  0x00000000  cave_ship_eggman_vertices
+pointer cave_ship_eggman_model  0x00000004  cave_ship_eggman_polygons
+pointer cave_ship_eggman_object  0x00000004  cave_ship_eggman_model
+pointer cave_ship_eggman_motion_tracks  0x00000004  cave_ship_eggman_motion_angle_keys
+pointer cave_ship_eggman_motion  0x00000000  cave_ship_eggman_motion_tracks
+pointer ship_objects  0x00000000  cave_ship_normal_object
+pointer ship_objects  0x00000004  cave_ship_eggman_object
+pointer cave_ship_texlists  0x00000000  cave_ship_normal_texlist
+pointer cave_ship_texlists  0x00000004  cave_ship_eggman_texlist
+pointer ship_motions  0x00000000  cave_ship_normal_motion
+pointer ship_motions  0x00000004  cave_ship_eggman_motion
+pointer ship_kind_names  0x00000000  SHIP_KIND_NORMAL
+pointer ship_kind_names  0x00000004  SHIP_KIND_EGGMAN

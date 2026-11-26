@@ -1,0 +1,2 @@
+datum  final_chase_sounds  C  0x00000000  104
+datum  final_chase_sound_list  C  0x00000068  8

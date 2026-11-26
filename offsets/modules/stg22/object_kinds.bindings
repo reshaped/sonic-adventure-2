@@ -1,0 +1,236 @@
+text  SET_NAME_RING  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_3SPRING  8
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_UDREEL  7
+text  SET_NAME_ORI  4
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_CGWOOD  7
+text  SET_NAME_CGIRON  7
+text  SET_NAME_ROCKET  10
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_MSGER  6
+text  SET_NAME_SGOLID  7
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_SOAP_SW  8
+text  SET_NAME_SKULL  6
+text  SET_NAME_PSKULL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_STOPLSD  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MODMOD  8
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_EFLENSF0  9
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_E_AI  5
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_SWDRNGL  8
+text  SET_NAME_SWDRNGC  8
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_E_PATH  7
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_E_CHAOS  8
+text  SET_NAME_SHUTTER  8
+text  SET_NAME_GLIND  6
+text  SET_NAME_KAZ3  5
+text  SET_NAME_GSWITCH2  9
+text  SET_NAME_POISON  7
+text  SET_NAME_LIGHT_A  8
+text  SET_NAME_LIGHT_BCDE  11
+text  SET_NAME_DITCH  6
+text  SET_NAME_MECHA  6
+text  SET_NAME_CAPSULE  8
+text  SET_NAME_LAZER  6
+text  SET_NAME_PIC  4
+text  SET_NAME_ARROW  6
+text  SET_NAME_EECONT  7
+pointer  crazy_gadget_kinds  0x00000008  ring_step
+pointer  crazy_gadget_kinds  0x0000000c  SET_NAME_RING
+pointer  crazy_gadget_kinds  0x00000018  ring_linear_init
+pointer  crazy_gadget_kinds  0x0000001c  SET_NAME_RING_LINEAR
+pointer  crazy_gadget_kinds  0x00000028  ring_circle_init
+pointer  crazy_gadget_kinds  0x0000002c  SET_NAME_RING_CIRCLE
+pointer  crazy_gadget_kinds  0x00000038  spring_a_step
+pointer  crazy_gadget_kinds  0x0000003c  SET_NAME_SPRA
+pointer  crazy_gadget_kinds  0x00000048  spring_b_step
+pointer  crazy_gadget_kinds  0x0000004c  SET_NAME_SPRB
+pointer  crazy_gadget_kinds  0x00000058  triple_spring_init
+pointer  crazy_gadget_kinds  0x0000005c  SET_NAME_3SPRING
+pointer  crazy_gadget_kinds  0x00000068  big_jump_step
+pointer  crazy_gadget_kinds  0x0000006c  SET_NAME_BIGJUMP
+pointer  crazy_gadget_kinds  0x00000078  dash_panel_step
+pointer  crazy_gadget_kinds  0x0000007c  SET_NAME_KASOKU
+pointer  crazy_gadget_kinds  0x00000088  save_point_step
+pointer  crazy_gadget_kinds  0x0000008c  SET_NAME_SAVEPOINT
+pointer  crazy_gadget_kinds  0x00000098  switch_step
+pointer  crazy_gadget_kinds  0x0000009c  SET_NAME_SWITCH
+pointer  crazy_gadget_kinds  0x000000a8  item_box_step
+pointer  crazy_gadget_kinds  0x000000ac  SET_NAME_ITEMBOX
+pointer  crazy_gadget_kinds  0x000000b8  item_box_air_step
+pointer  crazy_gadget_kinds  0x000000bc  SET_NAME_ITEMBOXAIR
+pointer  crazy_gadget_kinds  0x000000c8  item_balloon_step
+pointer  crazy_gadget_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  crazy_gadget_kinds  0x000000d8  upgrade_init
+pointer  crazy_gadget_kinds  0x000000dc  SET_NAME_LEVUPDAI
+pointer  crazy_gadget_kinds  0x000000e8  goal_ring_init
+pointer  crazy_gadget_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  crazy_gadget_kinds  0x000000f8  emerald_init
+pointer  crazy_gadget_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  crazy_gadget_kinds  0x00000108  reel_init
+pointer  crazy_gadget_kinds  0x0000010c  SET_NAME_UDREEL
+pointer  crazy_gadget_kinds  0x00000118  gadget_cage_init
+pointer  crazy_gadget_kinds  0x0000011c  SET_NAME_ORI
+pointer  crazy_gadget_kinds  0x00000128  dynamite_init
+pointer  crazy_gadget_kinds  0x0000012c  SET_NAME_DYNAMITE
+pointer  crazy_gadget_kinds  0x00000138  gadget_wood_box_init
+pointer  crazy_gadget_kinds  0x0000013c  SET_NAME_CGWOOD
+pointer  crazy_gadget_kinds  0x00000148  gadget_iron_box_init
+pointer  crazy_gadget_kinds  0x0000014c  SET_NAME_CGIRON
+pointer  crazy_gadget_kinds  0x00000158  rocket_init
+pointer  crazy_gadget_kinds  0x0000015c  SET_NAME_ROCKET
+pointer  crazy_gadget_kinds  0x00000168  missile_init
+pointer  crazy_gadget_kinds  0x0000016c  SET_NAME_ROCKETMISSSILE
+pointer  crazy_gadget_kinds  0x00000178  hint_box_init
+pointer  crazy_gadget_kinds  0x0000017c  SET_NAME_HINTBOX
+pointer  crazy_gadget_kinds  0x00000188  messenger_init
+pointer  crazy_gadget_kinds  0x0000018c  SET_NAME_MSGER
+pointer  crazy_gadget_kinds  0x00000198  gadget_lid_init
+pointer  crazy_gadget_kinds  0x0000019c  SET_NAME_SGOLID
+pointer  crazy_gadget_kinds  0x000001a8  dummy_object_init
+pointer  crazy_gadget_kinds  0x000001ac  SET_NAME_DMYOBJ
+pointer  crazy_gadget_kinds  0x000001b8  soap_switch_init
+pointer  crazy_gadget_kinds  0x000001bc  SET_NAME_SOAP_SW
+pointer  crazy_gadget_kinds  0x000001c8  skull_still_init
+pointer  crazy_gadget_kinds  0x000001cc  SET_NAME_SKULL
+pointer  crazy_gadget_kinds  0x000001d8  skull_lying_init
+pointer  crazy_gadget_kinds  0x000001dc  SET_NAME_PSKULL
+pointer  crazy_gadget_kinds  0x000001e8  chao_pipe_init
+pointer  crazy_gadget_kinds  0x000001ec  SET_NAME_CHAOPIPE
+pointer  crazy_gadget_kinds  0x000001f8  animal_init
+pointer  crazy_gadget_kinds  0x000001fc  SET_NAME_MINIMAL
+pointer  crazy_gadget_kinds  0x00000208  hidden_animal_init
+pointer  crazy_gadget_kinds  0x0000020c  SET_NAME_WSMMLS
+pointer  crazy_gadget_kinds  0x00000218  chao_box_init
+pointer  crazy_gadget_kinds  0x0000021c  SET_NAME_CONTCHAO
+pointer  crazy_gadget_kinds  0x00000228  stop_lsd_init
+pointer  crazy_gadget_kinds  0x0000022c  SET_NAME_STOPLSD
+pointer  crazy_gadget_kinds  0x00000238  knudai_init
+pointer  crazy_gadget_kinds  0x0000023c  SET_NAME_KNUDAI
+pointer  crazy_gadget_kinds  0x00000248  knudai_foothold_init
+pointer  crazy_gadget_kinds  0x0000024c  SET_NAME_KDASIBA
+pointer  crazy_gadget_kinds  0x00000258  knudai_warp_hole_init
+pointer  crazy_gadget_kinds  0x0000025c  SET_NAME_KDWARPHOLE
+pointer  crazy_gadget_kinds  0x00000268  knudai_door_init
+pointer  crazy_gadget_kinds  0x0000026c  SET_NAME_KDDOOR
+pointer  crazy_gadget_kinds  0x00000278  knudai_item_box_init
+pointer  crazy_gadget_kinds  0x0000027c  SET_NAME_KDITEMBOX
+pointer  crazy_gadget_kinds  0x00000288  knudai_ring_linear_init
+pointer  crazy_gadget_kinds  0x0000028c  SET_NAME_KDDRNGL
+pointer  crazy_gadget_kinds  0x00000298  knudai_ring_circle_init
+pointer  crazy_gadget_kinds  0x0000029c  SET_NAME_KDDRNGC
+pointer  crazy_gadget_kinds  0x000002a8  knudai_spring_init
+pointer  crazy_gadget_kinds  0x000002ac  SET_NAME_KDSPRING
+pointer  crazy_gadget_kinds  0x000002b8  knudai_spring_b_init
+pointer  crazy_gadget_kinds  0x000002bc  SET_NAME_KDSPRINGB
+pointer  crazy_gadget_kinds  0x000002c8  collision_sphere_step
+pointer  crazy_gadget_kinds  0x000002cc  SET_NAME_SPHERE
+pointer  crazy_gadget_kinds  0x000002d8  collision_cylinder_step
+pointer  crazy_gadget_kinds  0x000002dc  SET_NAME_CCYL
+pointer  crazy_gadget_kinds  0x000002e8  collision_cube_step
+pointer  crazy_gadget_kinds  0x000002ec  SET_NAME_CCUBE
+pointer  crazy_gadget_kinds  0x000002f8  collision_wall_step
+pointer  crazy_gadget_kinds  0x000002fc  SET_NAME_CWALL
+pointer  crazy_gadget_kinds  0x00000308  collision_circle_step
+pointer  crazy_gadget_kinds  0x0000030c  SET_NAME_CCIRCLE
+pointer  crazy_gadget_kinds  0x00000318  modifier_volume_init
+pointer  crazy_gadget_kinds  0x0000031c  SET_NAME_MODMOD
+pointer  crazy_gadget_kinds  0x00000328  effect_object_init
+pointer  crazy_gadget_kinds  0x0000032c  SET_NAME_EFFOBJ0
+pointer  crazy_gadget_kinds  0x00000338  lens_flare_init
+pointer  crazy_gadget_kinds  0x0000033c  SET_NAME_EFLENSF0
+pointer  crazy_gadget_kinds  0x00000348  weight_init
+pointer  crazy_gadget_kinds  0x0000034c  SET_NAME_BUNCHIN
+pointer  crazy_gadget_kinds  0x00000358  iron_ball_init
+pointer  crazy_gadget_kinds  0x0000035c  SET_NAME_IRONBALL2
+pointer  crazy_gadget_kinds  0x00000368  beetle_step
+pointer  crazy_gadget_kinds  0x0000036c  SET_NAME_E_KUMI
+pointer  crazy_gadget_kinds  0x00000378  ai_step
+pointer  crazy_gadget_kinds  0x0000037c  SET_NAME_E_AI
+pointer  crazy_gadget_kinds  0x00000388  light_switch_init
+pointer  crazy_gadget_kinds  0x0000038c  SET_NAME_LIGHT_SW
+pointer  crazy_gadget_kinds  0x00000398  switch_ring_linear_init
+pointer  crazy_gadget_kinds  0x0000039c  SET_NAME_SWDRNGL
+pointer  crazy_gadget_kinds  0x000003a8  switch_ring_circle_init
+pointer  crazy_gadget_kinds  0x000003ac  SET_NAME_SWDRNGC
+pointer  crazy_gadget_kinds  0x000003b8  gadget_range_switch_init
+pointer  crazy_gadget_kinds  0x000003bc  SET_NAME_SWDRNGC
+pointer  crazy_gadget_kinds  0x000003c8  technique_link_init
+pointer  crazy_gadget_kinds  0x000003cc  SET_NAME_LINKLINK
+pointer  crazy_gadget_kinds  0x000003d8  big_step
+pointer  crazy_gadget_kinds  0x000003dc  SET_NAME_BIG_THE_CAT
+pointer  crazy_gadget_kinds  0x000003e8  path_enemy_step
+pointer  crazy_gadget_kinds  0x000003ec  SET_NAME_E_PATH
+pointer  crazy_gadget_kinds  0x000003f8  gold_beetle_step
+pointer  crazy_gadget_kinds  0x000003fc  SET_NAME_E_GOLD
+pointer  crazy_gadget_kinds  0x00000408  chaos_step
+pointer  crazy_gadget_kinds  0x0000040c  SET_NAME_E_CHAOS
+pointer  crazy_gadget_kinds  0x00000418  gadget_shutter_init
+pointer  crazy_gadget_kinds  0x0000041c  SET_NAME_SHUTTER
+pointer  crazy_gadget_kinds  0x00000428  gadget_grind_rail_init
+pointer  crazy_gadget_kinds  0x0000042c  SET_NAME_GLIND
+pointer  crazy_gadget_kinds  0x00000438  gadget_rail_marker_init
+pointer  crazy_gadget_kinds  0x0000043c  SET_NAME_KAZ3
+pointer  crazy_gadget_kinds  0x00000448  gadget_gravity_switch_init
+pointer  crazy_gadget_kinds  0x0000044c  SET_NAME_GSWITCH2
+pointer  crazy_gadget_kinds  0x00000458  gadget_poison_init
+pointer  crazy_gadget_kinds  0x0000045c  SET_NAME_POISON
+pointer  crazy_gadget_kinds  0x00000468  gadget_lamp_init
+pointer  crazy_gadget_kinds  0x0000046c  SET_NAME_LIGHT_A
+pointer  crazy_gadget_kinds  0x00000478  gadget_sign_init
+pointer  crazy_gadget_kinds  0x0000047c  SET_NAME_LIGHT_BCDE
+pointer  crazy_gadget_kinds  0x00000488  engine_ditch_init
+pointer  crazy_gadget_kinds  0x0000048c  SET_NAME_DITCH
+pointer  crazy_gadget_kinds  0x00000498  gadget_machine_init
+pointer  crazy_gadget_kinds  0x0000049c  SET_NAME_MECHA
+pointer  crazy_gadget_kinds  0x000004a8  gadget_capsule_init
+pointer  crazy_gadget_kinds  0x000004ac  SET_NAME_CAPSULE
+pointer  crazy_gadget_kinds  0x000004b8  core_laser_init
+pointer  crazy_gadget_kinds  0x000004bc  SET_NAME_LAZER
+pointer  crazy_gadget_kinds  0x000004c8  pickup_object_2_init
+pointer  crazy_gadget_kinds  0x000004cc  SET_NAME_PIC
+pointer  crazy_gadget_kinds  0x000004d8  gadget_arrow_init
+pointer  crazy_gadget_kinds  0x000004dc  SET_NAME_ARROW
+pointer  crazy_gadget_kinds  0x000004e8  rolling_drum_init
+pointer  crazy_gadget_kinds  0x000004ec  SET_NAME_EECONT

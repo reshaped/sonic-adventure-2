@@ -1,0 +1,7 @@
+datum  swim_seat  C  0x00000000  12
+datum  splash_pos  C  0x0000000c  12
+datum  turtle_path  D  0x00000000  16
+datum  turtle_eye_models  D  0x00000010  32
+datum  turtle_texture_group  D  0x00000030  8
+datum  start_pos  D  0x00000098  12
+datum  stop_pos  D  0x000000b0  24

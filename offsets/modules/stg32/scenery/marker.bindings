@@ -1,0 +1,41 @@
+text  HERD_TEXTURE_MIU128_MEH003  14
+text  HERD_TEXTURE_MIU128_MEH006  14
+text  HERD_TEXTURE_MIU128_MEH010  14
+text  HERD_TEXTURE_MIU64_MEH002  13
+text  HERD_TEXTURE_MIU64_MEH008  13
+text  HERD_TEXTURE_MIU64_MEH010  13
+text  HERD_TEXTURE_MIU64_MEH009  13
+pointer  herd_small_marker_names  0x00000000  HERD_TEXTURE_MIU128_MEH003
+pointer  herd_small_marker_names  0x0000000c  HERD_TEXTURE_MIU128_MEH006
+pointer  herd_small_marker_names  0x00000018  HERD_TEXTURE_MIU128_MEH010
+pointer  herd_small_marker_names  0x00000024  HERD_TEXTURE_MIU64_MEH002
+pointer  herd_small_marker_names  0x00000030  HERD_TEXTURE_MIU64_MEH008
+pointer  herd_small_marker_names  0x0000003c  HERD_TEXTURE_MIU64_MEH010
+pointer  herd_small_marker_texlist  0x00000000  herd_small_marker_names
+pointer  herd_small_marker_1_model  0x00000000  herd_small_marker_1_vertices
+pointer  herd_small_marker_1_model  0x00000004  herd_small_marker_1_polygons
+pointer  herd_small_marker_1  0x00000004  herd_small_marker_1_model
+pointer  herd_small_marker_model  0x00000000  herd_small_marker_vertices
+pointer  herd_small_marker_model  0x00000004  herd_small_marker_polygons
+pointer  herd_small_marker  0x00000004  herd_small_marker_model
+pointer  herd_small_marker  0x0000002c  herd_small_marker_1
+pointer  herd_large_marker_names  0x00000000  HERD_TEXTURE_MIU128_MEH003
+pointer  herd_large_marker_names  0x0000000c  HERD_TEXTURE_MIU128_MEH006
+pointer  herd_large_marker_names  0x00000018  HERD_TEXTURE_MIU128_MEH010
+pointer  herd_large_marker_names  0x00000024  HERD_TEXTURE_MIU64_MEH002
+pointer  herd_large_marker_names  0x00000030  HERD_TEXTURE_MIU64_MEH009
+pointer  herd_large_marker_names  0x0000003c  HERD_TEXTURE_MIU64_MEH010
+pointer  herd_large_marker_texlist  0x00000000  herd_large_marker_names
+pointer  herd_large_marker_1_model  0x00000000  herd_large_marker_1_vertices
+pointer  herd_large_marker_1_model  0x00000004  herd_large_marker_1_polygons
+pointer  herd_large_marker_1  0x00000004  herd_large_marker_1_model
+pointer  herd_large_marker_model  0x00000000  herd_large_marker_vertices
+pointer  herd_large_marker_model  0x00000004  herd_large_marker_polygons
+pointer  herd_large_marker  0x00000004  herd_large_marker_model
+pointer  herd_large_marker  0x0000002c  herd_large_marker_1
+pointer  herd_marker_collision_meshsets  0x00000004  herd_marker_collision_faces
+pointer  herd_marker_collision_model  0x00000000  herd_marker_collision_points
+pointer  herd_marker_collision_model  0x00000004  herd_marker_collision_normals
+pointer  herd_marker_collision_model  0x0000000c  herd_marker_collision_meshsets
+pointer  herd_marker_collision_model  0x00000010  herd_marker_collision_materials
+pointer  herd_marker_collision  0x00000004  herd_marker_collision_model

@@ -1,0 +1,95 @@
+; njTexMemCopy, and the copies it picks from, each for one unit from 32 bytes
+; down to 1. the 32, 16 and 8 copies set FPSCR.SZ while they copy, so that
+; each FMOV moves a pair of floats, and clear it before they return
+
+        .EXPORT     _njTexMemCopy
+        .EXPORT     _njTexMemCopy32
+        .EXPORT     _njTexMemCopy16
+        .EXPORT     _njTexMemCopy8
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void njTexMemCopy(void *dst, void *src, Uint32 size)
+; copy through the first of the copies below, from 32 bytes down, whose unit
+; divides dst, src and size
+; @asm open: each instruction is one SHC writes for C
+_njTexMemCopy:
+        MOV         R4,R0
+        OR          R5,R0
+        OR          R6,R0
+        TST         #H'1F,R0
+        BF          test16
+; void njTexMemCopy32(void *dst, void *src, Uint32 size)
+; copy size bytes from src to dst, a cache line of 32 bytes at a time. dst,
+; src and size must be multiples of 32, and size above 0. FPSCR.SZ must be
+; clear, and stays clear. PREF loads each line of src ahead of its reads
+; @asm opcode: movca, MOVCA.L R0,@R4 at 0x8c170ebc takes each line of dst
+; without reading it, since the copy writes the whole line
+_njTexMemCopy32:
+        PREF        @R5
+        FSCHG
+        SHLR2       R6
+        SHLR2       R6
+        SHLR        R6
+?line:
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        MOVCA.L     R0,@R4
+        ADD         #32,R4
+        FMOV        DR6,@-R4
+        FMOV        DR4,@-R4
+        FMOV        DR2,@-R4
+        FMOV        DR0,@-R4
+        PREF        @R5
+        DT          R6
+        BF/S        ?line
+        ADD         #32,R4
+        RTS
+        FSCHG
+test16:
+        TST         #H'0F,R0
+        BF          test8
+; void njTexMemCopy16(void *dst, void *src, Uint32 size)
+; copy as njTexMemCopy32 does, 16 bytes at a time, with no PREF or MOVCA.L.
+; dst, src and size must be multiples of 16
+; @asm operand: fschg-slot, FSCHG at 0x8c170ef0 restores SZ in the RTS slot
+_njTexMemCopy16:
+        FSCHG
+        SHLR2       R6
+        SHLR2       R6
+?quad:
+        FMOV        @R5+,DR0
+        ADD         #16,R4
+        FMOV        @R5+,DR2
+        DT          R6
+        FMOV        DR2,@-R4
+        FMOV        DR0,@-R4
+        BF/S        ?quad
+        ADD         #16,R4
+        RTS
+        FSCHG
+test8:
+        TST         #H'07,R0
+        BF          test4
+; void njTexMemCopy8(void *dst, void *src, Uint32 size)
+; copy as njTexMemCopy16 does, 8 bytes at a time. dst, src and size must be
+; multiples of 8
+; @asm operand: fschg-slot, FSCHG at 0x8c170f08 restores SZ in the RTS slot
+_njTexMemCopy8:
+        FSCHG
+        SHLR2       R6
+        SHLR        R6
+?pair:
+        FMOV        @R5+,DR0
+        DT          R6
+        FMOV        DR0,@R4
+        BF/S        ?pair
+        ADD         #8,R4
+        RTS
+        FSCHG
+test4:
+        TST         #H'03,R0
+; The matching branch is the first instruction of njTexScalar.c.
+        .END

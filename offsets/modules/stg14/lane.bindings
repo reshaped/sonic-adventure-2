@@ -1,0 +1,55 @@
+text  HIGHWAY_TEXT_MIU64_MS001  12
+text  HIGHWAY_TEXT_MIU64_MS002  12
+text  HIGHWAY_TEXT_PR128_37  9
+text  HIGHWAY_TEXT_SHCITY128_14  13
+text  HIGHWAY_TEXT_SHCITY128_2  12
+text  HIGHWAY_TEXT_SHCITY256_5  12
+text  HIGHWAY_TEXT_SHCITY32_2  11
+text  HIGHWAY_TEXT_TYPE_A  7
+text  HIGHWAY_TEXT_TYPE_B  7
+text  HIGHWAY_TEXT_TYPE_C  7
+text  HIGHWAY_TEXT_TYPE_D  7
+text  HIGHWAY_TEXT_TYPE_E  7
+text  HIGHWAY_TEXT_TYPE_F  7
+pointer  highway_lane_textures  0x00000000  HIGHWAY_TEXT_MIU64_MS001
+pointer  highway_lane_textures  0x0000000c  HIGHWAY_TEXT_MIU64_MS002
+pointer  highway_lane_textures  0x00000018  HIGHWAY_TEXT_PR128_37
+pointer  highway_lane_textures  0x00000024  HIGHWAY_TEXT_SHCITY128_14
+pointer  highway_lane_textures  0x00000030  HIGHWAY_TEXT_SHCITY128_2
+pointer  highway_lane_textures  0x0000003c  HIGHWAY_TEXT_SHCITY256_5
+pointer  highway_lane_textures  0x00000048  HIGHWAY_TEXT_SHCITY32_2
+pointer  highway_lane_texlist  0x00000000  highway_lane_textures
+pointer  highway_lane_mesh  0x00000000  highway_lane_vertices
+pointer  highway_lane_mesh  0x00000004  highway_lane_polygons
+pointer  highway_lane_object  0x00000004  highway_lane_mesh
+pointer  highway_lane_cracked_textures  0x00000000  HIGHWAY_TEXT_MIU64_MS001
+pointer  highway_lane_cracked_textures  0x0000000c  HIGHWAY_TEXT_MIU64_MS002
+pointer  highway_lane_cracked_textures  0x00000018  HIGHWAY_TEXT_PR128_37
+pointer  highway_lane_cracked_textures  0x00000024  HIGHWAY_TEXT_SHCITY128_14
+pointer  highway_lane_cracked_textures  0x00000030  HIGHWAY_TEXT_SHCITY128_2
+pointer  highway_lane_cracked_textures  0x0000003c  HIGHWAY_TEXT_SHCITY256_5
+pointer  highway_lane_cracked_textures  0x00000048  HIGHWAY_TEXT_SHCITY32_2
+pointer  highway_lane_cracked_texlist  0x00000000  highway_lane_cracked_textures
+pointer  highway_lane_debris_origin_5  0x00000030  highway_lane_debris_origin_6
+pointer  highway_lane_debris_origin_4  0x00000030  highway_lane_debris_origin_5
+pointer  highway_lane_debris_origin_3  0x00000030  highway_lane_debris_origin_4
+pointer  highway_lane_debris_origin_2  0x00000030  highway_lane_debris_origin_3
+pointer  highway_lane_debris_origin_1  0x00000030  highway_lane_debris_origin_2
+pointer  highway_lane_cracked_mesh  0x00000000  highway_lane_cracked_vertices
+pointer  highway_lane_cracked_mesh  0x00000004  highway_lane_cracked_polygons
+pointer  highway_lane_cracked_object  0x00000004  highway_lane_cracked_mesh
+pointer  highway_lane_cracked_object  0x0000002c  highway_lane_debris_origin_1
+pointer  highway_lane_world_meshsets  0x00000004  highway_lane_world_indices_0
+pointer  highway_lane_world_model  0x00000000  highway_lane_world_points
+pointer  highway_lane_world_model  0x00000004  highway_lane_world_normals
+pointer  highway_lane_world_model  0x0000000c  highway_lane_world_meshsets
+pointer  highway_lane_world_model  0x00000010  highway_lane_world_materials
+pointer  highway_lane_world  0x00000004  highway_lane_world_model
+pointer  highway_lane_texlists  0x00000000  highway_lane_texlist
+pointer  highway_lane_texlists  0x00000004  highway_lane_cracked_texlist
+pointer  lane_type_names  0x00000000  HIGHWAY_TEXT_TYPE_A
+pointer  lane_type_names  0x00000004  HIGHWAY_TEXT_TYPE_B
+pointer  lane_type_names  0x00000008  HIGHWAY_TEXT_TYPE_C
+pointer  lane_type_names  0x0000000c  HIGHWAY_TEXT_TYPE_D
+pointer  lane_type_names  0x00000010  HIGHWAY_TEXT_TYPE_E
+pointer  lane_type_names  0x00000014  HIGHWAY_TEXT_TYPE_F

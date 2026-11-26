@@ -1,0 +1,14 @@
+text  HIGHWAY_TEXT_MIU128_RH002  C  0x0000000c  13
+text  HIGHWAY_TEXT_MIU128_RH003  C  0x0000001c  13
+text  HIGHWAY_TEXT_MIU64_RH008  C  0x0000002c  12
+text  HIGHWAY_TEXT_MIU64_RH010  C  0x00000038  12
+datum  highway_rail_textures  D  0x00000000  48
+datum  highway_rail_texlist  D  0x00000030  8
+datum  highway_rail_polygons  D  0x00000038  1126
+datum  highway_rail_vertices  D  0x000004a0  2636
+datum  highway_rail_mesh  D  0x00000eec  24
+datum  highway_rail_object  D  0x00000f04  52
+datum  rail_points  D  0x00000f38  80
+datum  rail_path  D  0x00000f88  16
+datum  highway_rail_texlists  D  0x00000f98  8
+datum  rail_shape  D  0x00000fa0  48

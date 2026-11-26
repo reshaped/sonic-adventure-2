@@ -1,0 +1,3 @@
+datum  menu_sound_test_message_pos  D  0x00000000  12
+datum  menu_sound_test_lists_list  D  0x0000011c  48
+datum  menu_sound_test_songs_list  D  0x0000014c  48

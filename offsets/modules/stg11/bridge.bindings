@@ -1,0 +1,27 @@
+text BRIDGE_TEXTURE_MIU128_IG003 13
+text BRIDGE_TEXTURE_MIU64_IG002 12
+text BRIDGE_TEXTURE_MIU64_IG007 12
+text BRIDGE_TEXTURE_PR128_12 9
+text BRIDGE_TEXTURE_PR128_2 8
+text BRIDGE_TEXTURE_PR128_33 9
+text BRIDGE_TEXTURE_PR64_1 7
+
+pointer bridge_names 0x00000000 BRIDGE_TEXTURE_MIU128_IG003
+pointer bridge_names 0x0000000c BRIDGE_TEXTURE_MIU64_IG002
+pointer bridge_names 0x00000018 BRIDGE_TEXTURE_MIU64_IG007
+pointer bridge_names 0x00000024 BRIDGE_TEXTURE_PR128_12
+pointer bridge_names 0x00000030 BRIDGE_TEXTURE_PR128_2
+pointer bridge_names 0x0000003c BRIDGE_TEXTURE_PR128_33
+pointer bridge_names 0x00000048 BRIDGE_TEXTURE_PR64_1
+pointer bridge_texlist 0x00000000 bridge_names
+pointer bridge_model 0x00000000 bridge_vertices
+pointer bridge_model 0x00000004 bridge_polygons
+pointer bridge_object 0x00000004 bridge_model
+pointer bridge_solid_faces 0x00000004 bridge_solid_strips
+pointer bridge_solid_model 0x00000000 bridge_solid_points
+pointer bridge_solid_model 0x00000004 bridge_solid_normals
+pointer bridge_solid_model 0x0000000c bridge_solid_faces
+pointer bridge_solid_model 0x00000010 bridge_solid_materials
+pointer bridge_collision 0x00000004 bridge_solid_model
+pointer iron_gate_bridge_texlists 0x00000000 bridge_texlist
+pointer iron_gate_bridge_texlists 0x00000004 dust_texlist

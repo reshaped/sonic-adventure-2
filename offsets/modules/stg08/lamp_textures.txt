@@ -1,0 +1,12 @@
+text  LAMP_TEXTURE_MIU32_SH002  C  0x00000000  12
+text  LAMP_TEXTURE_MIU64_SH010  C  0x0000000c  12
+datum  textures  D  0x00000000  24
+datum  security_lamp_texlist  D  0x00000018  8
+datum  security_lamp_lens_polygons  D  0x00000020  50
+datum  security_lamp_lens_vertices  D  0x00000054  76
+datum  security_lamp_lens_model  D  0x000000a0  24
+datum  security_lamp_lens  D  0x000000b8  52
+datum  security_lamp_object_polygons  D  0x000000ec  174
+datum  security_lamp_object_vertices  D  0x0000019c  316
+datum  security_lamp_housing_model  D  0x000002d8  24
+datum  security_lamp_object  D  0x000002f0  52

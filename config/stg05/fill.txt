@@ -1,0 +1,2 @@
+# The original overlay header points to an export in its first code input.
+DHEAD P inputs 5011eabb8e3f301fc5de55ff85c4dd4f000c969d06534da79bd9c9990a94bfc9 _pumpkin_hill_init 0x8c50000c

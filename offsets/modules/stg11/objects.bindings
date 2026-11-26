@@ -1,0 +1,426 @@
+include  objtex_common
+include  efftex_common
+
+text STAGE_TEXTURE_MIU128_IG001 13
+text STAGE_TEXTURE_MIU128_IG002 13
+text STAGE_TEXTURE_MIU128_IG003 13
+text STAGE_TEXTURE_MIU128_IG004 13
+text STAGE_TEXTURE_MIU128_IG005 13
+text STAGE_TEXTURE_MIU128_IG006 13
+text STAGE_TEXTURE_MIU128_IG007 13
+text STAGE_TEXTURE_MIU128_IG008 13
+text STAGE_TEXTURE_MIU128_IG009 13
+text STAGE_TEXTURE_MIU128_IG010 13
+text STAGE_TEXTURE_MIU128_IG011 13
+text STAGE_TEXTURE_MIU128_IG030 13
+text STAGE_TEXTURE_MIU32_IG001 12
+text STAGE_TEXTURE_MIU32_IG002 12
+text STAGE_TEXTURE_MIU32_IG003 12
+text STAGE_TEXTURE_MIU32_IG010 12
+text STAGE_TEXTURE_MIU64_IG001 12
+text STAGE_TEXTURE_MIU64_IG002 12
+text STAGE_TEXTURE_MIU64_IG003 12
+text STAGE_TEXTURE_MIU64_IG004 12
+text STAGE_TEXTURE_MIU64_IG005 12
+text STAGE_TEXTURE_MIU64_IG006 12
+text STAGE_TEXTURE_MIU64_IG007 12
+text STAGE_TEXTURE_MIU64_IG008 12
+text STAGE_TEXTURE_MIU64_IG009 12
+text STAGE_TEXTURE_MIU64_IG010 12
+text STAGE_TEXTURE_MIU64_IG011 12
+text STAGE_TEXTURE_MIU64_IG012 12
+text STAGE_TEXTURE_MIU64_IG013 12
+text STAGE_TEXTURE_MIU64_IG014 12
+text STAGE_TEXTURE_MIU64_IG015 12
+text STAGE_TEXTURE_MIU64_IG016 12
+text STAGE_TEXTURE_MIU64_IG017 12
+text STAGE_TEXTURE_MIU64_IG018 12
+text STAGE_TEXTURE_MIU64_IG019 12
+text STAGE_TEXTURE_MIU64_IG020 12
+text STAGE_TEXTURE_PR64_6 7
+text ARCHIVE_OBJTEX_STG11 13
+text ARCHIVE_EFFTEX_COMMON 14
+text ARCHIVE_OBJTEX_COMMON 14
+
+pointer  stage_names  0x00000000  STAGE_TEXTURE_MIU128_IG001
+pointer  stage_names  0x0000000c  STAGE_TEXTURE_MIU128_IG002
+pointer  stage_names  0x00000018  STAGE_TEXTURE_MIU128_IG003
+pointer  stage_names  0x00000024  STAGE_TEXTURE_MIU128_IG004
+pointer  stage_names  0x00000030  STAGE_TEXTURE_MIU128_IG005
+pointer  stage_names  0x0000003c  STAGE_TEXTURE_MIU128_IG006
+pointer  stage_names  0x00000048  STAGE_TEXTURE_MIU128_IG007
+pointer  stage_names  0x00000054  STAGE_TEXTURE_MIU128_IG008
+pointer  stage_names  0x00000060  STAGE_TEXTURE_MIU128_IG009
+pointer  stage_names  0x0000006c  STAGE_TEXTURE_MIU128_IG010
+pointer  stage_names  0x00000078  STAGE_TEXTURE_MIU128_IG011
+pointer  stage_names  0x00000084  STAGE_TEXTURE_MIU128_IG030
+pointer  stage_names  0x00000090  STAGE_TEXTURE_MIU32_IG001
+pointer  stage_names  0x0000009c  STAGE_TEXTURE_MIU32_IG002
+pointer  stage_names  0x000000a8  STAGE_TEXTURE_MIU32_IG003
+pointer  stage_names  0x000000b4  STAGE_TEXTURE_MIU32_IG010
+pointer  stage_names  0x000000c0  STAGE_TEXTURE_MIU64_IG001
+pointer  stage_names  0x000000cc  STAGE_TEXTURE_MIU64_IG002
+pointer  stage_names  0x000000d8  STAGE_TEXTURE_MIU64_IG003
+pointer  stage_names  0x000000e4  STAGE_TEXTURE_MIU64_IG004
+pointer  stage_names  0x000000f0  STAGE_TEXTURE_MIU64_IG005
+pointer  stage_names  0x000000fc  STAGE_TEXTURE_MIU64_IG006
+pointer  stage_names  0x00000108  STAGE_TEXTURE_MIU64_IG007
+pointer  stage_names  0x00000114  STAGE_TEXTURE_MIU64_IG008
+pointer  stage_names  0x00000120  STAGE_TEXTURE_MIU64_IG009
+pointer  stage_names  0x0000012c  STAGE_TEXTURE_MIU64_IG010
+pointer  stage_names  0x00000138  STAGE_TEXTURE_MIU64_IG011
+pointer  stage_names  0x00000144  STAGE_TEXTURE_MIU64_IG012
+pointer  stage_names  0x00000150  STAGE_TEXTURE_MIU64_IG013
+pointer  stage_names  0x0000015c  STAGE_TEXTURE_MIU64_IG014
+pointer  stage_names  0x00000168  STAGE_TEXTURE_MIU64_IG015
+pointer  stage_names  0x00000174  STAGE_TEXTURE_MIU64_IG016
+pointer  stage_names  0x00000180  STAGE_TEXTURE_MIU64_IG017
+pointer  stage_names  0x0000018c  STAGE_TEXTURE_MIU64_IG018
+pointer  stage_names  0x00000198  STAGE_TEXTURE_MIU64_IG019
+pointer  stage_names  0x000001a4  STAGE_TEXTURE_MIU64_IG020
+pointer  stage_names  0x000001b0  STAGE_TEXTURE_PR64_6
+pointer  stage_archive  0x00000000  stage_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ripple_texlist
+pointer  stage_textures  0x00000034  ring_sparkle_texlist
+pointer  stage_textures  0x00000038  burst_texlist
+pointer  iron_gate_texture_groups  0x00000000  stage_textures
+pointer  iron_gate_texture_groups  0x00000004  goal_ring_texlists
+pointer  iron_gate_texture_groups  0x00000008  emerald_texlists
+pointer  iron_gate_texture_groups  0x0000000c  item_box_texlists
+pointer  iron_gate_texture_groups  0x00000010  item_box_air_texlists
+pointer  iron_gate_texture_groups  0x00000014  weight_texlists
+pointer  iron_gate_texture_groups  0x00000018  iron_ball_texlists
+pointer  iron_gate_texture_groups  0x0000001c  triple_spring_texlists
+pointer  iron_gate_texture_groups  0x00000020  dynamite_texlists
+pointer  iron_gate_texture_groups  0x00000024  reel_texlists
+pointer  iron_gate_texture_groups  0x00000028  chao_pipe_texlists
+pointer  iron_gate_texture_groups  0x0000002c  cage_texlists
+pointer  iron_gate_texture_groups  0x00000030  wood_box_texlists
+pointer  iron_gate_texture_groups  0x00000034  iron_box_texlists
+pointer  iron_gate_texture_groups  0x00000038  upgrade_texlists
+pointer  iron_gate_texture_groups  0x0000003c  missile_texlists
+pointer  iron_gate_texture_groups  0x00000040  skull_texlists
+pointer  iron_gate_texture_groups  0x00000044  rocket_texlists
+pointer  iron_gate_texture_groups  0x00000048  search_box_texlists
+pointer  iron_gate_texture_groups  0x0000004c  hint_box_texlists
+pointer  iron_gate_texture_groups  0x00000050  knudai_texlists
+pointer  iron_gate_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  iron_gate_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  iron_gate_texture_groups  0x0000005c  knudai_door_texlists
+pointer  iron_gate_texture_groups  0x00000060  messenger_texlists
+pointer  iron_gate_texture_groups  0x00000064  chao_box_texlists
+pointer  iron_gate_texture_groups  0x00000068  chao_key_texlists
+pointer  iron_gate_texture_groups  0x0000006c  ring_effect_texlists
+pointer  iron_gate_texture_groups  0x00000070  object_effect_texlists
+pointer  iron_gate_texture_groups  0x00000074  iron_gate_elevator_texlists
+pointer  iron_gate_texture_groups  0x00000078  shutter_texlists
+pointer  iron_gate_texture_groups  0x0000007c  side_shutter_texlists
+pointer  iron_gate_texture_groups  0x00000080  iron_gate_fence_texlists
+pointer  iron_gate_texture_groups  0x00000084  iron_gate_bridge_texlists
+pointer  iron_gate_texture_groups  0x00000088  iron_gate_alarm_lamp_texlists
+pointer  iron_gate_texture_groups  0x0000008c  iron_gate_security_camera_texlists
+pointer  iron_gate_texture_groups  0x00000090  iron_gate_lift_texlists
+pointer  iron_gate_texture_groups  0x00000094  iron_gate_tank_texlists
+pointer  iron_gate_texture_groups  0x00000098  iron_gate_gas_cylinder_texlists
+pointer  iron_gate_texture_groups  0x0000009c  missile_shutter_h_texlists
+pointer  iron_gate_texture_groups  0x000000a0  missile_shutter_v_texlists
+pointer  iron_gate_texture_groups  0x000000a4  iron_gate_tank_texlists
+pointer  iron_gate_texture_groups  0x000000a8  iron_gate_fluorescent_lamp_texlists
+pointer  iron_gate_texture_groups  0x000000ac  iron_gate_machine_texlists
+pointer  iron_gate_texture_groups  0x000000b0  iron_gate_sign_texlists
+pointer  iron_gate_texture_groups  0x000000b4  lock_on_missile_texlists
+pointer  iron_gate_pvms  0x00000000  ARCHIVE_OBJTEX_STG11
+pointer  iron_gate_pvms  0x00000004  stage_archive
+pointer  iron_gate_pvms  0x00000008  ARCHIVE_EFFTEX_COMMON
+pointer  iron_gate_pvms  0x0000000c  efftex_common_texlist
+pointer  iron_gate_pvms  0x00000010  ARCHIVE_OBJTEX_COMMON
+pointer  iron_gate_pvms  0x00000014  objtex_common_texlist
+pointer  iron_gate_pvms  0x0000001c  iron_gate_terrain_textures
+text  SET_NAME_RING  8
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_ROCKET  10
+text  SET_NAME_MODMOD  8
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_3SPRING  8
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_UDREEL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_ORI  4
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SKULL  6
+text  SET_NAME_SCHBOX  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_SSS  4
+text  SET_NAME_E_EMI  6
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_E_KYOKO  8
+text  SET_NAME_KSKULL  7
+text  SET_NAME_BUBBLE  7
+text  SET_NAME_BUBBLES  8
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_MSGER  6
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_ELV  4
+text  SET_NAME_SHELTV  7
+text  SET_NAME_SHELTH  7
+text  SET_NAME_FENCEL  7
+text  SET_NAME_FENCES  7
+text  SET_NAME_BRIDGE  7
+text  SET_NAME_SIREN  6
+text  SET_NAME_FLUO  5
+text  SET_NAME_CAM  4
+text  SET_NAME_MLIFT  6
+text  SET_NAME_TANK  5
+text  SET_NAME_MECHA  6
+text  SET_NAME_SIGNA  6
+text  SET_NAME_BOMBE  6
+text  SET_NAME_RMISSILE  9
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_E_AI  5
+text  SET_NAME_LSHELTH  8
+text  SET_NAME_LSHELTV  8
+text  SET_NAME_SGOAL  6
+text  SET_NAME_E_KUMI_F  9
+text  SET_NAME_E_AI_F  7
+text  SET_NAME_E_EMI_F  8
+text  SET_NAME_E_KYOKO_F  10
+text  SET_NAME_E_KUMI_N  9
+text  SET_NAME_E_AI_N  7
+text  SET_NAME_E_EMI_N  8
+text  SET_NAME_E_KYOKO_N  10
+text  SET_NAME_STOPLOCKON  11
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_E_PATH  7
+text  SET_NAME_SE  3
+text  SET_NAME_MISSILE  8
+text  SET_NAME_PANEL  6
+pointer  iron_gate_kinds  0x00000008  ring_step
+pointer  iron_gate_kinds  0x0000000c  SET_NAME_RING
+pointer  iron_gate_kinds  0x00000018  spring_a_step
+pointer  iron_gate_kinds  0x0000001c  SET_NAME_SPRA
+pointer  iron_gate_kinds  0x00000028  spring_b_step
+pointer  iron_gate_kinds  0x0000002c  SET_NAME_SPRB
+pointer  iron_gate_kinds  0x00000038  dash_panel_step
+pointer  iron_gate_kinds  0x0000003c  SET_NAME_KASOKU
+pointer  iron_gate_kinds  0x00000048  save_point_step
+pointer  iron_gate_kinds  0x0000004c  SET_NAME_SAVEPOINT
+pointer  iron_gate_kinds  0x00000058  switch_step
+pointer  iron_gate_kinds  0x0000005c  SET_NAME_SWITCH
+pointer  iron_gate_kinds  0x00000068  item_box_step
+pointer  iron_gate_kinds  0x0000006c  SET_NAME_ITEMBOX
+pointer  iron_gate_kinds  0x00000078  item_box_air_step
+pointer  iron_gate_kinds  0x0000007c  SET_NAME_ITEMBOXAIR
+pointer  iron_gate_kinds  0x00000088  iron_ball_init
+pointer  iron_gate_kinds  0x0000008c  SET_NAME_IRONBALL2
+pointer  iron_gate_kinds  0x00000098  big_jump_step
+pointer  iron_gate_kinds  0x0000009c  SET_NAME_BIGJUMP
+pointer  iron_gate_kinds  0x000000a8  rocket_init
+pointer  iron_gate_kinds  0x000000ac  SET_NAME_ROCKET
+pointer  iron_gate_kinds  0x000000b8  modifier_volume_init
+pointer  iron_gate_kinds  0x000000bc  SET_NAME_MODMOD
+pointer  iron_gate_kinds  0x000000c8  item_balloon_step
+pointer  iron_gate_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  iron_gate_kinds  0x000000d8  goal_ring_init
+pointer  iron_gate_kinds  0x000000dc  SET_NAME_GOALRING
+pointer  iron_gate_kinds  0x000000e8  emerald_init
+pointer  iron_gate_kinds  0x000000ec  SET_NAME_EMERALD
+pointer  iron_gate_kinds  0x000000f8  weight_init
+pointer  iron_gate_kinds  0x000000fc  SET_NAME_BUNCHIN
+pointer  iron_gate_kinds  0x00000108  ring_linear_init
+pointer  iron_gate_kinds  0x0000010c  SET_NAME_RING_LINEAR
+pointer  iron_gate_kinds  0x00000118  ring_circle_init
+pointer  iron_gate_kinds  0x0000011c  SET_NAME_RING_CIRCLE
+pointer  iron_gate_kinds  0x00000128  triple_spring_init
+pointer  iron_gate_kinds  0x0000012c  SET_NAME_3SPRING
+pointer  iron_gate_kinds  0x00000138  dynamite_init
+pointer  iron_gate_kinds  0x0000013c  SET_NAME_DYNAMITE
+pointer  iron_gate_kinds  0x00000148  reel_init
+pointer  iron_gate_kinds  0x0000014c  SET_NAME_UDREEL
+pointer  iron_gate_kinds  0x00000158  chao_pipe_init
+pointer  iron_gate_kinds  0x0000015c  SET_NAME_CHAOPIPE
+pointer  iron_gate_kinds  0x00000168  cage_init
+pointer  iron_gate_kinds  0x0000016c  SET_NAME_ORI
+pointer  iron_gate_kinds  0x00000178  wood_box_init
+pointer  iron_gate_kinds  0x0000017c  SET_NAME_CONTWOOD
+pointer  iron_gate_kinds  0x00000188  iron_box_init
+pointer  iron_gate_kinds  0x0000018c  SET_NAME_CONTIRON
+pointer  iron_gate_kinds  0x00000198  upgrade_init
+pointer  iron_gate_kinds  0x0000019c  SET_NAME_LEVUPDAI
+pointer  iron_gate_kinds  0x000001a8  missile_init
+pointer  iron_gate_kinds  0x000001ac  SET_NAME_ROCKETMISSSILE
+pointer  iron_gate_kinds  0x000001b8  skull_still_init
+pointer  iron_gate_kinds  0x000001bc  SET_NAME_SKULL
+pointer  iron_gate_kinds  0x000001c8  search_box_init
+pointer  iron_gate_kinds  0x000001cc  SET_NAME_SCHBOX
+pointer  iron_gate_kinds  0x000001d8  hint_box_init
+pointer  iron_gate_kinds  0x000001dc  SET_NAME_HINTBOX
+pointer  iron_gate_kinds  0x000001e8  knudai_init
+pointer  iron_gate_kinds  0x000001ec  SET_NAME_KNUDAI
+pointer  iron_gate_kinds  0x000001f8  sss_init
+pointer  iron_gate_kinds  0x000001fc  SET_NAME_SSS
+pointer  iron_gate_kinds  0x00000208  emi_step
+pointer  iron_gate_kinds  0x0000020c  SET_NAME_E_EMI
+pointer  iron_gate_kinds  0x00000218  gold_beetle_step
+pointer  iron_gate_kinds  0x0000021c  SET_NAME_E_GOLD
+pointer  iron_gate_kinds  0x00000228  kyoko_step
+pointer  iron_gate_kinds  0x0000022c  SET_NAME_E_KYOKO
+pointer  iron_gate_kinds  0x00000238  skull_waiting_init
+pointer  iron_gate_kinds  0x0000023c  SET_NAME_KSKULL
+pointer  iron_gate_kinds  0x00000248  bubble_source_init
+pointer  iron_gate_kinds  0x0000024c  SET_NAME_BUBBLE
+pointer  iron_gate_kinds  0x00000258  bubble_field_init
+pointer  iron_gate_kinds  0x0000025c  SET_NAME_BUBBLES
+pointer  iron_gate_kinds  0x00000268  animal_init
+pointer  iron_gate_kinds  0x0000026c  SET_NAME_MINIMAL
+pointer  iron_gate_kinds  0x00000278  hidden_animal_init
+pointer  iron_gate_kinds  0x0000027c  SET_NAME_WSMMLS
+pointer  iron_gate_kinds  0x00000288  knudai_foothold_init
+pointer  iron_gate_kinds  0x0000028c  SET_NAME_KDASIBA
+pointer  iron_gate_kinds  0x00000298  knudai_warp_hole_init
+pointer  iron_gate_kinds  0x0000029c  SET_NAME_KDWARPHOLE
+pointer  iron_gate_kinds  0x000002a8  knudai_door_init
+pointer  iron_gate_kinds  0x000002ac  SET_NAME_KDDOOR
+pointer  iron_gate_kinds  0x000002b8  knudai_item_box_init
+pointer  iron_gate_kinds  0x000002bc  SET_NAME_KDITEMBOX
+pointer  iron_gate_kinds  0x000002c8  messenger_init
+pointer  iron_gate_kinds  0x000002cc  SET_NAME_MSGER
+pointer  iron_gate_kinds  0x000002d8  chao_box_init
+pointer  iron_gate_kinds  0x000002dc  SET_NAME_CONTCHAO
+pointer  iron_gate_kinds  0x000002e8  knudai_ring_linear_init
+pointer  iron_gate_kinds  0x000002ec  SET_NAME_KDDRNGL
+pointer  iron_gate_kinds  0x000002f8  knudai_ring_circle_init
+pointer  iron_gate_kinds  0x000002fc  SET_NAME_KDDRNGC
+pointer  iron_gate_kinds  0x00000308  knudai_spring_init
+pointer  iron_gate_kinds  0x0000030c  SET_NAME_KDSPRING
+pointer  iron_gate_kinds  0x00000318  knudai_spring_b_init
+pointer  iron_gate_kinds  0x0000031c  SET_NAME_KDSPRINGB
+pointer  iron_gate_kinds  0x00000328  effect_object_init
+pointer  iron_gate_kinds  0x0000032c  SET_NAME_EFFOBJ0
+pointer  iron_gate_kinds  0x00000338  collision_sphere_step
+pointer  iron_gate_kinds  0x0000033c  SET_NAME_SPHERE
+pointer  iron_gate_kinds  0x00000348  collision_cylinder_step
+pointer  iron_gate_kinds  0x0000034c  SET_NAME_CCYL
+pointer  iron_gate_kinds  0x00000358  collision_cube_step
+pointer  iron_gate_kinds  0x0000035c  SET_NAME_CCUBE
+pointer  iron_gate_kinds  0x00000368  collision_wall_step
+pointer  iron_gate_kinds  0x0000036c  SET_NAME_CWALL
+pointer  iron_gate_kinds  0x00000378  collision_circle_step
+pointer  iron_gate_kinds  0x0000037c  SET_NAME_CCIRCLE
+pointer  iron_gate_kinds  0x00000388  iron_gate_elevator_init
+pointer  iron_gate_kinds  0x0000038c  SET_NAME_ELV
+pointer  iron_gate_kinds  0x00000398  shutter_init
+pointer  iron_gate_kinds  0x0000039c  SET_NAME_SHELTV
+pointer  iron_gate_kinds  0x000003a8  side_shutter_init
+pointer  iron_gate_kinds  0x000003ac  SET_NAME_SHELTH
+pointer  iron_gate_kinds  0x000003b8  iron_gate_fence_long_init
+pointer  iron_gate_kinds  0x000003bc  SET_NAME_FENCEL
+pointer  iron_gate_kinds  0x000003c8  iron_gate_fence_short_init
+pointer  iron_gate_kinds  0x000003cc  SET_NAME_FENCES
+pointer  iron_gate_kinds  0x000003d8  iron_gate_bridge_init
+pointer  iron_gate_kinds  0x000003dc  SET_NAME_BRIDGE
+pointer  iron_gate_kinds  0x000003e8  iron_gate_alarm_lamp_init
+pointer  iron_gate_kinds  0x000003ec  SET_NAME_SIREN
+pointer  iron_gate_kinds  0x000003f8  iron_gate_fluorescent_lamp_init
+pointer  iron_gate_kinds  0x000003fc  SET_NAME_FLUO
+pointer  iron_gate_kinds  0x00000408  iron_gate_security_camera_init
+pointer  iron_gate_kinds  0x0000040c  SET_NAME_CAM
+pointer  iron_gate_kinds  0x00000418  iron_gate_lift_init
+pointer  iron_gate_kinds  0x0000041c  SET_NAME_MLIFT
+pointer  iron_gate_kinds  0x00000428  iron_gate_tank_init
+pointer  iron_gate_kinds  0x0000042c  SET_NAME_TANK
+pointer  iron_gate_kinds  0x00000438  iron_gate_machine_init
+pointer  iron_gate_kinds  0x0000043c  SET_NAME_MECHA
+pointer  iron_gate_kinds  0x00000448  iron_gate_sign_init
+pointer  iron_gate_kinds  0x0000044c  SET_NAME_SIGNA
+pointer  iron_gate_kinds  0x00000458  iron_gate_gas_cylinder_init
+pointer  iron_gate_kinds  0x0000045c  SET_NAME_BOMBE
+pointer  iron_gate_kinds  0x00000468  lock_on_missile_init
+pointer  iron_gate_kinds  0x0000046c  SET_NAME_RMISSILE
+pointer  iron_gate_kinds  0x00000478  beetle_step
+pointer  iron_gate_kinds  0x0000047c  SET_NAME_E_KUMI
+pointer  iron_gate_kinds  0x00000488  ai_step
+pointer  iron_gate_kinds  0x0000048c  SET_NAME_E_AI
+pointer  iron_gate_kinds  0x00000498  missile_shutter_h_init
+pointer  iron_gate_kinds  0x0000049c  SET_NAME_LSHELTH
+pointer  iron_gate_kinds  0x000004a8  missile_shutter_v_init
+pointer  iron_gate_kinds  0x000004ac  SET_NAME_LSHELTV
+pointer  iron_gate_kinds  0x000004b8  sgoal_init
+pointer  iron_gate_kinds  0x000004bc  SET_NAME_SGOAL
+pointer  iron_gate_kinds  0x000004c8  beetle_step
+pointer  iron_gate_kinds  0x000004cc  SET_NAME_E_KUMI_F
+pointer  iron_gate_kinds  0x000004d8  ai_step
+pointer  iron_gate_kinds  0x000004dc  SET_NAME_E_AI_F
+pointer  iron_gate_kinds  0x000004e8  emi_step
+pointer  iron_gate_kinds  0x000004ec  SET_NAME_E_EMI_F
+pointer  iron_gate_kinds  0x000004f8  kyoko_step
+pointer  iron_gate_kinds  0x000004fc  SET_NAME_E_KYOKO_F
+pointer  iron_gate_kinds  0x00000508  beetle_step
+pointer  iron_gate_kinds  0x0000050c  SET_NAME_E_KUMI_N
+pointer  iron_gate_kinds  0x00000518  ai_step
+pointer  iron_gate_kinds  0x0000051c  SET_NAME_E_AI_N
+pointer  iron_gate_kinds  0x00000528  emi_step
+pointer  iron_gate_kinds  0x0000052c  SET_NAME_E_EMI_N
+pointer  iron_gate_kinds  0x00000538  kyoko_step
+pointer  iron_gate_kinds  0x0000053c  SET_NAME_E_KYOKO_N
+pointer  iron_gate_kinds  0x00000548  stop_lockon_init
+pointer  iron_gate_kinds  0x0000054c  SET_NAME_STOPLOCKON
+pointer  iron_gate_kinds  0x00000558  light_switch_init
+pointer  iron_gate_kinds  0x0000055c  SET_NAME_LIGHT_SW
+pointer  iron_gate_kinds  0x00000568  big_step
+pointer  iron_gate_kinds  0x0000056c  SET_NAME_BIG_THE_CAT
+pointer  iron_gate_kinds  0x00000578  technique_link_init
+pointer  iron_gate_kinds  0x0000057c  SET_NAME_LINKLINK
+pointer  iron_gate_kinds  0x00000588  path_enemy_step
+pointer  iron_gate_kinds  0x0000058c  SET_NAME_E_PATH
+pointer  iron_gate_kinds  0x00000598  iron_gate_sound_point_init
+pointer  iron_gate_kinds  0x0000059c  SET_NAME_SE
+pointer  iron_gate_kinds  0x000005a8  lock_on_missile_init
+pointer  iron_gate_kinds  0x000005ac  SET_NAME_MISSILE
+pointer  iron_gate_kinds  0x000005b8  iron_gate_panel_init
+pointer  iron_gate_kinds  0x000005bc  SET_NAME_PANEL

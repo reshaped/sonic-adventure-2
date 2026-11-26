@@ -1,0 +1,4 @@
+datum  omo_editor_labels  C  0x00000018  52
+datum  omo_motions  D  0x00000000  196
+datum  omo_editor_modes  C  0x00000000  24
+datum  mode_names  C  0x0000004c  56

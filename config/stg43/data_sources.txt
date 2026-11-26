@@ -1,0 +1,4 @@
+modules/stg43/drill_assets.c
+modules/stg43/paths.c
+modules/stg43/sky_land.c
+modules/stg43/terrain.c

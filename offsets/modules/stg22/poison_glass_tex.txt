@@ -1,0 +1,6 @@
+datum  textures  D  0x00000000  12
+datum  gadget_poison_glass_texlist  D  0x0000000c  8
+datum  gadget_poison_glass_fragment_polygons  D  0x00000014  70
+datum  gadget_poison_glass_fragment_vertices  D  0x0000005c  124
+datum  gadget_poison_glass_fragment  D  0x000000d8  24
+datum  gadget_poison_glass_fragment_object  D  0x000000f0  52

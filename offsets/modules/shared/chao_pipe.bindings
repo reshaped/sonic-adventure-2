@@ -1,0 +1,14 @@
+# Pooled texture and editor strings, plus the links within this stage-local pipe model.
+text  CHAO_PIPE_EDIT_ANGLE_X  11
+text  CHAO_PIPE_EDIT_ANGLE_Y  11
+text  CHAO_PIPE_EDIT_ANGLE_Z  11
+text  CHAO_PIPE_EDIT_ANIMAL_LEVEL  17
+text  CHAO_PIPE_TEXTURE_01  14
+text  CHAO_PIPE_TEXTURE_15  13
+pointer chao_pipe_textures  0x00000000  CHAO_PIPE_TEXTURE_01
+pointer chao_pipe_textures  0x0000000c  CHAO_PIPE_TEXTURE_15
+pointer chao_pipe_texlist  0x00000000  chao_pipe_textures
+pointer chao_pipe_model  0x00000000  chao_pipe_vertices
+pointer chao_pipe_model  0x00000004  chao_pipe_polygons
+pointer chao_pipe_object  0x00000004  chao_pipe_model
+pointer chao_pipe_texlists  0x00000000  chao_pipe_texlist

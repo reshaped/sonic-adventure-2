@@ -1,0 +1,10 @@
+text  ITEM_BALLOON_TEXT_SIKAKE_01_128  14
+
+pointer  item_balloon_texname  0x00000000  ITEM_BALLOON_TEXT_SIKAKE_01_128
+pointer  item_balloon_texlist  0x00000000  item_balloon_texname
+pointer  item_balloon_model  0x00000000  item_balloon_vertices
+pointer  item_balloon_model  0x00000004  item_balloon_polygons
+pointer  item_balloon_object  0x00000004  item_balloon_model
+pointer  item_balloon_texlists  0x00000000  item_balloon_texlist
+pointer  item_balloon_texlists  0x00000004  item_icon_texlist
+pointer  item_balloon_texlists  0x00000008  white_breath_texlist

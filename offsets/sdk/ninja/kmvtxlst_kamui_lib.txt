@@ -1,0 +1,1 @@
+datum  blank_sprite  DSG  0x00000020  64

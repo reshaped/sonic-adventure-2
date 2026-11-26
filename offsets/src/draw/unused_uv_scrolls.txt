@@ -1,0 +1,4 @@
+datum  negative_v_uvs  D  0x00000000  360
+datum  negative_v_scroll  D  0x00000168  36
+datum  positive_v_uvs  D  0x0000018c  596
+datum  positive_v_scroll  D  0x000003e0  36

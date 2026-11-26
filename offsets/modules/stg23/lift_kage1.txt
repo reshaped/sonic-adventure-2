@@ -1,0 +1,1 @@
+datum  lift_kage1  C  0x00000000  12

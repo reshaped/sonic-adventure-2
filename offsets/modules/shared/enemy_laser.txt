@@ -1,0 +1,12 @@
+text  LASER_TEXTURE_ENEMY5  C  0x00000028  7
+datum  laser_beam_polygons  D  0x00000000  338
+datum  laser_beam_vertices  D  0x00000154  252
+datum  laser_beam_model  D  0x00000250  24
+datum  laser_beam_object  D  0x00000268  52
+datum  laser_ring_polygons  D  0x0000029c  198
+datum  laser_ring_vertices  D  0x00000364  396
+datum  laser_ring_model  D  0x000004f0  24
+datum  laser_ring_object  D  0x00000508  52
+datum  laser_texname  D  0x0000053c  12
+datum  laser_texlist  D  0x00000548  8
+datum  laser_shape  D  0x00000550  48

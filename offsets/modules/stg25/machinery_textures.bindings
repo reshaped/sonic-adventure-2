@@ -1,0 +1,7 @@
+pointer  textures  0x00000000  machinery_texture_128a
+pointer  textures  0x0000000c  machinery_texture_64a
+pointer  textures  0x00000018  machinery_texture_64b
+pointer  machinery_curve_texlist  0x00000000  textures
+pointer  machinery_curve_model  0x00000000  machinery_curve_vertices
+pointer  machinery_curve_model  0x00000004  machinery_curve_polygons
+pointer  machinery_curve_object  0x00000004  machinery_curve_model

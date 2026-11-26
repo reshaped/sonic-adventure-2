@@ -1,0 +1,5 @@
+pointer  stopper_faces  0x00000004  stopper_strips
+pointer  stopper_hull  0x00000000  stopper_points
+pointer  stopper_hull  0x00000004  stopper_normals
+pointer  stopper_hull  0x0000000c  stopper_faces
+pointer  stopper_hull  0x00000010  stopper_material

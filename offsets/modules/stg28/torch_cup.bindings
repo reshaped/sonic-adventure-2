@@ -1,0 +1,14 @@
+text  TORCH_CUP_TEXTURE_DZ_PC_HI_RED01  15
+text  TORCH_CUP_TEXTURE_KD_PC_HASIRA5  14
+
+pointer cave_torch_cup_flame_texture_names  0x00000000  TORCH_CUP_TEXTURE_DZ_PC_HI_RED01
+pointer cave_torch_cup_flame_texlist  0x00000000  cave_torch_cup_flame_texture_names
+pointer cave_torch_cup_flame_model  0x00000000  cave_torch_cup_flame_vertices
+pointer cave_torch_cup_flame_model  0x00000004  cave_torch_cup_flame_polygons
+pointer cave_torch_cup_flame_object  0x00000004  cave_torch_cup_flame_model
+pointer cave_torch_cup_texture_names  0x00000000  TORCH_CUP_TEXTURE_KD_PC_HASIRA5
+pointer cave_torch_cup_texlist  0x00000000  cave_torch_cup_texture_names
+pointer cave_torch_cup_model  0x00000000  cave_torch_cup_vertices
+pointer cave_torch_cup_model  0x00000004  cave_torch_cup_polygons
+pointer cave_torch_cup_object  0x00000004  cave_torch_cup_model
+pointer cave_torch_cup_texlists  0x00000000  cave_torch_cup_texlist

@@ -1,0 +1,72 @@
+text  CARRIAGE_TEXTURE_MIU128_MAD001  14
+text  CARRIAGE_TEXTURE_MIU128_MAD002  14
+text  CARRIAGE_TEXTURE_MIU128_MAD004  14
+text  CARRIAGE_TEXTURE_MIU128_MAD005  14
+text  CARRIAGE_TEXTURE_MIU128_MEH002  14
+text  CARRIAGE_TEXTURE_MIU128_MEH004  14
+text  CARRIAGE_TEXTURE_MIU256_MAD002  14
+text  CARRIAGE_TEXTURE_MIU64_CG020  12
+text  CARRIAGE_TEXTURE_MIU64_MAD007  13
+text  CARRIAGE_TEXTURE_MIU64_MEH007  13
+text  CARRIAGE_TEXTURE_MIU32_MEH002  13
+text  CARRIAGE_TEXTURE_METEO128_11  12
+text  CARRIAGE_TEXTURE_MIU256_MEH001  14
+text  CARRIAGE_TEXTURE_MIU64_MAD002  13
+text  CARRIAGE_TEXTURE_MIU64_MAD008  13
+text  CARRIAGE_TEXTURE_SPACE256_5  11
+text  CARRIAGE_TEXTURE_MIU64_MAD009  13
+
+pointer  mad_space_engine_names  0x00000000  CARRIAGE_TEXTURE_MIU128_MAD001
+pointer  mad_space_engine_names  0x0000000c  CARRIAGE_TEXTURE_MIU128_MAD002
+pointer  mad_space_engine_names  0x00000018  CARRIAGE_TEXTURE_MIU128_MAD004
+pointer  mad_space_engine_names  0x00000024  CARRIAGE_TEXTURE_MIU128_MAD005
+pointer  mad_space_engine_names  0x00000030  CARRIAGE_TEXTURE_MIU128_MEH002
+pointer  mad_space_engine_names  0x0000003c  CARRIAGE_TEXTURE_MIU128_MEH004
+pointer  mad_space_engine_names  0x00000048  CARRIAGE_TEXTURE_MIU256_MAD002
+pointer  mad_space_engine_names  0x00000054  CARRIAGE_TEXTURE_MIU64_CG020
+pointer  mad_space_engine_names  0x00000060  CARRIAGE_TEXTURE_MIU64_MAD007
+pointer  mad_space_engine_names  0x0000006c  CARRIAGE_TEXTURE_MIU64_MEH007
+pointer  mad_space_engine_names  0x00000078  CARRIAGE_TEXTURE_MIU32_MEH002
+pointer  mad_space_engine_texlist  0x00000000  mad_space_engine_names
+pointer  mad_space_engine_body_1_model  0x00000000  mad_space_engine_body_1_vertices
+pointer  mad_space_engine_body_1_model  0x00000004  mad_space_engine_body_1_polygons
+pointer  mad_space_engine_body_1  0x00000004  mad_space_engine_body_1_model
+pointer  mad_space_engine_body_model  0x00000000  mad_space_engine_body_vertices
+pointer  mad_space_engine_body_model  0x00000004  mad_space_engine_body_polygons
+pointer  mad_space_engine_body  0x00000004  mad_space_engine_body_model
+pointer  mad_space_engine_body  0x0000002c  mad_space_engine_body_1
+pointer  mad_space_trailer_names  0x00000000  CARRIAGE_TEXTURE_METEO128_11
+pointer  mad_space_trailer_names  0x0000000c  CARRIAGE_TEXTURE_MIU128_MAD004
+pointer  mad_space_trailer_names  0x00000018  CARRIAGE_TEXTURE_MIU128_MEH004
+pointer  mad_space_trailer_names  0x00000024  CARRIAGE_TEXTURE_MIU256_MEH001
+pointer  mad_space_trailer_names  0x00000030  CARRIAGE_TEXTURE_MIU64_MAD002
+pointer  mad_space_trailer_names  0x0000003c  CARRIAGE_TEXTURE_MIU64_MAD007
+pointer  mad_space_trailer_names  0x00000048  CARRIAGE_TEXTURE_MIU64_MAD008
+pointer  mad_space_trailer_names  0x00000054  CARRIAGE_TEXTURE_SPACE256_5
+pointer  mad_space_trailer_texlist  0x00000000  mad_space_trailer_names
+pointer  mad_space_trailer_body_model  0x00000000  mad_space_trailer_body_vertices
+pointer  mad_space_trailer_body_model  0x00000004  mad_space_trailer_body_polygons
+pointer  mad_space_trailer_body  0x00000004  mad_space_trailer_body_model
+pointer  mad_space_engine_collision_meshsets  0x00000004  mad_space_engine_collision_faces
+pointer  mad_space_engine_collision_model  0x00000000  mad_space_engine_collision_points
+pointer  mad_space_engine_collision_model  0x00000004  mad_space_engine_collision_normals
+pointer  mad_space_engine_collision_model  0x0000000c  mad_space_engine_collision_meshsets
+pointer  mad_space_engine_collision_model  0x00000010  mad_space_engine_collision_materials
+pointer  mad_space_engine_collision  0x00000004  mad_space_engine_collision_model
+pointer  mad_space_trailer_collision_meshsets  0x00000004  mad_space_trailer_collision_faces
+pointer  mad_space_trailer_collision_model  0x00000000  mad_space_trailer_collision_points
+pointer  mad_space_trailer_collision_model  0x00000004  mad_space_trailer_collision_normals
+pointer  mad_space_trailer_collision_model  0x0000000c  mad_space_trailer_collision_meshsets
+pointer  mad_space_trailer_collision_model  0x00000010  mad_space_trailer_collision_materials
+pointer  mad_space_trailer_collision  0x00000004  mad_space_trailer_collision_model
+pointer  mad_space_engine_shadow_model  0x00000000  mad_space_engine_shadow_vertices
+pointer  mad_space_engine_shadow_model  0x00000004  mad_space_engine_shadow_polygons
+pointer  mad_space_engine_shadow  0x00000004  mad_space_engine_shadow_model
+pointer  mad_space_trailer_shadow_model  0x00000000  mad_space_trailer_shadow_vertices
+pointer  mad_space_trailer_shadow_model  0x00000004  mad_space_trailer_shadow_polygons
+pointer  mad_space_trailer_shadow  0x00000004  mad_space_trailer_shadow_model
+pointer  headlight_names  0x00000000  CARRIAGE_TEXTURE_MIU64_MAD009
+pointer  headlight_textures  0x00000000  headlight_names
+pointer  mad_space_carriage_textures  0x00000000  mad_space_engine_texlist
+pointer  mad_space_carriage_textures  0x00000004  mad_space_trailer_texlist
+pointer  mad_space_carriage_textures  0x00000008  headlight_textures

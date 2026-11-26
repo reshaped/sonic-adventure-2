@@ -1,0 +1,33 @@
+text  AWNING_TEXTURE_DZ_PC_HI_RED01  15
+text  AWNING_TEXTURE_DC_PC_TORCH_BURNER16  21
+text  AWNING_TEXTURE_DZ_PC_MARUKAGE64  17
+text  AWNING_TEXTURE_KD_PC_KABE2  12
+text  AWNING_TEXTURE_KD_PC_KABE4  12
+text  AWNING_TEXTURE_KD_PC_MON1  11
+
+pointer cave_awning_side_flame_texture_names  0x00000000  AWNING_TEXTURE_DZ_PC_HI_RED01
+pointer cave_awning_side_flame_texlist  0x00000000  cave_awning_side_flame_texture_names
+pointer cave_awning_side_flame_model  0x00000000  cave_awning_side_flame_vertices
+pointer cave_awning_side_flame_model  0x00000004  cave_awning_side_flame_polygons
+pointer cave_awning_side_flame_object  0x00000004  cave_awning_side_flame_model
+pointer cave_awning_front_flame_texture_names  0x00000000  AWNING_TEXTURE_DZ_PC_HI_RED01
+pointer cave_awning_front_flame_texlist  0x00000000  cave_awning_front_flame_texture_names
+pointer cave_awning_front_flame_model  0x00000000  cave_awning_front_flame_vertices
+pointer cave_awning_front_flame_model  0x00000004  cave_awning_front_flame_polygons
+pointer cave_awning_front_flame_object  0x00000004  cave_awning_front_flame_model
+pointer cave_awning_texture_names  0x00000000  AWNING_TEXTURE_DC_PC_TORCH_BURNER16
+pointer cave_awning_texture_names  0x0000000c  AWNING_TEXTURE_DZ_PC_MARUKAGE64
+pointer cave_awning_texture_names  0x00000018  AWNING_TEXTURE_KD_PC_KABE2
+pointer cave_awning_texture_names  0x00000024  AWNING_TEXTURE_KD_PC_KABE4
+pointer cave_awning_texture_names  0x00000030  AWNING_TEXTURE_KD_PC_MON1
+pointer cave_awning_texlist  0x00000000  cave_awning_texture_names
+pointer cave_awning_model  0x00000000  cave_awning_vertices
+pointer cave_awning_model  0x00000004  cave_awning_polygons
+pointer cave_awning_object  0x00000004  cave_awning_model
+pointer cave_awning_collision_meshsets  0x00000004  cave_awning_collision_indices
+pointer cave_awning_collision_model  0x00000000  cave_awning_collision_points
+pointer cave_awning_collision_model  0x00000004  cave_awning_collision_normals
+pointer cave_awning_collision_model  0x0000000c  cave_awning_collision_meshsets
+pointer cave_awning_collision_model  0x00000010  cave_awning_collision_materials
+pointer cave_awning_collision  0x00000004  cave_awning_collision_model
+pointer cave_awning_texlists  0x00000000  cave_awning_texlist

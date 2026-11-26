@@ -1,0 +1,4 @@
+datum  engine_reactor_texlists  D  0x00000000  72
+datum  reactor_fragment_textures  D  0x00000048  32
+datum  reactor_fragments  D  0x00000068  32
+datum  reactor_panel_positions  D  0x00000088  108

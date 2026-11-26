@@ -1,0 +1,5 @@
+pointer  stones  0x00000000  pillar_stone_0
+pointer  stones  0x00000004  pillar_stone_1
+pointer  stones  0x00000008  pillar_stone_2
+pointer  rubble  0x00000000  pillar_rubble_0
+pointer  rubble  0x00000004  pillar_rubble_1

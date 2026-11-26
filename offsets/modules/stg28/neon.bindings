@@ -1,0 +1,24 @@
+text  NEON_TEXTURE_KD_PC_EGGENTOTU1  17
+text  NEON_TEXTURE_KD_PC_MON2  11
+text  NEON_TEXTURE_KD_PC_NEON1  12
+
+pointer cave_neon_stand_texture_names  0x00000000  NEON_TEXTURE_KD_PC_EGGENTOTU1
+pointer cave_neon_stand_texlist  0x00000000  cave_neon_stand_texture_names
+pointer cave_neon_stand_model  0x00000000  cave_neon_stand_vertices
+pointer cave_neon_stand_model  0x00000004  cave_neon_stand_polygons
+pointer cave_neon_stand_object  0x00000004  cave_neon_stand_model
+pointer cave_neon_sign_texture_names  0x00000000  NEON_TEXTURE_KD_PC_MON2
+pointer cave_neon_sign_texlist  0x00000000  cave_neon_sign_texture_names
+pointer cave_neon_sign_model  0x00000000  cave_neon_sign_vertices
+pointer cave_neon_sign_model  0x00000004  cave_neon_sign_polygons
+pointer cave_neon_sign_object  0x00000004  cave_neon_sign_model
+pointer cave_neon_light_texture_names  0x00000000  NEON_TEXTURE_KD_PC_NEON1
+pointer cave_neon_light_texlist  0x00000000  cave_neon_light_texture_names
+pointer cave_neon_light_model  0x00000000  cave_neon_light_vertices
+pointer cave_neon_light_model  0x00000004  cave_neon_light_polygons
+pointer cave_neon_light_object  0x00000004  cave_neon_light_model
+pointer cave_neon_texlists  0x00000000  cave_neon_light_texlist
+pointer cave_neon_texlists  0x00000004  cave_neon_stand_texlist
+pointer cave_neon_texlists  0x00000008  cave_neon_sign_texlist
+pointer neon_modes  0x00000000  neon_steady
+pointer neon_modes  0x00000004  neon_flicker

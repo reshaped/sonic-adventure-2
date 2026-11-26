@@ -1,0 +1,26 @@
+text TITLE_BAR_0 9
+text TITLE_BAR_1 9
+text TITLE_BAR_2 9
+text TITLE_BAR_3 9
+text TITLE_BAR_4 9
+text TITLE_BAR_5 9
+text TITLE_BAR_6 9
+text TITLE_LETTER_E 6
+text TITLE_LETTER_G 6
+text TITLE_LETTER_L 6
+text TITLE_LETTER_M 6
+text TITLE_LETTER_O 6
+
+pointer  title_textures  0x00000000  TITLE_BAR_0
+pointer  title_textures  0x0000000c  TITLE_BAR_1
+pointer  title_textures  0x00000018  TITLE_BAR_2
+pointer  title_textures  0x00000024  TITLE_BAR_3
+pointer  title_textures  0x00000030  TITLE_BAR_4
+pointer  title_textures  0x0000003c  TITLE_BAR_5
+pointer  title_textures  0x00000048  TITLE_BAR_6
+pointer  title_textures  0x00000054  TITLE_LETTER_E
+pointer  title_textures  0x00000060  TITLE_LETTER_G
+pointer  title_textures  0x0000006c  TITLE_LETTER_L
+pointer  title_textures  0x00000078  TITLE_LETTER_M
+pointer  title_textures  0x00000084  TITLE_LETTER_O
+pointer  golem_title_texlist  0x00000000  title_textures

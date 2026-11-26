@@ -1,0 +1,15 @@
+text  HARBOR_TEXTURE_ECSC_S_CLA  C  0x0000000c  11
+text  HARBOR_TEXTURE_ECSC_S_CLB  C  0x00000018  11
+text  HARBOR_TEXTURE_ECSC_S_CLC  C  0x00000024  11
+text  HARBOR_TEXTURE_PR128_31  C  0x00000030  9
+datum  clouds_puff_textures  D  0x00000000  36
+datum  clouds_puff_texlist  D  0x00000024  8
+datum  clouds_layer_textures  D  0x0000002c  12
+datum  clouds_layer_texlist  D  0x00000038  8
+datum  clouds_layer_polygons  D  0x00000040  1354
+datum  clouds_layer_vertices  D  0x0000058c  1948
+datum  clouds_layer_model  D  0x00000d28  24
+datum  clouds_layer_object  D  0x00000d40  52
+datum  clouds_layer_uvs  D  0x00000d74  924
+datum  clouds_layer_anim  D  0x00001110  36
+datum  clouds_texlists  D  0x00001160  12

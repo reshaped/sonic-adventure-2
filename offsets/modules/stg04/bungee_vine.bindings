@@ -1,0 +1,5 @@
+text BUNGEE_VINE_TEXTURE_MIU64_GREEN006  15
+
+pointer bungee_vine_textures  0x00000000  BUNGEE_VINE_TEXTURE_MIU64_GREEN006
+pointer white_jungle_bungee_vine_texlist  0x00000000  bungee_vine_textures
+include bungee_vine_shape

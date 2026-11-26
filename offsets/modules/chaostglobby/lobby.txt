@@ -1,0 +1,7 @@
+datum  exit_position  C  0x00000000  12
+datum  neutral_position  C  0x0000000c  12
+datum  hero_position  C  0x00000018  12
+datum  dark_position  C  0x00000024  12
+datum  kinder_position  C  0x00000030  12
+datum  lobby_main_light  D  0x00000000  32
+datum  lobby_fill_light  D  0x00000020  32

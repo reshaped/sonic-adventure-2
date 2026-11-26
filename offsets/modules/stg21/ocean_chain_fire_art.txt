@@ -1,0 +1,4 @@
+datum  chain_fire_polygons  D  0x00000000  462
+datum  chain_fire_vertices  D  0x000001d0  860
+datum  chain_fire_model  D  0x0000052c  24
+datum  chain_fire_object  D  0x00000544  52

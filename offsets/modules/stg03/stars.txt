@@ -1,0 +1,2 @@
+text  STARS_MATERIAL_01  C  0x0000000c  12
+datum  stars_textures  D  0x00000000  12

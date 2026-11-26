@@ -1,0 +1,17 @@
+text  CANYON_TEXT_DZ_WC_SHADOW_SQ32  C  0x0000003c  18
+text  CANYON_TEXT_KD_NDE_HASIRA1_VQ  C  0x00000050  18
+text  CANYON_TEXT_KD_NDE_KABEPIC2_VQ  C  0x00000064  19
+datum  pole_texlist_names  D  0x00000000  36
+datum  pole_texlist  D  0x00000024  8
+datum  pole_polygons  D  0x0000002c  262
+datum  pole_vertices  D  0x00000134  316
+datum  pole_model  D  0x00000270  24
+datum  pole_object  D  0x00000288  52
+datum  pole_collision_materials  D  0x000002bc  20
+datum  pole_collision_strips  D  0x000002d0  40
+datum  pole_collision_faces  D  0x000002f8  24
+datum  pole_collision_points  D  0x00000310  96
+datum  pole_collision_normals  D  0x00000370  96
+datum  pole_collision_model  D  0x000003d0  40
+datum  pole_collision  D  0x000003f8  52
+datum  pole_texlists  D  0x0000042c  8

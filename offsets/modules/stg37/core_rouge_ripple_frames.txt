@@ -1,0 +1,4 @@
+datum  cover_ripple_frames_a  D  0x00000000  240
+datum  cover_ripple_frames_b  D  0x000000f0  240
+datum  surface_frames  D  0x000001e0  128
+datum  rotor_water_frames  D  0x00000260  80

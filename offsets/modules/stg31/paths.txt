@@ -1,0 +1,9 @@
+datum  join_path_points  D  0x00000000  460
+datum  join_path  D  0x000001cc  16
+datum  ride_z_points  D  0x000001dc  300
+datum  green_hill_ride_z  D  0x00000308  16
+datum  ride_x_upper_points  D  0x00000318  300
+datum  green_hill_ride_x_upper  D  0x00000444  16
+datum  ride_x_lower_points  D  0x00000454  300
+datum  green_hill_ride_x_lower  D  0x00000580  16
+datum  green_hill_paths  D  0x00000590  8

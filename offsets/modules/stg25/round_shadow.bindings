@@ -1,0 +1,21 @@
+text  CHAMBER_ROUND_SHADOW_DZ_DC_MARUKAGE64  17
+text  CHAMBER_ROUND_SHADOW_DZ_DC_MARUKAGE32  17
+text  CHAMBER_ROUND_SHADOW_LARGE  6
+text  CHAMBER_ROUND_SHADOW_SMALL  6
+
+pointer  chamber_round_shadow_large_texture_names  0x00000000  CHAMBER_ROUND_SHADOW_DZ_DC_MARUKAGE64
+pointer  chamber_round_shadow_large_texlist  0x00000000  chamber_round_shadow_large_texture_names
+pointer  chamber_round_shadow_large_model  0x00000000  chamber_round_shadow_large_vertices
+pointer  chamber_round_shadow_large_model  0x00000004  chamber_round_shadow_large_polygons
+pointer  chamber_round_shadow_large_object  0x00000004  chamber_round_shadow_large_model
+pointer  chamber_round_shadow_small_texture_names  0x00000000  CHAMBER_ROUND_SHADOW_DZ_DC_MARUKAGE32
+pointer  chamber_round_shadow_small_texlist  0x00000000  chamber_round_shadow_small_texture_names
+pointer  chamber_round_shadow_small_model  0x00000000  chamber_round_shadow_small_vertices
+pointer  chamber_round_shadow_small_model  0x00000004  chamber_round_shadow_small_polygons
+pointer  chamber_round_shadow_small_object  0x00000004  chamber_round_shadow_small_model
+pointer  chamber_round_shadow_models  0x00000000  chamber_round_shadow_large_model
+pointer  chamber_round_shadow_models  0x00000004  chamber_round_shadow_small_model
+pointer  chamber_round_shadow_texlists  0x00000000  chamber_round_shadow_large_texlist
+pointer  chamber_round_shadow_texlists  0x00000004  chamber_round_shadow_small_texlist
+pointer  chamber_round_shadow_size_names  0x00000000  CHAMBER_ROUND_SHADOW_LARGE
+pointer  chamber_round_shadow_size_names  0x00000004  CHAMBER_ROUND_SHADOW_SMALL

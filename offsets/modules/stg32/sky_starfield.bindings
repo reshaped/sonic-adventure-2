@@ -1,0 +1,3 @@
+pointer  sky_stars_mesh  0x00000000  stars_vertices
+pointer  sky_stars_mesh  0x00000004  stars_polygons
+pointer  meteor_sky_stars  0x00000004  sky_stars_mesh

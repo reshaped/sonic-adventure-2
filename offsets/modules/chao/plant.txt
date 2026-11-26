@@ -1,0 +1,2 @@
+datum  chao_shovel_attachment  D  0x00000000  32
+datum  chao_watering_can_attachment  D  0x00000020  32

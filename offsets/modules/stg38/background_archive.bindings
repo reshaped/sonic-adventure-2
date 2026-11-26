@@ -1,0 +1,6 @@
+text BACKGROUND_ARCHIVE 8
+
+pointer  core_knuckles_bg_groups  0x00000000  core_knuckles_background_lists
+pointer  core_knuckles_bg_pvms  0x00000000  BACKGROUND_ARCHIVE
+pointer  core_knuckles_bg_pvms  0x00000004  core_knuckles_background_textures
+pointer  core_knuckles_bg_pvms  0x0000000c  core_knuckles_land_texlist

@@ -1,0 +1,4 @@
+datum  orange_lamp_polygons  D  0x00000000  106
+datum  orange_lamp_vertices  D  0x0000006c  204
+datum  orange_lamp_model  D  0x00000138  24
+datum  orange_lamp_object  D  0x00000150  52

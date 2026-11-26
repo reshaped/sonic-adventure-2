@@ -1,0 +1,4 @@
+datum  slots  D  0x00000000  12
+datum  inner_wall_textures  D  0x0000000c  8
+datum  shaft_inner_wall_poses  D  0x00000014  63040
+datum  root  D  0x0000f654  52

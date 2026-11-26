@@ -1,0 +1,4 @@
+modules/stg34/dat_8c5548d8.c
+modules/stg34/routes.c
+modules/stg34/scenery_art.c
+modules/stg34/terrain.c

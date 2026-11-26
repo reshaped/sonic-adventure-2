@@ -1,0 +1,7 @@
+text  SONIC_TALL_PILLAR_TEX_KD_LS_UNIT501  C  0x00000000  14
+datum  textures  D  0x00000000  12
+datum  tall_pillar_texlist  D  0x0000000c  8
+datum  tall_pillar_polygons  D  0x00000014  1858
+datum  tall_pillar_vertices  D  0x00000758  1644
+datum  tall_pillar_model  D  0x00000dc4  24
+datum  tall_pillar_object  D  0x00000ddc  52

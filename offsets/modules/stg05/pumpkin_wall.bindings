@@ -1,0 +1,46 @@
+text  PUMPKIN_WALL_TEXTURE_MIU32_MO004  12
+text  PUMPKIN_WALL_TEXTURE_MIU64_LOCO005  14
+text  PUMPKIN_WALL_TEXTURE_PUM128_10  10
+text  PUMPKIN_WALL_TEXTURE_PUM128_13  10
+text  PUMPKIN_WALL_TEXTURE_PUM64_4  8
+text  PUMPKIN_WALL_TEXTURE_PUM128_12  10
+text  PUMPKIN_WALL_TEXTURE_PUM128_7  9
+text  PUMPKIN_WALL_TEXTURE_PUM256_1  9
+text  PUMPKIN_WALL_TEXTURE_PUM256_2  9
+
+pointer  pumpkin_wall_texlist_names  0x00000000  PUMPKIN_WALL_TEXTURE_MIU32_MO004
+pointer  pumpkin_wall_texlist_names  0x0000000c  PUMPKIN_WALL_TEXTURE_MIU64_LOCO005
+pointer  pumpkin_wall_texlist_names  0x00000018  PUMPKIN_WALL_TEXTURE_PUM128_10
+pointer  pumpkin_wall_texlist_names  0x00000024  PUMPKIN_WALL_TEXTURE_PUM128_13
+pointer  pumpkin_wall_texlist_names  0x00000030  PUMPKIN_WALL_TEXTURE_PUM64_4
+pointer  pumpkin_wall_texlist  0x00000000  pumpkin_wall_texlist_names
+pointer  pumpkin_wall_model  0x00000000  pumpkin_wall_vertices
+pointer  pumpkin_wall_model  0x00000004  pumpkin_wall_polygons
+pointer  pumpkin_wall_object  0x00000004  pumpkin_wall_model
+pointer  pumpkin_wall_collision_faces  0x00000004  pumpkin_wall_collision_strips
+pointer  pumpkin_wall_collision_model  0x00000000  pumpkin_wall_collision_points
+pointer  pumpkin_wall_collision_model  0x00000004  pumpkin_wall_collision_normals
+pointer  pumpkin_wall_collision_model  0x0000000c  pumpkin_wall_collision_faces
+pointer  pumpkin_wall_collision_model  0x00000010  pumpkin_wall_collision_materials
+pointer  pumpkin_wall_collision  0x00000004  pumpkin_wall_collision_model
+pointer  pumsasi_texlist_names  0x00000000  PUMPKIN_WALL_TEXTURE_PUM128_12
+pointer  pumsasi_texlist_names  0x0000000c  PUMPKIN_WALL_TEXTURE_PUM128_13
+pointer  pumsasi_texlist_names  0x00000018  PUMPKIN_WALL_TEXTURE_PUM128_7
+pointer  pumsasi_texlist_names  0x00000024  PUMPKIN_WALL_TEXTURE_PUM256_1
+pointer  pumsasi_texlist_names  0x00000030  PUMPKIN_WALL_TEXTURE_PUM256_2
+pointer  pumsasi_texlist  0x00000000  pumsasi_texlist_names
+pointer  pumsasi_model  0x00000000  pumsasi_vertices
+pointer  pumsasi_model  0x00000004  pumsasi_polygons
+pointer  pumsasi_object  0x00000004  pumsasi_model
+pointer  pumsasi_collision_faces  0x00000004  pumsasi_collision_strips
+pointer  pumsasi_collision_model  0x00000000  pumsasi_collision_points
+pointer  pumsasi_collision_model  0x00000004  pumsasi_collision_normals
+pointer  pumsasi_collision_model  0x0000000c  pumsasi_collision_faces
+pointer  pumsasi_collision_model  0x00000010  pumsasi_collision_materials
+pointer  pumsasi_collision  0x00000004  pumsasi_collision_model
+pointer  pumsasi_child_collision_faces  0x00000004  pumsasi_child_collision_strips
+pointer  pumsasi_child_collision_model  0x00000000  pumsasi_child_collision_points
+pointer  pumsasi_child_collision_model  0x00000004  pumsasi_child_collision_normals
+pointer  pumsasi_child_collision_model  0x0000000c  pumsasi_child_collision_faces
+pointer  pumsasi_child_collision_model  0x00000010  pumsasi_child_collision_materials
+pointer  pumsasi_child_collision  0x00000004  pumsasi_child_collision_model

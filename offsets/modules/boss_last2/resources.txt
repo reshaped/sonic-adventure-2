@@ -1,0 +1,2 @@
+datum  sounds  C  0x00000000  152
+datum  finalhazard_sounds  C  0x00000098  8

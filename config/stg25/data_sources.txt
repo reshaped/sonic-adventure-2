@@ -1,0 +1,4 @@
+modules/stg25/death_chamber_straight_machinery.c
+modules/stg25/hunt_routes.c
+modules/stg25/player_motions.c
+modules/stg25/terrain.c

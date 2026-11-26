@@ -1,0 +1,6 @@
+datum  ring_texture  D  0x00000000  12
+datum  golem_wave_ring_texlist  D  0x0000000c  8
+datum  ring_polygons  D  0x00000014  410
+datum  ring_vertices  D  0x000001b0  756
+datum  golem_wave_ring_model  D  0x000004a4  24
+datum  ring_object  D  0x000004bc  52

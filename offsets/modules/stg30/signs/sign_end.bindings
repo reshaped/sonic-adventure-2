@@ -1,0 +1,7 @@
+include orbital_end_sign
+
+pointer textures 0x00000000 sign_end_miu32_fr005
+pointer textures 0x0000000c sign_end_miu64_fr001
+pointer textures 0x00000018 sign_end_miu64_fr004
+pointer textures 0x00000024 sign_end_miu64_fr007
+pointer sign_end_texlist 0x00000000 textures

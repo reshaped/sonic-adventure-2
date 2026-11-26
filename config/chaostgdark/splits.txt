@@ -1,0 +1,28 @@
+file                               SONIC2/CHAOSTGDARK.PRS
+
+# section                          start       end
+DHEAD                              0x0c9c0000  0x0c9c0020
+P                                  0x0c9c0020  0x0c9c1260
+C                                  0x0c9c1260  0x0c9c16dc
+D                                  0x0c9c16dc  0x0c9d3190
+
+# source                           section     start       end
+modules/chaostgdark/head.c         DHEAD       0x0c9c0000  0x0c9c0014
+modules/chaostgdark/garden.c       P           0x0c9c0020  0x0c9c0560
+modules/chaostgdark/props.c        P           0x0c9c0560  0x0c9c0800
+modules/shared/object_light.c      P           0x0c9c0800  0x0c9c1020
+modules/shared/collision_object.c  P           0x0c9c1020  0x0c9c1260
+modules/chaostgdark/garden.c       C           0x0c9c1260  0x0c9c1316
+modules/chaostgdark/props.c        C           0x0c9c1318  0x0c9c1408
+modules/shared/garden_prop_editor.c C           0x0c9c1408  0x0c9c1450
+modules/chaostgdark/scenery.c  C           0x0c9c1450  0x0c9c15f0
+modules/chaostgdark/objects.c      C           0x0c9c15f0  0x0c9c1674
+modules/shared/object_light.c      C           0x0c9c1674  0x0c9c1683
+modules/shared/collision_object.c       C           0x0c9c1684  0x0c9c16dc
+modules/chaostgdark/garden.c       D           0x0c9c16dc  0x0c9c1798
+modules/chaostgdark/prop_models.c D           0x0c9c1798  0x0c9c4b14
+modules/chaostgdark/scenery.c  D           0x0c9c4b14  0x0c9d2f78
+modules/chaostgdark/objects.c      D           0x0c9d2f78  0x0c9d3068
+modules/shared/object_light.c      D           0x0c9d3068  0x0c9d306c
+modules/shared/dat_collision_object_1.c  D           0x0c9d306c  0x0c9d3070
+modules/shared/collision_object.c  D           0x0c9d3070  0x0c9d3190

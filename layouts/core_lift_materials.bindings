@@ -1,0 +1,4 @@
+pointer  textures  0x00000000  core_lift_cg001
+pointer  textures  0x0000000c  core_lift_cg022
+pointer  textures  0x00000018  core_lift_cc002
+pointer  textures  0x00000024  core_lift_poison

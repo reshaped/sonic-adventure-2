@@ -1,0 +1,17 @@
+include wild_canyon_routes_and_collision
+
+pointer  wild_canyon_emerald_paths  0x00000000  wild_canyon_emerald_route_1
+pointer  wild_canyon_emerald_paths  0x00000004  wild_canyon_emerald_route_2
+pointer  wild_canyon_emerald_paths  0x00000008  wild_canyon_emerald_route_3
+pointer  wild_canyon_emerald_paths  0x0000000c  wild_canyon_emerald_route_4
+pointer  wild_canyon_emerald_paths  0x00000010  wild_canyon_emerald_route_5
+pointer  wild_canyon_emerald_paths  0x00000014  wild_canyon_emerald_route_6
+pointer  wild_canyon_emerald_paths  0x00000018  wild_canyon_emerald_route_7
+pointer  wild_canyon_emerald_paths  0x0000001c  wild_canyon_emerald_route_8
+pointer  wild_canyon_emerald_paths  0x00000020  wild_canyon_emerald_route_9
+pointer  wild_canyon_emerald_paths  0x00000024  wild_canyon_emerald_route_10
+pointer  wild_canyon_emerald_paths  0x00000028  wild_canyon_emerald_route_11
+pointer  wild_canyon_emerald_paths  0x0000002c  wild_canyon_emerald_route_12
+pointer  wild_canyon_kill_areas  0x00000004  kill_area_object
+
+stop  wild_canyon_hints  kind  HUNT_HINT_END

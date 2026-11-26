@@ -1,0 +1,37 @@
+text  REEL_TEXTURE_SIKAKE_02_128  14
+text  REEL_TEXTURE_SIKAKE_03_64  13
+text  REEL_TEXTURE_SIKAKE_06_64  13
+text  REEL_TEXTURE_SIKAKE_11_64  13
+text  REEL_TEXTURE_SIKAKE_17_64  13
+text  REEL_TEXTURE_SIKAKE_21_128  14
+pointer  reel_texnames  0x00000000  REEL_TEXTURE_SIKAKE_02_128
+pointer  reel_texnames  0x0000000c  REEL_TEXTURE_SIKAKE_03_64
+pointer  reel_texnames  0x00000018  REEL_TEXTURE_SIKAKE_06_64
+pointer  reel_texnames  0x00000024  REEL_TEXTURE_SIKAKE_11_64
+pointer  reel_texnames  0x00000030  REEL_TEXTURE_SIKAKE_17_64
+pointer  reel_texnames  0x0000003c  REEL_TEXTURE_SIKAKE_21_128
+pointer  reel_texlist  0x00000000  reel_texnames
+pointer  reel_handle_model  0x00000000  reel_handle_vertices
+pointer  reel_handle_model  0x00000004  reel_handle_polygons
+pointer  reel_handle_object  0x00000004  reel_handle_model
+pointer  reel_wire_model  0x00000000  reel_wire_vertices
+pointer  reel_wire_model  0x00000004  reel_wire_polygons
+pointer  reel_wire_object  0x00000004  reel_wire_model
+pointer  reel_wire_object  0x0000002c  reel_handle_object
+pointer  reel_top_model  0x00000000  reel_top_vertices
+pointer  reel_top_model  0x00000004  reel_top_polygons
+pointer  reel_top_object  0x00000004  reel_top_model
+pointer  reel_top_object  0x0000002c  reel_wire_object
+pointer  reel_collision_meshset  0x00000004  reel_collision_meshes
+pointer  reel_collision_model  0x00000000  reel_collision_points
+pointer  reel_collision_model  0x00000004  reel_collision_normals
+pointer  reel_collision_model  0x0000000c  reel_collision_meshset
+pointer  reel_collision_model  0x00000010  reel_collision_material
+pointer  reel_collision  0x00000004  reel_collision_model
+pointer  reel_texlists  0x00000000  reel_texlist
+pointer  reel_builds  0x00000004  reel_texlist
+pointer  reel_builds  0x00000008  reel_top_object
+pointer  reel_builds  0x00000014  reel_texlist
+pointer  reel_builds  0x00000018  reel_wire_object
+pointer  reel_builds  0x00000024  reel_texlist
+pointer  reel_builds  0x00000028  reel_handle_object

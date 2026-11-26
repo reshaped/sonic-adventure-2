@@ -1,0 +1,907 @@
+text  ROMAJI_KA  3
+text  HIRAGANA_KA  3
+text  KATAKANA_KA  3
+text  ROMAJI_KI  3
+text  HIRAGANA_KI  3
+text  KATAKANA_KI  3
+text  ROMAJI_KU  3
+text  HIRAGANA_KU  3
+text  KATAKANA_KU  3
+text  ROMAJI_KE  3
+text  HIRAGANA_KE  3
+text  KATAKANA_KE  3
+text  ROMAJI_KO  3
+text  HIRAGANA_KO  3
+text  KATAKANA_KO  3
+text  ROMAJI_KYA  4
+text  HIRAGANA_KI_SMALL_YA  5
+text  KATAKANA_KI_SMALL_YA  5
+text  ROMAJI_KYU  4
+text  HIRAGANA_KI_SMALL_YU  5
+text  KATAKANA_KI_SMALL_YU  5
+text  ROMAJI_KYO  4
+text  HIRAGANA_KI_SMALL_YO  5
+text  KATAKANA_KI_SMALL_YO  5
+text  ROMAJI_SA  3
+text  HIRAGANA_SA  3
+text  KATAKANA_SA  3
+text  ROMAJI_SI  3
+text  HIRAGANA_SHI  3
+text  KATAKANA_SHI  3
+text  ROMAJI_SU  3
+text  HIRAGANA_SU  3
+text  KATAKANA_SU  3
+text  ROMAJI_SE  3
+text  HIRAGANA_SE  3
+text  KATAKANA_SE  3
+text  ROMAJI_SO  3
+text  HIRAGANA_SO  3
+text  KATAKANA_SO  3
+text  ROMAJI_SYA  4
+text  HIRAGANA_SHI_SMALL_YA  5
+text  KATAKANA_SHI_SMALL_YA  5
+text  ROMAJI_SYU  4
+text  HIRAGANA_SHI_SMALL_YU  5
+text  KATAKANA_SHI_SMALL_YU  5
+text  ROMAJI_SYO  4
+text  HIRAGANA_SHI_SMALL_YO  5
+text  KATAKANA_SHI_SMALL_YO  5
+text  ROMAJI_SHA  4
+text  ROMAJI_SHU  4
+text  ROMAJI_SHO  4
+text  ROMAJI_TA  3
+text  HIRAGANA_TA  3
+text  KATAKANA_TA  3
+text  ROMAJI_TI  3
+text  HIRAGANA_CHI  3
+text  KATAKANA_CHI  3
+text  ROMAJI_TU  3
+text  HIRAGANA_TSU  3
+text  KATAKANA_TSU  3
+text  ROMAJI_TE  3
+text  HIRAGANA_TE  3
+text  KATAKANA_TE  3
+text  ROMAJI_TO  3
+text  HIRAGANA_TO  3
+text  KATAKANA_TO  3
+text  ROMAJI_TYA  4
+text  HIRAGANA_CHI_SMALL_YA  5
+text  KATAKANA_CHI_SMALL_YA  5
+text  ROMAJI_TYU  4
+text  HIRAGANA_CHI_SMALL_YU  5
+text  KATAKANA_CHI_SMALL_YU  5
+text  ROMAJI_TYO  4
+text  HIRAGANA_CHI_SMALL_YO  5
+text  KATAKANA_CHI_SMALL_YO  5
+text  ROMAJI_CHA  4
+text  ROMAJI_CHU  4
+text  ROMAJI_CHO  4
+text  ROMAJI_NA  3
+text  HIRAGANA_NA  3
+text  KATAKANA_NA  3
+text  ROMAJI_NI  3
+text  HIRAGANA_NI  3
+text  KATAKANA_NI  3
+text  ROMAJI_NU  3
+text  HIRAGANA_NU  3
+text  KATAKANA_NU  3
+text  ROMAJI_NE  3
+text  HIRAGANA_NE  3
+text  KATAKANA_NE  3
+text  ROMAJI_NO  3
+text  HIRAGANA_NO  3
+text  KATAKANA_NO  3
+text  ROMAJI_NYA  4
+text  HIRAGANA_NI_SMALL_YA  5
+text  KATAKANA_NI_SMALL_YA  5
+text  ROMAJI_NYU  4
+text  HIRAGANA_NI_SMALL_YU  5
+text  KATAKANA_NI_SMALL_YU  5
+text  ROMAJI_NYO  4
+text  HIRAGANA_NI_SMALL_YO  5
+text  KATAKANA_NI_SMALL_YO  5
+text  ROMAJI_HA  3
+text  HIRAGANA_HA  3
+text  KATAKANA_HA  3
+text  ROMAJI_HI  3
+text  HIRAGANA_HI  3
+text  KATAKANA_HI  3
+text  ROMAJI_HU  3
+text  HIRAGANA_FU  3
+text  KATAKANA_FU  3
+text  ROMAJI_HE  3
+text  HIRAGANA_HE  3
+text  KATAKANA_HE  3
+text  ROMAJI_HO  3
+text  HIRAGANA_HO  3
+text  KATAKANA_HO  3
+text  ROMAJI_FU  3
+text  ROMAJI_HYA  4
+text  HIRAGANA_HI_SMALL_YA  5
+text  KATAKANA_HI_SMALL_YA  5
+text  ROMAJI_HYU  4
+text  HIRAGANA_HI_SMALL_YU  5
+text  KATAKANA_HI_SMALL_YU  5
+text  ROMAJI_HYO  4
+text  HIRAGANA_HI_SMALL_YO  5
+text  KATAKANA_HI_SMALL_YO  5
+text  ROMAJI_MA  3
+text  HIRAGANA_MA  3
+text  KATAKANA_MA  3
+text  ROMAJI_MI  3
+text  HIRAGANA_MI  3
+text  KATAKANA_MI  3
+text  ROMAJI_MU  3
+text  HIRAGANA_MU  3
+text  KATAKANA_MU  3
+text  ROMAJI_ME  3
+text  HIRAGANA_ME  3
+text  KATAKANA_ME  3
+text  ROMAJI_MO  3
+text  HIRAGANA_MO  3
+text  KATAKANA_MO  3
+text  ROMAJI_MYA  4
+text  HIRAGANA_MI_SMALL_YA  5
+text  KATAKANA_MI_SMALL_YA  5
+text  ROMAJI_MYU  4
+text  HIRAGANA_MI_SMALL_YU  5
+text  KATAKANA_MI_SMALL_YU  5
+text  ROMAJI_MYO  4
+text  HIRAGANA_MI_SMALL_YO  5
+text  KATAKANA_MI_SMALL_YO  5
+text  ROMAJI_RA  3
+text  HIRAGANA_RA  3
+text  KATAKANA_RA  3
+text  ROMAJI_RI  3
+text  HIRAGANA_RI  3
+text  KATAKANA_RI  3
+text  ROMAJI_RU  3
+text  HIRAGANA_RU  3
+text  KATAKANA_RU  3
+text  ROMAJI_RE  3
+text  HIRAGANA_RE  3
+text  KATAKANA_RE  3
+text  ROMAJI_RO  3
+text  HIRAGANA_RO  3
+text  KATAKANA_RO  3
+text  ROMAJI_RYA  4
+text  HIRAGANA_RI_SMALL_YA  5
+text  KATAKANA_RI_SMALL_YA  5
+text  ROMAJI_RYU  4
+text  HIRAGANA_RI_SMALL_YU  5
+text  KATAKANA_RI_SMALL_YU  5
+text  ROMAJI_RYO  4
+text  HIRAGANA_RI_SMALL_YO  5
+text  KATAKANA_RI_SMALL_YO  5
+text  ROMAJI_WA  3
+text  HIRAGANA_WA  3
+text  KATAKANA_WA  3
+text  ROMAJI_WI  3
+text  HIRAGANA_WI  3
+text  KATAKANA_WI  3
+text  ROMAJI_WE  3
+text  HIRAGANA_WE  3
+text  KATAKANA_WE  3
+text  ROMAJI_WO  3
+text  HIRAGANA_WO  3
+text  KATAKANA_WO  3
+text  ROMAJI_GA  3
+text  HIRAGANA_GA  3
+text  KATAKANA_GA  3
+text  ROMAJI_GI  3
+text  HIRAGANA_GI  3
+text  KATAKANA_GI  3
+text  ROMAJI_GU  3
+text  HIRAGANA_GU  3
+text  KATAKANA_GU  3
+text  ROMAJI_GE  3
+text  HIRAGANA_GE  3
+text  KATAKANA_GE  3
+text  ROMAJI_GO  3
+text  HIRAGANA_GO  3
+text  KATAKANA_GO  3
+text  ROMAJI_GYA  4
+text  HIRAGANA_GI_SMALL_YA  5
+text  KATAKANA_GI_SMALL_YA  5
+text  ROMAJI_GYU  4
+text  HIRAGANA_GI_SMALL_YU  5
+text  KATAKANA_GI_SMALL_YU  5
+text  ROMAJI_GYO  4
+text  HIRAGANA_GI_SMALL_YO  5
+text  KATAKANA_GI_SMALL_YO  5
+text  ROMAJI_ZA  3
+text  HIRAGANA_ZA  3
+text  KATAKANA_ZA  3
+text  ROMAJI_ZI  3
+text  HIRAGANA_JI  3
+text  KATAKANA_JI  3
+text  ROMAJI_ZU  3
+text  HIRAGANA_ZU  3
+text  KATAKANA_ZU  3
+text  ROMAJI_ZE  3
+text  HIRAGANA_ZE  3
+text  KATAKANA_ZE  3
+text  ROMAJI_ZO  3
+text  HIRAGANA_ZO  3
+text  KATAKANA_ZO  3
+text  ROMAJI_ZYA  4
+text  HIRAGANA_JI_SMALL_YA  5
+text  KATAKANA_JI_SMALL_YA  5
+text  ROMAJI_ZYU  4
+text  HIRAGANA_JI_SMALL_YU  5
+text  KATAKANA_JI_SMALL_YU  5
+text  ROMAJI_ZYO  4
+text  HIRAGANA_JI_SMALL_YO  5
+text  KATAKANA_JI_SMALL_YO  5
+text  ROMAJI_JA  3
+text  ROMAJI_JU  3
+text  ROMAJI_JO  3
+text  ROMAJI_DA  3
+text  HIRAGANA_DA  3
+text  KATAKANA_DA  3
+text  ROMAJI_DI  3
+text  HIRAGANA_DI  3
+text  KATAKANA_DI  3
+text  ROMAJI_DU  3
+text  HIRAGANA_DU  3
+text  KATAKANA_DU  3
+text  ROMAJI_DE  3
+text  HIRAGANA_DE  3
+text  KATAKANA_DE  3
+text  ROMAJI_DO  3
+text  HIRAGANA_DO  3
+text  KATAKANA_DO  3
+text  ROMAJI_DYA  4
+text  HIRAGANA_DI_SMALL_YA  5
+text  KATAKANA_DI_SMALL_YA  5
+text  ROMAJI_DYU  4
+text  HIRAGANA_DI_SMALL_YU  5
+text  KATAKANA_DI_SMALL_YU  5
+text  ROMAJI_DYO  4
+text  HIRAGANA_DI_SMALL_YO  5
+text  KATAKANA_DI_SMALL_YO  5
+text  ROMAJI_BA  3
+text  HIRAGANA_BA  3
+text  KATAKANA_BA  3
+text  ROMAJI_BI  3
+text  HIRAGANA_BI  3
+text  KATAKANA_BI  3
+text  ROMAJI_BU  3
+text  HIRAGANA_BU  3
+text  KATAKANA_BU  3
+text  ROMAJI_BE  3
+text  HIRAGANA_BE  3
+text  KATAKANA_BE  3
+text  ROMAJI_BO  3
+text  HIRAGANA_BO  3
+text  KATAKANA_BO  3
+text  ROMAJI_BYA  4
+text  HIRAGANA_BI_SMALL_YA  5
+text  KATAKANA_BI_SMALL_YA  5
+text  ROMAJI_BYU  4
+text  HIRAGANA_BI_SMALL_YU  5
+text  KATAKANA_BI_SMALL_YU  5
+text  ROMAJI_BYO  4
+text  HIRAGANA_BI_SMALL_YO  5
+text  KATAKANA_BI_SMALL_YO  5
+text  ROMAJI_PA  3
+text  HIRAGANA_PA  3
+text  KATAKANA_PA  3
+text  ROMAJI_PI  3
+text  HIRAGANA_PI  3
+text  KATAKANA_PI  3
+text  ROMAJI_PU  3
+text  HIRAGANA_PU  3
+text  KATAKANA_PU  3
+text  ROMAJI_PE  3
+text  HIRAGANA_PE  3
+text  KATAKANA_PE  3
+text  ROMAJI_PO  3
+text  HIRAGANA_PO  3
+text  KATAKANA_PO  3
+text  ROMAJI_PYA  4
+text  HIRAGANA_PI_SMALL_YA  5
+text  KATAKANA_PI_SMALL_YA  5
+text  ROMAJI_PYU  4
+text  HIRAGANA_PI_SMALL_YU  5
+text  KATAKANA_PI_SMALL_YU  5
+text  ROMAJI_PYO  4
+text  HIRAGANA_PI_SMALL_YO  5
+text  KATAKANA_PI_SMALL_YO  5
+text  ROMAJI_XA  3
+text  HIRAGANA_SMALL_A  3
+text  KATAKANA_SMALL_A  3
+text  ROMAJI_XI  3
+text  HIRAGANA_SMALL_I  3
+text  KATAKANA_SMALL_I  3
+text  ROMAJI_XU  3
+text  HIRAGANA_SMALL_U  3
+text  KATAKANA_SMALL_U  3
+text  ROMAJI_XE  3
+text  HIRAGANA_SMALL_E  3
+text  KATAKANA_SMALL_E  3
+text  ROMAJI_XO  3
+text  HIRAGANA_SMALL_O  3
+text  KATAKANA_SMALL_O  3
+text  ROMAJI_XYA  4
+text  HIRAGANA_SMALL_YA  3
+text  KATAKANA_SMALL_YA  3
+text  ROMAJI_XYU  4
+text  HIRAGANA_SMALL_YU  3
+text  KATAKANA_SMALL_YU  3
+text  ROMAJI_XYO  4
+text  HIRAGANA_SMALL_YO  3
+text  KATAKANA_SMALL_YO  3
+text  ROMAJI_NN  3
+text  HIRAGANA_N_SYLLABLE  3
+text  KATAKANA_N_SYLLABLE  3
+text  FIELD_INPUT_SPACE  2
+text  FULLWIDTH_SPACE  3
+text  FIELD_INPUT_COMMA  2
+text  FULLWIDTH_COMMA  3
+text  FIELD_INPUT_PERIOD  2
+text  FULLWIDTH_PERIOD  3
+text  FIELD_INPUT_SLASH  2
+text  FULLWIDTH_SLASH  3
+text  FIELD_INPUT_COLON  2
+text  FULLWIDTH_COLON  3
+text  FIELD_INPUT_SEMICOLON  2
+text  FULLWIDTH_SEMICOLON  3
+text  FIELD_INPUT_QUESTION_MARK  2
+text  FULLWIDTH_QUESTION_MARK  3
+text  FIELD_INPUT_EXCLAMATION_MARK  2
+text  FULLWIDTH_EXCLAMATION_MARK  3
+text  FIELD_INPUT_TILDE  2
+text  FULLWIDTH_TILDE  3
+text  FIELD_INPUT_VERTICAL_BAR  2
+text  FULLWIDTH_VERTICAL_BAR  3
+text  FIELD_INPUT_GRAVE_ACCENT  2
+text  FULLWIDTH_GRAVE_ACCENT  3
+text  FIELD_INPUT_APOSTROPHE  2
+text  FULLWIDTH_APOSTROPHE  3
+text  FIELD_INPUT_QUOTATION_MARK  2
+text  FULLWIDTH_QUOTATION_MARK  3
+text  FIELD_INPUT_LEFT_PARENTHESIS  2
+text  FULLWIDTH_LEFT_PARENTHESIS  3
+text  FIELD_INPUT_RIGHT_PARENTHESIS  2
+text  FULLWIDTH_RIGHT_PARENTHESIS  3
+text  FIELD_INPUT_LEFT_BRACE  2
+text  FULLWIDTH_LEFT_BRACE  3
+text  FIELD_INPUT_RIGHT_BRACE  2
+text  FULLWIDTH_RIGHT_BRACE  3
+text  FIELD_INPUT_LEFT_BRACKET  2
+text  FULLWIDTH_LEFT_BRACKET  3
+text  FIELD_INPUT_RIGHT_BRACKET  2
+text  FULLWIDTH_RIGHT_BRACKET  3
+text  FIELD_INPUT_PLUS  2
+text  FULLWIDTH_PLUS  3
+text  FIELD_INPUT_MINUS  2
+text  FULLWIDTH_MINUS  3
+text  FIELD_INPUT_EQUALS  2
+text  FULLWIDTH_EQUALS  3
+text  FIELD_INPUT_LESS_THAN  2
+text  FULLWIDTH_LESS_THAN  3
+text  FIELD_INPUT_GREATER_THAN  2
+text  FULLWIDTH_GREATER_THAN  3
+text  FIELD_INPUT_BACKSLASH  2
+text  FULLWIDTH_BACKSLASH  3
+text  FIELD_INPUT_DOLLAR  2
+text  FULLWIDTH_DOLLAR  3
+text  FIELD_INPUT_PERCENT  2
+text  FULLWIDTH_PERCENT  3
+text  FIELD_INPUT_NUMBER_SIGN  2
+text  FULLWIDTH_NUMBER_SIGN  3
+text  FIELD_INPUT_AMPERSAND  2
+text  FULLWIDTH_AMPERSAND  3
+text  FIELD_INPUT_ASTERISK  2
+text  FULLWIDTH_ASTERISK  3
+text  FIELD_INPUT_AT_SIGN  2
+text  FULLWIDTH_AT_SIGN  3
+text  FIELD_INPUT_DIGIT_0  2
+text  FULLWIDTH_DIGIT_0  3
+text  FIELD_INPUT_DIGIT_1  2
+text  FULLWIDTH_DIGIT_1  3
+text  FIELD_INPUT_DIGIT_2  2
+text  FULLWIDTH_DIGIT_2  3
+text  FIELD_INPUT_DIGIT_3  2
+text  FULLWIDTH_DIGIT_3  3
+text  FIELD_INPUT_DIGIT_4  2
+text  FULLWIDTH_DIGIT_4  3
+text  FIELD_INPUT_DIGIT_5  2
+text  FULLWIDTH_DIGIT_5  3
+text  FIELD_INPUT_DIGIT_6  2
+text  FULLWIDTH_DIGIT_6  3
+text  FIELD_INPUT_DIGIT_7  2
+text  FULLWIDTH_DIGIT_7  3
+text  FIELD_INPUT_DIGIT_8  2
+text  FULLWIDTH_DIGIT_8  3
+text  FIELD_INPUT_DIGIT_9  2
+text  FULLWIDTH_DIGIT_9  3
+text  ROMAJI_YA  3
+text  HIRAGANA_YA  3
+text  KATAKANA_YA  3
+text  ROMAJI_YU  3
+text  HIRAGANA_YU  3
+text  KATAKANA_YU  3
+text  ROMAJI_YO  3
+text  HIRAGANA_YO  3
+text  KATAKANA_YO  3
+text  ROMAJI_A  2
+text  HIRAGANA_A  3
+text  KATAKANA_A  3
+text  ROMAJI_I  2
+text  HIRAGANA_I  3
+text  KATAKANA_I  3
+text  ROMAJI_U  2
+text  HIRAGANA_U  3
+text  KATAKANA_U  3
+text  ROMAJI_E  2
+text  HIRAGANA_E  3
+text  KATAKANA_E  3
+text  ROMAJI_O  2
+text  HIRAGANA_O  3
+text  KATAKANA_O  3
+
+pointer  field_syllables  0x00000000  ROMAJI_KA
+pointer  field_syllables  0x00000004  HIRAGANA_KA
+pointer  field_syllables  0x00000008  KATAKANA_KA
+pointer  field_syllables  0x0000000c  ROMAJI_KI
+pointer  field_syllables  0x00000010  HIRAGANA_KI
+pointer  field_syllables  0x00000014  KATAKANA_KI
+pointer  field_syllables  0x00000018  ROMAJI_KU
+pointer  field_syllables  0x0000001c  HIRAGANA_KU
+pointer  field_syllables  0x00000020  KATAKANA_KU
+pointer  field_syllables  0x00000024  ROMAJI_KE
+pointer  field_syllables  0x00000028  HIRAGANA_KE
+pointer  field_syllables  0x0000002c  KATAKANA_KE
+pointer  field_syllables  0x00000030  ROMAJI_KO
+pointer  field_syllables  0x00000034  HIRAGANA_KO
+pointer  field_syllables  0x00000038  KATAKANA_KO
+pointer  field_syllables  0x0000003c  ROMAJI_KYA
+pointer  field_syllables  0x00000040  HIRAGANA_KI_SMALL_YA
+pointer  field_syllables  0x00000044  KATAKANA_KI_SMALL_YA
+pointer  field_syllables  0x00000048  ROMAJI_KYU
+pointer  field_syllables  0x0000004c  HIRAGANA_KI_SMALL_YU
+pointer  field_syllables  0x00000050  KATAKANA_KI_SMALL_YU
+pointer  field_syllables  0x00000054  ROMAJI_KYO
+pointer  field_syllables  0x00000058  HIRAGANA_KI_SMALL_YO
+pointer  field_syllables  0x0000005c  KATAKANA_KI_SMALL_YO
+pointer  field_syllables  0x00000060  ROMAJI_SA
+pointer  field_syllables  0x00000064  HIRAGANA_SA
+pointer  field_syllables  0x00000068  KATAKANA_SA
+pointer  field_syllables  0x0000006c  ROMAJI_SI
+pointer  field_syllables  0x00000070  HIRAGANA_SHI
+pointer  field_syllables  0x00000074  KATAKANA_SHI
+pointer  field_syllables  0x00000078  ROMAJI_SU
+pointer  field_syllables  0x0000007c  HIRAGANA_SU
+pointer  field_syllables  0x00000080  KATAKANA_SU
+pointer  field_syllables  0x00000084  ROMAJI_SE
+pointer  field_syllables  0x00000088  HIRAGANA_SE
+pointer  field_syllables  0x0000008c  KATAKANA_SE
+pointer  field_syllables  0x00000090  ROMAJI_SO
+pointer  field_syllables  0x00000094  HIRAGANA_SO
+pointer  field_syllables  0x00000098  KATAKANA_SO
+pointer  field_syllables  0x0000009c  ROMAJI_SYA
+pointer  field_syllables  0x000000a0  HIRAGANA_SHI_SMALL_YA
+pointer  field_syllables  0x000000a4  KATAKANA_SHI_SMALL_YA
+pointer  field_syllables  0x000000a8  ROMAJI_SYU
+pointer  field_syllables  0x000000ac  HIRAGANA_SHI_SMALL_YU
+pointer  field_syllables  0x000000b0  KATAKANA_SHI_SMALL_YU
+pointer  field_syllables  0x000000b4  ROMAJI_SYO
+pointer  field_syllables  0x000000b8  HIRAGANA_SHI_SMALL_YO
+pointer  field_syllables  0x000000bc  KATAKANA_SHI_SMALL_YO
+pointer  field_syllables  0x000000c0  ROMAJI_SHA
+pointer  field_syllables  0x000000c4  HIRAGANA_SHI_SMALL_YA
+pointer  field_syllables  0x000000c8  KATAKANA_SHI_SMALL_YA
+pointer  field_syllables  0x000000cc  ROMAJI_SHU
+pointer  field_syllables  0x000000d0  HIRAGANA_SHI_SMALL_YU
+pointer  field_syllables  0x000000d4  KATAKANA_SHI_SMALL_YU
+pointer  field_syllables  0x000000d8  ROMAJI_SHO
+pointer  field_syllables  0x000000dc  HIRAGANA_SHI_SMALL_YO
+pointer  field_syllables  0x000000e0  KATAKANA_SHI_SMALL_YO
+pointer  field_syllables  0x000000e4  ROMAJI_TA
+pointer  field_syllables  0x000000e8  HIRAGANA_TA
+pointer  field_syllables  0x000000ec  KATAKANA_TA
+pointer  field_syllables  0x000000f0  ROMAJI_TI
+pointer  field_syllables  0x000000f4  HIRAGANA_CHI
+pointer  field_syllables  0x000000f8  KATAKANA_CHI
+pointer  field_syllables  0x000000fc  ROMAJI_TU
+pointer  field_syllables  0x00000100  HIRAGANA_TSU
+pointer  field_syllables  0x00000104  KATAKANA_TSU
+pointer  field_syllables  0x00000108  ROMAJI_TE
+pointer  field_syllables  0x0000010c  HIRAGANA_TE
+pointer  field_syllables  0x00000110  KATAKANA_TE
+pointer  field_syllables  0x00000114  ROMAJI_TO
+pointer  field_syllables  0x00000118  HIRAGANA_TO
+pointer  field_syllables  0x0000011c  KATAKANA_TO
+pointer  field_syllables  0x00000120  ROMAJI_TYA
+pointer  field_syllables  0x00000124  HIRAGANA_CHI_SMALL_YA
+pointer  field_syllables  0x00000128  KATAKANA_CHI_SMALL_YA
+pointer  field_syllables  0x0000012c  ROMAJI_TYU
+pointer  field_syllables  0x00000130  HIRAGANA_CHI_SMALL_YU
+pointer  field_syllables  0x00000134  KATAKANA_CHI_SMALL_YU
+pointer  field_syllables  0x00000138  ROMAJI_TYO
+pointer  field_syllables  0x0000013c  HIRAGANA_CHI_SMALL_YO
+pointer  field_syllables  0x00000140  KATAKANA_CHI_SMALL_YO
+pointer  field_syllables  0x00000144  ROMAJI_CHA
+pointer  field_syllables  0x00000148  HIRAGANA_CHI_SMALL_YA
+pointer  field_syllables  0x0000014c  KATAKANA_CHI_SMALL_YA
+pointer  field_syllables  0x00000150  ROMAJI_CHU
+pointer  field_syllables  0x00000154  HIRAGANA_CHI_SMALL_YU
+pointer  field_syllables  0x00000158  KATAKANA_CHI_SMALL_YU
+pointer  field_syllables  0x0000015c  ROMAJI_CHO
+pointer  field_syllables  0x00000160  HIRAGANA_CHI_SMALL_YO
+pointer  field_syllables  0x00000164  KATAKANA_CHI_SMALL_YO
+pointer  field_syllables  0x00000168  ROMAJI_NA
+pointer  field_syllables  0x0000016c  HIRAGANA_NA
+pointer  field_syllables  0x00000170  KATAKANA_NA
+pointer  field_syllables  0x00000174  ROMAJI_NI
+pointer  field_syllables  0x00000178  HIRAGANA_NI
+pointer  field_syllables  0x0000017c  KATAKANA_NI
+pointer  field_syllables  0x00000180  ROMAJI_NU
+pointer  field_syllables  0x00000184  HIRAGANA_NU
+pointer  field_syllables  0x00000188  KATAKANA_NU
+pointer  field_syllables  0x0000018c  ROMAJI_NE
+pointer  field_syllables  0x00000190  HIRAGANA_NE
+pointer  field_syllables  0x00000194  KATAKANA_NE
+pointer  field_syllables  0x00000198  ROMAJI_NO
+pointer  field_syllables  0x0000019c  HIRAGANA_NO
+pointer  field_syllables  0x000001a0  KATAKANA_NO
+pointer  field_syllables  0x000001a4  ROMAJI_NYA
+pointer  field_syllables  0x000001a8  HIRAGANA_NI_SMALL_YA
+pointer  field_syllables  0x000001ac  KATAKANA_NI_SMALL_YA
+pointer  field_syllables  0x000001b0  ROMAJI_NYU
+pointer  field_syllables  0x000001b4  HIRAGANA_NI_SMALL_YU
+pointer  field_syllables  0x000001b8  KATAKANA_NI_SMALL_YU
+pointer  field_syllables  0x000001bc  ROMAJI_NYO
+pointer  field_syllables  0x000001c0  HIRAGANA_NI_SMALL_YO
+pointer  field_syllables  0x000001c4  KATAKANA_NI_SMALL_YO
+pointer  field_syllables  0x000001c8  ROMAJI_HA
+pointer  field_syllables  0x000001cc  HIRAGANA_HA
+pointer  field_syllables  0x000001d0  KATAKANA_HA
+pointer  field_syllables  0x000001d4  ROMAJI_HI
+pointer  field_syllables  0x000001d8  HIRAGANA_HI
+pointer  field_syllables  0x000001dc  KATAKANA_HI
+pointer  field_syllables  0x000001e0  ROMAJI_HU
+pointer  field_syllables  0x000001e4  HIRAGANA_FU
+pointer  field_syllables  0x000001e8  KATAKANA_FU
+pointer  field_syllables  0x000001ec  ROMAJI_HE
+pointer  field_syllables  0x000001f0  HIRAGANA_HE
+pointer  field_syllables  0x000001f4  KATAKANA_HE
+pointer  field_syllables  0x000001f8  ROMAJI_HO
+pointer  field_syllables  0x000001fc  HIRAGANA_HO
+pointer  field_syllables  0x00000200  KATAKANA_HO
+pointer  field_syllables  0x00000204  ROMAJI_FU
+pointer  field_syllables  0x00000208  HIRAGANA_FU
+pointer  field_syllables  0x0000020c  KATAKANA_FU
+pointer  field_syllables  0x00000210  ROMAJI_HYA
+pointer  field_syllables  0x00000214  HIRAGANA_HI_SMALL_YA
+pointer  field_syllables  0x00000218  KATAKANA_HI_SMALL_YA
+pointer  field_syllables  0x0000021c  ROMAJI_HYU
+pointer  field_syllables  0x00000220  HIRAGANA_HI_SMALL_YU
+pointer  field_syllables  0x00000224  KATAKANA_HI_SMALL_YU
+pointer  field_syllables  0x00000228  ROMAJI_HYO
+pointer  field_syllables  0x0000022c  HIRAGANA_HI_SMALL_YO
+pointer  field_syllables  0x00000230  KATAKANA_HI_SMALL_YO
+pointer  field_syllables  0x00000234  ROMAJI_MA
+pointer  field_syllables  0x00000238  HIRAGANA_MA
+pointer  field_syllables  0x0000023c  KATAKANA_MA
+pointer  field_syllables  0x00000240  ROMAJI_MI
+pointer  field_syllables  0x00000244  HIRAGANA_MI
+pointer  field_syllables  0x00000248  KATAKANA_MI
+pointer  field_syllables  0x0000024c  ROMAJI_MU
+pointer  field_syllables  0x00000250  HIRAGANA_MU
+pointer  field_syllables  0x00000254  KATAKANA_MU
+pointer  field_syllables  0x00000258  ROMAJI_ME
+pointer  field_syllables  0x0000025c  HIRAGANA_ME
+pointer  field_syllables  0x00000260  KATAKANA_ME
+pointer  field_syllables  0x00000264  ROMAJI_MO
+pointer  field_syllables  0x00000268  HIRAGANA_MO
+pointer  field_syllables  0x0000026c  KATAKANA_MO
+pointer  field_syllables  0x00000270  ROMAJI_MYA
+pointer  field_syllables  0x00000274  HIRAGANA_MI_SMALL_YA
+pointer  field_syllables  0x00000278  KATAKANA_MI_SMALL_YA
+pointer  field_syllables  0x0000027c  ROMAJI_MYU
+pointer  field_syllables  0x00000280  HIRAGANA_MI_SMALL_YU
+pointer  field_syllables  0x00000284  KATAKANA_MI_SMALL_YU
+pointer  field_syllables  0x00000288  ROMAJI_MYO
+pointer  field_syllables  0x0000028c  HIRAGANA_MI_SMALL_YO
+pointer  field_syllables  0x00000290  KATAKANA_MI_SMALL_YO
+pointer  field_syllables  0x00000294  ROMAJI_RA
+pointer  field_syllables  0x00000298  HIRAGANA_RA
+pointer  field_syllables  0x0000029c  KATAKANA_RA
+pointer  field_syllables  0x000002a0  ROMAJI_RI
+pointer  field_syllables  0x000002a4  HIRAGANA_RI
+pointer  field_syllables  0x000002a8  KATAKANA_RI
+pointer  field_syllables  0x000002ac  ROMAJI_RU
+pointer  field_syllables  0x000002b0  HIRAGANA_RU
+pointer  field_syllables  0x000002b4  KATAKANA_RU
+pointer  field_syllables  0x000002b8  ROMAJI_RE
+pointer  field_syllables  0x000002bc  HIRAGANA_RE
+pointer  field_syllables  0x000002c0  KATAKANA_RE
+pointer  field_syllables  0x000002c4  ROMAJI_RO
+pointer  field_syllables  0x000002c8  HIRAGANA_RO
+pointer  field_syllables  0x000002cc  KATAKANA_RO
+pointer  field_syllables  0x000002d0  ROMAJI_RYA
+pointer  field_syllables  0x000002d4  HIRAGANA_RI_SMALL_YA
+pointer  field_syllables  0x000002d8  KATAKANA_RI_SMALL_YA
+pointer  field_syllables  0x000002dc  ROMAJI_RYU
+pointer  field_syllables  0x000002e0  HIRAGANA_RI_SMALL_YU
+pointer  field_syllables  0x000002e4  KATAKANA_RI_SMALL_YU
+pointer  field_syllables  0x000002e8  ROMAJI_RYO
+pointer  field_syllables  0x000002ec  HIRAGANA_RI_SMALL_YO
+pointer  field_syllables  0x000002f0  KATAKANA_RI_SMALL_YO
+pointer  field_syllables  0x000002f4  ROMAJI_WA
+pointer  field_syllables  0x000002f8  HIRAGANA_WA
+pointer  field_syllables  0x000002fc  KATAKANA_WA
+pointer  field_syllables  0x00000300  ROMAJI_WI
+pointer  field_syllables  0x00000304  HIRAGANA_WI
+pointer  field_syllables  0x00000308  KATAKANA_WI
+pointer  field_syllables  0x0000030c  ROMAJI_WE
+pointer  field_syllables  0x00000310  HIRAGANA_WE
+pointer  field_syllables  0x00000314  KATAKANA_WE
+pointer  field_syllables  0x00000318  ROMAJI_WO
+pointer  field_syllables  0x0000031c  HIRAGANA_WO
+pointer  field_syllables  0x00000320  KATAKANA_WO
+pointer  field_syllables  0x00000324  ROMAJI_GA
+pointer  field_syllables  0x00000328  HIRAGANA_GA
+pointer  field_syllables  0x0000032c  KATAKANA_GA
+pointer  field_syllables  0x00000330  ROMAJI_GI
+pointer  field_syllables  0x00000334  HIRAGANA_GI
+pointer  field_syllables  0x00000338  KATAKANA_GI
+pointer  field_syllables  0x0000033c  ROMAJI_GU
+pointer  field_syllables  0x00000340  HIRAGANA_GU
+pointer  field_syllables  0x00000344  KATAKANA_GU
+pointer  field_syllables  0x00000348  ROMAJI_GE
+pointer  field_syllables  0x0000034c  HIRAGANA_GE
+pointer  field_syllables  0x00000350  KATAKANA_GE
+pointer  field_syllables  0x00000354  ROMAJI_GO
+pointer  field_syllables  0x00000358  HIRAGANA_GO
+pointer  field_syllables  0x0000035c  KATAKANA_GO
+pointer  field_syllables  0x00000360  ROMAJI_GYA
+pointer  field_syllables  0x00000364  HIRAGANA_GI_SMALL_YA
+pointer  field_syllables  0x00000368  KATAKANA_GI_SMALL_YA
+pointer  field_syllables  0x0000036c  ROMAJI_GYU
+pointer  field_syllables  0x00000370  HIRAGANA_GI_SMALL_YU
+pointer  field_syllables  0x00000374  KATAKANA_GI_SMALL_YU
+pointer  field_syllables  0x00000378  ROMAJI_GYO
+pointer  field_syllables  0x0000037c  HIRAGANA_GI_SMALL_YO
+pointer  field_syllables  0x00000380  KATAKANA_GI_SMALL_YO
+pointer  field_syllables  0x00000384  ROMAJI_ZA
+pointer  field_syllables  0x00000388  HIRAGANA_ZA
+pointer  field_syllables  0x0000038c  KATAKANA_ZA
+pointer  field_syllables  0x00000390  ROMAJI_ZI
+pointer  field_syllables  0x00000394  HIRAGANA_JI
+pointer  field_syllables  0x00000398  KATAKANA_JI
+pointer  field_syllables  0x0000039c  ROMAJI_ZU
+pointer  field_syllables  0x000003a0  HIRAGANA_ZU
+pointer  field_syllables  0x000003a4  KATAKANA_ZU
+pointer  field_syllables  0x000003a8  ROMAJI_ZE
+pointer  field_syllables  0x000003ac  HIRAGANA_ZE
+pointer  field_syllables  0x000003b0  KATAKANA_ZE
+pointer  field_syllables  0x000003b4  ROMAJI_ZO
+pointer  field_syllables  0x000003b8  HIRAGANA_ZO
+pointer  field_syllables  0x000003bc  KATAKANA_ZO
+pointer  field_syllables  0x000003c0  ROMAJI_ZYA
+pointer  field_syllables  0x000003c4  HIRAGANA_JI_SMALL_YA
+pointer  field_syllables  0x000003c8  KATAKANA_JI_SMALL_YA
+pointer  field_syllables  0x000003cc  ROMAJI_ZYU
+pointer  field_syllables  0x000003d0  HIRAGANA_JI_SMALL_YU
+pointer  field_syllables  0x000003d4  KATAKANA_JI_SMALL_YU
+pointer  field_syllables  0x000003d8  ROMAJI_ZYO
+pointer  field_syllables  0x000003dc  HIRAGANA_JI_SMALL_YO
+pointer  field_syllables  0x000003e0  KATAKANA_JI_SMALL_YO
+pointer  field_syllables  0x000003e4  ROMAJI_JA
+pointer  field_syllables  0x000003e8  HIRAGANA_JI_SMALL_YA
+pointer  field_syllables  0x000003ec  KATAKANA_JI_SMALL_YA
+pointer  field_syllables  0x000003f0  ROMAJI_JU
+pointer  field_syllables  0x000003f4  HIRAGANA_JI_SMALL_YU
+pointer  field_syllables  0x000003f8  KATAKANA_JI_SMALL_YU
+pointer  field_syllables  0x000003fc  ROMAJI_JO
+pointer  field_syllables  0x00000400  HIRAGANA_JI_SMALL_YO
+pointer  field_syllables  0x00000404  KATAKANA_JI_SMALL_YO
+pointer  field_syllables  0x00000408  ROMAJI_DA
+pointer  field_syllables  0x0000040c  HIRAGANA_DA
+pointer  field_syllables  0x00000410  KATAKANA_DA
+pointer  field_syllables  0x00000414  ROMAJI_DI
+pointer  field_syllables  0x00000418  HIRAGANA_DI
+pointer  field_syllables  0x0000041c  KATAKANA_DI
+pointer  field_syllables  0x00000420  ROMAJI_DU
+pointer  field_syllables  0x00000424  HIRAGANA_DU
+pointer  field_syllables  0x00000428  KATAKANA_DU
+pointer  field_syllables  0x0000042c  ROMAJI_DE
+pointer  field_syllables  0x00000430  HIRAGANA_DE
+pointer  field_syllables  0x00000434  KATAKANA_DE
+pointer  field_syllables  0x00000438  ROMAJI_DO
+pointer  field_syllables  0x0000043c  HIRAGANA_DO
+pointer  field_syllables  0x00000440  KATAKANA_DO
+pointer  field_syllables  0x00000444  ROMAJI_DYA
+pointer  field_syllables  0x00000448  HIRAGANA_DI_SMALL_YA
+pointer  field_syllables  0x0000044c  KATAKANA_DI_SMALL_YA
+pointer  field_syllables  0x00000450  ROMAJI_DYU
+pointer  field_syllables  0x00000454  HIRAGANA_DI_SMALL_YU
+pointer  field_syllables  0x00000458  KATAKANA_DI_SMALL_YU
+pointer  field_syllables  0x0000045c  ROMAJI_DYO
+pointer  field_syllables  0x00000460  HIRAGANA_DI_SMALL_YO
+pointer  field_syllables  0x00000464  KATAKANA_DI_SMALL_YO
+pointer  field_syllables  0x00000468  ROMAJI_BA
+pointer  field_syllables  0x0000046c  HIRAGANA_BA
+pointer  field_syllables  0x00000470  KATAKANA_BA
+pointer  field_syllables  0x00000474  ROMAJI_BI
+pointer  field_syllables  0x00000478  HIRAGANA_BI
+pointer  field_syllables  0x0000047c  KATAKANA_BI
+pointer  field_syllables  0x00000480  ROMAJI_BU
+pointer  field_syllables  0x00000484  HIRAGANA_BU
+pointer  field_syllables  0x00000488  KATAKANA_BU
+pointer  field_syllables  0x0000048c  ROMAJI_BE
+pointer  field_syllables  0x00000490  HIRAGANA_BE
+pointer  field_syllables  0x00000494  KATAKANA_BE
+pointer  field_syllables  0x00000498  ROMAJI_BO
+pointer  field_syllables  0x0000049c  HIRAGANA_BO
+pointer  field_syllables  0x000004a0  KATAKANA_BO
+pointer  field_syllables  0x000004a4  ROMAJI_BYA
+pointer  field_syllables  0x000004a8  HIRAGANA_BI_SMALL_YA
+pointer  field_syllables  0x000004ac  KATAKANA_BI_SMALL_YA
+pointer  field_syllables  0x000004b0  ROMAJI_BYU
+pointer  field_syllables  0x000004b4  HIRAGANA_BI_SMALL_YU
+pointer  field_syllables  0x000004b8  KATAKANA_BI_SMALL_YU
+pointer  field_syllables  0x000004bc  ROMAJI_BYO
+pointer  field_syllables  0x000004c0  HIRAGANA_BI_SMALL_YO
+pointer  field_syllables  0x000004c4  KATAKANA_BI_SMALL_YO
+pointer  field_syllables  0x000004c8  ROMAJI_PA
+pointer  field_syllables  0x000004cc  HIRAGANA_PA
+pointer  field_syllables  0x000004d0  KATAKANA_PA
+pointer  field_syllables  0x000004d4  ROMAJI_PI
+pointer  field_syllables  0x000004d8  HIRAGANA_PI
+pointer  field_syllables  0x000004dc  KATAKANA_PI
+pointer  field_syllables  0x000004e0  ROMAJI_PU
+pointer  field_syllables  0x000004e4  HIRAGANA_PU
+pointer  field_syllables  0x000004e8  KATAKANA_PU
+pointer  field_syllables  0x000004ec  ROMAJI_PE
+pointer  field_syllables  0x000004f0  HIRAGANA_PE
+pointer  field_syllables  0x000004f4  KATAKANA_PE
+pointer  field_syllables  0x000004f8  ROMAJI_PO
+pointer  field_syllables  0x000004fc  HIRAGANA_PO
+pointer  field_syllables  0x00000500  KATAKANA_PO
+pointer  field_syllables  0x00000504  ROMAJI_PYA
+pointer  field_syllables  0x00000508  HIRAGANA_PI_SMALL_YA
+pointer  field_syllables  0x0000050c  KATAKANA_PI_SMALL_YA
+pointer  field_syllables  0x00000510  ROMAJI_PYU
+pointer  field_syllables  0x00000514  HIRAGANA_PI_SMALL_YU
+pointer  field_syllables  0x00000518  KATAKANA_PI_SMALL_YU
+pointer  field_syllables  0x0000051c  ROMAJI_PYO
+pointer  field_syllables  0x00000520  HIRAGANA_PI_SMALL_YO
+pointer  field_syllables  0x00000524  KATAKANA_PI_SMALL_YO
+pointer  field_syllables  0x00000528  ROMAJI_XA
+pointer  field_syllables  0x0000052c  HIRAGANA_SMALL_A
+pointer  field_syllables  0x00000530  KATAKANA_SMALL_A
+pointer  field_syllables  0x00000534  ROMAJI_XI
+pointer  field_syllables  0x00000538  HIRAGANA_SMALL_I
+pointer  field_syllables  0x0000053c  KATAKANA_SMALL_I
+pointer  field_syllables  0x00000540  ROMAJI_XU
+pointer  field_syllables  0x00000544  HIRAGANA_SMALL_U
+pointer  field_syllables  0x00000548  KATAKANA_SMALL_U
+pointer  field_syllables  0x0000054c  ROMAJI_XE
+pointer  field_syllables  0x00000550  HIRAGANA_SMALL_E
+pointer  field_syllables  0x00000554  KATAKANA_SMALL_E
+pointer  field_syllables  0x00000558  ROMAJI_XO
+pointer  field_syllables  0x0000055c  HIRAGANA_SMALL_O
+pointer  field_syllables  0x00000560  KATAKANA_SMALL_O
+pointer  field_syllables  0x00000564  ROMAJI_XYA
+pointer  field_syllables  0x00000568  HIRAGANA_SMALL_YA
+pointer  field_syllables  0x0000056c  KATAKANA_SMALL_YA
+pointer  field_syllables  0x00000570  ROMAJI_XYU
+pointer  field_syllables  0x00000574  HIRAGANA_SMALL_YU
+pointer  field_syllables  0x00000578  KATAKANA_SMALL_YU
+pointer  field_syllables  0x0000057c  ROMAJI_XYO
+pointer  field_syllables  0x00000580  HIRAGANA_SMALL_YO
+pointer  field_syllables  0x00000584  KATAKANA_SMALL_YO
+pointer  field_syllables  0x00000588  ROMAJI_NN
+pointer  field_syllables  0x0000058c  HIRAGANA_N_SYLLABLE
+pointer  field_syllables  0x00000590  KATAKANA_N_SYLLABLE
+pointer  field_syllables  0x00000594  FIELD_INPUT_SPACE
+pointer  field_syllables  0x00000598  FULLWIDTH_SPACE
+pointer  field_syllables  0x000005a0  FIELD_INPUT_COMMA
+pointer  field_syllables  0x000005a4  FULLWIDTH_COMMA
+pointer  field_syllables  0x000005ac  FIELD_INPUT_PERIOD
+pointer  field_syllables  0x000005b0  FULLWIDTH_PERIOD
+pointer  field_syllables  0x000005b8  FIELD_INPUT_SLASH
+pointer  field_syllables  0x000005bc  FULLWIDTH_SLASH
+pointer  field_syllables  0x000005c4  FIELD_INPUT_COLON
+pointer  field_syllables  0x000005c8  FULLWIDTH_COLON
+pointer  field_syllables  0x000005d0  FIELD_INPUT_SEMICOLON
+pointer  field_syllables  0x000005d4  FULLWIDTH_SEMICOLON
+pointer  field_syllables  0x000005dc  FIELD_INPUT_QUESTION_MARK
+pointer  field_syllables  0x000005e0  FULLWIDTH_QUESTION_MARK
+pointer  field_syllables  0x000005e8  FIELD_INPUT_EXCLAMATION_MARK
+pointer  field_syllables  0x000005ec  FULLWIDTH_EXCLAMATION_MARK
+pointer  field_syllables  0x000005f4  FIELD_INPUT_TILDE
+pointer  field_syllables  0x000005f8  FULLWIDTH_TILDE
+pointer  field_syllables  0x00000600  FIELD_INPUT_VERTICAL_BAR
+pointer  field_syllables  0x00000604  FULLWIDTH_VERTICAL_BAR
+pointer  field_syllables  0x0000060c  FIELD_INPUT_GRAVE_ACCENT
+pointer  field_syllables  0x00000610  FULLWIDTH_GRAVE_ACCENT
+pointer  field_syllables  0x00000618  FIELD_INPUT_APOSTROPHE
+pointer  field_syllables  0x0000061c  FULLWIDTH_APOSTROPHE
+pointer  field_syllables  0x00000624  FIELD_INPUT_QUOTATION_MARK
+pointer  field_syllables  0x00000628  FULLWIDTH_QUOTATION_MARK
+pointer  field_syllables  0x00000630  FIELD_INPUT_LEFT_PARENTHESIS
+pointer  field_syllables  0x00000634  FULLWIDTH_LEFT_PARENTHESIS
+pointer  field_syllables  0x0000063c  FIELD_INPUT_RIGHT_PARENTHESIS
+pointer  field_syllables  0x00000640  FULLWIDTH_RIGHT_PARENTHESIS
+pointer  field_syllables  0x00000648  FIELD_INPUT_LEFT_BRACE
+pointer  field_syllables  0x0000064c  FULLWIDTH_LEFT_BRACE
+pointer  field_syllables  0x00000654  FIELD_INPUT_RIGHT_BRACE
+pointer  field_syllables  0x00000658  FULLWIDTH_RIGHT_BRACE
+pointer  field_syllables  0x00000660  FIELD_INPUT_LEFT_BRACKET
+pointer  field_syllables  0x00000664  FULLWIDTH_LEFT_BRACKET
+pointer  field_syllables  0x0000066c  FIELD_INPUT_RIGHT_BRACKET
+pointer  field_syllables  0x00000670  FULLWIDTH_RIGHT_BRACKET
+pointer  field_syllables  0x00000678  FIELD_INPUT_PLUS
+pointer  field_syllables  0x0000067c  FULLWIDTH_PLUS
+pointer  field_syllables  0x00000684  FIELD_INPUT_MINUS
+pointer  field_syllables  0x00000688  FULLWIDTH_MINUS
+pointer  field_syllables  0x00000690  FIELD_INPUT_EQUALS
+pointer  field_syllables  0x00000694  FULLWIDTH_EQUALS
+pointer  field_syllables  0x0000069c  FIELD_INPUT_LESS_THAN
+pointer  field_syllables  0x000006a0  FULLWIDTH_LESS_THAN
+pointer  field_syllables  0x000006a8  FIELD_INPUT_GREATER_THAN
+pointer  field_syllables  0x000006ac  FULLWIDTH_GREATER_THAN
+pointer  field_syllables  0x000006b4  FIELD_INPUT_BACKSLASH
+pointer  field_syllables  0x000006b8  FULLWIDTH_BACKSLASH
+pointer  field_syllables  0x000006c0  FIELD_INPUT_DOLLAR
+pointer  field_syllables  0x000006c4  FULLWIDTH_DOLLAR
+pointer  field_syllables  0x000006cc  FIELD_INPUT_PERCENT
+pointer  field_syllables  0x000006d0  FULLWIDTH_PERCENT
+pointer  field_syllables  0x000006d8  FIELD_INPUT_NUMBER_SIGN
+pointer  field_syllables  0x000006dc  FULLWIDTH_NUMBER_SIGN
+pointer  field_syllables  0x000006e4  FIELD_INPUT_AMPERSAND
+pointer  field_syllables  0x000006e8  FULLWIDTH_AMPERSAND
+pointer  field_syllables  0x000006f0  FIELD_INPUT_ASTERISK
+pointer  field_syllables  0x000006f4  FULLWIDTH_ASTERISK
+pointer  field_syllables  0x000006fc  FIELD_INPUT_AT_SIGN
+pointer  field_syllables  0x00000700  FULLWIDTH_AT_SIGN
+pointer  field_syllables  0x00000708  FIELD_INPUT_DIGIT_0
+pointer  field_syllables  0x0000070c  FULLWIDTH_DIGIT_0
+pointer  field_syllables  0x00000714  FIELD_INPUT_DIGIT_1
+pointer  field_syllables  0x00000718  FULLWIDTH_DIGIT_1
+pointer  field_syllables  0x00000720  FIELD_INPUT_DIGIT_2
+pointer  field_syllables  0x00000724  FULLWIDTH_DIGIT_2
+pointer  field_syllables  0x0000072c  FIELD_INPUT_DIGIT_3
+pointer  field_syllables  0x00000730  FULLWIDTH_DIGIT_3
+pointer  field_syllables  0x00000738  FIELD_INPUT_DIGIT_4
+pointer  field_syllables  0x0000073c  FULLWIDTH_DIGIT_4
+pointer  field_syllables  0x00000744  FIELD_INPUT_DIGIT_5
+pointer  field_syllables  0x00000748  FULLWIDTH_DIGIT_5
+pointer  field_syllables  0x00000750  FIELD_INPUT_DIGIT_6
+pointer  field_syllables  0x00000754  FULLWIDTH_DIGIT_6
+pointer  field_syllables  0x0000075c  FIELD_INPUT_DIGIT_7
+pointer  field_syllables  0x00000760  FULLWIDTH_DIGIT_7
+pointer  field_syllables  0x00000768  FIELD_INPUT_DIGIT_8
+pointer  field_syllables  0x0000076c  FULLWIDTH_DIGIT_8
+pointer  field_syllables  0x00000774  FIELD_INPUT_DIGIT_9
+pointer  field_syllables  0x00000778  FULLWIDTH_DIGIT_9
+pointer  field_syllables  0x00000780  ROMAJI_YA
+pointer  field_syllables  0x00000784  HIRAGANA_YA
+pointer  field_syllables  0x00000788  KATAKANA_YA
+pointer  field_syllables  0x0000078c  ROMAJI_YU
+pointer  field_syllables  0x00000790  HIRAGANA_YU
+pointer  field_syllables  0x00000794  KATAKANA_YU
+pointer  field_syllables  0x00000798  ROMAJI_YO
+pointer  field_syllables  0x0000079c  HIRAGANA_YO
+pointer  field_syllables  0x000007a0  KATAKANA_YO
+pointer  field_syllables  0x000007a4  ROMAJI_A
+pointer  field_syllables  0x000007a8  HIRAGANA_A
+pointer  field_syllables  0x000007ac  KATAKANA_A
+pointer  field_syllables  0x000007b0  ROMAJI_I
+pointer  field_syllables  0x000007b4  HIRAGANA_I
+pointer  field_syllables  0x000007b8  KATAKANA_I
+pointer  field_syllables  0x000007bc  ROMAJI_U
+pointer  field_syllables  0x000007c0  HIRAGANA_U
+pointer  field_syllables  0x000007c4  KATAKANA_U
+pointer  field_syllables  0x000007c8  ROMAJI_E
+pointer  field_syllables  0x000007cc  HIRAGANA_E
+pointer  field_syllables  0x000007d0  KATAKANA_E
+pointer  field_syllables  0x000007d4  ROMAJI_O
+pointer  field_syllables  0x000007d8  HIRAGANA_O
+pointer  field_syllables  0x000007dc  KATAKANA_O

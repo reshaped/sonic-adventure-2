@@ -1,0 +1,15 @@
+text KD_SO_HASIRA4 14
+text KD_SO_HASIRA5 14
+text KD_SO_KABE1 12
+text KD_SO_KABE2 12
+text KD_SO_KABE4 12
+text KD_SO_KAGE1 12
+text KD_SO_KAGE2 12
+
+pointer  textures  0x00000000  KD_SO_HASIRA4
+pointer  textures  0x0000000c  KD_SO_HASIRA5
+pointer  textures  0x00000018  KD_SO_KABE1
+pointer  textures  0x00000024  KD_SO_KABE2
+pointer  textures  0x00000030  KD_SO_KABE4
+pointer  textures  0x0000003c  KD_SO_KAGE1
+pointer  textures  0x00000048  KD_SO_KAGE2

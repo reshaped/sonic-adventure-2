@@ -1,0 +1,12 @@
+datum  sphere_polygons  D  0x00000000  498
+datum  sphere_vertices  D  0x000001f4  2220
+datum  sphere_model  D  0x00000aa0  24
+datum  collision_sphere_object  D  0x00000ab8  52
+datum  hemisphere_polygons  D  0x00000aec  202
+datum  hemisphere_vertices  D  0x00000bb8  996
+datum  hemisphere_model  D  0x00000f9c  24
+datum  collision_hemisphere_object  D  0x00000fb4  52
+datum  tube_polygons  D  0x00000fe8  66
+datum  tube_vertices  D  0x0000102c  492
+datum  tube_model  D  0x00001218  24
+datum  collision_tube_object  D  0x00001230  52

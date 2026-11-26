@@ -1,0 +1,3 @@
+pointer  wall_fire_flame_model  0x00000000  wall_fire_flame_vertices
+pointer  wall_fire_flame_model  0x00000004  wall_fire_flame_polygons
+pointer  wall_fire_flame_object  0x00000004  wall_fire_flame_model

@@ -1,0 +1,10 @@
+text  LASER_TEXTURE_ENEMY5  7
+
+pointer  laser_texname  0x00000000  LASER_TEXTURE_ENEMY5
+pointer  laser_texlist  0x00000000  laser_texname
+pointer  laser_beam_model  0x00000000  laser_beam_vertices
+pointer  laser_beam_model  0x00000004  laser_beam_polygons
+pointer  laser_beam_object  0x00000004  laser_beam_model
+pointer  laser_ring_model  0x00000000  laser_ring_vertices
+pointer  laser_ring_model  0x00000004  laser_ring_polygons
+pointer  laser_ring_object  0x00000004  laser_ring_model

@@ -1,0 +1,102 @@
+text CHAO_PREFIX  3
+text EFFECTS_SONIC_SHADOW_MLT  13
+text EFFECTS_TAILS_EGGMAN_MLT  13
+text EFFECTS_KNUCKLES_ROUGE_MLT  13
+text EFFECTS_WALKERS_MLT  13
+text VOICES_SONIC_JP  11
+text VOICES_SONIC_EN  12
+text VOICES_SHADOW_JP  11
+text VOICES_SHADOW_EN  12
+text VOICES_TAILS_JP  11
+text VOICES_TAILS_EN  12
+text VOICES_EGGMAN_JP  11
+text VOICES_EGGMAN_EN  12
+text VOICES_KNUCKLES_JP  11
+text VOICES_KNUCKLES_EN  12
+text VOICES_ROUGE_JP  11
+text VOICES_ROUGE_EN  12
+text VOICES_2P_SONIC_SHADOW_JP  13
+text VOICES_2P_SONIC_SHADOW_EN  14
+text VOICES_2P_KNUCKLES_ROUGE_JP  13
+text VOICES_2P_KNUCKLES_ROUGE_EN  14
+text VOICES_2P_WALKERS_JP  13
+text VOICES_2P_WALKERS_EN  14
+
+pointer sound_list_0  0x00000004  sounds_0
+pointer sound_list_1  0x00000004  sounds_1
+pointer sound_list_ss  0x00000004  sounds_ss
+pointer sound_list_kr  0x00000004  sounds_kr
+pointer sound_list_wk  0x00000004  sounds_wk
+pointer sound_list_te  0x00000004  sounds_te
+pointer voice_list_ss  0x00000004  voice_sounds_ss
+pointer voice_list_kr  0x00000004  voice_sounds_kr
+pointer character_sounds  0x00000004  EFFECTS_SONIC_SHADOW_MLT
+pointer character_sounds  0x00000008  sound_list_ss
+pointer character_sounds  0x00000010  EFFECTS_SONIC_SHADOW_MLT
+pointer character_sounds  0x00000014  sound_list_ss
+pointer character_sounds  0x0000001c  EFFECTS_TAILS_EGGMAN_MLT
+pointer character_sounds  0x00000020  sound_list_te
+pointer character_sounds  0x00000028  EFFECTS_TAILS_EGGMAN_MLT
+pointer character_sounds  0x0000002c  sound_list_te
+pointer character_sounds  0x00000034  EFFECTS_KNUCKLES_ROUGE_MLT
+pointer character_sounds  0x00000038  sound_list_kr
+pointer character_sounds  0x00000040  EFFECTS_KNUCKLES_ROUGE_MLT
+pointer character_sounds  0x00000044  sound_list_kr
+pointer character_sounds  0x0000004c  EFFECTS_WALKERS_MLT
+pointer character_sounds  0x00000050  sound_list_wk
+pointer character_sounds  0x00000058  EFFECTS_WALKERS_MLT
+pointer character_sounds  0x0000005c  sound_list_wk
+pointer character_voices  0x00000004  VOICES_SONIC_JP
+pointer character_voices  0x00000008  VOICES_SONIC_EN
+pointer character_voices  0x0000000c  voice_list_ss
+pointer character_voices  0x00000014  VOICES_SHADOW_JP
+pointer character_voices  0x00000018  VOICES_SHADOW_EN
+pointer character_voices  0x0000001c  voice_list_ss
+pointer character_voices  0x00000024  VOICES_TAILS_JP
+pointer character_voices  0x00000028  VOICES_TAILS_EN
+pointer character_voices  0x0000002c  voice_list_wk
+pointer character_voices  0x00000034  VOICES_EGGMAN_JP
+pointer character_voices  0x00000038  VOICES_EGGMAN_EN
+pointer character_voices  0x0000003c  voice_list_wk
+pointer character_voices  0x00000044  VOICES_KNUCKLES_JP
+pointer character_voices  0x00000048  VOICES_KNUCKLES_EN
+pointer character_voices  0x0000004c  voice_list_kr
+pointer character_voices  0x00000054  VOICES_ROUGE_JP
+pointer character_voices  0x00000058  VOICES_ROUGE_EN
+pointer character_voices  0x0000005c  voice_list_kr
+pointer character_voices  0x00000064  VOICES_TAILS_JP
+pointer character_voices  0x00000068  VOICES_TAILS_EN
+pointer character_voices  0x0000006c  voice_list_wk
+pointer character_voices  0x00000074  VOICES_EGGMAN_JP
+pointer character_voices  0x00000078  VOICES_EGGMAN_EN
+pointer character_voices  0x0000007c  voice_list_wk
+pointer character_voices  0x00000084  VOICES_SONIC_JP
+pointer character_voices  0x00000088  VOICES_SONIC_EN
+pointer character_voices  0x0000008c  voice_list_ss
+pointer character_voices  0x00000094  VOICES_SHADOW_JP
+pointer character_voices  0x00000098  VOICES_SHADOW_EN
+pointer character_voices  0x0000009c  voice_list_ss
+pointer character_voices_2p  0x00000004  VOICES_2P_SONIC_SHADOW_JP
+pointer character_voices_2p  0x00000008  VOICES_2P_SONIC_SHADOW_EN
+pointer character_voices_2p  0x0000000c  voice_list_ss
+pointer character_voices_2p  0x00000014  VOICES_2P_SONIC_SHADOW_JP
+pointer character_voices_2p  0x00000018  VOICES_2P_SONIC_SHADOW_EN
+pointer character_voices_2p  0x0000001c  voice_list_ss
+pointer character_voices_2p  0x00000024  VOICES_2P_KNUCKLES_ROUGE_JP
+pointer character_voices_2p  0x00000028  VOICES_2P_KNUCKLES_ROUGE_EN
+pointer character_voices_2p  0x0000002c  voice_list_kr
+pointer character_voices_2p  0x00000034  VOICES_2P_KNUCKLES_ROUGE_JP
+pointer character_voices_2p  0x00000038  VOICES_2P_KNUCKLES_ROUGE_EN
+pointer character_voices_2p  0x0000003c  voice_list_kr
+pointer character_voices_2p  0x00000044  VOICES_2P_WALKERS_JP
+pointer character_voices_2p  0x00000048  VOICES_2P_WALKERS_EN
+pointer character_voices_2p  0x0000004c  voice_list_wk
+pointer character_voices_2p  0x00000054  VOICES_2P_WALKERS_JP
+pointer character_voices_2p  0x00000058  VOICES_2P_WALKERS_EN
+pointer character_voices_2p  0x0000005c  voice_list_wk
+pointer character_voices_2p  0x00000064  VOICES_2P_SONIC_SHADOW_JP
+pointer character_voices_2p  0x00000068  VOICES_2P_SONIC_SHADOW_EN
+pointer character_voices_2p  0x0000006c  voice_list_ss
+pointer voice_list_wk  0x00000004  voice_sounds_wk
+pointer sound_list_4  0x00000004  sounds_4
+pointer sound_list_7  0x00000004  sounds_7

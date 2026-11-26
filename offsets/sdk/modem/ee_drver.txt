@@ -1,0 +1,4 @@
+datum  eeprom_profile_registers  CSG  0x00000000  40
+datum  eeprom_initial_header  CSG  0x00000028  12
+datum  eeprom_dial_label  CSG  0x00000034  16
+datum  eeprom_logon_label  CSG  0x00000044  13

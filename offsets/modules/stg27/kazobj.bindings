@@ -1,0 +1,60 @@
+text  COLONY_TEXT_MIU256_CG001  13
+text  COLONY_TEXT_MIU128_CG016  13
+text  COLONY_TEXT_MIU256_CG004  13
+text  COLONY_TEXT_MIU512_CG003  13
+text  COLONY_TEXT_MIU128_CG007  13
+text  COLONY_TEXT_MIU64_CG009  12
+text  COLONY_TEXT_MIU64_CG012  12
+text  COLONY_TEXT_ET64_4  7
+text  COLONY_TEXT_MIU64_CG007  12
+text  COLONY_TEXT_MIU64_CG010  12
+pointer  kazobj_0_names  0x00000000  COLONY_TEXT_MIU256_CG001
+pointer  kazobj_texlist_0  0x00000000  kazobj_0_names
+pointer  kazobj_0_model  0x00000000  kazobj_0_vertices
+pointer  kazobj_0_model  0x00000004  kazobj_0_polygons
+pointer  kazobj_model_0  0x00000004  kazobj_0_model
+pointer  kazobj_1_names  0x00000000  COLONY_TEXT_MIU128_CG016
+pointer  kazobj_1_names  0x0000000c  COLONY_TEXT_MIU256_CG004
+pointer  kazobj_1_names  0x00000018  COLONY_TEXT_MIU512_CG003
+pointer  kazobj_texlist_1  0x00000000  kazobj_1_names
+pointer  kazobj_1_model  0x00000000  kazobj_1_vertices
+pointer  kazobj_1_model  0x00000004  kazobj_1_polygons
+pointer  kazobj_model_1  0x00000004  kazobj_1_model
+pointer  kazobj_2_names  0x00000000  COLONY_TEXT_MIU128_CG007
+pointer  kazobj_2_names  0x0000000c  COLONY_TEXT_MIU256_CG001
+pointer  kazobj_2_names  0x00000018  COLONY_TEXT_MIU64_CG009
+pointer  kazobj_2_names  0x00000024  COLONY_TEXT_MIU64_CG012
+pointer  kazobj_texlist_2  0x00000000  kazobj_2_names
+pointer  kazobj_2_model  0x00000000  kazobj_2_vertices
+pointer  kazobj_2_model  0x00000004  kazobj_2_polygons
+pointer  kazobj_model_2  0x00000004  kazobj_2_model
+pointer  kazobj_3_names  0x00000000  COLONY_TEXT_ET64_4
+pointer  kazobj_3_names  0x0000000c  COLONY_TEXT_MIU512_CG003
+pointer  kazobj_3_names  0x00000018  COLONY_TEXT_MIU64_CG007
+pointer  kazobj_3_names  0x00000024  COLONY_TEXT_MIU64_CG010
+pointer  kazobj_texlist_3  0x00000000  kazobj_3_names
+pointer  kazobj_3_model  0x00000000  kazobj_3_vertices
+pointer  kazobj_3_model  0x00000004  kazobj_3_polygons
+pointer  kazobj_model_3  0x00000004  kazobj_3_model
+pointer  kazobj_4_names  0x00000000  COLONY_TEXT_ET64_4
+pointer  kazobj_4_names  0x0000000c  COLONY_TEXT_MIU512_CG003
+pointer  kazobj_4_names  0x00000018  COLONY_TEXT_MIU64_CG007
+pointer  kazobj_4_names  0x00000024  COLONY_TEXT_MIU64_CG010
+pointer  kazobj_texlist_4  0x00000000  kazobj_4_names
+pointer  kazobj_4_model  0x00000000  kazobj_4_vertices
+pointer  kazobj_4_model  0x00000004  kazobj_4_polygons
+pointer  kazobj_model_4  0x00000004  kazobj_4_model
+pointer  kazobj_5_names  0x00000000  COLONY_TEXT_ET64_4
+pointer  kazobj_5_names  0x0000000c  COLONY_TEXT_MIU512_CG003
+pointer  kazobj_5_names  0x00000018  COLONY_TEXT_MIU64_CG007
+pointer  kazobj_5_names  0x00000024  COLONY_TEXT_MIU64_CG010
+pointer  kazobj_texlist_5  0x00000000  kazobj_5_names
+pointer  kazobj_5_model  0x00000000  kazobj_5_vertices
+pointer  kazobj_5_model  0x00000004  kazobj_5_polygons
+pointer  kazobj_model_5  0x00000004  kazobj_5_model
+pointer  colony_kazobj_texlists  0x00000000  kazobj_texlist_0
+pointer  colony_kazobj_texlists  0x00000004  kazobj_texlist_1
+pointer  colony_kazobj_texlists  0x00000008  kazobj_texlist_2
+pointer  colony_kazobj_texlists  0x0000000c  kazobj_texlist_3
+pointer  colony_kazobj_texlists  0x00000010  kazobj_texlist_4
+pointer  colony_kazobj_texlists  0x00000014  kazobj_texlist_5

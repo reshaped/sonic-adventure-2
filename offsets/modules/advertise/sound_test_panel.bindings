@@ -1,0 +1,8 @@
+text SOUND_TEST_ARCHIVE 10
+
+pointer  groups  0x00000000  group_1
+pointer  groups  0x00000008  group_2
+pointer  groups  0x00000010  group_3
+pointer  groups  0x00000018  group_4
+pointer  groups  0x00000020  group_5
+pointer  groups  0x00000028  group_6

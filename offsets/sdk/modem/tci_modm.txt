@@ -1,0 +1,7 @@
+datum  tci_line_rates  CSG  0x00000000  60
+datum  ties_base  CSG  0x0000003c  52
+datum  ties_amp  CSG  0x00000070  52
+datum  ties_percent  CSG  0x000000a4  52
+datum  ties_slash  CSG  0x000000d8  52
+datum  ties_star  CSG  0x0000010c  52
+datum  ties_at  CSG  0x00000140  52

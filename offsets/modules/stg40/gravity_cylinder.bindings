@@ -1,0 +1,131 @@
+text  CYLINDER_TEX_MIU128_FC001  13
+text  CYLINDER_TEX_MIU128_FC002  13
+text  CYLINDER_TEX_MIU128_FC003  13
+text  CYLINDER_TEX_MIU128_FC004  13
+text  CYLINDER_TEX_MIU256_FC003  13
+text  CYLINDER_TEX_MIU64_FC002  12
+text  CYLINDER_TEX_MIU64_FCANIME00  16
+text  CYLINDER_TEX_MIU64_FCANIME01  16
+text  CYLINDER_TEX_MIU64_FCANIME02  16
+text  CYLINDER_TEX_MIU64_FCANIME03  16
+text  CYLINDER_TEX_MIU64_FCANIME04  16
+text  CYLINDER_TEX_MIU64_FCANIME05  16
+text  CYLINDER_TEX_MIU64_FCANIME06  16
+text  CYLINDER_TEX_MIU64_FCANIME07  16
+text  CYLINDER_TEX_MIU64_FCANIME08  16
+text  CYLINDER_TEX_MIU256_FC002  13
+text  CYLINDER_TEX_MIU64_FC006  12
+text  CYLINDER_TEX_MIU256_FC001  13
+pointer  textures_first  0x00000000  CYLINDER_TEX_MIU128_FC001
+pointer  textures_first  0x0000000c  CYLINDER_TEX_MIU128_FC002
+pointer  textures_first  0x00000018  CYLINDER_TEX_MIU128_FC003
+pointer  textures_first  0x00000024  CYLINDER_TEX_MIU128_FC004
+pointer  textures_first  0x00000030  CYLINDER_TEX_MIU256_FC003
+pointer  textures_first  0x0000003c  CYLINDER_TEX_MIU64_FC002
+pointer  textures_first  0x00000048  CYLINDER_TEX_MIU64_FCANIME00
+pointer  textures_first  0x00000054  CYLINDER_TEX_MIU64_FCANIME01
+pointer  textures_first  0x00000060  CYLINDER_TEX_MIU64_FCANIME02
+pointer  textures_first  0x0000006c  CYLINDER_TEX_MIU64_FCANIME03
+pointer  textures_first  0x00000078  CYLINDER_TEX_MIU64_FCANIME04
+pointer  textures_first  0x00000084  CYLINDER_TEX_MIU64_FCANIME05
+pointer  textures_first  0x00000090  CYLINDER_TEX_MIU64_FCANIME06
+pointer  textures_first  0x0000009c  CYLINDER_TEX_MIU64_FCANIME07
+pointer  textures_first  0x000000a8  CYLINDER_TEX_MIU64_FCANIME08
+pointer  gravity_cylinder_0_texlist  0x00000000  textures_first
+pointer  gravity_cylinder_0_shell_model  0x00000000  gravity_cylinder_0_shell_vertices
+pointer  gravity_cylinder_0_shell_model  0x00000004  gravity_cylinder_0_shell_polygons
+pointer  gravity_cylinder_0_shell  0x00000004  gravity_cylinder_0_shell_model
+pointer  gravity_cylinder_0_rings_model  0x00000000  gravity_cylinder_0_rings_vertices
+pointer  gravity_cylinder_0_rings_model  0x00000004  gravity_cylinder_0_rings_polygons
+pointer  gravity_cylinder_0_rings  0x00000004  gravity_cylinder_0_rings_model
+pointer  gravity_cylinder_0_rings  0x00000030  gravity_cylinder_0_shell
+pointer  gravity_cylinder_0_body_model  0x00000000  gravity_cylinder_0_body_vertices
+pointer  gravity_cylinder_0_body_model  0x00000004  gravity_cylinder_0_body_polygons
+pointer  gravity_cylinder_0_body  0x00000004  gravity_cylinder_0_body_model
+pointer  gravity_cylinder_0_body  0x0000002c  gravity_cylinder_0_rings
+pointer  textures_second  0x00000000  CYLINDER_TEX_MIU128_FC001
+pointer  textures_second  0x0000000c  CYLINDER_TEX_MIU128_FC002
+pointer  textures_second  0x00000018  CYLINDER_TEX_MIU128_FC003
+pointer  textures_second  0x00000024  CYLINDER_TEX_MIU128_FC004
+pointer  textures_second  0x00000030  CYLINDER_TEX_MIU256_FC002
+pointer  textures_second  0x0000003c  CYLINDER_TEX_MIU256_FC003
+pointer  textures_second  0x00000048  CYLINDER_TEX_MIU64_FC002
+pointer  textures_second  0x00000054  CYLINDER_TEX_MIU64_FCANIME00
+pointer  textures_second  0x00000060  CYLINDER_TEX_MIU64_FCANIME01
+pointer  textures_second  0x0000006c  CYLINDER_TEX_MIU64_FCANIME02
+pointer  textures_second  0x00000078  CYLINDER_TEX_MIU64_FCANIME03
+pointer  textures_second  0x00000084  CYLINDER_TEX_MIU64_FCANIME04
+pointer  textures_second  0x00000090  CYLINDER_TEX_MIU64_FCANIME05
+pointer  textures_second  0x0000009c  CYLINDER_TEX_MIU64_FCANIME06
+pointer  textures_second  0x000000a8  CYLINDER_TEX_MIU64_FCANIME07
+pointer  textures_second  0x000000b4  CYLINDER_TEX_MIU64_FCANIME08
+pointer  gravity_cylinder_1_texlist  0x00000000  textures_second
+pointer  gravity_cylinder_1_rings_model  0x00000000  gravity_cylinder_1_rings_vertices
+pointer  gravity_cylinder_1_rings_model  0x00000004  gravity_cylinder_1_rings_polygons
+pointer  gravity_cylinder_1_rings  0x00000004  gravity_cylinder_1_rings_model
+pointer  gravity_cylinder_1_shell_model  0x00000000  gravity_cylinder_1_shell_vertices
+pointer  gravity_cylinder_1_shell_model  0x00000004  gravity_cylinder_1_shell_polygons
+pointer  gravity_cylinder_1_shell  0x00000004  gravity_cylinder_1_shell_model
+pointer  gravity_cylinder_1_shell  0x00000030  gravity_cylinder_1_rings
+pointer  gravity_cylinder_1_body_model  0x00000000  gravity_cylinder_1_body_vertices
+pointer  gravity_cylinder_1_body_model  0x00000004  gravity_cylinder_1_body_polygons
+pointer  gravity_cylinder_1_body  0x00000004  gravity_cylinder_1_body_model
+pointer  gravity_cylinder_1_body  0x0000002c  gravity_cylinder_1_shell
+pointer  textures_parts  0x00000000  CYLINDER_TEX_MIU128_FC002
+pointer  textures_parts  0x0000000c  CYLINDER_TEX_MIU128_FC003
+pointer  textures_parts  0x00000018  CYLINDER_TEX_MIU64_FC006
+pointer  gravity_cylinder_parts_texlist  0x00000000  textures_parts
+pointer  gravity_cylinder_parts_object_model  0x00000000  gravity_cylinder_parts_object_vertices
+pointer  gravity_cylinder_parts_object_model  0x00000004  gravity_cylinder_parts_object_polygons
+pointer  gravity_cylinder_parts_object  0x00000004  gravity_cylinder_parts_object_model
+pointer  lid_faces  0x00000004  lid_indices
+pointer  lid_model  0x00000000  lid_points
+pointer  lid_model  0x00000004  lid_normals
+pointer  lid_model  0x0000000c  lid_faces
+pointer  lid_model  0x00000010  lid_material
+pointer  gravity_cylinder_1_lid  0x00000004  lid_model
+pointer  textures_spark  0x00000000  CYLINDER_TEX_MIU128_FC003
+pointer  textures_spark  0x0000000c  CYLINDER_TEX_MIU64_FC006
+pointer  gravity_cylinder_spark_texlist  0x00000000  textures_spark
+pointer  gravity_cylinder_spark_object_model  0x00000000  gravity_cylinder_spark_object_vertices
+pointer  gravity_cylinder_spark_object_model  0x00000004  gravity_cylinder_spark_object_polygons
+pointer  gravity_cylinder_spark_object  0x00000004  gravity_cylinder_spark_object_model
+pointer  spark_field_model  0x00000000  gravity_cylinder_spark_points
+pointer  spark_field_model  0x00000004  spark_field_polygons
+pointer  spark_field_object  0x00000004  spark_field_model
+pointer  textures_spark_1  0x00000000  CYLINDER_TEX_MIU256_FC001
+pointer  gravity_cylinder_spark_1_texlist  0x00000000  textures_spark_1
+pointer  gravity_cylinder_spark_1_object_model  0x00000000  gravity_cylinder_spark_1_object_vertices
+pointer  gravity_cylinder_spark_1_object_model  0x00000004  gravity_cylinder_spark_1_object_polygons
+pointer  gravity_cylinder_spark_1_object  0x00000004  gravity_cylinder_spark_1_object_model
+pointer  textures_spark_2  0x00000000  CYLINDER_TEX_MIU256_FC001
+pointer  gravity_cylinder_spark_2_texlist  0x00000000  textures_spark_2
+pointer  gravity_cylinder_spark_2_object_model  0x00000000  gravity_cylinder_spark_2_object_vertices
+pointer  gravity_cylinder_spark_2_object_model  0x00000004  gravity_cylinder_spark_2_object_polygons
+pointer  gravity_cylinder_spark_2_object  0x00000004  gravity_cylinder_spark_2_object_model
+pointer  textures_spark_3  0x00000000  CYLINDER_TEX_MIU256_FC001
+pointer  gravity_cylinder_spark_3_texlist  0x00000000  textures_spark_3
+pointer  gravity_cylinder_spark_3_object_model  0x00000000  gravity_cylinder_spark_3_object_vertices
+pointer  gravity_cylinder_spark_3_object_model  0x00000004  gravity_cylinder_spark_3_object_polygons
+pointer  gravity_cylinder_spark_3_object  0x00000004  gravity_cylinder_spark_3_object_model
+pointer  textures_spark_4  0x00000000  CYLINDER_TEX_MIU256_FC001
+pointer  gravity_cylinder_spark_4_texlist  0x00000000  textures_spark_4
+pointer  gravity_cylinder_spark_4_object_model  0x00000000  gravity_cylinder_spark_4_object_vertices
+pointer  gravity_cylinder_spark_4_object_model  0x00000004  gravity_cylinder_spark_4_object_polygons
+pointer  gravity_cylinder_spark_4_object  0x00000004  gravity_cylinder_spark_4_object_model
+pointer  gravity_cylinder_spark_1_anim  0x00000010  spark_1_scroll_uvs
+pointer  gravity_cylinder_spark_2_anim  0x00000010  spark_2_scroll_uvs
+pointer  gravity_cylinder_spark_3_anim  0x00000010  spark_3_scroll_uvs
+pointer  gravity_cylinder_spark_4_anim  0x00000010  spark_4_scroll_uvs
+pointer  gravity_cylinder_texlists  0x00000000  gravity_cylinder_spark_1_texlist
+pointer  gravity_cylinder_texlists  0x00000004  gravity_cylinder_spark_2_texlist
+pointer  gravity_cylinder_texlists  0x00000008  gravity_cylinder_spark_3_texlist
+pointer  gravity_cylinder_texlists  0x0000000c  gravity_cylinder_spark_4_texlist
+pointer  gravity_cylinder_texlists  0x00000010  gravity_cylinder_0_texlist
+pointer  gravity_cylinder_texlists  0x00000014  gravity_cylinder_1_texlist
+pointer  gravity_cylinder_texlists  0x00000018  gravity_cylinder_parts_texlist
+pointer  gravity_cylinder_texlists  0x0000001c  gravity_cylinder_spark_texlist
+pointer  spark_parts  0x00000000  gravity_cylinder_spark_1_object
+pointer  spark_parts  0x00000004  gravity_cylinder_spark_2_object
+pointer  spark_parts  0x00000008  gravity_cylinder_spark_3_object
+pointer  spark_parts  0x0000000c  gravity_cylinder_spark_4_object

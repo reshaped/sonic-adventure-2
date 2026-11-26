@@ -1,0 +1,16 @@
+text  TIME_SWITCH_CIRCLE_TEXTURE  C  0x00000000  26
+datum  textures  D  0x00000000  12
+datum  time_switch_effect_texlist  D  0x0000000c  8
+datum  back_arc_polygons  D  0x00000014  470
+datum  back_arc_vertices  D  0x000001ec  716
+datum  back_arc_model  D  0x000004b8  24
+datum  back_arc  D  0x000004d0  52
+datum  front_arc_polygons  D  0x00000504  470
+datum  front_arc_vertices  D  0x000006dc  716
+datum  front_arc_model  D  0x000009a8  24
+datum  front_arc  D  0x000009c0  52
+datum  time_switch_effect  D  0x000009f4  52
+datum  front_arc_rotation  D  0x00000a28  3840
+datum  back_arc_rotation  D  0x00001928  3840
+datum  arc_channels  D  0x00002828  72
+datum  time_switch_motion  D  0x00002870  12

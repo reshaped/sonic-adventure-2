@@ -1,0 +1,19 @@
+text  GADGET_ARROW_ART_TEXTURE_1  12
+text  GADGET_ARROW_ART_TEXTURE_2  12
+text  GADGET_ARROW_ART_TEXTURE_3  12
+text  GADGET_ARROW_ART_TEXTURE_4  12
+text  GADGET_ARROW_ART_TEXTURE_5  12
+
+pointer  textures  0x00000000  GADGET_ARROW_ART_TEXTURE_1
+pointer  textures  0x0000000c  GADGET_ARROW_ART_TEXTURE_2
+pointer  textures  0x00000018  GADGET_ARROW_ART_TEXTURE_3
+pointer  textures  0x00000024  GADGET_ARROW_ART_TEXTURE_4
+pointer  textures  0x00000030  GADGET_ARROW_ART_TEXTURE_5
+pointer  gadget_arrow_texlist  0x00000000  textures
+pointer  gadget_arrow_object_node_1_mesh  0x00000000  gadget_arrow_object_node_1_vertices
+pointer  gadget_arrow_object_node_1_mesh  0x00000004  gadget_arrow_object_node_1_polygons
+pointer  gadget_arrow_object_node_1  0x00000004  gadget_arrow_object_node_1_mesh
+pointer  gadget_arrow_mesh  0x00000000  gadget_arrow_vertices
+pointer  gadget_arrow_mesh  0x00000004  gadget_arrow_polygons
+pointer  gadget_arrow_object  0x00000004  gadget_arrow_mesh
+pointer  gadget_arrow_object  0x0000002c  gadget_arrow_object_node_1

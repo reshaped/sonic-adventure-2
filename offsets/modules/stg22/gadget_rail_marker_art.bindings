@@ -1,0 +1,9 @@
+text  GADGET_RAIL_MARKER_ART_TEXTURE_1  13
+text  GADGET_RAIL_MARKER_ART_TEXTURE_2  13
+
+pointer  textures  0x00000000  GADGET_RAIL_MARKER_ART_TEXTURE_1
+pointer  textures  0x0000000c  GADGET_RAIL_MARKER_ART_TEXTURE_2
+pointer  gadget_marker_texlist  0x00000000  textures
+pointer  gadget_marker_mesh  0x00000000  gadget_marker_vertices
+pointer  gadget_marker_mesh  0x00000004  gadget_marker_polygons
+pointer  gadget_marker_object  0x00000004  gadget_marker_mesh

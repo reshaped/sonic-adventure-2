@@ -1,0 +1,584 @@
+include  objtex_common
+include  efftex_common
+text  SET_NAME_RING  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_3SPRING  8
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_UDREEL  7
+text  SET_NAME_ORI  4
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_ROCKET  10
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SCHBOX  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_MSGER  6
+text  SET_NAME_SSS  4
+text  SET_NAME_SOLIDBOX  9
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_SOAP_SW  8
+text  SET_NAME_SKULL  6
+text  SET_NAME_PSKULL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_STOPLSD  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MODMOD  8
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_EFLENSF0  9
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_E_AI  5
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_BOARDCOL  9
+text  SET_NAME_CARMAN  7
+text  SET_NAME_CARKAZ  7
+text  SET_NAME_TJUMPDAI  9
+text  SET_NAME_HAMMER  7
+text  SET_NAME_TRUCK  6
+text  SET_NAME_IRONBAR  8
+text  SET_NAME_TREEST  7
+text  SET_NAME_SWDRNGL  8
+text  SET_NAME_SWDRNGC  8
+text  SET_NAME_TREESHADOWS  12
+text  SET_NAME_LAMP  5
+text  SET_NAME_CARMANC  8
+text  SET_NAME_SIGNS  6
+text  SET_NAME_SIGNS_F  8
+text  SET_NAME_SBLG  5
+text  SET_NAME_ROADOBJ  8
+text  SET_NAME_PALM  5
+text  SET_NAME_BOARD  6
+text  SET_NAME_CARKAZ_S  9
+text  SET_NAME_SLIDER  7
+text  SET_NAME_GREEN_B  8
+text  SET_NAME_ADXCHG  7
+text  SET_NAME_BAR  4
+text  SET_NAME_FENCES  7
+text  SET_NAME_FENCEL  7
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_SIGNBOARD  10
+text  SET_NAME_POSTER  7
+text  SET_NAME_TREESTNB  9
+text  SET_NAME_POSTER3  8
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_E_PATH  7
+text  SET_NAME_GUIDANCE  9
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_SARROW  7
+text  SET_NAME_TRBACK  7
+text  SET_NAME_CARMAN_NEAR  12
+text  SET_NAME_SE_PATCAR  10
+text  SET_NAME_SE_KAZE  8
+text  SET_NAME_POSTERM  8
+text  SET_NAME_NOINPCOL  9
+text  SET_NAME_PIC  4
+pointer  city_escape_kinds  0x00000008  ring_step
+pointer  city_escape_kinds  0x0000000c  SET_NAME_RING
+pointer  city_escape_kinds  0x00000018  ring_linear_init
+pointer  city_escape_kinds  0x0000001c  SET_NAME_RING_LINEAR
+pointer  city_escape_kinds  0x00000028  ring_circle_init
+pointer  city_escape_kinds  0x0000002c  SET_NAME_RING_CIRCLE
+pointer  city_escape_kinds  0x00000038  spring_a_step
+pointer  city_escape_kinds  0x0000003c  SET_NAME_SPRA
+pointer  city_escape_kinds  0x00000048  spring_b_step
+pointer  city_escape_kinds  0x0000004c  SET_NAME_SPRB
+pointer  city_escape_kinds  0x00000058  triple_spring_init
+pointer  city_escape_kinds  0x0000005c  SET_NAME_3SPRING
+pointer  city_escape_kinds  0x00000068  big_jump_step
+pointer  city_escape_kinds  0x0000006c  SET_NAME_BIGJUMP
+pointer  city_escape_kinds  0x00000078  dash_panel_step
+pointer  city_escape_kinds  0x0000007c  SET_NAME_KASOKU
+pointer  city_escape_kinds  0x00000088  save_point_step
+pointer  city_escape_kinds  0x0000008c  SET_NAME_SAVEPOINT
+pointer  city_escape_kinds  0x00000098  switch_step
+pointer  city_escape_kinds  0x0000009c  SET_NAME_SWITCH
+pointer  city_escape_kinds  0x000000a8  item_box_step
+pointer  city_escape_kinds  0x000000ac  SET_NAME_ITEMBOX
+pointer  city_escape_kinds  0x000000b8  item_box_air_step
+pointer  city_escape_kinds  0x000000bc  SET_NAME_ITEMBOXAIR
+pointer  city_escape_kinds  0x000000c8  item_balloon_step
+pointer  city_escape_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  city_escape_kinds  0x000000d8  upgrade_init
+pointer  city_escape_kinds  0x000000dc  SET_NAME_LEVUPDAI
+pointer  city_escape_kinds  0x000000e8  goal_ring_init
+pointer  city_escape_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  city_escape_kinds  0x000000f8  emerald_init
+pointer  city_escape_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  city_escape_kinds  0x00000108  reel_init
+pointer  city_escape_kinds  0x0000010c  SET_NAME_UDREEL
+pointer  city_escape_kinds  0x00000118  cage_init
+pointer  city_escape_kinds  0x0000011c  SET_NAME_ORI
+pointer  city_escape_kinds  0x00000128  dynamite_init
+pointer  city_escape_kinds  0x0000012c  SET_NAME_DYNAMITE
+pointer  city_escape_kinds  0x00000138  wood_box_init
+pointer  city_escape_kinds  0x0000013c  SET_NAME_CONTWOOD
+pointer  city_escape_kinds  0x00000148  iron_box_init
+pointer  city_escape_kinds  0x0000014c  SET_NAME_CONTIRON
+pointer  city_escape_kinds  0x00000158  rocket_init
+pointer  city_escape_kinds  0x0000015c  SET_NAME_ROCKET
+pointer  city_escape_kinds  0x00000168  missile_init
+pointer  city_escape_kinds  0x0000016c  SET_NAME_ROCKETMISSSILE
+pointer  city_escape_kinds  0x00000178  search_box_init
+pointer  city_escape_kinds  0x0000017c  SET_NAME_SCHBOX
+pointer  city_escape_kinds  0x00000188  hint_box_init
+pointer  city_escape_kinds  0x0000018c  SET_NAME_HINTBOX
+pointer  city_escape_kinds  0x00000198  messenger_init
+pointer  city_escape_kinds  0x0000019c  SET_NAME_MSGER
+pointer  city_escape_kinds  0x000001a8  sss_init
+pointer  city_escape_kinds  0x000001ac  SET_NAME_SSS
+pointer  city_escape_kinds  0x000001b8  solid_box_init
+pointer  city_escape_kinds  0x000001bc  SET_NAME_SOLIDBOX
+pointer  city_escape_kinds  0x000001c8  dummy_object_init
+pointer  city_escape_kinds  0x000001cc  SET_NAME_DMYOBJ
+pointer  city_escape_kinds  0x000001d8  soap_switch_init
+pointer  city_escape_kinds  0x000001dc  SET_NAME_SOAP_SW
+pointer  city_escape_kinds  0x000001e8  skull_still_init
+pointer  city_escape_kinds  0x000001ec  SET_NAME_SKULL
+pointer  city_escape_kinds  0x000001f8  skull_lying_init
+pointer  city_escape_kinds  0x000001fc  SET_NAME_PSKULL
+pointer  city_escape_kinds  0x00000208  chao_pipe_init
+pointer  city_escape_kinds  0x0000020c  SET_NAME_CHAOPIPE
+pointer  city_escape_kinds  0x00000218  animal_init
+pointer  city_escape_kinds  0x0000021c  SET_NAME_MINIMAL
+pointer  city_escape_kinds  0x00000228  hidden_animal_init
+pointer  city_escape_kinds  0x0000022c  SET_NAME_WSMMLS
+pointer  city_escape_kinds  0x00000238  chao_box_init
+pointer  city_escape_kinds  0x0000023c  SET_NAME_CONTCHAO
+pointer  city_escape_kinds  0x00000248  stop_lsd_init
+pointer  city_escape_kinds  0x0000024c  SET_NAME_STOPLSD
+pointer  city_escape_kinds  0x00000258  knudai_init
+pointer  city_escape_kinds  0x0000025c  SET_NAME_KNUDAI
+pointer  city_escape_kinds  0x00000268  knudai_foothold_init
+pointer  city_escape_kinds  0x0000026c  SET_NAME_KDASIBA
+pointer  city_escape_kinds  0x00000278  knudai_warp_hole_init
+pointer  city_escape_kinds  0x0000027c  SET_NAME_KDWARPHOLE
+pointer  city_escape_kinds  0x00000288  knudai_door_init
+pointer  city_escape_kinds  0x0000028c  SET_NAME_KDDOOR
+pointer  city_escape_kinds  0x00000298  knudai_item_box_init
+pointer  city_escape_kinds  0x0000029c  SET_NAME_KDITEMBOX
+pointer  city_escape_kinds  0x000002a8  knudai_ring_linear_init
+pointer  city_escape_kinds  0x000002ac  SET_NAME_KDDRNGL
+pointer  city_escape_kinds  0x000002b8  knudai_ring_circle_init
+pointer  city_escape_kinds  0x000002bc  SET_NAME_KDDRNGC
+pointer  city_escape_kinds  0x000002c8  knudai_spring_init
+pointer  city_escape_kinds  0x000002cc  SET_NAME_KDSPRING
+pointer  city_escape_kinds  0x000002d8  knudai_spring_b_init
+pointer  city_escape_kinds  0x000002dc  SET_NAME_KDSPRINGB
+pointer  city_escape_kinds  0x000002e8  collision_sphere_step
+pointer  city_escape_kinds  0x000002ec  SET_NAME_SPHERE
+pointer  city_escape_kinds  0x000002f8  collision_cylinder_step
+pointer  city_escape_kinds  0x000002fc  SET_NAME_CCYL
+pointer  city_escape_kinds  0x00000308  collision_cube_step
+pointer  city_escape_kinds  0x0000030c  SET_NAME_CCUBE
+pointer  city_escape_kinds  0x00000318  collision_wall_step
+pointer  city_escape_kinds  0x0000031c  SET_NAME_CWALL
+pointer  city_escape_kinds  0x00000328  collision_circle_step
+pointer  city_escape_kinds  0x0000032c  SET_NAME_CCIRCLE
+pointer  city_escape_kinds  0x00000338  modifier_volume_init
+pointer  city_escape_kinds  0x0000033c  SET_NAME_MODMOD
+pointer  city_escape_kinds  0x00000348  effect_object_init
+pointer  city_escape_kinds  0x0000034c  SET_NAME_EFFOBJ0
+pointer  city_escape_kinds  0x00000358  lens_flare_init
+pointer  city_escape_kinds  0x0000035c  SET_NAME_EFLENSF0
+pointer  city_escape_kinds  0x00000368  weight_init
+pointer  city_escape_kinds  0x0000036c  SET_NAME_BUNCHIN
+pointer  city_escape_kinds  0x00000378  iron_ball_init
+pointer  city_escape_kinds  0x0000037c  SET_NAME_IRONBALL2
+pointer  city_escape_kinds  0x00000388  beetle_step
+pointer  city_escape_kinds  0x0000038c  SET_NAME_E_KUMI
+pointer  city_escape_kinds  0x00000398  ai_step
+pointer  city_escape_kinds  0x0000039c  SET_NAME_E_AI
+pointer  city_escape_kinds  0x000003a8  light_switch_init
+pointer  city_escape_kinds  0x000003ac  SET_NAME_LIGHT_SW
+pointer  city_escape_kinds  0x000003b8  board_trigger_init
+pointer  city_escape_kinds  0x000003bc  SET_NAME_BOARDCOL
+pointer  city_escape_kinds  0x000003c8  traffic_init
+pointer  city_escape_kinds  0x000003cc  SET_NAME_CARMAN
+pointer  city_escape_kinds  0x000003d8  car_init
+pointer  city_escape_kinds  0x000003dc  SET_NAME_CARKAZ
+pointer  city_escape_kinds  0x000003e8  ramp_init
+pointer  city_escape_kinds  0x000003ec  SET_NAME_TJUMPDAI
+pointer  city_escape_kinds  0x000003f8  hammer_init
+pointer  city_escape_kinds  0x000003fc  SET_NAME_HAMMER
+pointer  city_escape_kinds  0x00000408  truck_init
+pointer  city_escape_kinds  0x0000040c  SET_NAME_TRUCK
+pointer  city_escape_kinds  0x00000418  iron_bar_init
+pointer  city_escape_kinds  0x0000041c  SET_NAME_IRONBAR
+pointer  city_escape_kinds  0x00000428  tree_init
+pointer  city_escape_kinds  0x0000042c  SET_NAME_TREEST
+pointer  city_escape_kinds  0x00000438  switch_ring_linear_init
+pointer  city_escape_kinds  0x0000043c  SET_NAME_SWDRNGL
+pointer  city_escape_kinds  0x00000448  switch_ring_circle_init
+pointer  city_escape_kinds  0x0000044c  SET_NAME_SWDRNGC
+pointer  city_escape_kinds  0x00000458  tree_shadows_init
+pointer  city_escape_kinds  0x0000045c  SET_NAME_TREESHADOWS
+pointer  city_escape_kinds  0x00000468  lamp_init
+pointer  city_escape_kinds  0x0000046c  SET_NAME_LAMP
+pointer  city_escape_kinds  0x00000478  traffic_wait_init
+pointer  city_escape_kinds  0x0000047c  SET_NAME_CARMANC
+pointer  city_escape_kinds  0x00000488  sign_init
+pointer  city_escape_kinds  0x0000048c  SET_NAME_SIGNS
+pointer  city_escape_kinds  0x00000498  sign_init
+pointer  city_escape_kinds  0x0000049c  SET_NAME_SIGNS_F
+pointer  city_escape_kinds  0x000004a8  sblg_init
+pointer  city_escape_kinds  0x000004ac  SET_NAME_SBLG
+pointer  city_escape_kinds  0x000004b8  road_object_init
+pointer  city_escape_kinds  0x000004bc  SET_NAME_ROADOBJ
+pointer  city_escape_kinds  0x000004c8  palm_init
+pointer  city_escape_kinds  0x000004cc  SET_NAME_PALM
+pointer  city_escape_kinds  0x000004d8  board_init
+pointer  city_escape_kinds  0x000004dc  SET_NAME_BOARD
+pointer  city_escape_kinds  0x000004e8  car_init
+pointer  city_escape_kinds  0x000004ec  SET_NAME_CARKAZ_S
+pointer  city_escape_kinds  0x000004f8  slider_init
+pointer  city_escape_kinds  0x000004fc  SET_NAME_SLIDER
+pointer  city_escape_kinds  0x00000508  green_b_init
+pointer  city_escape_kinds  0x0000050c  SET_NAME_GREEN_B
+pointer  city_escape_kinds  0x00000518  music_change_init
+pointer  city_escape_kinds  0x0000051c  SET_NAME_ADXCHG
+pointer  city_escape_kinds  0x00000528  bar_init
+pointer  city_escape_kinds  0x0000052c  SET_NAME_BAR
+pointer  city_escape_kinds  0x00000538  fence_short_init
+pointer  city_escape_kinds  0x0000053c  SET_NAME_FENCES
+pointer  city_escape_kinds  0x00000548  fence_long_init
+pointer  city_escape_kinds  0x0000054c  SET_NAME_FENCEL
+pointer  city_escape_kinds  0x00000558  big_step
+pointer  city_escape_kinds  0x0000055c  SET_NAME_BIG_THE_CAT
+pointer  city_escape_kinds  0x00000568  signboard_init
+pointer  city_escape_kinds  0x0000056c  SET_NAME_SIGNBOARD
+pointer  city_escape_kinds  0x00000578  poster_init
+pointer  city_escape_kinds  0x0000057c  SET_NAME_POSTER
+pointer  city_escape_kinds  0x00000588  plain_tree_init
+pointer  city_escape_kinds  0x0000058c  SET_NAME_TREESTNB
+pointer  city_escape_kinds  0x00000598  poster_3_init
+pointer  city_escape_kinds  0x0000059c  SET_NAME_POSTER3
+pointer  city_escape_kinds  0x000005a8  technique_link_init
+pointer  city_escape_kinds  0x000005ac  SET_NAME_LINKLINK
+pointer  city_escape_kinds  0x000005b8  path_enemy_step
+pointer  city_escape_kinds  0x000005bc  SET_NAME_E_PATH
+pointer  city_escape_kinds  0x000005c8  guidance_init
+pointer  city_escape_kinds  0x000005cc  SET_NAME_GUIDANCE
+pointer  city_escape_kinds  0x000005d8  gold_beetle_step
+pointer  city_escape_kinds  0x000005dc  SET_NAME_E_GOLD
+pointer  city_escape_kinds  0x000005e8  sarrow_init
+pointer  city_escape_kinds  0x000005ec  SET_NAME_SARROW
+pointer  city_escape_kinds  0x000005f8  trback_init
+pointer  city_escape_kinds  0x000005fc  SET_NAME_TRBACK
+pointer  city_escape_kinds  0x00000608  traffic_init
+pointer  city_escape_kinds  0x0000060c  SET_NAME_CARMAN_NEAR
+pointer  city_escape_kinds  0x00000618  patrol_car_sound_init
+pointer  city_escape_kinds  0x0000061c  SET_NAME_SE_PATCAR
+pointer  city_escape_kinds  0x00000628  wind_sound_init
+pointer  city_escape_kinds  0x0000062c  SET_NAME_SE_KAZE
+pointer  city_escape_kinds  0x00000638  poster_m_init
+pointer  city_escape_kinds  0x0000063c  SET_NAME_POSTERM
+pointer  city_escape_kinds  0x00000648  no_input_init
+pointer  city_escape_kinds  0x0000064c  SET_NAME_NOINPCOL
+pointer  city_escape_kinds  0x00000658  pickup_init
+pointer  city_escape_kinds  0x0000065c  SET_NAME_PIC
+
+text  STAGE_TEXTURE_CE64_ITA001  12
+text  STAGE_TEXTURE_CE64_ITA002  12
+text  STAGE_TEXTURE_CE64_ITA003  12
+text  STAGE_TEXTURE_GUN_LOGO001  12
+text  STAGE_TEXTURE_GUN_T1  7
+text  STAGE_TEXTURE_JUSTICE  8
+text  STAGE_TEXTURE_LIGHT1  7
+text  STAGE_TEXTURE_LIGHT2  7
+text  STAGE_TEXTURE_MIU128_CE001  13
+text  STAGE_TEXTURE_MIU128_CE002  13
+text  STAGE_TEXTURE_MIU128_CE003  13
+text  STAGE_TEXTURE_MIU128_CE004  13
+text  STAGE_TEXTURE_MIU128_CE005  13
+text  STAGE_TEXTURE_MIU128_CE006  13
+text  STAGE_TEXTURE_MIU128_CE007  13
+text  STAGE_TEXTURE_MIU128_CE008  13
+text  STAGE_TEXTURE_MIU128_CE009  13
+text  STAGE_TEXTURE_MIU128_CE010  13
+text  STAGE_TEXTURE_MIU128_CE011  13
+text  STAGE_TEXTURE_MIU128_CE012  13
+text  STAGE_TEXTURE_MIU128_CE013  13
+text  STAGE_TEXTURE_MIU128_CE014  13
+text  STAGE_TEXTURE_MIU128_CE015  13
+text  STAGE_TEXTURE_MIU128_RH004  13
+text  STAGE_TEXTURE_MIU32_CE001  12
+text  STAGE_TEXTURE_MIU32_CE002  12
+text  STAGE_TEXTURE_MIU32_CE003  12
+text  STAGE_TEXTURE_MIU32_CE004  12
+text  STAGE_TEXTURE_MIU32_CE005  12
+text  STAGE_TEXTURE_MIU32_CE006  12
+text  STAGE_TEXTURE_MIU32_CE007  12
+text  STAGE_TEXTURE_MIU32_CE008  12
+text  STAGE_TEXTURE_MIU32_CE009  12
+text  STAGE_TEXTURE_MIU32_CE010  12
+text  STAGE_TEXTURE_MIU32_CE011  12
+text  STAGE_TEXTURE_MIU32_CE012  12
+text  STAGE_TEXTURE_MIU32_CE013  12
+text  STAGE_TEXTURE_MIU32_CE014  12
+text  STAGE_TEXTURE_MIU32_CE015  12
+text  STAGE_TEXTURE_MIU32_RH003  12
+text  STAGE_TEXTURE_MIU64_CE001  12
+text  STAGE_TEXTURE_MIU64_CE002  12
+text  STAGE_TEXTURE_MIU64_CE003  12
+text  STAGE_TEXTURE_MIU64_CE004  12
+text  STAGE_TEXTURE_MIU64_CE005  12
+text  STAGE_TEXTURE_MIU64_CE006  12
+text  STAGE_TEXTURE_MIU64_CE007  12
+text  STAGE_TEXTURE_MIU64_CE008  12
+text  STAGE_TEXTURE_MIU64_CE009  12
+text  STAGE_TEXTURE_MIU64_CE010  12
+text  STAGE_TEXTURE_MIU64_CE011  12
+text  STAGE_TEXTURE_MIU64_CE012  12
+text  STAGE_TEXTURE_MIU64_CE013  12
+text  STAGE_TEXTURE_MIU64_CE014  12
+text  STAGE_TEXTURE_MIU64_CE015  12
+text  STAGE_TEXTURE_MIU64_CE016  12
+text  STAGE_TEXTURE_MIU64_CE017  12
+text  STAGE_TEXTURE_MIU64_CE018  12
+text  STAGE_TEXTURE_MIU64_CE019  12
+text  STAGE_TEXTURE_MIU64_CE020  12
+text  STAGE_TEXTURE_MIU64_CE021  12
+text  STAGE_TEXTURE_MIU64_CE022  12
+text  STAGE_TEXTURE_MIU64_CE023  12
+text  STAGE_TEXTURE_MIU64_CE024  12
+text  STAGE_TEXTURE_MIU64_CE025  12
+text  STAGE_TEXTURE_MIU64_CE026  12
+text  STAGE_TEXTURE_MIU64_CE027  12
+text  STAGE_TEXTURE_MIU64_CE028  12
+text  STAGE_TEXTURE_MIU64_CE029  12
+text  STAGE_TEXTURE_MIU64_CE030  12
+text  STAGE_TEXTURE_MIU64_CE031  12
+text  STAGE_TEXTURE_MIU64_CE032  12
+text  STAGE_TEXTURE_MIU64_CE033  12
+text  STAGE_TEXTURE_MIU64_CE034  12
+text  STAGE_TEXTURE_MIU64_CE035  12
+text  STAGE_TEXTURE_MIU64_CE036  12
+text  STAGE_TEXTURE_MIU64_CE037  12
+text  STAGE_TEXTURE_MIU64_CE038  12
+text  STAGE_TEXTURE_MIU64_CE039  12
+text  STAGE_TEXTURE_MIU64_CE040  12
+text  STAGE_TEXTURE_MIU64_CE041  12
+text  STAGE_TEXTURE_MIU64_CE042  12
+text  STAGE_TEXTURE_MIU64_CE043  12
+text  STAGE_TEXTURE_MIU64_CE044  12
+text  STAGE_TEXTURE_MIU64_CE045  12
+text  STAGE_TEXTURE_MIU64_CE046  12
+text  STAGE_TEXTURE_MIU64_CE047  12
+text  STAGE_TEXTURE_MIU64_CE048  12
+text  STAGE_TEXTURE_MIU64_CE049  12
+text  STAGE_TEXTURE_MIU64_CE050  12
+text  STAGE_TEXTURE_MIU64_CE051  12
+text  STAGE_TEXTURE_NIGHTS1  8
+text  STAGE_TEXTURE_SCITY64_16  11
+text  STAGE_TEXTURE_TRUCK1  7
+text  STAGE_TEXTURE_TRUCK2  7
+text  STAGE_TEXTURE_TRUCK3  7
+text  STAGE_TEXTURE_TRUCK5  7
+text  STAGE_TEXTURE_TRUCK_TES01  12
+text  STAGE_TEXTURE_TRUCK_TES02  12
+text  STAGE_TEXTURE_WHEEL1  7
+text  PVM_OBJTEX_STG13  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+
+pointer  stage_objects_names  0x00000000  STAGE_TEXTURE_CE64_ITA001
+pointer  stage_objects_names  0x0000000c  STAGE_TEXTURE_CE64_ITA002
+pointer  stage_objects_names  0x00000018  STAGE_TEXTURE_CE64_ITA003
+pointer  stage_objects_names  0x00000024  STAGE_TEXTURE_GUN_LOGO001
+pointer  stage_objects_names  0x00000030  STAGE_TEXTURE_GUN_T1
+pointer  stage_objects_names  0x0000003c  STAGE_TEXTURE_JUSTICE
+pointer  stage_objects_names  0x00000048  STAGE_TEXTURE_LIGHT1
+pointer  stage_objects_names  0x00000054  STAGE_TEXTURE_LIGHT2
+pointer  stage_objects_names  0x00000060  STAGE_TEXTURE_MIU128_CE001
+pointer  stage_objects_names  0x0000006c  STAGE_TEXTURE_MIU128_CE002
+pointer  stage_objects_names  0x00000078  STAGE_TEXTURE_MIU128_CE003
+pointer  stage_objects_names  0x00000084  STAGE_TEXTURE_MIU128_CE004
+pointer  stage_objects_names  0x00000090  STAGE_TEXTURE_MIU128_CE005
+pointer  stage_objects_names  0x0000009c  STAGE_TEXTURE_MIU128_CE006
+pointer  stage_objects_names  0x000000a8  STAGE_TEXTURE_MIU128_CE007
+pointer  stage_objects_names  0x000000b4  STAGE_TEXTURE_MIU128_CE008
+pointer  stage_objects_names  0x000000c0  STAGE_TEXTURE_MIU128_CE009
+pointer  stage_objects_names  0x000000cc  STAGE_TEXTURE_MIU128_CE010
+pointer  stage_objects_names  0x000000d8  STAGE_TEXTURE_MIU128_CE011
+pointer  stage_objects_names  0x000000e4  STAGE_TEXTURE_MIU128_CE012
+pointer  stage_objects_names  0x000000f0  STAGE_TEXTURE_MIU128_CE013
+pointer  stage_objects_names  0x000000fc  STAGE_TEXTURE_MIU128_CE014
+pointer  stage_objects_names  0x00000108  STAGE_TEXTURE_MIU128_CE015
+pointer  stage_objects_names  0x00000114  STAGE_TEXTURE_MIU128_RH004
+pointer  stage_objects_names  0x00000120  STAGE_TEXTURE_MIU32_CE001
+pointer  stage_objects_names  0x0000012c  STAGE_TEXTURE_MIU32_CE002
+pointer  stage_objects_names  0x00000138  STAGE_TEXTURE_MIU32_CE003
+pointer  stage_objects_names  0x00000144  STAGE_TEXTURE_MIU32_CE004
+pointer  stage_objects_names  0x00000150  STAGE_TEXTURE_MIU32_CE005
+pointer  stage_objects_names  0x0000015c  STAGE_TEXTURE_MIU32_CE006
+pointer  stage_objects_names  0x00000168  STAGE_TEXTURE_MIU32_CE007
+pointer  stage_objects_names  0x00000174  STAGE_TEXTURE_MIU32_CE008
+pointer  stage_objects_names  0x00000180  STAGE_TEXTURE_MIU32_CE009
+pointer  stage_objects_names  0x0000018c  STAGE_TEXTURE_MIU32_CE010
+pointer  stage_objects_names  0x00000198  STAGE_TEXTURE_MIU32_CE011
+pointer  stage_objects_names  0x000001a4  STAGE_TEXTURE_MIU32_CE012
+pointer  stage_objects_names  0x000001b0  STAGE_TEXTURE_MIU32_CE013
+pointer  stage_objects_names  0x000001bc  STAGE_TEXTURE_MIU32_CE014
+pointer  stage_objects_names  0x000001c8  STAGE_TEXTURE_MIU32_CE015
+pointer  stage_objects_names  0x000001d4  STAGE_TEXTURE_MIU32_RH003
+pointer  stage_objects_names  0x000001e0  STAGE_TEXTURE_MIU64_CE001
+pointer  stage_objects_names  0x000001ec  STAGE_TEXTURE_MIU64_CE002
+pointer  stage_objects_names  0x000001f8  STAGE_TEXTURE_MIU64_CE003
+pointer  stage_objects_names  0x00000204  STAGE_TEXTURE_MIU64_CE004
+pointer  stage_objects_names  0x00000210  STAGE_TEXTURE_MIU64_CE005
+pointer  stage_objects_names  0x0000021c  STAGE_TEXTURE_MIU64_CE006
+pointer  stage_objects_names  0x00000228  STAGE_TEXTURE_MIU64_CE007
+pointer  stage_objects_names  0x00000234  STAGE_TEXTURE_MIU64_CE008
+pointer  stage_objects_names  0x00000240  STAGE_TEXTURE_MIU64_CE009
+pointer  stage_objects_names  0x0000024c  STAGE_TEXTURE_MIU64_CE010
+pointer  stage_objects_names  0x00000258  STAGE_TEXTURE_MIU64_CE011
+pointer  stage_objects_names  0x00000264  STAGE_TEXTURE_MIU64_CE012
+pointer  stage_objects_names  0x00000270  STAGE_TEXTURE_MIU64_CE013
+pointer  stage_objects_names  0x0000027c  STAGE_TEXTURE_MIU64_CE014
+pointer  stage_objects_names  0x00000288  STAGE_TEXTURE_MIU64_CE015
+pointer  stage_objects_names  0x00000294  STAGE_TEXTURE_MIU64_CE016
+pointer  stage_objects_names  0x000002a0  STAGE_TEXTURE_MIU64_CE017
+pointer  stage_objects_names  0x000002ac  STAGE_TEXTURE_MIU64_CE018
+pointer  stage_objects_names  0x000002b8  STAGE_TEXTURE_MIU64_CE019
+pointer  stage_objects_names  0x000002c4  STAGE_TEXTURE_MIU64_CE020
+pointer  stage_objects_names  0x000002d0  STAGE_TEXTURE_MIU64_CE021
+pointer  stage_objects_names  0x000002dc  STAGE_TEXTURE_MIU64_CE022
+pointer  stage_objects_names  0x000002e8  STAGE_TEXTURE_MIU64_CE023
+pointer  stage_objects_names  0x000002f4  STAGE_TEXTURE_MIU64_CE024
+pointer  stage_objects_names  0x00000300  STAGE_TEXTURE_MIU64_CE025
+pointer  stage_objects_names  0x0000030c  STAGE_TEXTURE_MIU64_CE026
+pointer  stage_objects_names  0x00000318  STAGE_TEXTURE_MIU64_CE027
+pointer  stage_objects_names  0x00000324  STAGE_TEXTURE_MIU64_CE028
+pointer  stage_objects_names  0x00000330  STAGE_TEXTURE_MIU64_CE029
+pointer  stage_objects_names  0x0000033c  STAGE_TEXTURE_MIU64_CE030
+pointer  stage_objects_names  0x00000348  STAGE_TEXTURE_MIU64_CE031
+pointer  stage_objects_names  0x00000354  STAGE_TEXTURE_MIU64_CE032
+pointer  stage_objects_names  0x00000360  STAGE_TEXTURE_MIU64_CE033
+pointer  stage_objects_names  0x0000036c  STAGE_TEXTURE_MIU64_CE034
+pointer  stage_objects_names  0x00000378  STAGE_TEXTURE_MIU64_CE035
+pointer  stage_objects_names  0x00000384  STAGE_TEXTURE_MIU64_CE036
+pointer  stage_objects_names  0x00000390  STAGE_TEXTURE_MIU64_CE037
+pointer  stage_objects_names  0x0000039c  STAGE_TEXTURE_MIU64_CE038
+pointer  stage_objects_names  0x000003a8  STAGE_TEXTURE_MIU64_CE039
+pointer  stage_objects_names  0x000003b4  STAGE_TEXTURE_MIU64_CE040
+pointer  stage_objects_names  0x000003c0  STAGE_TEXTURE_MIU64_CE041
+pointer  stage_objects_names  0x000003cc  STAGE_TEXTURE_MIU64_CE042
+pointer  stage_objects_names  0x000003d8  STAGE_TEXTURE_MIU64_CE043
+pointer  stage_objects_names  0x000003e4  STAGE_TEXTURE_MIU64_CE044
+pointer  stage_objects_names  0x000003f0  STAGE_TEXTURE_MIU64_CE045
+pointer  stage_objects_names  0x000003fc  STAGE_TEXTURE_MIU64_CE046
+pointer  stage_objects_names  0x00000408  STAGE_TEXTURE_MIU64_CE047
+pointer  stage_objects_names  0x00000414  STAGE_TEXTURE_MIU64_CE048
+pointer  stage_objects_names  0x00000420  STAGE_TEXTURE_MIU64_CE049
+pointer  stage_objects_names  0x0000042c  STAGE_TEXTURE_MIU64_CE050
+pointer  stage_objects_names  0x00000438  STAGE_TEXTURE_MIU64_CE051
+pointer  stage_objects_names  0x00000444  STAGE_TEXTURE_NIGHTS1
+pointer  stage_objects_names  0x00000450  STAGE_TEXTURE_SCITY64_16
+pointer  stage_objects_names  0x0000045c  STAGE_TEXTURE_TRUCK1
+pointer  stage_objects_names  0x00000468  STAGE_TEXTURE_TRUCK2
+pointer  stage_objects_names  0x00000474  STAGE_TEXTURE_TRUCK3
+pointer  stage_objects_names  0x00000480  STAGE_TEXTURE_TRUCK5
+pointer  stage_objects_names  0x0000048c  STAGE_TEXTURE_TRUCK_TES01
+pointer  stage_objects_names  0x00000498  STAGE_TEXTURE_TRUCK_TES02
+pointer  stage_objects_names  0x000004a4  STAGE_TEXTURE_WHEEL1
+pointer  stage_objects_textures  0x00000000  stage_objects_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  iron_ball_texlist
+pointer  stage_textures  0x0000001c  big_jump_anim_texlist
+pointer  stage_textures  0x00000020  big_jump_texlist
+pointer  stage_textures  0x00000024  dirt_texlist
+pointer  stage_textures  0x00000028  ring_shadow_texlist
+pointer  stage_textures  0x0000002c  effect_texlist
+pointer  stage_textures  0x00000030  item_balloon_texlist
+pointer  stage_textures  0x00000034  ring_sparkle_texlist
+pointer  stage_textures  0x00000038  burst_texlist
+pointer  stage_textures  0x0000003c  lens_flare_texlist
+pointer  city_escape_object_texture_groups  0x00000000  stage_textures
+pointer  city_escape_object_texture_groups  0x00000004  goal_ring_texlists
+pointer  city_escape_object_texture_groups  0x00000008  emerald_texlists
+pointer  city_escape_object_texture_groups  0x0000000c  item_box_texlists
+pointer  city_escape_object_texture_groups  0x00000010  item_box_air_texlists
+pointer  city_escape_object_texture_groups  0x00000014  weight_texlists
+pointer  city_escape_object_texture_groups  0x00000018  iron_ball_texlists
+pointer  city_escape_object_texture_groups  0x0000001c  triple_spring_texlists
+pointer  city_escape_object_texture_groups  0x00000020  dynamite_texlists
+pointer  city_escape_object_texture_groups  0x00000024  reel_texlists
+pointer  city_escape_object_texture_groups  0x00000028  chao_pipe_texlists
+pointer  city_escape_object_texture_groups  0x0000002c  cage_texlists
+pointer  city_escape_object_texture_groups  0x00000030  wood_box_texlists
+pointer  city_escape_object_texture_groups  0x00000034  iron_box_texlists
+pointer  city_escape_object_texture_groups  0x00000038  upgrade_texlists
+pointer  city_escape_object_texture_groups  0x0000003c  missile_texlists
+pointer  city_escape_object_texture_groups  0x00000040  skull_texlists
+pointer  city_escape_object_texture_groups  0x00000044  rocket_texlists
+pointer  city_escape_object_texture_groups  0x00000048  search_box_texlists
+pointer  city_escape_object_texture_groups  0x0000004c  hint_box_texlists
+pointer  city_escape_object_texture_groups  0x00000050  knudai_texlists
+pointer  city_escape_object_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  city_escape_object_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  city_escape_object_texture_groups  0x0000005c  knudai_door_texlists
+pointer  city_escape_object_texture_groups  0x00000060  chao_box_texlists
+pointer  city_escape_object_texture_groups  0x00000064  chao_key_texlists
+pointer  city_escape_object_texture_groups  0x00000068  object_effect_texlists
+pointer  city_escape_object_texture_groups  0x0000006c  messenger_texlists
+pointer  city_escape_object_texture_groups  0x00000070  ring_effect_texlists
+pointer  city_escape_object_texture_groups  0x00000074  car_texlists
+pointer  city_escape_object_texture_groups  0x00000078  ramp_texlists
+pointer  city_escape_object_texture_groups  0x0000007c  truck_texlists
+pointer  city_escape_object_texture_groups  0x00000080  hammer_texlists
+pointer  city_escape_object_texture_groups  0x00000084  iron_bar_texlists
+pointer  city_escape_object_texture_groups  0x00000088  tree_texlists
+pointer  city_escape_object_texture_groups  0x0000008c  switch_ring_texlists
+pointer  city_escape_object_texture_groups  0x00000090  lamp_texlists
+pointer  city_escape_object_texture_groups  0x00000094  scenery_texlists
+pointer  city_escape_object_texture_groups  0x00000098  board_texlists
+pointer  city_escape_object_texture_groups  0x0000009c  road_objects_texlists
+pointer  city_escape_object_texture_groups  0x000000a0  solid_box_texlists
+pointer  city_escape_object_texture_groups  0x000000a4  signboard_texlists
+pointer  city_escape_object_texture_groups  0x000000a8  poster_texlists
+pointer  city_escape_object_texture_groups  0x000000ac  plain_tree_texlists
+pointer  city_escape_object_texture_groups  0x000000b0  model_objects_texlists
+pointer  city_escape_object_texture_groups  0x000000b4  background_build_texlists
+pointer  city_escape_object_texture_groups  0x000000b8  pickup_texlists
+pointer  city_escape_object_pvms  0x00000000  PVM_OBJTEX_STG13
+pointer  city_escape_object_pvms  0x00000004  stage_objects_textures
+pointer  city_escape_object_pvms  0x00000008  PVM_EFFTEX_COMMON
+pointer  city_escape_object_pvms  0x0000000c  efftex_common_texlist
+pointer  city_escape_object_pvms  0x00000010  PVM_OBJTEX_COMMON
+pointer  city_escape_object_pvms  0x00000014  objtex_common_texlist
+pointer  city_escape_object_pvms  0x0000001c  city_escape_land_texlist

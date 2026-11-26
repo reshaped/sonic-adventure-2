@@ -1,0 +1,21 @@
+#include <errno.h>
+#include <float_bits.h>
+#include <math.h>
+#include <mathf.h>
+
+double atan2(double y, double x)
+{
+    double result;
+
+    result = _in_atan2s(y, x);
+    /* @hack type: result's bits read through its address, where result as a
+     * union with an unsigned long would do */
+    if ((*(unsigned long *)&result & FLOAT_EXPONENT) == FLOAT_EXPONENT) {
+        if (*(unsigned long *)&result & FLOAT_FRACTION) {
+            errno = EDOM;
+        } else {
+            errno = ERANGE;
+        }
+    }
+    return result;
+}

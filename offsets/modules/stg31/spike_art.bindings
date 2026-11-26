@@ -1,0 +1,3 @@
+pointer  spikes_model  0x00000000  spikes_vertices
+pointer  spikes_model  0x00000004  spikes_polygons
+pointer  green_hill_spikes_object  0x00000004  spikes_model

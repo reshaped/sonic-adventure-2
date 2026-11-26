@@ -1,0 +1,69 @@
+file                            SONIC2/CHAOSTGENTRANCE.PRS
+
+# section                       start       end
+DHEAD                           0x0c9c0000  0x0c9c0020
+P                               0x0c9c0020  0x0c9cc240
+C                               0x0c9cc240  0x0c9cdeb4
+D                               0x0c9cdeb4  0x0c9fb230
+B                               0x0c9fb230  0x0c9fb9dc
+
+# source                        section     start       end
+modules/chaostgentrance/head.c  DHEAD       0x0c9c0000  0x0c9c000c
+modules/chaostgentrance/entrance.c P           0x0c9c0020  0x0c9c0560
+modules/chaostgentrance/racers.c P           0x0c9c0560  0x0c9c0b00
+modules/chaostgentrance/menu.c  P           0x0c9c0b00  0x0c9c307c
+modules/chaostgentrance/dimmer.c P           0x0c9c3080  0x0c9c32c0
+modules/chaostgentrance/buttons.c P           0x0c9c32c0  0x0c9c3820
+modules/chaostgentrance/pick.c  P           0x0c9c3820  0x0c9c5060
+modules/chaostgentrance/multi.c P           0x0c9c5060  0x0c9c5604
+modules/chaostgentrance/grid.c  P           0x0c9c5620  0x0c9c6020
+modules/chaostgentrance/rows.c  P           0x0c9c6020  0x0c9c7840
+modules/chaostgentrance/cell.c  P           0x0c9c7840  0x0c9c78a0
+modules/chaostgentrance/panel.c P           0x0c9c78a0  0x0c9c9332
+modules/chaostgentrance/messages.c P           0x0c9c9340  0x0c9c98a0
+modules/chaostgentrance/event.c P           0x0c9c98a0  0x0c9ca340
+modules/chaostgentrance/title.c P           0x0c9ca340  0x0c9caf80
+modules/chaostgentrance/camera.c P           0x0c9caf80  0x0c9cb2a0
+modules/chaostgentrance/elevator.c P           0x0c9cb2a0  0x0c9cb740
+modules/chaostgentrance/gate.c  P           0x0c9cb740  0x0c9cb8c0
+modules/chaostgentrance/lamps.c P           0x0c9cb8c0  0x0c9cba20
+modules/shared/object_light.c   P           0x0c9cba20  0x0c9cc240
+modules/chaostgentrance/entrance.c C           0x0c9cc240  0x0c9cc328
+modules/chaostgentrance/menu.c  C           0x0c9cc328  0x0c9cc357
+modules/chaostgentrance/menu_art.c C         0x0c9cc358  0x0c9cd9d8
+modules/chaostgentrance/textures.c C           0x0c9cd9d8  0x0c9cdbab
+modules/chaostgentrance/elevator.c C           0x0c9cdbac  0x0c9cdbc9
+modules/chaostgentrance/gate.c  C           0x0c9cdbcc  0x0c9cdbfd
+modules/chaostgentrance/lamps.c C           0x0c9cdc00  0x0c9cdc34
+modules/chaostgentrance/land.c  C           0x0c9cdc34  0x0c9cdea4
+modules/shared/object_light.c   C           0x0c9cdea4  0x0c9cdeb3
+modules/chaostgentrance/entrance.c D           0x0c9cdeb4  0x0c9cdef4
+modules/chaostgentrance/racers.c D           0x0c9cdef4  0x0c9cdf54
+modules/chaostgentrance/menu_art.c D         0x0c9cdf54  0x0c9cdf58
+modules/chaostgentrance/event.c D           0x0c9cdf58  0x0c9cdf74
+modules/chaostgentrance/menu.c  D           0x0c9cdf74  0x0c9cdf78
+modules/chaostgentrance/dimmer.c D           0x0c9cdf78  0x0c9cdf88
+modules/chaostgentrance/pick.c  D           0x0c9cdf88  0x0c9cdf98
+modules/chaostgentrance/grid.c  D           0x0c9cdf98  0x0c9cdfec
+modules/chaostgentrance/label_ids.c D         0x0c9cdfec  0x0c9ce0c0
+modules/chaostgentrance/map_art.c  D           0x0c9ce0c0  0x0c9ce19c
+modules/chaostgentrance/messages.c D           0x0c9ce19c  0x0c9ce1a8
+modules/chaostgentrance/gate_art.c D           0x0c9ce1a8  0x0c9cf460
+modules/chaostgentrance/lamp_art.c D           0x0c9cf460  0x0c9d0400
+modules/chaostgentrance/elevator_art.c D           0x0c9d0400  0x0c9d19a8
+modules/chaostgentrance/vms_art.c D           0x0c9d19a8  0x0c9d2590
+modules/chaostgentrance/textures.c D           0x0c9d2590  0x0c9d27e8
+modules/chaostgentrance/camera.c D           0x0c9d27e8  0x0c9d27f8
+modules/chaostgentrance/land.c  D           0x0c9d27f8  0x0c9fb22c
+modules/shared/object_light.c   D           0x0c9fb22c  0x0c9fb230
+modules/chaostgentrance/racers.c B           0x0c9fb230  0x0c9fb250
+modules/chaostgentrance/menu.c  B           0x0c9fb250  0x0c9fb281
+modules/chaostgentrance/slots.c B           0x0c9fb298  0x0c9fb328
+modules/chaostgentrance/grid.c  B           0x0c9fb328  0x0c9fb32c
+modules/chaostgentrance/entrance.c B           0x0c9fb32c  0x0c9fb330
+modules/chaostgentrance/messages.c B           0x0c9fb330  0x0c9fb336
+modules/chaostgentrance/textures.c B           0x0c9fb338  0x0c9fb9bc
+modules/chaostgentrance/camera.c B           0x0c9fb9bc  0x0c9fb9d0
+modules/chaostgentrance/elevator.c B           0x0c9fb9d0  0x0c9fb9d4
+modules/chaostgentrance/gate.c  B           0x0c9fb9d4  0x0c9fb9d8
+modules/chaostgentrance/lamps.c B           0x0c9fb9d8  0x0c9fb9dc

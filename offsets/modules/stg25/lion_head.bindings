@@ -1,0 +1,10 @@
+text  CHAMBER_LION_HEAD_DZ_DC_LIONHEAD64  17
+
+pointer  chamber_lion_head_texture_names  0x00000000  CHAMBER_LION_HEAD_DZ_DC_LIONHEAD64
+pointer  chamber_lion_head_texlist  0x00000000  chamber_lion_head_texture_names
+pointer  chamber_lion_head_model  0x00000000  chamber_lion_head_vertices
+pointer  chamber_lion_head_model  0x00000004  chamber_lion_head_polygons
+pointer  chamber_lion_head_object  0x00000004  chamber_lion_head_model
+pointer  chamber_lion_head_texlists  0x00000000  chamber_lion_head_texlist
+pointer  chamber_lion_head_builds  0x00000004  chamber_lion_head_texlist
+pointer  chamber_lion_head_builds  0x00000008  chamber_lion_head_object

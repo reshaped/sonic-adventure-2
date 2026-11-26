@@ -1,0 +1,28 @@
+text  RIVAL_TITLE_S  10
+text  RIVAL_TITLE_O  10
+text  RIVAL_TITLE_N  10
+text  RIVAL_TITLE_I  10
+text  RIVAL_TITLE_C  10
+text  RIVAL_TITLE_H  10
+text  RIVAL_TITLE_A  10
+text  RIVAL_TITLE_D  10
+text  RIVAL_TITLE_W  10
+pointer  title_sonic_texnames  0x00000000  RIVAL_TITLE_S
+pointer  title_sonic_texnames  0x0000000c  RIVAL_TITLE_O
+pointer  title_sonic_texnames  0x00000018  RIVAL_TITLE_N
+pointer  title_sonic_texnames  0x00000024  RIVAL_TITLE_I
+pointer  title_sonic_texnames  0x00000030  RIVAL_TITLE_C
+pointer  title_sonic_texlist  0x00000000  title_sonic_texnames
+pointer  title_shadow_texnames  0x00000000  RIVAL_TITLE_S
+pointer  title_shadow_texnames  0x0000000c  RIVAL_TITLE_H
+pointer  title_shadow_texnames  0x00000018  RIVAL_TITLE_A
+pointer  title_shadow_texnames  0x00000024  RIVAL_TITLE_D
+pointer  title_shadow_texnames  0x00000030  RIVAL_TITLE_O
+pointer  title_shadow_texnames  0x0000003c  RIVAL_TITLE_W
+pointer  title_shadow_texlist  0x00000000  title_shadow_texnames
+text  RIVAL_SONIC_ARCHIVE  15
+text  RIVAL_SHADOW_ARCHIVE  16
+pointer  title_sonic  0x00000000  title_letters
+pointer  title_sonic  0x00000018  title_sonic_texlist
+pointer  title_shadow  0x00000000  title_letters+0x50
+pointer  title_shadow  0x00000018  title_shadow_texlist

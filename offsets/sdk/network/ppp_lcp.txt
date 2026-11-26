@@ -1,0 +1,15 @@
+datum  lcp_protocol  DATA  0x00000000  60
+datum  lcp_name  DATA  0x0000003c  4
+datum  lcp_default  D  0x00000000  24
+datum  default_negotiation  D  0x00000018  2
+datum  lcp_option_lengths  D  0x0000001a  9
+entry  lcp_make_request  P  0x0000028a  2
+entry  lcp_request  P  0x000005ae  2
+entry  lcp_ack  P  0x000006f8  2
+entry  lcp_nak  P  0x0000079e  2
+entry  lcp_reject  P  0x00000898  2
+entry  lcp_reset  P  0x0000096a  2
+entry  lcp_starting  P  0x000009b2  2
+entry  lcp_stopping  P  0x000009d0  2
+entry  lcp_closing  P  0x000009d8  2
+entry  lcp_release  P  0x00000a86  2

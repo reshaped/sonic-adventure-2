@@ -1,0 +1,93 @@
+include  objtex_common
+include  efftex_common
+
+include  core_object_archive
+include  core_walker_archive
+include  core_block_glow_archive
+
+text CORE_TEXTURE_MIU128_CG006 13
+text CORE_TEXTURE_MIU128_CG0061 14
+text CORE_TEXTURE_MIU128_CG0062 14
+text CORE_TEXTURE_MIU128_CG0063 14
+text CORE_TEXTURE_MIU128_CG0064 14
+text CORE_TEXTURE_OBJTEX_CC_COMMON 17
+text CORE_TEXTURE_OBJTEX_CC_WALKER 17
+text CORE_TEXTURE_EFFTEX_COMMON 14
+text CORE_TEXTURE_OBJTEX_COMMON 14
+text CORE_TEXTURE_CC_POISON 10
+text CORE_TEXTURE_STG35_MACHINE 14
+
+pointer  eggman_panel_texlist_names  0x00000000  CORE_TEXTURE_MIU128_CG006
+pointer  eggman_panel_texlist_names  0x0000000c  CORE_TEXTURE_MIU128_CG0061
+pointer  eggman_panel_texlist_names  0x00000018  CORE_TEXTURE_MIU128_CG0062
+pointer  eggman_panel_texlist_names  0x00000024  CORE_TEXTURE_MIU128_CG0063
+pointer  eggman_panel_texlist_names  0x00000030  CORE_TEXTURE_MIU128_CG0064
+pointer  eggman_panel_texlist  0x00000000  eggman_panel_texlist_names
+pointer  core_block_glow_texlist  0x00000000  core_block_glow_texlist_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  core_eggman_object_groups  0x00000000  stage_textures
+pointer  core_eggman_object_groups  0x00000004  goal_ring_texlists
+pointer  core_eggman_object_groups  0x00000008  emerald_texlists
+pointer  core_eggman_object_groups  0x0000000c  item_box_texlists
+pointer  core_eggman_object_groups  0x00000010  item_box_air_texlists
+pointer  core_eggman_object_groups  0x00000014  weight_texlists
+pointer  core_eggman_object_groups  0x00000018  iron_ball_texlists
+pointer  core_eggman_object_groups  0x0000001c  triple_spring_texlists
+pointer  core_eggman_object_groups  0x00000020  dynamite_texlists
+pointer  core_eggman_object_groups  0x00000024  reel_texlists
+pointer  core_eggman_object_groups  0x00000028  chao_pipe_texlists
+pointer  core_eggman_object_groups  0x0000002c  cage_texlists
+pointer  core_eggman_object_groups  0x00000030  wood_box_texlists
+pointer  core_eggman_object_groups  0x00000034  iron_box_texlists
+pointer  core_eggman_object_groups  0x00000038  upgrade_texlists
+pointer  core_eggman_object_groups  0x0000003c  missile_texlists
+pointer  core_eggman_object_groups  0x00000040  skull_texlists
+pointer  core_eggman_object_groups  0x00000044  rocket_texlists
+pointer  core_eggman_object_groups  0x00000048  search_box_texlists
+pointer  core_eggman_object_groups  0x0000004c  hint_box_texlists
+pointer  core_eggman_object_groups  0x00000050  knudai_texlists
+pointer  core_eggman_object_groups  0x00000054  knudai_foothold_texlists
+pointer  core_eggman_object_groups  0x00000058  knudai_warp_hole_texlists
+pointer  core_eggman_object_groups  0x0000005c  knudai_door_texlists
+pointer  core_eggman_object_groups  0x00000060  chao_box_texlists
+pointer  core_eggman_object_groups  0x00000064  chao_key_texlists
+pointer  core_eggman_object_groups  0x00000068  object_effect_texlists
+pointer  core_eggman_object_groups  0x0000006c  messenger_texlists
+pointer  core_eggman_object_groups  0x00000070  ring_effect_texlists
+pointer  core_eggman_object_groups  0x00000074  solid_box_texlists
+pointer  core_eggman_object_groups  0x00000078  core_block_texlists
+pointer  core_eggman_object_groups  0x0000007c  core_lift_texlists
+pointer  core_eggman_object_groups  0x00000080  core_shutter_texlists
+pointer  core_eggman_object_groups  0x00000084  core_step_texlists
+pointer  core_eggman_object_groups  0x00000088  last_step_texlists
+pointer  core_eggman_object_groups  0x0000008c  capsule_bomb_texlists
+pointer  core_eggman_object_groups  0x00000090  core_laser_texlists
+pointer  core_eggman_object_groups  0x00000094  time_switch_texlists
+pointer  core_eggman_object_groups  0x00000098  goal_door_texlists
+pointer  core_eggman_object_pvms  0x00000000  CORE_TEXTURE_OBJTEX_CC_COMMON
+pointer  core_eggman_object_pvms  0x00000004  core_object_textures
+pointer  core_eggman_object_pvms  0x00000008  CORE_TEXTURE_OBJTEX_CC_WALKER
+pointer  core_eggman_object_pvms  0x0000000c  walker_object_textures
+pointer  core_eggman_object_pvms  0x00000010  CORE_TEXTURE_EFFTEX_COMMON
+pointer  core_eggman_object_pvms  0x00000014  efftex_common_texlist
+pointer  core_eggman_object_pvms  0x00000018  CORE_TEXTURE_OBJTEX_COMMON
+pointer  core_eggman_object_pvms  0x0000001c  objtex_common_texlist
+pointer  core_eggman_object_pvms  0x00000020  CORE_TEXTURE_CC_POISON
+pointer  core_eggman_object_pvms  0x00000024  core_block_glow_texlist
+pointer  core_eggman_object_pvms  0x00000028  CORE_TEXTURE_STG35_MACHINE
+pointer  core_eggman_object_pvms  0x0000002c  eggman_panel_texlist
+pointer  core_eggman_object_pvms  0x00000034  eggman_glow_texlist

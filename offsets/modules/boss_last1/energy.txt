@@ -1,0 +1,2 @@
+datum  shadow_uvs  D  0x00000000  208
+datum  shadow_scroll  D  0x000000d0  36

@@ -1,0 +1,83 @@
+# Pooled names and pointers in the map records.
+text  MAP_TEXTURE_MAP01  12
+text  MAP_TEXTURE_MAPSIDE  14
+text  MAP_TEXTURE_CKABE1  13
+text  MAP_TEXTURE_MAPDOT  13
+text  MAP_TEXTURE_MAPLETTER  16
+text  MAP_KIND_RED  6
+text  MAP_KIND_GREEN  6
+text  MAP_KIND_BLUE  6
+pointer chamber_map_red_texture_names  0x00000000  MAP_TEXTURE_MAP01
+pointer chamber_map_red_texture_names  0x0000000c  MAP_TEXTURE_MAPSIDE
+pointer chamber_map_red_texture_names  0x00000018  MAP_TEXTURE_CKABE1
+pointer chamber_map_red_texlist  0x00000000  chamber_map_red_texture_names
+pointer chamber_map_red_model  0x00000000  chamber_map_red_vertices
+pointer chamber_map_red_model  0x00000004  chamber_map_red_polygons
+pointer chamber_map_red_object  0x00000004  chamber_map_red_model
+pointer chamber_map_red_overlay  0x00000000  chamber_map_red_overlay_vertices
+pointer chamber_map_red_overlay  0x00000004  chamber_map_red_overlay_polygons
+pointer chamber_map_red_overlay_object  0x00000004  chamber_map_red_overlay
+pointer chamber_map_red_overlay_object  0x00000030  chamber_map_red_object
+pointer chamber_map_red_overlay_assembly  0x0000002c  chamber_map_red_overlay_object
+pointer chamber_map_green_texture_names  0x00000000  MAP_TEXTURE_MAP01
+pointer chamber_map_green_texture_names  0x0000000c  MAP_TEXTURE_MAPSIDE
+pointer chamber_map_green_texture_names  0x00000018  MAP_TEXTURE_CKABE1
+pointer chamber_map_green_texlist  0x00000000  chamber_map_green_texture_names
+pointer chamber_map_green_overlay  0x00000000  chamber_map_green_overlay_vertices
+pointer chamber_map_green_overlay  0x00000004  chamber_map_green_overlay_polygons
+pointer chamber_map_green_object_sibling  0x00000004  chamber_map_green_overlay
+pointer chamber_map_green_model  0x00000000  chamber_map_green_vertices
+pointer chamber_map_green_model  0x00000004  chamber_map_green_polygons
+pointer chamber_map_green_object  0x00000004  chamber_map_green_model
+pointer chamber_map_green_object  0x00000030  chamber_map_green_object_sibling
+pointer chamber_map_green_assembly  0x0000002c  chamber_map_green_object
+pointer chamber_map_blue_texture_names  0x00000000  MAP_TEXTURE_MAP01
+pointer chamber_map_blue_texture_names  0x0000000c  MAP_TEXTURE_MAPSIDE
+pointer chamber_map_blue_texture_names  0x00000018  MAP_TEXTURE_CKABE1
+pointer chamber_map_blue_texlist  0x00000000  chamber_map_blue_texture_names
+pointer chamber_map_blue_overlay  0x00000000  chamber_map_blue_overlay_vertices
+pointer chamber_map_blue_overlay  0x00000004  chamber_map_blue_overlay_polygons
+pointer chamber_map_blue_object_sibling  0x00000004  chamber_map_blue_overlay
+pointer chamber_map_blue_model  0x00000000  chamber_map_blue_vertices
+pointer chamber_map_blue_model  0x00000004  chamber_map_blue_polygons
+pointer chamber_map_blue_object  0x00000004  chamber_map_blue_model
+pointer chamber_map_blue_object  0x00000030  chamber_map_blue_object_sibling
+pointer chamber_map_blue_assembly  0x0000002c  chamber_map_blue_object
+pointer chamber_map_dot_texture_names  0x00000000  MAP_TEXTURE_MAPDOT
+pointer chamber_map_dot_texlist  0x00000000  chamber_map_dot_texture_names
+pointer chamber_map_dot_model  0x00000000  chamber_map_dot_vertices
+pointer chamber_map_dot_model  0x00000004  chamber_map_dot_polygons
+pointer chamber_map_dot_object  0x00000004  chamber_map_dot_model
+pointer chamber_map_letters_1_anim  0x00000010  chamber_map_letters_1_uv_keys
+pointer chamber_map_letters_1_texture_names  0x00000000  MAP_TEXTURE_MAPLETTER
+pointer chamber_map_letters_1_texlist  0x00000000  chamber_map_letters_1_texture_names
+pointer chamber_map_letters_1_model  0x00000000  chamber_map_letters_1_vertices
+pointer chamber_map_letters_1_model  0x00000004  chamber_map_letters_1_polygons
+pointer chamber_map_letters_1_object  0x00000004  chamber_map_letters_1_model
+pointer chamber_map_letters_2_anim  0x00000010  chamber_map_letters_2_uv_keys
+pointer chamber_map_letters_2_texture_names  0x00000000  MAP_TEXTURE_MAPLETTER
+pointer chamber_map_letters_2_texlist  0x00000000  chamber_map_letters_2_texture_names
+pointer chamber_map_letters_2_model  0x00000000  chamber_map_letters_2_vertices
+pointer chamber_map_letters_2_model  0x00000004  chamber_map_letters_2_polygons
+pointer chamber_map_letters_2_object  0x00000004  chamber_map_letters_2_model
+pointer chamber_map_models  0x00000000  chamber_map_red_model
+pointer chamber_map_models  0x00000004  chamber_map_green_model
+pointer chamber_map_models  0x00000008  chamber_map_blue_model
+pointer chamber_map_overlays  0x00000000  chamber_map_red_overlay
+pointer chamber_map_overlays  0x00000004  chamber_map_green_overlay
+pointer chamber_map_overlays  0x00000008  chamber_map_blue_overlay
+pointer chamber_map_texlists  0x00000000  chamber_map_red_texlist
+pointer chamber_map_texlists  0x00000004  chamber_map_green_texlist
+pointer chamber_map_texlists  0x00000008  chamber_map_blue_texlist
+pointer chamber_map_texlists  0x0000000c  chamber_map_dot_texlist
+pointer chamber_map_texlists  0x00000010  chamber_map_letters_1_texlist
+pointer chamber_map_texlists  0x00000014  chamber_map_letters_2_texlist
+pointer chamber_map_kind_names  0x00000000  MAP_KIND_RED
+pointer chamber_map_kind_names  0x00000004  MAP_KIND_GREEN
+pointer chamber_map_kind_names  0x00000008  MAP_KIND_BLUE
+pointer chamber_map_builds  0x00000004  chamber_map_red_texlist
+pointer chamber_map_builds  0x00000008  chamber_map_red_object
+pointer chamber_map_builds  0x00000014  chamber_map_green_texlist
+pointer chamber_map_builds  0x00000018  chamber_map_green_object
+pointer chamber_map_builds  0x00000024  chamber_map_blue_texlist
+pointer chamber_map_builds  0x00000028  chamber_map_blue_object

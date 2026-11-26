@@ -1,0 +1,92 @@
+text  SCENERY_TEXTURE_ENEMY2  7
+text  SCENERY_TEXTURE_ENEMY_01  9
+text  SCENERY_TEXTURE_GUN01  6
+text  SCENERY_TEXTURE_GUN_LOGO001  12
+text  SCENERY_TEXTURE_MIU128_PL001  13
+text  SCENERY_TEXTURE_MIU128_SH010  13
+text  SCENERY_TEXTURE_MIU256_SH001  13
+text  SCENERY_TEXTURE_PR128_14  9
+text  SCENERY_TEXTURE_PR64_3  7
+
+pointer  scenery_0_names  0x00000000  SCENERY_TEXTURE_ENEMY2
+pointer  scenery_0_names  0x0000000c  SCENERY_TEXTURE_ENEMY_01
+pointer  scenery_0_names  0x00000018  SCENERY_TEXTURE_GUN01
+pointer  scenery_0_names  0x00000024  SCENERY_TEXTURE_GUN_LOGO001
+pointer  scenery_0_names  0x00000030  SCENERY_TEXTURE_MIU128_PL001
+pointer  scenery_0_names  0x0000003c  SCENERY_TEXTURE_MIU128_SH010
+pointer  scenery_0_names  0x00000048  SCENERY_TEXTURE_MIU256_SH001
+pointer  scenery_0_names  0x00000054  SCENERY_TEXTURE_PR128_14
+pointer  security_scenery_0_texlist  0x00000000  scenery_0_names
+pointer  scenery_0_model  0x00000000  scenery_0_vertices
+pointer  scenery_0_model  0x00000004  scenery_0_polygons
+pointer  security_scenery_0_object  0x00000004  scenery_0_model
+pointer  scenery_0_solid_faces  0x00000004  scenery_0_solid_strips
+pointer  scenery_0_solid_model  0x00000000  scenery_0_solid_points
+pointer  scenery_0_solid_model  0x00000004  scenery_0_solid_normals
+pointer  scenery_0_solid_model  0x0000000c  scenery_0_solid_faces
+pointer  scenery_0_solid_model  0x00000010  scenery_0_solid_materials
+pointer  security_scenery_0_solid  0x00000004  scenery_0_solid_model
+pointer  scenery_1_names  0x00000000  SCENERY_TEXTURE_MIU128_PL001
+pointer  scenery_1_names  0x0000000c  SCENERY_TEXTURE_MIU128_SH010
+pointer  scenery_1_names  0x00000018  SCENERY_TEXTURE_MIU256_SH001
+pointer  scenery_1_names  0x00000024  SCENERY_TEXTURE_PR64_3
+pointer  security_scenery_1_texlist  0x00000000  scenery_1_names
+pointer  scenery_1_model  0x00000000  scenery_1_vertices
+pointer  scenery_1_model  0x00000004  scenery_1_polygons
+pointer  security_scenery_1_object  0x00000004  scenery_1_model
+pointer  scenery_1_solid_faces  0x00000004  scenery_1_solid_strips
+pointer  scenery_1_solid_model  0x00000000  scenery_1_solid_points
+pointer  scenery_1_solid_model  0x00000004  scenery_1_solid_normals
+pointer  scenery_1_solid_model  0x0000000c  scenery_1_solid_faces
+pointer  scenery_1_solid_model  0x00000010  scenery_1_solid_materials
+pointer  security_scenery_1_solid  0x00000004  scenery_1_solid_model
+pointer  scenery_2_names  0x00000000  SCENERY_TEXTURE_MIU128_PL001
+pointer  scenery_2_names  0x0000000c  SCENERY_TEXTURE_MIU128_SH010
+pointer  scenery_2_names  0x00000018  SCENERY_TEXTURE_MIU256_SH001
+pointer  scenery_2_names  0x00000024  SCENERY_TEXTURE_PR64_3
+pointer  security_scenery_2_texlist  0x00000000  scenery_2_names
+pointer  scenery_2_model  0x00000000  scenery_2_vertices
+pointer  scenery_2_model  0x00000004  scenery_2_polygons
+pointer  security_scenery_2_object  0x00000004  scenery_2_model
+pointer  scenery_3_names  0x00000000  SCENERY_TEXTURE_MIU128_PL001
+pointer  scenery_3_names  0x0000000c  SCENERY_TEXTURE_MIU128_SH010
+pointer  scenery_3_names  0x00000018  SCENERY_TEXTURE_MIU256_SH001
+pointer  scenery_3_names  0x00000024  SCENERY_TEXTURE_PR64_3
+pointer  security_scenery_3_texlist  0x00000000  scenery_3_names
+pointer  scenery_3_model  0x00000000  scenery_3_vertices
+pointer  scenery_3_model  0x00000004  scenery_3_polygons
+pointer  security_scenery_3_object  0x00000004  scenery_3_model
+pointer  scenery_4_names  0x00000000  SCENERY_TEXTURE_MIU128_PL001
+pointer  scenery_4_names  0x0000000c  SCENERY_TEXTURE_MIU128_SH010
+pointer  scenery_4_names  0x00000018  SCENERY_TEXTURE_MIU256_SH001
+pointer  scenery_4_names  0x00000024  SCENERY_TEXTURE_PR64_3
+pointer  security_scenery_4_texlist  0x00000000  scenery_4_names
+pointer  scenery_4_model  0x00000000  scenery_4_vertices
+pointer  scenery_4_model  0x00000004  scenery_4_polygons
+pointer  security_scenery_4_object  0x00000004  scenery_4_model
+pointer  security_scenery_textures  0x00000000  security_scenery_0_texlist
+pointer  security_scenery_textures  0x00000004  security_scenery_1_texlist
+pointer  security_scenery_textures  0x00000008  security_scenery_2_texlist
+pointer  security_scenery_textures  0x0000000c  security_scenery_3_texlist
+pointer  security_scenery_textures  0x00000010  security_scenery_4_texlist
+pointer  kinds  0x00000004  security_scenery_0_texlist
+pointer  kinds  0x00000008  security_scenery_0_object
+pointer  kinds  0x0000000c  security_scenery_0_solid
+pointer  kinds  0x00000018  scenery_draw
+pointer  kinds  0x00000030  security_scenery_1_texlist
+pointer  kinds  0x00000034  security_scenery_1_object
+pointer  kinds  0x00000038  security_scenery_1_solid
+pointer  kinds  0x00000044  scenery_draw
+pointer  kinds  0x0000005c  security_scenery_2_texlist
+pointer  kinds  0x00000060  security_scenery_2_object
+pointer  kinds  0x00000064  security_scenery_1_solid
+pointer  kinds  0x00000070  scenery_draw
+pointer  kinds  0x00000088  security_scenery_3_texlist
+pointer  kinds  0x0000008c  security_scenery_3_object
+pointer  kinds  0x00000090  security_scenery_1_solid
+pointer  kinds  0x0000009c  scenery_draw
+pointer  kinds  0x000000b4  security_scenery_4_texlist
+pointer  kinds  0x000000b8  security_scenery_4_object
+pointer  kinds  0x000000bc  security_scenery_1_solid
+pointer  kinds  0x000000c8  scenery_draw
+pointer  scenery  0x00000000  kinds

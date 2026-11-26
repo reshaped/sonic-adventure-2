@@ -1,0 +1,7 @@
+text  KAZANI_TEXTURE_MIU64_SR001  C  0x00000040  12
+datum  kazani_texlist_names  D  0x00000000  12
+datum  kazani_texlist  D  0x0000000c  8
+datum  kazani_polygons  D  0x00000014  334
+datum  kazani_vertices  D  0x00000164  492
+datum  kazani_model  D  0x00000350  24
+datum  kazani_object  D  0x00000368  52

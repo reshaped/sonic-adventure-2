@@ -1,0 +1,12 @@
+modules/cart/course_art.c
+modules/cart/dat_8c52e398.c
+modules/cart/dat_8c5f850c.c
+modules/cart/dat_8c7a1df4.c
+modules/cart/kart_art.c
+modules/cart/kart_models.c
+modules/cart/kart_tails_story.c
+modules/cart/piece_gates.c
+modules/cart/ramp_art.c
+modules/cart/sea_textures.c
+modules/cart/shared_texture_names.c
+modules/cart/traffic_textures.c

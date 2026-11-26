@@ -1,0 +1,23 @@
+text  HARBOR_TEXTURE_MIU128_MH001  13
+text  HARBOR_TEXTURE_MIU64_MH005  12
+text  HARBOR_TEXTURE_MIU64_MH010  12
+text  HARBOR_TEXTURE_PR64_15  8
+text  HARBOR_TEXTURE_PR64_3  7
+text  HARBOR_TEXTURE_PR_KAGE32  10
+pointer  container_b_textures  0x00000000  HARBOR_TEXTURE_MIU128_MH001
+pointer  container_b_textures  0x0000000c  HARBOR_TEXTURE_MIU64_MH005
+pointer  container_b_textures  0x00000018  HARBOR_TEXTURE_MIU64_MH010
+pointer  container_b_textures  0x00000024  HARBOR_TEXTURE_PR64_15
+pointer  container_b_textures  0x00000030  HARBOR_TEXTURE_PR64_3
+pointer  container_b_textures  0x0000003c  HARBOR_TEXTURE_PR_KAGE32
+pointer  container_b_texlist  0x00000000  container_b_textures
+pointer  container_b_model  0x00000000  container_b_vertices
+pointer  container_b_model  0x00000004  container_b_polygons
+pointer  container_b_object  0x00000004  container_b_model
+pointer  container_b_collision_meshsets  0x00000004  container_b_collision_indices_0
+pointer  container_b_collision_model  0x00000000  container_b_collision_points
+pointer  container_b_collision_model  0x00000004  container_b_collision_normals
+pointer  container_b_collision_model  0x0000000c  container_b_collision_meshsets
+pointer  container_b_collision_model  0x00000010  container_b_collision_materials
+pointer  container_b_collision  0x00000004  container_b_collision_model
+pointer  container_b_texlists  0x00000000  container_b_texlist

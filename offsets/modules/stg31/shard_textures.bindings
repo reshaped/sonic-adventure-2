@@ -1,0 +1,5 @@
+pointer  textures  0x00000000  green_hill_floor_face_1
+pointer  textures  0x0000000c  green_hill_floor_face_2
+pointer  textures  0x00000018  green_hill_floor_face_3
+pointer  textures  0x00000024  green_hill_floor_face_4
+pointer  textures  0x00000030  green_hill_floor_edge

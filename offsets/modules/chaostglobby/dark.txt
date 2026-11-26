@@ -1,0 +1,2 @@
+datum  lobby_dark_shapes  D  0x00000000  432
+datum  lobby_gate_flames  D  0x000001b0  320

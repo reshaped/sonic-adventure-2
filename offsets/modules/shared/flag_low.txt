@@ -1,0 +1,9 @@
+# Complete cloth frames and the normal task's frame selectors.
+datum flag_cloth_filename C 0x00000040 20
+datum flag_hook_filename C 0x00000054 20
+datum flag_blue_frames D 0x00000000 29952
+datum flag_red_frames D 0x00007500 29952
+datum flag_blue_models D 0x0000ea00 96
+datum flag_red_models D 0x0000ea60 96
+datum flag_low_blue_texlists D 0x0000eac0 100
+datum flag_low_red_texlists D 0x0000eb24 100

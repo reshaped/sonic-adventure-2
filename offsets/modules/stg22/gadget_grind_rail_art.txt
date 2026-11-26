@@ -1,0 +1,16 @@
+text  GADGET_GRIND_RAIL_ART_TEXTURE_1  C  0x00000000  12
+text  GADGET_GRIND_RAIL_ART_TEXTURE_2  C  0x0000000c  12
+datum  textures  D  0x00000000  24
+datum  gadget_grind_rail_texlist  D  0x00000018  8
+datum  gadget_grind_rail_node_2_polygons  D  0x00000020  86
+datum  gadget_grind_rail_node_2_vertices  D  0x00000078  140
+datum  gadget_grind_rail_node_2_mesh  D  0x00000104  24
+datum  gadget_grind_rail_node_2  D  0x0000011c  52
+datum  gadget_grind_rail_node_1_polygons  D  0x00000150  86
+datum  gadget_grind_rail_node_1_vertices  D  0x000001a8  140
+datum  gadget_grind_rail_node_1_mesh  D  0x00000234  24
+datum  gadget_grind_rail_node_1  D  0x0000024c  52
+datum  gadget_grind_rail_polygons  D  0x00000280  294
+datum  gadget_grind_rail_vertices  D  0x000003a8  332
+datum  gadget_grind_rail_mesh  D  0x000004f4  24
+datum  gadget_grind_rail  D  0x0000050c  52

@@ -1,0 +1,6 @@
+modules/boss_last1/biolizard_model_textures.c
+modules/boss_last1/biolizard_path_light_art.c
+modules/boss_last1/dat_8c549834.c
+modules/boss_last1/dat_8c54fcdc.c
+modules/boss_last1/terrain.c
+modules/boss_last1/title_textures.c

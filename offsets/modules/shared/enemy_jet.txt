@@ -1,0 +1,2 @@
+text  ENEMY_JET_MATERIAL_01  C  0x0000001c  5
+datum  enemy_jet_texname  D  0x00000000  12

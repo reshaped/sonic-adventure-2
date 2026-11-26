@@ -1,0 +1,25 @@
+# The flute, both notes and the three player attachment motions share one writable input.
+datum  flute_polygons  D  0x00000000  54
+datum  flute_vertices  D  0x00000038  108
+datum  mystic_flute_model  D  0x000000a4  24
+datum  mystic_flute_object  D  0x000000bc  52
+datum  note_even_polygons  D  0x000000f0  82
+datum  note_even_vertices  D  0x00000144  588
+datum  mystic_note_even_model  D  0x00000390  24
+datum  mystic_note_even_object  D  0x000003a8  52
+datum  note_odd_polygons  D  0x000003dc  82
+datum  note_odd_vertices  D  0x00000430  588
+datum  mystic_note_odd_model  D  0x0000067c  24
+datum  mystic_note_odd_object  D  0x00000694  52
+datum  mystic_flute_position  D  0x000006c8  1024
+datum  mystic_flute_rotation  D  0x00000ac8  1024
+datum  mystic_flute_channels  D  0x00000ec8  16
+datum  mystic_flute_motion  D  0x00000ed8  12
+datum  eggman_mech_flute_position  D  0x00000ee4  1024
+datum  eggman_mech_flute_rotation  D  0x000012e4  1024
+datum  eggman_mech_flute_channels  D  0x000016e4  16
+datum  eggman_mech_flute_motion  D  0x000016f4  12
+datum  tails_mech_flute_position  D  0x00001700  832
+datum  tails_mech_flute_rotation  D  0x00001a40  1024
+datum  tails_mech_flute_channels  D  0x00001e40  16
+datum  tails_mech_flute_motion  D  0x00001e50  12

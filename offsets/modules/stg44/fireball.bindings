@@ -1,0 +1,30 @@
+pointer  meteor_fireball_mesh  0x00000000  meteor_fireball_vertices
+pointer  meteor_fireball_mesh  0x00000004  meteor_fireball_polygons
+pointer  meteor_fragment_mesh  0x00000000  meteor_fragment_vertices
+pointer  meteor_fragment_mesh  0x00000004  meteor_fragment_polygons
+pointer  meteor_shard_mesh  0x00000000  meteor_shard_vertices
+pointer  meteor_shard_mesh  0x00000004  meteor_shard_polygons
+text  FIREBALL_TEXTURE_MIU128_MEH001  14
+text  FIREBALL_TEXTURE_MIU64_MEH001  13
+
+pointer  mad_space_fireball_textures  0x00000000  mad_space_fireball_piece_texlist
+pointer  mad_space_fireball_textures  0x00000004  mad_space_fireball_shard_texlist
+pointer  mad_space_fireball_textures  0x00000008  mad_space_fireball_texlist
+pointer  mad_space_fireball_textures  0x0000000c  mad_space_orbit_texlist
+pointer  fireball_surface_textures  0x00000000  FIREBALL_TEXTURE_MIU128_MEH001
+pointer  mad_space_fireball_texlist  0x00000000  fireball_surface_textures
+pointer  mad_space_fireball_mesh  0x00000000  mad_space_fireball_vertices
+pointer  mad_space_fireball_mesh  0x00000004  mad_space_fireball_polygons
+pointer  mad_space_fireball_object  0x00000004  mad_space_fireball_mesh
+pointer  mad_space_orbit_textures  0x00000000  FIREBALL_TEXTURE_MIU128_MEH001
+pointer  mad_space_orbit_texlist  0x00000000  mad_space_orbit_textures
+pointer  mad_space_orbit_object  0x00000004  meteor_fireball_mesh
+pointer  mad_space_fireball_piece_textures  0x00000000  FIREBALL_TEXTURE_MIU128_MEH001
+pointer  mad_space_fireball_piece_textures  0x0000000c  FIREBALL_TEXTURE_MIU64_MEH001
+pointer  mad_space_fireball_piece_texlist  0x00000000  mad_space_fireball_piece_textures
+pointer  mad_space_fireball_piece  0x00000004  meteor_fragment_mesh
+pointer  mad_space_fireball_shard_textures  0x00000000  FIREBALL_TEXTURE_MIU128_MEH001
+pointer  mad_space_fireball_shard_textures  0x0000000c  FIREBALL_TEXTURE_MIU64_MEH001
+pointer  mad_space_fireball_shard_texlist  0x00000000  mad_space_fireball_shard_textures
+pointer  mad_space_fireball_shard  0x00000004  meteor_shard_mesh
+pointer  mad_space_fireball_path  0x00000008  orbit_points

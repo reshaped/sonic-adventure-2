@@ -1,0 +1,3 @@
+pointer  lens_model  0x00000000  lens_vertices
+pointer  lens_model  0x00000004  lens_polygons
+pointer  quarters_guard_lens_object  0x00000004  lens_model

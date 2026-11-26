@@ -1,0 +1,30 @@
+text  DECK_WALL_TEXTURE_MIU128_WB004  13
+text  DECK_WALL_TEXTURE_MIU128_WB005  13
+text  DECK_WALL_TEXTURE_MIU64_WB006  12
+text  DECK_WALL_TEXTURE_PR128_12  9
+text  DECK_WALL_TEXTURE_PR64_23  8
+text  DECK_WALL_TEXTURE_PR_KAGE32  10
+text  DECK_WALL_TEXTURE_MIU128_WB001  13
+text  DECK_WALL_TEXTURE_MIU32_WB001  12
+text  DECK_WALL_TEXTURE_MIU64_WB001  12
+text  DECK_WALL_TEXTURE_MIU64_WB010  12
+
+pointer  deck_wall_textures  0x00000000  DECK_WALL_TEXTURE_MIU128_WB004
+pointer  deck_wall_textures  0x0000000c  DECK_WALL_TEXTURE_MIU128_WB005
+pointer  deck_wall_textures  0x00000018  DECK_WALL_TEXTURE_MIU64_WB006
+pointer  deck_wall_textures  0x00000024  DECK_WALL_TEXTURE_PR128_12
+pointer  deck_wall_textures  0x00000030  DECK_WALL_TEXTURE_PR64_23
+pointer  deck_wall_textures  0x0000003c  DECK_WALL_TEXTURE_PR_KAGE32
+pointer  deck_wall_texlist  0x00000000  deck_wall_textures
+pointer  deck_wall_model  0x00000000  deck_wall_vertices
+pointer  deck_wall_model  0x00000004  deck_wall_polygons
+pointer  deck_wall_object  0x00000004  deck_wall_model
+pointer  deck_wall_alternate_textures  0x00000000  DECK_WALL_TEXTURE_MIU128_WB001
+pointer  deck_wall_alternate_textures  0x0000000c  DECK_WALL_TEXTURE_MIU32_WB001
+pointer  deck_wall_alternate_textures  0x00000018  DECK_WALL_TEXTURE_MIU64_WB001
+pointer  deck_wall_alternate_textures  0x00000024  DECK_WALL_TEXTURE_MIU64_WB010
+pointer  deck_wall_alternate_texlist  0x00000000  deck_wall_alternate_textures
+pointer  deck_wall_alternate_model  0x00000000  deck_wall_alternate_vertices
+pointer  deck_wall_alternate_model  0x00000004  deck_wall_alternate_polygons
+pointer  deck_wall_alternate_object  0x00000004  deck_wall_alternate_model
+pointer  deck_wall_texlists  0x00000000  deck_wall_texlist

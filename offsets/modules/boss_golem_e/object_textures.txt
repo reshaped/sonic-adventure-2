@@ -1,0 +1,2 @@
+datum  golem_effect_materials  C  0x00000000  84
+datum  object_textures  D  0x00000000  552

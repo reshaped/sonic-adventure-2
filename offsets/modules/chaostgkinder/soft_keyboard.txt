@@ -1,0 +1,8 @@
+datum  keyboard_atlas  C  0x00000000  12
+datum  hiragana_keys  C  0x0000000c  448
+datum  katakana_keys  C  0x000001cc  448
+datum  tab_two_keys  C  0x0000038c  448
+datum  tab_three_keys  C  0x0000054c  448
+datum  shifted_keys  C  0x0000070c  448
+datum  shifted_tab_three  C  0x000008cc  448
+datum  layouts  D  0x0000000c  32

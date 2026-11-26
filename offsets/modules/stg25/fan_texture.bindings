@@ -1,0 +1,7 @@
+text  CHAMBER_FAN_TEXTURE_DZ_DC_MECHANIX64C  18
+
+pointer  textures  0x00000000  CHAMBER_FAN_TEXTURE_DZ_DC_MECHANIX64C
+pointer  fan_texlist  0x00000000  textures
+pointer  fan_model  0x00000000  fan_vertices
+pointer  fan_model  0x00000004  fan_polygons
+pointer  fan_object  0x00000004  fan_model

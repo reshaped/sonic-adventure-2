@@ -1,0 +1,2 @@
+modules/stg45/player_motions.c
+modules/stg45/terrain.c

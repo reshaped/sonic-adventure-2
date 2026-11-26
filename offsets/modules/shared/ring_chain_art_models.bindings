@@ -1,0 +1,5 @@
+pointer  ring_chain_root_model  0x00000004  ring_chain_root_polygons
+pointer  ring_chain_root  0x00000004  ring_chain_root_model
+pointer  ring_entry_template_model  0x00000000  ring_entry_template_vertices
+pointer  ring_entry_template_model  0x00000004  ring_entry_template_polygons
+pointer  ring_entry_template  0x00000004  ring_entry_template_model

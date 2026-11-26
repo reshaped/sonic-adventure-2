@@ -1,0 +1,2 @@
+text  STARS_MATERIAL_01  12
+pointer  stars_textures  0x00000000  STARS_MATERIAL_01

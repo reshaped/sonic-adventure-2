@@ -1,0 +1,5 @@
+include quarters_propeller
+include  quarters_propeller_models
+pointer  quarters_propeller_texlists  0x00000000  red_texlist
+pointer  quarters_propeller_texlists  0x00000004  green_texlist
+pointer  quarters_propeller_texlists  0x00000008  blue_texlist

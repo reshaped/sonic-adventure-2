@@ -1,0 +1,15 @@
+text  TURNTABLE_TEXTURE_PUM32_1  C  0x00000060  8
+text  TURNTABLE_TEXTURE_PUM64_4  C  0x00000068  8
+datum  turntable_texlist_names  D  0x00000000  24
+datum  turntable_texlist  D  0x00000018  8
+datum  turntable_polygons  D  0x00000020  474
+datum  turntable_vertices  D  0x000001fc  588
+datum  turntable_model  D  0x00000448  24
+datum  turntable_object  D  0x00000460  52
+datum  turntable_collision_materials  D  0x00000494  20
+datum  turntable_collision_strips  D  0x000004a8  152
+datum  turntable_collision_faces  D  0x00000540  24
+datum  turntable_collision_points  D  0x00000558  432
+datum  turntable_collision_normals  D  0x00000708  432
+datum  turntable_collision_model  D  0x000008b8  40
+datum  turntable_collision  D  0x000008e0  52

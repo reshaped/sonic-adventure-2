@@ -1,0 +1,29 @@
+text  SHED_TEXTURE_MIU128_LOCO004  15
+text  SHED_TEXTURE_MIU32_MO004  12
+text  SHED_TEXTURE_MIU64_MO005  12
+text  SHED_TEXTURE_MIU64_MO011  12
+
+pointer  shed_texlist_names  0x00000000  SHED_TEXTURE_MIU128_LOCO004
+pointer  shed_texlist_names  0x0000000c  SHED_TEXTURE_MIU32_MO004
+pointer  shed_texlist_names  0x00000018  SHED_TEXTURE_MIU64_MO005
+pointer  shed_texlist_names  0x00000024  SHED_TEXTURE_MIU64_MO011
+pointer  shed_texlist  0x00000000  shed_texlist_names
+pointer  shed_model  0x00000000  shed_vertices
+pointer  shed_model  0x00000004  shed_polygons
+pointer  shed_object  0x00000004  shed_model
+pointer  shed_piece_0_texlist_names  0x00000000  SHED_TEXTURE_MIU64_MO011
+pointer  shed_piece_0_texlist  0x00000000  shed_piece_0_texlist_names
+pointer  shed_piece_0_model  0x00000000  shed_piece_0_vertices
+pointer  shed_piece_0_model  0x00000004  shed_piece_0_polygons
+pointer  shed_piece_0_object  0x00000004  shed_piece_0_model
+pointer  shed_piece_1_texlist_names  0x00000000  SHED_TEXTURE_MIU128_LOCO004
+pointer  shed_piece_1_texlist_names  0x0000000c  SHED_TEXTURE_MIU64_MO005
+pointer  shed_piece_1_texlist  0x00000000  shed_piece_1_texlist_names
+pointer  shed_piece_1_model  0x00000000  shed_piece_1_vertices
+pointer  shed_piece_1_model  0x00000004  shed_piece_1_polygons
+pointer  shed_piece_1_object  0x00000004  shed_piece_1_model
+pointer  shed_piece_2_texlist_names  0x00000000  SHED_TEXTURE_MIU128_LOCO004
+pointer  shed_piece_2_texlist  0x00000000  shed_piece_2_texlist_names
+pointer  shed_piece_2_model  0x00000000  shed_piece_2_vertices
+pointer  shed_piece_2_model  0x00000004  shed_piece_2_polygons
+pointer  shed_piece_2_object  0x00000004  shed_piece_2_model

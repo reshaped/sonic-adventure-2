@@ -1,0 +1,24 @@
+text  KILN_TEXTURE_MIU128_MI001  13
+text  KILN_TEXTURE_MIU64_MO002  12
+text  KILN_TEXTURE_MIU64_MO014  12
+text  KILN_TEXTURE_MIU64_MS004  12
+
+pointer  kiln_texlists  0x00000000  kiln_texlist
+pointer  kiln_texlist_names  0x00000000  KILN_TEXTURE_MIU128_MI001
+pointer  kiln_texlist_names  0x0000000c  KILN_TEXTURE_MIU64_MO002
+pointer  kiln_texlist_names  0x00000018  KILN_TEXTURE_MIU64_MO014
+pointer  kiln_texlist_names  0x00000024  KILN_TEXTURE_MIU64_MS004
+pointer  kiln_texlist  0x00000000  kiln_texlist_names
+pointer  kiln_object_child_model  0x00000000  kiln_object_child_vertices
+pointer  kiln_object_child_model  0x00000004  kiln_object_child_polygons
+pointer  kiln_object_child  0x00000004  kiln_object_child_model
+pointer  kiln_model  0x00000000  kiln_vertices
+pointer  kiln_model  0x00000004  kiln_polygons
+pointer  kiln_object  0x00000004  kiln_model
+pointer  kiln_object  0x0000002c  kiln_object_child
+pointer  kiln_collision_faces  0x00000004  kiln_collision_strips
+pointer  kiln_collision_model  0x00000000  kiln_collision_points
+pointer  kiln_collision_model  0x00000004  kiln_collision_normals
+pointer  kiln_collision_model  0x0000000c  kiln_collision_faces
+pointer  kiln_collision_model  0x00000010  kiln_collision_materials
+pointer  kiln_collision  0x00000004  kiln_collision_model

@@ -1,0 +1,7 @@
+datum  meteor_miu64_fr006  C  0x00000000  12
+datum  textures  D  0x00000000  12
+datum  meteor_fall_texlist  D  0x0000000c  8
+datum  meteor_fall_polygons  D  0x00000014  510
+datum  meteor_fall_vertices  D  0x00000214  428
+datum  meteor_fall_mesh  D  0x000003c0  24
+datum  meteor_fall_object  D  0x000003d8  52

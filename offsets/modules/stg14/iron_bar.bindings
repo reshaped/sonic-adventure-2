@@ -1,0 +1,3 @@
+pointer  arc_model  0x00000000  arc_vertices
+pointer  arc_model  0x00000004  arc_polygons
+pointer  arc_object  0x00000004  arc_model

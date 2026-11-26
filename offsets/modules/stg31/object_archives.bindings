@@ -1,0 +1,72 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_HILL_OBJ  9
+text  STAGE_TEXTURE_HILL_OBJ2  10
+text  STAGE_TEXTURE_ROCK  5
+text  STAGE_TEXTURE_TOTEM  6
+text  PVM_OBJTEX_STG31  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+
+pointer  stage_archive_names  0x00000000  STAGE_TEXTURE_HILL_OBJ
+pointer  stage_archive_names  0x0000000c  STAGE_TEXTURE_HILL_OBJ2
+pointer  stage_archive_names  0x00000018  STAGE_TEXTURE_ROCK
+pointer  stage_archive_names  0x00000024  STAGE_TEXTURE_TOTEM
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  green_hill_texture_groups  0x00000000  stage_textures
+pointer  green_hill_texture_groups  0x00000004  goal_ring_texlists
+pointer  green_hill_texture_groups  0x00000008  emerald_texlists
+pointer  green_hill_texture_groups  0x0000000c  item_box_texlists
+pointer  green_hill_texture_groups  0x00000010  item_box_air_texlists
+pointer  green_hill_texture_groups  0x00000014  weight_texlists
+pointer  green_hill_texture_groups  0x00000018  iron_ball_texlists
+pointer  green_hill_texture_groups  0x0000001c  triple_spring_texlists
+pointer  green_hill_texture_groups  0x00000020  dynamite_texlists
+pointer  green_hill_texture_groups  0x00000024  reel_texlists
+pointer  green_hill_texture_groups  0x00000028  chao_pipe_texlists
+pointer  green_hill_texture_groups  0x0000002c  cage_texlists
+pointer  green_hill_texture_groups  0x00000030  wood_box_texlists
+pointer  green_hill_texture_groups  0x00000034  iron_box_texlists
+pointer  green_hill_texture_groups  0x00000038  upgrade_texlists
+pointer  green_hill_texture_groups  0x0000003c  missile_texlists
+pointer  green_hill_texture_groups  0x00000040  skull_texlists
+pointer  green_hill_texture_groups  0x00000044  rocket_texlists
+pointer  green_hill_texture_groups  0x00000048  search_box_texlists
+pointer  green_hill_texture_groups  0x0000004c  hint_box_texlists
+pointer  green_hill_texture_groups  0x00000050  knudai_texlists
+pointer  green_hill_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  green_hill_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  green_hill_texture_groups  0x0000005c  knudai_door_texlists
+pointer  green_hill_texture_groups  0x00000060  chao_box_texlists
+pointer  green_hill_texture_groups  0x00000064  chao_key_texlists
+pointer  green_hill_texture_groups  0x00000068  object_effect_texlists
+pointer  green_hill_texture_groups  0x0000006c  messenger_texlists
+pointer  green_hill_texture_groups  0x00000070  ring_effect_texlists
+pointer  green_hill_texture_groups  0x00000074  solid_box_texlists
+pointer  green_hill_texture_groups  0x00000078  green_hill_scenery_texlists
+pointer  green_hill_texture_groups  0x0000007c  green_hill_platform_texlists
+pointer  green_hill_texture_groups  0x00000080  green_hill_floor_texlists
+pointer  green_hill_texture_groups  0x00000084  green_hill_spike_texlists
+pointer  green_hill_pvms  0x00000000  PVM_OBJTEX_STG31
+pointer  green_hill_pvms  0x00000004  stage_archive
+pointer  green_hill_pvms  0x00000008  PVM_EFFTEX_COMMON
+pointer  green_hill_pvms  0x0000000c  efftex_common_texlist
+pointer  green_hill_pvms  0x00000010  PVM_OBJTEX_COMMON
+pointer  green_hill_pvms  0x00000014  objtex_common_texlist
+pointer  green_hill_pvms  0x0000001c  green_hill_land_texlist

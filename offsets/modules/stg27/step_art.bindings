@@ -1,0 +1,8 @@
+include step_rail_collision
+pointer  step_light_model  0x00000000  running_lights_vertices
+pointer  step_light_model  0x00000004  running_lights_polygons
+pointer  running_lights_object  0x00000004  step_light_model
+pointer  step_model  0x00000000  deck_vertices
+pointer  step_model  0x00000004  deck_polygons
+pointer  deck_object  0x00000004  step_model
+pointer  deck_object  0x0000002c  running_lights_object

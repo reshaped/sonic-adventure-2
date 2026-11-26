@@ -1,0 +1,7 @@
+text  HIDDEN_BASE_MAT_MAT_TEXTURE  17
+
+pointer  textures  0x00000000  HIDDEN_BASE_MAT_MAT_TEXTURE
+pointer  base_mat_texlist  0x00000000  textures
+pointer  base_mat_model  0x00000000  base_mat_vertices
+pointer  base_mat_model  0x00000004  base_mat_polygons
+pointer  base_mat_object  0x00000004  base_mat_model

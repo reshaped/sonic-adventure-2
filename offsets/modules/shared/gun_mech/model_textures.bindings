@@ -1,0 +1,65 @@
+text MECH_BS0_BODY0_TEXTURE 10
+text MECH_BS0_BODY1_TEXTURE 10
+text MECH_BS0_CPIT0_TEXTURE 10
+text MECH_BS0_LEG0_TEXTURE 9
+text MECH_BS0_LEG1_TEXTURE 9
+text MECH_BS0_LEG2_TEXTURE 9
+text MECH_BS0_LEG3_TEXTURE 9
+text MECH_BS0_LEG4_TEXTURE 9
+text MECH_BS0_LEG5_TEXTURE 9
+text MECH_BS0_MG0_TEXTURE 8
+text MECH_BS0_MGUN0_TEXTURE 10
+text MECH_BS0_ML0_TEXTURE 8
+text MECH_BS0_ML1_TEXTURE 8
+text MECH_BS0_ML2_TEXTURE 8
+text MECH_BS0_ML3_TEXTURE 8
+text MECH_BS0_ML4_TEXTURE 8
+text MECH_BS0_ML5_TEXTURE 8
+text MECH_BS0_ML6_TEXTURE 8
+text MECH_BS0_MS0_TEXTURE 8
+text MECH_BS0_MS10_TEXTURE 9
+text MECH_BS0_PLT0_TEXTURE 9
+text MECH_BS0_PRT0_TEXTURE 9
+text MECH_BS0_PRT1_TEXTURE 9
+text MECH_BS0_PRT2_TEXTURE 9
+text MECH_GUN_LOGO001_TEXTURE 12
+text MECH_REF_SKYD_TEXTURE 9
+text MECH_JET1_TEXTURE 5
+text MECH_E102NEWBEAM_TEXTURE 12
+text MECH_C6_HT16_TEXTURE 8
+
+pointer  grobo_textures  0x00000000  MECH_BS0_BODY0_TEXTURE
+pointer  grobo_textures  0x0000000c  MECH_BS0_BODY1_TEXTURE
+pointer  grobo_textures  0x00000018  MECH_BS0_CPIT0_TEXTURE
+pointer  grobo_textures  0x00000024  MECH_BS0_LEG0_TEXTURE
+pointer  grobo_textures  0x00000030  MECH_BS0_LEG1_TEXTURE
+pointer  grobo_textures  0x0000003c  MECH_BS0_LEG2_TEXTURE
+pointer  grobo_textures  0x00000048  MECH_BS0_LEG3_TEXTURE
+pointer  grobo_textures  0x00000054  MECH_BS0_LEG4_TEXTURE
+pointer  grobo_textures  0x00000060  MECH_BS0_LEG5_TEXTURE
+pointer  grobo_textures  0x0000006c  MECH_BS0_MG0_TEXTURE
+pointer  grobo_textures  0x00000078  MECH_BS0_MGUN0_TEXTURE
+pointer  grobo_textures  0x00000084  MECH_BS0_ML0_TEXTURE
+pointer  grobo_textures  0x00000090  MECH_BS0_ML1_TEXTURE
+pointer  grobo_textures  0x0000009c  MECH_BS0_ML2_TEXTURE
+pointer  grobo_textures  0x000000a8  MECH_BS0_ML3_TEXTURE
+pointer  grobo_textures  0x000000b4  MECH_BS0_ML4_TEXTURE
+pointer  grobo_textures  0x000000c0  MECH_BS0_ML5_TEXTURE
+pointer  grobo_textures  0x000000cc  MECH_BS0_ML6_TEXTURE
+pointer  grobo_textures  0x000000d8  MECH_BS0_MS0_TEXTURE
+pointer  grobo_textures  0x000000e4  MECH_BS0_MS10_TEXTURE
+pointer  grobo_textures  0x000000f0  MECH_BS0_PLT0_TEXTURE
+pointer  grobo_textures  0x000000fc  MECH_BS0_PRT0_TEXTURE
+pointer  grobo_textures  0x00000108  MECH_BS0_PRT1_TEXTURE
+pointer  grobo_textures  0x00000114  MECH_BS0_PRT2_TEXTURE
+pointer  grobo_textures  0x00000120  MECH_GUN_LOGO001_TEXTURE
+pointer  grobo_textures  0x0000012c  MECH_REF_SKYD_TEXTURE
+pointer  grobo_texlist  0x00000000  grobo_textures
+pointer  grobo_eff_textures  0x00000000  MECH_JET1_TEXTURE
+pointer  grobo_eff_textures  0x0000000c  MECH_E102NEWBEAM_TEXTURE
+pointer  grobo_eff_textures  0x00000018  MECH_C6_HT16_TEXTURE
+pointer  grobo_eff_texlist  0x00000000  grobo_eff_textures
+pointer  jet1_textures  0x00000000  MECH_JET1_TEXTURE
+pointer  jet1_texlist  0x00000000  jet1_textures
+pointer  single_beam_textures  0x00000000  MECH_E102NEWBEAM_TEXTURE
+pointer  single_beam_texlist  0x00000000  single_beam_textures

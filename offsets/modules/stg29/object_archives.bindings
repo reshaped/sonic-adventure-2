@@ -1,0 +1,93 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_MIU128_CG017  13
+text  STAGE_TEXTURE_MIU128_CG022  13
+text  STAGE_TEXTURE_MIU32_EE001  12
+text  STAGE_TEXTURE_MIU64_CG003  12
+text  STAGE_TEXTURE_MIU64_CG004  12
+text  STAGE_TEXTURE_MIU64_CG009  12
+text  STAGE_TEXTURE_MIU64_CG012  12
+text  STAGE_TEXTURE_MIU64_EE002  12
+text  STAGE_TEXTURE_MIU64_EE003  12
+text  STAGE_TEXTURE_TX_POISON001  13
+text  STAGE_TEXTURE_TX_POISON002  13
+text  STAGE_TEXTURE_TX_POISON003  13
+text  STAGE_TEXTURE_TX_POISON004  13
+text  STAGE_TEXTURE_TX_POISON005  13
+text  STAGE_TEXTURE_TX_POISON006  13
+text  STAGE_TEXTURE_TX_POISON007  13
+text  STAGE_TEXTURE_TX_POISON008  13
+text  STAGE_TEXTURE_TX_POISON009  13
+text  STAGE_TEXTURE_TX_POISON010  13
+text  STAGE_TEXTURE_TX_POISON011  13
+text  STAGE_TEXTURE_TX_POISON012  13
+text  STAGE_TEXTURE_TX_POISON013  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+text  PVM_BOSS_PWGUAGE_TEX  17
+text  PVM_OBJTEX_STG29  13
+
+pointer  stage_archive_names  0x00000000  STAGE_TEXTURE_MIU128_CG017
+pointer  stage_archive_names  0x0000000c  STAGE_TEXTURE_MIU128_CG022
+pointer  stage_archive_names  0x00000018  STAGE_TEXTURE_MIU32_EE001
+pointer  stage_archive_names  0x00000024  STAGE_TEXTURE_MIU64_CG003
+pointer  stage_archive_names  0x00000030  STAGE_TEXTURE_MIU64_CG004
+pointer  stage_archive_names  0x0000003c  STAGE_TEXTURE_MIU64_CG009
+pointer  stage_archive_names  0x00000048  STAGE_TEXTURE_MIU64_CG012
+pointer  stage_archive_names  0x00000054  STAGE_TEXTURE_MIU64_EE002
+pointer  stage_archive_names  0x00000060  STAGE_TEXTURE_MIU64_EE003
+pointer  stage_archive_names  0x0000006c  STAGE_TEXTURE_TX_POISON001
+pointer  stage_archive_names  0x00000078  STAGE_TEXTURE_TX_POISON002
+pointer  stage_archive_names  0x00000084  STAGE_TEXTURE_TX_POISON003
+pointer  stage_archive_names  0x00000090  STAGE_TEXTURE_TX_POISON004
+pointer  stage_archive_names  0x0000009c  STAGE_TEXTURE_TX_POISON005
+pointer  stage_archive_names  0x000000a8  STAGE_TEXTURE_TX_POISON006
+pointer  stage_archive_names  0x000000b4  STAGE_TEXTURE_TX_POISON007
+pointer  stage_archive_names  0x000000c0  STAGE_TEXTURE_TX_POISON008
+pointer  stage_archive_names  0x000000cc  STAGE_TEXTURE_TX_POISON009
+pointer  stage_archive_names  0x000000d8  STAGE_TEXTURE_TX_POISON010
+pointer  stage_archive_names  0x000000e4  STAGE_TEXTURE_TX_POISON011
+pointer  stage_archive_names  0x000000f0  STAGE_TEXTURE_TX_POISON012
+pointer  stage_archive_names  0x000000fc  STAGE_TEXTURE_TX_POISON013
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  big_jump_anim_texlist
+pointer  stage_textures  0x00000018  big_jump_texlist
+pointer  stage_textures  0x0000001c  ring_shadow_texlist
+pointer  stage_textures  0x00000020  effect_texlist
+pointer  stage_textures  0x00000024  item_balloon_texlist
+pointer  stage_textures  0x00000028  ring_sparkle_texlist
+pointer  stage_textures  0x0000002c  burst_texlist
+pointer  stage_textures  0x00000030  lens_flare_texlist
+pointer  versus_mech_2_texture_groups  0x00000000  stage_textures
+pointer  versus_mech_2_texture_groups  0x00000004  item_box_texlists
+pointer  versus_mech_2_texture_groups  0x00000008  item_box_air_texlists
+pointer  versus_mech_2_texture_groups  0x0000000c  weight_texlists
+pointer  versus_mech_2_texture_groups  0x00000010  iron_ball_texlists
+pointer  versus_mech_2_texture_groups  0x00000014  triple_spring_texlists
+pointer  versus_mech_2_texture_groups  0x00000018  dynamite_texlists
+pointer  versus_mech_2_texture_groups  0x0000001c  reel_texlists
+pointer  versus_mech_2_texture_groups  0x00000020  cage_texlists
+pointer  versus_mech_2_texture_groups  0x00000024  wood_box_texlists
+pointer  versus_mech_2_texture_groups  0x00000028  iron_box_texlists
+pointer  versus_mech_2_texture_groups  0x0000002c  missile_texlists
+pointer  versus_mech_2_texture_groups  0x00000030  skull_texlists
+pointer  versus_mech_2_texture_groups  0x00000034  rocket_texlists
+pointer  versus_mech_2_texture_groups  0x00000038  hint_box_texlists
+pointer  versus_mech_2_texture_groups  0x0000003c  object_effect_texlists
+pointer  versus_mech_2_texture_groups  0x00000040  messenger_texlists
+pointer  versus_mech_2_texture_groups  0x00000044  solid_box_texlists
+pointer  versus_mech_2_texture_groups  0x00000048  capsule_bomb_texlists
+pointer  versus_mech_2_pvms  0x00000000  PVM_EFFTEX_COMMON
+pointer  versus_mech_2_pvms  0x00000004  efftex_common_texlist
+pointer  versus_mech_2_pvms  0x00000008  PVM_OBJTEX_COMMON
+pointer  versus_mech_2_pvms  0x0000000c  objtex_common_texlist
+pointer  versus_mech_2_pvms  0x00000010  PVM_BOSS_PWGUAGE_TEX
+pointer  versus_mech_2_pvms  0x00000014  boss_gauge_texlist
+pointer  versus_mech_2_pvms  0x00000018  PVM_OBJTEX_STG29
+pointer  versus_mech_2_pvms  0x0000001c  stage_archive

@@ -1,0 +1,5 @@
+text SIGN_TEXTURE_MIU64_IG018 12
+text SIGN_TEXTURE_PR128_12 9
+
+include prison_sign
+pointer iron_gate_sign_texlists 0x00000000 sign_texlist

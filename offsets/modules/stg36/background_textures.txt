@@ -1,0 +1,2 @@
+datum  names  D  0x00000000  84
+datum  core_tails_background_textures  D  0x00000054  8

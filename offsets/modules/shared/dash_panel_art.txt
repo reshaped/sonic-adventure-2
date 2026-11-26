@@ -1,0 +1,15 @@
+datum  dash_panel_texture_filenames  C  0x00000000  29
+datum  panel_texture  D  0x00000000  12
+datum  dash_panel_texlist  D  0x0000000c  8
+datum  panel_polygons  D  0x00000014  666
+datum  panel_vertices  D  0x000002b0  828
+datum  dash_panel_model  D  0x000005ec  24
+datum  dash_panel_object  D  0x00000604  52
+datum  belt_texture  D  0x00000638  12
+datum  dash_panel_anim_texlist  D  0x00000644  8
+datum  belt_polygons  D  0x0000064c  86
+datum  belt_vertices  D  0x000006a4  252
+datum  dash_panel_anim_model  D  0x000007a0  24
+datum  dash_panel_anim_object  D  0x000007b8  52
+datum  belt_uvs  D  0x000007ec  48
+datum  dash_panel_texture_anim  D  0x0000081c  36

@@ -1,0 +1,5 @@
+datum  fan_polygons  D  0x00000000  258
+datum  fan_vertices  D  0x00000104  412
+datum  fan_model  D  0x000002a0  24
+datum  fan_object  D  0x000002b8  52
+datum  quarters_fan_texlists  D  0x000002ec  8

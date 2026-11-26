@@ -1,0 +1,32 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_GROBO_EFF_TEX  14
+include  gun_mech_archive_group
+pointer  fdog_texture_groups  0x00000000  stage_textures
+pointer  fdog_texture_groups  0x00000004  goal_ring_texlists
+pointer  fdog_texture_groups  0x00000008  emerald_texlists
+pointer  fdog_texture_groups  0x0000000c  item_box_texlists
+pointer  fdog_texture_groups  0x00000010  item_box_air_texlists
+pointer  fdog_texture_groups  0x00000014  weight_texlists
+pointer  fdog_texture_groups  0x00000018  iron_ball_texlists
+pointer  fdog_texture_groups  0x0000001c  triple_spring_texlists
+pointer  fdog_texture_groups  0x00000020  dynamite_texlists
+pointer  fdog_texture_groups  0x00000024  reel_texlists
+pointer  fdog_texture_groups  0x00000028  chao_pipe_texlists
+pointer  fdog_texture_groups  0x0000002c  cage_texlists
+pointer  fdog_texture_groups  0x00000030  wood_box_texlists
+pointer  fdog_texture_groups  0x00000034  iron_box_texlists
+pointer  fdog_texture_groups  0x00000038  upgrade_texlists
+pointer  fdog_texture_groups  0x0000003c  missile_texlists
+pointer  fdog_texture_groups  0x00000040  skull_texlists
+pointer  fdog_texture_groups  0x00000044  object_effect_texlists
+pointer  fdog_texture_groups  0x00000048  messenger_texlists
+pointer  fdog_texture_pvms  0x00000000  ARCHIVE_EFFTEX_COMMON
+pointer  fdog_texture_pvms  0x00000004  efftex_common_texlist
+pointer  fdog_texture_pvms  0x00000008  ARCHIVE_OBJTEX_COMMON
+pointer  fdog_texture_pvms  0x0000000c  objtex_common_texlist
+pointer  fdog_texture_pvms  0x00000010  ARCHIVE_GROBO_EFF_TEX
+pointer  fdog_texture_pvms  0x00000014  grobo_eff_texlist

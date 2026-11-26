@@ -1,0 +1,37 @@
+text  SHUTTER_TEXTURE_MIU128_IG001  13
+text  SHUTTER_TEXTURE_MIU128_IG003  13
+text  SHUTTER_TEXTURE_MIU128_IG004  13
+text  SHUTTER_TEXTURE_MIU64_IG001  12
+text  SHUTTER_TEXTURE_MIU64_IG009  12
+text  SHUTTER_TEXTURE_MIU64_IG011  12
+text  SHUTTER_TEXTURE_MIU64_IG012  12
+text  SHUTTER_TEXTURE_MIU64_IG013  12
+text  SHUTTER_TEXTURE_MIU128_IG005  13
+text  SHUTTER_TEXTURE_MIU128_IG006  13
+text  SHUTTER_TEXTURE_MIU128_IG007  13
+text  SHUTTER_TEXTURE_MIU128_IG008  13
+include  iron_gate_shutters
+pointer  side_shutter_texlist  0x00000000  shutter_names
+pointer  shutter_panel_3  0x00000030  shutter_panel_0
+pointer  shutter_panel_2  0x00000030  shutter_panel_3
+pointer  shutter_lamp_3  0x00000030  shutter_panel_1
+pointer  shutter_lamp_1  0x00000030  shutter_lamp_3
+pointer  shutter_lamp_2  0x00000030  shutter_lamp_1
+pointer  shutter_lamp_0  0x00000030  shutter_lamp_2
+pointer  shutter_plate_object  0x00000030  shutter_lamp_0
+pointer  side_shutter_door_model  0x00000000  side_shutter_door_vertices
+pointer  side_shutter_door_model  0x00000004  side_shutter_door_polygons
+pointer  side_shutter_door_object  0x00000004  side_shutter_door_model
+pointer  side_shutter_door_object  0x0000002c  shutter_plate_object
+pointer  side_shutter_panels  0x00000000  shutter_panel_0
+pointer  side_shutter_panels  0x00000004  shutter_lamp_0
+pointer  side_shutter_panels  0x00000008  shutter_panel_1
+pointer  side_shutter_panels  0x0000000c  shutter_lamp_1
+pointer  side_shutter_panels  0x00000010  shutter_panel_2
+pointer  side_shutter_panels  0x00000014  shutter_lamp_2
+pointer  side_shutter_panels  0x00000018  shutter_panel_3
+pointer  side_shutter_panels  0x0000001c  shutter_lamp_3
+pointer  side_shutter_texlists  0x00000000  side_shutter_texlist
+pointer  side_shutter_texlists  0x00000004  shutter_frame_texlist
+pointer  side_shutter_texlists  0x00000008  dust_texlist
+pointer  side_shutter_texlists  0x0000000c  flash_texlist

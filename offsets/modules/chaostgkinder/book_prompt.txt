@@ -1,0 +1,3 @@
+datum  buttons  C  0x00000000  56
+datum  choices  C  0x00000038  16
+datum  panel  C  0x00000048  40

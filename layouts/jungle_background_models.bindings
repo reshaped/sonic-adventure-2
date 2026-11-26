@@ -1,0 +1,6 @@
+pointer  jungle_background_model  0x00000000  jungle_background_vertices
+pointer  jungle_background_model  0x00000004  jungle_background_polygons
+pointer  jungle_background_object  0x00000004  jungle_background_model
+pointer  jungle_background_water_model  0x00000000  jungle_background_water_vertices
+pointer  jungle_background_water_model  0x00000004  jungle_background_water_polygons
+pointer  background_water_object  0x00000004  jungle_background_water_model

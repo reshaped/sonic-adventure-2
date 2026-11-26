@@ -1,0 +1,32 @@
+text  GRAVESTONE_TEXTURE_MIU128_MO001  13
+text  GRAVESTONE_TEXTURE_MIU64_MO012  12
+text  GRAVESTONE_TEXTURE_PUM128_7  9
+
+pointer  gravestone_texlist_names  0x00000000  GRAVESTONE_TEXTURE_MIU128_MO001
+pointer  gravestone_texlist_names  0x0000000c  GRAVESTONE_TEXTURE_MIU64_MO012
+pointer  gravestone_texlist_names  0x00000018  GRAVESTONE_TEXTURE_PUM128_7
+pointer  gravestone_texlist  0x00000000  gravestone_texlist_names
+pointer  gravestone_swing_model  0x00000000  gravestone_swing_vertices
+pointer  gravestone_swing_model  0x00000004  gravestone_swing_polygons
+pointer  gravestone_swing  0x00000004  gravestone_swing_model
+pointer  gravestone_model  0x00000000  gravestone_vertices
+pointer  gravestone_model  0x00000004  gravestone_polygons
+pointer  gravestone_object  0x00000004  gravestone_model
+pointer  gravestone_object  0x0000002c  gravestone_swing
+pointer  gravestone_a_texlist_names  0x00000000  GRAVESTONE_TEXTURE_MIU128_MO001
+pointer  gravestone_a_texlist_names  0x0000000c  GRAVESTONE_TEXTURE_MIU64_MO012
+pointer  gravestone_a_texlist_names  0x00000018  GRAVESTONE_TEXTURE_PUM128_7
+pointer  gravestone_a_texlist  0x00000000  gravestone_a_texlist_names
+pointer  gravestone_a_swing_model  0x00000000  gravestone_a_swing_vertices
+pointer  gravestone_a_swing_model  0x00000004  gravestone_a_swing_polygons
+pointer  gravestone_a_swing  0x00000004  gravestone_a_swing_model
+pointer  gravestone_a_model  0x00000000  gravestone_a_vertices
+pointer  gravestone_a_model  0x00000004  gravestone_a_polygons
+pointer  gravestone_a_object  0x00000004  gravestone_a_model
+pointer  gravestone_a_object  0x0000002c  gravestone_a_swing
+pointer  gravestone_collision_faces  0x00000004  gravestone_collision_strips
+pointer  gravestone_collision_model  0x00000000  gravestone_collision_points
+pointer  gravestone_collision_model  0x00000004  gravestone_collision_normals
+pointer  gravestone_collision_model  0x0000000c  gravestone_collision_faces
+pointer  gravestone_collision_model  0x00000010  gravestone_collision_materials
+pointer  gravestone_collision  0x00000004  gravestone_collision_model

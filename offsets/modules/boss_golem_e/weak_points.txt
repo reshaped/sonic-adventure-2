@@ -1,0 +1,3 @@
+datum  weak_point_pos  D  0x00000018  36
+datum  weak_point_angles  D  0x0000003c  36
+datum  target_offsets  D  0x0000006c  36

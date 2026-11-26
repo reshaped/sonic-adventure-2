@@ -1,0 +1,4 @@
+datum  missile_polygons  D  0x00000000  366
+datum  missile_vertices  D  0x00000170  828
+datum  missile_mesh  D  0x000004ac  24
+datum  mech_boss_missile_object  D  0x000004c4  52

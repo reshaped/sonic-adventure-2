@@ -1,0 +1,5 @@
+text  STORY_SELECT_MUSIC  C  0x00000000  13
+datum  hero_chapters  D  0x00000000  120
+datum  dark_chapters  D  0x00000078  120
+datum  last_chapters  D  0x000000f0  32
+datum  chapters  D  0x00000110  12

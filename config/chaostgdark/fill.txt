@@ -1,0 +1,2 @@
+# The original overlay header points to an export in its first code input.
+DHEAD P inputs 7cdac884e9435195cccecd15f686f0c6a334a03c629a52015f49e375d783ae74 _chaostgdark_step 0x0c9c0008

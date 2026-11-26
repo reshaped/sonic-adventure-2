@@ -1,0 +1,12 @@
+datum  flame_spark_cell  D  0x00000278  20
+datum  light_cell  D  0x000002ac  20
+datum  flash_glow  D  0x00000370  96
+datum  jet_flame  D  0x000003d0  96
+datum  chaos_control_screen  D  0x00000330  64
+datum  s_dash_textures  D  0x00000000  160
+datum  s_dash_second_textures  D  0x000000a0  152
+datum  sh_dash_textures  D  0x00000138  160
+datum  sh_dash_second_textures  D  0x000001d8  152
+datum  flame_spark_sprite  D  0x0000028c  32
+datum  sparkle_light_head  D  0x000002c0  32
+datum  spin_charge_light_head  D  0x000002e0  32

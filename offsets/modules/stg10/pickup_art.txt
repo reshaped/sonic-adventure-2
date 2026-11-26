@@ -1,0 +1,8 @@
+text  HARBOR_TEXTURE_MIU64_MH008  C  0x00000000  12
+text  HARBOR_TEXTURE_PR64_14  C  0x0000000c  8
+datum  materials  D  0x00000000  24
+datum  pickup_object_texlist  D  0x00000018  8
+datum  pickup_polygons  D  0x00000020  438
+datum  pickup_vertices  D  0x000001d8  476
+datum  pickup_object_model  D  0x000003b4  24
+datum  pickup_object_node  D  0x000003cc  52

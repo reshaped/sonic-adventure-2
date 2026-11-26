@@ -1,0 +1,15 @@
+text  HIGHWAY_TEXT_MIU128_RH002  13
+text  HIGHWAY_TEXT_MIU128_RH003  13
+text  HIGHWAY_TEXT_MIU64_RH008  12
+text  HIGHWAY_TEXT_MIU64_RH010  12
+pointer  highway_rail_textures  0x00000000  HIGHWAY_TEXT_MIU128_RH002
+pointer  highway_rail_textures  0x0000000c  HIGHWAY_TEXT_MIU128_RH003
+pointer  highway_rail_textures  0x00000018  HIGHWAY_TEXT_MIU64_RH008
+pointer  highway_rail_textures  0x00000024  HIGHWAY_TEXT_MIU64_RH010
+pointer  highway_rail_texlist  0x00000000  highway_rail_textures
+pointer  highway_rail_mesh  0x00000000  highway_rail_vertices
+pointer  highway_rail_mesh  0x00000004  highway_rail_polygons
+pointer  highway_rail_object  0x00000004  highway_rail_mesh
+pointer  rail_path  0x00000008  rail_points
+pointer  rail_path  0x0000000c  path_rail_init
+pointer  highway_rail_texlists  0x00000000  highway_rail_texlist

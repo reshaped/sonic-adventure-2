@@ -1,0 +1,29 @@
+text  DECK_GUN_TEXTURE_MIU128_WB006  13
+text  DECK_GUN_TEXTURE_MIU64_IG017  12
+text  DECK_GUN_TEXTURE_MIU64_MH001  12
+text  DECK_GUN_TEXTURE_MIU64_MH005  12
+text  DECK_GUN_TEXTURE_MIU64_WB003  12
+text  DECK_GUN_TEXTURE_PR64_12  8
+text  DECK_GUN_TEXTURE_PR64_20  8
+
+pointer  deck_gun_textures  0x00000000  DECK_GUN_TEXTURE_MIU128_WB006
+pointer  deck_gun_textures  0x0000000c  DECK_GUN_TEXTURE_MIU64_IG017
+pointer  deck_gun_textures  0x00000018  DECK_GUN_TEXTURE_MIU64_MH001
+pointer  deck_gun_textures  0x00000024  DECK_GUN_TEXTURE_MIU64_MH005
+pointer  deck_gun_textures  0x00000030  DECK_GUN_TEXTURE_MIU64_WB003
+pointer  deck_gun_textures  0x0000003c  DECK_GUN_TEXTURE_PR64_12
+pointer  deck_gun_textures  0x00000048  DECK_GUN_TEXTURE_PR64_20
+pointer  deck_gun_texlist  0x00000000  deck_gun_textures
+pointer  deck_gun_barrel_model  0x00000000  deck_gun_barrel_vertices
+pointer  deck_gun_barrel_model  0x00000004  deck_gun_barrel_polygons
+pointer  deck_gun_barrel  0x00000004  deck_gun_barrel_model
+pointer  deck_gun_lid_model  0x00000000  deck_gun_lid_vertices
+pointer  deck_gun_lid_model  0x00000004  deck_gun_lid_polygons
+pointer  deck_gun_lid  0x00000004  deck_gun_lid_model
+pointer  deck_gun_lid  0x00000030  deck_gun_barrel
+pointer  deck_gun_base_model  0x00000000  deck_gun_base_vertices
+pointer  deck_gun_base_model  0x00000004  deck_gun_base_polygons
+pointer  deck_gun_base  0x00000004  deck_gun_base_model
+pointer  deck_gun_base  0x0000002c  deck_gun_lid
+pointer  deck_gun_texlists  0x00000000  deck_gun_texlist
+pointer  deck_gun_texlists  0x00000004  dust_texlist

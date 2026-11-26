@@ -1,0 +1,12 @@
+datum  hidden_base_small_plant_textures  D  0x00000000  12
+datum  base_small_plant_texlist  D  0x0000000c  8
+datum  base_small_plant_polygons  D  0x00000014  254
+datum  base_small_plant_vertices  D  0x00000114  588
+datum  base_small_plant_model  D  0x00000360  24
+datum  base_small_plant  D  0x00000378  52
+datum  hidden_base_large_plant_textures  D  0x000003ac  12
+datum  base_large_plant_texlist  D  0x000003b8  8
+datum  base_large_plant_polygons  D  0x000003c0  290
+datum  base_large_plant_vertices  D  0x000004e4  684
+datum  base_large_plant_model  D  0x00000790  24
+datum  base_large_plant  D  0x000007a8  52

@@ -1,0 +1,4 @@
+datum  stars_polygons  D  0x00000000  8102
+datum  stars_vertices  D  0x00001fa8  15116
+datum  sky_stars_mesh  D  0x00005ab4  24
+datum  meteor_sky_stars  D  0x00005acc  52

@@ -1,0 +1,192 @@
+text  STAFF_TEXTURE_SR_LOGO_10TH  29
+text  STAFF_TEXTURE_SR_LOGO_ADX  29
+text  STAFF_TEXTURE_SR_LOGO_S78  29
+text  STAFF_TEXTURE_SR_LOGO_SOAP  29
+text  STAFF_TEXTURE_SR_LOGO_SOFDEC  29
+text  STAFF_TEXTURE_SR_MOJI_ALL  29
+text  STAFF_TEXTURE_SR_SEGALOGO  29
+text  STAFF_TEXTURE_SR_TEAMLOGO  29
+text  STAFF_TEXTURE_HERO_01  29
+text  STAFF_TEXTURE_HERO_02  29
+text  STAFF_TEXTURE_HERO_03  29
+text  STAFF_TEXTURE_HERO_04  29
+text  STAFF_TEXTURE_HERO_05  29
+text  STAFF_TEXTURE_HERO_06  29
+text  STAFF_TEXTURE_HERO_07  29
+text  STAFF_TEXTURE_HERO_08  29
+text  STAFF_TEXTURE_HERO_09  29
+text  STAFF_TEXTURE_HERO_10  29
+text  STAFF_TEXTURE_HERO_11  29
+text  STAFF_TEXTURE_HERO_12  29
+text  STAFF_TEXTURE_HERO_13  29
+text  STAFF_TEXTURE_HERO_14  29
+text  STAFF_TEXTURE_HERO_15  29
+text  STAFF_TEXTURE_HERO_16  29
+text  STAFF_TEXTURE_HERO_17  29
+text  STAFF_TEXTURE_HERO_18  29
+text  STAFF_TEXTURE_HERO_19  29
+text  STAFF_TEXTURE_HERO_20  29
+text  STAFF_TEXTURE_HERO_21  29
+text  STAFF_TEXTURE_HERO_22  29
+text  STAFF_TEXTURE_HERO_23  29
+text  STAFF_TEXTURE_HERO_24  29
+text  STAFF_TEXTURE_HERO_25  29
+text  STAFF_TEXTURE_HERO_26  29
+text  STAFF_TEXTURE_HERO_27  29
+text  STAFF_TEXTURE_HERO_28  29
+text  STAFF_TEXTURE_HERO_29  29
+text  STAFF_TEXTURE_HERO_30  29
+text  STAFF_TEXTURE_HERO_31  29
+text  STAFF_TEXTURE_HERO_32  29
+text  STAFF_TEXTURE_HERO_33  29
+text  STAFF_TEXTURE_HERO_34  29
+text  STAFF_TEXTURE_HERO_35  29
+text  STAFF_TEXTURE_HERO_36  29
+text  STAFF_TEXTURE_HERO_37  29
+text  STAFF_TEXTURE_HERO_38  29
+text  STAFF_TEXTURE_DARK_01  29
+text  STAFF_TEXTURE_DARK_02  29
+text  STAFF_TEXTURE_DARK_03  29
+text  STAFF_TEXTURE_DARK_04  29
+text  STAFF_TEXTURE_DARK_05  29
+text  STAFF_TEXTURE_DARK_06  29
+text  STAFF_TEXTURE_DARK_07  29
+text  STAFF_TEXTURE_DARK_08  29
+text  STAFF_TEXTURE_DARK_09  29
+text  STAFF_TEXTURE_DARK_10  29
+text  STAFF_TEXTURE_DARK_11  29
+text  STAFF_TEXTURE_DARK_12  29
+text  STAFF_TEXTURE_DARK_13  29
+text  STAFF_TEXTURE_DARK_14  29
+text  STAFF_TEXTURE_DARK_15  29
+text  STAFF_TEXTURE_DARK_16  29
+text  STAFF_TEXTURE_DARK_17  29
+text  STAFF_TEXTURE_DARK_18  29
+text  STAFF_TEXTURE_DARK_19  29
+text  STAFF_TEXTURE_DARK_20  29
+text  STAFF_TEXTURE_DARK_21  29
+text  STAFF_TEXTURE_DARK_22  29
+text  STAFF_TEXTURE_DARK_23  29
+text  STAFF_TEXTURE_DARK_24  29
+text  STAFF_TEXTURE_DARK_25  29
+text  STAFF_TEXTURE_DARK_26  29
+text  STAFF_TEXTURE_DARK_27  29
+text  STAFF_TEXTURE_DARK_28  29
+text  STAFF_TEXTURE_DARK_29  29
+text  STAFF_TEXTURE_DARK_30  29
+text  STAFF_TEXTURE_DARK_31  29
+text  STAFF_TEXTURE_DARK_32  29
+text  STAFF_TEXTURE_DARK_33  29
+text  STAFF_TEXTURE_DARK_34  29
+text  STAFF_TEXTURE_DARK_35  29
+text  STAFF_TEXTURE_DARK_36  29
+text  STAFF_TEXTURE_DARK_37  29
+text  STAFF_TEXTURE_DARK_38  29
+text  STAFF_TEXTURE_DARK_39  29
+text  STAFF_TEXTURE_DARK_40  29
+text  STAFF_TEXTURE_DARK_41  29
+text  STAFF_TEXTURE_DARK_42  29
+text  STAFF_TEXTURE_DARK_43  29
+text  STAFF_TEXTURE_DARK_44  29
+text  STAFF_TEXTURE_DARK_45  29
+text  STAFF_TEXTURE_DARK_46  29
+text  STAFF_TEXTURE_DARK_47  29
+
+pointer  roll_textures  0x00000000  STAFF_TEXTURE_SR_LOGO_10TH
+pointer  roll_textures  0x0000000c  STAFF_TEXTURE_SR_LOGO_ADX
+pointer  roll_textures  0x00000018  STAFF_TEXTURE_SR_LOGO_S78
+pointer  roll_textures  0x00000024  STAFF_TEXTURE_SR_LOGO_SOAP
+pointer  roll_textures  0x00000030  STAFF_TEXTURE_SR_LOGO_SOFDEC
+pointer  roll_textures  0x0000003c  STAFF_TEXTURE_SR_MOJI_ALL
+pointer  roll_textures  0x00000048  STAFF_TEXTURE_SR_SEGALOGO
+pointer  roll_textures  0x00000054  STAFF_TEXTURE_SR_TEAMLOGO
+pointer  staff_roll_texlist  0x00000000  roll_textures
+pointer  hero_textures  0x00000000  STAFF_TEXTURE_HERO_01
+pointer  hero_textures  0x0000000c  STAFF_TEXTURE_HERO_02
+pointer  hero_textures  0x00000018  STAFF_TEXTURE_HERO_03
+pointer  hero_textures  0x00000024  STAFF_TEXTURE_HERO_04
+pointer  hero_textures  0x00000030  STAFF_TEXTURE_HERO_05
+pointer  hero_textures  0x0000003c  STAFF_TEXTURE_HERO_06
+pointer  hero_textures  0x00000048  STAFF_TEXTURE_HERO_07
+pointer  hero_textures  0x00000054  STAFF_TEXTURE_HERO_08
+pointer  hero_textures  0x00000060  STAFF_TEXTURE_HERO_09
+pointer  hero_textures  0x0000006c  STAFF_TEXTURE_HERO_10
+pointer  hero_textures  0x00000078  STAFF_TEXTURE_HERO_11
+pointer  hero_textures  0x00000084  STAFF_TEXTURE_HERO_12
+pointer  hero_textures  0x00000090  STAFF_TEXTURE_HERO_13
+pointer  hero_textures  0x0000009c  STAFF_TEXTURE_HERO_14
+pointer  hero_textures  0x000000a8  STAFF_TEXTURE_HERO_15
+pointer  hero_textures  0x000000b4  STAFF_TEXTURE_HERO_16
+pointer  hero_textures  0x000000c0  STAFF_TEXTURE_HERO_17
+pointer  hero_textures  0x000000cc  STAFF_TEXTURE_HERO_18
+pointer  hero_textures  0x000000d8  STAFF_TEXTURE_HERO_19
+pointer  hero_textures  0x000000e4  STAFF_TEXTURE_HERO_20
+pointer  hero_textures  0x000000f0  STAFF_TEXTURE_HERO_21
+pointer  hero_textures  0x000000fc  STAFF_TEXTURE_HERO_22
+pointer  hero_textures  0x00000108  STAFF_TEXTURE_HERO_23
+pointer  hero_textures  0x00000114  STAFF_TEXTURE_HERO_24
+pointer  hero_textures  0x00000120  STAFF_TEXTURE_HERO_25
+pointer  hero_textures  0x0000012c  STAFF_TEXTURE_HERO_26
+pointer  hero_textures  0x00000138  STAFF_TEXTURE_HERO_27
+pointer  hero_textures  0x00000144  STAFF_TEXTURE_HERO_28
+pointer  hero_textures  0x00000150  STAFF_TEXTURE_HERO_29
+pointer  hero_textures  0x0000015c  STAFF_TEXTURE_HERO_30
+pointer  hero_textures  0x00000168  STAFF_TEXTURE_HERO_31
+pointer  hero_textures  0x00000174  STAFF_TEXTURE_HERO_32
+pointer  hero_textures  0x00000180  STAFF_TEXTURE_HERO_33
+pointer  hero_textures  0x0000018c  STAFF_TEXTURE_HERO_34
+pointer  hero_textures  0x00000198  STAFF_TEXTURE_HERO_35
+pointer  hero_textures  0x000001a4  STAFF_TEXTURE_HERO_36
+pointer  hero_textures  0x000001b0  STAFF_TEXTURE_HERO_37
+pointer  hero_textures  0x000001bc  STAFF_TEXTURE_HERO_38
+pointer  staff_hero_texlist  0x00000000  hero_textures
+pointer  dark_textures  0x00000000  STAFF_TEXTURE_DARK_01
+pointer  dark_textures  0x0000000c  STAFF_TEXTURE_DARK_02
+pointer  dark_textures  0x00000018  STAFF_TEXTURE_DARK_03
+pointer  dark_textures  0x00000024  STAFF_TEXTURE_DARK_04
+pointer  dark_textures  0x00000030  STAFF_TEXTURE_DARK_05
+pointer  dark_textures  0x0000003c  STAFF_TEXTURE_DARK_06
+pointer  dark_textures  0x00000048  STAFF_TEXTURE_DARK_07
+pointer  dark_textures  0x00000054  STAFF_TEXTURE_DARK_08
+pointer  dark_textures  0x00000060  STAFF_TEXTURE_DARK_09
+pointer  dark_textures  0x0000006c  STAFF_TEXTURE_DARK_10
+pointer  dark_textures  0x00000078  STAFF_TEXTURE_DARK_11
+pointer  dark_textures  0x00000084  STAFF_TEXTURE_DARK_12
+pointer  dark_textures  0x00000090  STAFF_TEXTURE_DARK_13
+pointer  dark_textures  0x0000009c  STAFF_TEXTURE_DARK_14
+pointer  dark_textures  0x000000a8  STAFF_TEXTURE_DARK_15
+pointer  dark_textures  0x000000b4  STAFF_TEXTURE_DARK_16
+pointer  dark_textures  0x000000c0  STAFF_TEXTURE_DARK_17
+pointer  dark_textures  0x000000cc  STAFF_TEXTURE_DARK_18
+pointer  dark_textures  0x000000d8  STAFF_TEXTURE_DARK_19
+pointer  dark_textures  0x000000e4  STAFF_TEXTURE_DARK_20
+pointer  dark_textures  0x000000f0  STAFF_TEXTURE_DARK_21
+pointer  dark_textures  0x000000fc  STAFF_TEXTURE_DARK_22
+pointer  dark_textures  0x00000108  STAFF_TEXTURE_DARK_23
+pointer  dark_textures  0x00000114  STAFF_TEXTURE_DARK_24
+pointer  dark_textures  0x00000120  STAFF_TEXTURE_DARK_25
+pointer  dark_textures  0x0000012c  STAFF_TEXTURE_DARK_26
+pointer  dark_textures  0x00000138  STAFF_TEXTURE_DARK_27
+pointer  dark_textures  0x00000144  STAFF_TEXTURE_DARK_28
+pointer  dark_textures  0x00000150  STAFF_TEXTURE_DARK_29
+pointer  dark_textures  0x0000015c  STAFF_TEXTURE_DARK_30
+pointer  dark_textures  0x00000168  STAFF_TEXTURE_DARK_31
+pointer  dark_textures  0x00000174  STAFF_TEXTURE_DARK_32
+pointer  dark_textures  0x00000180  STAFF_TEXTURE_DARK_33
+pointer  dark_textures  0x0000018c  STAFF_TEXTURE_DARK_34
+pointer  dark_textures  0x00000198  STAFF_TEXTURE_DARK_35
+pointer  dark_textures  0x000001a4  STAFF_TEXTURE_DARK_36
+pointer  dark_textures  0x000001b0  STAFF_TEXTURE_DARK_37
+pointer  dark_textures  0x000001bc  STAFF_TEXTURE_DARK_38
+pointer  dark_textures  0x000001c8  STAFF_TEXTURE_DARK_39
+pointer  dark_textures  0x000001d4  STAFF_TEXTURE_DARK_40
+pointer  dark_textures  0x000001e0  STAFF_TEXTURE_DARK_41
+pointer  dark_textures  0x000001ec  STAFF_TEXTURE_DARK_42
+pointer  dark_textures  0x000001f8  STAFF_TEXTURE_DARK_43
+pointer  dark_textures  0x00000204  STAFF_TEXTURE_DARK_44
+pointer  dark_textures  0x00000210  STAFF_TEXTURE_DARK_45
+pointer  dark_textures  0x0000021c  STAFF_TEXTURE_DARK_46
+pointer  dark_textures  0x00000228  STAFF_TEXTURE_DARK_47
+pointer  staff_dark_texlist  0x00000000  dark_textures
+pointer  staff_photo_cues  0x00000000  hero_cues
+pointer  staff_photo_cues  0x00000004  dark_cues

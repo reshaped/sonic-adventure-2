@@ -1,0 +1,79 @@
+text  ROOM_JA_EXIT  5
+text  ROOM_JA_BLACK_MARKET  11
+text  ROOM_JA_CLASSROOM  7
+text  ROOM_JA_HEALTH_CENTER  7
+text  ROOM_JA_LIBRARY  7
+text  ROOM_JA_PRINCIPAL  7
+text  ROOM_JA_PLAYGROUND  5
+text  ROOM_JA_BULLETIN_BOARD  7
+text  ROOM_EN_EXIT  5
+text  ROOM_CAPTION_EMPTY  1
+text  ROOM_EN_CLASSROOM  10
+text  ROOM_EN_HEALTH_CENTER  14
+text  ROOM_EN_LIBRARY  8
+text  ROOM_EN_PRINCIPAL  19
+text  ROOM_EN_BULLETIN_BOARD  15
+text  ROOM_FR_EXIT  7
+text  ROOM_FR_CLASSROOM  16
+text  ROOM_FR_HEALTH_CENTER  11
+text  ROOM_FR_LIBRARY  13
+text  ROOM_FR_PRINCIPAL  20
+text  ROOM_FR_BULLETIN_BOARD  20
+text  ROOM_ES_EXIT  7
+text  ROOM_ES_CLASSROOM  5
+text  ROOM_ES_HEALTH_CENTER  11
+text  ROOM_ES_LIBRARY  11
+text  ROOM_ES_PRINCIPAL  21
+text  ROOM_ES_BULLETIN_BOARD  17
+text  ROOM_DE_EXIT  8
+text  ROOM_DE_CLASSROOM  14
+text  ROOM_DE_HEALTH_CENTER  14
+text  ROOM_DE_LIBRARY  9
+text  ROOM_DE_PRINCIPAL  17
+text  ROOM_DE_BULLETIN_BOARD  15
+
+pointer  room_labels_ja  0x00000000  ROOM_JA_EXIT
+pointer  room_labels_ja  0x00000004  ROOM_JA_BLACK_MARKET
+pointer  room_labels_ja  0x00000008  ROOM_JA_CLASSROOM
+pointer  room_labels_ja  0x0000000c  ROOM_JA_HEALTH_CENTER
+pointer  room_labels_ja  0x00000010  ROOM_JA_LIBRARY
+pointer  room_labels_ja  0x00000014  ROOM_JA_PRINCIPAL
+pointer  room_labels_ja  0x00000018  ROOM_JA_PLAYGROUND
+pointer  room_labels_ja  0x0000001c  ROOM_JA_BULLETIN_BOARD
+pointer  room_labels_en  0x00000000  ROOM_EN_EXIT
+pointer  room_labels_en  0x00000004  ROOM_CAPTION_EMPTY
+pointer  room_labels_en  0x00000008  ROOM_EN_CLASSROOM
+pointer  room_labels_en  0x0000000c  ROOM_EN_HEALTH_CENTER
+pointer  room_labels_en  0x00000010  ROOM_EN_LIBRARY
+pointer  room_labels_en  0x00000014  ROOM_EN_PRINCIPAL
+pointer  room_labels_en  0x00000018  ROOM_CAPTION_EMPTY
+pointer  room_labels_en  0x0000001c  ROOM_EN_BULLETIN_BOARD
+pointer  room_labels_fr  0x00000000  ROOM_FR_EXIT
+pointer  room_labels_fr  0x00000004  ROOM_CAPTION_EMPTY
+pointer  room_labels_fr  0x00000008  ROOM_FR_CLASSROOM
+pointer  room_labels_fr  0x0000000c  ROOM_FR_HEALTH_CENTER
+pointer  room_labels_fr  0x00000010  ROOM_FR_LIBRARY
+pointer  room_labels_fr  0x00000014  ROOM_FR_PRINCIPAL
+pointer  room_labels_fr  0x00000018  ROOM_CAPTION_EMPTY
+pointer  room_labels_fr  0x0000001c  ROOM_FR_BULLETIN_BOARD
+pointer  room_labels_es  0x00000000  ROOM_ES_EXIT
+pointer  room_labels_es  0x00000004  ROOM_CAPTION_EMPTY
+pointer  room_labels_es  0x00000008  ROOM_ES_CLASSROOM
+pointer  room_labels_es  0x0000000c  ROOM_ES_HEALTH_CENTER
+pointer  room_labels_es  0x00000010  ROOM_ES_LIBRARY
+pointer  room_labels_es  0x00000014  ROOM_ES_PRINCIPAL
+pointer  room_labels_es  0x00000018  ROOM_CAPTION_EMPTY
+pointer  room_labels_es  0x0000001c  ROOM_ES_BULLETIN_BOARD
+pointer  room_labels_de  0x00000000  ROOM_DE_EXIT
+pointer  room_labels_de  0x00000004  ROOM_CAPTION_EMPTY
+pointer  room_labels_de  0x00000008  ROOM_DE_CLASSROOM
+pointer  room_labels_de  0x0000000c  ROOM_DE_HEALTH_CENTER
+pointer  room_labels_de  0x00000010  ROOM_DE_LIBRARY
+pointer  room_labels_de  0x00000014  ROOM_DE_PRINCIPAL
+pointer  room_labels_de  0x00000018  ROOM_CAPTION_EMPTY
+pointer  room_labels_de  0x0000001c  ROOM_DE_BULLETIN_BOARD
+pointer  room_labels  0x00000000  room_labels_ja
+pointer  room_labels  0x00000004  room_labels_en
+pointer  room_labels  0x00000008  room_labels_fr
+pointer  room_labels  0x0000000c  room_labels_es
+pointer  room_labels  0x00000010  room_labels_de

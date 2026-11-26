@@ -1,0 +1,28 @@
+pointer  connect_button  0x00000004  kinder_widget_texlist
+pointer  connect_button  0x00000008  focused
+pointer  connect_button  0x00000010  unfocused
+pointer  back_button  0x00000004  kinder_widget_texlist
+pointer  back_button  0x00000008  focused
+pointer  back_button  0x00000010  unfocused
+pointer  panel_texture  0x00000000  kinder_widget_texlist
+pointer  board_container  0x00000000  kinder_widget_texlist
+pointer  board_container  0x00000004  board_border
+
+selector  back_widget.kind  WIDGET_BUTTON
+selector  back_widget.id  2
+selector  board_desc.kind  WIDGET_CONTAINER
+selector  board_panel.kind  WIDGET_TEXTURE
+selector  board_text.kind  WIDGET_LABEL
+selector  connect_widget.kind  WIDGET_BUTTON
+selector  connect_widget.id  1
+
+pointer  back_widget  0x00000014  back_button
+pointer  back_widget  0x00000018  on_back
+pointer  board_desc  0x00000014  board_container
+pointer  board_desc  0x00000018  on_board
+pointer  board_panel  0x00000014  panel_texture
+pointer  board_text  0x00000014  board_message
+pointer  connect_widget  0x00000014  connect_button
+pointer  connect_widget  0x00000018  on_connect
+pointer  disabled_cross  0x00000014  cross_factory
+pointer  cross_factory  0x00000000  create_cross

@@ -1,0 +1,6 @@
+pointer  deck_faces  0x00000004  deck_strips
+pointer  deck_hull  0x00000000  deck_points
+pointer  deck_hull  0x00000004  deck_normals
+pointer  deck_hull  0x0000000c  deck_faces
+pointer  deck_hull  0x00000010  deck_material
+pointer  last_step_collision  0x00000004  deck_hull

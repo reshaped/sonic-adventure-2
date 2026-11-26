@@ -1,0 +1,4 @@
+modules/boss_last2/attacks/sphere.c
+modules/boss_last2/finalhazard_body.c
+modules/boss_last2/motion_art.c
+modules/boss_last2/super_effects.c

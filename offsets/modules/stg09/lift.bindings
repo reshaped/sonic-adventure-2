@@ -1,0 +1,31 @@
+text LIFT_TEXTURE_MIU64_IG002 12
+text LIFT_TEXTURE_MIU64_IG014 12
+text LIFT_TEXTURE_MIU64_IG016 12
+text LIFT_TEXTURE_PR128_15 9
+text LIFT_TEXTURE_PR128_5 8
+text LIFT_TEXTURE_PR64_1 7
+text LIFT_TEXTURE_PR64_3 7
+
+pointer lift_names 0x00000000 LIFT_TEXTURE_MIU64_IG002
+pointer lift_names 0x0000000c LIFT_TEXTURE_MIU64_IG014
+pointer lift_names 0x00000018 LIFT_TEXTURE_MIU64_IG016
+pointer lift_names 0x00000024 LIFT_TEXTURE_PR128_15
+pointer lift_names 0x00000030 LIFT_TEXTURE_PR128_5
+pointer lift_names 0x0000003c LIFT_TEXTURE_PR64_1
+pointer lift_names 0x00000048 LIFT_TEXTURE_PR64_3
+pointer lift_texlist 0x00000000 lift_names
+pointer lift_platform_model 0x00000000 lift_platform_vertices
+pointer lift_platform_model 0x00000004 lift_platform_polygons
+pointer lift_platform_object 0x00000004 lift_platform_model
+pointer lift_model 0x00000000 lift_vertices
+pointer lift_model 0x00000004 lift_polygons
+pointer lift_object 0x00000004 lift_model
+pointer lift_object 0x0000002c lift_platform_object
+pointer lift_solid_faces 0x00000004 lift_solid_strips
+pointer lift_solid_model 0x00000000 lift_solid_points
+pointer lift_solid_model 0x00000004 lift_solid_normals
+pointer lift_solid_model 0x0000000c lift_solid_faces
+pointer lift_solid_model 0x00000010 lift_solid_materials
+pointer lift_collision 0x00000004 lift_solid_model
+pointer lift_texlists 0x00000000 lift_texlist
+pointer lift_texlists 0x00000004 dust_texlist

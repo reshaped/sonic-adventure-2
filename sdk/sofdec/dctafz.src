@@ -1,0 +1,509 @@
+; the inverse DCT's two transforms, from a block's coefficients to its
+; samples. sofdec.h gives each one's contract and the two layouts. an FSCHG
+; flips FPSCR.SZ. while SZ is set, an FMOV of a DR or XD register moves a
+; pair of floats, the one at the lower address in the even register
+
+; byte offsets of struct dctfz_pa's fields, and sofdec.h's MPV_BLOCKS
+PA_ROUND:       .EQU    32
+PA_COEF_STRIDE: .EQU    36
+PA_CBP:         .EQU    40
+PA_COEF:        .EQU    44
+PA_NEXT_BLK:    .EQU    52
+PA_BIAS:        .EQU    56
+PA_MTX_EVEN:    .EQU    64
+PA_MTX_ODD:     .EQU    68
+PA_WORK:        .EQU    72
+PA_NLEFT:       .EQU    76
+PA_WORK_AT:     .EQU    80
+MPV_BLOCKS:     .EQU    6
+
+; v is coef[0] truncated to an integer, and DCTAFZ_SparseDc's sample is
+; (|v| + DC_HALF) >> DC_SHIFT, with v's sign: v / 8, rounded half away from 0
+DC_SHIFT:       .EQU    3
+DC_HALF:        .EQU    4
+; the bytes of a float, of a sample and of a block's samples. an ADD takes at
+; most 127, so two ADDs of half BLK_BYTES step a block
+FLOAT_BYTES:    .EQU    4
+SAMPLE_BYTES:   .EQU    2
+BLK_BYTES:      .EQU    128
+; a block's rows, and its columns
+BLK_LINES:      .EQU    8
+; the bytes of a 4-vector, and of a row of a block's samples
+VEC_BYTES:      .EQU    16
+; the bytes from a block's first even 4-vector to its first odd one. a MOV
+; takes at most 127, so the code loads half and doubles it
+ODD_HALF:       .EQU    128
+
+        .EXPORT     _DCTAFZ_DenseCbp
+        .EXPORT     _DCTAFZ_SparseDc
+
+        .SECTION    PSGSFD00,CODE,ALIGN=4
+
+; void DCTAFZ_SparseDc(const Float *coef, Sint16 *blk)
+; ADD and SHLD leave T as CMP/PZ set it. the sample goes into both halves of
+; a word, and the word into FR0 and FR1. so each FMOV of DR0 stores four
+; samples, and sixteen fill the block from its end down
+; @asm opcode: swap, SWAP.W R4,R6 at 0x8c189c46 copies the sample into the
+; top half of a word
+_DCTAFZ_SparseDc:
+        FMOV.S      @R4,FR0
+        ADD         #BLK_BYTES/2,R5
+        MOV         #-DC_SHIFT,R1
+        FTRC        FR0,FPUL
+        STS         FPUL,R4
+        ADD         #BLK_BYTES/2,R5
+        CMP/PZ      R4
+        BT          ?magnitude
+        NEG         R4,R4
+?magnitude:
+        ADD         #DC_HALF,R4
+        SHLD        R1,R4
+        BT          ?sample
+        NEG         R4,R4
+?sample:
+        SWAP.W      R4,R6
+        XTRCT       R4,R6
+        LDS         R6,FPUL
+        FSTS        FPUL,FR0
+        FSTS        FPUL,FR1
+        NOP
+        FSCHG
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        FMOV        DR0,@-R5
+        RTS
+        FSCHG
+
+; void DCTAFZ_DenseCbp(struct dctfz_pa *pa)
+; the first two passes transform a block's rows, and the last two its
+; columns. each pass holds one matrix in XMTRX, and steps through all
+; MPV_BLOCKS blocks. SHLL of R6, a copy of pa->cbp, puts the next block's
+; mark in T, and the pass skips a block left unmarked. an even pass takes
+; each line's even 4-vector through the even matrix, in place. an odd pass
+; takes the line's odd 4-vector through the odd matrix. with e and o the two
+; results, the line's points 0, 2, 4 and 6 are e + o. its points 7, 5, 3 and
+; 1 are e - o.
+;
+; the row passes write a block's points to its 256 bytes of pa->work. work's
+; first 32 floats hold a 4-vector for each column, in the order 0 to 7: the
+; column's vertical coefficients 0, 4, 2 and 6. its last 32 hold each
+; column's 1, 3, 5 and 7.
+;
+; each odd pass loads one 4-vector past the last it uses: the 16 bytes past
+; each marked block's coefficients, or past its room in work. those bytes
+; must be readable.
+;
+; R4 points at pa->round, so that a MOV.L displacement, at most 60, reaches
+; each field the call uses. the word pushed last holds that pointer, which
+; row pass 2 and column pass 2 load again. R8 to R14 hold VEC_BYTES times 1
+; to 7: the offsets of columns 1 to 7 in a half of work, and of rows 1 to 7
+; of a block's samples
+; @asm operand: ftrv-registers, FTRV XMTRX,FV4 at 0x8c189cd4 transforms a
+; block's second even 4-vector
+_DCTAFZ_DenseCbp:
+        MOV.L       R14,@-R15
+        ADD         #PA_ROUND,R4
+        MOV.L       R13,@-R15
+        MOV.L       R12,@-R15
+        MOV.L       R11,@-R15
+        MOV.L       R10,@-R15
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        MOV.L       R4,@-R15
+        MOV.L       @(PA_MTX_EVEN-PA_ROUND,R4),R0
+        FSCHG
+        FMOV        @R0+,XD0
+        MOV         #VEC_BYTES,R8
+        FMOV        @R0+,XD2
+        MOV         #2*VEC_BYTES,R9
+        FMOV        @R0+,XD4
+        MOV         #3*VEC_BYTES,R10
+        FMOV        @R0+,XD6
+        MOV         #4*VEC_BYTES,R11
+        FMOV        @R0+,XD8
+        MOV         #5*VEC_BYTES,R12
+        FMOV        @R0+,XD10
+        MOV         #6*VEC_BYTES,R13
+        FMOV        @R0+,XD12
+        MOV         #7*VEC_BYTES,R14
+        FMOV        @R0+,XD14
+        MOV.L       @(PA_COEF-PA_ROUND,R4),R1
+        MOV         #MPV_BLOCKS,R7
+        MOV.L       @(PA_CBP-PA_ROUND,R4),R6
+        MOV         R1,R2
+        MOV         R1,R3
+        ADD         #VEC_BYTES,R2
+        MOV.L       @(PA_COEF_STRIDE-PA_ROUND,R4),R5
+        ADD         #2*VEC_BYTES,R3
+        MOV.L       @(PA_MTX_ODD-PA_ROUND,R4),R0
+        MOV         R1,R4
+        ADD         #3*VEC_BYTES,R4
+; row pass 1: each row's even 4-vector, in place. R1 to R4 take four
+; 4-vectors 16 bytes apart, then the next four
+?even_rows:
+        SHLL        R6
+        BF          ?even_rows_next
+        FMOV        @R1+,DR0
+        FMOV        @R1+,DR2
+        FTRV        XMTRX,FV0
+        FMOV        @R2+,DR4
+        FMOV        @R2+,DR6
+        FMOV        @R3+,DR8
+        FMOV        @R3+,DR10
+        FTRV        XMTRX,FV4
+        FMOV        DR0,@-R1
+        FMOV        @R4+,DR12
+        FMOV        DR2,@-R1
+        FMOV        @R4+,DR14
+        ADD         #4*VEC_BYTES,R1
+        FTRV        XMTRX,FV8
+        FMOV        DR4,@-R2
+        FMOV        @R1+,DR0
+        FMOV        DR6,@-R2
+        FMOV        @R1+,DR2
+        ADD         #4*VEC_BYTES,R2
+        FTRV        XMTRX,FV12
+        FMOV        DR8,@-R3
+        FMOV        @R2+,DR4
+        FMOV        DR10,@-R3
+        FMOV        @R2+,DR6
+        ADD         #4*VEC_BYTES,R3
+        FTRV        XMTRX,FV0
+        FMOV        DR12,@-R4
+        FMOV        @R3+,DR8
+        FMOV        DR14,@-R4
+        FMOV        @R3+,DR10
+        ADD         #4*VEC_BYTES,R4
+        FTRV        XMTRX,FV4
+        FMOV        DR0,@-R1
+        FMOV        @R4+,DR12
+        FMOV        DR2,@-R1
+        FMOV        @R4+,DR14
+        ADD         #-4*VEC_BYTES,R1
+        FTRV        XMTRX,FV8
+        FMOV        DR4,@-R2
+        FMOV        DR6,@-R2
+        ADD         #-4*VEC_BYTES,R2
+        FTRV        XMTRX,FV12
+        FMOV        DR8,@-R3
+        FMOV        DR10,@-R3
+        ADD         #-4*VEC_BYTES,R3
+        FMOV        DR12,@-R4
+        FMOV        DR14,@-R4
+        ADD         #-4*VEC_BYTES,R4
+?even_rows_next:
+        DT          R7
+        ADD         R5,R1
+        ADD         R5,R2
+        ADD         R5,R3
+        BF/S        ?even_rows
+        ADD         R5,R4
+        MOV.L       @R15,R4
+        FMOV        @R0+,XD0
+        FMOV        @R0+,XD2
+        FMOV        @R0+,XD4
+        FMOV        @R0+,XD6
+        FMOV        @R0+,XD8
+        MOV         #ODD_HALF/2,R5
+        FMOV        @R0+,XD10
+        SHLL        R5
+        FMOV        @R0+,XD12
+        FMOV        @R0+,XD14
+        MOV.L       @(PA_CBP-PA_ROUND,R4),R6
+        MOV         #MPV_BLOCKS,R7
+        MOV.L       @(PA_COEF-PA_ROUND,R4),R3
+        MOV         R5,R1
+        ADD         R3,R1
+        MOV.L       @(PA_WORK-PA_ROUND,R4),R0
+; row pass 2: each row's odd 4-vector, and the row's points to work.
+; ?odd_rows_lo takes rows 0, 4, 2 and 6, and ?odd_rows_hi rows 1, 3, 5 and
+; 7. their stores of single floats run between FSCHGs, with SZ clear
+?odd_rows:
+        SHLL        R6
+        BF          ?odd_rows_next
+        MOV         #BLK_LINES/2,R2
+        FMOV        @R1+,DR8
+        FMOV        @R1+,DR10
+?odd_rows_lo:
+        FTRV        XMTRX,FV8
+        FMOV        @R3+,DR2
+        FMOV        @R3+,DR0
+        FMOV        DR2,DR6
+        FMOV        DR0,DR4
+        FADD        FR8,FR0
+        FADD        FR9,FR1
+        FADD        FR10,FR2
+        FSCHG
+        FMOV.S      FR0,@R0
+        FADD        FR11,FR3
+        FMOV.S      FR1,@(R0,R9)
+        FSUB        FR8,FR4
+        FMOV.S      FR2,@(R0,R11)
+        FSUB        FR9,FR5
+        FMOV.S      FR3,@(R0,R13)
+        FSUB        FR10,FR6
+        FMOV.S      FR4,@(R0,R14)
+        FSUB        FR11,FR7
+        FMOV.S      FR5,@(R0,R12)
+        FMOV.S      FR6,@(R0,R10)
+        DT          R2
+        FMOV.S      FR7,@(R0,R8)
+        FSCHG
+        FMOV        @R1+,DR8
+        FMOV        @R1+,DR10
+        BF/S        ?odd_rows_lo
+        ADD         #FLOAT_BYTES,R0
+        ADD         #ODD_HALF-VEC_BYTES,R0
+        MOV         #BLK_LINES/2,R2
+?odd_rows_hi:
+        FTRV        XMTRX,FV8
+        FMOV        @R3+,DR2
+        FMOV        @R3+,DR0
+        FMOV        DR2,DR6
+        FMOV        DR0,DR4
+        FADD        FR8,FR0
+        FADD        FR9,FR1
+        FADD        FR10,FR2
+        FSCHG
+        FMOV.S      FR0,@R0
+        FADD        FR11,FR3
+        FMOV.S      FR1,@(R0,R9)
+        FSUB        FR8,FR4
+        FMOV.S      FR2,@(R0,R11)
+        FSUB        FR9,FR5
+        FMOV.S      FR3,@(R0,R13)
+        FSUB        FR10,FR6
+        FMOV.S      FR4,@(R0,R14)
+        FSUB        FR11,FR7
+        FMOV.S      FR5,@(R0,R12)
+        FMOV.S      FR6,@(R0,R10)
+        DT          R2
+        FMOV.S      FR7,@(R0,R8)
+        FSCHG
+        FMOV        @R1+,DR8
+        FMOV        @R1+,DR10
+        BF/S        ?odd_rows_hi
+        ADD         #FLOAT_BYTES,R0
+        ADD         #-VEC_BYTES,R1
+        SUB         R5,R1
+        ADD         #-VEC_BYTES,R0
+        SUB         R5,R0
+        SUB         R5,R3
+?odd_rows_next:
+        SHLL        R5
+        DT          R7
+        ADD         R5,R0
+        ADD         R5,R3
+        ADD         R5,R1
+        BF/S        ?odd_rows
+        SHLR        R5
+        MOV.L       @(PA_MTX_EVEN-PA_ROUND,R4),R0
+        FMOV        @R0+,XD0
+        FMOV        @R0+,XD2
+        FMOV        @R0+,XD4
+        FMOV        @R0+,XD6
+        FMOV        @R0+,XD8
+        FMOV        @R0+,XD10
+        FMOV        @R0+,XD12
+        FMOV        @R0+,XD14
+        MOV.L       @(PA_WORK-PA_ROUND,R4),R1
+        MOV         #MPV_BLOCKS,R7
+        MOV.L       @(PA_CBP-PA_ROUND,R4),R6
+        MOV         R1,R2
+        MOV         R1,R3
+        ADD         #VEC_BYTES,R2
+        MOV.L       @(PA_COEF_STRIDE-PA_ROUND,R4),R5
+        ADD         #2*VEC_BYTES,R3
+        MOV.L       @(PA_MTX_ODD-PA_ROUND,R4),R0
+        MOV         R1,R4
+        ADD         #3*VEC_BYTES,R4
+; column pass 1: each column's even 4-vector in work, in place
+?even_cols:
+        SHLL        R6
+        BF          ?even_cols_next
+        FMOV        @R1+,DR0
+        FMOV        @R1+,DR2
+        FTRV        XMTRX,FV0
+        FMOV        @R2+,DR4
+        FMOV        @R2+,DR6
+        FMOV        @R3+,DR8
+        FMOV        @R3+,DR10
+        FTRV        XMTRX,FV4
+        FMOV        DR0,@-R1
+        FMOV        @R4+,DR12
+        FMOV        DR2,@-R1
+        FMOV        @R4+,DR14
+        ADD         #4*VEC_BYTES,R1
+        FTRV        XMTRX,FV8
+        FMOV        DR4,@-R2
+        FMOV        @R1+,DR0
+        FMOV        DR6,@-R2
+        FMOV        @R1+,DR2
+        ADD         #4*VEC_BYTES,R2
+        FTRV        XMTRX,FV12
+        FMOV        DR8,@-R3
+        FMOV        @R2+,DR4
+        FMOV        DR10,@-R3
+        FMOV        @R2+,DR6
+        ADD         #4*VEC_BYTES,R3
+        FTRV        XMTRX,FV0
+        FMOV        DR12,@-R4
+        FMOV        @R3+,DR8
+        FMOV        DR14,@-R4
+        FMOV        @R3+,DR10
+        ADD         #4*VEC_BYTES,R4
+        FTRV        XMTRX,FV4
+        FMOV        DR0,@-R1
+        FMOV        @R4+,DR12
+        FMOV        DR2,@-R1
+        FMOV        @R4+,DR14
+        ADD         #-4*VEC_BYTES,R1
+        FTRV        XMTRX,FV8
+        FMOV        DR4,@-R2
+        FMOV        DR6,@-R2
+        ADD         #-4*VEC_BYTES,R2
+        FTRV        XMTRX,FV12
+        FMOV        DR8,@-R3
+        FMOV        DR10,@-R3
+        ADD         #-4*VEC_BYTES,R3
+        FMOV        DR12,@-R4
+        FMOV        DR14,@-R4
+        ADD         #-4*VEC_BYTES,R4
+?even_cols_next:
+        DT          R7
+        ADD         R5,R1
+        ADD         R5,R2
+        ADD         R5,R3
+        BF/S        ?even_cols
+        ADD         R5,R4
+        MOV.L       @R15,R7
+        FMOV        @R0+,XD0
+        MOV         #MPV_BLOCKS,R3
+        FMOV        @R0+,XD2
+        MOV.L       R3,@(PA_NLEFT-PA_ROUND,R7)
+        FMOV        @R0+,XD4
+        MOV         #ODD_HALF/2,R5
+        FMOV        @R0+,XD6
+        SHLL        R5
+        FMOV        @R0+,XD8
+        MOV.L       @(PA_WORK-PA_ROUND,R7),R3
+        FMOV        @R0+,XD10
+        FMOV        @R0+,XD12
+        MOV         R3,R1
+        MOV.L       @(PA_CBP-PA_ROUND,R7),R6
+        ADD         R5,R1
+        FMOV        @R0+,XD14
+        SHLL        R5
+; column pass 2: each column's odd 4-vector, and the column's points to its
+; block as samples. a sample is its point plus pa->round, truncated to an
+; integer, less pa->bias. FMOV @R7,DR12 loads the pair pa->round and
+; pa->coef_stride, so FR12 holds pa->round. each block, marked or not, takes
+; its samples' place from pa->next_blk: the store that steps pa->next_blk is
+; the BF/S's slot, which runs for a skipped block too
+?odd_cols:
+        MOV.L       @(PA_NEXT_BLK-PA_ROUND,R7),R2
+        SHLL        R6
+        MOV.L       @R2+,R0
+        BF/S        ?odd_cols_next
+        MOV.L       R2,@(PA_NEXT_BLK-PA_ROUND,R7)
+        MOV         #BLK_LINES,R2
+        FMOV        @R1+,DR8
+        FMOV        @R1+,DR10
+?odd_col:
+        FTRV        XMTRX,FV8
+        FMOV        @R3+,DR2
+        FMOV        @R3+,DR0
+        FMOV        DR2,DR6
+        FMOV        DR0,DR4
+        FADD        FR8,FR0
+        FADD        FR9,FR1
+        FADD        FR10,FR2
+        FADD        FR11,FR3
+        FSUB        FR8,FR4
+        FSUB        FR9,FR5
+        FMOV        @R7,DR12
+        FSUB        FR10,FR6
+        FMOV        @R1+,DR8
+        FSUB        FR11,FR7
+        FMOV        @R1+,DR10
+        FADD        FR12,FR0
+        MOV.L       R3,@(PA_WORK_AT-PA_ROUND,R7)
+        FADD        FR12,FR1
+        MOV.L       @(PA_BIAS-PA_ROUND,R7),R3
+        FADD        FR12,FR2
+        FADD        FR12,FR3
+        FADD        FR12,FR4
+        FADD        FR12,FR5
+        FADD        FR12,FR6
+        FADD        FR12,FR7
+        FTRC        FR0,FPUL
+        STS         FPUL,R4
+        FTRC        FR1,FPUL
+        STS         FPUL,R5
+        SUB         R3,R4
+        MOV.W       R4,@R0
+        FTRC        FR2,FPUL
+        STS         FPUL,R4
+        SUB         R3,R5
+        MOV.W       R5,@(R0,R9)
+        FTRC        FR3,FPUL
+        STS         FPUL,R5
+        SUB         R3,R4
+        MOV.W       R4,@(R0,R11)
+        FTRC        FR4,FPUL
+        STS         FPUL,R4
+        SUB         R3,R5
+        MOV.W       R5,@(R0,R13)
+        FTRC        FR5,FPUL
+        STS         FPUL,R5
+        SUB         R3,R4
+        MOV.W       R4,@(R0,R14)
+        FTRC        FR6,FPUL
+        STS         FPUL,R4
+        SUB         R3,R5
+        MOV.W       R5,@(R0,R12)
+        FTRC        FR7,FPUL
+        STS         FPUL,R5
+        SUB         R3,R4
+        MOV.W       R4,@(R0,R10)
+        DT          R2
+        SUB         R3,R5
+        MOV.W       R5,@(R0,R8)
+        ADD         #SAMPLE_BYTES,R0
+        BF/S        ?odd_col
+        MOV.L       @(PA_WORK_AT-PA_ROUND,R7),R3
+        ADD         #-VEC_BYTES,R1
+        MOV.L       @(PA_COEF_STRIDE-PA_ROUND,R7),R5
+        ADD         #-BLK_LINES*VEC_BYTES,R3
+        ADD         #-BLK_LINES*VEC_BYTES,R1
+?odd_cols_next:
+        MOV.L       @(PA_NLEFT-PA_ROUND,R7),R4
+        ADD         R5,R3
+        DT          R4
+        MOV.L       R4,@(PA_NLEFT-PA_ROUND,R7)
+        BF/S        ?odd_cols
+        ADD         R5,R1
+        FSCHG
+        ADD         #4,R15
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R10
+        MOV.L       @R15+,R11
+        MOV.L       @R15+,R12
+        MOV.L       @R15+,R13
+        RTS
+        MOV.L       @R15+,R14
+        .END

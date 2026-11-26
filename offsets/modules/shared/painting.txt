@@ -1,0 +1,7 @@
+text PAINTING_FIRST_CAPTION  C  0x00000000  5
+text PAINTING_SECOND_CAPTION  C  0x00000008  5
+text PAINTING_THIRD_CAPTION  C  0x00000010  5
+datum painting_models  D  0x00000000  12
+datum painting_texlists  D  0x0000000c  16
+datum painting_picture_names  D  0x0000001c  12
+datum painting_builds  D  0x0000002c  48

@@ -1,0 +1,6 @@
+text PICKUP_TEXTURE_MIU64_FC005 12
+
+include orbital_pickup
+
+pointer materials 0x00000000 PICKUP_TEXTURE_MIU64_FC005
+pointer pickup_object_2_texlist 0x00000000 materials

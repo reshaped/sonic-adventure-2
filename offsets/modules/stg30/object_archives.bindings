@@ -1,0 +1,164 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_ET64_3  7
+text  ARCHIVE_MIU128_FR001  13
+text  ARCHIVE_MIU128_FR002  13
+text  ARCHIVE_MIU128_FR003  13
+text  ARCHIVE_MIU128_FR004  13
+text  ARCHIVE_MIU128_FR005  13
+text  ARCHIVE_MIU128_FR006  13
+text  ARCHIVE_MIU128_FR007  13
+text  ARCHIVE_MIU128_FR008  13
+text  ARCHIVE_MIU128_FR009  13
+text  ARCHIVE_MIU256_CG002  13
+text  ARCHIVE_MIU256_FR001  13
+text  ARCHIVE_MIU256_FR002  13
+text  ARCHIVE_MIU256_FR003  13
+text  ARCHIVE_MIU32_FR001  12
+text  ARCHIVE_MIU32_FR002  12
+text  ARCHIVE_MIU32_FR003  12
+text  ARCHIVE_MIU32_FR004  12
+text  ARCHIVE_MIU32_FR005  12
+text  ARCHIVE_MIU32_FR006  12
+text  ARCHIVE_MIU32_FR007  12
+text  ARCHIVE_MIU32_FR008  12
+text  ARCHIVE_MIU32_FR009  12
+text  ARCHIVE_MIU64_CG007  12
+text  ARCHIVE_MIU64_CG013  12
+text  ARCHIVE_MIU64_EE002  12
+text  ARCHIVE_MIU64_FR001  12
+text  ARCHIVE_MIU64_FR002  12
+text  ARCHIVE_MIU64_FR003  12
+text  ARCHIVE_MIU64_FR004  12
+text  ARCHIVE_MIU64_FR005  12
+text  ARCHIVE_MIU64_FR006  12
+text  ARCHIVE_MIU64_FR007  12
+text  ARCHIVE_MIU64_FR008  12
+text  ARCHIVE_MIU64_FR009  12
+text  ARCHIVE_MIU64_FR010  12
+text  ARCHIVE_MIU64_FR011  12
+text  ARCHIVE_SPACE128_17  12
+text  ARCHIVE_SPACE64_18  11
+text  ARCHIVE_SPACE64_19  11
+text  ARCHIVE_SPACE64_20  11
+text  ARCHIVE_OBJTEX_STG30  13
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_LANDTX30_UV  12
+text  ARCHIVE_LEVUPDAI_TMTEX  15
+
+pointer  stage_archive_names  0x00000000  ARCHIVE_ET64_3
+pointer  stage_archive_names  0x0000000c  ARCHIVE_MIU128_FR001
+pointer  stage_archive_names  0x00000018  ARCHIVE_MIU128_FR002
+pointer  stage_archive_names  0x00000024  ARCHIVE_MIU128_FR003
+pointer  stage_archive_names  0x00000030  ARCHIVE_MIU128_FR004
+pointer  stage_archive_names  0x0000003c  ARCHIVE_MIU128_FR005
+pointer  stage_archive_names  0x00000048  ARCHIVE_MIU128_FR006
+pointer  stage_archive_names  0x00000054  ARCHIVE_MIU128_FR007
+pointer  stage_archive_names  0x00000060  ARCHIVE_MIU128_FR008
+pointer  stage_archive_names  0x0000006c  ARCHIVE_MIU128_FR009
+pointer  stage_archive_names  0x00000078  ARCHIVE_MIU256_CG002
+pointer  stage_archive_names  0x00000084  ARCHIVE_MIU256_FR001
+pointer  stage_archive_names  0x00000090  ARCHIVE_MIU256_FR002
+pointer  stage_archive_names  0x0000009c  ARCHIVE_MIU256_FR003
+pointer  stage_archive_names  0x000000a8  ARCHIVE_MIU32_FR001
+pointer  stage_archive_names  0x000000b4  ARCHIVE_MIU32_FR002
+pointer  stage_archive_names  0x000000c0  ARCHIVE_MIU32_FR003
+pointer  stage_archive_names  0x000000cc  ARCHIVE_MIU32_FR004
+pointer  stage_archive_names  0x000000d8  ARCHIVE_MIU32_FR005
+pointer  stage_archive_names  0x000000e4  ARCHIVE_MIU32_FR006
+pointer  stage_archive_names  0x000000f0  ARCHIVE_MIU32_FR007
+pointer  stage_archive_names  0x000000fc  ARCHIVE_MIU32_FR008
+pointer  stage_archive_names  0x00000108  ARCHIVE_MIU32_FR009
+pointer  stage_archive_names  0x00000114  ARCHIVE_MIU64_CG007
+pointer  stage_archive_names  0x00000120  ARCHIVE_MIU64_CG013
+pointer  stage_archive_names  0x0000012c  ARCHIVE_MIU64_EE002
+pointer  stage_archive_names  0x00000138  ARCHIVE_MIU64_FR001
+pointer  stage_archive_names  0x00000144  ARCHIVE_MIU64_FR002
+pointer  stage_archive_names  0x00000150  ARCHIVE_MIU64_FR003
+pointer  stage_archive_names  0x0000015c  ARCHIVE_MIU64_FR004
+pointer  stage_archive_names  0x00000168  ARCHIVE_MIU64_FR005
+pointer  stage_archive_names  0x00000174  ARCHIVE_MIU64_FR006
+pointer  stage_archive_names  0x00000180  ARCHIVE_MIU64_FR007
+pointer  stage_archive_names  0x0000018c  ARCHIVE_MIU64_FR008
+pointer  stage_archive_names  0x00000198  ARCHIVE_MIU64_FR009
+pointer  stage_archive_names  0x000001a4  ARCHIVE_MIU64_FR010
+pointer  stage_archive_names  0x000001b0  ARCHIVE_MIU64_FR011
+pointer  stage_archive_names  0x000001bc  ARCHIVE_SPACE128_17
+pointer  stage_archive_names  0x000001c8  ARCHIVE_SPACE64_18
+pointer  stage_archive_names  0x000001d4  ARCHIVE_SPACE64_19
+pointer  stage_archive_names  0x000001e0  ARCHIVE_SPACE64_20
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  stage_textures  0x0000003c  background_1_texlist
+pointer  rush_texture_groups  0x00000000  stage_textures
+pointer  rush_texture_groups  0x00000004  goal_ring_texlists
+pointer  rush_texture_groups  0x00000008  emerald_texlists
+pointer  rush_texture_groups  0x0000000c  item_box_texlists
+pointer  rush_texture_groups  0x00000010  item_box_air_texlists
+pointer  rush_texture_groups  0x00000014  weight_texlists
+pointer  rush_texture_groups  0x00000018  iron_ball_texlists
+pointer  rush_texture_groups  0x0000001c  triple_spring_texlists
+pointer  rush_texture_groups  0x00000020  dynamite_texlists
+pointer  rush_texture_groups  0x00000024  reel_texlists
+pointer  rush_texture_groups  0x00000028  chao_pipe_texlists
+pointer  rush_texture_groups  0x0000002c  cage_texlists
+pointer  rush_texture_groups  0x00000030  wood_box_texlists
+pointer  rush_texture_groups  0x00000034  iron_box_texlists
+pointer  rush_texture_groups  0x00000038  upgrade_texlists
+pointer  rush_texture_groups  0x0000003c  missile_texlists
+pointer  rush_texture_groups  0x00000040  skull_texlists
+pointer  rush_texture_groups  0x00000044  rocket_texlists
+pointer  rush_texture_groups  0x00000048  search_box_texlists
+pointer  rush_texture_groups  0x0000004c  hint_box_texlists
+pointer  rush_texture_groups  0x00000050  knudai_texlists
+pointer  rush_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  rush_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  rush_texture_groups  0x0000005c  knudai_door_texlists
+pointer  rush_texture_groups  0x00000060  chao_box_texlists
+pointer  rush_texture_groups  0x00000064  chao_key_texlists
+pointer  rush_texture_groups  0x00000068  object_effect_texlists
+pointer  rush_texture_groups  0x0000006c  messenger_texlists
+pointer  rush_texture_groups  0x00000070  ring_effect_texlists
+pointer  rush_texture_groups  0x00000074  solid_box_texlists
+pointer  rush_texture_groups  0x00000078  curved_rail_texlists
+pointer  rush_texture_groups  0x0000007c  grind_rail_texlists
+pointer  rush_texture_groups  0x00000080  meteor_texlists
+pointer  rush_texture_groups  0x00000084  empty_object_texlists
+pointer  rush_texture_groups  0x00000088  stage_rocket_texlists
+pointer  rush_texture_groups  0x0000008c  frstage_texlists
+pointer  rush_texture_groups  0x00000090  sign_end_texlists
+pointer  rush_texture_groups  0x00000094  ringkaz_texlists
+pointer  rush_texture_groups  0x00000098  arrow_texlists
+pointer  rush_texture_groups  0x0000009c  rockfall_texlists
+pointer  rush_texture_groups  0x000000a0  sign_end_e_texlists
+pointer  rush_texture_groups  0x000000a4  light_bar_texlists
+pointer  rush_texture_groups  0x000000a8  pic_texlists
+pointer  rush_texture_groups  0x000000ac  trick_sign_texlists
+pointer  rush_texture_groups  0x000000b0  pickup_object_2_texlists
+pointer  rush_pvms  0x00000000  ARCHIVE_OBJTEX_STG30
+pointer  rush_pvms  0x00000004  stage_archive
+pointer  rush_pvms  0x00000008  ARCHIVE_EFFTEX_COMMON
+pointer  rush_pvms  0x0000000c  efftex_common_texlist
+pointer  rush_pvms  0x00000010  ARCHIVE_OBJTEX_COMMON
+pointer  rush_pvms  0x00000014  objtex_common_texlist
+pointer  rush_pvms  0x00000018  ARCHIVE_LANDTX30_UV
+pointer  rush_pvms  0x0000001c  rush_sky_land_texlist
+pointer  rush_pvms  0x00000020  ARCHIVE_LEVUPDAI_TMTEX
+pointer  rush_pvms  0x00000024  upgrade_melody_texlist
+pointer  rush_pvms  0x0000002c  rush_land_texlist

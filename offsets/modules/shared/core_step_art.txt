@@ -1,0 +1,12 @@
+# Cannon's Core moving platform render and collision records.
+datum  deck_polygons  D  0x00000000  1986
+datum  deck_vertices  D  0x000007c4  3644
+datum  core_step_model  D  0x00001600  24
+datum  deck_object  D  0x00001618  52
+datum  deck_material  D  0x0000164c  20
+datum  deck_strips  D  0x00001660  200
+datum  deck_faces  D  0x00001728  24
+datum  deck_points  D  0x00001740  480
+datum  deck_normals  D  0x00001920  480
+datum  deck_hull  D  0x00001b00  40
+datum  core_step_collision  D  0x00001b28  52

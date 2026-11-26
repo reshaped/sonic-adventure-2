@@ -1,0 +1,4 @@
+datum  shadow_triangles  D  0x00000000  178
+datum  shadow_vertices  D  0x000000b4  204
+datum  garden_shadow_model  D  0x00000180  24
+datum  garden_shadow_object  D  0x00000198  52

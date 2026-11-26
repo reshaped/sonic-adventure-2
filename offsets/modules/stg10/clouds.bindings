@@ -1,0 +1,16 @@
+text  HARBOR_TEXTURE_ECSC_S_CLA  11
+text  HARBOR_TEXTURE_ECSC_S_CLB  11
+text  HARBOR_TEXTURE_ECSC_S_CLC  11
+text  HARBOR_TEXTURE_PR128_31  9
+pointer  clouds_puff_textures  0x00000000  HARBOR_TEXTURE_ECSC_S_CLA
+pointer  clouds_puff_textures  0x0000000c  HARBOR_TEXTURE_ECSC_S_CLB
+pointer  clouds_puff_textures  0x00000018  HARBOR_TEXTURE_ECSC_S_CLC
+pointer  clouds_puff_texlist  0x00000000  clouds_puff_textures
+pointer  clouds_layer_textures  0x00000000  HARBOR_TEXTURE_PR128_31
+pointer  clouds_layer_texlist  0x00000000  clouds_layer_textures
+pointer  clouds_layer_model  0x00000000  clouds_layer_vertices
+pointer  clouds_layer_model  0x00000004  clouds_layer_polygons
+pointer  clouds_layer_object  0x00000004  clouds_layer_model
+pointer  clouds_layer_anim  0x00000010  clouds_layer_uvs
+pointer  clouds_texlists  0x00000000  clouds_layer_texlist
+pointer  clouds_texlists  0x00000004  clouds_puff_texlist

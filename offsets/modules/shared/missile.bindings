@@ -1,0 +1,90 @@
+text  Y_ANGLE_LABEL  11
+text  TARGET_ID_LABEL  6
+text  COLLISION_LABEL  9
+text  AIM_X_LABEL  12
+text  AIM_Y_LABEL  12
+text  AIM_Z_LABEL  12
+text  SIKAKE_01_128_FILENAME  14
+text  SIKAKE_02_128_FILENAME  14
+text  SIKAKE_03_64_FILENAME  13
+text  SIKAKE_04_64_FILENAME  13
+text  SIKAKE_15_64_FILENAME  13
+text  EVERY_LAUNCH_LABEL  9
+text  ONCE_LAUNCH_LABEL  8
+text  SWITCH_LAUNCH_LABEL  10
+text  ENEMY_LAUNCH_LABEL  9
+text  EVERY_INVERTED_LAUNCH_LABEL  14
+text  ONCE_INVERTED_LAUNCH_LABEL  13
+text  SWITCH_INVERTED_LAUNCH_LABEL  15
+text  ENEMY_INVERTED_LAUNCH_LABEL  14
+pointer  missile_textures  0x00000000  SIKAKE_01_128_FILENAME
+pointer  missile_textures  0x0000000c  SIKAKE_02_128_FILENAME
+pointer  missile_textures  0x00000018  SIKAKE_03_64_FILENAME
+pointer  missile_texlist  0x00000000  missile_textures
+pointer  missile_fin_negative_z_model  0x00000000  missile_fin_negative_z_vertices
+pointer  missile_fin_negative_z_model  0x00000004  missile_fin_negative_z_polygons
+pointer  missile_fin_negative_z  0x00000004  missile_fin_negative_z_model
+pointer  missile_fin_positive_z_model  0x00000000  missile_fin_positive_z_vertices
+pointer  missile_fin_positive_z_model  0x00000004  missile_fin_positive_z_polygons
+pointer  missile_fin_positive_z  0x00000004  missile_fin_positive_z_model
+pointer  missile_fin_positive_z  0x00000030  missile_fin_negative_z
+pointer  missile_fin_lower_model  0x00000000  missile_fin_lower_vertices
+pointer  missile_fin_lower_model  0x00000004  missile_fin_lower_polygons
+pointer  missile_fin_lower  0x00000004  missile_fin_lower_model
+pointer  missile_fin_lower  0x00000030  missile_fin_positive_z
+pointer  missile_model  0x00000000  missile_vertices
+pointer  missile_model  0x00000004  missile_polygons
+pointer  missile_object  0x00000004  missile_model
+pointer  missile_object  0x0000002c  missile_fin_lower
+pointer  missile_motion_channels  0x00000010  missile_fin_lower_positions
+pointer  missile_motion_channels  0x00000020  missile_fin_positive_z_positions
+pointer  missile_motion_channels  0x00000030  missile_fin_negative_z_positions
+pointer  missile_motion  0x00000000  missile_motion_channels
+pointer  missile_glow_textures  0x00000000  SIKAKE_01_128_FILENAME
+pointer  missile_glow_texlist  0x00000000  missile_glow_textures
+pointer  missile_glow_model  0x00000000  missile_glow_vertices
+pointer  missile_glow_model  0x00000004  missile_glow_polygons
+pointer  missile_glow_object  0x00000004  missile_glow_model
+pointer  missile_button_textures  0x00000000  SIKAKE_04_64_FILENAME
+pointer  missile_button_textures  0x0000000c  SIKAKE_15_64_FILENAME
+pointer  missile_button_texlist  0x00000000  missile_button_textures
+pointer  missile_button_model  0x00000000  missile_button_vertices
+pointer  missile_button_model  0x00000004  missile_button_polygons
+pointer  missile_button_object  0x00000004  missile_button_model
+pointer  missile_base_motion_channels  0x00000010  missile_hatch_negative_z_positions
+pointer  missile_base_motion_channels  0x00000020  missile_hatch_positive_z_positions
+pointer  missile_base_motion  0x00000000  missile_base_motion_channels
+pointer  missile_base_textures  0x00000000  SIKAKE_02_128_FILENAME
+pointer  missile_base_textures  0x0000000c  SIKAKE_03_64_FILENAME
+pointer  missile_base_texlist  0x00000000  missile_base_textures
+pointer  missile_hatch_positive_z_model  0x00000000  missile_hatch_positive_z_vertices
+pointer  missile_hatch_positive_z_model  0x00000004  missile_hatch_positive_z_polygons
+pointer  missile_hatch_positive_z  0x00000004  missile_hatch_positive_z_model
+pointer  missile_hatch_negative_z_model  0x00000000  missile_hatch_negative_z_vertices
+pointer  missile_hatch_negative_z_model  0x00000004  missile_hatch_negative_z_polygons
+pointer  missile_hatch_negative_z  0x00000004  missile_hatch_negative_z_model
+pointer  missile_hatch_negative_z  0x00000030  missile_hatch_positive_z
+pointer  missile_base_model  0x00000000  missile_base_vertices
+pointer  missile_base_model  0x00000004  missile_base_polygons
+pointer  missile_base_object  0x00000004  missile_base_model
+pointer  missile_base_object  0x0000002c  missile_hatch_negative_z
+pointer  missile_base_meshset  0x00000004  missile_base_indices
+pointer  missile_base_bounds  0x00000000  missile_base_points
+pointer  missile_base_bounds  0x00000004  missile_base_normals
+pointer  missile_base_bounds  0x0000000c  missile_base_meshset
+pointer  missile_base_bounds  0x00000010  missile_base_material
+pointer  missile_base_collision  0x00000004  missile_base_bounds
+pointer  missile_texlists  0x00000000  missile_texlist
+pointer  missile_texlists  0x00000004  missile_glow_texlist
+pointer  missile_texlists  0x00000008  missile_base_texlist
+pointer  missile_texlists  0x0000000c  missile_button_texlist
+pointer  missile_texlists  0x00000010  burst_texlist
+pointer  missile_texlists  0x00000014  rocket_thrust_texlist
+pointer  missile_launch_labels  0x00000000  EVERY_LAUNCH_LABEL
+pointer  missile_launch_labels  0x00000004  ONCE_LAUNCH_LABEL
+pointer  missile_launch_labels  0x00000008  SWITCH_LAUNCH_LABEL
+pointer  missile_launch_labels  0x0000000c  ENEMY_LAUNCH_LABEL
+pointer  missile_launch_labels  0x00000010  EVERY_INVERTED_LAUNCH_LABEL
+pointer  missile_launch_labels  0x00000014  ONCE_INVERTED_LAUNCH_LABEL
+pointer  missile_launch_labels  0x00000018  SWITCH_INVERTED_LAUNCH_LABEL
+pointer  missile_launch_labels  0x0000001c  ENEMY_INVERTED_LAUNCH_LABEL

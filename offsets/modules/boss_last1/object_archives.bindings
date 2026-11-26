@@ -1,0 +1,48 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_BOSS_PWGUAGE_TEX  17
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  rocket_base_texlist
+pointer  stage_textures  0x00000024  rocket_texlist
+pointer  stage_textures  0x00000028  dirt_texlist
+pointer  stage_textures  0x0000002c  ring_shadow_texlist
+pointer  stage_textures  0x00000030  effect_texlist
+pointer  stage_textures  0x00000034  item_balloon_texlist
+pointer  stage_textures  0x00000038  burst_texlist
+pointer  stage_textures  0x0000003c  lens_flare_texlist
+pointer  stage_textures  0x00000040  ripple_texlist
+pointer  biolizard_texture_groups  0x00000000  stage_textures
+pointer  biolizard_texture_groups  0x00000004  goal_ring_texlists
+pointer  biolizard_texture_groups  0x00000008  emerald_texlists
+pointer  biolizard_texture_groups  0x0000000c  item_box_texlists
+pointer  biolizard_texture_groups  0x00000010  item_box_air_texlists
+pointer  biolizard_texture_groups  0x00000014  weight_texlists
+pointer  biolizard_texture_groups  0x00000018  iron_ball_texlists
+pointer  biolizard_texture_groups  0x0000001c  triple_spring_texlists
+pointer  biolizard_texture_groups  0x00000020  dynamite_texlists
+pointer  biolizard_texture_groups  0x00000024  reel_texlists
+pointer  biolizard_texture_groups  0x00000028  chao_pipe_texlists
+pointer  biolizard_texture_groups  0x0000002c  cage_texlists
+pointer  biolizard_texture_groups  0x00000030  wood_box_texlists
+pointer  biolizard_texture_groups  0x00000034  iron_box_texlists
+pointer  biolizard_texture_groups  0x00000038  upgrade_texlists
+pointer  biolizard_texture_groups  0x0000003c  missile_texlists
+pointer  biolizard_texture_groups  0x00000040  skull_texlists
+pointer  biolizard_texture_groups  0x00000044  object_effect_texlists
+pointer  biolizard_texture_groups  0x00000048  messenger_texlists
+pointer  biolizard_pvms  0x00000000  ARCHIVE_EFFTEX_COMMON
+pointer  biolizard_pvms  0x00000004  efftex_common_texlist
+pointer  biolizard_pvms  0x00000008  ARCHIVE_OBJTEX_COMMON
+pointer  biolizard_pvms  0x0000000c  objtex_common_texlist
+pointer  biolizard_pvms  0x00000010  ARCHIVE_BOSS_PWGUAGE_TEX
+pointer  biolizard_pvms  0x00000014  boss_gauge_texlist

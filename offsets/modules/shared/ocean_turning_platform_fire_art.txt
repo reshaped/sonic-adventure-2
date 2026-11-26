@@ -1,0 +1,4 @@
+datum  turning_platform_fire_polygons  D  0x00000000  154
+datum  turning_platform_fire_vertices  D  0x0000009c  220
+datum  turning_platform_fire_model  D  0x00000178  24
+datum  turning_platform_fire_object  D  0x00000190  52

@@ -1,0 +1,12 @@
+include  objtex_common
+include  efftex_common
+
+text  OBJECT_TEXTURE_EFFTEX_COMMON  14
+text  OBJECT_TEXTURE_OBJTEX_COMMON  14
+
+pointer  shared_texlists  0x00000000  sparkle_texlist
+pointer  shared_groups  0x00000000  shared_texlists
+pointer  common_pvms  0x00000000  OBJECT_TEXTURE_EFFTEX_COMMON
+pointer  common_pvms  0x00000004  efftex_common_texlist
+pointer  common_pvms  0x00000008  OBJECT_TEXTURE_OBJTEX_COMMON
+pointer  common_pvms  0x0000000c  objtex_common_texlist

@@ -1,0 +1,201 @@
+include  core_set_names
+text  SET_NAME_EFLENSF0  9
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_E_UNI  6
+text  SET_NAME_E_SARU  7
+text  SET_NAME_E_1000  7
+text  SET_NAME_E_SHOUKO  9
+text  SET_NAME_E_SW_SHOUKO  12
+text  SET_NAME_G_LIGHT_SW  11
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_STOPLOCKON  11
+text  SET_NAME_SHUTTER  8
+text  SET_NAME_STEP  5
+text  SET_NAME_MUJINGUN  9
+text  SET_NAME_LASTSTEP  9
+text  SET_NAME_CAPSULEBOMB  12
+text  SET_NAME_LAZER  6
+text  SET_NAME_STEPB  6
+text  SET_NAME_CC_SWITCH  10
+text  SET_NAME_BLOCK  6
+text  SET_NAME_BLOCK2  7
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_E_AI  5
+text  SET_NAME_E_NAMIE  8
+text  SET_NAME_E_CHAOS  8
+text  SET_NAME_E_PATHCHAOS  12
+text  SET_NAME_GOALDOOR  9
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_SG_ITEMBOX  11
+text  SET_NAME_SG_RING  8
+
+pointer  core_tails_kinds  0x00000008  ring_step
+pointer  core_tails_kinds  0x0000000c  SET_NAME_RING
+pointer  core_tails_kinds  0x00000018  ring_linear_init
+pointer  core_tails_kinds  0x0000001c  SET_NAME_RING_LINEAR
+pointer  core_tails_kinds  0x00000028  ring_circle_init
+pointer  core_tails_kinds  0x0000002c  SET_NAME_RING_CIRCLE
+pointer  core_tails_kinds  0x00000038  spring_a_step
+pointer  core_tails_kinds  0x0000003c  SET_NAME_SPRA
+pointer  core_tails_kinds  0x00000048  spring_b_step
+pointer  core_tails_kinds  0x0000004c  SET_NAME_SPRB
+pointer  core_tails_kinds  0x00000058  triple_spring_init
+pointer  core_tails_kinds  0x0000005c  SET_NAME_3SPRING
+pointer  core_tails_kinds  0x00000068  big_jump_step
+pointer  core_tails_kinds  0x0000006c  SET_NAME_BIGJUMP
+pointer  core_tails_kinds  0x00000078  dash_panel_step
+pointer  core_tails_kinds  0x0000007c  SET_NAME_KASOKU
+pointer  core_tails_kinds  0x00000088  save_point_step
+pointer  core_tails_kinds  0x0000008c  SET_NAME_SAVEPOINT
+pointer  core_tails_kinds  0x00000098  switch_step
+pointer  core_tails_kinds  0x0000009c  SET_NAME_SWITCH
+pointer  core_tails_kinds  0x000000a8  item_box_step
+pointer  core_tails_kinds  0x000000ac  SET_NAME_ITEMBOX
+pointer  core_tails_kinds  0x000000b8  item_box_air_step
+pointer  core_tails_kinds  0x000000bc  SET_NAME_ITEMBOXAIR
+pointer  core_tails_kinds  0x000000c8  item_balloon_step
+pointer  core_tails_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  core_tails_kinds  0x000000d8  upgrade_init
+pointer  core_tails_kinds  0x000000dc  SET_NAME_LEVUPDAI
+pointer  core_tails_kinds  0x000000e8  goal_ring_init
+pointer  core_tails_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  core_tails_kinds  0x000000f8  emerald_init
+pointer  core_tails_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  core_tails_kinds  0x00000108  reel_init
+pointer  core_tails_kinds  0x0000010c  SET_NAME_UDREEL
+pointer  core_tails_kinds  0x00000118  cage_init
+pointer  core_tails_kinds  0x0000011c  SET_NAME_ORI
+pointer  core_tails_kinds  0x00000128  dynamite_init
+pointer  core_tails_kinds  0x0000012c  SET_NAME_DYNAMITE
+pointer  core_tails_kinds  0x00000138  wood_box_init
+pointer  core_tails_kinds  0x0000013c  SET_NAME_CONTWOOD
+pointer  core_tails_kinds  0x00000148  iron_box_init
+pointer  core_tails_kinds  0x0000014c  SET_NAME_CONTIRON
+pointer  core_tails_kinds  0x00000158  rocket_init
+pointer  core_tails_kinds  0x0000015c  SET_NAME_ROCKET
+pointer  core_tails_kinds  0x00000168  missile_init
+pointer  core_tails_kinds  0x0000016c  SET_NAME_ROCKETMISSSILE
+pointer  core_tails_kinds  0x00000178  search_box_init
+pointer  core_tails_kinds  0x0000017c  SET_NAME_SCHBOX
+pointer  core_tails_kinds  0x00000188  hint_box_init
+pointer  core_tails_kinds  0x0000018c  SET_NAME_HINTBOX
+pointer  core_tails_kinds  0x00000198  messenger_init
+pointer  core_tails_kinds  0x0000019c  SET_NAME_MSGER
+pointer  core_tails_kinds  0x000001a8  sss_init
+pointer  core_tails_kinds  0x000001ac  SET_NAME_SSS
+pointer  core_tails_kinds  0x000001b8  solid_box_init
+pointer  core_tails_kinds  0x000001bc  SET_NAME_SOLIDBOX
+pointer  core_tails_kinds  0x000001c8  dummy_object_init
+pointer  core_tails_kinds  0x000001cc  SET_NAME_DMYOBJ
+pointer  core_tails_kinds  0x000001d8  soap_switch_init
+pointer  core_tails_kinds  0x000001dc  SET_NAME_SOAP_SW
+pointer  core_tails_kinds  0x000001e8  skull_still_init
+pointer  core_tails_kinds  0x000001ec  SET_NAME_SKULL
+pointer  core_tails_kinds  0x000001f8  skull_lying_init
+pointer  core_tails_kinds  0x000001fc  SET_NAME_PSKULL
+pointer  core_tails_kinds  0x00000208  chao_pipe_init
+pointer  core_tails_kinds  0x0000020c  SET_NAME_CHAOPIPE
+pointer  core_tails_kinds  0x00000218  animal_init
+pointer  core_tails_kinds  0x0000021c  SET_NAME_MINIMAL
+pointer  core_tails_kinds  0x00000228  hidden_animal_init
+pointer  core_tails_kinds  0x0000022c  SET_NAME_WSMMLS
+pointer  core_tails_kinds  0x00000238  chao_box_init
+pointer  core_tails_kinds  0x0000023c  SET_NAME_CONTCHAO
+pointer  core_tails_kinds  0x00000248  stop_lsd_init
+pointer  core_tails_kinds  0x0000024c  SET_NAME_STOPLSD
+pointer  core_tails_kinds  0x00000258  knudai_init
+pointer  core_tails_kinds  0x0000025c  SET_NAME_KNUDAI
+pointer  core_tails_kinds  0x00000268  knudai_foothold_init
+pointer  core_tails_kinds  0x0000026c  SET_NAME_KDASIBA
+pointer  core_tails_kinds  0x00000278  knudai_warp_hole_init
+pointer  core_tails_kinds  0x0000027c  SET_NAME_KDWARPHOLE
+pointer  core_tails_kinds  0x00000288  knudai_door_init
+pointer  core_tails_kinds  0x0000028c  SET_NAME_KDDOOR
+pointer  core_tails_kinds  0x00000298  knudai_item_box_init
+pointer  core_tails_kinds  0x0000029c  SET_NAME_KDITEMBOX
+pointer  core_tails_kinds  0x000002a8  knudai_ring_linear_init
+pointer  core_tails_kinds  0x000002ac  SET_NAME_KDDRNGL
+pointer  core_tails_kinds  0x000002b8  knudai_ring_circle_init
+pointer  core_tails_kinds  0x000002bc  SET_NAME_KDDRNGC
+pointer  core_tails_kinds  0x000002c8  knudai_spring_init
+pointer  core_tails_kinds  0x000002cc  SET_NAME_KDSPRING
+pointer  core_tails_kinds  0x000002d8  knudai_spring_b_init
+pointer  core_tails_kinds  0x000002dc  SET_NAME_KDSPRINGB
+pointer  core_tails_kinds  0x000002e8  collision_sphere_step
+pointer  core_tails_kinds  0x000002ec  SET_NAME_SPHERE
+pointer  core_tails_kinds  0x000002f8  collision_cylinder_step
+pointer  core_tails_kinds  0x000002fc  SET_NAME_CCYL
+pointer  core_tails_kinds  0x00000308  collision_cube_step
+pointer  core_tails_kinds  0x0000030c  SET_NAME_CCUBE
+pointer  core_tails_kinds  0x00000318  collision_wall_step
+pointer  core_tails_kinds  0x0000031c  SET_NAME_CWALL
+pointer  core_tails_kinds  0x00000328  collision_circle_step
+pointer  core_tails_kinds  0x0000032c  SET_NAME_CCIRCLE
+pointer  core_tails_kinds  0x00000338  modifier_volume_init
+pointer  core_tails_kinds  0x0000033c  SET_NAME_MODMOD
+pointer  core_tails_kinds  0x00000348  effect_object_init
+pointer  core_tails_kinds  0x0000034c  SET_NAME_EFFOBJ0
+pointer  core_tails_kinds  0x00000358  lens_flare_init
+pointer  core_tails_kinds  0x0000035c  SET_NAME_EFLENSF0
+pointer  core_tails_kinds  0x00000368  weight_init
+pointer  core_tails_kinds  0x0000036c  SET_NAME_BUNCHIN
+pointer  core_tails_kinds  0x00000378  iron_ball_init
+pointer  core_tails_kinds  0x0000037c  SET_NAME_IRONBALL2
+pointer  core_tails_kinds  0x00000388  beetle_step
+pointer  core_tails_kinds  0x0000038c  SET_NAME_E_KUMI
+pointer  core_tails_kinds  0x00000398  uni_step
+pointer  core_tails_kinds  0x0000039c  SET_NAME_E_UNI
+pointer  core_tails_kinds  0x000003a8  monkey_step
+pointer  core_tails_kinds  0x000003ac  SET_NAME_E_SARU
+pointer  core_tails_kinds  0x000003b8  e1000_step
+pointer  core_tails_kinds  0x000003bc  SET_NAME_E_1000
+pointer  core_tails_kinds  0x000003c8  shouko_step
+pointer  core_tails_kinds  0x000003cc  SET_NAME_E_SHOUKO
+pointer  core_tails_kinds  0x000003d8  shouko_switch_init
+pointer  core_tails_kinds  0x000003dc  SET_NAME_E_SW_SHOUKO
+pointer  core_tails_kinds  0x000003e8  global_light_switch_init
+pointer  core_tails_kinds  0x000003ec  SET_NAME_G_LIGHT_SW
+pointer  core_tails_kinds  0x000003f8  gold_beetle_step
+pointer  core_tails_kinds  0x000003fc  SET_NAME_E_GOLD
+pointer  core_tails_kinds  0x00000408  stop_lockon_init
+pointer  core_tails_kinds  0x0000040c  SET_NAME_STOPLOCKON
+pointer  core_tails_kinds  0x00000418  core_shutter_init
+pointer  core_tails_kinds  0x0000041c  SET_NAME_SHUTTER
+pointer  core_tails_kinds  0x00000428  core_step_init
+pointer  core_tails_kinds  0x0000042c  SET_NAME_STEP
+pointer  core_tails_kinds  0x00000438  core_cannon_init
+pointer  core_tails_kinds  0x0000043c  SET_NAME_MUJINGUN
+pointer  core_tails_kinds  0x00000448  last_step_init
+pointer  core_tails_kinds  0x0000044c  SET_NAME_LASTSTEP
+pointer  core_tails_kinds  0x00000458  capsule_bomb_relay_init
+pointer  core_tails_kinds  0x0000045c  SET_NAME_CAPSULEBOMB
+pointer  core_tails_kinds  0x00000468  core_laser_init
+pointer  core_tails_kinds  0x0000046c  SET_NAME_LAZER
+pointer  core_tails_kinds  0x00000478  core_step_b_init
+pointer  core_tails_kinds  0x0000047c  SET_NAME_STEPB
+pointer  core_tails_kinds  0x00000488  time_switch_step
+pointer  core_tails_kinds  0x0000048c  SET_NAME_CC_SWITCH
+pointer  core_tails_kinds  0x00000498  core_block_init
+pointer  core_tails_kinds  0x0000049c  SET_NAME_BLOCK
+pointer  core_tails_kinds  0x000004a8  core_lift_init
+pointer  core_tails_kinds  0x000004ac  SET_NAME_BLOCK2
+pointer  core_tails_kinds  0x000004b8  light_switch_init
+pointer  core_tails_kinds  0x000004bc  SET_NAME_LIGHT_SW
+pointer  core_tails_kinds  0x000004c8  ai_step
+pointer  core_tails_kinds  0x000004cc  SET_NAME_E_AI
+pointer  core_tails_kinds  0x000004d8  hornet_step
+pointer  core_tails_kinds  0x000004dc  SET_NAME_E_NAMIE
+pointer  core_tails_kinds  0x000004e8  chaos_step
+pointer  core_tails_kinds  0x000004ec  SET_NAME_E_CHAOS
+pointer  core_tails_kinds  0x000004f8  path_chaos_step
+pointer  core_tails_kinds  0x000004fc  SET_NAME_E_PATHCHAOS
+pointer  core_tails_kinds  0x00000508  goal_door_init
+pointer  core_tails_kinds  0x0000050c  SET_NAME_GOALDOOR
+pointer  core_tails_kinds  0x00000518  big_step
+pointer  core_tails_kinds  0x0000051c  SET_NAME_BIG_THE_CAT
+pointer  core_tails_kinds  0x00000528  sg_item_box_step
+pointer  core_tails_kinds  0x0000052c  SET_NAME_SG_ITEMBOX
+pointer  core_tails_kinds  0x00000538  sg_ring_step
+pointer  core_tails_kinds  0x0000053c  SET_NAME_SG_RING

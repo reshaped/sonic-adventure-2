@@ -1,0 +1,17 @@
+text  CITY_TEXTURE_MIU128_CE002  C  0x000000a4  13
+text  CITY_TEXTURE_MIU64_CE003  C  0x000000b4  12
+text  CITY_TEXTURE_SCITY64_16  C  0x000000c0  11
+datum  hammer_texture_names  D  0x00000000  36
+datum  hammer_texlist  D  0x00000024  8
+datum  hammer_display_polygons  D  0x0000002c  858
+datum  hammer_display_vertices  D  0x00000388  1084
+datum  hammer_model  D  0x000007c4  24
+datum  hammer_object  D  0x000007dc  52
+datum  hammer_collision_materials  D  0x00000810  20
+datum  hammer_collision_indices  D  0x00000824  70
+datum  hammer_collision_meshsets  D  0x0000086c  24
+datum  hammer_collision_points  D  0x00000884  144
+datum  hammer_collision_normals  D  0x00000914  144
+datum  hammer_collision_model  D  0x000009a4  40
+datum  hammer_collision  D  0x000009cc  52
+datum  hammer_texlists  D  0x00000a00  8

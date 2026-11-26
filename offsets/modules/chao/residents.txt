@@ -1,0 +1,1 @@
+datum  spawn_positions  D  0x00000008  576

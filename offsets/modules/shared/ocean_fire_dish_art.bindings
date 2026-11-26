@@ -1,0 +1,5 @@
+pointer  fire_dish_textures  0x00000000  material_sara1
+pointer  fire_dish_texlist  0x00000000  fire_dish_textures
+pointer  fire_dish_model  0x00000000  fire_dish_vertices
+pointer  fire_dish_model  0x00000004  fire_dish_polygons
+pointer  fire_dish_object  0x00000004  fire_dish_model

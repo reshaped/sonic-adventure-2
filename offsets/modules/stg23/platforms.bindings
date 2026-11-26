@@ -1,0 +1,13 @@
+text  PLATFORMS_SWING_TEXTURE_FILENAME  14
+
+pointer  textures  0x00000000  PLATFORMS_SWING_TEXTURE_FILENAME
+pointer  base_swing_texlist  0x00000000  textures
+pointer  swing_model  0x00000000  swing_vertices
+pointer  swing_model  0x00000004  swing_polygons
+pointer  swing_object  0x00000004  swing_model
+pointer  swing_collision_meshsets  0x00000004  swing_collision_faces
+pointer  swing_collision_model  0x00000000  swing_collision_points
+pointer  swing_collision_model  0x00000004  swing_collision_normals
+pointer  swing_collision_model  0x0000000c  swing_collision_meshsets
+pointer  swing_collision_model  0x00000010  swing_collision_materials
+pointer  swing_collision  0x00000004  swing_collision_model

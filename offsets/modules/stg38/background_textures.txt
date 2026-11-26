@@ -1,0 +1,7 @@
+datum  background_slots  D  0x00000000  84
+datum  core_knuckles_background_textures  D  0x00000054  8
+datum  first_fence_view  D  0x0000005c  12
+datum  second_fence_view  D  0x00000068  12
+datum  first_fence_target  D  0x00000074  12
+datum  second_fence_target  D  0x00000080  12
+datum  core_knuckles_background_lists  D  0x0000008c  48

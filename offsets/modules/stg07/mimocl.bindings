@@ -1,0 +1,30 @@
+text  MIMOCL_TEXTURE_MIU128_LOCO002  15
+text  MIMOCL_TEXTURE_MIU64_MO014  12
+text  MIMOCL_TEXTURE_MIU64_MS003  12
+text  MIMOCL_TEXTURE_MIU64_MS004  12
+text  MIMOCL_TEXTURE_MIU64_MS009  12
+text  MIMOCL_TEXTURE_PUM128_7  9
+text  MIMOCL_TEXTURE_PUM32_1  8
+
+pointer  mimocl_texlists  0x00000000  mimocl_texlist
+pointer  mimocl_texlist_names  0x00000000  MIMOCL_TEXTURE_MIU128_LOCO002
+pointer  mimocl_texlist_names  0x0000000c  MIMOCL_TEXTURE_MIU64_MO014
+pointer  mimocl_texlist_names  0x00000018  MIMOCL_TEXTURE_MIU64_MS003
+pointer  mimocl_texlist_names  0x00000024  MIMOCL_TEXTURE_MIU64_MS004
+pointer  mimocl_texlist_names  0x00000030  MIMOCL_TEXTURE_MIU64_MS009
+pointer  mimocl_texlist_names  0x0000003c  MIMOCL_TEXTURE_PUM128_7
+pointer  mimocl_texlist_names  0x00000048  MIMOCL_TEXTURE_PUM32_1
+pointer  mimocl_texlist  0x00000000  mimocl_texlist_names
+pointer  mimocl_object_child_model  0x00000000  mimocl_object_child_vertices
+pointer  mimocl_object_child_model  0x00000004  mimocl_object_child_polygons
+pointer  mimocl_object_child  0x00000004  mimocl_object_child_model
+pointer  mimocl_model  0x00000000  mimocl_vertices
+pointer  mimocl_model  0x00000004  mimocl_polygons
+pointer  mimocl_object  0x00000004  mimocl_model
+pointer  mimocl_object  0x0000002c  mimocl_object_child
+pointer  mimocl_collision_faces  0x00000004  mimocl_collision_strips
+pointer  mimocl_collision_model  0x00000000  mimocl_collision_points
+pointer  mimocl_collision_model  0x00000004  mimocl_collision_normals
+pointer  mimocl_collision_model  0x0000000c  mimocl_collision_faces
+pointer  mimocl_collision_model  0x00000010  mimocl_collision_materials
+pointer  mimocl_collision  0x00000004  mimocl_collision_model

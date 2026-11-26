@@ -1,0 +1,7 @@
+text  BOMB_HAT_TEXT_BOMBFIRE  9
+
+pointer  bomb_hat_texnames  0x00000000  BOMB_HAT_TEXT_BOMBFIRE
+pointer  bomb_hat_texlist  0x00000000  bomb_hat_texnames
+pointer  bomb_hat_model  0x00000000  bomb_hat_vertices
+pointer  bomb_hat_model  0x00000004  bomb_hat_polygons
+pointer  bomb_hat_object  0x00000004  bomb_hat_model

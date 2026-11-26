@@ -1,0 +1,3 @@
+pointer  bubble_texlist  0x00000000  effect_texnames+0x150
+pointer  bubble_sprite  0x00000018  bubble_texlist
+pointer  bubble_sprite  0x0000001c  bubble_texanim

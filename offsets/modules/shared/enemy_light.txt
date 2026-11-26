@@ -1,0 +1,11 @@
+datum  enemy_light_texanim  D  0x00000054  20
+text  ENEMY_LIGHT_TEXTURE_ST_C20  C  0x00000034  7
+datum  enemy_light_texname  D  0x00000000  12
+datum  enemy_light_texlist  D  0x0000000c  8
+text  ENEMY_LIGHT_TEXTURE_EYELIGHT1  C  0x0000003c  10
+text  ENEMY_LIGHT_TEXTURE_EYELIGHT2  C  0x00000048  10
+text  ENEMY_LIGHT_TEXTURE_EYELIGHT3  C  0x00000054  10
+text  ENEMY_LIGHT_TEXTURE_EYELIGHT4  C  0x00000060  10
+datum  eyelight_texname  D  0x00000014  48
+datum  eyelight_texlist  D  0x00000044  8
+datum  enemy_light_sprite  D  0x00000068  32

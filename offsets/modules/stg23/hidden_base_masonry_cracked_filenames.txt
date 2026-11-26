@@ -1,0 +1,2 @@
+datum  block_cracked_face  C  0x00000000  20
+datum  block_cracked_top  C  0x00000014  21

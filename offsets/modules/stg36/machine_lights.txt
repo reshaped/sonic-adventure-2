@@ -1,0 +1,4 @@
+datum  strip_nodes  D  0x00000010  96
+datum  core_strip_lamps  D  0x00000070  16
+datum  entrance_nodes  D  0x00000080  96
+datum  tails_entrance_lamps  D  0x000000e0  16

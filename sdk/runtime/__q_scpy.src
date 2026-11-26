@@ -1,0 +1,82 @@
+; __q_scpy.obj is member 31 (zero-based) of Katana R11b sh4nlfzn.lib.
+; Its linked text matches the retail image. Its SYSROF record names
+; A_SH as the tool that wrote the object.
+
+; copy the string at R1 to R0, terminator included, and return R0. both must
+; be 4-byte aligned, and must not overlap. it reads the string a long word at
+; a time, so it reads past the terminator to the end of its long word. it
+; changes R1 and T, and keeps every other register
+
+        .EXPORT     __quick_strcpy
+        .EXPORT     _quick_strcpy1
+
+        .SECTION    P,CODE,ALIGN=4
+
+; the entry for a call. it pushes R3 and R4, which quick_strcpy1 pops
+; @asm open: inspect reads its two pushes alone, and stops where it runs on
+; into quick_strcpy1
+__quick_strcpy:
+        MOV.L       R3,@-R15
+        MOV.L       R4,@-R15
+; the copy itself, entered with R3 and then R4 pushed. it pops both before it
+; returns. _quick_strcpy runs on into it, and _slow_strcpy jumps to it
+; @asm abi: return-above-entry, MOV.L @R15+,R3 at 0x8c0c8f32, in its RTS's
+; delay slot, leaves R15 8 bytes above its entry
+_quick_strcpy1:
+        MOV.L       R5,@-R15
+        MOV.L       R6,@-R15
+        MOV         R0,R3
+        MOV.L       @R1+,R4
+        MOV         #0,R6
+?copy_words:
+        CMP/STR     R4,R6
+        BT          ?copy_tail
+        MOV.L       @R1+,R5
+        MOV.L       R4,@R0
+        CMP/STR     R5,R6
+        BT          ?tail_after_4
+        MOV.L       @R1+,R4
+        MOV.L       R5,@(4,R0)
+        CMP/STR     R4,R6
+        BT          ?tail_after_8
+        MOV.L       @R1+,R5
+        MOV.L       R4,@(8,R0)
+        CMP/STR     R5,R6
+        BT          ?tail_after_12
+        MOV.L       @R1+,R4
+        MOV.L       R5,@(12,R0)
+        BRA         ?copy_words
+        ADD         #16,R0
+?tail_after_4:
+        BRA         ?copy_tail
+        ADD         #4,R0
+?tail_after_8:
+        BRA         ?copy_tail
+        ADD         #8,R0
+?tail_after_12:
+        ADD         #12,R0
+?copy_tail:
+        ADD         #-4,R1
+        MOV         R0,R6
+        MOV.B       @R1+,R0
+        CMP/EQ      #0,R0
+        MOV.B       R0,@R6
+        BT          ?copy_done
+        MOV.B       @R1+,R0
+        CMP/EQ      #0,R0
+        MOV.B       R0,@(1,R6)
+        BT          ?copy_done
+        MOV.B       @R1+,R0
+        CMP/EQ      #0,R0
+        MOV.B       R0,@(2,R6)
+        BT          ?copy_done
+        MOV.B       @R1+,R0
+        MOV.B       R0,@(3,R6)
+?copy_done:
+        MOV.L       @R15+,R6
+        MOV         R3,R0
+        MOV.L       @R15+,R5
+        MOV.L       @R15+,R4
+        RTS
+        MOV.L       @R15+,R3
+        .END

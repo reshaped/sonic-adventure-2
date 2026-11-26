@@ -1,0 +1,18 @@
+text WATERWEED_TEXTURE_MIU32_MI002 12
+
+pointer waterweed_texlist_names  0x00000000  WATERWEED_TEXTURE_MIU32_MI002
+pointer waterweed_texlist  0x00000000  waterweed_texlist_names
+pointer waterweed_model  0x00000000  waterweed_vertices
+pointer waterweed_model  0x00000004  waterweed_polygons
+pointer waterweed_object  0x00000004  waterweed_model
+pointer waterweed_motion_tracks  0x00000000  waterweed_positions
+pointer waterweed_motion_tracks  0x00000004  waterweed_angles
+pointer waterweed_motion  0x00000000  waterweed_motion_tracks
+pointer waterweed_action  0x00000000  waterweed_object
+pointer waterweed_action  0x00000004  waterweed_motion
+pointer waterweed_shape_keys  0x00000004  waterweed_pose_0
+pointer waterweed_shape_keys  0x0000000c  waterweed_pose_4
+pointer waterweed_shape_keys  0x00000014  waterweed_pose_7
+pointer waterweed_shape_tracks  0x00000000  waterweed_shape_keys
+pointer waterweed_shape  0x00000000  waterweed_shape_tracks
+pointer waterweed_texlists  0x00000000  waterweed_texlist

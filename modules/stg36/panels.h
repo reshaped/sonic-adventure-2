@@ -1,0 +1,61 @@
+/* the route's scrolling panels: each one's object and texture animation, and
+ * the texture name they share */
+#ifndef STG36_PANELS_H
+#define STG36_PANELS_H
+#include <ninja.h>
+
+#include "draw/texture_anim.h"
+
+extern const char tails_panel_texture_name[13];
+
+#define DECLARE_PANEL(n)                                                       \
+    extern NJS_CNK_OBJECT tails_panel_##n;                                     \
+    extern struct texture_anim tails_panel_uv_##n
+DECLARE_PANEL(1);
+DECLARE_PANEL(2);
+DECLARE_PANEL(3);
+DECLARE_PANEL(4);
+DECLARE_PANEL(5);
+DECLARE_PANEL(6);
+DECLARE_PANEL(7);
+DECLARE_PANEL(8);
+DECLARE_PANEL(9);
+DECLARE_PANEL(10);
+DECLARE_PANEL(11);
+DECLARE_PANEL(12);
+DECLARE_PANEL(13);
+DECLARE_PANEL(14);
+DECLARE_PANEL(15);
+DECLARE_PANEL(16);
+DECLARE_PANEL(17);
+DECLARE_PANEL(18);
+DECLARE_PANEL(19);
+DECLARE_PANEL(20);
+DECLARE_PANEL(21);
+DECLARE_PANEL(22);
+DECLARE_PANEL(23);
+DECLARE_PANEL(24);
+DECLARE_PANEL(25);
+DECLARE_PANEL(26);
+DECLARE_PANEL(27);
+DECLARE_PANEL(28);
+DECLARE_PANEL(29);
+DECLARE_PANEL(30);
+DECLARE_PANEL(31);
+DECLARE_PANEL(32);
+DECLARE_PANEL(33);
+DECLARE_PANEL(34);
+DECLARE_PANEL(35);
+DECLARE_PANEL(36);
+DECLARE_PANEL(37);
+DECLARE_PANEL(38);
+DECLARE_PANEL(39);
+DECLARE_PANEL(40);
+DECLARE_PANEL(41);
+DECLARE_PANEL(42);
+DECLARE_PANEL(43);
+DECLARE_PANEL(44);
+DECLARE_PANEL(45);
+#undef DECLARE_PANEL
+
+#endif

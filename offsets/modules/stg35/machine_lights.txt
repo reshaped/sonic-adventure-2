@@ -1,0 +1,2 @@
+datum  strip_nodes  D  0x00000018  96
+datum  core_strip_lamps  D  0x00000078  16

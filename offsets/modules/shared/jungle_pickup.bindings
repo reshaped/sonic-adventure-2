@@ -1,0 +1,10 @@
+text  JUNGLE_PICKUP_TEXTURE_MIU32_GF001  12
+text  JUNGLE_PICKUP_TEXTURE_MIU64_GREEN008  15
+
+pointer  jungle_pickup_textures  0x00000000  JUNGLE_PICKUP_TEXTURE_MIU32_GF001
+pointer  jungle_pickup_textures  0x0000000c  JUNGLE_PICKUP_TEXTURE_MIU64_GREEN008
+pointer  jungle_pickup_texlist  0x00000000  jungle_pickup_textures
+pointer  jungle_pickup_model  0x00000000  jungle_pickup_vertices
+pointer  jungle_pickup_model  0x00000004  jungle_pickup_polygons
+pointer  jungle_pickup_object  0x00000004  jungle_pickup_model
+pointer  jungle_pickup_texlists  0x00000000  jungle_pickup_texlist

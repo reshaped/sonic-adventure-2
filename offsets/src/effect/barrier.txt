@@ -1,0 +1,8 @@
+datum  bolt_quad  D  0x00000130  96
+datum  dspark_quad  D  0x000001f0  96
+datum  prominence_quad  D  0x00000190  96
+datum  bolt_textures  D  0x00000000  72
+datum  flash_textures  D  0x00000048  32
+datum  barrier_spark_textures  D  0x00000068  128
+datum  invincibility_spark_textures  D  0x000000e8  64
+datum  invincibility_ball_texture  D  0x00000128  8

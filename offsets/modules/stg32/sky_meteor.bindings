@@ -1,0 +1,5 @@
+pointer  sky_meteor_mesh  0x00000000  meteor_vertices
+pointer  sky_meteor_mesh  0x00000004  meteor_polygons
+pointer  meteor_sky_meteor  0x00000004  sky_meteor_mesh
+text  MATERIAL_01  11
+pointer  textures  0x00000000  MATERIAL_01

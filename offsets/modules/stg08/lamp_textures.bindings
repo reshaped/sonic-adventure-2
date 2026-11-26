@@ -1,0 +1,13 @@
+text  LAMP_TEXTURE_MIU32_SH002  12
+text  LAMP_TEXTURE_MIU64_SH010  12
+
+pointer  security_lamp_lens_model  0x00000000  security_lamp_lens_vertices
+pointer  security_lamp_lens_model  0x00000004  security_lamp_lens_polygons
+pointer  security_lamp_lens  0x00000004  security_lamp_lens_model
+pointer  security_lamp_housing_model  0x00000000  security_lamp_object_vertices
+pointer  security_lamp_housing_model  0x00000004  security_lamp_object_polygons
+pointer  security_lamp_object  0x00000004  security_lamp_housing_model
+pointer  security_lamp_object  0x0000002c  security_lamp_lens
+pointer  textures  0x00000000  LAMP_TEXTURE_MIU32_SH002
+pointer  textures  0x0000000c  LAMP_TEXTURE_MIU64_SH010
+pointer  security_lamp_texlist  0x00000000  textures

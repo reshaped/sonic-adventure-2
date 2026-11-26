@@ -1,0 +1,10 @@
+text  FAN_TEXTURE_MIU128_PL001  C  0x00000000  13
+text  FAN_TEXTURE_MIU128_SH001  C  0x00000010  13
+text  FAN_TEXTURE_MIU128_SH002  C  0x00000020  13
+text  FAN_TEXTURE_MIU64_IG008  C  0x00000030  12
+datum  textures  D  0x00000000  48
+datum  security_fan_texlist  D  0x00000030  8
+datum  security_fan_object_polygons  D  0x00000038  754
+datum  security_fan_object_vertices  D  0x0000032c  988
+datum  security_fan_object_model  D  0x00000708  24
+datum  security_fan_object  D  0x00000720  52

@@ -1,0 +1,2 @@
+text  DIRT_MATERIAL_01  C  0x00000000  12
+datum  dirt_texname  D  0x00000000  12

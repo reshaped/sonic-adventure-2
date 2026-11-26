@@ -1,0 +1,4 @@
+pointer  fan_model  0x00000000  fan_vertices
+pointer  fan_model  0x00000004  fan_polygons
+pointer  fan_object  0x00000004  fan_model
+pointer  quarters_fan_texlists  0x00000000  fan_texlist

@@ -1,0 +1,18 @@
+text  TEXTURE_TENTO_ENDING00  29
+text  TEXTURE_TENTO_ENDING01  29
+text  TEXTURE_TENTO_ENDING02  29
+text  TEXTURE_TENTO_ENDING03  29
+text  TEXTURE_TENTO_ENDING04  29
+text  TEXTURE_TENTO_ENDING05  29
+text  TEXTURE_TENTO_ENDING06  29
+text  TEXTURE_TENTO_ENDING07  29
+
+pointer  tento_ending_texnames  0x00000000  TEXTURE_TENTO_ENDING00
+pointer  tento_ending_texnames  0x0000000c  TEXTURE_TENTO_ENDING01
+pointer  tento_ending_texnames  0x00000018  TEXTURE_TENTO_ENDING02
+pointer  tento_ending_texnames  0x00000024  TEXTURE_TENTO_ENDING03
+pointer  tento_ending_texnames  0x00000030  TEXTURE_TENTO_ENDING04
+pointer  tento_ending_texnames  0x0000003c  TEXTURE_TENTO_ENDING05
+pointer  tento_ending_texnames  0x00000048  TEXTURE_TENTO_ENDING06
+pointer  tento_ending_texnames  0x00000054  TEXTURE_TENTO_ENDING07
+pointer  tento_ending_texlist  0x00000000  tento_ending_texnames

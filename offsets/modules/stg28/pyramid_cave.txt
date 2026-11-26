@@ -1,0 +1,2 @@
+datum  pyramid_cave_kill_areas  D  0x00000000  72
+datum  lamp_points  D  0x00000090  96

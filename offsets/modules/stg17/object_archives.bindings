@@ -1,0 +1,255 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_MIU128_CE001  13
+text  STAGE_TEXTURE_MIU128_CE002  13
+text  STAGE_TEXTURE_MIU128_CE003  13
+text  STAGE_TEXTURE_MIU128_CE004  13
+text  STAGE_TEXTURE_MIU128_CE007  13
+text  STAGE_TEXTURE_MIU128_CE008  13
+text  STAGE_TEXTURE_MIU128_CE010  13
+text  STAGE_TEXTURE_MIU128_MS001  13
+text  STAGE_TEXTURE_MIU128_MS002  13
+text  STAGE_TEXTURE_MIU128_MS003  13
+text  STAGE_TEXTURE_MIU128_MS004  13
+text  STAGE_TEXTURE_MIU128_MS005  13
+text  STAGE_TEXTURE_MIU128_RH003  13
+text  STAGE_TEXTURE_MIU128_RH004  13
+text  STAGE_TEXTURE_MIU128_RH005  13
+text  STAGE_TEXTURE_MIU128_RH008  13
+text  STAGE_TEXTURE_MIU128_RH009  13
+text  STAGE_TEXTURE_MIU128_RH010  13
+text  STAGE_TEXTURE_MIU128_RH011  13
+text  STAGE_TEXTURE_MIU128_RH012  13
+text  STAGE_TEXTURE_MIU256_CE001  13
+text  STAGE_TEXTURE_MIU256_MS001  13
+text  STAGE_TEXTURE_MIU32_CE001  12
+text  STAGE_TEXTURE_MIU32_CE002  12
+text  STAGE_TEXTURE_MIU32_CE003  12
+text  STAGE_TEXTURE_MIU32_CE008  12
+text  STAGE_TEXTURE_MIU32_CE010  12
+text  STAGE_TEXTURE_MIU32_CE011  12
+text  STAGE_TEXTURE_MIU32_CE012  12
+text  STAGE_TEXTURE_MIU32_CE013  12
+text  STAGE_TEXTURE_MIU32_CE014  12
+text  STAGE_TEXTURE_MIU32_CE015  12
+text  STAGE_TEXTURE_MIU32_MS001  12
+text  STAGE_TEXTURE_MIU32_RH001  12
+text  STAGE_TEXTURE_MIU32_RH003  12
+text  STAGE_TEXTURE_MIU32_RH005  12
+text  STAGE_TEXTURE_MIU64_CE002  12
+text  STAGE_TEXTURE_MIU64_CE010  12
+text  STAGE_TEXTURE_MIU64_CE011  12
+text  STAGE_TEXTURE_MIU64_CE012  12
+text  STAGE_TEXTURE_MIU64_CE013  12
+text  STAGE_TEXTURE_MIU64_CE014  12
+text  STAGE_TEXTURE_MIU64_CE017  12
+text  STAGE_TEXTURE_MIU64_CE018  12
+text  STAGE_TEXTURE_MIU64_CE019  12
+text  STAGE_TEXTURE_MIU64_CE020  12
+text  STAGE_TEXTURE_MIU64_CE021  12
+text  STAGE_TEXTURE_MIU64_CE022  12
+text  STAGE_TEXTURE_MIU64_CE023  12
+text  STAGE_TEXTURE_MIU64_CE024  12
+text  STAGE_TEXTURE_MIU64_CE025  12
+text  STAGE_TEXTURE_MIU64_CE026  12
+text  STAGE_TEXTURE_MIU64_CE027  12
+text  STAGE_TEXTURE_MIU64_CE028  12
+text  STAGE_TEXTURE_MIU64_CE029  12
+text  STAGE_TEXTURE_MIU64_CE030  12
+text  STAGE_TEXTURE_MIU64_CE031  12
+text  STAGE_TEXTURE_MIU64_CE032  12
+text  STAGE_TEXTURE_MIU64_CE033  12
+text  STAGE_TEXTURE_MIU64_CE034  12
+text  STAGE_TEXTURE_MIU64_CE035  12
+text  STAGE_TEXTURE_MIU64_CE038  12
+text  STAGE_TEXTURE_MIU64_CE039  12
+text  STAGE_TEXTURE_MIU64_CE040  12
+text  STAGE_TEXTURE_MIU64_CE041  12
+text  STAGE_TEXTURE_MIU64_CE042  12
+text  STAGE_TEXTURE_MIU64_CE043  12
+text  STAGE_TEXTURE_MIU64_CE046  12
+text  STAGE_TEXTURE_MIU64_CE050  12
+text  STAGE_TEXTURE_MIU64_MS001  12
+text  STAGE_TEXTURE_MIU64_MS002  12
+text  STAGE_TEXTURE_MIU64_MS003  12
+text  STAGE_TEXTURE_MIU64_MS004  12
+text  STAGE_TEXTURE_MIU64_MS005  12
+text  STAGE_TEXTURE_MIU64_MS006  12
+text  STAGE_TEXTURE_MIU64_MS007  12
+text  STAGE_TEXTURE_MIU64_MS008  12
+text  STAGE_TEXTURE_MIU64_MS009  12
+text  STAGE_TEXTURE_MIU64_MS010  12
+text  STAGE_TEXTURE_MIU64_MS011  12
+text  STAGE_TEXTURE_MIU64_RH001  12
+text  STAGE_TEXTURE_MIU64_RH007  12
+text  STAGE_TEXTURE_MIU64_RH010  12
+text  STAGE_TEXTURE_MIU64_RH011  12
+text  STAGE_TEXTURE_MIU64_RH012  12
+text  STAGE_TEXTURE_MIU64_RH013  12
+text  STAGE_TEXTURE_MIU64_RH018  12
+text  STAGE_TEXTURE_MIU64_RH019  12
+text  STAGE_TEXTURE_MIU64_RH020  12
+text  STAGE_TEXTURE_MIU64_RH021  12
+text  STAGE_TEXTURE_PR128_37  9
+text  STAGE_TEXTURE_SCITY_KAGE32  13
+text  PVM_OBJTEX_STG17  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+
+pointer  stage_archive_names  0x00000000  STAGE_TEXTURE_MIU128_CE001
+pointer  stage_archive_names  0x0000000c  STAGE_TEXTURE_MIU128_CE002
+pointer  stage_archive_names  0x00000018  STAGE_TEXTURE_MIU128_CE003
+pointer  stage_archive_names  0x00000024  STAGE_TEXTURE_MIU128_CE004
+pointer  stage_archive_names  0x00000030  STAGE_TEXTURE_MIU128_CE007
+pointer  stage_archive_names  0x0000003c  STAGE_TEXTURE_MIU128_CE008
+pointer  stage_archive_names  0x00000048  STAGE_TEXTURE_MIU128_CE010
+pointer  stage_archive_names  0x00000054  STAGE_TEXTURE_MIU128_MS001
+pointer  stage_archive_names  0x00000060  STAGE_TEXTURE_MIU128_MS002
+pointer  stage_archive_names  0x0000006c  STAGE_TEXTURE_MIU128_MS003
+pointer  stage_archive_names  0x00000078  STAGE_TEXTURE_MIU128_MS004
+pointer  stage_archive_names  0x00000084  STAGE_TEXTURE_MIU128_MS005
+pointer  stage_archive_names  0x00000090  STAGE_TEXTURE_MIU128_RH003
+pointer  stage_archive_names  0x0000009c  STAGE_TEXTURE_MIU128_RH004
+pointer  stage_archive_names  0x000000a8  STAGE_TEXTURE_MIU128_RH005
+pointer  stage_archive_names  0x000000b4  STAGE_TEXTURE_MIU128_RH008
+pointer  stage_archive_names  0x000000c0  STAGE_TEXTURE_MIU128_RH009
+pointer  stage_archive_names  0x000000cc  STAGE_TEXTURE_MIU128_RH010
+pointer  stage_archive_names  0x000000d8  STAGE_TEXTURE_MIU128_RH011
+pointer  stage_archive_names  0x000000e4  STAGE_TEXTURE_MIU128_RH012
+pointer  stage_archive_names  0x000000f0  STAGE_TEXTURE_MIU256_CE001
+pointer  stage_archive_names  0x000000fc  STAGE_TEXTURE_MIU256_MS001
+pointer  stage_archive_names  0x00000108  STAGE_TEXTURE_MIU32_CE001
+pointer  stage_archive_names  0x00000114  STAGE_TEXTURE_MIU32_CE002
+pointer  stage_archive_names  0x00000120  STAGE_TEXTURE_MIU32_CE003
+pointer  stage_archive_names  0x0000012c  STAGE_TEXTURE_MIU32_CE008
+pointer  stage_archive_names  0x00000138  STAGE_TEXTURE_MIU32_CE010
+pointer  stage_archive_names  0x00000144  STAGE_TEXTURE_MIU32_CE011
+pointer  stage_archive_names  0x00000150  STAGE_TEXTURE_MIU32_CE012
+pointer  stage_archive_names  0x0000015c  STAGE_TEXTURE_MIU32_CE013
+pointer  stage_archive_names  0x00000168  STAGE_TEXTURE_MIU32_CE014
+pointer  stage_archive_names  0x00000174  STAGE_TEXTURE_MIU32_CE015
+pointer  stage_archive_names  0x00000180  STAGE_TEXTURE_MIU32_MS001
+pointer  stage_archive_names  0x0000018c  STAGE_TEXTURE_MIU32_RH001
+pointer  stage_archive_names  0x00000198  STAGE_TEXTURE_MIU32_RH003
+pointer  stage_archive_names  0x000001a4  STAGE_TEXTURE_MIU32_RH005
+pointer  stage_archive_names  0x000001b0  STAGE_TEXTURE_MIU64_CE002
+pointer  stage_archive_names  0x000001bc  STAGE_TEXTURE_MIU64_CE010
+pointer  stage_archive_names  0x000001c8  STAGE_TEXTURE_MIU64_CE011
+pointer  stage_archive_names  0x000001d4  STAGE_TEXTURE_MIU64_CE012
+pointer  stage_archive_names  0x000001e0  STAGE_TEXTURE_MIU64_CE013
+pointer  stage_archive_names  0x000001ec  STAGE_TEXTURE_MIU64_CE014
+pointer  stage_archive_names  0x000001f8  STAGE_TEXTURE_MIU64_CE017
+pointer  stage_archive_names  0x00000204  STAGE_TEXTURE_MIU64_CE018
+pointer  stage_archive_names  0x00000210  STAGE_TEXTURE_MIU64_CE019
+pointer  stage_archive_names  0x0000021c  STAGE_TEXTURE_MIU64_CE020
+pointer  stage_archive_names  0x00000228  STAGE_TEXTURE_MIU64_CE021
+pointer  stage_archive_names  0x00000234  STAGE_TEXTURE_MIU64_CE022
+pointer  stage_archive_names  0x00000240  STAGE_TEXTURE_MIU64_CE023
+pointer  stage_archive_names  0x0000024c  STAGE_TEXTURE_MIU64_CE024
+pointer  stage_archive_names  0x00000258  STAGE_TEXTURE_MIU64_CE025
+pointer  stage_archive_names  0x00000264  STAGE_TEXTURE_MIU64_CE026
+pointer  stage_archive_names  0x00000270  STAGE_TEXTURE_MIU64_CE027
+pointer  stage_archive_names  0x0000027c  STAGE_TEXTURE_MIU64_CE028
+pointer  stage_archive_names  0x00000288  STAGE_TEXTURE_MIU64_CE029
+pointer  stage_archive_names  0x00000294  STAGE_TEXTURE_MIU64_CE030
+pointer  stage_archive_names  0x000002a0  STAGE_TEXTURE_MIU64_CE031
+pointer  stage_archive_names  0x000002ac  STAGE_TEXTURE_MIU64_CE032
+pointer  stage_archive_names  0x000002b8  STAGE_TEXTURE_MIU64_CE033
+pointer  stage_archive_names  0x000002c4  STAGE_TEXTURE_MIU64_CE034
+pointer  stage_archive_names  0x000002d0  STAGE_TEXTURE_MIU64_CE035
+pointer  stage_archive_names  0x000002dc  STAGE_TEXTURE_MIU64_CE038
+pointer  stage_archive_names  0x000002e8  STAGE_TEXTURE_MIU64_CE039
+pointer  stage_archive_names  0x000002f4  STAGE_TEXTURE_MIU64_CE040
+pointer  stage_archive_names  0x00000300  STAGE_TEXTURE_MIU64_CE041
+pointer  stage_archive_names  0x0000030c  STAGE_TEXTURE_MIU64_CE042
+pointer  stage_archive_names  0x00000318  STAGE_TEXTURE_MIU64_CE043
+pointer  stage_archive_names  0x00000324  STAGE_TEXTURE_MIU64_CE046
+pointer  stage_archive_names  0x00000330  STAGE_TEXTURE_MIU64_CE050
+pointer  stage_archive_names  0x0000033c  STAGE_TEXTURE_MIU64_MS001
+pointer  stage_archive_names  0x00000348  STAGE_TEXTURE_MIU64_MS002
+pointer  stage_archive_names  0x00000354  STAGE_TEXTURE_MIU64_MS003
+pointer  stage_archive_names  0x00000360  STAGE_TEXTURE_MIU64_MS004
+pointer  stage_archive_names  0x0000036c  STAGE_TEXTURE_MIU64_MS005
+pointer  stage_archive_names  0x00000378  STAGE_TEXTURE_MIU64_MS006
+pointer  stage_archive_names  0x00000384  STAGE_TEXTURE_MIU64_MS007
+pointer  stage_archive_names  0x00000390  STAGE_TEXTURE_MIU64_MS008
+pointer  stage_archive_names  0x0000039c  STAGE_TEXTURE_MIU64_MS009
+pointer  stage_archive_names  0x000003a8  STAGE_TEXTURE_MIU64_MS010
+pointer  stage_archive_names  0x000003b4  STAGE_TEXTURE_MIU64_MS011
+pointer  stage_archive_names  0x000003c0  STAGE_TEXTURE_MIU64_RH001
+pointer  stage_archive_names  0x000003cc  STAGE_TEXTURE_MIU64_RH007
+pointer  stage_archive_names  0x000003d8  STAGE_TEXTURE_MIU64_RH010
+pointer  stage_archive_names  0x000003e4  STAGE_TEXTURE_MIU64_RH011
+pointer  stage_archive_names  0x000003f0  STAGE_TEXTURE_MIU64_RH012
+pointer  stage_archive_names  0x000003fc  STAGE_TEXTURE_MIU64_RH013
+pointer  stage_archive_names  0x00000408  STAGE_TEXTURE_MIU64_RH018
+pointer  stage_archive_names  0x00000414  STAGE_TEXTURE_MIU64_RH019
+pointer  stage_archive_names  0x00000420  STAGE_TEXTURE_MIU64_RH020
+pointer  stage_archive_names  0x0000042c  STAGE_TEXTURE_MIU64_RH021
+pointer  stage_archive_names  0x00000438  STAGE_TEXTURE_PR128_37
+pointer  stage_archive_names  0x00000444  STAGE_TEXTURE_SCITY_KAGE32
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  mission_street_texture_groups  0x00000000  stage_textures
+pointer  mission_street_texture_groups  0x00000004  goal_ring_texlists
+pointer  mission_street_texture_groups  0x00000008  emerald_texlists
+pointer  mission_street_texture_groups  0x0000000c  item_box_texlists
+pointer  mission_street_texture_groups  0x00000010  item_box_air_texlists
+pointer  mission_street_texture_groups  0x00000014  weight_texlists
+pointer  mission_street_texture_groups  0x00000018  iron_ball_texlists
+pointer  mission_street_texture_groups  0x0000001c  triple_spring_texlists
+pointer  mission_street_texture_groups  0x00000020  dynamite_texlists
+pointer  mission_street_texture_groups  0x00000024  reel_texlists
+pointer  mission_street_texture_groups  0x00000028  chao_pipe_texlists
+pointer  mission_street_texture_groups  0x0000002c  cage_texlists
+pointer  mission_street_texture_groups  0x00000030  wood_box_texlists
+pointer  mission_street_texture_groups  0x00000034  iron_box_texlists
+pointer  mission_street_texture_groups  0x00000038  upgrade_texlists
+pointer  mission_street_texture_groups  0x0000003c  missile_texlists
+pointer  mission_street_texture_groups  0x00000040  skull_texlists
+pointer  mission_street_texture_groups  0x00000044  rocket_texlists
+pointer  mission_street_texture_groups  0x00000048  search_box_texlists
+pointer  mission_street_texture_groups  0x0000004c  hint_box_texlists
+pointer  mission_street_texture_groups  0x00000050  knudai_texlists
+pointer  mission_street_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  mission_street_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  mission_street_texture_groups  0x0000005c  knudai_door_texlists
+pointer  mission_street_texture_groups  0x00000060  chao_box_texlists
+pointer  mission_street_texture_groups  0x00000064  chao_key_texlists
+pointer  mission_street_texture_groups  0x00000068  object_effect_texlists
+pointer  mission_street_texture_groups  0x0000006c  messenger_texlists
+pointer  mission_street_texture_groups  0x00000070  ring_effect_texlists
+pointer  mission_street_texture_groups  0x00000074  street_hammer_texlists
+pointer  mission_street_texture_groups  0x00000078  parked_car_texlists
+pointer  mission_street_texture_groups  0x0000007c  lane_texlists
+pointer  mission_street_texture_groups  0x00000080  solid_box_texlists
+pointer  mission_street_texture_groups  0x00000084  sand_barrel_texlists
+pointer  mission_street_texture_groups  0x00000088  pulsing_light_texlists
+pointer  mission_street_texture_groups  0x0000008c  street_fan_texlists
+pointer  mission_street_texture_groups  0x00000090  glow_texlists
+pointer  mission_street_texture_groups  0x00000094  street_prop_texlists
+pointer  mission_street_texture_groups  0x00000098  street_panel_texlists
+pointer  mission_street_texture_groups  0x0000009c  signboards_texlists
+pointer  mission_street_texture_groups  0x000000a0  street_tree_texlists
+pointer  mission_street_pvms  0x00000000  PVM_OBJTEX_STG17
+pointer  mission_street_pvms  0x00000004  stage_archive
+pointer  mission_street_pvms  0x00000008  PVM_EFFTEX_COMMON
+pointer  mission_street_pvms  0x0000000c  efftex_common_texlist
+pointer  mission_street_pvms  0x00000010  PVM_OBJTEX_COMMON
+pointer  mission_street_pvms  0x00000014  objtex_common_texlist
+pointer  mission_street_pvms  0x0000001c  mission_street_land_texlist

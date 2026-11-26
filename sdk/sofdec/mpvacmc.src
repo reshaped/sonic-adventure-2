@@ -1,0 +1,139 @@
+; the output of an intra macroblock's six blocks
+
+; MPV_BLOCKS is sofdec.h's count of a macroblock's blocks. a block has
+; BLK_LINES rows of ROW_BYTES pixels
+MPV_BLOCKS:     .EQU    6
+BLK_LINES:      .EQU    8
+ROW_BYTES:      .EQU    8
+; the bytes of an operand cache line
+CACHE_LINE:     .EQU    32
+; what the last output->subtract_at blocks take off each sample before the
+; clamp
+LUMA_OFFSET:    .EQU    16
+
+        .EXPORT     _MPVACMC_OutputIntra6blk
+
+        .SECTION    PSGSFD00,CODE,ALIGN=4
+
+; void MPVACMC_OutputIntra6blk(const Sint16 *samples, Uint8 *out,
+;                              const struct mpv_output *output,
+;                              const Uint8 *clip)
+; clamp each of the six blocks' samples at samples to pixels through clip.
+; write block n's 8 rows at output->blocks[n].start, output->blocks[n].pitch
+; bytes apart, then copy those rows to out, 8 bytes a row. so out takes the
+; six blocks' 384 bytes. a PREF after each 32 bytes sends them on where out
+; is a store queue address. the call needs FPSCR's PR and SZ clear.
+;
+; clip[x] must be x clamped to 0 to 255. the last output->subtract_at blocks
+; take LUMA_OFFSET off each sample before the clamp. a subtract_at outside 1
+; to 6 marks none. each block's start and pitch must keep its rows
+; on 8-byte boundaries. a row that starts a cache line takes the line with
+; MOVCA.L. MOVCA.L reads no memory, so where the line missed the cache, the
+; line's bytes beside the row are undefined until written.
+; the first FSCHG sets FPSCR.SZ, so each FMOV of a DR register moves a row's
+; 8 bytes
+; @asm opcode: movca, MOVCA.L R0,@R12 at 0x8c18a106 takes a row's cache line
+_MPVACMC_OutputIntra6blk:
+        MOV.L       R14,@-R15
+        MOV         R7,R0
+        MOV.L       R13,@-R15
+        MOV         #MPV_BLOCKS,R7
+        MOV.L       R12,@-R15
+        FSCHG
+        MOV.L       R11,@-R15
+        MOV         #CACHE_LINE-1,R11
+        MOV.L       R10,@-R15
+        MOV.L       @R6+,R10
+?block:
+        MOV.L       @R6+,R12
+        CMP/EQ      R7,R10
+        MOV.L       @R6+,R13
+        BF          ?rows
+        ADD         #-LUMA_OFFSET,R0
+?rows:
+        MOV         R12,R14
+        MOV         #BLK_LINES,R3
+?row:
+        MOV.W       @R4+,R1
+        TST         R11,R12
+        MOV.W       @R4+,R2
+        BF          ?clamp
+        MOVCA.L     R0,@R12
+?clamp:
+        MOV.B       @(R0,R1),R1
+        MOV.B       @(R0,R2),R2
+        MOV.B       R1,@R12
+        ADD         #1,R12
+        MOV.B       R2,@R12
+        ADD         #1,R12
+        MOV.W       @R4+,R1
+        DT          R3
+        MOV.W       @R4+,R2
+        MOV.B       @(R0,R1),R1
+        MOV.B       @(R0,R2),R2
+        MOV.B       R1,@R12
+        ADD         #1,R12
+        MOV.B       R2,@R12
+        ADD         #1,R12
+        MOV.W       @R4+,R1
+        MOV.W       @R4+,R2
+        MOV.B       @(R0,R1),R1
+        MOV.B       @(R0,R2),R2
+        MOV.B       R1,@R12
+        ADD         #1,R12
+        MOV.B       R2,@R12
+        ADD         #1,R12
+        MOV.W       @R4+,R1
+        MOV.W       @R4+,R2
+        MOV.B       @(R0,R1),R1
+        MOV.B       @(R0,R2),R2
+        MOV.B       R1,@R12
+        ADD         #1,R12
+        MOV.B       R2,@R12
+        ADD         #1-ROW_BYTES,R12
+        BF/S        ?row
+        ADD         R13,R12
+        FMOV        @R14,DR0
+        ADD         R13,R14
+        FMOV        @R14,DR2
+        ADD         R13,R14
+        FMOV        @R14,DR4
+        ADD         R13,R14
+        FMOV        @R14,DR6
+        ADD         R13,R14
+        FMOV        DR0,@R5
+        ADD         #ROW_BYTES,R5
+        FMOV        DR2,@R5
+        ADD         #ROW_BYTES,R5
+        FMOV        DR4,@R5
+        ADD         #ROW_BYTES,R5
+        FMOV        DR6,@R5
+        PREF        @R5
+        ADD         #ROW_BYTES,R5
+        FMOV        @R14,DR0
+        ADD         R13,R14
+        FMOV        @R14,DR2
+        ADD         R13,R14
+        FMOV        @R14,DR4
+        ADD         R13,R14
+        FMOV        @R14,DR6
+        ADD         R13,R14
+        FMOV        DR0,@R5
+        ADD         #ROW_BYTES,R5
+        FMOV        DR2,@R5
+        ADD         #ROW_BYTES,R5
+        FMOV        DR4,@R5
+        ADD         #ROW_BYTES,R5
+        FMOV        DR6,@R5
+        DT          R7
+        PREF        @R5
+        BF/S        ?block
+        ADD         #ROW_BYTES,R5
+        MOV.L       @R15+,R10
+        MOV.L       @R15+,R11
+        MOV.L       @R15+,R12
+        FSCHG
+        MOV.L       @R15+,R13
+        RTS
+        MOV.L       @R15+,R14
+        .END

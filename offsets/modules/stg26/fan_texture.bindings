@@ -1,0 +1,4 @@
+text  CHAMBER_FAN_TEXTURE_DZ_EQ_MECHANIX64C  18
+
+pointer  textures  0x00000000  CHAMBER_FAN_TEXTURE_DZ_EQ_MECHANIX64C
+pointer  fan_texlist  0x00000000  textures

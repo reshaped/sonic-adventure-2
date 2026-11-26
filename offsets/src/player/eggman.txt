@@ -1,0 +1,2 @@
+datum  eggman_anims  D  0x00000000  2624
+datum  eggman_shapes  D  0x00000a40  240

@@ -1,0 +1,188 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_MIU128_CE001  13
+text  ARCHIVE_MIU128_CE002  13
+text  ARCHIVE_MIU128_CE003  13
+text  ARCHIVE_MIU128_CE004  13
+text  ARCHIVE_MIU128_CE007  13
+text  ARCHIVE_MIU128_CE008  13
+text  ARCHIVE_MIU128_CE009  13
+text  ARCHIVE_MIU128_CE010  13
+text  ARCHIVE_MIU128_MS002  13
+text  ARCHIVE_MIU128_MS003  13
+text  ARCHIVE_MIU128_MS004  13
+text  ARCHIVE_MIU128_MS005  13
+text  ARCHIVE_MIU128_MS2P_A  14
+text  ARCHIVE_MIU128_MS2P_B  14
+text  ARCHIVE_MIU128_RH002  13
+text  ARCHIVE_MIU128_RH003  13
+text  ARCHIVE_MIU128_RH004  13
+text  ARCHIVE_MIU128_RH012  13
+text  ARCHIVE_MIU256_CE001  13
+text  ARCHIVE_MIU32_CE001  12
+text  ARCHIVE_MIU32_CE002  12
+text  ARCHIVE_MIU32_CE003  12
+text  ARCHIVE_MIU32_CE008  12
+text  ARCHIVE_MIU32_CE010  12
+text  ARCHIVE_MIU32_CE011  12
+text  ARCHIVE_MIU32_CE012  12
+text  ARCHIVE_MIU32_CE013  12
+text  ARCHIVE_MIU32_CE014  12
+text  ARCHIVE_MIU32_CE015  12
+text  ARCHIVE_MIU32_MS001  12
+text  ARCHIVE_MIU32_RH003  12
+text  ARCHIVE_MIU64_CE002  12
+text  ARCHIVE_MIU64_CE010  12
+text  ARCHIVE_MIU64_CE011  12
+text  ARCHIVE_MIU64_CE012  12
+text  ARCHIVE_MIU64_CE013  12
+text  ARCHIVE_MIU64_CE014  12
+text  ARCHIVE_MIU64_CE017  12
+text  ARCHIVE_MIU64_CE018  12
+text  ARCHIVE_MIU64_CE019  12
+text  ARCHIVE_MIU64_CE020  12
+text  ARCHIVE_MIU64_CE021  12
+text  ARCHIVE_MIU64_CE022  12
+text  ARCHIVE_MIU64_CE023  12
+text  ARCHIVE_MIU64_CE024  12
+text  ARCHIVE_MIU64_CE025  12
+text  ARCHIVE_MIU64_CE026  12
+text  ARCHIVE_MIU64_CE027  12
+text  ARCHIVE_MIU64_CE028  12
+text  ARCHIVE_MIU64_CE029  12
+text  ARCHIVE_MIU64_CE030  12
+text  ARCHIVE_MIU64_CE031  12
+text  ARCHIVE_MIU64_CE032  12
+text  ARCHIVE_MIU64_CE033  12
+text  ARCHIVE_MIU64_CE034  12
+text  ARCHIVE_MIU64_CE035  12
+text  ARCHIVE_MIU64_CE038  12
+text  ARCHIVE_MIU64_CE039  12
+text  ARCHIVE_MIU64_CE041  12
+text  ARCHIVE_MIU64_CE042  12
+text  ARCHIVE_MIU64_CE046  12
+text  ARCHIVE_MIU64_CE050  12
+text  ARCHIVE_MIU64_MS005  12
+text  ARCHIVE_MIU64_MS006  12
+text  ARCHIVE_MIU64_MS007  12
+text  ARCHIVE_MIU64_MS008  12
+text  ARCHIVE_MIU64_MS009  12
+text  ARCHIVE_MIU64_MS011  12
+text  ARCHIVE_MIU64_RH001  12
+text  ARCHIVE_MIU64_RH007  12
+text  ARCHIVE_MIU64_RH009  12
+text  ARCHIVE_MIU64_RH011  12
+text  ARCHIVE_SCITY_KAGE32  13
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_GROBO_EFF_TEX  14
+text  ARCHIVE_OBJTEX_STGBBF  14
+include  gun_mech_archive_group
+pointer  street_textures  0x00000000  ARCHIVE_MIU128_CE001
+pointer  street_textures  0x0000000c  ARCHIVE_MIU128_CE002
+pointer  street_textures  0x00000018  ARCHIVE_MIU128_CE003
+pointer  street_textures  0x00000024  ARCHIVE_MIU128_CE004
+pointer  street_textures  0x00000030  ARCHIVE_MIU128_CE007
+pointer  street_textures  0x0000003c  ARCHIVE_MIU128_CE008
+pointer  street_textures  0x00000048  ARCHIVE_MIU128_CE009
+pointer  street_textures  0x00000054  ARCHIVE_MIU128_CE010
+pointer  street_textures  0x00000060  ARCHIVE_MIU128_MS002
+pointer  street_textures  0x0000006c  ARCHIVE_MIU128_MS003
+pointer  street_textures  0x00000078  ARCHIVE_MIU128_MS004
+pointer  street_textures  0x00000084  ARCHIVE_MIU128_MS005
+pointer  street_textures  0x00000090  ARCHIVE_MIU128_MS2P_A
+pointer  street_textures  0x0000009c  ARCHIVE_MIU128_MS2P_B
+pointer  street_textures  0x000000a8  ARCHIVE_MIU128_RH002
+pointer  street_textures  0x000000b4  ARCHIVE_MIU128_RH003
+pointer  street_textures  0x000000c0  ARCHIVE_MIU128_RH004
+pointer  street_textures  0x000000cc  ARCHIVE_MIU128_RH012
+pointer  street_textures  0x000000d8  ARCHIVE_MIU256_CE001
+pointer  street_textures  0x000000e4  ARCHIVE_MIU32_CE001
+pointer  street_textures  0x000000f0  ARCHIVE_MIU32_CE002
+pointer  street_textures  0x000000fc  ARCHIVE_MIU32_CE003
+pointer  street_textures  0x00000108  ARCHIVE_MIU32_CE008
+pointer  street_textures  0x00000114  ARCHIVE_MIU32_CE010
+pointer  street_textures  0x00000120  ARCHIVE_MIU32_CE011
+pointer  street_textures  0x0000012c  ARCHIVE_MIU32_CE012
+pointer  street_textures  0x00000138  ARCHIVE_MIU32_CE013
+pointer  street_textures  0x00000144  ARCHIVE_MIU32_CE014
+pointer  street_textures  0x00000150  ARCHIVE_MIU32_CE015
+pointer  street_textures  0x0000015c  ARCHIVE_MIU32_MS001
+pointer  street_textures  0x00000168  ARCHIVE_MIU32_RH003
+pointer  street_textures  0x00000174  ARCHIVE_MIU64_CE002
+pointer  street_textures  0x00000180  ARCHIVE_MIU64_CE010
+pointer  street_textures  0x0000018c  ARCHIVE_MIU64_CE011
+pointer  street_textures  0x00000198  ARCHIVE_MIU64_CE012
+pointer  street_textures  0x000001a4  ARCHIVE_MIU64_CE013
+pointer  street_textures  0x000001b0  ARCHIVE_MIU64_CE014
+pointer  street_textures  0x000001bc  ARCHIVE_MIU64_CE017
+pointer  street_textures  0x000001c8  ARCHIVE_MIU64_CE018
+pointer  street_textures  0x000001d4  ARCHIVE_MIU64_CE019
+pointer  street_textures  0x000001e0  ARCHIVE_MIU64_CE020
+pointer  street_textures  0x000001ec  ARCHIVE_MIU64_CE021
+pointer  street_textures  0x000001f8  ARCHIVE_MIU64_CE022
+pointer  street_textures  0x00000204  ARCHIVE_MIU64_CE023
+pointer  street_textures  0x00000210  ARCHIVE_MIU64_CE024
+pointer  street_textures  0x0000021c  ARCHIVE_MIU64_CE025
+pointer  street_textures  0x00000228  ARCHIVE_MIU64_CE026
+pointer  street_textures  0x00000234  ARCHIVE_MIU64_CE027
+pointer  street_textures  0x00000240  ARCHIVE_MIU64_CE028
+pointer  street_textures  0x0000024c  ARCHIVE_MIU64_CE029
+pointer  street_textures  0x00000258  ARCHIVE_MIU64_CE030
+pointer  street_textures  0x00000264  ARCHIVE_MIU64_CE031
+pointer  street_textures  0x00000270  ARCHIVE_MIU64_CE032
+pointer  street_textures  0x0000027c  ARCHIVE_MIU64_CE033
+pointer  street_textures  0x00000288  ARCHIVE_MIU64_CE034
+pointer  street_textures  0x00000294  ARCHIVE_MIU64_CE035
+pointer  street_textures  0x000002a0  ARCHIVE_MIU64_CE038
+pointer  street_textures  0x000002ac  ARCHIVE_MIU64_CE039
+pointer  street_textures  0x000002b8  ARCHIVE_MIU64_CE041
+pointer  street_textures  0x000002c4  ARCHIVE_MIU64_CE042
+pointer  street_textures  0x000002d0  ARCHIVE_MIU64_CE046
+pointer  street_textures  0x000002dc  ARCHIVE_MIU64_CE050
+pointer  street_textures  0x000002e8  ARCHIVE_MIU64_MS005
+pointer  street_textures  0x000002f4  ARCHIVE_MIU64_MS006
+pointer  street_textures  0x00000300  ARCHIVE_MIU64_MS007
+pointer  street_textures  0x0000030c  ARCHIVE_MIU64_MS008
+pointer  street_textures  0x00000318  ARCHIVE_MIU64_MS009
+pointer  street_textures  0x00000324  ARCHIVE_MIU64_MS011
+pointer  street_textures  0x00000330  ARCHIVE_MIU64_RH001
+pointer  street_textures  0x0000033c  ARCHIVE_MIU64_RH007
+pointer  street_textures  0x00000348  ARCHIVE_MIU64_RH009
+pointer  street_textures  0x00000354  ARCHIVE_MIU64_RH011
+pointer  street_textures  0x00000360  ARCHIVE_SCITY_KAGE32
+pointer  street_texlist  0x00000000  street_textures
+pointer  bigfoot_texture_groups  0x00000000  stage_textures
+pointer  bigfoot_texture_groups  0x00000004  goal_ring_texlists
+pointer  bigfoot_texture_groups  0x00000008  emerald_texlists
+pointer  bigfoot_texture_groups  0x0000000c  item_box_texlists
+pointer  bigfoot_texture_groups  0x00000010  item_box_air_texlists
+pointer  bigfoot_texture_groups  0x00000014  weight_texlists
+pointer  bigfoot_texture_groups  0x00000018  iron_ball_texlists
+pointer  bigfoot_texture_groups  0x0000001c  triple_spring_texlists
+pointer  bigfoot_texture_groups  0x00000020  dynamite_texlists
+pointer  bigfoot_texture_groups  0x00000024  reel_texlists
+pointer  bigfoot_texture_groups  0x00000028  chao_pipe_texlists
+pointer  bigfoot_texture_groups  0x0000002c  cage_texlists
+pointer  bigfoot_texture_groups  0x00000030  wood_box_texlists
+pointer  bigfoot_texture_groups  0x00000034  iron_box_texlists
+pointer  bigfoot_texture_groups  0x00000038  upgrade_texlists
+pointer  bigfoot_texture_groups  0x0000003c  missile_texlists
+pointer  bigfoot_texture_groups  0x00000040  skull_texlists
+pointer  bigfoot_texture_groups  0x00000044  object_effect_texlists
+pointer  bigfoot_texture_groups  0x00000048  messenger_texlists
+pointer  bigfoot_texture_groups  0x0000004c  chao_box_texlists
+pointer  bigfoot_texture_groups  0x00000050  prop_texlists
+pointer  bigfoot_texture_groups  0x00000054  parked_car_texlists
+pointer  bigfoot_texture_groups  0x00000058  signboard_texlists
+pointer  bigfoot_texture_groups  0x0000005c  glow_texlists
+pointer  bigfoot_texture_groups  0x00000060  plain_tree_texlists
+pointer  bigfoot_texture_pvms  0x00000000  ARCHIVE_EFFTEX_COMMON
+pointer  bigfoot_texture_pvms  0x00000004  efftex_common_texlist
+pointer  bigfoot_texture_pvms  0x00000008  ARCHIVE_OBJTEX_COMMON
+pointer  bigfoot_texture_pvms  0x0000000c  objtex_common_texlist
+pointer  bigfoot_texture_pvms  0x00000010  ARCHIVE_GROBO_EFF_TEX
+pointer  bigfoot_texture_pvms  0x00000014  grobo_eff_texlist
+pointer  bigfoot_texture_pvms  0x00000018  ARCHIVE_OBJTEX_STGBBF
+pointer  bigfoot_texture_pvms  0x0000001c  street_texlist

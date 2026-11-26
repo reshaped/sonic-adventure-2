@@ -1,0 +1,2 @@
+text  DZ_EQ_PATBUG256  C  0x00000000  16
+datum  textures  D  0x00000000  12

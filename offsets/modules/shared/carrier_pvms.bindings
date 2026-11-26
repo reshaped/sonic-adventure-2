@@ -1,0 +1,22 @@
+include  objtex_common
+include  efftex_common
+include  weapons_bed_groups
+include  carrier_deck_archive
+
+text  ARCHIVE_PR_2KAGE32  11
+text  ARCHIVE_PR_3KAGE32  11
+text  ARCHIVE_PR_KAGE32  10
+text  ARCHIVE_OBJTEX_STG12  13
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+
+pointer  deck_names  0x000001b0  ARCHIVE_PR_2KAGE32
+pointer  deck_names  0x000001bc  ARCHIVE_PR_3KAGE32
+pointer  deck_names  0x000001c8  ARCHIVE_PR_KAGE32
+pointer  carrier_pvms  0x00000000  ARCHIVE_OBJTEX_STG12
+pointer  carrier_pvms  0x00000004  deck_texlist
+pointer  carrier_pvms  0x00000008  ARCHIVE_EFFTEX_COMMON
+pointer  carrier_pvms  0x0000000c  efftex_common_texlist
+pointer  carrier_pvms  0x00000010  ARCHIVE_OBJTEX_COMMON
+pointer  carrier_pvms  0x00000014  objtex_common_texlist
+pointer  carrier_pvms  0x0000001c  carrier_land_texlist

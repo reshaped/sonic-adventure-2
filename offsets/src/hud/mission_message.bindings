@@ -1,0 +1,11 @@
+text  MISSION_LANGUAGE_J  2
+text  MISSION_LANGUAGE_E  2
+text  MISSION_LANGUAGE_F  2
+text  MISSION_LANGUAGE_S  2
+text  MISSION_LANGUAGE_G  2
+
+pointer  mission_letters  0x00000000  MISSION_LANGUAGE_J
+pointer  mission_letters  0x00000004  MISSION_LANGUAGE_E
+pointer  mission_letters  0x00000008  MISSION_LANGUAGE_F
+pointer  mission_letters  0x0000000c  MISSION_LANGUAGE_S
+pointer  mission_letters  0x00000010  MISSION_LANGUAGE_G

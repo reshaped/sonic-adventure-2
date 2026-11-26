@@ -1,0 +1,6 @@
+pointer  guard_eye_texlists  0x00000000  guard_eye_texlist
+pointer  guard_eye_texlists  0x00000004  guard_eye_beam_texlist
+pointer  models  0x00000004  guard_eye_texlist
+pointer  models  0x00000008  guard_eye_object
+pointer  models  0x00000014  guard_eye_beam_texlist
+pointer  models  0x00000018  guard_eye_beam_object

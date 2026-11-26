@@ -1,0 +1,4 @@
+datum  laser_pulse_polygons  D  0x00000000  110
+datum  laser_pulse_vertices  D  0x00000070  428
+datum  laser_pulse_mesh  D  0x0000021c  24
+datum  laser_pulse_object  D  0x00000234  52

@@ -1,0 +1,6 @@
+pointer  body_shadow_mesh  0x00000000  body_shadow_vertices
+pointer  body_shadow_mesh  0x00000004  body_shadow_polygons
+pointer  mech_boss_body_shadow  0x00000004  body_shadow_mesh
+pointer  foot_shadow_mesh  0x00000000  foot_shadow_vertices
+pointer  foot_shadow_mesh  0x00000004  foot_shadow_polygons
+pointer  mech_boss_foot_shadow  0x00000004  foot_shadow_mesh

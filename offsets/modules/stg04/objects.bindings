@@ -1,0 +1,413 @@
+include  objtex_common
+include  efftex_common
+text  SET_NAME_RING  8
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_ROLTUTA  11
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_ROCKET  10
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_MODMOD  8
+text  SET_NAME_SHOUKOU  9
+text  SET_NAME_SLGATE  8
+text  SET_NAME_TOBOKU  8
+text  SET_NAME_BANGIETUTA  12
+text  SET_NAME_JP  4
+text  SET_NAME_JP_FAR  7
+text  SET_NAME_JO  4
+text  SET_NAME_JO_FAR  7
+text  SET_NAME_YOKOTUTA  9
+text  SET_NAME_TATETUTA  9
+text  SET_NAME_TOBOKU_FAR  11
+text  SET_NAME_SHOUKOUK  10
+text  SET_NAME_TAIMATU  8
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_3SPRING  8
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_UDREEL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_ORI  4
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SKULL  6
+text  SET_NAME_E_EMI  6
+text  SET_NAME_E_AI  5
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_PSKULL  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_SOLIDBOX  9
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_SOAP_SW  8
+text  SET_NAME_STOPLSD  8
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MSGER  6
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_E_PATH  7
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_PIC  4
+text  SET_NAME_SAKU  5
+text  SET_NAME_TAKI  5
+text  SET_NAME_BOXSHOUKOU  11
+text  SET_NAME_SWDRNGL  8
+text  SET_NAME_SWDRNGC  8
+text  SET_NAME_JO2  5
+text  SET_NAME_JO2_FAR  8
+text  SET_NAME_NOINPCOL  9
+pointer  white_jungle_kinds  0x00000008  ring_step
+pointer  white_jungle_kinds  0x0000000c  SET_NAME_RING
+pointer  white_jungle_kinds  0x00000018  spring_a_step
+pointer  white_jungle_kinds  0x0000001c  SET_NAME_SPRA
+pointer  white_jungle_kinds  0x00000028  spring_b_step
+pointer  white_jungle_kinds  0x0000002c  SET_NAME_SPRB
+pointer  white_jungle_kinds  0x00000038  dash_panel_step
+pointer  white_jungle_kinds  0x0000003c  SET_NAME_KASOKU
+pointer  white_jungle_kinds  0x00000048  save_point_step
+pointer  white_jungle_kinds  0x0000004c  SET_NAME_SAVEPOINT
+pointer  white_jungle_kinds  0x00000058  switch_step
+pointer  white_jungle_kinds  0x0000005c  SET_NAME_SWITCH
+pointer  white_jungle_kinds  0x00000068  item_box_step
+pointer  white_jungle_kinds  0x0000006c  SET_NAME_ITEMBOX
+pointer  white_jungle_kinds  0x00000078  item_box_air_step
+pointer  white_jungle_kinds  0x0000007c  SET_NAME_ITEMBOXAIR
+pointer  white_jungle_kinds  0x00000088  iron_ball_init
+pointer  white_jungle_kinds  0x0000008c  SET_NAME_IRONBALL2
+pointer  white_jungle_kinds  0x00000098  white_jungle_revolving_vine_init
+pointer  white_jungle_kinds  0x0000009c  SET_NAME_ROLTUTA
+pointer  white_jungle_kinds  0x000000a8  big_jump_step
+pointer  white_jungle_kinds  0x000000ac  SET_NAME_BIGJUMP
+pointer  white_jungle_kinds  0x000000b8  rocket_init
+pointer  white_jungle_kinds  0x000000bc  SET_NAME_ROCKET
+pointer  white_jungle_kinds  0x000000c8  beetle_step
+pointer  white_jungle_kinds  0x000000cc  SET_NAME_E_KUMI
+pointer  white_jungle_kinds  0x000000d8  modifier_volume_init
+pointer  white_jungle_kinds  0x000000dc  SET_NAME_MODMOD
+pointer  white_jungle_kinds  0x000000e8  hover_lift_init
+pointer  white_jungle_kinds  0x000000ec  SET_NAME_SHOUKOU
+pointer  white_jungle_kinds  0x000000f8  slgate_init
+pointer  white_jungle_kinds  0x000000fc  SET_NAME_SLGATE
+pointer  white_jungle_kinds  0x00000108  white_jungle_fallen_tree_init
+pointer  white_jungle_kinds  0x0000010c  SET_NAME_TOBOKU
+pointer  white_jungle_kinds  0x00000118  white_jungle_bungee_vine_init
+pointer  white_jungle_kinds  0x0000011c  SET_NAME_BANGIETUTA
+pointer  white_jungle_kinds  0x00000128  white_jungle_prop_init
+pointer  white_jungle_kinds  0x0000012c  SET_NAME_JP
+pointer  white_jungle_kinds  0x00000138  white_jungle_prop_far_init
+pointer  white_jungle_kinds  0x0000013c  SET_NAME_JP_FAR
+pointer  white_jungle_kinds  0x00000148  white_jungle_scenery_0_init
+pointer  white_jungle_kinds  0x0000014c  SET_NAME_JO
+pointer  white_jungle_kinds  0x00000158  white_jungle_scenery_0_far_init
+pointer  white_jungle_kinds  0x0000015c  SET_NAME_JO_FAR
+pointer  white_jungle_kinds  0x00000168  side_vine_init
+pointer  white_jungle_kinds  0x0000016c  SET_NAME_YOKOTUTA
+pointer  white_jungle_kinds  0x00000178  hanging_vine_init
+pointer  white_jungle_kinds  0x0000017c  SET_NAME_TATETUTA
+pointer  white_jungle_kinds  0x00000188  white_jungle_fallen_tree_far_init
+pointer  white_jungle_kinds  0x0000018c  SET_NAME_TOBOKU_FAR
+pointer  white_jungle_kinds  0x00000198  hover_lift_k_init
+pointer  white_jungle_kinds  0x0000019c  SET_NAME_SHOUKOUK
+pointer  white_jungle_kinds  0x000001a8  torch_init
+pointer  white_jungle_kinds  0x000001ac  SET_NAME_TAIMATU
+pointer  white_jungle_kinds  0x000001b8  item_balloon_step
+pointer  white_jungle_kinds  0x000001bc  SET_NAME_ITEMBOXBALLOON
+pointer  white_jungle_kinds  0x000001c8  goal_ring_init
+pointer  white_jungle_kinds  0x000001cc  SET_NAME_GOALRING
+pointer  white_jungle_kinds  0x000001d8  emerald_init
+pointer  white_jungle_kinds  0x000001dc  SET_NAME_EMERALD
+pointer  white_jungle_kinds  0x000001e8  weight_init
+pointer  white_jungle_kinds  0x000001ec  SET_NAME_BUNCHIN
+pointer  white_jungle_kinds  0x000001f8  ring_linear_init
+pointer  white_jungle_kinds  0x000001fc  SET_NAME_RING_LINEAR
+pointer  white_jungle_kinds  0x00000208  ring_circle_init
+pointer  white_jungle_kinds  0x0000020c  SET_NAME_RING_CIRCLE
+pointer  white_jungle_kinds  0x00000218  triple_spring_init
+pointer  white_jungle_kinds  0x0000021c  SET_NAME_3SPRING
+pointer  white_jungle_kinds  0x00000228  dynamite_init
+pointer  white_jungle_kinds  0x0000022c  SET_NAME_DYNAMITE
+pointer  white_jungle_kinds  0x00000238  reel_init
+pointer  white_jungle_kinds  0x0000023c  SET_NAME_UDREEL
+pointer  white_jungle_kinds  0x00000248  chao_pipe_init
+pointer  white_jungle_kinds  0x0000024c  SET_NAME_CHAOPIPE
+pointer  white_jungle_kinds  0x00000258  cage_init
+pointer  white_jungle_kinds  0x0000025c  SET_NAME_ORI
+pointer  white_jungle_kinds  0x00000268  wood_box_init
+pointer  white_jungle_kinds  0x0000026c  SET_NAME_CONTWOOD
+pointer  white_jungle_kinds  0x00000278  iron_box_init
+pointer  white_jungle_kinds  0x0000027c  SET_NAME_CONTIRON
+pointer  white_jungle_kinds  0x00000288  upgrade_init
+pointer  white_jungle_kinds  0x0000028c  SET_NAME_LEVUPDAI
+pointer  white_jungle_kinds  0x00000298  missile_init
+pointer  white_jungle_kinds  0x0000029c  SET_NAME_ROCKETMISSSILE
+pointer  white_jungle_kinds  0x000002a8  skull_still_init
+pointer  white_jungle_kinds  0x000002ac  SET_NAME_SKULL
+pointer  white_jungle_kinds  0x000002b8  emi_step
+pointer  white_jungle_kinds  0x000002bc  SET_NAME_E_EMI
+pointer  white_jungle_kinds  0x000002c8  ai_step
+pointer  white_jungle_kinds  0x000002cc  SET_NAME_E_AI
+pointer  white_jungle_kinds  0x000002d8  animal_init
+pointer  white_jungle_kinds  0x000002dc  SET_NAME_MINIMAL
+pointer  white_jungle_kinds  0x000002e8  hidden_animal_init
+pointer  white_jungle_kinds  0x000002ec  SET_NAME_WSMMLS
+pointer  white_jungle_kinds  0x000002f8  skull_lying_init
+pointer  white_jungle_kinds  0x000002fc  SET_NAME_PSKULL
+pointer  white_jungle_kinds  0x00000308  hint_box_init
+pointer  white_jungle_kinds  0x0000030c  SET_NAME_HINTBOX
+pointer  white_jungle_kinds  0x00000318  knudai_init
+pointer  white_jungle_kinds  0x0000031c  SET_NAME_KNUDAI
+pointer  white_jungle_kinds  0x00000328  knudai_foothold_init
+pointer  white_jungle_kinds  0x0000032c  SET_NAME_KDASIBA
+pointer  white_jungle_kinds  0x00000338  knudai_warp_hole_init
+pointer  white_jungle_kinds  0x0000033c  SET_NAME_KDWARPHOLE
+pointer  white_jungle_kinds  0x00000348  knudai_door_init
+pointer  white_jungle_kinds  0x0000034c  SET_NAME_KDDOOR
+pointer  white_jungle_kinds  0x00000358  knudai_item_box_init
+pointer  white_jungle_kinds  0x0000035c  SET_NAME_KDITEMBOX
+pointer  white_jungle_kinds  0x00000368  solid_box_init
+pointer  white_jungle_kinds  0x0000036c  SET_NAME_SOLIDBOX
+pointer  white_jungle_kinds  0x00000378  dummy_object_init
+pointer  white_jungle_kinds  0x0000037c  SET_NAME_DMYOBJ
+pointer  white_jungle_kinds  0x00000388  soap_switch_init
+pointer  white_jungle_kinds  0x0000038c  SET_NAME_SOAP_SW
+pointer  white_jungle_kinds  0x00000398  stop_lsd_init
+pointer  white_jungle_kinds  0x0000039c  SET_NAME_STOPLSD
+pointer  white_jungle_kinds  0x000003a8  chao_box_init
+pointer  white_jungle_kinds  0x000003ac  SET_NAME_CONTCHAO
+pointer  white_jungle_kinds  0x000003b8  knudai_ring_linear_init
+pointer  white_jungle_kinds  0x000003bc  SET_NAME_KDDRNGL
+pointer  white_jungle_kinds  0x000003c8  knudai_ring_circle_init
+pointer  white_jungle_kinds  0x000003cc  SET_NAME_KDDRNGC
+pointer  white_jungle_kinds  0x000003d8  knudai_spring_init
+pointer  white_jungle_kinds  0x000003dc  SET_NAME_KDSPRING
+pointer  white_jungle_kinds  0x000003e8  knudai_spring_b_init
+pointer  white_jungle_kinds  0x000003ec  SET_NAME_KDSPRINGB
+pointer  white_jungle_kinds  0x000003f8  effect_object_init
+pointer  white_jungle_kinds  0x000003fc  SET_NAME_EFFOBJ0
+pointer  white_jungle_kinds  0x00000408  collision_sphere_step
+pointer  white_jungle_kinds  0x0000040c  SET_NAME_SPHERE
+pointer  white_jungle_kinds  0x00000418  collision_cylinder_step
+pointer  white_jungle_kinds  0x0000041c  SET_NAME_CCYL
+pointer  white_jungle_kinds  0x00000428  collision_cube_step
+pointer  white_jungle_kinds  0x0000042c  SET_NAME_CCUBE
+pointer  white_jungle_kinds  0x00000438  collision_wall_step
+pointer  white_jungle_kinds  0x0000043c  SET_NAME_CWALL
+pointer  white_jungle_kinds  0x00000448  collision_circle_step
+pointer  white_jungle_kinds  0x0000044c  SET_NAME_CCIRCLE
+pointer  white_jungle_kinds  0x00000458  messenger_init
+pointer  white_jungle_kinds  0x0000045c  SET_NAME_MSGER
+pointer  white_jungle_kinds  0x00000468  big_step
+pointer  white_jungle_kinds  0x0000046c  SET_NAME_BIG_THE_CAT
+pointer  white_jungle_kinds  0x00000478  technique_link_init
+pointer  white_jungle_kinds  0x0000047c  SET_NAME_LINKLINK
+pointer  white_jungle_kinds  0x00000488  path_enemy_step
+pointer  white_jungle_kinds  0x0000048c  SET_NAME_E_PATH
+pointer  white_jungle_kinds  0x00000498  gold_beetle_step
+pointer  white_jungle_kinds  0x0000049c  SET_NAME_E_GOLD
+pointer  white_jungle_kinds  0x000004a8  white_jungle_pickup_init
+pointer  white_jungle_kinds  0x000004ac  SET_NAME_PIC
+pointer  white_jungle_kinds  0x000004b8  wood_fence_init
+pointer  white_jungle_kinds  0x000004bc  SET_NAME_SAKU
+pointer  white_jungle_kinds  0x000004c8  taki_init
+pointer  white_jungle_kinds  0x000004cc  SET_NAME_TAKI
+pointer  white_jungle_kinds  0x000004d8  hover_lift_box_init
+pointer  white_jungle_kinds  0x000004dc  SET_NAME_BOXSHOUKOU
+pointer  white_jungle_kinds  0x000004e8  switch_ring_linear_init
+pointer  white_jungle_kinds  0x000004ec  SET_NAME_SWDRNGL
+pointer  white_jungle_kinds  0x000004f8  switch_ring_circle_init
+pointer  white_jungle_kinds  0x000004fc  SET_NAME_SWDRNGC
+pointer  white_jungle_kinds  0x00000508  white_jungle_scenery_init
+pointer  white_jungle_kinds  0x0000050c  SET_NAME_JO2
+pointer  white_jungle_kinds  0x00000518  white_jungle_scenery_far_init
+pointer  white_jungle_kinds  0x0000051c  SET_NAME_JO2_FAR
+pointer  white_jungle_kinds  0x00000528  no_input_init
+pointer  white_jungle_kinds  0x0000052c  SET_NAME_NOINPCOL
+
+text  STAGE_TEXTURE_JUNGLE64_1  11
+text  STAGE_TEXTURE_J_TORCH01  10
+text  STAGE_TEXTURE_J_TORCH02  10
+text  STAGE_TEXTURE_J_TORCH03  10
+text  STAGE_TEXTURE_J_TORCH04  10
+text  STAGE_TEXTURE_J_TORCH05  10
+text  STAGE_TEXTURE_J_TORCH06  10
+text  STAGE_TEXTURE_J_TORCH07  10
+text  STAGE_TEXTURE_J_TORCH08  10
+text  STAGE_TEXTURE_J_TORCH09  10
+text  STAGE_TEXTURE_J_TORCH10  10
+text  STAGE_TEXTURE_J_TORCH11  10
+text  STAGE_TEXTURE_J_TORCH12  10
+text  STAGE_TEXTURE_J_TORCH13  10
+text  STAGE_TEXTURE_J_TORCH14  10
+text  STAGE_TEXTURE_J_TORCH15  10
+text  STAGE_TEXTURE_J_TORCH16  10
+text  STAGE_TEXTURE_MIU128_GREEN001  16
+text  STAGE_TEXTURE_MIU128_GREEN003  16
+text  STAGE_TEXTURE_MIU128_GREEN004  16
+text  STAGE_TEXTURE_MIU128_GREEN007  16
+text  STAGE_TEXTURE_MIU128_GREEN008  16
+text  STAGE_TEXTURE_MIU128_GREEN009  16
+text  STAGE_TEXTURE_MIU128_GREEN011  16
+text  STAGE_TEXTURE_MIU128_LOCO001  15
+text  STAGE_TEXTURE_MIU128_LOCO002  15
+text  STAGE_TEXTURE_MIU128_MS001  13
+text  STAGE_TEXTURE_MIU128_MS002  13
+text  STAGE_TEXTURE_MIU128_WJ001  13
+text  STAGE_TEXTURE_MIU128_WJ002  13
+text  STAGE_TEXTURE_MIU32_KAGE001  14
+text  STAGE_TEXTURE_MIU32_MO001  12
+text  STAGE_TEXTURE_MIU32_WJ001  12
+text  STAGE_TEXTURE_MIU32_WJ002  12
+text  STAGE_TEXTURE_MIU64_GREEN001  15
+text  STAGE_TEXTURE_MIU64_GREEN002  15
+text  STAGE_TEXTURE_MIU64_GREEN003  15
+text  STAGE_TEXTURE_MIU64_GREEN004  15
+text  STAGE_TEXTURE_MIU64_GREEN005  15
+text  STAGE_TEXTURE_MIU64_GREEN006  15
+text  STAGE_TEXTURE_MIU64_GREEN007  15
+text  STAGE_TEXTURE_MIU64_GREEN008  15
+text  STAGE_TEXTURE_MIU64_GREEN011  15
+text  STAGE_TEXTURE_MIU64_GREEN012  15
+text  STAGE_TEXTURE_MIU64_GREEN013  15
+text  PVM_OBJTEX_STG04  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+
+pointer  stage_objects_names  0x00000000  STAGE_TEXTURE_JUNGLE64_1
+pointer  stage_objects_names  0x0000000c  STAGE_TEXTURE_J_TORCH01
+pointer  stage_objects_names  0x00000018  STAGE_TEXTURE_J_TORCH02
+pointer  stage_objects_names  0x00000024  STAGE_TEXTURE_J_TORCH03
+pointer  stage_objects_names  0x00000030  STAGE_TEXTURE_J_TORCH04
+pointer  stage_objects_names  0x0000003c  STAGE_TEXTURE_J_TORCH05
+pointer  stage_objects_names  0x00000048  STAGE_TEXTURE_J_TORCH06
+pointer  stage_objects_names  0x00000054  STAGE_TEXTURE_J_TORCH07
+pointer  stage_objects_names  0x00000060  STAGE_TEXTURE_J_TORCH08
+pointer  stage_objects_names  0x0000006c  STAGE_TEXTURE_J_TORCH09
+pointer  stage_objects_names  0x00000078  STAGE_TEXTURE_J_TORCH10
+pointer  stage_objects_names  0x00000084  STAGE_TEXTURE_J_TORCH11
+pointer  stage_objects_names  0x00000090  STAGE_TEXTURE_J_TORCH12
+pointer  stage_objects_names  0x0000009c  STAGE_TEXTURE_J_TORCH13
+pointer  stage_objects_names  0x000000a8  STAGE_TEXTURE_J_TORCH14
+pointer  stage_objects_names  0x000000b4  STAGE_TEXTURE_J_TORCH15
+pointer  stage_objects_names  0x000000c0  STAGE_TEXTURE_J_TORCH16
+pointer  stage_objects_names  0x000000cc  STAGE_TEXTURE_MIU128_GREEN001
+pointer  stage_objects_names  0x000000d8  STAGE_TEXTURE_MIU128_GREEN003
+pointer  stage_objects_names  0x000000e4  STAGE_TEXTURE_MIU128_GREEN004
+pointer  stage_objects_names  0x000000f0  STAGE_TEXTURE_MIU128_GREEN007
+pointer  stage_objects_names  0x000000fc  STAGE_TEXTURE_MIU128_GREEN008
+pointer  stage_objects_names  0x00000108  STAGE_TEXTURE_MIU128_GREEN009
+pointer  stage_objects_names  0x00000114  STAGE_TEXTURE_MIU128_GREEN011
+pointer  stage_objects_names  0x00000120  STAGE_TEXTURE_MIU128_LOCO001
+pointer  stage_objects_names  0x0000012c  STAGE_TEXTURE_MIU128_LOCO002
+pointer  stage_objects_names  0x00000138  STAGE_TEXTURE_MIU128_MS001
+pointer  stage_objects_names  0x00000144  STAGE_TEXTURE_MIU128_MS002
+pointer  stage_objects_names  0x00000150  STAGE_TEXTURE_MIU128_WJ001
+pointer  stage_objects_names  0x0000015c  STAGE_TEXTURE_MIU128_WJ002
+pointer  stage_objects_names  0x00000168  STAGE_TEXTURE_MIU32_KAGE001
+pointer  stage_objects_names  0x00000174  STAGE_TEXTURE_MIU32_MO001
+pointer  stage_objects_names  0x00000180  STAGE_TEXTURE_MIU32_WJ001
+pointer  stage_objects_names  0x0000018c  STAGE_TEXTURE_MIU32_WJ002
+pointer  stage_objects_names  0x00000198  STAGE_TEXTURE_MIU64_GREEN001
+pointer  stage_objects_names  0x000001a4  STAGE_TEXTURE_MIU64_GREEN002
+pointer  stage_objects_names  0x000001b0  STAGE_TEXTURE_MIU64_GREEN003
+pointer  stage_objects_names  0x000001bc  STAGE_TEXTURE_MIU64_GREEN004
+pointer  stage_objects_names  0x000001c8  STAGE_TEXTURE_MIU64_GREEN005
+pointer  stage_objects_names  0x000001d4  STAGE_TEXTURE_MIU64_GREEN006
+pointer  stage_objects_names  0x000001e0  STAGE_TEXTURE_MIU64_GREEN007
+pointer  stage_objects_names  0x000001ec  STAGE_TEXTURE_MIU64_GREEN008
+pointer  stage_objects_names  0x000001f8  STAGE_TEXTURE_MIU64_GREEN011
+pointer  stage_objects_names  0x00000204  STAGE_TEXTURE_MIU64_GREEN012
+pointer  stage_objects_names  0x00000210  STAGE_TEXTURE_MIU64_GREEN013
+pointer  stage_objects_textures  0x00000000  stage_objects_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  white_jungle_revolving_vine_texlist
+pointer  stage_textures  0x0000001c  big_jump_anim_texlist
+pointer  stage_textures  0x00000020  big_jump_texlist
+pointer  stage_textures  0x00000024  hover_lift_texlist_0
+pointer  stage_textures  0x00000028  dirt_texlist
+pointer  stage_textures  0x0000002c  slgate_texlist
+pointer  stage_textures  0x00000030  white_jungle_fallen_tree_texlist
+pointer  stage_textures  0x00000034  white_jungle_bungee_vine_texlist
+pointer  stage_textures  0x00000038  side_vine_texlist
+pointer  stage_textures  0x0000003c  hanging_vine_texlist
+pointer  stage_textures  0x00000040  ring_shadow_texlist
+pointer  stage_textures  0x00000044  hover_lift_texlist_1
+pointer  stage_textures  0x00000048  effect_texlist
+pointer  stage_textures  0x0000004c  item_balloon_texlist
+pointer  stage_textures  0x00000050  ring_sparkle_texlist
+pointer  stage_textures  0x00000054  burst_texlist
+pointer  stage_textures  0x00000058  white_jungle_stars_texlist
+pointer  white_jungle_object_texture_groups  0x00000000  stage_textures
+pointer  white_jungle_object_texture_groups  0x00000004  white_jungle_prop_texlists
+pointer  white_jungle_object_texture_groups  0x00000008  white_jungle_scenery_texlists
+pointer  white_jungle_object_texture_groups  0x0000000c  torch_texlists
+pointer  white_jungle_object_texture_groups  0x00000010  goal_ring_texlists
+pointer  white_jungle_object_texture_groups  0x00000014  emerald_texlists
+pointer  white_jungle_object_texture_groups  0x00000018  item_box_texlists
+pointer  white_jungle_object_texture_groups  0x0000001c  item_box_air_texlists
+pointer  white_jungle_object_texture_groups  0x00000020  weight_texlists
+pointer  white_jungle_object_texture_groups  0x00000024  iron_ball_texlists
+pointer  white_jungle_object_texture_groups  0x00000028  triple_spring_texlists
+pointer  white_jungle_object_texture_groups  0x0000002c  dynamite_texlists
+pointer  white_jungle_object_texture_groups  0x00000030  reel_texlists
+pointer  white_jungle_object_texture_groups  0x00000034  chao_pipe_texlists
+pointer  white_jungle_object_texture_groups  0x00000038  cage_texlists
+pointer  white_jungle_object_texture_groups  0x0000003c  wood_box_texlists
+pointer  white_jungle_object_texture_groups  0x00000040  iron_box_texlists
+pointer  white_jungle_object_texture_groups  0x00000044  upgrade_texlists
+pointer  white_jungle_object_texture_groups  0x00000048  missile_texlists
+pointer  white_jungle_object_texture_groups  0x0000004c  skull_texlists
+pointer  white_jungle_object_texture_groups  0x00000050  rocket_texlists
+pointer  white_jungle_object_texture_groups  0x00000054  hint_box_texlists
+pointer  white_jungle_object_texture_groups  0x00000058  knudai_texlists
+pointer  white_jungle_object_texture_groups  0x0000005c  knudai_foothold_texlists
+pointer  white_jungle_object_texture_groups  0x00000060  knudai_warp_hole_texlists
+pointer  white_jungle_object_texture_groups  0x00000064  knudai_door_texlists
+pointer  white_jungle_object_texture_groups  0x00000068  chao_box_texlists
+pointer  white_jungle_object_texture_groups  0x0000006c  chao_key_texlists
+pointer  white_jungle_object_texture_groups  0x00000070  object_effect_texlists
+pointer  white_jungle_object_texture_groups  0x00000074  messenger_texlists
+pointer  white_jungle_object_texture_groups  0x00000078  ring_effect_texlists
+pointer  white_jungle_object_texture_groups  0x0000007c  solid_box_texlists
+pointer  white_jungle_object_texture_groups  0x00000080  white_jungle_pickup_texlists
+pointer  white_jungle_object_texture_groups  0x00000084  wood_fence_texlists
+pointer  white_jungle_object_texture_groups  0x00000088  taki_texlists
+pointer  white_jungle_object_texture_groups  0x0000008c  hover_lift_texlists
+pointer  white_jungle_object_pvms  0x00000000  PVM_OBJTEX_STG04
+pointer  white_jungle_object_pvms  0x00000004  stage_objects_textures
+pointer  white_jungle_object_pvms  0x00000008  PVM_EFFTEX_COMMON
+pointer  white_jungle_object_pvms  0x0000000c  efftex_common_texlist
+pointer  white_jungle_object_pvms  0x00000010  PVM_OBJTEX_COMMON
+pointer  white_jungle_object_pvms  0x00000014  objtex_common_texlist
+pointer  white_jungle_object_pvms  0x0000001c  white_jungle_terrain_textures

@@ -1,0 +1,354 @@
+; the copy of a macroblock into a reference picture
+
+; byte offsets of mpv_cmc.c's struct mb_offset's fields and of struct
+; mpv_frame's
+OFFSET_CHROMA:  .EQU    0
+OFFSET_LUMA:    .EQU    4
+FRAME_CHROMA_B: .EQU    0
+FRAME_CHROMA_R: .EQU    4
+FRAME_LUMA:     .EQU    8
+FRAME_CHROMA_PITCH: .EQU 12
+FRAME_LUMA_PITCH: .EQU  14
+; MPV_COEFS is sofdec.h's count of a block's coefficients, and so of its
+; pixels. a block has rows of ROW_BYTES pixels
+MPV_COEFS:      .EQU    64
+ROW_BYTES:      .EQU    8
+; the bytes of an operand cache line
+CACHE_LINE:     .EQU    32
+
+        .EXPORT     _MPVACMC_OutputMbRfb
+
+        .SECTION    PSGSFD00,CODE,ALIGN=4
+
+; void MPVACMC_OutputMbRfb(const Uint8 *blocks, const struct mb_offset *offset,
+;                          const struct mpv_frame *frame)
+; copy the macroblock's six blocks at blocks, MPV_COEFS pixels each, into
+; frame's planes. the first two, Cb's and Cr's, go to offset->chroma in
+; frame->chroma_b and frame->chroma_r. the last four, Y's, go to offset->luma
+; in frame->luma as a 16 by 16 square. they fill it left to right, then top
+; to bottom. Cb's and Cr's rows lie frame->chroma_pitch bytes apart, and Y's
+; frame->luma_pitch. blocks and each row in frame must lie on an 8-byte
+; boundary. the call needs FPSCR's PR and SZ clear.
+;
+; where Cb's first row starts a cache line, each Cb and Cr row takes its line
+; with MOVCA.L. where Y's first row starts one, each Y row does. the call
+; tests only those two rows, so each row it takes a line for must start one
+; too. MOVCA.L reads no memory, so where the line missed the cache, the
+; line's bytes beside the row are undefined until written.
+; the first FSCHG sets FPSCR.SZ, so each FMOV of a DR register moves a row's
+; 8 bytes
+; @asm opcode: movca, MOVCA.L R0,@R7 at 0x8c18a2fe takes a chrominance row's
+; cache line
+_MPVACMC_OutputMbRfb:
+        MOV.L       @(OFFSET_CHROMA,R5),R1
+        FSCHG
+        MOV.L       @(FRAME_CHROMA_B,R6),R7
+        MOV         #CACHE_LINE-1,R2
+        MOV.W       @(FRAME_CHROMA_PITCH,R6),R0
+        ADD         R1,R7
+        FMOV        @R4+,DR0
+        TST         R2,R7
+        FMOV        @R4+,DR2
+        FMOV        @R4+,DR4
+        BT/S        ?chroma_movca
+        FMOV        @R4+,DR6
+        FMOV        DR0,@R7
+        ADD         R0,R7
+        FMOV        DR2,@R7
+        ADD         R0,R7
+        FMOV        DR4,@R7
+        ADD         R0,R7
+        FMOV        DR6,@R7
+        ADD         R0,R7
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        FMOV        @R4+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR0,@R7
+        ADD         R0,R7
+        FMOV        DR2,@R7
+        ADD         R0,R7
+        FMOV        DR4,@R7
+        ADD         R0,R7
+        FMOV        DR6,@R7
+        MOV.L       @(FRAME_CHROMA_R,R6),R7
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        ADD         R1,R7
+        FMOV        @R4+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR0,@R7
+        ADD         R0,R7
+        FMOV        DR2,@R7
+        ADD         R0,R7
+        FMOV        DR4,@R7
+        ADD         R0,R7
+        FMOV        DR6,@R7
+        ADD         R0,R7
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        FMOV        @R4+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR0,@R7
+        ADD         R0,R7
+        FMOV        DR2,@R7
+        ADD         R0,R7
+        FMOV        DR4,@R7
+        ADD         R0,R7
+        BRA         ?luma
+        FMOV        DR6,@R7
+?chroma_movca:
+        MOVCA.L     R0,@R7
+        FMOV        DR0,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR2,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR4,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR6,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        FMOV        @R4+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR0,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR2,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR4,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR6,@R7
+        MOV.L       @(FRAME_CHROMA_R,R6),R7
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        ADD         R1,R7
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR0,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR2,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR4,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR6,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        FMOV        @R4+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR0,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR2,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR4,@R7
+        ADD         R0,R7
+        MOVCA.L     R0,@R7
+        FMOV        DR6,@R7
+?luma:
+        MOV.L       @(OFFSET_LUMA,R5),R1
+        MOV         R4,R3
+        MOV.L       @(FRAME_LUMA,R6),R7
+        ADD         #MPV_COEFS,R3
+        MOV.W       @(FRAME_LUMA_PITCH,R6),R0
+        ADD         R1,R7
+        FMOV        @R3+,DR0
+        TST         R2,R7
+        FMOV        @R4+,DR2
+        BT/S        ?luma_movca
+        ADD         #ROW_BYTES,R7
+        FMOV        DR0,@R7
+        ADD         #ROW_BYTES,R0
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3,DR4
+        FMOV        @R4,DR6
+        ADD         #ROW_BYTES+MPV_COEFS,R3
+        FMOV        DR4,@R7
+        ADD         #ROW_BYTES+MPV_COEFS,R4
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3,DR4
+        FMOV        @R4,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        RTS
+        FSCHG
+?luma_movca:
+        MOVCA.L     R0,@R7
+        FMOV        DR0,@R7
+        ADD         #ROW_BYTES,R0
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3,DR4
+        MOVCA.L     R0,@R7
+        FMOV        @R4,DR6
+        ADD         #ROW_BYTES+MPV_COEFS,R3
+        FMOV        DR4,@R7
+        ADD         #ROW_BYTES+MPV_COEFS,R4
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR4
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        ADD         R0,R7
+        FMOV        @R3+,DR0
+        MOVCA.L     R0,@R7
+        FMOV        @R4+,DR2
+        FMOV        DR0,@R7
+        FMOV        DR2,@-R7
+        ADD         R0,R7
+        FMOV        @R3,DR4
+        MOVCA.L     R0,@R7
+        FMOV        @R4,DR6
+        FMOV        DR4,@R7
+        FMOV        DR6,@-R7
+        RTS
+        FSCHG
+        .END

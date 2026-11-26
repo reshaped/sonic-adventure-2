@@ -1,0 +1,17 @@
+text  WATERFALL_EDITOR_ROT_Y  C  0x00000000  9
+text  WATERFALL_EDITOR_SPD  C  0x0000000c  7
+text  JUNGLE_TEXTURE_MIU128_WJ001  C  0x00000014  13
+text  JUNGLE_TEXTURE_MIU64_GREEN008  C  0x00000024  15
+datum  taki_textures  D  0x00000000  24
+datum  taki_texlist  D  0x00000018  8
+datum  cascade_bank_polygons  D  0x00000020  194
+datum  cascade_bank_vertices  D  0x000000e4  252
+datum  cascade_bank_mesh  D  0x000001e0  24
+datum  cascade_bank  D  0x000001f8  52
+datum  cascade_polygons  D  0x0000022c  426
+datum  cascade_vertices  D  0x000003d8  716
+datum  cascade_mesh  D  0x000006a4  24
+datum  taki_object  D  0x000006bc  52
+datum  cascade_uvs  D  0x000006f0  280
+datum  taki_anim  D  0x00000808  36
+datum  taki_texlists  D  0x0000082c  8

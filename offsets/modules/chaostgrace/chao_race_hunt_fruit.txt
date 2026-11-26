@@ -1,0 +1,12 @@
+datum  hunt_fruit_scavenger_round_fruit_polygons  D  0x00000000  426
+datum  hunt_fruit_scavenger_round_fruit_vertices  D  0x000001ac  684
+datum  hunt_fruit_scavenger_round_fruit_model  D  0x00000458  24
+datum  scavenger_round_fruit  D  0x00000470  52
+datum  hunt_fruit_scavenger_triangle_fruit_polygons  D  0x000004a4  378
+datum  hunt_fruit_scavenger_triangle_fruit_vertices  D  0x00000620  588
+datum  hunt_fruit_scavenger_triangle_fruit_model  D  0x0000086c  24
+datum  scavenger_triangle_fruit  D  0x00000884  52
+datum  hunt_fruit_scavenger_square_fruit_polygons  D  0x000008b8  586
+datum  hunt_fruit_scavenger_square_fruit_vertices  D  0x00000b04  780
+datum  hunt_fruit_scavenger_square_fruit_model  D  0x00000e10  24
+datum  scavenger_square_fruit  D  0x00000e28  52

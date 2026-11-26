@@ -1,0 +1,16 @@
+text  SHELF_TEX_KD_DL_KABE3_VQ  C  0x00000000  15
+text  SHELF_TEX_KD_DL_KABE4_VQ  C  0x00000010  15
+text  SHELF_TEX_KD_DL_YUKA1_VQ  C  0x00000020  15
+datum  shelf_texlist_names  D  0x00000000  36
+datum  shelf_texlist  D  0x00000024  8
+datum  shelf_polygons  D  0x0000002c  390
+datum  shelf_vertices  D  0x000001b4  460
+datum  shelf_model  D  0x00000380  24
+datum  shelf_object  D  0x00000398  52
+datum  shelf_collision_materials  D  0x000003cc  20
+datum  shelf_collision_strips  D  0x000003e0  130
+datum  shelf_collision_faces  D  0x00000464  24
+datum  shelf_collision_points  D  0x0000047c  264
+datum  shelf_collision_normals  D  0x00000584  264
+datum  shelf_collision_model  D  0x0000068c  40
+datum  shelf_collision  D  0x000006b4  52

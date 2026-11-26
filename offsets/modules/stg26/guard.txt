@@ -1,0 +1,5 @@
+datum  exhaust_right  D  0x00000020  12
+datum  exhaust_left  D  0x0000002c  12
+datum  lens_origin  D  0x00000038  12
+datum  sensors  D  0x00000044  96
+datum  body  D  0x000000a4  48

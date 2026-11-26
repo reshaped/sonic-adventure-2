@@ -1,0 +1,67 @@
+text LOOPING_VINE_PADDED_FLOAT  7
+text LOOPING_VINE_EDITOR_WOOD_POS_X  14
+text LOOPING_VINE_EDITOR_WOOD_POS_Y  14
+text LOOPING_VINE_EDITOR_WOOD_POS_Z  14
+text LOOPING_VINE_EDITOR_ANGLE_START_POSITION  28
+text LOOPING_VINE_EDITOR_ANGLE_ROTY  18
+text LOOPING_VINE_EDITOR_ANGLE_LAUNCH_POSITION  30
+text LOOPING_VINE_EDITOR_ANGLE_START_TO_WOOD_WIDTH  33
+text LOOPING_VINE_EDITOR_TUTA_LENGTH  15
+text LOOPING_VINE_EDITOR_ADD_SPEED  13
+text LOOPING_VINE_TEXTURE_MIU64_GREEN006  15
+text LOOPING_VINE_TEXTURE_TUTATES  8
+
+pointer vine_textures  0x00000000  LOOPING_VINE_TEXTURE_MIU64_GREEN006
+pointer vine_texlist  0x00000000  vine_textures
+pointer vine_object_node_15_model  0x00000000  vine_object_node_15_vertices
+pointer vine_object_node_15_model  0x00000004  vine_object_node_15_polygons
+pointer vine_object_node_15  0x00000004  vine_object_node_15_model
+pointer vine_object_node_15  0x0000002c  vine_object_node_16
+pointer vine_object_node_14_model  0x00000000  vine_object_node_14_vertices
+pointer vine_object_node_14  0x00000004  vine_object_node_14_model
+pointer vine_object_node_14  0x0000002c  vine_object_node_15
+pointer vine_object_node_13_model  0x00000000  vine_object_node_13_vertices
+pointer vine_object_node_13  0x00000004  vine_object_node_13_model
+pointer vine_object_node_13  0x0000002c  vine_object_node_14
+pointer vine_object_node_12_model  0x00000000  vine_object_node_12_vertices
+pointer vine_object_node_12  0x00000004  vine_object_node_12_model
+pointer vine_object_node_12  0x0000002c  vine_object_node_13
+pointer vine_object_node_11_model  0x00000000  vine_object_node_11_vertices
+pointer vine_object_node_11  0x00000004  vine_object_node_11_model
+pointer vine_object_node_11  0x0000002c  vine_object_node_12
+pointer vine_object_node_10_model  0x00000000  vine_object_node_10_vertices
+pointer vine_object_node_10  0x00000004  vine_object_node_10_model
+pointer vine_object_node_10  0x0000002c  vine_object_node_11
+pointer vine_object_node_9_model  0x00000000  vine_object_node_9_vertices
+pointer vine_object_node_9  0x00000004  vine_object_node_9_model
+pointer vine_object_node_9  0x0000002c  vine_object_node_10
+pointer vine_object_node_8_model  0x00000000  vine_object_node_8_vertices
+pointer vine_object_node_8  0x00000004  vine_object_node_8_model
+pointer vine_object_node_8  0x0000002c  vine_object_node_9
+pointer vine_object_node_7_model  0x00000000  vine_object_node_7_vertices
+pointer vine_object_node_7  0x00000004  vine_object_node_7_model
+pointer vine_object_node_7  0x0000002c  vine_object_node_8
+pointer vine_object_node_6_model  0x00000000  vine_object_node_6_vertices
+pointer vine_object_node_6  0x00000004  vine_object_node_6_model
+pointer vine_object_node_6  0x0000002c  vine_object_node_7
+pointer vine_object_node_5_model  0x00000000  vine_object_node_5_vertices
+pointer vine_object_node_5  0x00000004  vine_object_node_5_model
+pointer vine_object_node_5  0x0000002c  vine_object_node_6
+pointer vine_object_node_4_model  0x00000000  vine_object_node_4_vertices
+pointer vine_object_node_4  0x00000004  vine_object_node_4_model
+pointer vine_object_node_4  0x0000002c  vine_object_node_5
+pointer vine_object_node_3_model  0x00000000  vine_object_node_3_vertices
+pointer vine_object_node_3  0x00000004  vine_object_node_3_model
+pointer vine_object_node_3  0x0000002c  vine_object_node_4
+pointer vine_object_node_2_model  0x00000000  vine_object_node_2_vertices
+pointer vine_object_node_2  0x00000004  vine_object_node_2_model
+pointer vine_object_node_2  0x0000002c  vine_object_node_3
+pointer vine_object_node_1  0x0000002c  vine_object_node_2
+pointer vine_model  0x00000004  vine_polygons
+pointer vine_object  0x00000004  vine_model
+pointer vine_object  0x0000002c  vine_object_node_1
+pointer vine_preview_textures  0x00000000  LOOPING_VINE_TEXTURE_TUTATES
+pointer vine_preview_texlist  0x00000000  vine_preview_textures
+pointer vine_preview_model  0x00000000  vine_preview_vertices
+pointer vine_preview_model  0x00000004  vine_preview_polygons
+pointer vine_preview_object  0x00000004  vine_preview_model

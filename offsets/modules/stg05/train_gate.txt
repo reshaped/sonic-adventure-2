@@ -1,0 +1,2 @@
+datum  pumpkin_hill_sound_table  C  0x00000000  48
+datum  pumpkin_hill_sounds  C  0x00000030  8

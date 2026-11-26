@@ -1,0 +1,2 @@
+datum  versus_sonic_2_sounds  C  0x00000000  72
+datum  versus_sonic_2_sound_list  C  0x00000048  8

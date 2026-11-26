@@ -1,0 +1,14 @@
+text  HERD_TEXTURE_METEO128_11  C  0x00000000  12
+text  HERD_TEXTURE_MIU128_MEH004  C  0x0000000c  14
+text  HERD_TEXTURE_MIU128_MEH006  C  0x0000001c  14
+text  HERD_TEXTURE_MIU64_MEH003  C  0x0000002c  13
+datum  herd_drill_names  D  0x00000000  48
+datum  herd_drill_texlist  D  0x00000030  8
+datum  herd_drill_head_polygons  D  0x00000038  626
+datum  herd_drill_head_vertices  D  0x000002ac  924
+datum  herd_drill_head_model  D  0x00000648  24
+datum  herd_drill_head  D  0x00000660  52
+datum  herd_drill_base_polygons  D  0x00000694  114
+datum  herd_drill_base_vertices  D  0x00000708  156
+datum  herd_drill_base_model  D  0x000007a4  24
+datum  herd_drill_base  D  0x000007bc  52

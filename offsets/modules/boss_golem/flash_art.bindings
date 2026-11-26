@@ -1,0 +1,6 @@
+pointer flash_textures 0x00000000 golem_impact_materials+0x10
+pointer golem_flash_texlist 0x00000000 flash_textures
+pointer flash_model 0x00000000 flash_vertices
+pointer flash_model 0x00000004 flash_polygons
+pointer golem_flash_object 0x00000004 flash_model
+pointer golem_flash_anim 0x00000010 flash_uvs

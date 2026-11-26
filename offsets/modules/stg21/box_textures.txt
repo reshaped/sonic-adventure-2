@@ -1,0 +1,5 @@
+datum  box_pillar_texture  C  0x00000000  16
+datum  box_wall_texture  C  0x00000010  12
+datum  box_shrine_texture  C  0x0000001c  14
+datum  textures  D  0x00000000  36
+datum  stone_box_texlist  D  0x00000024  8

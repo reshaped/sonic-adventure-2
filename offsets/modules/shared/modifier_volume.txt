@@ -1,0 +1,17 @@
+datum  modifier_volume_box_polygons  D  0x00000000  82
+datum  modifier_volume_box_vertices  D  0x00000054  108
+datum  modifier_volume_cylinder_polygons  D  0x0000010c  154
+datum  modifier_volume_cylinder_vertices  D  0x000001a8  180
+datum  modifier_volume_box_solid_polygons  D  0x000002a8  66
+datum  modifier_volume_box_solid_vertices  D  0x000002ec  204
+datum  modifier_volume_cylinder_solid_polygons  D  0x00000404  102
+datum  modifier_volume_cylinder_solid_vertices  D  0x0000046c  348
+datum  modifier_volume_box_model  D  0x000000c0  24
+datum  modifier_volume_box_object  D  0x000000d8  52
+datum  modifier_volume_cylinder_model  D  0x0000025c  24
+datum  modifier_volume_cylinder_object  D  0x00000274  52
+datum  modifier_volume_box_solid_model  D  0x000003b8  24
+datum  modifier_volume_box_solid_object  D  0x000003d0  52
+datum  modifier_volume_cylinder_solid_model  D  0x000005c8  24
+datum  modifier_volume_cylinder_solid_object  D  0x000005e0  52
+datum  modifier_volume_shapes  D  0x00000614  16

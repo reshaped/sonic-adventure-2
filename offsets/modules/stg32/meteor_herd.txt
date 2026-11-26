@@ -1,0 +1,13 @@
+datum  first_uvs  D  0x00000084  120
+datum  second_uvs  D  0x00000120  92
+datum  third_uvs  D  0x000001a0  116
+datum  fourth_uvs  D  0x00000238  164
+datum  fifth_uvs  D  0x00000300  204
+datum  meteor_herd_kill_areas  D  0x00000000  16
+datum  first_scroll  D  0x000000fc  36
+datum  second_scroll  D  0x0000017c  36
+datum  third_scroll  D  0x00000214  36
+datum  fourth_scroll  D  0x000002dc  36
+datum  fifth_scroll  D  0x000003cc  36
+datum  surfaces  D  0x000003f0  100
+datum  background_builds  D  0x000004a0  64

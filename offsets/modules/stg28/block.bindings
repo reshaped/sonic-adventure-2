@@ -1,0 +1,21 @@
+text  BLOCK_TEXTURE_DC_PC_SHADOW64  15
+text  BLOCK_TEXTURE_DZ_PC_HASIRA128  16
+text  BLOCK_TEXTURE_KD_PC_KABE4  12
+text  BLOCK_KIND_BLANK  2
+
+pointer cave_block_texture_names  0x00000000  BLOCK_TEXTURE_DC_PC_SHADOW64
+pointer cave_block_texture_names  0x0000000c  BLOCK_TEXTURE_DZ_PC_HASIRA128
+pointer cave_block_texture_names  0x00000018  BLOCK_TEXTURE_KD_PC_KABE4
+pointer cave_block_texlist  0x00000000  cave_block_texture_names
+pointer cave_block_model  0x00000000  cave_block_vertices
+pointer cave_block_model  0x00000004  cave_block_polygons
+pointer cave_block_object  0x00000004  cave_block_model
+pointer cave_block_collision_meshsets  0x00000004  cave_block_collision_indices
+pointer cave_block_collision_model  0x00000000  cave_block_collision_points
+pointer cave_block_collision_model  0x00000004  cave_block_collision_normals
+pointer cave_block_collision_model  0x0000000c  cave_block_collision_meshsets
+pointer cave_block_collision_model  0x00000010  cave_block_collision_materials
+pointer cave_block_collision  0x00000004  cave_block_collision_model
+pointer block_models  0x00000000  cave_block_model
+pointer cave_block_texlists  0x00000000  cave_block_texlist
+pointer block_kind_names  0x00000000  BLOCK_KIND_BLANK

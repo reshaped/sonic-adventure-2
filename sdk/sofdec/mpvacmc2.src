@@ -1,0 +1,160 @@
+; the output of a macroblock predicted from one reference picture: its
+; residuals added to its prediction
+
+; byte offsets of struct mpv_mb's fields
+MB_CLIP:        .EQU    0
+MB_BLOCKS:      .EQU    4
+MB_PREDICTION:  .EQU    8
+; MPV_BLOCKS and MPV_COEFS are sofdec.h's counts of a macroblock's blocks and
+; of a block's coefficients, and so of its pixels. a block has BLK_LINES rows
+; of ROW_BYTES pixels, and a residual takes SAMPLE_BYTES
+MPV_BLOCKS:     .EQU    6
+MPV_COEFS:      .EQU    64
+BLK_LINES:      .EQU    8
+ROW_BYTES:      .EQU    8
+SAMPLE_BYTES:   .EQU    2
+
+        .EXPORT     _MPVACMC_OneMakeMbTaSub
+
+        .SECTION    PSGSFD00,CODE,ALIGN=4
+
+; void MPVACMC_OneMakeMbTaSub(Uint8 *out, const struct mpv_mb *mb, Uint32 cbp)
+; add each coded block's residuals at mb->blocks to its pixels at
+; mb->prediction, in place, through mb->clip. then copy the six blocks to the
+; 384 bytes at out, 8 bytes a row: an uncoded block goes as it was
+; predicted. a PREF after each 32 bytes sends them on where out is a store
+; queue address. the call needs FPSCR's PR and SZ clear.
+;
+; a block's residuals are MPV_COEFS Sint16s, and its prediction MPV_COEFS
+; pixels, both in raster order. bit 31 - n of cbp marks block n as coded.
+; mb->clip[x] must be x clamped to 0 to 255. the prediction and out must lie
+; on 8-byte boundaries. the add reads one pixel and one residual past each
+; coded block. so the pixel after the last block's prediction, and the
+; residual after its residuals, must be readable.
+; the first FSCHG sets FPSCR.SZ, so each FMOV of a DR register moves a row's
+; 8 bytes
+; @asm operand: zero-displacement, MOV.L @(MB_CLIP,R5),R0 at 0x8c18a1a0 loads
+; mb->clip through a displacement of 0
+_MPVACMC_OneMakeMbTaSub:
+        MOV.L       @(MB_CLIP,R5),R0
+        MOV         R6,R7
+        MOV.L       @(MB_BLOCKS,R5),R6
+        MOV.L       @(MB_PREDICTION,R5),R5
+        MOV.L       R14,@-R15
+        FSCHG
+        MOV.L       R13,@-R15
+        MOV         #MPV_COEFS,R14
+        MOV.L       R12,@-R15
+        SHLL        R14
+        MOV.L       R11,@-R15
+        MOV         #MPV_BLOCKS,R12
+        MOV.L       R10,@-R15
+?block:
+        SHLL        R7
+        BT          ?coded
+        ADD         R14,R6
+?coded:
+        BF          ?copy
+        MOV         R5,R3
+        MOV.B       @R5+,R1
+        MOV         #BLK_LINES,R13
+        MOV.W       @R6+,R2
+        EXTU.B      R1,R1
+?add_row:
+        MOV.B       @R5+,R10
+        ADD         R2,R1
+        MOV.W       @R6+,R11
+        MOV.B       @(R0,R1),R1
+        EXTU.B      R10,R10
+        MOV.B       @R5+,R2
+        ADD         R11,R10
+        MOV.B       @(R0,R10),R10
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        MOV.B       R10,@R3
+        ADD         #1,R3
+        MOV.W       @R6+,R1
+        MOV.B       @R5+,R11
+        EXTU.B      R2,R2
+        MOV.W       @R6+,R10
+        ADD         R1,R2
+        MOV.B       @(R0,R2),R2
+        EXTU.B      R11,R11
+        MOV.B       @R5+,R1
+        ADD         R10,R11
+        MOV.B       @(R0,R11),R11
+        MOV.B       R2,@R3
+        ADD         #1,R3
+        MOV.B       R11,@R3
+        ADD         #1,R3
+        MOV.W       @R6+,R2
+        MOV.B       @R5+,R10
+        EXTU.B      R1,R1
+        MOV.W       @R6+,R11
+        ADD         R2,R1
+        MOV.B       @(R0,R1),R1
+        EXTU.B      R10,R10
+        MOV.B       @R5+,R2
+        ADD         R11,R10
+        MOV.B       @(R0,R10),R10
+        MOV.B       R1,@R3
+        ADD         #1,R3
+        MOV.B       R10,@R3
+        ADD         #1,R3
+        MOV.W       @R6+,R1
+        MOV.B       @R5+,R11
+        EXTU.B      R2,R2
+        MOV.W       @R6+,R10
+        ADD         R1,R2
+        MOV.B       @(R0,R2),R2
+        EXTU.B      R11,R11
+        MOV.B       @R5+,R1
+        ADD         R10,R11
+        MOV.B       @(R0,R11),R11
+        DT          R13
+        MOV.B       R2,@R3
+        ADD         #1,R3
+        MOV.B       R11,@R3
+        ADD         #1,R3
+        MOV.W       @R6+,R2
+        BF/S        ?add_row
+        EXTU.B      R1,R1
+        ADD         #-MPV_COEFS-1,R5
+        ADD         #-SAMPLE_BYTES,R6
+?copy:
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        DR0,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR2,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR4,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR6,@R4
+        PREF        @R4
+        ADD         #ROW_BYTES,R4
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FMOV        DR0,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR2,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR4,@R4
+        ADD         #ROW_BYTES,R4
+        FMOV        DR6,@R4
+        DT          R12
+        PREF        @R4
+        BF/S        ?block
+        ADD         #ROW_BYTES,R4
+        MOV.L       @R15+,R10
+        MOV.L       @R15+,R11
+        FSCHG
+        MOV.L       @R15+,R12
+        MOV.L       @R15+,R13
+        RTS
+        MOV.L       @R15+,R14
+        .END

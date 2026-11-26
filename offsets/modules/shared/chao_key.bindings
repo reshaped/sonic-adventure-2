@@ -1,0 +1,16 @@
+text  CHAO_KEY_TEXT_SIKAKE_36_32  13
+text  CHAO_KEY_TEXT_SIKAKE_40_64  13
+text  CHAO_KEY_TEXT_SIKAKE_42_32  13
+
+pointer  chao_key_texnames  0x00000000  CHAO_KEY_TEXT_SIKAKE_36_32
+pointer  chao_key_texnames  0x0000000c  CHAO_KEY_TEXT_SIKAKE_40_64
+pointer  chao_key_texnames  0x00000018  CHAO_KEY_TEXT_SIKAKE_42_32
+pointer  chao_key_texlist  0x00000000  chao_key_texnames
+pointer  chao_key_glow_model  0x00000000  chao_key_glow_vertices
+pointer  chao_key_glow_model  0x00000004  chao_key_glow_polygons
+pointer  chao_key_glow_object  0x00000004  chao_key_glow_model
+pointer  chao_key_model  0x00000000  chao_key_vertices
+pointer  chao_key_model  0x00000004  chao_key_polygons
+pointer  chao_key_object  0x00000004  chao_key_model
+pointer  chao_key_object  0x0000002c  chao_key_glow_object
+pointer  chao_key_texlists  0x00000000  chao_key_texlist

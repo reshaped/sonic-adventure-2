@@ -1,0 +1,14 @@
+datum  textures  D  0x00000000  72
+datum  core_shutter_far_texlist  D  0x00000048  8
+datum  core_shutter_far_closed_lamp_polygons  D  0x00000050  30
+datum  core_shutter_far_closed_lamp_vertices  D  0x00000070  76
+datum  core_shutter_far_closed_lamp_model  D  0x000000bc  24
+datum  core_shutter_far_closed_lamp  D  0x000000d4  52
+datum  core_shutter_far_lamp_polygons  D  0x00000108  50
+datum  core_shutter_far_lamp_vertices  D  0x0000013c  76
+datum  core_shutter_far_lamp_model  D  0x00000188  24
+datum  core_shutter_far_lamp  D  0x000001a0  52
+datum  core_shutter_far_face_polygons  D  0x000001d4  950
+datum  core_shutter_far_face_vertices  D  0x0000058c  1388
+datum  core_shutter_far_face_model  D  0x00000af8  24
+datum  core_shutter_far_face  D  0x00000b10  52

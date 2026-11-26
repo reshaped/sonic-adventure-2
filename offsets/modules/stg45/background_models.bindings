@@ -1,0 +1,281 @@
+include  objtex_common
+include  efftex_common
+
+text  DZ_SO_RYUUSA_0001  18
+text  DZ_SO_RYUUSA_0002  18
+text  DZ_SO_RYUUSA_0003  18
+text  DZ_SO_RYUUSA_0004  18
+text  DZ_SO_RYUUSA_0005  18
+text  DZ_SO_RYUUSA_0006  18
+text  DZ_SO_RYUUSA_0007  18
+text  DZ_SO_RYUUSA_0008  18
+text  DZ_SO_RYUUSA_0009  18
+text  DZ_SO_RYUUSA_0010  18
+text  DZ_SO_RYUUSA_0011  18
+text  DZ_SO_RYUUSA_0012  18
+text  DZ_SO_RYUUSA_0013  18
+text  DZ_SO_RYUUSA_0014  18
+text  DZ_SO_RYUUSA_0015  18
+text  DZ_SO_RYUUSA_0016  18
+text  DZ_SO_RYUUSA_0017  18
+text  DZ_SO_RYUUSA_0018  18
+text  DZ_SO_RYUUSA_0019  18
+text  DZ_SO_RYUUSA_0020  18
+text  DZ_SO_RYUUSA_0021  18
+text  DZ_SO_RYUUSA_0022  18
+text  DZ_SO_RYUUSA_0023  18
+text  DZ_SO_RYUUSA_0024  18
+text  DZ_SO_RYUUSA_0025  18
+text  DZ_SO_RYUUSA_0026  18
+text  DZ_SO_RYUUSA_0027  18
+text  DZ_SO_RYUUSA_0028  18
+text  DZ_SO_RYUUSA_0029  18
+text  DZ_SO_RYUUSA_0030  18
+text  DZ_SO_RYUUSA_0031  18
+text  DZ_SO_RYUUSA_0032  18
+
+pointer  quicksand_texlist_names  0x00000000  DZ_SO_RYUUSA_0001
+pointer  quicksand_texlist_names  0x0000000c  DZ_SO_RYUUSA_0002
+pointer  quicksand_texlist_names  0x00000018  DZ_SO_RYUUSA_0003
+pointer  quicksand_texlist_names  0x00000024  DZ_SO_RYUUSA_0004
+pointer  quicksand_texlist_names  0x00000030  DZ_SO_RYUUSA_0005
+pointer  quicksand_texlist_names  0x0000003c  DZ_SO_RYUUSA_0006
+pointer  quicksand_texlist_names  0x00000048  DZ_SO_RYUUSA_0007
+pointer  quicksand_texlist_names  0x00000054  DZ_SO_RYUUSA_0008
+pointer  quicksand_texlist_names  0x00000060  DZ_SO_RYUUSA_0009
+pointer  quicksand_texlist_names  0x0000006c  DZ_SO_RYUUSA_0010
+pointer  quicksand_texlist_names  0x00000078  DZ_SO_RYUUSA_0011
+pointer  quicksand_texlist_names  0x00000084  DZ_SO_RYUUSA_0012
+pointer  quicksand_texlist_names  0x00000090  DZ_SO_RYUUSA_0013
+pointer  quicksand_texlist_names  0x0000009c  DZ_SO_RYUUSA_0014
+pointer  quicksand_texlist_names  0x000000a8  DZ_SO_RYUUSA_0015
+pointer  quicksand_texlist_names  0x000000b4  DZ_SO_RYUUSA_0016
+pointer  quicksand_texlist_names  0x000000c0  DZ_SO_RYUUSA_0017
+pointer  quicksand_texlist_names  0x000000cc  DZ_SO_RYUUSA_0018
+pointer  quicksand_texlist_names  0x000000d8  DZ_SO_RYUUSA_0019
+pointer  quicksand_texlist_names  0x000000e4  DZ_SO_RYUUSA_0020
+pointer  quicksand_texlist_names  0x000000f0  DZ_SO_RYUUSA_0021
+pointer  quicksand_texlist_names  0x000000fc  DZ_SO_RYUUSA_0022
+pointer  quicksand_texlist_names  0x00000108  DZ_SO_RYUUSA_0023
+pointer  quicksand_texlist_names  0x00000114  DZ_SO_RYUUSA_0024
+pointer  quicksand_texlist_names  0x00000120  DZ_SO_RYUUSA_0025
+pointer  quicksand_texlist_names  0x0000012c  DZ_SO_RYUUSA_0026
+pointer  quicksand_texlist_names  0x00000138  DZ_SO_RYUUSA_0027
+pointer  quicksand_texlist_names  0x00000144  DZ_SO_RYUUSA_0028
+pointer  quicksand_texlist_names  0x00000150  DZ_SO_RYUUSA_0029
+pointer  quicksand_texlist_names  0x0000015c  DZ_SO_RYUUSA_0030
+pointer  quicksand_texlist_names  0x00000168  DZ_SO_RYUUSA_0031
+pointer  quicksand_texlist_names  0x00000174  DZ_SO_RYUUSA_0032
+pointer  ocean_2p_quicksand_texlist  0x00000000  quicksand_texlist_names
+
+pointer  quicksand_object_model  0x00000000  quicksand_object_vertices
+pointer  quicksand_object_model  0x00000004  quicksand_object_polygons
+pointer  ocean_2p_quicksand_object  0x00000004  quicksand_object_model
+
+text SAND_OCEAN_KD_SO_BAKUHA1 14
+text SAND_OCEAN_KD_SO_HASIRA1 14
+text SAND_OCEAN_KD_SO_HASIRA2 14
+text SAND_OCEAN_KD_SO_HASIRA3 14
+text SAND_OCEAN_KD_SO_HASIRA4 14
+text SAND_OCEAN_KD_SO_HASIRA5 14
+text SAND_OCEAN_KD_SO_HIKARI1 14
+text SAND_OCEAN_KD_SO_HI_01 12
+text SAND_OCEAN_KD_SO_HI_02 12
+text SAND_OCEAN_KD_SO_HI_03 12
+text SAND_OCEAN_KD_SO_HI_04 12
+text SAND_OCEAN_KD_SO_HI_05 12
+text SAND_OCEAN_KD_SO_HI_06 12
+text SAND_OCEAN_KD_SO_HI_07 12
+text SAND_OCEAN_KD_SO_HI_08 12
+text SAND_OCEAN_KD_SO_HI_09 12
+text SAND_OCEAN_KD_SO_HI_10 12
+text SAND_OCEAN_KD_SO_HI_11 12
+text SAND_OCEAN_KD_SO_HI_12 12
+text SAND_OCEAN_KD_SO_HI_13 12
+text SAND_OCEAN_KD_SO_HI_14 12
+text SAND_OCEAN_KD_SO_HI_15 12
+text SAND_OCEAN_KD_SO_HI_16 12
+text SAND_OCEAN_KD_SO_HOSI1 12
+text SAND_OCEAN_KD_SO_KABE1 12
+text SAND_OCEAN_KD_SO_KABE2 12
+text SAND_OCEAN_KD_SO_KABE3 12
+text SAND_OCEAN_KD_SO_KABE4 12
+text SAND_OCEAN_KD_SO_KAGE1 12
+text SAND_OCEAN_KD_SO_KAGE2 12
+text SAND_OCEAN_KD_SO_KAGE3 12
+text SAND_OCEAN_KD_SO_OTHER1 13
+text SAND_OCEAN_KD_SO_SAKU1 12
+text SAND_OCEAN_KD_SO_SARA1 12
+text SAND_OCEAN_KD_SO_SEKIHI1 14
+text SAND_OCEAN_KD_SO_SEKIHI5 14
+text SAND_OCEAN_KD_SO_SEKIZO1 14
+text SAND_OCEAN_KD_SO_SEKIZO2 14
+text SAND_OCEAN_KD_SO_TUBO1 12
+text SAND_OCEAN_KD_SO_TUKI1 12
+text SAND_OCEAN_KD_SO_VS3 10
+text SAND_OCEAN_KD_SO_VS4 10
+text SAND_OCEAN_KD_SO_VS5 10
+text SAND_OCEAN_KD_SO_VS6 10
+text SAND_OCEAN_OBJTEX_STG45 13
+text SAND_OCEAN_EFFTEX_COMMON 14
+text SAND_OCEAN_OBJTEX_COMMON 14
+text SAND_OCEAN_STG21_FIRE 11
+
+pointer  ocean_2p_stage_texlist_names  0x00000000  DZ_SO_RYUUSA_0001
+pointer  ocean_2p_stage_texlist_names  0x0000000c  DZ_SO_RYUUSA_0002
+pointer  ocean_2p_stage_texlist_names  0x00000018  DZ_SO_RYUUSA_0003
+pointer  ocean_2p_stage_texlist_names  0x00000024  DZ_SO_RYUUSA_0004
+pointer  ocean_2p_stage_texlist_names  0x00000030  DZ_SO_RYUUSA_0005
+pointer  ocean_2p_stage_texlist_names  0x0000003c  DZ_SO_RYUUSA_0006
+pointer  ocean_2p_stage_texlist_names  0x00000048  DZ_SO_RYUUSA_0007
+pointer  ocean_2p_stage_texlist_names  0x00000054  DZ_SO_RYUUSA_0008
+pointer  ocean_2p_stage_texlist_names  0x00000060  DZ_SO_RYUUSA_0009
+pointer  ocean_2p_stage_texlist_names  0x0000006c  DZ_SO_RYUUSA_0010
+pointer  ocean_2p_stage_texlist_names  0x00000078  DZ_SO_RYUUSA_0011
+pointer  ocean_2p_stage_texlist_names  0x00000084  DZ_SO_RYUUSA_0012
+pointer  ocean_2p_stage_texlist_names  0x00000090  DZ_SO_RYUUSA_0013
+pointer  ocean_2p_stage_texlist_names  0x0000009c  DZ_SO_RYUUSA_0014
+pointer  ocean_2p_stage_texlist_names  0x000000a8  DZ_SO_RYUUSA_0015
+pointer  ocean_2p_stage_texlist_names  0x000000b4  DZ_SO_RYUUSA_0016
+pointer  ocean_2p_stage_texlist_names  0x000000c0  DZ_SO_RYUUSA_0017
+pointer  ocean_2p_stage_texlist_names  0x000000cc  DZ_SO_RYUUSA_0018
+pointer  ocean_2p_stage_texlist_names  0x000000d8  DZ_SO_RYUUSA_0019
+pointer  ocean_2p_stage_texlist_names  0x000000e4  DZ_SO_RYUUSA_0020
+pointer  ocean_2p_stage_texlist_names  0x000000f0  DZ_SO_RYUUSA_0021
+pointer  ocean_2p_stage_texlist_names  0x000000fc  DZ_SO_RYUUSA_0022
+pointer  ocean_2p_stage_texlist_names  0x00000108  DZ_SO_RYUUSA_0023
+pointer  ocean_2p_stage_texlist_names  0x00000114  DZ_SO_RYUUSA_0024
+pointer  ocean_2p_stage_texlist_names  0x00000120  DZ_SO_RYUUSA_0025
+pointer  ocean_2p_stage_texlist_names  0x0000012c  DZ_SO_RYUUSA_0026
+pointer  ocean_2p_stage_texlist_names  0x00000138  DZ_SO_RYUUSA_0027
+pointer  ocean_2p_stage_texlist_names  0x00000144  DZ_SO_RYUUSA_0028
+pointer  ocean_2p_stage_texlist_names  0x00000150  DZ_SO_RYUUSA_0029
+pointer  ocean_2p_stage_texlist_names  0x0000015c  DZ_SO_RYUUSA_0030
+pointer  ocean_2p_stage_texlist_names  0x00000168  DZ_SO_RYUUSA_0031
+pointer  ocean_2p_stage_texlist_names  0x00000174  DZ_SO_RYUUSA_0032
+pointer  ocean_2p_stage_texlist_names  0x00000180  SAND_OCEAN_KD_SO_BAKUHA1
+pointer  ocean_2p_stage_texlist_names  0x0000018c  SAND_OCEAN_KD_SO_HASIRA1
+pointer  ocean_2p_stage_texlist_names  0x00000198  SAND_OCEAN_KD_SO_HASIRA2
+pointer  ocean_2p_stage_texlist_names  0x000001a4  SAND_OCEAN_KD_SO_HASIRA3
+pointer  ocean_2p_stage_texlist_names  0x000001b0  SAND_OCEAN_KD_SO_HASIRA4
+pointer  ocean_2p_stage_texlist_names  0x000001bc  SAND_OCEAN_KD_SO_HASIRA5
+pointer  ocean_2p_stage_texlist_names  0x000001c8  SAND_OCEAN_KD_SO_HIKARI1
+pointer  ocean_2p_stage_texlist_names  0x000001d4  SAND_OCEAN_KD_SO_HI_01
+pointer  ocean_2p_stage_texlist_names  0x000001e0  SAND_OCEAN_KD_SO_HI_02
+pointer  ocean_2p_stage_texlist_names  0x000001ec  SAND_OCEAN_KD_SO_HI_03
+pointer  ocean_2p_stage_texlist_names  0x000001f8  SAND_OCEAN_KD_SO_HI_04
+pointer  ocean_2p_stage_texlist_names  0x00000204  SAND_OCEAN_KD_SO_HI_05
+pointer  ocean_2p_stage_texlist_names  0x00000210  SAND_OCEAN_KD_SO_HI_06
+pointer  ocean_2p_stage_texlist_names  0x0000021c  SAND_OCEAN_KD_SO_HI_07
+pointer  ocean_2p_stage_texlist_names  0x00000228  SAND_OCEAN_KD_SO_HI_08
+pointer  ocean_2p_stage_texlist_names  0x00000234  SAND_OCEAN_KD_SO_HI_09
+pointer  ocean_2p_stage_texlist_names  0x00000240  SAND_OCEAN_KD_SO_HI_10
+pointer  ocean_2p_stage_texlist_names  0x0000024c  SAND_OCEAN_KD_SO_HI_11
+pointer  ocean_2p_stage_texlist_names  0x00000258  SAND_OCEAN_KD_SO_HI_12
+pointer  ocean_2p_stage_texlist_names  0x00000264  SAND_OCEAN_KD_SO_HI_13
+pointer  ocean_2p_stage_texlist_names  0x00000270  SAND_OCEAN_KD_SO_HI_14
+pointer  ocean_2p_stage_texlist_names  0x0000027c  SAND_OCEAN_KD_SO_HI_15
+pointer  ocean_2p_stage_texlist_names  0x00000288  SAND_OCEAN_KD_SO_HI_16
+pointer  ocean_2p_stage_texlist_names  0x00000294  SAND_OCEAN_KD_SO_HOSI1
+pointer  ocean_2p_stage_texlist_names  0x000002a0  SAND_OCEAN_KD_SO_KABE1
+pointer  ocean_2p_stage_texlist_names  0x000002ac  SAND_OCEAN_KD_SO_KABE2
+pointer  ocean_2p_stage_texlist_names  0x000002b8  SAND_OCEAN_KD_SO_KABE3
+pointer  ocean_2p_stage_texlist_names  0x000002c4  SAND_OCEAN_KD_SO_KABE4
+pointer  ocean_2p_stage_texlist_names  0x000002d0  SAND_OCEAN_KD_SO_KAGE1
+pointer  ocean_2p_stage_texlist_names  0x000002dc  SAND_OCEAN_KD_SO_KAGE2
+pointer  ocean_2p_stage_texlist_names  0x000002e8  SAND_OCEAN_KD_SO_KAGE3
+pointer  ocean_2p_stage_texlist_names  0x000002f4  SAND_OCEAN_KD_SO_OTHER1
+pointer  ocean_2p_stage_texlist_names  0x00000300  SAND_OCEAN_KD_SO_SAKU1
+pointer  ocean_2p_stage_texlist_names  0x0000030c  SAND_OCEAN_KD_SO_SARA1
+pointer  ocean_2p_stage_texlist_names  0x00000318  SAND_OCEAN_KD_SO_SEKIHI1
+pointer  ocean_2p_stage_texlist_names  0x00000324  SAND_OCEAN_KD_SO_SEKIHI5
+pointer  ocean_2p_stage_texlist_names  0x00000330  SAND_OCEAN_KD_SO_SEKIZO1
+pointer  ocean_2p_stage_texlist_names  0x0000033c  SAND_OCEAN_KD_SO_SEKIZO2
+pointer  ocean_2p_stage_texlist_names  0x00000348  SAND_OCEAN_KD_SO_TUBO1
+pointer  ocean_2p_stage_texlist_names  0x00000354  SAND_OCEAN_KD_SO_TUKI1
+pointer  ocean_2p_stage_texlist_names  0x00000360  SAND_OCEAN_KD_SO_VS3
+pointer  ocean_2p_stage_texlist_names  0x0000036c  SAND_OCEAN_KD_SO_VS4
+pointer  ocean_2p_stage_texlist_names  0x00000378  SAND_OCEAN_KD_SO_VS5
+pointer  ocean_2p_stage_texlist_names  0x00000384  SAND_OCEAN_KD_SO_VS6
+pointer  ocean_2p_stage_texlist  0x00000000  ocean_2p_stage_texlist_names
+pointer  fire_names  0x00000000  SAND_OCEAN_KD_SO_HI_01
+pointer  fire_names  0x0000000c  SAND_OCEAN_KD_SO_HI_02
+pointer  fire_names  0x00000018  SAND_OCEAN_KD_SO_HI_03
+pointer  fire_names  0x00000024  SAND_OCEAN_KD_SO_HI_04
+pointer  fire_names  0x00000030  SAND_OCEAN_KD_SO_HI_05
+pointer  fire_names  0x0000003c  SAND_OCEAN_KD_SO_HI_06
+pointer  fire_names  0x00000048  SAND_OCEAN_KD_SO_HI_07
+pointer  fire_names  0x00000054  SAND_OCEAN_KD_SO_HI_08
+pointer  fire_names  0x00000060  SAND_OCEAN_KD_SO_HI_09
+pointer  fire_names  0x0000006c  SAND_OCEAN_KD_SO_HI_10
+pointer  fire_names  0x00000078  SAND_OCEAN_KD_SO_HI_11
+pointer  fire_names  0x00000084  SAND_OCEAN_KD_SO_HI_12
+pointer  fire_names  0x00000090  SAND_OCEAN_KD_SO_HI_13
+pointer  fire_names  0x0000009c  SAND_OCEAN_KD_SO_HI_14
+pointer  fire_names  0x000000a8  SAND_OCEAN_KD_SO_HI_15
+pointer  fire_names  0x000000b4  SAND_OCEAN_KD_SO_HI_16
+pointer  ocean_fire_texlist  0x00000000  fire_names
+pointer  sky_texlist_names  0x00000000  SAND_OCEAN_KD_SO_HOSI1
+pointer  sky_texlist_names  0x0000000c  SAND_OCEAN_KD_SO_VS3
+pointer  sky_texlist_names  0x00000018  SAND_OCEAN_KD_SO_VS4
+pointer  sky_texlist_names  0x00000024  SAND_OCEAN_KD_SO_VS5
+pointer  sky_texlist_names  0x00000030  SAND_OCEAN_KD_SO_VS6
+pointer  ocean_2p_sky_texlist  0x00000000  sky_texlist_names
+pointer  sky_object_model  0x00000000  sky_object_vertices
+pointer  sky_object_model  0x00000004  sky_object_polygons
+pointer  ocean_2p_sky_object  0x00000004  sky_object_model
+pointer  moon_texlist_names  0x00000000  SAND_OCEAN_KD_SO_TUKI1
+pointer  ocean_2p_moon_texlist  0x00000000  moon_texlist_names
+pointer  moon_object_model  0x00000000  moon_object_vertices
+pointer  moon_object_model  0x00000004  moon_object_polygons
+pointer  ocean_2p_moon_object  0x00000004  moon_object_model
+pointer  common_group  0x00000000  spring_texlist
+pointer  common_group  0x00000004  ring_texlist
+pointer  common_group  0x00000008  switch_texlist
+pointer  common_group  0x0000000c  dash_panel_texlist
+pointer  common_group  0x00000010  dash_panel_anim_texlist
+pointer  common_group  0x00000014  big_jump_anim_texlist
+pointer  common_group  0x00000018  big_jump_texlist
+pointer  common_group  0x0000001c  ring_shadow_texlist
+pointer  common_group  0x00000020  effect_texlist
+pointer  common_group  0x00000024  item_balloon_texlist
+pointer  common_group  0x00000028  ring_sparkle_texlist
+pointer  common_group  0x0000002c  burst_texlist
+pointer  common_group  0x00000030  lens_flare_texlist
+pointer  common_group  0x00000034  ocean_2p_quicksand_texlist
+pointer  common_group  0x00000038  ocean_2p_sky_texlist
+pointer  common_group  0x0000003c  ocean_2p_moon_texlist
+pointer  sand_ocean_2p_texture_groups  0x00000000  common_group
+pointer  sand_ocean_2p_texture_groups  0x00000004  item_box_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000008  item_box_air_texlists
+pointer  sand_ocean_2p_texture_groups  0x0000000c  weight_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000010  iron_ball_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000014  triple_spring_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000018  dynamite_texlists
+pointer  sand_ocean_2p_texture_groups  0x0000001c  reel_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000020  cage_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000024  wood_box_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000028  iron_box_texlists
+pointer  sand_ocean_2p_texture_groups  0x0000002c  missile_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000030  rocket_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000034  object_effect_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000038  solid_box_texlists
+pointer  sand_ocean_2p_texture_groups  0x0000003c  turning_platform_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000040  ocean_fence_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000044  moving_foothold_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000048  fire_dish_texlists
+pointer  sand_ocean_2p_texture_groups  0x0000004c  chimney_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000050  chimney_blast_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000054  ocean_pot_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000058  pillar2_texlists
+pointer  sand_ocean_2p_texture_groups  0x0000005c  pillar3_texlists
+pointer  sand_ocean_2p_texture_groups  0x00000060  pillar4_texlists
+pointer  sand_ocean_2p_pvms  0x00000000  SAND_OCEAN_OBJTEX_STG45
+pointer  sand_ocean_2p_pvms  0x00000004  ocean_2p_stage_texlist
+pointer  sand_ocean_2p_pvms  0x00000008  SAND_OCEAN_EFFTEX_COMMON
+pointer  sand_ocean_2p_pvms  0x0000000c  efftex_common_texlist
+pointer  sand_ocean_2p_pvms  0x00000010  SAND_OCEAN_OBJTEX_COMMON
+pointer  sand_ocean_2p_pvms  0x00000014  objtex_common_texlist
+pointer  sand_ocean_2p_pvms  0x00000018  SAND_OCEAN_STG21_FIRE
+pointer  sand_ocean_2p_pvms  0x0000001c  ocean_fire_texlist
+pointer  sand_ocean_2p_pvms  0x00000024  sand_ocean_2p_land_texlist

@@ -1,0 +1,3 @@
+pointer  laser_pulse_mesh  0x00000000  laser_pulse_vertices
+pointer  laser_pulse_mesh  0x00000004  laser_pulse_polygons
+pointer  laser_pulse_object  0x00000004  laser_pulse_mesh

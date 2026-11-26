@@ -1,0 +1,10 @@
+text  CRASH_STAR_TASK_NAME  C  0x00000000  10
+text  CONFU_STAR_TASK_NAME  C  0x0000000c  10
+datum  yellow_star_polygons  D  0x00000000  62
+datum  yellow_star_vertices  D  0x00000040  276
+datum  yellow_star_model  D  0x00000154  24
+datum  yellow_star_object  D  0x0000016c  52
+datum  orange_star_polygons  D  0x000001a0  62
+datum  orange_star_vertices  D  0x000001e0  276
+datum  orange_star_model  D  0x000002f4  24
+datum  orange_star_object  D  0x0000030c  52

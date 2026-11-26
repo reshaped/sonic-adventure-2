@@ -1,0 +1,5 @@
+datum  cosmic_wall_first_path_points  D  0x00000000  1880
+datum  cosmic_wall_first_path  D  0x00000758  16
+datum  cosmic_wall_second_path_points  D  0x00000768  1980
+datum  cosmic_wall_second_path  D  0x00000f24  16
+datum  cosmic_wall_paths  D  0x00000f34  4

@@ -1,0 +1,5 @@
+modules/stg31/distant_land.c
+modules/stg31/paths.c
+modules/stg31/prop_art.c
+modules/stg31/terrain.c
+modules/stg31/water_land.c

@@ -1,0 +1,14 @@
+text  DECK_SIGN_TEXTURE_MIU64_IG018  12
+text  DECK_SIGN_TEXTURE_PR128_12  9
+
+pointer  deck_sign_textures  0x00000000  DECK_SIGN_TEXTURE_MIU64_IG018
+pointer  deck_sign_textures  0x0000000c  DECK_SIGN_TEXTURE_PR128_12
+pointer  deck_sign_texlist  0x00000000  deck_sign_textures
+pointer  deck_sign_panel_model  0x00000000  deck_sign_panel_vertices
+pointer  deck_sign_panel_model  0x00000004  deck_sign_panel_polygons
+pointer  deck_sign_panel  0x00000004  deck_sign_panel_model
+pointer  deck_sign_model  0x00000000  deck_sign_vertices
+pointer  deck_sign_model  0x00000004  deck_sign_polygons
+pointer  deck_sign_object  0x00000004  deck_sign_model
+pointer  deck_sign_object  0x0000002c  deck_sign_panel
+pointer  deck_sign_texlists  0x00000000  deck_sign_texlist

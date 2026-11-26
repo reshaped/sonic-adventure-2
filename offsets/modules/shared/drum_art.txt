@@ -1,0 +1,16 @@
+datum  rolling_drum_polygons  D  0x00000074  1142
+datum  rolling_drum_vertices  D  0x000004ec  2204
+text  DRUM_ART_TEXT_MIU128_CG009  C  0x00000000  13
+text  DRUM_ART_TEXT_MIU128_CG010  C  0x00000010  13
+text  DRUM_ART_TEXT_MIU128_CG017  C  0x00000020  13
+text  DRUM_ART_TEXT_MIU256_CG001  C  0x00000030  13
+text  DRUM_ART_TEXT_MIU256_CG004  C  0x00000040  13
+text  DRUM_ART_TEXT_MIU256_CG006  C  0x00000050  13
+text  DRUM_ART_TEXT_MIU64_CG003  C  0x00000060  12
+text  DRUM_ART_TEXT_MIU64_CG009  C  0x0000006c  12
+text  DRUM_ART_TEXT_MIU64_CG020  C  0x00000078  12
+datum  rolling_drum_texlist_names  D  0x00000000  108
+datum  rolling_drum_texlist  D  0x0000006c  8
+datum  rolling_drum_model  D  0x00000d88  24
+datum  rolling_drum_object  D  0x00000da0  52
+datum  rolling_drum_texlists  D  0x00000dd4  8

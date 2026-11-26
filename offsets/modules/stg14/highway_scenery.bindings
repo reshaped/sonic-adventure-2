@@ -1,0 +1,53 @@
+text  ROAD_TEXTURE_MIU128_RH001  13
+text  ROAD_TEXTURE_MIU128_RH002  13
+text  ROAD_TEXTURE_MIU128_RH003  13
+text  ROAD_TEXTURE_MIU32_RH010  12
+text  ROAD_TEXTURE_MIU64_RH001  12
+text  ROAD_TEXTURE_MIU64_RH002  12
+text  ROAD_TEXTURE_MIU64_RH003  12
+text  ROAD_TEXTURE_MIU64_RH004  12
+text  ROAD_TEXTURE_MIU64_RH005  12
+text  ROAD_TEXTURE_MIU64_RH007  12
+text  ROAD_TEXTURE_MIU64_RH008  12
+text  ROAD_TEXTURE_MIU64_RH006  12
+text  ROAD_TEXTURE_MIU64_RH009  12
+text  ROAD_TEXTURE_MIU64_RH011  12
+text  ROAD_TEXTURE_MIU128_RH011  13
+pointer  tollgate_names  0x00000000  ROAD_TEXTURE_MIU128_RH001
+pointer  tollgate_names  0x0000000c  ROAD_TEXTURE_MIU128_RH002
+pointer  tollgate_names  0x00000018  ROAD_TEXTURE_MIU128_RH003
+pointer  tollgate_names  0x00000024  ROAD_TEXTURE_MIU32_RH010
+pointer  tollgate_names  0x00000030  ROAD_TEXTURE_MIU64_RH001
+pointer  tollgate_names  0x0000003c  ROAD_TEXTURE_MIU64_RH002
+pointer  tollgate_names  0x00000048  ROAD_TEXTURE_MIU64_RH003
+pointer  tollgate_names  0x00000054  ROAD_TEXTURE_MIU64_RH004
+pointer  tollgate_names  0x00000060  ROAD_TEXTURE_MIU64_RH005
+pointer  tollgate_names  0x0000006c  ROAD_TEXTURE_MIU64_RH007
+pointer  tollgate_names  0x00000078  ROAD_TEXTURE_MIU64_RH008
+pointer  tollgate_texlist  0x00000000  tollgate_names
+pointer  tollgate_model  0x00000000  tollgate_vertices
+pointer  tollgate_model  0x00000004  tollgate_polygons
+pointer  tollgate_object  0x00000004  tollgate_model
+pointer  tollgate_solid_faces  0x00000004  tollgate_solid_strips
+pointer  tollgate_solid_model  0x00000000  tollgate_solid_points
+pointer  tollgate_solid_model  0x00000004  tollgate_solid_normals
+pointer  tollgate_solid_model  0x0000000c  tollgate_solid_faces
+pointer  tollgate_solid_model  0x00000010  tollgate_solid_material
+pointer  tollgate_collision  0x00000004  tollgate_solid_model
+pointer  forked_names  0x00000000  ROAD_TEXTURE_MIU128_RH002
+pointer  forked_names  0x0000000c  ROAD_TEXTURE_MIU64_RH006
+pointer  forked_names  0x00000018  ROAD_TEXTURE_MIU64_RH007
+pointer  forked_names  0x00000024  ROAD_TEXTURE_MIU64_RH009
+pointer  forked_names  0x00000030  ROAD_TEXTURE_MIU64_RH011
+pointer  forked_texlist  0x00000000  forked_names
+pointer  forked_model  0x00000000  forked_vertices
+pointer  forked_model  0x00000004  forked_polygons
+pointer  forked_object  0x00000004  forked_model
+pointer  highway_panel_names  0x00000000  ROAD_TEXTURE_MIU128_RH011
+pointer  highway_panel_texlist  0x00000000  highway_panel_names
+pointer  highway_panel_model  0x00000000  highway_panel_vertices
+pointer  highway_panel_model  0x00000004  highway_panel_polygons
+pointer  highway_panel_object  0x00000004  highway_panel_model
+pointer  highway_scenery_texlists  0x00000000  tollgate_texlist
+pointer  highway_scenery_texlists  0x00000004  forked_texlist
+pointer  highway_scenery_texlists  0x00000008  highway_panel_texlist

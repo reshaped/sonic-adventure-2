@@ -1,0 +1,44 @@
+text  SIGNBOARDS_TEXTURE_MIU128_CE002  13
+text  SIGNBOARDS_TEXTURE_MIU128_CE008  13
+text  SIGNBOARDS_TEXTURE_MIU128_RH012  13
+text  SIGNBOARDS_TEXTURE_MIU64_CE041  12
+text  SIGNBOARDS_TEXTURE_MIU64_RH001  12
+text  SIGNBOARDS_TEXTURE_MIU128_CE009  13
+text  SIGNBOARDS_TEXTURE_MIU128_CE010  13
+text  SIGNBOARDS_TEXTURE_MIU128_CE003  13
+text  SIGNBOARDS_TEXTURE_MIU128_CE004  13
+text  SIGNBOARDS_TEXTURE_MIU128_RH003  13
+text  SIGNBOARDS_TEXTURE_MIU128_MS2P_A  14
+text  SIGNBOARDS_TEXTURE_MIU128_MS2P_B  14
+
+pointer  signboard_small_textures  0x00000000  SIGNBOARDS_TEXTURE_MIU128_CE002
+pointer  signboard_small_textures  0x0000000c  SIGNBOARDS_TEXTURE_MIU128_CE008
+pointer  signboard_small_textures  0x00000018  SIGNBOARDS_TEXTURE_MIU128_RH012
+pointer  signboard_small_textures  0x00000024  SIGNBOARDS_TEXTURE_MIU64_CE041
+pointer  signboard_small_textures  0x00000030  SIGNBOARDS_TEXTURE_MIU64_RH001
+pointer  signboard_small_textures  0x0000003c  SIGNBOARDS_TEXTURE_MIU128_CE008
+pointer  signboard_small_textures  0x00000048  SIGNBOARDS_TEXTURE_MIU128_CE009
+pointer  signboard_small_textures  0x00000054  SIGNBOARDS_TEXTURE_MIU128_CE010
+pointer  signboard_small_texlist  0x00000000  signboard_small_textures
+pointer  signboard_small_model  0x00000000  signboard_small_vertices
+pointer  signboard_small_model  0x00000004  signboard_small_polygons
+pointer  signboard_small_object  0x00000004  signboard_small_model
+pointer  signboard_large_textures  0x00000000  SIGNBOARDS_TEXTURE_MIU128_CE002
+pointer  signboard_large_textures  0x0000000c  SIGNBOARDS_TEXTURE_MIU128_CE003
+pointer  signboard_large_textures  0x00000018  SIGNBOARDS_TEXTURE_MIU128_CE004
+pointer  signboard_large_textures  0x00000024  SIGNBOARDS_TEXTURE_MIU128_RH003
+pointer  signboard_large_textures  0x00000030  SIGNBOARDS_TEXTURE_MIU128_RH012
+pointer  signboard_large_textures  0x0000003c  SIGNBOARDS_TEXTURE_MIU64_CE041
+pointer  signboard_large_texlist  0x00000000  signboard_large_textures
+pointer  signboard_multiplayer_textures  0x00000000  SIGNBOARDS_TEXTURE_MIU128_CE002
+pointer  signboard_multiplayer_textures  0x0000000c  SIGNBOARDS_TEXTURE_MIU128_MS2P_A
+pointer  signboard_multiplayer_textures  0x00000018  SIGNBOARDS_TEXTURE_MIU128_MS2P_B
+pointer  signboard_multiplayer_textures  0x00000024  SIGNBOARDS_TEXTURE_MIU128_RH003
+pointer  signboard_multiplayer_textures  0x00000030  SIGNBOARDS_TEXTURE_MIU128_RH012
+pointer  signboard_multiplayer_textures  0x0000003c  SIGNBOARDS_TEXTURE_MIU64_CE041
+pointer  signboard_multiplayer_texlist  0x00000000  signboard_multiplayer_textures
+pointer  signboard_large_model  0x00000000  signboard_large_vertices
+pointer  signboard_large_model  0x00000004  signboard_large_polygons
+pointer  signboard_large_object  0x00000004  signboard_large_model
+pointer  signboards_texlists  0x00000000  signboard_small_texlist
+pointer  signboards_texlists  0x00000004  signboard_large_texlist

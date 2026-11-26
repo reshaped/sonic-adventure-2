@@ -1,0 +1,23 @@
+text  CHAMBER_FLOOR_TILES_KD_DC_YUKA4  12
+
+pointer  chamber_floor_tiles_texture_names_0  0x00000000  CHAMBER_FLOOR_TILES_KD_DC_YUKA4
+pointer  chamber_floor_tiles_texlist_0  0x00000000  chamber_floor_tiles_texture_names_0
+pointer  chamber_floor_tiles_model_0  0x00000000  chamber_floor_tiles_model_0_vertices
+pointer  chamber_floor_tiles_model_0  0x00000004  chamber_floor_tiles_model_0_polygons
+pointer  chamber_floor_tiles_0_object  0x00000004  chamber_floor_tiles_model_0
+pointer  chamber_floor_tiles_texture_names_1  0x00000000  CHAMBER_FLOOR_TILES_KD_DC_YUKA4
+pointer  chamber_floor_tiles_texlist_1  0x00000000  chamber_floor_tiles_texture_names_1
+pointer  chamber_floor_tiles_model_1  0x00000000  chamber_floor_tiles_model_1_vertices
+pointer  chamber_floor_tiles_model_1  0x00000004  chamber_floor_tiles_model_1_polygons
+pointer  chamber_floor_tiles_1_object  0x00000004  chamber_floor_tiles_model_1
+pointer  chamber_floor_tiles_texture_names_2  0x00000000  CHAMBER_FLOOR_TILES_KD_DC_YUKA4
+pointer  chamber_floor_tiles_texlist_2  0x00000000  chamber_floor_tiles_texture_names_2
+pointer  chamber_floor_tiles_model_2  0x00000000  chamber_floor_tiles_model_2_vertices
+pointer  chamber_floor_tiles_model_2  0x00000004  chamber_floor_tiles_model_2_polygons
+pointer  chamber_floor_tiles_2_object  0x00000004  chamber_floor_tiles_model_2
+pointer  chamber_floor_tiles_models  0x00000000  chamber_floor_tiles_model_0
+pointer  chamber_floor_tiles_models  0x00000004  chamber_floor_tiles_model_1
+pointer  chamber_floor_tiles_models  0x00000008  chamber_floor_tiles_model_2
+pointer  chamber_floor_tiles_texlists  0x00000000  chamber_floor_tiles_texlist_0
+pointer  chamber_floor_tiles_texlists  0x00000004  chamber_floor_tiles_texlist_1
+pointer  chamber_floor_tiles_texlists  0x00000008  chamber_floor_tiles_texlist_2

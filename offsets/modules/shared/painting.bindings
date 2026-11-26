@@ -1,0 +1,4 @@
+text  PAINTING_FIRST_CAPTION  5
+text  PAINTING_SECOND_CAPTION  5
+text  PAINTING_THIRD_CAPTION  5
+include  painting_tables

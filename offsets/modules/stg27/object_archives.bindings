@@ -1,0 +1,124 @@
+include  objtex_common
+include  efftex_common
+text  COLONY_TEXT_MIU128_CG004  13
+text  COLONY_TEXT_MIU256_CG005  13
+text  COLONY_TEXT_MIU256_CG006  13
+text  COLONY_TEXT_MIU32_CG001  12
+text  COLONY_TEXT_MIU32_EE001  12
+text  COLONY_TEXT_MIU64_CG003  12
+text  COLONY_TEXT_MIU64_CG006  12
+text  COLONY_TEXT_MIU64_CG007  12
+text  COLONY_TEXT_MIU64_CG014  12
+text  COLONY_TEXT_MIU64_CG019  12
+text  COLONY_TEXT_MIU64_CG020  12
+text  COLONY_TEXT_MIU64_CG021  12
+text  COLONY_TEXT_MIU64_EE001  12
+text  COLONY_TEXT_MIU64_EE002  12
+text  COLONY_TEXT_MIU64_EE003  12
+text  COLONY_TEXT_TX_SPARK001  12
+text  COLONY_TEXT_TX_SPARK002  12
+text  COLONY_TEXT_TX_SPARK003  12
+text  COLONY_TEXT_TX_SPARK004  12
+text  COLONY_TEXT_TX_SPARK005  12
+text  COLONY_TEXT_TX_SPARK006  12
+text  COLONY_TEXT_TX_SPARK007  12
+text  COLONY_TEXT_TX_SPARK008  12
+text  COLONY_TEXT_TX_SPARK009  12
+text  COLONY_TEXT_TX_SPARK010  12
+text  COLONY_TEXT_TX_SPARK011  12
+text  COLONY_TEXT_TX_SPARK012  12
+text  COLONY_TEXT_OBJTEX_STG27  13
+text  COLONY_TEXT_EFFTEX_COMMON  14
+text  COLONY_TEXT_OBJTEX_COMMON  14
+pointer  stage_names  0x00000000  COLONY_TEXT_MIU128_CG004
+pointer  stage_names  0x0000000c  COLONY_TEXT_MIU256_CG005
+pointer  stage_names  0x00000018  COLONY_TEXT_MIU256_CG006
+pointer  stage_names  0x00000024  COLONY_TEXT_MIU32_CG001
+pointer  stage_names  0x00000030  COLONY_TEXT_MIU32_EE001
+pointer  stage_names  0x0000003c  COLONY_TEXT_MIU64_CG003
+pointer  stage_names  0x00000048  COLONY_TEXT_MIU64_CG006
+pointer  stage_names  0x00000054  COLONY_TEXT_MIU64_CG007
+pointer  stage_names  0x00000060  COLONY_TEXT_MIU64_CG014
+pointer  stage_names  0x0000006c  COLONY_TEXT_MIU64_CG019
+pointer  stage_names  0x00000078  COLONY_TEXT_MIU64_CG020
+pointer  stage_names  0x00000084  COLONY_TEXT_MIU64_CG021
+pointer  stage_names  0x00000090  COLONY_TEXT_MIU64_EE001
+pointer  stage_names  0x0000009c  COLONY_TEXT_MIU64_EE002
+pointer  stage_names  0x000000a8  COLONY_TEXT_MIU64_EE003
+pointer  stage_names  0x000000b4  COLONY_TEXT_TX_SPARK001
+pointer  stage_names  0x000000c0  COLONY_TEXT_TX_SPARK002
+pointer  stage_names  0x000000cc  COLONY_TEXT_TX_SPARK003
+pointer  stage_names  0x000000d8  COLONY_TEXT_TX_SPARK004
+pointer  stage_names  0x000000e4  COLONY_TEXT_TX_SPARK005
+pointer  stage_names  0x000000f0  COLONY_TEXT_TX_SPARK006
+pointer  stage_names  0x000000fc  COLONY_TEXT_TX_SPARK007
+pointer  stage_names  0x00000108  COLONY_TEXT_TX_SPARK008
+pointer  stage_names  0x00000114  COLONY_TEXT_TX_SPARK009
+pointer  stage_names  0x00000120  COLONY_TEXT_TX_SPARK010
+pointer  stage_names  0x0000012c  COLONY_TEXT_TX_SPARK011
+pointer  stage_names  0x00000138  COLONY_TEXT_TX_SPARK012
+pointer  colony_stage_archive  0x00000000  stage_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  colony_object_groups  0x00000000  stage_textures
+pointer  colony_object_groups  0x00000004  goal_ring_texlists
+pointer  colony_object_groups  0x00000008  emerald_texlists
+pointer  colony_object_groups  0x0000000c  item_box_texlists
+pointer  colony_object_groups  0x00000010  item_box_air_texlists
+pointer  colony_object_groups  0x00000014  weight_texlists
+pointer  colony_object_groups  0x00000018  iron_ball_texlists
+pointer  colony_object_groups  0x0000001c  triple_spring_texlists
+pointer  colony_object_groups  0x00000020  dynamite_texlists
+pointer  colony_object_groups  0x00000024  reel_texlists
+pointer  colony_object_groups  0x00000028  chao_pipe_texlists
+pointer  colony_object_groups  0x0000002c  cage_texlists
+pointer  colony_object_groups  0x00000030  wood_box_texlists
+pointer  colony_object_groups  0x00000034  iron_box_texlists
+pointer  colony_object_groups  0x00000038  upgrade_texlists
+pointer  colony_object_groups  0x0000003c  missile_texlists
+pointer  colony_object_groups  0x00000040  skull_texlists
+pointer  colony_object_groups  0x00000044  rocket_texlists
+pointer  colony_object_groups  0x00000048  search_box_texlists
+pointer  colony_object_groups  0x0000004c  hint_box_texlists
+pointer  colony_object_groups  0x00000050  knudai_texlists
+pointer  colony_object_groups  0x00000054  knudai_foothold_texlists
+pointer  colony_object_groups  0x00000058  knudai_warp_hole_texlists
+pointer  colony_object_groups  0x0000005c  knudai_door_texlists
+pointer  colony_object_groups  0x00000060  chao_box_texlists
+pointer  colony_object_groups  0x00000064  chao_key_texlists
+pointer  colony_object_groups  0x00000068  object_effect_texlists
+pointer  colony_object_groups  0x0000006c  messenger_texlists
+pointer  colony_object_groups  0x00000070  ring_effect_texlists
+pointer  colony_object_groups  0x00000074  solid_box_texlists
+pointer  colony_object_groups  0x00000078  colony_step_texlists
+pointer  colony_object_groups  0x0000007c  core_shutter_texlists
+pointer  colony_object_groups  0x00000080  core_laser_texlists
+pointer  colony_object_groups  0x00000084  last_step_texlists
+pointer  colony_object_groups  0x00000088  spinning_drum_texlists
+pointer  colony_object_groups  0x0000008c  dynamite_bridge_texlists
+pointer  colony_object_groups  0x00000090  patrol_camera_texlists
+pointer  colony_object_groups  0x00000094  capsule_bomb_texlists
+pointer  colony_object_groups  0x00000098  colony_kazobj_texlists
+pointer  colony_object_groups  0x0000009c  colony_spark_texlists
+pointer  colony_object_groups  0x000000a0  colony_red_lamp_texlists
+pointer  colony_object_pvms  0x00000000  COLONY_TEXT_OBJTEX_STG27
+pointer  colony_object_pvms  0x00000004  colony_stage_archive
+pointer  colony_object_pvms  0x00000008  COLONY_TEXT_EFFTEX_COMMON
+pointer  colony_object_pvms  0x0000000c  efftex_common_texlist
+pointer  colony_object_pvms  0x00000010  COLONY_TEXT_OBJTEX_COMMON
+pointer  colony_object_pvms  0x00000014  objtex_common_texlist
+pointer  colony_object_pvms  0x0000001c  lost_colony_land_texlist
+pointer  colony_object_pvms  0x00000024  colony_background_texlist

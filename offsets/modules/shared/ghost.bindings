@@ -1,0 +1,197 @@
+text  GHOST_TEXTURE_ARCHIVE  10
+text  GHOST_TEXTURE_ARCHIVE_2  11
+text  GHOST_TEXTURE_ARCHIVE_3  11
+text  GHOST_TEXTURE_TASK_NAME  7
+text  GHOST_DEBUG_YAW_AND_EMERALD_ID  16
+text  GHOST_DEBUG_KIND  13
+text  GHOST_DEBUG_VIEW_RANGE  14
+text  GHOST_DEBUG_MOVE_RANGE  14
+text  GHOST_PATH_TITLE  21
+text  GHOST_PATH_DEBUG_YAW  10
+text  GHOST_PATH_DEBUG_ID  5
+text  GHOST_PATH_DEBUG_NUMBER  8
+text  GHOST_PATH_DEBUG_REVERSE  4
+text  GHOST_PATH_DEBUG_STOP  4
+text  GHOST_PATH_DEBUG_SPACE  4
+text  GHOST_PATH_DEBUG_SEPARATOR  2
+text  GHOST_PATH_DEBUG_CLOSE  3
+text  GHOST_PATH_DEBUG_X_AND_RADIUS  13
+text  GHOST_PATH_DEBUG_Y_AND_START  21
+text  GHOST_PATH_DEBUG_Z_AND_SPEED  22
+text  GHOST_TEXTURE_OBAKE01  8
+text  GHOST_TEXTURE_OBAKE02  8
+text  GHOST_TEXTURE_EYE01  12
+text  GHOST_TEXTURE_EYE02  12
+text  GHOST_TEXTURE_EYE03  12
+text  GHOST_CIRCLING_LABEL  26
+text  GHOST_HIDING_LABEL  21
+text  GHOST_RUSHING_LABEL  21
+text  GHOST_CAPTURE_LABEL  24
+text  GHOST_BIG_LABEL  20
+text  GHOST_FLOATING_LABEL  22
+text  GHOST_MAKIKO_LABEL  23
+pointer  small_ghost_node_2_model  0x00000000  small_ghost_node_2_vertices
+pointer  small_ghost_node_2_model  0x00000004  small_ghost_node_2_polygons
+pointer  small_ghost_node_2_object  0x00000004  small_ghost_node_2_model
+pointer  small_ghost_node_1_model  0x00000000  small_ghost_node_1_vertices
+pointer  small_ghost_node_1_model  0x00000004  small_ghost_node_1_polygons
+pointer  small_ghost_node_1_object  0x00000004  small_ghost_node_1_model
+pointer  small_ghost_node_1_object  0x00000030  small_ghost_node_2_object
+pointer  small_ghost_model  0x00000000  small_ghost_vertices
+pointer  small_ghost_model  0x00000004  small_ghost_polygons
+pointer  small_ghost_object  0x00000004  small_ghost_model
+pointer  small_ghost_object  0x0000002c  small_ghost_node_1_object
+pointer  dat_ghost_0_texname  0x00000000  GHOST_TEXTURE_OBAKE01
+pointer  dat_ghost_0_texname  0x0000000c  GHOST_TEXTURE_OBAKE02
+pointer  dat_ghost_0_texname  0x00000018  GHOST_TEXTURE_EYE01
+pointer  dat_ghost_0_texlist  0x00000000  dat_ghost_0_texname
+pointer  big_ghost_model  0x00000000  big_ghost_vertices
+pointer  big_ghost_model  0x00000004  big_ghost_polygons
+pointer  big_ghost_object  0x00000004  big_ghost_model
+pointer  ghost_texname  0x00000000  GHOST_TEXTURE_OBAKE01
+pointer  ghost_texname  0x0000000c  GHOST_TEXTURE_OBAKE02
+pointer  ghost_texname  0x00000018  GHOST_TEXTURE_EYE01
+pointer  ghost_texlist  0x00000000  ghost_texname
+pointer  ghost_2_texname  0x00000000  GHOST_TEXTURE_OBAKE01
+pointer  ghost_2_texname  0x0000000c  GHOST_TEXTURE_OBAKE02
+pointer  ghost_2_texname  0x00000018  GHOST_TEXTURE_EYE02
+pointer  ghost_2_texlist  0x00000000  ghost_2_texname
+pointer  ghost_3_texname  0x00000000  GHOST_TEXTURE_OBAKE01
+pointer  ghost_3_texname  0x0000000c  GHOST_TEXTURE_OBAKE02
+pointer  ghost_3_texname  0x00000018  GHOST_TEXTURE_EYE03
+pointer  ghost_3_texlist  0x00000000  ghost_3_texname
+pointer  dat_ghost_1_texname  0x00000000  GHOST_TEXTURE_OBAKE01
+pointer  dat_ghost_1_texname  0x0000000c  GHOST_TEXTURE_OBAKE02
+pointer  dat_ghost_1_texlist  0x00000000  dat_ghost_1_texname
+pointer  medium_ghost_node_2_model  0x00000000  medium_ghost_node_2_vertices
+pointer  medium_ghost_node_2_model  0x00000004  medium_ghost_node_2_polygons
+pointer  medium_ghost_node_2_object  0x00000004  medium_ghost_node_2_model
+pointer  medium_ghost_node_1_model  0x00000000  medium_ghost_node_1_vertices
+pointer  medium_ghost_node_1_model  0x00000004  medium_ghost_node_1_polygons
+pointer  medium_ghost_node_1_object  0x00000004  medium_ghost_node_1_model
+pointer  medium_ghost_node_1_object  0x00000030  medium_ghost_node_2_object
+pointer  medium_ghost_model  0x00000000  medium_ghost_vertices
+pointer  medium_ghost_model  0x00000004  medium_ghost_polygons
+pointer  medium_ghost_object  0x00000004  medium_ghost_model
+pointer  medium_ghost_object  0x0000002c  medium_ghost_node_1_object
+pointer  dat_ghost_2_texname  0x00000000  GHOST_TEXTURE_OBAKE01
+pointer  dat_ghost_2_texname  0x0000000c  GHOST_TEXTURE_OBAKE02
+pointer  dat_ghost_2_texlist  0x00000000  dat_ghost_2_texname
+pointer  ghost_node_2_model  0x00000000  ghost_node_2_vertices
+pointer  ghost_node_2_model  0x00000004  ghost_node_2_polygons
+pointer  ghost_node_2_object  0x00000004  ghost_node_2_model
+pointer  ghost_node_1_model  0x00000000  ghost_node_1_vertices
+pointer  ghost_node_1_model  0x00000004  ghost_node_1_polygons
+pointer  ghost_node_1_object  0x00000004  ghost_node_1_model
+pointer  ghost_node_1_object  0x00000030  ghost_node_2_object
+pointer  ghost_model  0x00000000  ghost_vertices
+pointer  ghost_model  0x00000004  ghost_polygons
+pointer  ghost_object  0x00000004  ghost_model
+pointer  ghost_object  0x0000002c  ghost_node_1_object
+pointer  dat_ghost_3_texname  0x00000000  GHOST_TEXTURE_OBAKE01
+pointer  dat_ghost_3_texname  0x0000000c  GHOST_TEXTURE_OBAKE02
+pointer  dat_ghost_3_texlist  0x00000000  dat_ghost_3_texname
+pointer  hide_ghost_node_2_model  0x00000000  hide_ghost_node_2_vertices
+pointer  hide_ghost_node_2_model  0x00000004  hide_ghost_node_2_polygons
+pointer  hide_ghost_node_2_object  0x00000004  hide_ghost_node_2_model
+pointer  hide_ghost_node_1_model  0x00000000  hide_ghost_node_1_vertices
+pointer  hide_ghost_node_1_model  0x00000004  hide_ghost_node_1_polygons
+pointer  hide_ghost_node_1_object  0x00000004  hide_ghost_node_1_model
+pointer  hide_ghost_node_1_object  0x00000030  hide_ghost_node_2_object
+pointer  hide_ghost_model  0x00000000  hide_ghost_vertices
+pointer  hide_ghost_model  0x00000004  hide_ghost_polygons
+pointer  hide_ghost_object  0x00000004  hide_ghost_model
+pointer  hide_ghost_object  0x0000002c  hide_ghost_node_1_object
+pointer  catch_ghost_node_2_model  0x00000000  catch_ghost_node_2_vertices
+pointer  catch_ghost_node_2_model  0x00000004  catch_ghost_node_2_polygons
+pointer  catch_ghost_node_2_object  0x00000004  catch_ghost_node_2_model
+pointer  catch_ghost_node_1_model  0x00000000  catch_ghost_node_1_vertices
+pointer  catch_ghost_node_1_model  0x00000004  catch_ghost_node_1_polygons
+pointer  catch_ghost_node_1_object  0x00000004  catch_ghost_node_1_model
+pointer  catch_ghost_node_1_object  0x00000030  catch_ghost_node_2_object
+pointer  catch_ghost_model  0x00000000  catch_ghost_vertices
+pointer  catch_ghost_model  0x00000004  catch_ghost_polygons
+pointer  catch_ghost_object  0x00000004  catch_ghost_model
+pointer  catch_ghost_object  0x0000002c  catch_ghost_node_1_object
+pointer  hold_ghost_node_2_model  0x00000000  hold_ghost_node_2_vertices
+pointer  hold_ghost_node_2_model  0x00000004  hold_ghost_node_2_polygons
+pointer  hold_ghost_node_2_object  0x00000004  hold_ghost_node_2_model
+pointer  hold_ghost_node_1_model  0x00000000  hold_ghost_node_1_vertices
+pointer  hold_ghost_node_1_model  0x00000004  hold_ghost_node_1_polygons
+pointer  hold_ghost_node_1_object  0x00000004  hold_ghost_node_1_model
+pointer  hold_ghost_node_1_object  0x00000030  hold_ghost_node_2_object
+pointer  hold_ghost_model  0x00000000  hold_ghost_vertices
+pointer  hold_ghost_model  0x00000004  hold_ghost_polygons
+pointer  hold_ghost_object  0x00000004  hold_ghost_model
+pointer  hold_ghost_object  0x0000002c  hold_ghost_node_1_object
+pointer  medium_motion_data  0x00000014  medium_node_1_ang_keys
+pointer  medium_motion_data  0x00000024  medium_node_2_ang_keys
+pointer  medium_motion  0x00000000  medium_motion_data
+pointer  chase_motion_data  0x00000014  chase_node_1_ang_keys
+pointer  chase_motion_data  0x00000024  chase_node_2_ang_keys
+pointer  chase_motion  0x00000000  chase_motion_data
+pointer  scare_motion_data  0x00000004  scare_node_0_ang_keys
+pointer  scare_motion_data  0x00000008  scare_node_0_scl_keys
+pointer  scare_motion_data  0x0000001c  scare_node_1_ang_keys
+pointer  scare_motion_data  0x00000020  scare_node_1_scl_keys
+pointer  scare_motion_data  0x00000034  scare_node_2_ang_keys
+pointer  scare_motion_data  0x00000038  scare_node_2_scl_keys
+pointer  scare_motion  0x00000000  scare_motion_data
+pointer  catch_motion_data  0x00000004  catch_node_0_ang_keys
+pointer  catch_motion_data  0x00000008  catch_node_0_scl_keys
+pointer  catch_motion_data  0x0000001c  catch_node_1_ang_keys
+pointer  catch_motion_data  0x00000020  catch_node_1_scl_keys
+pointer  catch_motion_data  0x00000034  catch_node_2_ang_keys
+pointer  catch_motion_data  0x00000038  catch_node_2_scl_keys
+pointer  catch_motion  0x00000000  catch_motion_data
+pointer  catch_shape_keys  0x00000004  catch_shape_points_0
+pointer  catch_shape_keys  0x0000000c  catch_shape_points_1
+pointer  catch_shape_keys  0x00000014  catch_shape_points_2
+pointer  catch_shape_data  0x00000000  catch_shape_keys
+pointer  catch_shape  0x00000000  catch_shape_data
+pointer  hold_motion_data  0x00000004  hold_node_0_ang_keys
+pointer  hold_motion  0x00000000  hold_motion_data
+pointer  big_ghost_nodes  0x00000000  big_ghost_object
+pointer  small_ghost_nodes  0x00000000  small_ghost_object
+pointer  small_ghost_nodes  0x00000004  small_ghost_node_1_object
+pointer  small_ghost_nodes  0x00000008  small_ghost_node_2_object
+pointer  medium_ghost_nodes  0x00000000  medium_ghost_object
+pointer  medium_ghost_nodes  0x00000004  medium_ghost_node_1_object
+pointer  medium_ghost_nodes  0x00000008  medium_ghost_node_2_object
+pointer  ghost_nodes  0x00000000  ghost_object
+pointer  ghost_nodes  0x00000004  ghost_node_1_object
+pointer  ghost_nodes  0x00000008  ghost_node_2_object
+pointer  hide_ghost_nodes  0x00000000  hide_ghost_object
+pointer  hide_ghost_nodes  0x00000004  hide_ghost_node_1_object
+pointer  hide_ghost_nodes  0x00000008  hide_ghost_node_2_object
+pointer  ghost_titles  0x00000000  GHOST_CIRCLING_LABEL
+pointer  ghost_titles  0x00000004  GHOST_HIDING_LABEL
+pointer  ghost_titles  0x00000008  GHOST_RUSHING_LABEL
+pointer  ghost_titles  0x0000000c  GHOST_CAPTURE_LABEL
+pointer  ghost_titles  0x00000010  GHOST_BIG_LABEL
+pointer  ghost_titles  0x00000014  GHOST_FLOATING_LABEL
+pointer  ghost_titles  0x00000018  GHOST_MAKIKO_LABEL
+pointer  ghost_path_0  0x00000008  ghost_path_0_points
+pointer  ghost_path_1  0x00000008  ghost_path_1_points
+pointer  ghost_path_2  0x00000008  ghost_path_2_points
+pointer  ghost_path_3  0x00000008  ghost_path_3_points
+pointer  ghost_path_4  0x00000008  ghost_path_4_points
+pointer  ghost_path_5  0x00000008  ghost_path_5_points
+pointer  ghost_path_6  0x00000008  ghost_path_6_points
+pointer  ghost_path_7  0x00000008  ghost_path_7_points
+pointer  ghost_path_8  0x00000008  ghost_path_8_points
+pointer  ghost_path_9  0x00000008  ghost_path_9_points
+pointer  ghost_path_10  0x00000008  ghost_path_10_points
+pointer  ghost_path_11  0x00000008  ghost_path_11_points
+pointer  ghost_paths  0x00000000  ghost_path_0
+pointer  ghost_paths  0x00000004  ghost_path_1
+pointer  ghost_paths  0x00000008  ghost_path_2
+pointer  ghost_paths  0x0000000c  ghost_path_3
+pointer  ghost_paths  0x00000010  ghost_path_4
+pointer  ghost_paths  0x00000014  ghost_path_5
+pointer  ghost_paths  0x00000018  ghost_path_6
+pointer  ghost_paths  0x0000001c  ghost_path_7
+pointer  ghost_paths  0x00000020  ghost_path_8
+pointer  ghost_paths  0x00000024  ghost_path_9
+pointer  ghost_paths  0x00000028  ghost_path_10
+pointer  ghost_paths  0x0000002c  ghost_path_11

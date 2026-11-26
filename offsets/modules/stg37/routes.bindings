@@ -1,0 +1,6 @@
+pointer  west_current  0x00000008  west_current_points
+pointer  west_current  0x0000000c  path_current_step
+pointer  east_current  0x00000008  east_current_points
+pointer  east_current  0x0000000c  path_current_step
+pointer  core_rouge_paths  0x00000000  west_current
+pointer  core_rouge_paths  0x00000004  east_current

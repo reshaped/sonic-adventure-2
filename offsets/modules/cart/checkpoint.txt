@@ -1,0 +1,7 @@
+datum  checkpoint_material  D  0x00000030  20
+datum  checkpoint_strips  D  0x00000044  150
+datum  checkpoint_mesh  D  0x000000dc  24
+datum  checkpoint_points  D  0x000000f4  576
+datum  checkpoint_normals  D  0x00000334  576
+datum  checkpoint_arch  D  0x00000574  40
+datum  checkpoint_land  D  0x0000059c  52

@@ -1,0 +1,169 @@
+; the boot ROM's GD-ROM drive calls. each function jumps to the boot ROM's
+; entry for the drive, which returns to the function's caller. R6 picks the
+; set of calls, 0 for the gdGdc calls and -1 for the gdBtGdc ones. R7 numbers
+; the call within its set. R4 and R5 reach the boot ROM as the caller left
+; them
+
+        .EXPORT     _gdGdcReqCmd
+        .EXPORT     _gdGdcGetCmdStat
+        .EXPORT     _gdGdcExecServer
+        .EXPORT     _gdGdcInitSystem
+        .EXPORT     _gdGdcGetDrvStat
+        .EXPORT     _gdGdcG1DmaEnd
+        .EXPORT     _gdGdcReqDmaTrans
+        .EXPORT     _gdGdcCheckDmaTrans
+        .EXPORT     _gdGdcReadAbort
+        .EXPORT     _gdGdcReset
+        .EXPORT     _gdGdcChangeDataType
+        .EXPORT     _gdBtGdcReInitEntry
+        .EXPORT     _gdBtGdcAddDesc
+
+; the address of the word that holds the boot ROM's entry for the drive
+GDC_VECTOR:     .EQU    H'8C0000BC
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; Sint32 gdGdcReqCmd(Sint32 cmd, void *param)
+; @asm operand: integer-constant, MOV.L #0,R7 at 0x8c13728a loads the small
+; constant 0 from the pool
+_gdGdcReqCmd:
+        MOV         #0,R6
+        MOV.L       #0,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 gdGdcGetCmdStat(Sint32 gdchn, void *stat)
+; @asm operand: integer-constant, MOV.L #1,R7 at 0x8c13729e loads the small
+; constant 1 from the pool
+_gdGdcGetCmdStat:
+        MOV         #0,R6
+        MOV.L       #1,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; void gdGdcExecServer(void)
+; @asm operand: integer-constant, MOV.L #2,R7 at 0x8c1372b2 loads the small
+; constant 2 from the pool
+_gdGdcExecServer:
+        MOV         #0,R6
+        MOV.L       #2,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; void gdGdcInitSystem(void)
+; @asm operand: integer-constant, MOV.L #3,R7 at 0x8c1372c6 loads the small
+; constant 3 from the pool
+_gdGdcInitSystem:
+        MOV         #0,R6
+        MOV.L       #3,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 gdGdcGetDrvStat(Sint32 *info)
+; @asm operand: integer-constant, MOV.L #4,R7 at 0x8c1372da loads the small
+; constant 4 from the pool
+_gdGdcGetDrvStat:
+        MOV         #0,R6
+        MOV.L       #4,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; void gdGdcG1DmaEnd(GDFS_FUNC func, void *obj)
+; @asm operand: integer-constant, MOV.L #5,R7 at 0x8c1372ee loads the small
+; constant 5 from the pool
+_gdGdcG1DmaEnd:
+        MOV         #0,R6
+        MOV.L       #5,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 gdGdcReqDmaTrans(Sint32 gdchn, Sint32 *param)
+; @asm operand: integer-constant, MOV.L #6,R7 at 0x8c137302 loads the small
+; constant 6 from the pool
+_gdGdcReqDmaTrans:
+        MOV         #0,R6
+        MOV.L       #6,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 gdGdcCheckDmaTrans(Sint32 gdchn, Sint32 *size)
+; @asm operand: integer-constant, MOV.L #7,R7 at 0x8c137316 loads the small
+; constant 7 from the pool
+_gdGdcCheckDmaTrans:
+        MOV         #0,R6
+        MOV.L       #7,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 gdGdcReadAbort(Sint32 gdchn)
+; @asm operand: integer-constant, MOV.L #8,R7 at 0x8c13732a loads the small
+; constant 8 from the pool
+_gdGdcReadAbort:
+        MOV         #0,R6
+        MOV.L       #8,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; void gdGdcReset(void)
+; @asm operand: integer-constant, MOV.L #9,R7 at 0x8c13733e loads the small
+; constant 9 from the pool
+_gdGdcReset:
+        MOV         #0,R6
+        MOV.L       #9,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 gdGdcChangeDataType(Sint32 *param)
+; @asm operand: integer-constant, MOV.L #10,R7 at 0x8c137352 loads the small
+; constant 10 from the pool
+_gdGdcChangeDataType:
+        MOV         #0,R6
+        MOV.L       #10,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 gdBtGdcReInitEntry(void)
+; @asm operand: integer-constant, MOV.L #0,R7 at 0x8c137366 loads the small
+; constant 0 from the pool
+_gdBtGdcReInitEntry:
+        MOV         #-1,R6
+        MOV.L       #0,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 gdBtGdcAddDesc(Sint32 descriptor, Uint32 address)
+; @asm operand: integer-constant, MOV.L #1,R7 at 0x8c13737a loads the small
+; constant 1 from the pool
+_gdBtGdcAddDesc:
+        MOV         #-1,R6
+        MOV.L       #1,R7
+        MOV.L       #GDC_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+        .END

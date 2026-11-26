@@ -1,0 +1,9 @@
+text  TEST_WOOD_TEXTURE_JUNGLE128_12  C  0x00000048  13
+text  TEST_WOOD_TEXTURE_JUNGLE128_14  C  0x00000058  13
+text  TEST_WOOD_TEXTURE_JUNGLE128_9  C  0x00000068  12
+datum  test_wood_textures  D  0x00000000  36
+datum  test_wood_texlist  D  0x00000024  8
+datum  test_wood_polygons  D  0x0000002c  486
+datum  test_wood_vertices  D  0x00000214  428
+datum  test_wood_model  D  0x000003c0  24
+datum  test_wood_object  D  0x000003d8  52

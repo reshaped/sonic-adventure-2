@@ -1,0 +1,7 @@
+datum  material_sara1  C  0x00000000  12
+datum  fire_dish_textures  D  0x00000000  12
+datum  fire_dish_texlist  D  0x0000000c  8
+datum  fire_dish_polygons  D  0x00000014  242
+datum  fire_dish_vertices  D  0x00000108  348
+datum  fire_dish_model  D  0x00000264  24
+datum  fire_dish_object  D  0x0000027c  52

@@ -1,0 +1,72 @@
+text  SCENERY_TEXTURE_MIU128_MS002  13
+text  SCENERY_TEXTURE_MIU64_MO013  12
+text  SCENERY_TEXTURE_MIU128_LOCO002  15
+text  SCENERY_TEXTURE_MIU64_MS005  12
+text  SCENERY_TEXTURE_MIU32_MO004  12
+text  SCENERY_TEXTURE_MIU32_MS001  12
+text  SCENERY_TEXTURE_MIU64_MO015  12
+text  SCENERY_TEXTURE_MIU64_MO016  12
+text  SCENERY_TEXTURE_MIU64_MO017  12
+text  SCENERY_TEXTURE_MIU64_LOCO003  14
+text  SCENERY_TEXTURE_MIU64_MO011  12
+text  SCENERY_TEXTURE_MIU64_MO018  12
+text  SCENERY_TEXTURE_PUM128_13  10
+text  SCENERY_TEXTURE_MIU64_LOCO002  14
+text  SCENERY_TEXTURE_MIU64_MO002  12
+text  SCENERY_TEXTURE_MIU64_MO006  12
+text  SCENERY_TEXTURE_MIU64_MS006  12
+text  SCENERY_TEXTURE_MIU64_MS007  12
+
+pointer  sky_rail_dead_tree_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_MS002
+pointer  sky_rail_dead_tree_texlist_names  0x0000000c  SCENERY_TEXTURE_MIU64_MO013
+pointer  sky_rail_dead_tree_texlist  0x00000000  sky_rail_dead_tree_texlist_names
+pointer  sky_rail_dead_tree_model  0x00000000  sky_rail_dead_tree_vertices
+pointer  sky_rail_dead_tree_model  0x00000004  sky_rail_dead_tree_polygons
+pointer  sky_rail_dead_tree_object  0x00000004  sky_rail_dead_tree_model
+pointer  sky_rail_fence_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_LOCO002
+pointer  sky_rail_fence_texlist_names  0x0000000c  SCENERY_TEXTURE_MIU64_MS005
+pointer  sky_rail_fence_texlist_names  0x00000018  SCENERY_TEXTURE_MIU32_MO004
+pointer  sky_rail_fence_texlist  0x00000000  sky_rail_fence_texlist_names
+pointer  sky_rail_fence_model  0x00000000  sky_rail_fence_vertices
+pointer  sky_rail_fence_model  0x00000004  sky_rail_fence_polygons
+pointer  sky_rail_fence_object  0x00000004  sky_rail_fence_model
+pointer  sky_rail_scarecrow_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_MS002
+pointer  sky_rail_scarecrow_texlist_names  0x0000000c  SCENERY_TEXTURE_MIU32_MS001
+pointer  sky_rail_scarecrow_texlist_names  0x00000018  SCENERY_TEXTURE_MIU64_MO015
+pointer  sky_rail_scarecrow_texlist_names  0x00000024  SCENERY_TEXTURE_MIU64_MO016
+pointer  sky_rail_scarecrow_texlist_names  0x00000030  SCENERY_TEXTURE_MIU64_MO017
+pointer  sky_rail_scarecrow_texlist  0x00000000  sky_rail_scarecrow_texlist_names
+pointer  sky_rail_scarecrow_model  0x00000000  sky_rail_scarecrow_vertices
+pointer  sky_rail_scarecrow_model  0x00000004  sky_rail_scarecrow_polygons
+pointer  sky_rail_scarecrow_object  0x00000004  sky_rail_scarecrow_model
+pointer  sky_rail_grass_texlist_names  0x00000000  SCENERY_TEXTURE_MIU64_MO015
+pointer  sky_rail_grass_texlist  0x00000000  sky_rail_grass_texlist_names
+pointer  sky_rail_grass_model  0x00000000  sky_rail_grass_vertices
+pointer  sky_rail_grass_model  0x00000004  sky_rail_grass_polygons
+pointer  sky_rail_grass_object  0x00000004  sky_rail_grass_model
+pointer  sky_rail_tim_texlist_names  0x00000000  SCENERY_TEXTURE_MIU64_LOCO003
+pointer  sky_rail_tim_texlist_names  0x0000000c  SCENERY_TEXTURE_MIU64_MO011
+pointer  sky_rail_tim_texlist_names  0x00000018  SCENERY_TEXTURE_MIU64_MO018
+pointer  sky_rail_tim_texlist_names  0x00000024  SCENERY_TEXTURE_PUM128_13
+pointer  sky_rail_tim_texlist  0x00000000  sky_rail_tim_texlist_names
+pointer  sky_rail_tim_model  0x00000000  sky_rail_tim_vertices
+pointer  sky_rail_tim_model  0x00000004  sky_rail_tim_polygons
+pointer  sky_rail_tim_object  0x00000004  sky_rail_tim_model
+pointer  sky_rail_rcross_texlist_names  0x00000000  SCENERY_TEXTURE_MIU128_LOCO002
+pointer  sky_rail_rcross_texlist_names  0x0000000c  SCENERY_TEXTURE_MIU32_MO004
+pointer  sky_rail_rcross_texlist_names  0x00000018  SCENERY_TEXTURE_MIU64_LOCO002
+pointer  sky_rail_rcross_texlist_names  0x00000024  SCENERY_TEXTURE_MIU64_MO002
+pointer  sky_rail_rcross_texlist_names  0x00000030  SCENERY_TEXTURE_MIU64_MO006
+pointer  sky_rail_rcross_texlist_names  0x0000003c  SCENERY_TEXTURE_MIU64_MS005
+pointer  sky_rail_rcross_texlist_names  0x00000048  SCENERY_TEXTURE_MIU64_MS006
+pointer  sky_rail_rcross_texlist_names  0x00000054  SCENERY_TEXTURE_MIU64_MS007
+pointer  sky_rail_rcross_texlist  0x00000000  sky_rail_rcross_texlist_names
+pointer  sky_rail_rcross_model  0x00000000  sky_rail_rcross_vertices
+pointer  sky_rail_rcross_model  0x00000004  sky_rail_rcross_polygons
+pointer  sky_rail_rcross_object  0x00000004  sky_rail_rcross_model
+pointer  scenery_texlists  0x00000000  sky_rail_dead_tree_texlist
+pointer  scenery_texlists  0x00000004  sky_rail_fence_texlist
+pointer  scenery_texlists  0x00000008  sky_rail_scarecrow_texlist
+pointer  scenery_texlists  0x0000000c  sky_rail_grass_texlist
+pointer  scenery_texlists  0x00000010  sky_rail_tim_texlist
+pointer  scenery_texlists  0x00000014  sky_rail_rcross_texlist

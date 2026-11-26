@@ -1,0 +1,2 @@
+datum  pyramid_cave_sounds  C  0x00000000  120
+datum  pyramid_cave_sound_list  C  0x00000078  8

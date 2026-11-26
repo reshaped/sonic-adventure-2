@@ -1,0 +1,14 @@
+datum  lobby_texture_names  D  0x00000000  804
+datum  lobby_texlist  D  0x00000324  8
+datum  lobby_exit_base_polygons  D  0x0000032c  6906
+datum  lobby_exit_base_vertices  D  0x00001e28  15252
+datum  lobby_exit_base_model  D  0x000059bc  24
+datum  lobby_exit_base  D  0x000059d4  52
+datum  lobby_exit_frame_polygons  D  0x00005a08  4194
+datum  lobby_exit_frame_vertices  D  0x00006a6c  15468
+datum  lobby_exit_frame_model  D  0x0000a6d8  24
+datum  lobby_exit_frame  D  0x0000a6f0  52
+datum  lobby_exit_disc_polygons  D  0x0000a724  246
+datum  lobby_exit_disc_vertices  D  0x0000a81c  588
+datum  lobby_exit_disc_model  D  0x0000aa68  24
+datum  lobby_exit_disc  D  0x0000aa80  52

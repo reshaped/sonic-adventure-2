@@ -1,0 +1,2 @@
+datum  pitfall_positions  D  0x00000020  96
+datum  pitfall_covers  D  0x00000000  32

@@ -1,0 +1,10 @@
+datum  cells  D  0x00000000  2580
+text  SOUND_TEST_ARCHIVE  C  0x0000004c  10
+datum  songs  D  0x00000a14  1568
+datum  group_1  D  0x00001034  60
+datum  group_2  D  0x00001070  144
+datum  group_3  D  0x00001100  56
+datum  group_4  D  0x00001138  52
+datum  group_5  D  0x0000116c  24
+datum  group_6  D  0x00001184  28
+datum  groups  D  0x000011a0  48

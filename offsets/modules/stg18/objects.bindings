@@ -1,0 +1,243 @@
+include  core_set_names
+text  SET_NAME_EFLENSF0  9
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_E_EMI  6
+text  SET_NAME_E_AI  5
+text  SET_NAME_E_KYOKO  8
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_KAME  5
+text  SET_NAME_WIND  5
+text  SET_NAME_SIDEWIND  9
+text  SET_NAME_BOARD  6
+text  SET_NAME_PLANT  6
+text  SET_NAME_PLANT2  7
+text  SET_NAME_PLANT3  7
+text  SET_NAME_POOL  5
+text  SET_NAME_WARP  5
+text  SET_NAME_CANOE  6
+text  SET_NAME_PALM  5
+text  SET_NAME_SASA  5
+text  SET_NAME_LEAF  5
+text  SET_NAME_FLOWER  7
+text  SET_NAME_CHIN  5
+text  SET_NAME_CHIN2  6
+text  SET_NAME_CHIN3  6
+text  SET_NAME_TSUBO  6
+text  SET_NAME_STONEHEAD  10
+text  SET_NAME_MINITSUBO  10
+text  SET_NAME_FISH  5
+text  SET_NAME_BUTTERFLY  10
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_PLANT4  7
+text  SET_NAME_STAKE  6
+text  SET_NAME_SHELF  6
+text  SET_NAME_DLCONT  7
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_SG_ITEMBOX  11
+text  SET_NAME_SG_RING  8
+text  SET_NAME_SG_SPRA  8
+text  SET_NAME_SG_SPRB  8
+text  SET_NAME_SG_SEARCHBOX  13
+text  SET_NAME_EMERALD_F  10
+text  SET_NAME_ITEMBOX2_B  11
+text  SET_NAME_G_LIGHT_SW  11
+text  SET_NAME_WARP_N  7
+
+pointer  dry_lagoon_kinds  0x00000008  ring_step
+pointer  dry_lagoon_kinds  0x0000000c  SET_NAME_RING
+pointer  dry_lagoon_kinds  0x00000018  ring_linear_init
+pointer  dry_lagoon_kinds  0x0000001c  SET_NAME_RING_LINEAR
+pointer  dry_lagoon_kinds  0x00000028  ring_circle_init
+pointer  dry_lagoon_kinds  0x0000002c  SET_NAME_RING_CIRCLE
+pointer  dry_lagoon_kinds  0x00000038  spring_a_step
+pointer  dry_lagoon_kinds  0x0000003c  SET_NAME_SPRA
+pointer  dry_lagoon_kinds  0x00000048  spring_b_step
+pointer  dry_lagoon_kinds  0x0000004c  SET_NAME_SPRB
+pointer  dry_lagoon_kinds  0x00000058  triple_spring_init
+pointer  dry_lagoon_kinds  0x0000005c  SET_NAME_3SPRING
+pointer  dry_lagoon_kinds  0x00000068  big_jump_step
+pointer  dry_lagoon_kinds  0x0000006c  SET_NAME_BIGJUMP
+pointer  dry_lagoon_kinds  0x00000078  dash_panel_step
+pointer  dry_lagoon_kinds  0x0000007c  SET_NAME_KASOKU
+pointer  dry_lagoon_kinds  0x00000088  save_point_step
+pointer  dry_lagoon_kinds  0x0000008c  SET_NAME_SAVEPOINT
+pointer  dry_lagoon_kinds  0x00000098  switch_step
+pointer  dry_lagoon_kinds  0x0000009c  SET_NAME_SWITCH
+pointer  dry_lagoon_kinds  0x000000a8  item_box_step
+pointer  dry_lagoon_kinds  0x000000ac  SET_NAME_ITEMBOX
+pointer  dry_lagoon_kinds  0x000000b8  item_box_air_step
+pointer  dry_lagoon_kinds  0x000000bc  SET_NAME_ITEMBOXAIR
+pointer  dry_lagoon_kinds  0x000000c8  item_balloon_step
+pointer  dry_lagoon_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  dry_lagoon_kinds  0x000000d8  upgrade_init
+pointer  dry_lagoon_kinds  0x000000dc  SET_NAME_LEVUPDAI
+pointer  dry_lagoon_kinds  0x000000e8  goal_ring_init
+pointer  dry_lagoon_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  dry_lagoon_kinds  0x000000f8  emerald_init
+pointer  dry_lagoon_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  dry_lagoon_kinds  0x00000108  reel_init
+pointer  dry_lagoon_kinds  0x0000010c  SET_NAME_UDREEL
+pointer  dry_lagoon_kinds  0x00000118  cage_init
+pointer  dry_lagoon_kinds  0x0000011c  SET_NAME_ORI
+pointer  dry_lagoon_kinds  0x00000128  dynamite_init
+pointer  dry_lagoon_kinds  0x0000012c  SET_NAME_DYNAMITE
+pointer  dry_lagoon_kinds  0x00000138  wood_box_init
+pointer  dry_lagoon_kinds  0x0000013c  SET_NAME_CONTWOOD
+pointer  dry_lagoon_kinds  0x00000148  iron_box_init
+pointer  dry_lagoon_kinds  0x0000014c  SET_NAME_CONTIRON
+pointer  dry_lagoon_kinds  0x00000158  rocket_init
+pointer  dry_lagoon_kinds  0x0000015c  SET_NAME_ROCKET
+pointer  dry_lagoon_kinds  0x00000168  missile_init
+pointer  dry_lagoon_kinds  0x0000016c  SET_NAME_ROCKETMISSSILE
+pointer  dry_lagoon_kinds  0x00000178  search_box_init
+pointer  dry_lagoon_kinds  0x0000017c  SET_NAME_SCHBOX
+pointer  dry_lagoon_kinds  0x00000188  hint_box_init
+pointer  dry_lagoon_kinds  0x0000018c  SET_NAME_HINTBOX
+pointer  dry_lagoon_kinds  0x00000198  messenger_init
+pointer  dry_lagoon_kinds  0x0000019c  SET_NAME_MSGER
+pointer  dry_lagoon_kinds  0x000001a8  sss_init
+pointer  dry_lagoon_kinds  0x000001ac  SET_NAME_SSS
+pointer  dry_lagoon_kinds  0x000001b8  solid_box_init
+pointer  dry_lagoon_kinds  0x000001bc  SET_NAME_SOLIDBOX
+pointer  dry_lagoon_kinds  0x000001c8  dummy_object_init
+pointer  dry_lagoon_kinds  0x000001cc  SET_NAME_DMYOBJ
+pointer  dry_lagoon_kinds  0x000001d8  soap_switch_init
+pointer  dry_lagoon_kinds  0x000001dc  SET_NAME_SOAP_SW
+pointer  dry_lagoon_kinds  0x000001e8  skull_still_init
+pointer  dry_lagoon_kinds  0x000001ec  SET_NAME_SKULL
+pointer  dry_lagoon_kinds  0x000001f8  skull_lying_init
+pointer  dry_lagoon_kinds  0x000001fc  SET_NAME_PSKULL
+pointer  dry_lagoon_kinds  0x00000208  chao_pipe_init
+pointer  dry_lagoon_kinds  0x0000020c  SET_NAME_CHAOPIPE
+pointer  dry_lagoon_kinds  0x00000218  animal_init
+pointer  dry_lagoon_kinds  0x0000021c  SET_NAME_MINIMAL
+pointer  dry_lagoon_kinds  0x00000228  hidden_animal_init
+pointer  dry_lagoon_kinds  0x0000022c  SET_NAME_WSMMLS
+pointer  dry_lagoon_kinds  0x00000238  chao_box_init
+pointer  dry_lagoon_kinds  0x0000023c  SET_NAME_CONTCHAO
+pointer  dry_lagoon_kinds  0x00000248  stop_lsd_init
+pointer  dry_lagoon_kinds  0x0000024c  SET_NAME_STOPLSD
+pointer  dry_lagoon_kinds  0x00000258  knudai_init
+pointer  dry_lagoon_kinds  0x0000025c  SET_NAME_KNUDAI
+pointer  dry_lagoon_kinds  0x00000268  knudai_foothold_init
+pointer  dry_lagoon_kinds  0x0000026c  SET_NAME_KDASIBA
+pointer  dry_lagoon_kinds  0x00000278  knudai_warp_hole_init
+pointer  dry_lagoon_kinds  0x0000027c  SET_NAME_KDWARPHOLE
+pointer  dry_lagoon_kinds  0x00000288  knudai_door_init
+pointer  dry_lagoon_kinds  0x0000028c  SET_NAME_KDDOOR
+pointer  dry_lagoon_kinds  0x00000298  knudai_item_box_init
+pointer  dry_lagoon_kinds  0x0000029c  SET_NAME_KDITEMBOX
+pointer  dry_lagoon_kinds  0x000002a8  knudai_ring_linear_init
+pointer  dry_lagoon_kinds  0x000002ac  SET_NAME_KDDRNGL
+pointer  dry_lagoon_kinds  0x000002b8  knudai_ring_circle_init
+pointer  dry_lagoon_kinds  0x000002bc  SET_NAME_KDDRNGC
+pointer  dry_lagoon_kinds  0x000002c8  knudai_spring_init
+pointer  dry_lagoon_kinds  0x000002cc  SET_NAME_KDSPRING
+pointer  dry_lagoon_kinds  0x000002d8  knudai_spring_b_init
+pointer  dry_lagoon_kinds  0x000002dc  SET_NAME_KDSPRINGB
+pointer  dry_lagoon_kinds  0x000002e8  collision_sphere_step
+pointer  dry_lagoon_kinds  0x000002ec  SET_NAME_SPHERE
+pointer  dry_lagoon_kinds  0x000002f8  collision_cylinder_step
+pointer  dry_lagoon_kinds  0x000002fc  SET_NAME_CCYL
+pointer  dry_lagoon_kinds  0x00000308  collision_cube_step
+pointer  dry_lagoon_kinds  0x0000030c  SET_NAME_CCUBE
+pointer  dry_lagoon_kinds  0x00000318  collision_wall_step
+pointer  dry_lagoon_kinds  0x0000031c  SET_NAME_CWALL
+pointer  dry_lagoon_kinds  0x00000328  collision_circle_step
+pointer  dry_lagoon_kinds  0x0000032c  SET_NAME_CCIRCLE
+pointer  dry_lagoon_kinds  0x00000338  modifier_volume_init
+pointer  dry_lagoon_kinds  0x0000033c  SET_NAME_MODMOD
+pointer  dry_lagoon_kinds  0x00000348  effect_object_init
+pointer  dry_lagoon_kinds  0x0000034c  SET_NAME_EFFOBJ0
+pointer  dry_lagoon_kinds  0x00000358  lagoon_lens_flare_init
+pointer  dry_lagoon_kinds  0x0000035c  SET_NAME_EFLENSF0
+pointer  dry_lagoon_kinds  0x00000368  weight_init
+pointer  dry_lagoon_kinds  0x0000036c  SET_NAME_BUNCHIN
+pointer  dry_lagoon_kinds  0x00000378  iron_ball_init
+pointer  dry_lagoon_kinds  0x0000037c  SET_NAME_IRONBALL2
+pointer  dry_lagoon_kinds  0x00000388  gold_beetle_step
+pointer  dry_lagoon_kinds  0x0000038c  SET_NAME_E_GOLD
+pointer  dry_lagoon_kinds  0x00000398  emi_step
+pointer  dry_lagoon_kinds  0x0000039c  SET_NAME_E_EMI
+pointer  dry_lagoon_kinds  0x000003a8  ai_step
+pointer  dry_lagoon_kinds  0x000003ac  SET_NAME_E_AI
+pointer  dry_lagoon_kinds  0x000003b8  kyoko_step
+pointer  dry_lagoon_kinds  0x000003bc  SET_NAME_E_KYOKO
+pointer  dry_lagoon_kinds  0x000003c8  big_step
+pointer  dry_lagoon_kinds  0x000003cc  SET_NAME_BIG_THE_CAT
+pointer  dry_lagoon_kinds  0x000003d8  turtle_init
+pointer  dry_lagoon_kinds  0x000003dc  SET_NAME_KAME
+pointer  dry_lagoon_kinds  0x000003e8  lagoon_updraft_init
+pointer  dry_lagoon_kinds  0x000003ec  SET_NAME_WIND
+pointer  dry_lagoon_kinds  0x000003f8  lagoon_current_init
+pointer  dry_lagoon_kinds  0x000003fc  SET_NAME_SIDEWIND
+pointer  dry_lagoon_kinds  0x00000408  sign_plate_init
+pointer  dry_lagoon_kinds  0x0000040c  SET_NAME_BOARD
+pointer  dry_lagoon_kinds  0x00000418  plant_init
+pointer  dry_lagoon_kinds  0x0000041c  SET_NAME_PLANT
+pointer  dry_lagoon_kinds  0x00000428  plant2_init
+pointer  dry_lagoon_kinds  0x0000042c  SET_NAME_PLANT2
+pointer  dry_lagoon_kinds  0x00000438  plant3_init
+pointer  dry_lagoon_kinds  0x0000043c  SET_NAME_PLANT3
+pointer  dry_lagoon_kinds  0x00000448  pool_init
+pointer  dry_lagoon_kinds  0x0000044c  SET_NAME_POOL
+pointer  dry_lagoon_kinds  0x00000458  lagoon_wall_warp_init
+pointer  dry_lagoon_kinds  0x0000045c  SET_NAME_WARP
+pointer  dry_lagoon_kinds  0x00000468  canoe_init
+pointer  dry_lagoon_kinds  0x0000046c  SET_NAME_CANOE
+pointer  dry_lagoon_kinds  0x00000478  palm_init
+pointer  dry_lagoon_kinds  0x0000047c  SET_NAME_PALM
+pointer  dry_lagoon_kinds  0x00000488  sasa_init
+pointer  dry_lagoon_kinds  0x0000048c  SET_NAME_SASA
+pointer  dry_lagoon_kinds  0x00000498  leaf_init
+pointer  dry_lagoon_kinds  0x0000049c  SET_NAME_LEAF
+pointer  dry_lagoon_kinds  0x000004a8  flower_init
+pointer  dry_lagoon_kinds  0x000004ac  SET_NAME_FLOWER
+pointer  dry_lagoon_kinds  0x000004b8  chin_init
+pointer  dry_lagoon_kinds  0x000004bc  SET_NAME_CHIN
+pointer  dry_lagoon_kinds  0x000004c8  chin2_init
+pointer  dry_lagoon_kinds  0x000004cc  SET_NAME_CHIN2
+pointer  dry_lagoon_kinds  0x000004d8  chin3_init
+pointer  dry_lagoon_kinds  0x000004dc  SET_NAME_CHIN3
+pointer  dry_lagoon_kinds  0x000004e8  pot_init
+pointer  dry_lagoon_kinds  0x000004ec  SET_NAME_TSUBO
+pointer  dry_lagoon_kinds  0x000004f8  lagoon_stone_head_init
+pointer  dry_lagoon_kinds  0x000004fc  SET_NAME_STONEHEAD
+pointer  dry_lagoon_kinds  0x00000508  small_pot_init
+pointer  dry_lagoon_kinds  0x0000050c  SET_NAME_MINITSUBO
+pointer  dry_lagoon_kinds  0x00000518  lagoon_fish_init
+pointer  dry_lagoon_kinds  0x0000051c  SET_NAME_FISH
+pointer  dry_lagoon_kinds  0x00000528  butterflies_init
+pointer  dry_lagoon_kinds  0x0000052c  SET_NAME_BUTTERFLY
+pointer  dry_lagoon_kinds  0x00000538  light_switch_init
+pointer  dry_lagoon_kinds  0x0000053c  SET_NAME_LIGHT_SW
+pointer  dry_lagoon_kinds  0x00000548  plant4_init
+pointer  dry_lagoon_kinds  0x0000054c  SET_NAME_PLANT4
+pointer  dry_lagoon_kinds  0x00000558  stake_init
+pointer  dry_lagoon_kinds  0x0000055c  SET_NAME_STAKE
+pointer  dry_lagoon_kinds  0x00000568  shelf_init
+pointer  dry_lagoon_kinds  0x0000056c  SET_NAME_SHELF
+pointer  dry_lagoon_kinds  0x00000578  lagoon_container_init
+pointer  dry_lagoon_kinds  0x0000057c  SET_NAME_DLCONT
+pointer  dry_lagoon_kinds  0x00000588  beetle_step
+pointer  dry_lagoon_kinds  0x0000058c  SET_NAME_E_KUMI
+pointer  dry_lagoon_kinds  0x00000598  sg_item_box_step
+pointer  dry_lagoon_kinds  0x0000059c  SET_NAME_SG_ITEMBOX
+pointer  dry_lagoon_kinds  0x000005a8  sg_ring_step
+pointer  dry_lagoon_kinds  0x000005ac  SET_NAME_SG_RING
+pointer  dry_lagoon_kinds  0x000005b8  sg_spring_a_step
+pointer  dry_lagoon_kinds  0x000005bc  SET_NAME_SG_SPRA
+pointer  dry_lagoon_kinds  0x000005c8  sg_spring_b_step
+pointer  dry_lagoon_kinds  0x000005cc  SET_NAME_SG_SPRB
+pointer  dry_lagoon_kinds  0x000005d8  search_box_sg_init
+pointer  dry_lagoon_kinds  0x000005dc  SET_NAME_SG_SEARCHBOX
+pointer  dry_lagoon_kinds  0x000005e8  emerald_init
+pointer  dry_lagoon_kinds  0x000005ec  SET_NAME_EMERALD_F
+pointer  dry_lagoon_kinds  0x000005f8  item_box_b_step
+pointer  dry_lagoon_kinds  0x000005fc  SET_NAME_ITEMBOX2_B
+pointer  dry_lagoon_kinds  0x00000608  global_light_switch_init
+pointer  dry_lagoon_kinds  0x0000060c  SET_NAME_G_LIGHT_SW
+pointer  dry_lagoon_kinds  0x00000618  lagoon_wall_warp_init
+pointer  dry_lagoon_kinds  0x0000061c  SET_NAME_WARP_N

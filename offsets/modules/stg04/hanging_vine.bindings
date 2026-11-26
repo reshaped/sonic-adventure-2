@@ -1,0 +1,19 @@
+text HANGING_VINE_TEXTURE_JUNGLE128_13 13
+text HANGING_VINE_TEXTURE_MIU64_GREEN006 15
+text HANGING_VINE_TEXTURE_MIU64_GREEN008 15
+
+pointer  model_textures  0x00000000  HANGING_VINE_TEXTURE_JUNGLE128_13
+pointer  model_textures  0x0000000c  HANGING_VINE_TEXTURE_MIU64_GREEN006
+pointer  model_textures  0x00000018  HANGING_VINE_TEXTURE_MIU64_GREEN008
+pointer  hanging_vine_texlist  0x00000000  model_textures
+pointer  grip_mesh  0x00000000  grip_vertices
+pointer  grip_mesh  0x00000004  grip_polygons
+pointer  hanging_vine_tip  0x00000004  grip_mesh
+pointer  stem_mesh  0x00000000  stem_vertices
+pointer  stem_mesh  0x00000004  stem_polygons
+pointer  stem_object  0x00000004  stem_mesh
+pointer  stem_object  0x0000002c  hanging_vine_tip
+pointer  anchor_mesh  0x00000000  anchor_vertices
+pointer  anchor_mesh  0x00000004  anchor_polygons
+pointer  hanging_vine_object  0x00000004  anchor_mesh
+pointer  hanging_vine_object  0x0000002c  stem_object

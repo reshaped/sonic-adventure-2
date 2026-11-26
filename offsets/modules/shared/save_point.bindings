@@ -1,0 +1,23 @@
+text  SAVE_POINT_ID_LABEL  13
+text  SIKAKE_01_128_FILENAME  14
+pointer  save_point_texname  0x00000000  SIKAKE_01_128_FILENAME
+pointer  save_point_texlist  0x00000000  save_point_texname
+pointer  save_point_lamp0_model  0x00000000  save_point_lamp0_vertices
+pointer  save_point_lamp0_model  0x00000004  save_point_lamp0_polygons
+pointer  save_point_lamp0_object  0x00000004  save_point_lamp0_model
+pointer  save_point_lamp1_model  0x00000000  save_point_lamp1_vertices
+pointer  save_point_lamp1_model  0x00000004  save_point_lamp1_polygons
+pointer  save_point_lamp1_object  0x00000004  save_point_lamp1_model
+pointer  save_point_lamp1_object  0x00000030  save_point_lamp0_object
+pointer  save_point_model  0x00000000  save_point_vertices
+pointer  save_point_model  0x00000004  save_point_polygons
+pointer  save_point_object  0x00000004  save_point_model
+pointer  save_point_object  0x0000002c  save_point_lamp1_object
+pointer  save_point_lamp1_anim  0x00000010  save_point_lamp1_uvs
+pointer  save_point_lamp0_anim  0x00000010  save_point_lamp0_uvs
+pointer  save_point_collision_meshset  0x00000004  save_point_collision_meshes
+pointer  save_point_collision_model  0x00000000  save_point_collision_points
+pointer  save_point_collision_model  0x00000004  save_point_collision_normals
+pointer  save_point_collision_model  0x0000000c  save_point_collision_meshset
+pointer  save_point_collision_model  0x00000010  save_point_collision_material
+pointer  save_point_collision  0x00000004  save_point_collision_model

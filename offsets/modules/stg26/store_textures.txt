@@ -1,0 +1,9 @@
+datum  store_box_shadow_name  C  0x00000000  20
+datum  store_box_side_name  C  0x00000014  20
+datum  store_box_lid_name  C  0x00000028  22
+datum  textures  D  0x00000000  36
+datum  store_box_blue_texlist  D  0x00000024  8
+datum  store_box_blue_polygons  D  0x0000002c  746
+datum  store_box_blue_vertices  D  0x00000318  1436
+datum  store_box_blue_model  D  0x000008b4  24
+datum  store_box_blue_object  D  0x000008cc  52

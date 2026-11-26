@@ -1,0 +1,3 @@
+pointer  intro  0x00000008  biolizard_intro_camera_motion
+pointer  charge  0x00000008  biolizard_charge_camera_motion
+pointer  defeat  0x00000008  biolizard_defeat_camera_motion

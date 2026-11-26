@@ -1,0 +1,16 @@
+text  CITY_TEXTURE_CE64_ITA002  C  0x00000018  12
+text  CITY_TEXTURE_MIU128_CE002  C  0x00000024  13
+text  CITY_TEXTURE_MIU128_CE008  C  0x00000034  13
+text  CITY_TEXTURE_MIU64_CE041  C  0x00000044  12
+text  CITY_TEXTURE_SCITY_KAGE32  C  0x00000050  13
+text  CITY_TEXTURE_MIU128_CE009  C  0x00000060  13
+text  CITY_TEXTURE_MIU128_CE005  C  0x00000070  13
+text  CITY_TEXTURE_MIU128_CE010  C  0x00000080  13
+text  CITY_TEXTURE_MIU128_CE011  C  0x00000090  13
+datum  signboard_texnames  D  0x00000000  120
+datum  signboard_texlist  D  0x00000078  8
+datum  signboard_polygons  D  0x00000080  602
+datum  signboard_vertices  D  0x000002dc  1292
+datum  signboard_model  D  0x000007e8  24
+datum  signboard_object  D  0x00000800  52
+datum  signboard_texlists  D  0x00000834  8

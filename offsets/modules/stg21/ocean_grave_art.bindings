@@ -1,0 +1,3 @@
+pointer  grave_model  0x00000000  grave_vertices
+pointer  grave_model  0x00000004  grave_polygons
+pointer  grave_object  0x00000004  grave_model

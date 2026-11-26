@@ -1,0 +1,7 @@
+pointer  pillar2_textures  0x00000000  material_hasira1
+pointer  pillar2_textures  0x0000000c  material_hasira2
+pointer  pillar2_textures  0x00000018  material_kage3
+pointer  pillar2_texlist  0x00000000  pillar2_textures
+pointer  pillar2_model  0x00000000  pillar2_vertices
+pointer  pillar2_model  0x00000004  pillar2_polygons
+pointer  pillar2_object  0x00000004  pillar2_model

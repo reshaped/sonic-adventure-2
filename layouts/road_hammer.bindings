@@ -1,0 +1,22 @@
+text  ROAD_TEXTURE_MIU128_CE002  13
+text  ROAD_TEXTURE_MIU32_RH001  12
+text  ROAD_TEXTURE_MIU32_RH005  12
+text  ROAD_TEXTURE_MIU64_RH012  12
+pointer  street_hammer_textures  0x00000000  ROAD_TEXTURE_MIU128_CE002
+pointer  street_hammer_textures  0x0000000c  ROAD_TEXTURE_MIU32_RH001
+pointer  street_hammer_textures  0x00000018  ROAD_TEXTURE_MIU32_RH005
+pointer  street_hammer_textures  0x00000024  ROAD_TEXTURE_MIU64_RH012
+pointer  street_hammer_texlist  0x00000000  street_hammer_textures
+pointer  street_hammer_glow_model  0x00000000  street_hammer_glow_vertices
+pointer  street_hammer_glow_model  0x00000004  street_hammer_glow_polygons
+pointer  street_hammer_glow_object  0x00000004  street_hammer_glow_model
+pointer  street_hammer_model  0x00000000  street_hammer_vertices
+pointer  street_hammer_model  0x00000004  street_hammer_polygons
+pointer  street_hammer_object  0x00000004  street_hammer_model
+pointer  street_hammer_object  0x0000002c  street_hammer_glow_object
+pointer  street_hammer_collision_meshsets  0x00000004  street_hammer_collision_indices_0
+pointer  street_hammer_collision_model  0x00000000  street_hammer_collision_points
+pointer  street_hammer_collision_model  0x00000004  street_hammer_collision_normals
+pointer  street_hammer_collision_model  0x0000000c  street_hammer_collision_meshsets
+pointer  street_hammer_collision_model  0x00000010  street_hammer_collision_materials
+pointer  street_hammer_collision  0x00000004  street_hammer_collision_model

@@ -1,0 +1,2 @@
+datum  entries  C  0x00000000  224
+datum  gadget_sounds  C  0x000000e0  8

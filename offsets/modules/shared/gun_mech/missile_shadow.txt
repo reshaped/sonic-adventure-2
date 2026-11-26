@@ -1,0 +1,4 @@
+datum  missile_shadow_polygons  D  0x00000000  334
+datum  missile_shadow_vertices  D  0x00000150  360
+datum  missile_shadow_mesh  D  0x000002b8  24
+datum  mech_boss_missile_shadow  D  0x000002d0  52

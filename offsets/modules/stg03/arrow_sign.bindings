@@ -1,0 +1,23 @@
+text ARROW_SIGN_EDITOR_ANGLE_X 11
+text ARROW_SIGN_EDITOR_ANGLE_Y 11
+text ARROW_SIGN_EDITOR_ANGLE_Z 11
+text ARROW_SIGN_EDITOR_SCLX 8
+text ARROW_SIGN_EDITOR_SCLY 8
+text ARROW_SIGN_EDITOR_SCLZ 8
+text ARROW_SIGN_TEXTURE_YA_JUNGLE 10
+text ARROW_SIGN_TEXTURE_JUNGLE256_1 12
+
+pointer  arrow_sign_textures  0x00000000  ARROW_SIGN_TEXTURE_YA_JUNGLE
+pointer  arrow_sign_textures  0x0000000c  ARROW_SIGN_TEXTURE_JUNGLE256_1
+pointer  arrow_sign_texlist  0x00000000  arrow_sign_textures
+pointer  arrow_sign_model  0x00000000  arrow_sign_vertices
+pointer  arrow_sign_model  0x00000004  arrow_sign_polygons
+pointer  arrow_sign_object  0x00000004  arrow_sign_model
+pointer  arrow_sign_2_textures  0x00000000  ARROW_SIGN_TEXTURE_YA_JUNGLE
+pointer  arrow_sign_2_textures  0x0000000c  ARROW_SIGN_TEXTURE_JUNGLE256_1
+pointer  arrow_sign_2_texlist  0x00000000  arrow_sign_2_textures
+pointer  arrow_sign_2_model  0x00000000  arrow_sign_2_vertices
+pointer  arrow_sign_2_model  0x00000004  arrow_sign_2_polygons
+pointer  arrow_sign_2_object  0x00000004  arrow_sign_2_model
+pointer  arrow_sign_texlists  0x00000000  arrow_sign_texlist
+pointer  arrow_sign_texlists  0x00000004  arrow_sign_2_texlist

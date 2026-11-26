@@ -1,0 +1,8 @@
+text  GADGET_RAIL_MARKER_ART_TEXTURE_1  C  0x00000000  13
+text  GADGET_RAIL_MARKER_ART_TEXTURE_2  C  0x00000010  13
+datum  textures  D  0x00000000  24
+datum  gadget_marker_texlist  D  0x00000018  8
+datum  gadget_marker_polygons  D  0x00000020  542
+datum  gadget_marker_vertices  D  0x00000240  972
+datum  gadget_marker_mesh  D  0x0000060c  24
+datum  gadget_marker_object  D  0x00000624  52

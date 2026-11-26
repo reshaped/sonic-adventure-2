@@ -1,0 +1,26 @@
+# Moving deck render and collision records.
+datum  deck_polygons  D  0x00000000  1986
+datum  deck_vertices  D  0x000007c4  3644
+datum  step_model  D  0x00001600  24
+datum  deck_object  D  0x00001618  52
+datum  right_rail_material  D  0x0000164c  20
+datum  right_rail_strips  D  0x00001660  42
+datum  right_rail_faces  D  0x0000168c  24
+datum  right_rail_points  D  0x000016a4  96
+datum  right_rail_normals  D  0x00001704  96
+datum  right_rail_hull  D  0x00001764  40
+datum  right_rail_collision  D  0x0000178c  52
+datum  left_rail_material  D  0x000017c0  20
+datum  left_rail_strips  D  0x000017d4  42
+datum  left_rail_faces  D  0x00001800  24
+datum  left_rail_points  D  0x00001818  96
+datum  left_rail_normals  D  0x00001878  96
+datum  left_rail_hull  D  0x000018d8  40
+datum  left_rail_collision  D  0x00001900  52
+datum  deck_material  D  0x00001934  20
+datum  deck_strips  D  0x00001948  92
+datum  deck_faces  D  0x000019a4  24
+datum  deck_points  D  0x000019bc  192
+datum  deck_normals  D  0x00001a7c  192
+datum  deck_hull  D  0x00001b3c  40
+datum  step_collision  D  0x00001b64  52

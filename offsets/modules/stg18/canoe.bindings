@@ -1,0 +1,18 @@
+text  LAGOON_TEXTURE_DZ_DL_KANOE_BLUELINE64  23
+text  LAGOON_TEXTURE_DZ_DL_KANOE_DECK64  19
+text  LAGOON_TEXTURE_DZ_DL_KANOE_ROKKAKU64  22
+text  LAGOON_TEXTURE_DZ_DL_KANOE_TRI128  19
+pointer  canoe_texlist_names  0x00000000  LAGOON_TEXTURE_DZ_DL_KANOE_BLUELINE64
+pointer  canoe_texlist_names  0x0000000c  LAGOON_TEXTURE_DZ_DL_KANOE_DECK64
+pointer  canoe_texlist_names  0x00000018  LAGOON_TEXTURE_DZ_DL_KANOE_ROKKAKU64
+pointer  canoe_texlist_names  0x00000024  LAGOON_TEXTURE_DZ_DL_KANOE_TRI128
+pointer  canoe_texlist  0x00000000  canoe_texlist_names
+pointer  canoe_model  0x00000000  canoe_vertices
+pointer  canoe_model  0x00000004  canoe_polygons
+pointer  canoe_object  0x00000004  canoe_model
+pointer  canoe_collision_faces  0x00000004  canoe_collision_strips
+pointer  canoe_collision_model  0x00000000  canoe_collision_points
+pointer  canoe_collision_model  0x00000004  canoe_collision_normals
+pointer  canoe_collision_model  0x0000000c  canoe_collision_faces
+pointer  canoe_collision_model  0x00000010  canoe_collision_materials
+pointer  canoe_collision  0x00000004  canoe_collision_model

@@ -1,0 +1,4 @@
+datum  rouge_kd_lk_un104  C  0x00000000  12
+datum  rouge_kd_lk_un112  C  0x0000000c  12
+datum  rouge_tx_ccpoison001  C  0x00000018  16
+datum  rouge_kd_lk_un203  C  0x00000028  12

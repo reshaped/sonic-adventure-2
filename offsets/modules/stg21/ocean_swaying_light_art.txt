@@ -1,0 +1,4 @@
+datum  swaying_light_polygons  D  0x00000000  110
+datum  swaying_light_vertices  D  0x00000070  204
+datum  swaying_light_model  D  0x0000013c  24
+datum  swaying_light_object  D  0x00000154  52

@@ -1,0 +1,24 @@
+text  KINDER_ROOM_NAME_HOUSE  6
+text  KINDER_ROOM_NAME_CORRIDOR  9
+text  KINDER_ROOM_NAME_BLACK_MARKET  13
+text  KINDER_ROOM_NAME_CLASSROOM  10
+text  KINDER_ROOM_NAME_HEALTH_CENTER  14
+text  KINDER_ROOM_NAME_LIBRARY  8
+text  KINDER_ROOM_NAME_PRINCIPAL_ROOM  15
+text  KINDER_ROOM_NAME_PLAYGROUND  11
+text  KINDER_ROOM_NAME_CONNECT  8
+text  KINDER_ROOM_NAME_EDITOR  7
+text  KINDER_ROOM_NAME_ACCOUNT  8
+
+pointer  house_objects  0x00000000  kinder_house_init
+pointer  house_objects  0x00000028  kinder_door_init
+pointer  health_center_objects  0x00000000  kinder_health_center_init
+pointer  health_center_objects  0x00000028  kinder_doctor_init
+pointer  principal_objects  0x00000000  kinder_principal_room_init
+pointer  principal_objects  0x00000028  kinder_principal_prop_init
+pointer  principal_objects  0x00000050  kinder_principal_init
+pointer  corridor_objects  0x00000000  kinder_corridor_init
+pointer  corridor_objects  0x00000028  kinder_door_init
+pointer  corridor_objects  0x00000050  kinder_door_init
+pointer  corridor_objects  0x00000078  kinder_door_init
+pointer  corridor_objects  0x000000a0  kinder_door_init

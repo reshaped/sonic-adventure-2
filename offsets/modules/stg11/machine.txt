@@ -1,0 +1,17 @@
+text  MACHINE_TEXTURE_MIU128_IG009  C  0x0000000c  13
+text  MACHINE_TEXTURE_MIU128_IG010  C  0x0000001c  13
+text  MACHINE_TEXTURE_MIU32_IG003  C  0x0000002c  12
+text  MACHINE_TEXTURE_MIU64_IG010  C  0x00000038  12
+text  MACHINE_TEXTURE_PR128_11  C  0x00000044  9
+text  MACHINE_TEXTURE_PR128_5  C  0x00000050  8
+datum  machine_names  D  0x00000000  72
+datum  machine_texlist  D  0x00000048  8
+datum  machine_lamp_polygons  D  0x00000050  50
+datum  machine_lamp_vertices  D  0x00000084  76
+datum  machine_lamp_model  D  0x000000d0  24
+datum  machine_lamp  D  0x000000e8  52
+datum  machine_polygons  D  0x0000011c  482
+datum  machine_vertices  D  0x00000300  972
+datum  machine_model  D  0x000006cc  24
+datum  machine_object  D  0x000006e4  52
+datum  iron_gate_machine_texlists  D  0x00000718  8

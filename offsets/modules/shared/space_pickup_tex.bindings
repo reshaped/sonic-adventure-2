@@ -1,0 +1,13 @@
+text TEXTURE_MIU32_PSO001 13
+text TEXTURE_MIU32_PSO002 13
+text TEXTURE_MIU32_PSO003 13
+
+pointer  first  0x00000000  TEXTURE_MIU32_PSO001
+pointer  space_pickup_first_texlist  0x00000000  first
+pointer  second  0x00000000  TEXTURE_MIU32_PSO002
+pointer  space_pickup_second_texlist  0x00000000  second
+pointer  third  0x00000000  TEXTURE_MIU32_PSO003
+pointer  space_pickup_third_texlist  0x00000000  third
+pointer  space_pickup_model  0x00000000  pickup_vertices
+pointer  space_pickup_model  0x00000004  pickup_polygons
+pointer  pickup_object  0x00000004  space_pickup_model

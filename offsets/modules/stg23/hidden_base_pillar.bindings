@@ -1,0 +1,15 @@
+text  HIDDEN_BASE_PILLAR_NAME_EGGHASIRA_SITA128  24
+text  HIDDEN_BASE_PILLAR_NAME_EGGHASIRA_UE128  22
+text  HIDDEN_BASE_PILLAR_NAME_HASIRA5  14
+text  HIDDEN_BASE_PILLAR_NAME_SEKIHI1  14
+text  HIDDEN_BASE_PILLAR_NAME_SEKIHI3  14
+
+pointer  textures  0x00000000  HIDDEN_BASE_PILLAR_NAME_EGGHASIRA_SITA128
+pointer  textures  0x0000000c  HIDDEN_BASE_PILLAR_NAME_EGGHASIRA_UE128
+pointer  textures  0x00000018  HIDDEN_BASE_PILLAR_NAME_HASIRA5
+pointer  textures  0x00000024  HIDDEN_BASE_PILLAR_NAME_SEKIHI1
+pointer  textures  0x00000030  HIDDEN_BASE_PILLAR_NAME_SEKIHI3
+pointer  base_pillar_texlist  0x00000000  textures
+pointer  base_pillar_model  0x00000000  base_pillar_vertices
+pointer  base_pillar_model  0x00000004  base_pillar_polygons
+pointer  base_pillar_object  0x00000004  base_pillar_model

@@ -1,0 +1,107 @@
+include  objtex_common
+include  efftex_common
+
+include  core_object_archive
+include  core_block_glow_archive
+
+text CORE_TEXTURE_KD_LK_WATER1_01 16
+text CORE_TEXTURE_KD_LK_WATER1_02 16
+text CORE_TEXTURE_KD_LK_WATER1_03 16
+text CORE_TEXTURE_KD_LK_WATER1_04 16
+text CORE_TEXTURE_KD_LK_WATER1_05 16
+text CORE_TEXTURE_KD_LK_WATER1_06 16
+text CORE_TEXTURE_KD_LK_WATER1_07 16
+text CORE_TEXTURE_KD_LK_WATER1_08 16
+text CORE_TEXTURE_KD_LK_WATER1_09 16
+text CORE_TEXTURE_KD_LK_WATER1_10 16
+text CORE_TEXTURE_KD_LK_WATER1_11 16
+text CORE_TEXTURE_KD_LK_WATER1_12 16
+text CORE_TEXTURE_KD_LK_WATER1_13 16
+text CORE_TEXTURE_KD_LK_WATER1_14 16
+text CORE_TEXTURE_OBJTEX_CC_COMMON 17
+text CORE_TEXTURE_EFFTEX_COMMON 14
+text CORE_TEXTURE_OBJTEX_COMMON 14
+text CORE_TEXTURE_STG38_WATER 12
+text CORE_TEXTURE_CC_POISON 10
+
+pointer  surface_textures_names  0x00000000  CORE_TEXTURE_KD_LK_WATER1_01
+pointer  surface_textures_names  0x0000000c  CORE_TEXTURE_KD_LK_WATER1_02
+pointer  surface_textures_names  0x00000018  CORE_TEXTURE_KD_LK_WATER1_03
+pointer  surface_textures_names  0x00000024  CORE_TEXTURE_KD_LK_WATER1_04
+pointer  surface_textures_names  0x00000030  CORE_TEXTURE_KD_LK_WATER1_05
+pointer  surface_textures_names  0x0000003c  CORE_TEXTURE_KD_LK_WATER1_06
+pointer  surface_textures_names  0x00000048  CORE_TEXTURE_KD_LK_WATER1_07
+pointer  surface_textures_names  0x00000054  CORE_TEXTURE_KD_LK_WATER1_08
+pointer  surface_textures_names  0x00000060  CORE_TEXTURE_KD_LK_WATER1_09
+pointer  surface_textures_names  0x0000006c  CORE_TEXTURE_KD_LK_WATER1_10
+pointer  surface_textures_names  0x00000078  CORE_TEXTURE_KD_LK_WATER1_11
+pointer  surface_textures_names  0x00000084  CORE_TEXTURE_KD_LK_WATER1_12
+pointer  surface_textures_names  0x00000090  CORE_TEXTURE_KD_LK_WATER1_13
+pointer  surface_textures_names  0x0000009c  CORE_TEXTURE_KD_LK_WATER1_14
+pointer  surface_textures  0x00000000  surface_textures_names
+pointer  core_block_glow_texlist  0x00000000  core_block_glow_texlist_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  stage_textures  0x0000003c  ripple_texlist
+pointer  stage_textures  0x00000040  specks_texlist
+pointer  core_knuckles_object_groups  0x00000000  stage_textures
+pointer  core_knuckles_object_groups  0x00000004  goal_ring_texlists
+pointer  core_knuckles_object_groups  0x00000008  emerald_texlists
+pointer  core_knuckles_object_groups  0x0000000c  item_box_texlists
+pointer  core_knuckles_object_groups  0x00000010  item_box_air_texlists
+pointer  core_knuckles_object_groups  0x00000014  weight_texlists
+pointer  core_knuckles_object_groups  0x00000018  iron_ball_texlists
+pointer  core_knuckles_object_groups  0x0000001c  triple_spring_texlists
+pointer  core_knuckles_object_groups  0x00000020  dynamite_texlists
+pointer  core_knuckles_object_groups  0x00000024  reel_texlists
+pointer  core_knuckles_object_groups  0x00000028  chao_pipe_texlists
+pointer  core_knuckles_object_groups  0x0000002c  cage_texlists
+pointer  core_knuckles_object_groups  0x00000030  wood_box_texlists
+pointer  core_knuckles_object_groups  0x00000034  iron_box_texlists
+pointer  core_knuckles_object_groups  0x00000038  upgrade_texlists
+pointer  core_knuckles_object_groups  0x0000003c  missile_texlists
+pointer  core_knuckles_object_groups  0x00000040  skull_texlists
+pointer  core_knuckles_object_groups  0x00000044  rocket_texlists
+pointer  core_knuckles_object_groups  0x00000048  search_box_texlists
+pointer  core_knuckles_object_groups  0x0000004c  hint_box_texlists
+pointer  core_knuckles_object_groups  0x00000050  knudai_texlists
+pointer  core_knuckles_object_groups  0x00000054  knudai_foothold_texlists
+pointer  core_knuckles_object_groups  0x00000058  knudai_warp_hole_texlists
+pointer  core_knuckles_object_groups  0x0000005c  knudai_door_texlists
+pointer  core_knuckles_object_groups  0x00000060  chao_box_texlists
+pointer  core_knuckles_object_groups  0x00000064  chao_key_texlists
+pointer  core_knuckles_object_groups  0x00000068  object_effect_texlists
+pointer  core_knuckles_object_groups  0x0000006c  messenger_texlists
+pointer  core_knuckles_object_groups  0x00000070  ring_effect_texlists
+pointer  core_knuckles_object_groups  0x00000074  solid_box_texlists
+pointer  core_knuckles_object_groups  0x00000078  core_door_texlists
+pointer  core_knuckles_object_groups  0x0000007c  core_block_texlists
+pointer  core_knuckles_object_groups  0x00000080  core_lift_texlists
+pointer  core_knuckles_object_groups  0x00000084  core_step_texlists
+pointer  core_knuckles_object_groups  0x00000088  core_laser_texlists
+pointer  core_knuckles_object_groups  0x0000008c  time_switch_texlists
+pointer  core_knuckles_object_groups  0x00000090  core_switch_texlists
+pointer  core_knuckles_object_pvms  0x00000000  CORE_TEXTURE_OBJTEX_CC_COMMON
+pointer  core_knuckles_object_pvms  0x00000004  core_object_textures
+pointer  core_knuckles_object_pvms  0x00000008  CORE_TEXTURE_EFFTEX_COMMON
+pointer  core_knuckles_object_pvms  0x0000000c  efftex_common_texlist
+pointer  core_knuckles_object_pvms  0x00000010  CORE_TEXTURE_OBJTEX_COMMON
+pointer  core_knuckles_object_pvms  0x00000014  objtex_common_texlist
+pointer  core_knuckles_object_pvms  0x00000018  CORE_TEXTURE_STG38_WATER
+pointer  core_knuckles_object_pvms  0x0000001c  surface_textures
+pointer  core_knuckles_object_pvms  0x00000020  CORE_TEXTURE_CC_POISON
+pointer  core_knuckles_object_pvms  0x00000024  core_block_glow_texlist
+pointer  core_knuckles_object_pvms  0x0000002c  core_knuckles_land_texlist

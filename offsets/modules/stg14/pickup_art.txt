@@ -1,0 +1,7 @@
+text  HIGHWAY_TEXT_MIU32_RH001  C  0x00000000  12
+datum  materials  D  0x00000000  12
+datum  pickup_object_texlist  D  0x0000000c  8
+datum  pickup_polygons  D  0x00000014  262
+datum  pickup_vertices  D  0x0000011c  412
+datum  pickup_object_model  D  0x000002b8  24
+datum  pickup_object_node  D  0x000002d0  52

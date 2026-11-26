@@ -1,0 +1,4 @@
+datum  mad_space_line_object_polygons  D  0x00000000  74
+datum  mad_space_line_object_vertices  D  0x0000004c  140
+datum  mad_space_line_object_model  D  0x000000d8  24
+datum  mad_space_line_object  D  0x000000f0  52

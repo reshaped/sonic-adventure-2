@@ -1,0 +1,10 @@
+text  CORE_TEXTURE_DZ_CC_TSWITCHA32  17
+text  CORE_TEXTURE_DZ_CC_TSWITCHB32  17
+text  CORE_TEXTURE_DZ_CC_TSWITCHC32  17
+pointer  textures  0x00000000  CORE_TEXTURE_DZ_CC_TSWITCHA32
+pointer  textures  0x0000000c  CORE_TEXTURE_DZ_CC_TSWITCHB32
+pointer  textures  0x00000018  CORE_TEXTURE_DZ_CC_TSWITCHC32
+pointer  time_switch_base_texlist  0x00000000  textures
+pointer  time_switch_base  0x00000000  time_switch_base_vertices
+pointer  time_switch_base  0x00000004  time_switch_base_polygons
+pointer  pedestal  0x00000004  time_switch_base

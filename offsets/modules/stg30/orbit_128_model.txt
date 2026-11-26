@@ -1,0 +1,4 @@
+datum  sky_orbit_128_polygons  D  0x00000000  1670
+datum  sky_orbit_128_vertices  D  0x00000688  1836
+datum  sky_orbit_128_mesh  D  0x00000db4  24
+datum  rush_orbit_128_object  D  0x00000dcc  52

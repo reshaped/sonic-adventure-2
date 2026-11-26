@@ -1,0 +1,234 @@
+include  objtex_common
+include  efftex_common
+
+text  OBJECT_TEXTURE_DC_PC_CROUCHWALL128  20
+text  OBJECT_TEXTURE_DC_PC_CROUCHWALL64  19
+text  OBJECT_TEXTURE_DC_PC_CROUCHWALL_FRONT128  26
+text  OBJECT_TEXTURE_DC_PC_CROUCHWALL_LOW64  23
+text  OBJECT_TEXTURE_DC_PC_CROUCHWALL_PILLAR256  27
+text  OBJECT_TEXTURE_DC_PC_EYEBALL128  17
+text  OBJECT_TEXTURE_DC_PC_EYEBALLLIGHT64  21
+text  OBJECT_TEXTURE_DC_PC_EYEBALLRID128  20
+text  OBJECT_TEXTURE_DC_PC_HATAA256  15
+text  OBJECT_TEXTURE_DC_PC_HATAB256  15
+text  OBJECT_TEXTURE_DC_PC_HATAC256  15
+text  OBJECT_TEXTURE_DC_PC_SHADOW64  15
+text  OBJECT_TEXTURE_DC_PC_TORCH_BURNER16  21
+text  OBJECT_TEXTURE_DZ_GHOSTCEILINGDOOR  20
+text  OBJECT_TEXTURE_DZ_KANKYOU128  14
+text  OBJECT_TEXTURE_DZ_PC_CHAIN8  13
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_BASEIN128  24
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_BASENEON32  25
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_BASENEON64  25
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_BASEOUT128  25
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_DOOR128  22
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_KANKYOU64  24
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_NEON64  21
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_NEONBLUE32  25
+text  OBJECT_TEXTURE_DZ_PC_DOORKEY_NEONGREEN32  26
+text  OBJECT_TEXTURE_DZ_PC_HASIRA128  16
+text  OBJECT_TEXTURE_DZ_PC_IRONBAR_DISH128  22
+text  OBJECT_TEXTURE_DZ_PC_MARUKAGE64  17
+text  OBJECT_TEXTURE_DZ_PC_PLANT_ALPHA128  21
+text  OBJECT_TEXTURE_DZ_PC_POT_WALL128  18
+text  OBJECT_TEXTURE_DZ_PC_PYRAMIDEYE64  19
+text  OBJECT_TEXTURE_DZ_PC_SHIP128  14
+text  OBJECT_TEXTURE_DZ_PC_SHIPRUST64  17
+text  OBJECT_TEXTURE_DZ_PC_SKIN64  13
+text  OBJECT_TEXTURE_DZ_PC_SNAKEBASE64  18
+text  OBJECT_TEXTURE_DZ_PC_SNAKE_FIREPOT256  23
+text  OBJECT_TEXTURE_DZ_PC_SPIDER128  16
+text  OBJECT_TEXTURE_DZ_SANDGLASS_BODY128  21
+text  OBJECT_TEXTURE_DZ_SANDGLASS_BUTTAN128  23
+text  OBJECT_TEXTURE_DZ_SANDGLASS_EDGE32  20
+text  OBJECT_TEXTURE_DZ_SANDGLASS_SAND64  20
+text  OBJECT_TEXTURE_KD_DC_HASIRA1  14
+text  OBJECT_TEXTURE_KD_PC_BAKU1  12
+text  OBJECT_TEXTURE_KD_PC_EGGENTOTU2  17
+text  OBJECT_TEXTURE_KD_PC_NEON1  12
+text  OBJECT_TEXTURE_DZ_PC_HI_RED01  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED02  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED03  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED04  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED05  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED06  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED07  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED08  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED09  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED10  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED11  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED12  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED13  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED14  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED15  15
+text  OBJECT_TEXTURE_DZ_PC_HI_RED16  15
+text  OBJECT_TEXTURE_SIKAKE_18_128E  15
+text  OBJECT_TEXTURE_SIKAKE_20_128E  15
+text  OBJECT_TEXTURE_SIKAKE_46_128E  15
+text  OBJECT_TEXTURE_SIKAKE_47_128E  15
+text  OBJECT_TEXTURE_EFFTEX_COMMON  14
+text  OBJECT_TEXTURE_OBJTEX_COMMON  14
+text  OBJECT_TEXTURE_OBJTEX_STG28  13
+text  OBJECT_TEXTURE_STG28_FIRE_RED  15
+text  OBJECT_TEXTURE_EGGCONTTEX  11
+
+pointer  stage_archive_names  0x00000000  OBJECT_TEXTURE_DC_PC_CROUCHWALL128
+pointer  stage_archive_names  0x0000000c  OBJECT_TEXTURE_DC_PC_CROUCHWALL64
+pointer  stage_archive_names  0x00000018  OBJECT_TEXTURE_DC_PC_CROUCHWALL_FRONT128
+pointer  stage_archive_names  0x00000024  OBJECT_TEXTURE_DC_PC_CROUCHWALL_LOW64
+pointer  stage_archive_names  0x00000030  OBJECT_TEXTURE_DC_PC_CROUCHWALL_PILLAR256
+pointer  stage_archive_names  0x0000003c  OBJECT_TEXTURE_DC_PC_EYEBALL128
+pointer  stage_archive_names  0x00000048  OBJECT_TEXTURE_DC_PC_EYEBALLLIGHT64
+pointer  stage_archive_names  0x00000054  OBJECT_TEXTURE_DC_PC_EYEBALLRID128
+pointer  stage_archive_names  0x00000060  OBJECT_TEXTURE_DC_PC_HATAA256
+pointer  stage_archive_names  0x0000006c  OBJECT_TEXTURE_DC_PC_HATAB256
+pointer  stage_archive_names  0x00000078  OBJECT_TEXTURE_DC_PC_HATAC256
+pointer  stage_archive_names  0x00000084  OBJECT_TEXTURE_DC_PC_SHADOW64
+pointer  stage_archive_names  0x00000090  OBJECT_TEXTURE_DC_PC_TORCH_BURNER16
+pointer  stage_archive_names  0x0000009c  OBJECT_TEXTURE_DZ_GHOSTCEILINGDOOR
+pointer  stage_archive_names  0x000000a8  OBJECT_TEXTURE_DZ_KANKYOU128
+pointer  stage_archive_names  0x000000b4  OBJECT_TEXTURE_DZ_PC_CHAIN8
+pointer  stage_archive_names  0x000000c0  OBJECT_TEXTURE_DZ_PC_DOORKEY_BASEIN128
+pointer  stage_archive_names  0x000000cc  OBJECT_TEXTURE_DZ_PC_DOORKEY_BASENEON32
+pointer  stage_archive_names  0x000000d8  OBJECT_TEXTURE_DZ_PC_DOORKEY_BASENEON64
+pointer  stage_archive_names  0x000000e4  OBJECT_TEXTURE_DZ_PC_DOORKEY_BASEOUT128
+pointer  stage_archive_names  0x000000f0  OBJECT_TEXTURE_DZ_PC_DOORKEY_DOOR128
+pointer  stage_archive_names  0x000000fc  OBJECT_TEXTURE_DZ_PC_DOORKEY_KANKYOU64
+pointer  stage_archive_names  0x00000108  OBJECT_TEXTURE_DZ_PC_DOORKEY_NEON64
+pointer  stage_archive_names  0x00000114  OBJECT_TEXTURE_DZ_PC_DOORKEY_NEONBLUE32
+pointer  stage_archive_names  0x00000120  OBJECT_TEXTURE_DZ_PC_DOORKEY_NEONGREEN32
+pointer  stage_archive_names  0x0000012c  OBJECT_TEXTURE_DZ_PC_HASIRA128
+pointer  stage_archive_names  0x00000138  OBJECT_TEXTURE_DZ_PC_IRONBAR_DISH128
+pointer  stage_archive_names  0x00000144  OBJECT_TEXTURE_DZ_PC_MARUKAGE64
+pointer  stage_archive_names  0x00000150  OBJECT_TEXTURE_DZ_PC_PLANT_ALPHA128
+pointer  stage_archive_names  0x0000015c  OBJECT_TEXTURE_DZ_PC_POT_WALL128
+pointer  stage_archive_names  0x00000168  OBJECT_TEXTURE_DZ_PC_PYRAMIDEYE64
+pointer  stage_archive_names  0x00000174  OBJECT_TEXTURE_DZ_PC_SHIP128
+pointer  stage_archive_names  0x00000180  OBJECT_TEXTURE_DZ_PC_SHIPRUST64
+pointer  stage_archive_names  0x0000018c  OBJECT_TEXTURE_DZ_PC_SKIN64
+pointer  stage_archive_names  0x00000198  OBJECT_TEXTURE_DZ_PC_SNAKEBASE64
+pointer  stage_archive_names  0x000001a4  OBJECT_TEXTURE_DZ_PC_SNAKE_FIREPOT256
+pointer  stage_archive_names  0x000001b0  OBJECT_TEXTURE_DZ_PC_SPIDER128
+pointer  stage_archive_names  0x000001bc  OBJECT_TEXTURE_DZ_SANDGLASS_BODY128
+pointer  stage_archive_names  0x000001c8  OBJECT_TEXTURE_DZ_SANDGLASS_BUTTAN128
+pointer  stage_archive_names  0x000001d4  OBJECT_TEXTURE_DZ_SANDGLASS_EDGE32
+pointer  stage_archive_names  0x000001e0  OBJECT_TEXTURE_DZ_SANDGLASS_SAND64
+pointer  stage_archive_names  0x000001ec  OBJECT_TEXTURE_KD_DC_HASIRA1
+pointer  stage_archive_names  0x000001f8  OBJECT_TEXTURE_KD_PC_BAKU1
+pointer  stage_archive_names  0x00000204  OBJECT_TEXTURE_KD_PC_EGGENTOTU2
+pointer  stage_archive_names  0x00000210  OBJECT_TEXTURE_KD_PC_NEON1
+pointer  stage_archive_names  0x0000021c  OBJTEX_COMMON_SIKAKE_18_128
+pointer  stage_archive_names  0x00000228  OBJTEX_COMMON_SIKAKE_20_128
+pointer  stage_archive_names  0x00000234  OBJTEX_COMMON_SIKAKE_46_128
+pointer  stage_archive_names  0x00000240  OBJTEX_COMMON_SIKAKE_47_128
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  pyramid_cave_fire_texlist_names  0x00000000  OBJECT_TEXTURE_DZ_PC_HI_RED01
+pointer  pyramid_cave_fire_texlist_names  0x0000000c  OBJECT_TEXTURE_DZ_PC_HI_RED02
+pointer  pyramid_cave_fire_texlist_names  0x00000018  OBJECT_TEXTURE_DZ_PC_HI_RED03
+pointer  pyramid_cave_fire_texlist_names  0x00000024  OBJECT_TEXTURE_DZ_PC_HI_RED04
+pointer  pyramid_cave_fire_texlist_names  0x00000030  OBJECT_TEXTURE_DZ_PC_HI_RED05
+pointer  pyramid_cave_fire_texlist_names  0x0000003c  OBJECT_TEXTURE_DZ_PC_HI_RED06
+pointer  pyramid_cave_fire_texlist_names  0x00000048  OBJECT_TEXTURE_DZ_PC_HI_RED07
+pointer  pyramid_cave_fire_texlist_names  0x00000054  OBJECT_TEXTURE_DZ_PC_HI_RED08
+pointer  pyramid_cave_fire_texlist_names  0x00000060  OBJECT_TEXTURE_DZ_PC_HI_RED09
+pointer  pyramid_cave_fire_texlist_names  0x0000006c  OBJECT_TEXTURE_DZ_PC_HI_RED10
+pointer  pyramid_cave_fire_texlist_names  0x00000078  OBJECT_TEXTURE_DZ_PC_HI_RED11
+pointer  pyramid_cave_fire_texlist_names  0x00000084  OBJECT_TEXTURE_DZ_PC_HI_RED12
+pointer  pyramid_cave_fire_texlist_names  0x00000090  OBJECT_TEXTURE_DZ_PC_HI_RED13
+pointer  pyramid_cave_fire_texlist_names  0x0000009c  OBJECT_TEXTURE_DZ_PC_HI_RED14
+pointer  pyramid_cave_fire_texlist_names  0x000000a8  OBJECT_TEXTURE_DZ_PC_HI_RED15
+pointer  pyramid_cave_fire_texlist_names  0x000000b4  OBJECT_TEXTURE_DZ_PC_HI_RED16
+pointer  pyramid_cave_fire_texlist  0x00000000  pyramid_cave_fire_texlist_names
+pointer  eggman_container_textures_names  0x00000000  OBJECT_TEXTURE_SIKAKE_18_128E
+pointer  eggman_container_textures_names  0x0000000c  OBJECT_TEXTURE_SIKAKE_20_128E
+pointer  eggman_container_textures_names  0x00000018  OBJECT_TEXTURE_SIKAKE_46_128E
+pointer  eggman_container_textures_names  0x00000024  OBJECT_TEXTURE_SIKAKE_47_128E
+pointer  eggman_container_textures  0x00000000  eggman_container_textures_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  iron_ball_texlist
+pointer  stage_textures  0x0000001c  big_jump_anim_texlist
+pointer  stage_textures  0x00000020  big_jump_texlist
+pointer  stage_textures  0x00000024  dirt_texlist
+pointer  stage_textures  0x00000028  ring_shadow_texlist
+pointer  stage_textures  0x0000002c  effect_texlist
+pointer  stage_textures  0x00000030  item_balloon_texlist
+pointer  stage_textures  0x00000034  ring_sparkle_texlist
+pointer  stage_textures  0x00000038  burst_texlist
+pointer  stage_textures  0x0000003c  lens_flare_texlist
+pointer  pyramid_cave_texture_groups  0x00000000  stage_textures
+pointer  pyramid_cave_texture_groups  0x00000004  goal_ring_texlists
+pointer  pyramid_cave_texture_groups  0x00000008  emerald_texlists
+pointer  pyramid_cave_texture_groups  0x0000000c  item_box_texlists
+pointer  pyramid_cave_texture_groups  0x00000010  item_box_air_texlists
+pointer  pyramid_cave_texture_groups  0x00000014  weight_texlists
+pointer  pyramid_cave_texture_groups  0x00000018  iron_ball_texlists
+pointer  pyramid_cave_texture_groups  0x0000001c  triple_spring_texlists
+pointer  pyramid_cave_texture_groups  0x00000020  dynamite_texlists
+pointer  pyramid_cave_texture_groups  0x00000024  reel_texlists
+pointer  pyramid_cave_texture_groups  0x00000028  chao_pipe_texlists
+pointer  pyramid_cave_texture_groups  0x0000002c  cage_texlists
+pointer  pyramid_cave_texture_groups  0x00000030  wood_box_e_texlists
+pointer  pyramid_cave_texture_groups  0x00000034  iron_box_e_texlists
+pointer  pyramid_cave_texture_groups  0x00000038  upgrade_texlists
+pointer  pyramid_cave_texture_groups  0x0000003c  missile_texlists
+pointer  pyramid_cave_texture_groups  0x00000040  skull_texlists
+pointer  pyramid_cave_texture_groups  0x00000044  rocket_texlists
+pointer  pyramid_cave_texture_groups  0x00000048  search_box_texlists
+pointer  pyramid_cave_texture_groups  0x0000004c  hint_box_texlists
+pointer  pyramid_cave_texture_groups  0x00000050  knudai_texlists
+pointer  pyramid_cave_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  pyramid_cave_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  pyramid_cave_texture_groups  0x0000005c  knudai_door_texlists
+pointer  pyramid_cave_texture_groups  0x00000060  chao_box_texlists
+pointer  pyramid_cave_texture_groups  0x00000064  chao_key_texlists
+pointer  pyramid_cave_texture_groups  0x00000068  object_effect_texlists
+pointer  pyramid_cave_texture_groups  0x0000006c  messenger_texlists
+pointer  pyramid_cave_texture_groups  0x00000070  ring_effect_texlists
+pointer  pyramid_cave_texture_groups  0x00000074  switch_ring_texlists
+pointer  pyramid_cave_texture_groups  0x00000078  solid_box_e_texlists
+pointer  pyramid_cave_texture_groups  0x0000007c  cave_iron_bar_texlists
+pointer  pyramid_cave_texture_groups  0x00000080  cave_wall_texlists
+pointer  pyramid_cave_texture_groups  0x00000084  cave_key_texlists
+pointer  pyramid_cave_texture_groups  0x00000088  cave_keyhole_plate_texlists
+pointer  pyramid_cave_texture_groups  0x0000008c  cave_keyhole_base_texlists
+pointer  pyramid_cave_texture_groups  0x00000090  cave_keyhole_lamp_texlists
+pointer  pyramid_cave_texture_groups  0x00000094  cave_key_door_panel_texlists
+pointer  pyramid_cave_texture_groups  0x00000098  cave_key_door_frame_texlists
+pointer  pyramid_cave_texture_groups  0x0000009c  cave_sandglass_texlists
+pointer  pyramid_cave_texture_groups  0x000000a0  cave_sandglass_door_texlists
+pointer  pyramid_cave_texture_groups  0x000000a4  cave_chimney_texlists
+pointer  pyramid_cave_texture_groups  0x000000a8  cave_chimney_blast_texlists
+pointer  pyramid_cave_texture_groups  0x000000ac  cave_neon_texlists
+pointer  pyramid_cave_texture_groups  0x000000b0  cave_firepot_texlists
+pointer  pyramid_cave_texture_groups  0x000000b4  cave_torch_cup_texlists
+pointer  pyramid_cave_texture_groups  0x000000b8  cave_snake_head_texlists
+pointer  pyramid_cave_texture_groups  0x000000bc  cave_snake_rail_texlists
+pointer  pyramid_cave_texture_groups  0x000000c0  cave_block_texlists
+pointer  pyramid_cave_texture_groups  0x000000c4  cave_awning_texlists
+pointer  pyramid_cave_texture_groups  0x000000c8  cave_eye_texlists
+pointer  pyramid_cave_texture_groups  0x000000cc  cave_windmill_texlists
+pointer  pyramid_cave_texture_groups  0x000000d0  cave_weed_texlists
+pointer  pyramid_cave_texture_groups  0x000000d4  cave_snake_dish_texlists
+pointer  pyramid_cave_texture_groups  0x000000d8  cave_snake_dish2_texlists
+pointer  pyramid_cave_texture_groups  0x000000dc  cave_pyramid_texlists
+pointer  pyramid_cave_texture_groups  0x000000e0  cave_snake_statue_texlists
+pointer  pyramid_cave_texture_groups  0x000000e4  cave_ship_texlists
+pointer  pyramid_cave_texture_groups  0x000000e8  cave_hang_ring_texlists
+pointer  pyramid_cave_texture_groups  0x000000ec  cave_spider_web_texlists
+pointer  pyramid_cave_texture_groups  0x000000f0  cave_board_texlists
+pointer  pyramid_cave_pvms  0x00000000  OBJECT_TEXTURE_EFFTEX_COMMON
+pointer  pyramid_cave_pvms  0x00000004  efftex_common_texlist
+pointer  pyramid_cave_pvms  0x00000008  OBJECT_TEXTURE_OBJTEX_COMMON
+pointer  pyramid_cave_pvms  0x0000000c  objtex_common_texlist
+pointer  pyramid_cave_pvms  0x00000010  OBJECT_TEXTURE_OBJTEX_STG28
+pointer  pyramid_cave_pvms  0x00000014  stage_archive
+pointer  pyramid_cave_pvms  0x00000018  OBJECT_TEXTURE_STG28_FIRE_RED
+pointer  pyramid_cave_pvms  0x0000001c  pyramid_cave_fire_texlist
+pointer  pyramid_cave_pvms  0x00000020  OBJECT_TEXTURE_EGGCONTTEX
+pointer  pyramid_cave_pvms  0x00000024  eggman_container_textures
+pointer  pyramid_cave_pvms  0x0000002c  pyramid_cave_land_texlist

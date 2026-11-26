@@ -1,0 +1,209 @@
+text  CITY_TEXTURE_MIU128_CE002  13
+text  CITY_TEXTURE_MIU64_CE042  12
+text  CITY_TEXTURE_MIU64_CE046  12
+text  CITY_TEXTURE_SCITY_KAGE32  13
+text  CITY_TEXTURE_MIU64_CE047  12
+text  CITY_TEXTURE_SCITY128_22  12
+text  CITY_TEXTURE_SCITY64_34  11
+text  CITY_TEXTURE_MIU64_CE002  12
+text  CITY_TEXTURE_MIU64_CE036  12
+text  CITY_TEXTURE_MIU64_CE050  12
+text  CITY_TEXTURE_MIU128_CE006  13
+text  CITY_TEXTURE_MIU128_CE007  13
+text  CITY_TEXTURE_MIU128_CE001  13
+text  CITY_TEXTURE_MIU128_CE012  13
+text  CITY_TEXTURE_NIGHTS1  8
+text  CITY_TEXTURE_JUSTICE  8
+text  CITY_TEXTURE_MIU64_CE019  12
+text  CITY_TEXTURE_MIU64_CE044  12
+text  CITY_TEXTURE_MIU64_CE045  12
+text  CITY_TEXTURE_CE64_ITA002  12
+text  CITY_TEXTURE_MIU32_CE008  12
+text  CITY_TEXTURE_MIU64_CE038  12
+text  CITY_TEXTURE_MIU32_CE014  12
+text  CITY_TEXTURE_MIU64_CE039  12
+text  CITY_TEXTURE_MIU64_CE009  12
+text  CITY_TEXTURE_MIU64_CE040  12
+text  CITY_TEXTURE_MIU64_CE043  12
+text  CITY_TEXTURE_FLOWER  7
+text  CITY_TEXTURE_FLOWER2  8
+pointer  road_object_0_texnames  0x00000000  CITY_TEXTURE_MIU128_CE002
+pointer  road_object_0_texnames  0x0000000c  CITY_TEXTURE_MIU64_CE042
+pointer  road_object_0_texnames  0x00000018  CITY_TEXTURE_MIU64_CE046
+pointer  road_object_0_texnames  0x00000024  CITY_TEXTURE_SCITY_KAGE32
+pointer  road_object_0_texlist  0x00000000  road_object_0_texnames
+pointer  road_object_0_model  0x00000000  road_object_0_vertices
+pointer  road_object_0_model  0x00000004  road_object_0_polygons
+pointer  road_object_0_object  0x00000004  road_object_0_model
+pointer  road_object_1_texnames  0x00000000  CITY_TEXTURE_MIU64_CE047
+pointer  road_object_1_texnames  0x0000000c  CITY_TEXTURE_SCITY128_22
+pointer  road_object_1_texnames  0x00000018  CITY_TEXTURE_SCITY64_34
+pointer  road_object_1_texlist  0x00000000  road_object_1_texnames
+pointer  road_object_1_model  0x00000000  road_object_1_vertices
+pointer  road_object_1_model  0x00000004  road_object_1_polygons
+pointer  road_object_1_object  0x00000004  road_object_1_model
+pointer  road_object_2_3_texnames  0x00000000  CITY_TEXTURE_MIU64_CE002
+pointer  road_object_2_3_texnames  0x0000000c  CITY_TEXTURE_MIU64_CE036
+pointer  road_object_2_3_texnames  0x00000018  CITY_TEXTURE_MIU64_CE042
+pointer  road_object_2_3_texnames  0x00000024  CITY_TEXTURE_SCITY_KAGE32
+pointer  road_object_2_3_texlist  0x00000000  road_object_2_3_texnames
+pointer  road_object_2_model  0x00000000  road_object_2_3_vertices
+pointer  road_object_2_model  0x00000004  road_object_2_polygons
+pointer  road_object_3_model  0x00000000  road_object_2_3_vertices
+pointer  road_object_3_model  0x00000004  road_object_3_polygons
+pointer  road_object_2_object  0x00000004  road_object_2_model
+pointer  road_object_3_object  0x00000004  road_object_3_model
+pointer  road_object_4_texnames  0x00000000  CITY_TEXTURE_MIU64_CE050
+pointer  road_object_4_texlist  0x00000000  road_object_4_texnames
+pointer  road_object_4_model  0x00000000  road_object_4_vertices
+pointer  road_object_4_model  0x00000004  road_object_4_polygons
+pointer  road_object_4_object  0x00000004  road_object_4_model
+pointer  road_object_5_texnames  0x00000000  CITY_TEXTURE_MIU128_CE006
+pointer  road_object_5_texlist  0x00000000  road_object_5_texnames
+pointer  road_object_5_model  0x00000000  road_object_5_vertices
+pointer  road_object_5_model  0x00000004  road_object_5_polygons
+pointer  road_object_5_object  0x00000004  road_object_5_model
+pointer  road_object_6_texnames  0x00000000  CITY_TEXTURE_MIU128_CE007
+pointer  road_object_6_texnames  0x0000000c  CITY_TEXTURE_SCITY_KAGE32
+pointer  road_object_6_texlist  0x00000000  road_object_6_texnames
+pointer  road_object_6_model  0x00000000  road_object_6_vertices
+pointer  road_object_6_model  0x00000004  road_object_6_polygons
+pointer  road_object_6_object  0x00000004  road_object_6_model
+pointer  road_object_7_texnames  0x00000000  CITY_TEXTURE_MIU128_CE001
+pointer  road_object_7_texnames  0x0000000c  CITY_TEXTURE_MIU128_CE012
+pointer  road_object_7_texlist  0x00000000  road_object_7_texnames
+pointer  road_object_7_model  0x00000000  road_object_7_vertices
+pointer  road_object_7_model  0x00000004  road_object_7_polygons
+pointer  road_object_7_object  0x00000004  road_object_7_model
+pointer  road_object_8_texnames  0x00000000  CITY_TEXTURE_MIU128_CE001
+pointer  road_object_8_texnames  0x0000000c  CITY_TEXTURE_MIU128_CE012
+pointer  road_object_8_texlist  0x00000000  road_object_8_texnames
+pointer  road_object_8_model  0x00000000  road_object_8_vertices
+pointer  road_object_8_model  0x00000004  road_object_8_polygons
+pointer  road_object_8_object  0x00000004  road_object_8_model
+pointer  road_object_9_texnames  0x00000000  CITY_TEXTURE_MIU128_CE001
+pointer  road_object_9_texnames  0x0000000c  CITY_TEXTURE_MIU128_CE012
+pointer  road_object_9_texlist  0x00000000  road_object_9_texnames
+pointer  road_object_9_model  0x00000000  road_object_9_vertices
+pointer  road_object_9_model  0x00000004  road_object_9_polygons
+pointer  road_object_9_object  0x00000004  road_object_9_model
+pointer  road_object_10_texnames  0x00000000  CITY_TEXTURE_NIGHTS1
+pointer  road_object_10_texlist  0x00000000  road_object_10_texnames
+pointer  road_object_10_model  0x00000000  road_object_10_vertices
+pointer  road_object_10_model  0x00000004  road_object_10_polygons
+pointer  road_object_10_object  0x00000004  road_object_10_model
+pointer  road_object_11_texnames  0x00000000  CITY_TEXTURE_JUSTICE
+pointer  road_object_11_texlist  0x00000000  road_object_11_texnames
+pointer  road_object_11_model  0x00000000  road_object_11_vertices
+pointer  road_object_11_model  0x00000004  road_object_11_polygons
+pointer  road_object_11_object  0x00000004  road_object_11_model
+pointer  road_object_14_texnames  0x00000000  CITY_TEXTURE_NIGHTS1
+pointer  road_object_14_texlist  0x00000000  road_object_14_texnames
+pointer  road_object_14_model  0x00000000  road_object_14_vertices
+pointer  road_object_14_model  0x00000004  road_object_14_polygons
+pointer  road_object_14_object  0x00000004  road_object_14_model
+pointer  road_object_15_texnames  0x00000000  CITY_TEXTURE_JUSTICE
+pointer  road_object_15_texlist  0x00000000  road_object_15_texnames
+pointer  road_object_15_model  0x00000000  road_object_15_vertices
+pointer  road_object_15_model  0x00000004  road_object_15_polygons
+pointer  road_object_15_object  0x00000004  road_object_15_model
+pointer  road_object_12_texnames  0x00000000  CITY_TEXTURE_NIGHTS1
+pointer  road_object_12_texlist  0x00000000  road_object_12_texnames
+pointer  road_object_12_model  0x00000000  road_object_12_vertices
+pointer  road_object_12_model  0x00000004  road_object_12_polygons
+pointer  road_object_12_object  0x00000004  road_object_12_model
+pointer  road_object_13_texnames  0x00000000  CITY_TEXTURE_JUSTICE
+pointer  road_object_13_texlist  0x00000000  road_object_13_texnames
+pointer  road_object_13_model  0x00000000  road_object_13_vertices
+pointer  road_object_13_model  0x00000004  road_object_13_polygons
+pointer  road_object_13_object  0x00000004  road_object_13_model
+pointer  sign_0_texnames  0x00000000  CITY_TEXTURE_MIU128_CE001
+pointer  sign_0_texlist  0x00000000  sign_0_texnames
+pointer  sign_0_model  0x00000000  sign_0_vertices
+pointer  sign_0_model  0x00000004  sign_0_polygons
+pointer  sign_0_object  0x00000004  sign_0_model
+pointer  sign_1_texnames  0x00000000  CITY_TEXTURE_MIU128_CE001
+pointer  sign_1_texlist  0x00000000  sign_1_texnames
+pointer  sign_1_model  0x00000000  sign_1_vertices
+pointer  sign_1_model  0x00000004  sign_1_polygons
+pointer  sign_1_object  0x00000004  sign_1_model
+pointer  sign_2_texnames  0x00000000  CITY_TEXTURE_MIU128_CE001
+pointer  sign_2_texlist  0x00000000  sign_2_texnames
+pointer  sign_2_model  0x00000000  sign_2_vertices
+pointer  sign_2_model  0x00000004  sign_2_polygons
+pointer  sign_2_object  0x00000004  sign_2_model
+pointer  sign_3_texnames  0x00000000  CITY_TEXTURE_MIU64_CE019
+pointer  sign_3_texnames  0x0000000c  CITY_TEXTURE_MIU64_CE044
+pointer  sign_3_texnames  0x00000018  CITY_TEXTURE_SCITY_KAGE32
+pointer  sign_3_texlist  0x00000000  sign_3_texnames
+pointer  sign_3_model  0x00000000  sign_3_vertices
+pointer  sign_3_model  0x00000004  sign_3_polygons
+pointer  sign_3_object  0x00000004  sign_3_model
+pointer  sign_4_texnames  0x00000000  CITY_TEXTURE_MIU64_CE019
+pointer  sign_4_texnames  0x0000000c  CITY_TEXTURE_MIU64_CE044
+pointer  sign_4_texnames  0x00000018  CITY_TEXTURE_MIU64_CE045
+pointer  sign_4_texnames  0x00000024  CITY_TEXTURE_SCITY_KAGE32
+pointer  sign_4_texlist  0x00000000  sign_4_texnames
+pointer  sign_4_model  0x00000000  sign_4_vertices
+pointer  sign_4_model  0x00000004  sign_4_polygons
+pointer  sign_4_object  0x00000004  sign_4_model
+pointer  sign_5_texnames  0x00000000  CITY_TEXTURE_CE64_ITA002
+pointer  sign_5_texnames  0x0000000c  CITY_TEXTURE_MIU32_CE008
+pointer  sign_5_texnames  0x00000018  CITY_TEXTURE_MIU64_CE038
+pointer  sign_5_texnames  0x00000024  CITY_TEXTURE_SCITY_KAGE32
+pointer  sign_5_texlist  0x00000000  sign_5_texnames
+pointer  sign_5_model  0x00000000  sign_5_vertices
+pointer  sign_5_model  0x00000004  sign_5_polygons
+pointer  sign_5_object  0x00000004  sign_5_model
+pointer  sign_6_texnames  0x00000000  CITY_TEXTURE_CE64_ITA002
+pointer  sign_6_texnames  0x0000000c  CITY_TEXTURE_MIU32_CE014
+pointer  sign_6_texnames  0x00000018  CITY_TEXTURE_MIU64_CE039
+pointer  sign_6_texnames  0x00000024  CITY_TEXTURE_SCITY_KAGE32
+pointer  sign_6_texlist  0x00000000  sign_6_texnames
+pointer  sign_6_model  0x00000000  sign_6_vertices
+pointer  sign_6_model  0x00000004  sign_6_polygons
+pointer  sign_6_object  0x00000004  sign_6_model
+pointer  sign_7_texnames  0x00000000  CITY_TEXTURE_CE64_ITA002
+pointer  sign_7_texnames  0x0000000c  CITY_TEXTURE_MIU64_CE009
+pointer  sign_7_texnames  0x00000018  CITY_TEXTURE_MIU64_CE040
+pointer  sign_7_texnames  0x00000024  CITY_TEXTURE_MIU64_CE042
+pointer  sign_7_texnames  0x00000030  CITY_TEXTURE_MIU64_CE043
+pointer  sign_7_texnames  0x0000003c  CITY_TEXTURE_SCITY_KAGE32
+pointer  sign_7_texlist  0x00000000  sign_7_texnames
+pointer  sign_7_model  0x00000000  sign_7_vertices
+pointer  sign_7_model  0x00000004  sign_7_polygons
+pointer  sign_7_object  0x00000004  sign_7_model
+pointer  flower_texnames  0x00000000  CITY_TEXTURE_FLOWER
+pointer  flower_texlist  0x00000000  flower_texnames
+pointer  flower_model  0x00000000  flower_vertices
+pointer  flower_model  0x00000004  flower_polygons
+pointer  flower_object  0x00000004  flower_model
+pointer  flower_2_texnames  0x00000000  CITY_TEXTURE_FLOWER2
+pointer  flower_2_texlist  0x00000000  flower_2_texnames
+pointer  flower_2_model  0x00000000  flower_2_vertices
+pointer  flower_2_model  0x00000004  flower_2_polygons
+pointer  flower_2_object  0x00000004  flower_2_model
+pointer  road_objects_texlists  0x00000000  road_object_0_texlist
+pointer  road_objects_texlists  0x00000004  road_object_1_texlist
+pointer  road_objects_texlists  0x00000008  road_object_2_3_texlist
+pointer  road_objects_texlists  0x0000000c  road_object_2_3_texlist
+pointer  road_objects_texlists  0x00000010  road_object_4_texlist
+pointer  road_objects_texlists  0x00000014  road_object_5_texlist
+pointer  road_objects_texlists  0x00000018  road_object_6_texlist
+pointer  road_objects_texlists  0x0000001c  road_object_7_texlist
+pointer  road_objects_texlists  0x00000020  road_object_8_texlist
+pointer  road_objects_texlists  0x00000024  road_object_9_texlist
+pointer  road_objects_texlists  0x00000028  road_object_10_texlist
+pointer  road_objects_texlists  0x0000002c  road_object_11_texlist
+pointer  road_objects_texlists  0x00000030  road_object_12_texlist
+pointer  road_objects_texlists  0x00000034  road_object_13_texlist
+pointer  road_objects_texlists  0x00000038  road_object_14_texlist
+pointer  road_objects_texlists  0x0000003c  road_object_15_texlist
+pointer  road_objects_texlists  0x00000040  sign_0_texlist
+pointer  road_objects_texlists  0x00000044  sign_1_texlist
+pointer  road_objects_texlists  0x00000048  sign_2_texlist
+pointer  road_objects_texlists  0x0000004c  sign_3_texlist
+pointer  road_objects_texlists  0x00000050  sign_4_texlist
+pointer  road_objects_texlists  0x00000054  sign_5_texlist
+pointer  road_objects_texlists  0x00000058  sign_6_texlist
+pointer  road_objects_texlists  0x0000005c  sign_7_texlist

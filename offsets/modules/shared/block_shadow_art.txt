@@ -1,0 +1,4 @@
+datum  shadow_polygons  D  0x00000000  50
+datum  shadow_vertices  D  0x00000034  76
+datum  core_block_shadow  D  0x00000080  24
+datum  shadow_object  D  0x00000098  52

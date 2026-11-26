@@ -1,0 +1,19 @@
+; the Maple bus driver's semaphore, a byte in the code section, and the word
+; that points the driver at it
+
+        .EXPORT     __mp_SemaphoreAddress
+        .EXPORT     __mp_Semaphore
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; char *_mp_SemaphoreAddress
+; _mp_Semaphore's address, through which maple_driver.h says to take and free
+; it
+__mp_SemaphoreAddress:
+        .DATA.L     __mp_Semaphore
+
+; char _mp_Semaphore
+; the semaphore, 0 while it is free
+__mp_Semaphore:
+        .DATA.B     0
+        .END

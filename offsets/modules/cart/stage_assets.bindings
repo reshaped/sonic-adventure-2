@@ -1,0 +1,18 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+
+pointer  object_effects  0x00000000  ring_texlist
+pointer  object_effects  0x00000004  item_balloon_texlist
+pointer  object_effects  0x00000008  dust_texlist
+pointer  object_effects  0x0000000c  ring_sparkle_texlist
+pointer  object_effects  0x00000010  rocket_thrust_texlist
+pointer  object_effects  0x00000014  splash_texlist
+pointer  object_effects  0x00000018  effect_texlist
+pointer  cart_texture_groups  0x00000000  object_effects
+pointer  cart_pvms  0x00000000  ARCHIVE_EFFTEX_COMMON
+pointer  cart_pvms  0x00000004  efftex_common_texlist
+pointer  cart_pvms  0x00000008  ARCHIVE_OBJTEX_COMMON
+pointer  cart_pvms  0x0000000c  objtex_common_texlist

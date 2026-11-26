@@ -1,0 +1,4 @@
+# The original overlay header points to an export in its first code input.
+DHEAD P inputs 3dc9445e77096a99edbb1e24d3f5a9d06c8b42a322a0843417676ecf4b8ddfed _title_init 0x8c50000c
+# Complete C inputs and a pointer to the first private D input.
+C D inputs ee38ac650357c0e9ab7a1d920b70762688ae58e159aca7bf6d8c727243030984 D 0x8c502fac

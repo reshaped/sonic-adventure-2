@@ -1,0 +1,24 @@
+text  DECK_CONTAINER_B_TEXTURE_MIU128_MH001  13
+text  DECK_CONTAINER_B_TEXTURE_MIU64_MH005  12
+text  DECK_CONTAINER_B_TEXTURE_MIU64_WB004  12
+text  DECK_CONTAINER_B_TEXTURE_PR64_15  8
+text  DECK_CONTAINER_B_TEXTURE_PR64_3  7
+text  DECK_CONTAINER_B_TEXTURE_PR_KAGE32  10
+
+pointer  deck_container_b_textures  0x00000000  DECK_CONTAINER_B_TEXTURE_MIU128_MH001
+pointer  deck_container_b_textures  0x0000000c  DECK_CONTAINER_B_TEXTURE_MIU64_MH005
+pointer  deck_container_b_textures  0x00000018  DECK_CONTAINER_B_TEXTURE_MIU64_WB004
+pointer  deck_container_b_textures  0x00000024  DECK_CONTAINER_B_TEXTURE_PR64_15
+pointer  deck_container_b_textures  0x00000030  DECK_CONTAINER_B_TEXTURE_PR64_3
+pointer  deck_container_b_textures  0x0000003c  DECK_CONTAINER_B_TEXTURE_PR_KAGE32
+pointer  deck_container_b_texlist  0x00000000  deck_container_b_textures
+pointer  deck_container_b_model  0x00000000  deck_container_b_node_vertices
+pointer  deck_container_b_model  0x00000004  deck_container_b_node_polygons
+pointer  deck_container_b_node  0x00000004  deck_container_b_model
+pointer  deck_container_b_collision_meshes  0x00000004  deck_container_b_collision_faces_0
+pointer  deck_container_b_collision_model  0x00000000  deck_container_b_collision_points
+pointer  deck_container_b_collision_model  0x00000004  deck_container_b_collision_normals
+pointer  deck_container_b_collision_model  0x0000000c  deck_container_b_collision_meshes
+pointer  deck_container_b_collision_model  0x00000010  deck_container_b_collision_material
+pointer  deck_container_empty  0x00000004  deck_container_b_collision_model
+pointer  deck_container_b_texlists  0x00000000  deck_container_b_texlist

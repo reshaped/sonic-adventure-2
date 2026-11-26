@@ -1,0 +1,181 @@
+pointer golem_head_model_collision_meshes  0x00000004  golem_head_model_collision_faces
+
+pointer golem_head_model_collision_model  0x00000000  golem_head_model_collision_points
+pointer golem_head_model_collision_model  0x00000004  golem_head_model_collision_normals
+pointer golem_head_model_collision_model  0x0000000c  golem_head_model_collision_meshes
+pointer golem_head_model_collision_model  0x00000010  golem_sensor_material
+
+pointer golem_head_model_collision  0x00000004  golem_head_model_collision_model
+
+pointer golem_sensor_head_meshes  0x00000004  golem_sensor_head_faces
+
+pointer golem_sensor_head_model  0x00000000  golem_sensor_head_points
+pointer golem_sensor_head_model  0x00000004  golem_sensor_head_normals
+pointer golem_sensor_head_model  0x0000000c  golem_sensor_head_meshes
+pointer golem_sensor_head_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_head  0x00000004  golem_sensor_head_model
+
+pointer unregistered_part_1_meshes  0x00000004  unregistered_part_1_faces
+
+pointer unregistered_part_1_model  0x00000000  unregistered_part_1_points
+pointer unregistered_part_1_model  0x00000004  unregistered_part_1_normals
+pointer unregistered_part_1_model  0x0000000c  unregistered_part_1_meshes
+pointer unregistered_part_1_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_1  0x00000004  unregistered_part_1_model
+
+pointer unregistered_part_2_meshes  0x00000004  unregistered_part_2_faces
+
+pointer unregistered_part_2_model  0x00000000  unregistered_part_2_points
+pointer unregistered_part_2_model  0x00000004  unregistered_part_2_normals
+pointer unregistered_part_2_model  0x0000000c  unregistered_part_2_meshes
+pointer unregistered_part_2_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_2  0x00000004  unregistered_part_2_model
+
+pointer unregistered_part_3_meshes  0x00000004  unregistered_part_3_faces
+
+pointer unregistered_part_3_model  0x00000000  unregistered_part_3_points
+pointer unregistered_part_3_model  0x00000004  unregistered_part_3_normals
+pointer unregistered_part_3_model  0x0000000c  unregistered_part_3_meshes
+pointer unregistered_part_3_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_3  0x00000004  unregistered_part_3_model
+
+pointer unregistered_part_4_meshes  0x00000004  unregistered_part_4_faces
+
+pointer unregistered_part_4_model  0x00000000  unregistered_part_4_points
+pointer unregistered_part_4_model  0x00000004  unregistered_part_4_normals
+pointer unregistered_part_4_model  0x0000000c  unregistered_part_4_meshes
+pointer unregistered_part_4_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_4  0x00000004  unregistered_part_4_model
+
+pointer golem_sensor_hand_b_meshes  0x00000004  golem_sensor_hand_b_faces
+
+pointer golem_sensor_hand_b_model  0x00000000  golem_sensor_hand_b_points
+pointer golem_sensor_hand_b_model  0x00000004  golem_sensor_hand_b_normals
+pointer golem_sensor_hand_b_model  0x0000000c  golem_sensor_hand_b_meshes
+pointer golem_sensor_hand_b_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_hand_b  0x00000004  golem_sensor_hand_b_model
+
+pointer golem_sensor_forearm_b_meshes  0x00000004  golem_sensor_forearm_b_faces
+
+pointer golem_sensor_forearm_b_model  0x00000000  golem_sensor_forearm_b_points
+pointer golem_sensor_forearm_b_model  0x00000004  golem_sensor_forearm_b_normals
+pointer golem_sensor_forearm_b_model  0x0000000c  golem_sensor_forearm_b_meshes
+pointer golem_sensor_forearm_b_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_forearm_b  0x00000004  golem_sensor_forearm_b_model
+
+pointer golem_sensor_upper_arm_b_meshes  0x00000004  golem_sensor_upper_arm_b_faces
+
+pointer golem_sensor_upper_arm_b_model  0x00000000  golem_sensor_upper_arm_b_points
+pointer golem_sensor_upper_arm_b_model  0x00000004  golem_sensor_upper_arm_b_normals
+pointer golem_sensor_upper_arm_b_model  0x0000000c  golem_sensor_upper_arm_b_meshes
+pointer golem_sensor_upper_arm_b_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_upper_arm_b  0x00000004  golem_sensor_upper_arm_b_model
+
+pointer unregistered_part_5_meshes  0x00000004  unregistered_part_5_faces
+
+pointer unregistered_part_5_model  0x00000000  unregistered_part_5_points
+pointer unregistered_part_5_model  0x00000004  unregistered_part_5_normals
+pointer unregistered_part_5_model  0x0000000c  unregistered_part_5_meshes
+pointer unregistered_part_5_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_5  0x00000004  unregistered_part_5_model
+
+pointer unregistered_part_6_meshes  0x00000004  unregistered_part_6_faces
+
+pointer unregistered_part_6_model  0x00000000  unregistered_part_6_points
+pointer unregistered_part_6_model  0x00000004  unregistered_part_6_normals
+pointer unregistered_part_6_model  0x0000000c  unregistered_part_6_meshes
+pointer unregistered_part_6_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_6  0x00000004  unregistered_part_6_model
+
+pointer unregistered_part_7_meshes  0x00000004  unregistered_part_7_faces
+
+pointer unregistered_part_7_model  0x00000000  unregistered_part_7_points
+pointer unregistered_part_7_model  0x00000004  unregistered_part_7_normals
+pointer unregistered_part_7_model  0x0000000c  unregistered_part_7_meshes
+pointer unregistered_part_7_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_7  0x00000004  unregistered_part_7_model
+
+pointer unregistered_part_8_meshes  0x00000004  unregistered_part_8_faces
+
+pointer unregistered_part_8_model  0x00000000  unregistered_part_8_points
+pointer unregistered_part_8_model  0x00000004  unregistered_part_8_normals
+pointer unregistered_part_8_model  0x0000000c  unregistered_part_8_meshes
+pointer unregistered_part_8_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_8  0x00000004  unregistered_part_8_model
+
+pointer golem_sensor_hand_a_meshes  0x00000004  golem_sensor_hand_a_faces
+
+pointer golem_sensor_hand_a_model  0x00000000  golem_sensor_hand_a_points
+pointer golem_sensor_hand_a_model  0x00000004  golem_sensor_hand_a_normals
+pointer golem_sensor_hand_a_model  0x0000000c  golem_sensor_hand_a_meshes
+pointer golem_sensor_hand_a_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_hand_a  0x00000004  golem_sensor_hand_a_model
+
+pointer golem_sensor_forearm_a_meshes  0x00000004  golem_sensor_forearm_a_faces
+
+pointer golem_sensor_forearm_a_model  0x00000000  golem_sensor_forearm_a_points
+pointer golem_sensor_forearm_a_model  0x00000004  golem_sensor_forearm_a_normals
+pointer golem_sensor_forearm_a_model  0x0000000c  golem_sensor_forearm_a_meshes
+pointer golem_sensor_forearm_a_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_forearm_a  0x00000004  golem_sensor_forearm_a_model
+
+pointer golem_sensor_upper_arm_a_meshes  0x00000004  golem_sensor_upper_arm_a_faces
+
+pointer golem_sensor_upper_arm_a_model  0x00000000  golem_sensor_upper_arm_a_points
+pointer golem_sensor_upper_arm_a_model  0x00000004  golem_sensor_upper_arm_a_normals
+pointer golem_sensor_upper_arm_a_model  0x0000000c  golem_sensor_upper_arm_a_meshes
+pointer golem_sensor_upper_arm_a_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_upper_arm_a  0x00000004  golem_sensor_upper_arm_a_model
+
+pointer golem_sensor_low_meshes  0x00000004  golem_sensor_low_faces
+
+pointer golem_sensor_low_model  0x00000000  golem_sensor_low_points
+pointer golem_sensor_low_model  0x00000004  golem_sensor_low_normals
+pointer golem_sensor_low_model  0x0000000c  golem_sensor_low_meshes
+pointer golem_sensor_low_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_low  0x00000004  golem_sensor_low_model
+
+
+pointer unregistered_part_10_meshes  0x00000004  unregistered_part_10_faces
+
+pointer unregistered_part_10_model  0x00000000  unregistered_part_10_points
+pointer unregistered_part_10_model  0x00000004  unregistered_part_10_normals
+pointer unregistered_part_10_model  0x0000000c  unregistered_part_10_meshes
+pointer unregistered_part_10_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_10  0x00000004  unregistered_part_10_model
+
+pointer unregistered_part_11_meshes  0x00000004  unregistered_part_11_faces
+
+pointer unregistered_part_11_model  0x00000000  unregistered_part_11_points
+pointer unregistered_part_11_model  0x00000004  unregistered_part_11_normals
+pointer unregistered_part_11_model  0x0000000c  unregistered_part_11_meshes
+pointer unregistered_part_11_model  0x00000010  golem_sensor_material
+
+pointer unregistered_part_11  0x00000004  unregistered_part_11_model
+
+pointer golem_sensor_full_meshes  0x00000004  golem_sensor_full_faces
+
+pointer golem_sensor_full_model  0x00000000  golem_sensor_full_points
+pointer golem_sensor_full_model  0x00000004  golem_sensor_full_normals
+pointer golem_sensor_full_model  0x0000000c  golem_sensor_full_meshes
+pointer golem_sensor_full_model  0x00000010  golem_sensor_material
+
+pointer golem_sensor_full  0x00000004  golem_sensor_full_model
+

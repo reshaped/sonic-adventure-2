@@ -1,0 +1,3 @@
+datum  joint_nodes  D  0x00000000  128
+datum  joint_offsets  D  0x00000080  384
+datum  motion_pairs  D  0x00000200  64

@@ -1,0 +1,5 @@
+text  OCEAN_TEXTURE_KD_SO_KAGE3  C  0x00000000  12
+text  OCEAN_TEXTURE_KD_SO_SAKU1  C  0x0000000c  12
+text  OCEAN_TEXTURE_KD_SO_SARA1  C  0x00000018  12
+datum  textures  D  0x00000000  36
+datum  post_fire_texlist  D  0x00000024  8

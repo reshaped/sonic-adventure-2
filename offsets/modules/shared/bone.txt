@@ -1,0 +1,8 @@
+text  CANYON_TEXT_DZ_GYUUKOTU  C  0x00000028  12
+datum  bone_texlist_names  D  0x00000000  12
+datum  bone_texlist  D  0x0000000c  8
+datum  bone_polygons  D  0x00000014  618
+datum  bone_vertices  D  0x00000280  684
+datum  bone_model  D  0x0000052c  24
+datum  bone_object  D  0x00000544  52
+datum  bone_texlists  D  0x00000578  8

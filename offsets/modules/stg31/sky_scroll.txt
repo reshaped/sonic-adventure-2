@@ -1,0 +1,14 @@
+datum  lower_1_uvs  D  0x00000000  112
+datum  lower_2_uvs  D  0x00000094  112
+datum  lower_3_uvs  D  0x00000128  112
+datum  lower_4_uvs  D  0x000001bc  112
+datum  lower_5_uvs  D  0x00000250  112
+datum  lower_6_uvs  D  0x000002e4  112
+datum  lower_7_uvs  D  0x00000378  112
+datum  green_hill_lower_1_uv  D  0x00000070  36
+datum  green_hill_lower_2_uv  D  0x00000104  36
+datum  green_hill_lower_3_uv  D  0x00000198  36
+datum  green_hill_lower_4_uv  D  0x0000022c  36
+datum  green_hill_lower_5_uv  D  0x000002c0  36
+datum  green_hill_lower_6_uv  D  0x00000354  36
+datum  green_hill_lower_7_uv  D  0x000003e8  36

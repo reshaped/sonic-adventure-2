@@ -1,0 +1,2 @@
+datum  fences  D  0x00000008  16
+datum  fence_collisions  D  0x00000018  16

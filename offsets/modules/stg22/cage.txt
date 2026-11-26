@@ -1,0 +1,6 @@
+datum  gadget_cage_texlists  D  0x00000000  20
+datum  cage_pieces  D  0x00000014  36
+datum  cage_built  D  0x00000038  4
+datum  cage_builds  D  0x0000003c  64
+datum  cage_shape  D  0x0000007c  48
+datum  cage_editor  C  0x00000000  59

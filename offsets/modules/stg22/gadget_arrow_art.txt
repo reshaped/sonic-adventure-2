@@ -1,0 +1,15 @@
+text  GADGET_ARROW_ART_TEXTURE_1  C  0x00000000  12
+text  GADGET_ARROW_ART_TEXTURE_2  C  0x0000000c  12
+text  GADGET_ARROW_ART_TEXTURE_3  C  0x00000018  12
+text  GADGET_ARROW_ART_TEXTURE_4  C  0x00000024  12
+text  GADGET_ARROW_ART_TEXTURE_5  C  0x00000030  12
+datum  textures  D  0x00000000  60
+datum  gadget_arrow_texlist  D  0x0000003c  8
+datum  gadget_arrow_object_node_1_polygons  D  0x00000044  50
+datum  gadget_arrow_object_node_1_vertices  D  0x00000078  76
+datum  gadget_arrow_object_node_1_mesh  D  0x000000c4  24
+datum  gadget_arrow_object_node_1  D  0x000000dc  52
+datum  gadget_arrow_polygons  D  0x00000110  838
+datum  gadget_arrow_vertices  D  0x00000458  1484
+datum  gadget_arrow_mesh  D  0x00000a24  24
+datum  gadget_arrow_object  D  0x00000a3c  52

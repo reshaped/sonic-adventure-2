@@ -1,0 +1,4 @@
+datum  connections  DATA  0x00000000  992
+datum  endings  DATA  0x000003e0  456
+datum  part_offsets  DATA  0x000005a8  256
+datum  masks  DATA  0x000006a8  8

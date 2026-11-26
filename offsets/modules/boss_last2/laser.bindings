@@ -1,0 +1,4 @@
+pointer  cap_inner_scroll  0x00000010  cap_inner_uvs
+pointer  cap_outer_scroll  0x00000010  cap_outer_uvs
+pointer  link_inner_scroll  0x00000010  link_inner_uvs
+pointer  link_outer_scroll  0x00000010  link_outer_uvs

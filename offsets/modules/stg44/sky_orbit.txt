@@ -1,0 +1,5 @@
+datum  textures  D  0x00000000  12
+datum  sky_orbit_64_chase_polygons  D  0x00000014  1666
+datum  sky_orbit_64_chase_vertices  D  0x00000698  1836
+datum  sky_orbit_64_chase_mesh  D  0x00000dc4  24
+datum  background_3_object  D  0x00000ddc  52

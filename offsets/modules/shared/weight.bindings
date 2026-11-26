@@ -1,0 +1,47 @@
+text  WEIGHT_TEXTURE_SIKAKE_01_128  14
+text  WEIGHT_TEXTURE_SIKAKE_04_64  13
+text  WEIGHT_TEXTURE_SIKAKE_11_64  13
+text  WEIGHT_NAME_UPDOWN  7
+text  WEIGHT_NAME_DOWN_ON_SONIC  14
+text  WEIGHT_NAME_DOWN_ON_SONIC_SW  18
+text  WEIGHT_NAME_UPDOWN_SW  11
+text  WEIGHT_NAME_PUSH_UP  8
+text  WEIGHT_NAME_NORMAL  7
+
+pointer  weight_handle_texnames  0x00000000  WEIGHT_TEXTURE_SIKAKE_01_128
+pointer  weight_handle_texnames  0x0000000c  WEIGHT_TEXTURE_SIKAKE_04_64
+pointer  weight_handle_texlist  0x00000000  weight_handle_texnames
+pointer  weight_handle_model  0x00000000  weight_handle_vertices
+pointer  weight_handle_model  0x00000004  weight_handle_polygons
+pointer  weight_handle_object  0x00000004  weight_handle_model
+pointer  weight_body_texnames  0x00000000  WEIGHT_TEXTURE_SIKAKE_04_64
+pointer  weight_body_texlist  0x00000000  weight_body_texnames
+pointer  weight_body_model  0x00000000  weight_body_vertices
+pointer  weight_body_model  0x00000004  weight_body_polygons
+pointer  weight_body_object  0x00000004  weight_body_model
+pointer  weight_collision_meshsets  0x00000004  weight_collision_meshes
+pointer  weight_collision_model  0x00000000  weight_collision_points
+pointer  weight_collision_model  0x00000004  weight_collision_normals
+pointer  weight_collision_model  0x0000000c  weight_collision_meshsets
+pointer  weight_collision_model  0x00000010  weight_collision_material
+pointer  weight_collision  0x00000004  weight_collision_model
+pointer  weight_frame_texnames  0x00000000  WEIGHT_TEXTURE_SIKAKE_11_64
+pointer  weight_frame_texlist  0x00000000  weight_frame_texnames
+pointer  weight_frame_model  0x00000000  weight_frame_vertices
+pointer  weight_frame_model  0x00000004  weight_frame_polygons
+pointer  weight_frame_object  0x00000004  weight_frame_model
+pointer  weight_bottom_model  0x00000000  weight_bottom_vertices
+pointer  weight_bottom_model  0x00000004  weight_bottom_polygons
+pointer  weight_bottom_object  0x00000004  weight_bottom_model
+pointer  weight_builds  0x00000004  weight_handle_texlist
+pointer  weight_builds  0x00000008  weight_handle_object
+pointer  weight_texlists  0x00000000  weight_body_texlist
+pointer  weight_texlists  0x00000004  weight_handle_texlist
+pointer  weight_texlists  0x00000008  dust_texlist
+pointer  weight_texlists  0x0000000c  weight_frame_texlist
+pointer  weight_names  0x00000000  WEIGHT_NAME_UPDOWN
+pointer  weight_names  0x00000004  WEIGHT_NAME_DOWN_ON_SONIC
+pointer  weight_names  0x00000008  WEIGHT_NAME_DOWN_ON_SONIC_SW
+pointer  weight_names  0x0000000c  WEIGHT_NAME_UPDOWN_SW
+pointer  weight_names  0x00000010  WEIGHT_NAME_PUSH_UP
+pointer  weight_names  0x00000014  WEIGHT_NAME_NORMAL

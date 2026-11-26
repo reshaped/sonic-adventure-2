@@ -1,0 +1,35 @@
+text  GATE_EDITOR_ANGLE_Y  11
+text  GATE_EDITOR_NUM  7
+text  GATE_TEXTURE_METEO128_13  12
+text  GATE_TEXTURE_MIU32_CW001  12
+text  GATE_TEXTURE_MIU64_CW004  12
+text  GATE_TEXTURE_MIU64_CW005  12
+text  GATE_TEXTURE_MIU32_CW002  12
+text  GATE_TEXTURE_MIU64_CW006  12
+
+pointer  cosmic_gate_texlists  0x00000000  gate_texlist
+pointer  cosmic_gate_texlists  0x00000004  gate_lit_texlist
+pointer  gate_scroll  0x00000010  gate_scroll_uvs
+pointer  gate_textures  0x00000000  GATE_TEXTURE_METEO128_13
+pointer  gate_textures  0x0000000c  GATE_TEXTURE_MIU32_CW001
+pointer  gate_textures  0x00000018  GATE_TEXTURE_MIU64_CW004
+pointer  gate_textures  0x00000024  GATE_TEXTURE_MIU64_CW005
+pointer  gate_texlist  0x00000000  gate_textures
+pointer  gate_lit_textures  0x00000000  GATE_TEXTURE_METEO128_13
+pointer  gate_lit_textures  0x0000000c  GATE_TEXTURE_MIU32_CW002
+pointer  gate_lit_textures  0x00000018  GATE_TEXTURE_MIU64_CW004
+pointer  gate_lit_textures  0x00000024  GATE_TEXTURE_MIU64_CW006
+pointer  gate_lit_texlist  0x00000000  gate_lit_textures
+pointer  gate_panel_model  0x00000000  gate_panel_vertices
+pointer  gate_panel_model  0x00000004  gate_panel_polygons
+pointer  gate_panel  0x00000004  gate_panel_model
+pointer  gate_housing_model  0x00000000  gate_housing_vertices
+pointer  gate_housing_model  0x00000004  gate_housing_polygons
+pointer  gate_housing  0x00000004  gate_housing_model
+pointer  gate_housing  0x0000002c  gate_panel
+pointer  gate_faces  0x00000004  gate_indices
+pointer  gate_solid_model  0x00000000  gate_points
+pointer  gate_solid_model  0x00000004  gate_normals
+pointer  gate_solid_model  0x0000000c  gate_faces
+pointer  gate_solid_model  0x00000010  gate_material
+pointer  gate_collision  0x00000004  gate_solid_model

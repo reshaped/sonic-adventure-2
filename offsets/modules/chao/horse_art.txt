@@ -1,0 +1,15 @@
+datum  horse_polygons  D  0x00000000  914
+datum  horse_vertices  D  0x00000394  1860
+datum  horse_mesh  D  0x00000ad8  24
+datum  moving_horse  D  0x00000af0  52
+datum  garden_horse_model  D  0x00000b24  52
+datum  horse_motion_joint_1_position  D  0x00000b58  240
+datum  horse_motion_joint_1_angles  D  0x00000c48  272
+datum  horse_motion_tracks  D  0x00000d58  32
+datum  horse_motion  D  0x00000d78  12
+datum  garden_horse_clips  D  0x00000d84  140
+datum  garden_radio_model_polygons  D  0x00000e10  1062
+datum  garden_radio_model_vertices  D  0x00001238  1596
+datum  garden_radio_model_model  D  0x00001874  24
+datum  garden_radio_model  D  0x0000188c  52
+datum  garden_radio_root  D  0x000018c0  52

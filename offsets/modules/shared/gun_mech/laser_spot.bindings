@@ -1,0 +1,7 @@
+pointer  spot_inner_mesh  0x00000000  spot_inner_vertices
+pointer  spot_inner_mesh  0x00000004  spot_inner_polygons
+pointer  spot_inner  0x00000004  spot_inner_mesh
+pointer  laser_mesh  0x00000000  laser_vertices
+pointer  laser_mesh  0x00000004  laser_polygons
+pointer  mech_boss_laser_object  0x00000004  laser_mesh
+pointer  mech_boss_laser_object  0x0000002c  spot_inner

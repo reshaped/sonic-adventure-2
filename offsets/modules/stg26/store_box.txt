@@ -1,0 +1,7 @@
+text  STORE_COLOR_BLUE  C  0x00000000  6
+text  STORE_COLOR_GREEN  C  0x00000008  6
+text  STORE_COLOR_RED  C  0x00000010  6
+datum  store_box_models  D  0x00000000  12
+datum  store_box_texlists  D  0x0000000c  16
+datum  store_box_color_names  D  0x0000001c  12
+datum  store_box_builds  D  0x0000002c  48

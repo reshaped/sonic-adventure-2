@@ -1,0 +1,47 @@
+text  HARBOR_TEXTURE_MIU32_MH003  12
+text  HARBOR_TEXTURE_MIU32_MH004  12
+text  HARBOR_TEXTURE_MIU32_MH006  12
+text  HARBOR_TEXTURE_MIU64_MH004  12
+text  HARBOR_TEXTURE_MIU64_MH006  12
+text  HARBOR_TEXTURE_MIU64_MH007  12
+text  HARBOR_TEXTURE_MIU64_MH008  12
+text  HARBOR_TEXTURE_PR128_29  9
+text  HARBOR_TEXTURE_PR128_6  8
+text  HARBOR_TEXTURE_PR64_19  8
+text  HARBOR_TEXTURE_PR64_20  8
+text  HARBOR_TEXTURE_PR_3KAGE32  11
+pointer  harbor_truck_textures  0x00000000  HARBOR_TEXTURE_MIU32_MH003
+pointer  harbor_truck_textures  0x0000000c  HARBOR_TEXTURE_MIU32_MH004
+pointer  harbor_truck_textures  0x00000018  HARBOR_TEXTURE_MIU32_MH006
+pointer  harbor_truck_textures  0x00000024  HARBOR_TEXTURE_MIU64_MH004
+pointer  harbor_truck_textures  0x00000030  HARBOR_TEXTURE_MIU64_MH006
+pointer  harbor_truck_textures  0x0000003c  HARBOR_TEXTURE_MIU64_MH007
+pointer  harbor_truck_textures  0x00000048  HARBOR_TEXTURE_MIU64_MH008
+pointer  harbor_truck_textures  0x00000054  HARBOR_TEXTURE_PR128_29
+pointer  harbor_truck_textures  0x00000060  HARBOR_TEXTURE_PR128_6
+pointer  harbor_truck_textures  0x0000006c  HARBOR_TEXTURE_PR64_19
+pointer  harbor_truck_textures  0x00000078  HARBOR_TEXTURE_PR64_20
+pointer  harbor_truck_textures  0x00000084  HARBOR_TEXTURE_PR_3KAGE32
+pointer  harbor_truck_texlist  0x00000000  harbor_truck_textures
+pointer  harbor_truck_lamp_mesh  0x00000000  harbor_truck_lamp_vertices
+pointer  harbor_truck_lamp_mesh  0x00000004  harbor_truck_lamp_polygons
+pointer  harbor_truck_lamp_object  0x00000004  harbor_truck_lamp_mesh
+pointer  harbor_truck_out_wheel_mesh  0x00000000  harbor_truck_out_wheel_vertices
+pointer  harbor_truck_out_wheel_mesh  0x00000004  harbor_truck_out_wheel_polygons
+pointer  harbor_truck_out_wheel_object  0x00000004  harbor_truck_out_wheel_mesh
+pointer  harbor_truck_out_wheel_object  0x00000030  harbor_truck_lamp_object
+pointer  harbor_truck_back_wheel_mesh  0x00000000  harbor_truck_back_wheel_vertices
+pointer  harbor_truck_back_wheel_mesh  0x00000004  harbor_truck_back_wheel_polygons
+pointer  harbor_truck_back_wheel_object  0x00000004  harbor_truck_back_wheel_mesh
+pointer  harbor_truck_back_wheel_object  0x00000030  harbor_truck_out_wheel_object
+pointer  harbor_truck_body_mesh  0x00000000  harbor_truck_body_vertices
+pointer  harbor_truck_body_mesh  0x00000004  harbor_truck_body_polygons
+pointer  harbor_truck_body_object  0x00000004  harbor_truck_body_mesh
+pointer  harbor_truck_body_object  0x0000002c  harbor_truck_back_wheel_object
+pointer  harbor_truck_collision_meshsets  0x00000004  harbor_truck_collision_indices_0
+pointer  harbor_truck_collision_model  0x00000000  harbor_truck_collision_points
+pointer  harbor_truck_collision_model  0x00000004  harbor_truck_collision_normals
+pointer  harbor_truck_collision_model  0x0000000c  harbor_truck_collision_meshsets
+pointer  harbor_truck_collision_model  0x00000010  harbor_truck_collision_materials
+pointer  harbor_truck_collision  0x00000004  harbor_truck_collision_model
+pointer  harbor_truck_texlists  0x00000000  harbor_truck_texlist

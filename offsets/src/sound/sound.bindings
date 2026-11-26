@@ -1,0 +1,20 @@
+text  SOUND_TEST_PLAY  8
+text  SOUND_TEST_PLAY_AT  10
+text  SOUND_TEST_PLAY_HELD  13
+text  SOUND_TEST_PLAY_HELD_AT  15
+text  SOUND_TEST_PLAY_FOR  14
+text  SOUND_TEST_PLAY_AT_FOR  16
+text  SOUND_TEST_PLAY_REPEATING  15
+text  SOUND_TEST_PLAY_REPEATING_AT  17
+text  SOUND_TEST_PLAY_SEQUENCE  22
+text  SOUND_TEST_START_FOR  12
+pointer  test_call_names  0x00000000  SOUND_TEST_PLAY
+pointer  test_call_names  0x00000004  SOUND_TEST_PLAY_AT
+pointer  test_call_names  0x00000008  SOUND_TEST_PLAY_HELD
+pointer  test_call_names  0x0000000c  SOUND_TEST_PLAY_HELD_AT
+pointer  test_call_names  0x00000010  SOUND_TEST_PLAY_FOR
+pointer  test_call_names  0x00000014  SOUND_TEST_PLAY_AT_FOR
+pointer  test_call_names  0x00000018  SOUND_TEST_PLAY_REPEATING
+pointer  test_call_names  0x0000001c  SOUND_TEST_PLAY_REPEATING_AT
+pointer  test_call_names  0x00000020  SOUND_TEST_PLAY_SEQUENCE
+pointer  test_call_names  0x00000024  SOUND_TEST_START_FOR

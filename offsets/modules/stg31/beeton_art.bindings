@@ -1,0 +1,64 @@
+text BEETON_TEXTURE_GORA2 6
+text BEETON_TEXTURE_G_EYE 6
+text BEETON_TEXTURE_UNI1 5
+text BEETON_TEXTURE_SARU_BODY 10
+text BEETON_TEXTURE_BEE 4
+
+pointer materials  0x00000000  BEETON_TEXTURE_GORA2
+pointer materials  0x0000000c  BEETON_TEXTURE_G_EYE
+pointer materials  0x00000018  BEETON_TEXTURE_UNI1
+pointer materials  0x00000024  BEETON_TEXTURE_SARU_BODY
+pointer materials  0x00000030  BEETON_TEXTURE_BEE
+
+pointer green_hill_beeton_texlist  0x00000000  materials
+
+pointer green_hill_beeton_piece_0  0x00000000  piece_0_vertices
+pointer green_hill_beeton_piece_0  0x00000004  piece_0_polygons
+
+pointer piece_0_node  0x00000004  green_hill_beeton_piece_0
+
+pointer green_hill_beeton_piece_1  0x00000000  piece_1_vertices
+pointer green_hill_beeton_piece_1  0x00000004  piece_1_polygons
+
+pointer piece_1_node  0x00000004  green_hill_beeton_piece_1
+pointer piece_1_node  0x00000030  piece_0_node
+
+pointer green_hill_beeton_piece_2  0x00000000  piece_2_vertices
+pointer green_hill_beeton_piece_2  0x00000004  piece_2_polygons
+
+pointer piece_2_node  0x00000004  green_hill_beeton_piece_2
+pointer piece_2_node  0x00000030  piece_1_node
+
+pointer green_hill_beeton_piece_3  0x00000000  piece_3_vertices
+pointer green_hill_beeton_piece_3  0x00000004  piece_3_polygons
+
+pointer piece_3_node  0x00000004  green_hill_beeton_piece_3
+pointer piece_3_node  0x00000030  piece_2_node
+
+pointer green_hill_beeton_body_model  0x00000000  body_vertices
+pointer green_hill_beeton_body_model  0x00000004  body_polygons
+
+pointer green_hill_beeton_body  0x00000004  green_hill_beeton_body_model
+pointer green_hill_beeton_body  0x0000002c  piece_3_node
+
+pointer flight_joints  0x00000014  flight_piece_3_rotation
+pointer flight_joints  0x00000024  flight_piece_2_rotation
+pointer flight_joints  0x00000034  flight_piece_1_rotation
+
+pointer green_hill_beeton_flight_motion  0x00000000  flight_joints
+
+pointer unfold_joints  0x00000004  unfold_body_rotation
+pointer unfold_joints  0x00000014  unfold_piece_3_rotation
+pointer unfold_joints  0x00000024  unfold_piece_2_rotation
+pointer unfold_joints  0x00000034  unfold_piece_1_rotation
+pointer unfold_joints  0x00000044  unfold_piece_0_rotation
+
+pointer green_hill_beeton_unfold_motion  0x00000000  unfold_joints
+
+pointer aim_joints  0x00000004  aim_body_rotation
+pointer aim_joints  0x00000014  aim_piece_3_rotation
+pointer aim_joints  0x00000024  aim_piece_2_rotation
+pointer aim_joints  0x00000034  aim_piece_1_rotation
+pointer aim_joints  0x00000044  aim_piece_0_rotation
+
+pointer green_hill_beeton_aim_motion  0x00000000  aim_joints

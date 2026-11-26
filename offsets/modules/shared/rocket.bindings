@@ -1,0 +1,84 @@
+text  APPEAR_ON_SWITCH_LABEL  28
+text  APPEAR_ALWAYS_LABEL  23
+text  Y_ANGLE_LABEL  11
+text  SWITCH_ID_LABEL  6
+text  AIM_X_LABEL  12
+text  AIM_Y_LABEL  12
+text  AIM_Z_LABEL  12
+text  SIKAKE_01_128_FILENAME  14
+text  SIKAKE_02_128_FILENAME  14
+text  SIKAKE_03_64_FILENAME  13
+pointer  rocket_textures  0x00000000  SIKAKE_01_128_FILENAME
+pointer  rocket_textures  0x0000000c  SIKAKE_02_128_FILENAME
+pointer  rocket_textures  0x00000018  SIKAKE_03_64_FILENAME
+pointer  rocket_texlist  0x00000000  rocket_textures
+pointer  rocket_fin_lower_negative_z_model  0x00000000  rocket_fin_lower_negative_z_vertices
+pointer  rocket_fin_lower_negative_z_model  0x00000004  rocket_fin_lower_negative_z_polygons
+pointer  rocket_fin_lower_negative_z  0x00000004  rocket_fin_lower_negative_z_model
+pointer  rocket_fin_lower_positive_z_model  0x00000000  rocket_fin_lower_positive_z_vertices
+pointer  rocket_fin_lower_positive_z_model  0x00000004  rocket_fin_lower_positive_z_polygons
+pointer  rocket_fin_lower_positive_z  0x00000004  rocket_fin_lower_positive_z_model
+pointer  rocket_fin_lower_positive_z  0x00000030  rocket_fin_lower_negative_z
+pointer  rocket_fin_upper_negative_z_model  0x00000000  rocket_fin_upper_negative_z_vertices
+pointer  rocket_fin_upper_negative_z_model  0x00000004  rocket_fin_upper_negative_z_polygons
+pointer  rocket_fin_upper_negative_z  0x00000004  rocket_fin_upper_negative_z_model
+pointer  rocket_fin_upper_negative_z  0x00000030  rocket_fin_lower_positive_z
+pointer  rocket_fin_upper_positive_z_model  0x00000000  rocket_fin_upper_positive_z_vertices
+pointer  rocket_fin_upper_positive_z_model  0x00000004  rocket_fin_upper_positive_z_polygons
+pointer  rocket_fin_upper_positive_z  0x00000004  rocket_fin_upper_positive_z_model
+pointer  rocket_fin_upper_positive_z  0x00000030  rocket_fin_upper_negative_z
+pointer  rocket_handle_model  0x00000000  rocket_handle_vertices
+pointer  rocket_handle_model  0x00000004  rocket_handle_polygons
+pointer  rocket_handle  0x00000004  rocket_handle_model
+pointer  rocket_handle  0x0000002c  rocket_handle_tip
+pointer  rocket_handle_joint_model  0x00000000  rocket_handle_joint_vertices
+pointer  rocket_handle_joint_model  0x00000004  rocket_handle_joint_polygons
+pointer  rocket_handle_joint  0x00000004  rocket_handle_joint_model
+pointer  rocket_handle_joint  0x0000002c  rocket_handle
+pointer  rocket_handle_joint  0x00000030  rocket_fin_upper_positive_z
+pointer  rocket_nose_model  0x00000000  rocket_nose_vertices
+pointer  rocket_nose_model  0x00000004  rocket_nose_polygons
+pointer  rocket_nose  0x00000004  rocket_nose_model
+pointer  rocket_nose  0x00000030  rocket_handle_joint
+pointer  rocket_model  0x00000000  rocket_vertices
+pointer  rocket_model  0x00000004  rocket_polygons
+pointer  rocket_object  0x00000004  rocket_model
+pointer  rocket_object  0x0000002c  rocket_nose
+pointer  rocket_base_textures  0x00000000  SIKAKE_02_128_FILENAME
+pointer  rocket_base_textures  0x0000000c  SIKAKE_03_64_FILENAME
+pointer  rocket_base_texlist  0x00000000  rocket_base_textures
+pointer  rocket_hatch_positive_z_model  0x00000000  rocket_hatch_positive_z_vertices
+pointer  rocket_hatch_positive_z_model  0x00000004  rocket_hatch_positive_z_polygons
+pointer  rocket_hatch_positive_z  0x00000004  rocket_hatch_positive_z_model
+pointer  rocket_hatch_negative_z_model  0x00000000  rocket_hatch_negative_z_vertices
+pointer  rocket_hatch_negative_z_model  0x00000004  rocket_hatch_negative_z_polygons
+pointer  rocket_hatch_negative_z  0x00000004  rocket_hatch_negative_z_model
+pointer  rocket_hatch_negative_z  0x00000030  rocket_hatch_positive_z
+pointer  rocket_base_model  0x00000000  rocket_base_vertices
+pointer  rocket_base_model  0x00000004  rocket_base_polygons
+pointer  rocket_base_object  0x00000004  rocket_base_model
+pointer  rocket_base_object  0x0000002c  rocket_hatch_negative_z
+pointer  rocket_floor_meshset  0x00000004  rocket_floor_indices
+pointer  rocket_floor_mesh  0x00000000  rocket_floor_points
+pointer  rocket_floor_mesh  0x00000004  rocket_floor_normals
+pointer  rocket_floor_mesh  0x0000000c  rocket_floor_meshset
+pointer  rocket_floor_mesh  0x00000010  rocket_floor_material
+pointer  rocket_base_collision  0x00000004  rocket_floor_mesh
+pointer  rocket_motion_channels  0x00000010  rocket_nose_positions
+pointer  rocket_motion_channels  0x00000034  rocket_handle_angles
+pointer  rocket_motion_channels  0x00000050  rocket_fin_upper_positive_z_positions
+pointer  rocket_motion_channels  0x00000054  rocket_fin_upper_positive_z_angles
+pointer  rocket_motion_channels  0x00000060  rocket_fin_upper_negative_z_positions
+pointer  rocket_motion_channels  0x00000064  rocket_fin_upper_negative_z_angles
+pointer  rocket_motion_channels  0x00000070  rocket_fin_lower_positive_z_positions
+pointer  rocket_motion_channels  0x00000074  rocket_fin_lower_positive_z_angles
+pointer  rocket_motion_channels  0x00000080  rocket_fin_lower_negative_z_positions
+pointer  rocket_motion_channels  0x00000084  rocket_fin_lower_negative_z_angles
+pointer  rocket_motion  0x00000000  rocket_motion_channels
+pointer  rocket_base_motion_channels  0x00000010  rocket_hatch_negative_z_positions
+pointer  rocket_base_motion_channels  0x00000020  rocket_hatch_positive_z_positions
+pointer  rocket_base_motion  0x00000000  rocket_base_motion_channels
+pointer  rocket_texlists  0x00000000  rocket_texlist
+pointer  rocket_texlists  0x00000004  rocket_base_texlist
+pointer  rocket_texlists  0x00000008  rocket_thrust_texlist
+pointer  rocket_texlists  0x0000000c  burst_texlist

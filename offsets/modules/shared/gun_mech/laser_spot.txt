@@ -1,0 +1,8 @@
+datum  spot_inner_polygons  D  0x00000000  86
+datum  spot_inner_vertices  D  0x00000058  684
+datum  laser_polygons  D  0x00000350  150
+datum  laser_vertices  D  0x000003e8  1164
+datum  spot_inner_mesh  D  0x00000304  24
+datum  spot_inner  D  0x0000031c  52
+datum  laser_mesh  D  0x00000874  24
+datum  mech_boss_laser_object  D  0x0000088c  52

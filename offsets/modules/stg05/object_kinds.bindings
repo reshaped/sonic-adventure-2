@@ -1,0 +1,424 @@
+text  SET_NAME_RING  8
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_ROCKET  10
+text  SET_NAME_E_KYOKO  8
+text  SET_NAME_MODMOD  8
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_3SPRING  8
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_UDREEL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_ORI  4
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SKULL  6
+text  SET_NAME_E_EMI  6
+text  SET_NAME_E_GHOST  8
+text  SET_NAME_SCHBOX  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_SSS  4
+text  SET_NAME_DRMCN  6
+text  SET_NAME_GSTRAIN  8
+text  SET_NAME_FIRZIZ  7
+text  SET_NAME_PPK_SM  7
+text  SET_NAME_PPK_BG  7
+text  SET_NAME_PPSHED  7
+text  SET_NAME_GRVSTONE  9
+text  SET_NAME_TERMINAL  9
+text  SET_NAME_TIM  4
+text  SET_NAME_WOODEAD  8
+text  SET_NAME_FENCE  6
+text  SET_NAME_FENCES  7
+text  SET_NAME_SOLIDBOX  9
+text  SET_NAME_PUMSASI  8
+text  SET_NAME_PUMWALL  8
+text  SET_NAME_KSKULL  7
+text  SET_NAME_PICPUM1  8
+text  SET_NAME_KAKASI  7
+text  SET_NAME_KUSA  5
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_PSKULL  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MSGER  6
+text  SET_NAME_SGSPRING  9
+text  SET_NAME_SGSPRINGB  10
+text  SET_NAME_SGRING  7
+text  SET_NAME_SGITEMBOX  10
+text  SET_NAME_SGSCHBOX  9
+text  SET_NAME_EMERALD_F  10
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_E_PATH  7
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_GSGATE  7
+pointer  pumpkin_hill_kinds  0x00000008  ring_step
+pointer  pumpkin_hill_kinds  0x0000000c  SET_NAME_RING
+pointer  pumpkin_hill_kinds  0x00000018  spring_a_step
+pointer  pumpkin_hill_kinds  0x0000001c  SET_NAME_SPRA
+pointer  pumpkin_hill_kinds  0x00000028  spring_b_step
+pointer  pumpkin_hill_kinds  0x0000002c  SET_NAME_SPRB
+pointer  pumpkin_hill_kinds  0x00000038  dash_panel_step
+pointer  pumpkin_hill_kinds  0x0000003c  SET_NAME_KASOKU
+pointer  pumpkin_hill_kinds  0x00000048  save_point_step
+pointer  pumpkin_hill_kinds  0x0000004c  SET_NAME_SAVEPOINT
+pointer  pumpkin_hill_kinds  0x00000058  switch_step
+pointer  pumpkin_hill_kinds  0x0000005c  SET_NAME_SWITCH
+pointer  pumpkin_hill_kinds  0x00000068  item_box_step
+pointer  pumpkin_hill_kinds  0x0000006c  SET_NAME_ITEMBOX
+pointer  pumpkin_hill_kinds  0x00000078  item_box_air_step
+pointer  pumpkin_hill_kinds  0x0000007c  SET_NAME_ITEMBOXAIR
+pointer  pumpkin_hill_kinds  0x00000088  iron_ball_init
+pointer  pumpkin_hill_kinds  0x0000008c  SET_NAME_IRONBALL2
+pointer  pumpkin_hill_kinds  0x00000098  big_jump_step
+pointer  pumpkin_hill_kinds  0x0000009c  SET_NAME_BIGJUMP
+pointer  pumpkin_hill_kinds  0x000000a8  rocket_init
+pointer  pumpkin_hill_kinds  0x000000ac  SET_NAME_ROCKET
+pointer  pumpkin_hill_kinds  0x000000b8  kyoko_step
+pointer  pumpkin_hill_kinds  0x000000bc  SET_NAME_E_KYOKO
+pointer  pumpkin_hill_kinds  0x000000c8  modifier_volume_init
+pointer  pumpkin_hill_kinds  0x000000cc  SET_NAME_MODMOD
+pointer  pumpkin_hill_kinds  0x000000d8  item_balloon_step
+pointer  pumpkin_hill_kinds  0x000000dc  SET_NAME_ITEMBOXBALLOON
+pointer  pumpkin_hill_kinds  0x000000e8  goal_ring_init
+pointer  pumpkin_hill_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  pumpkin_hill_kinds  0x000000f8  emerald_init
+pointer  pumpkin_hill_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  pumpkin_hill_kinds  0x00000108  weight_init
+pointer  pumpkin_hill_kinds  0x0000010c  SET_NAME_BUNCHIN
+pointer  pumpkin_hill_kinds  0x00000118  ring_linear_init
+pointer  pumpkin_hill_kinds  0x0000011c  SET_NAME_RING_LINEAR
+pointer  pumpkin_hill_kinds  0x00000128  ring_circle_init
+pointer  pumpkin_hill_kinds  0x0000012c  SET_NAME_RING_CIRCLE
+pointer  pumpkin_hill_kinds  0x00000138  triple_spring_init
+pointer  pumpkin_hill_kinds  0x0000013c  SET_NAME_3SPRING
+pointer  pumpkin_hill_kinds  0x00000148  dynamite_init
+pointer  pumpkin_hill_kinds  0x0000014c  SET_NAME_DYNAMITE
+pointer  pumpkin_hill_kinds  0x00000158  reel_init
+pointer  pumpkin_hill_kinds  0x0000015c  SET_NAME_UDREEL
+pointer  pumpkin_hill_kinds  0x00000168  chao_pipe_init
+pointer  pumpkin_hill_kinds  0x0000016c  SET_NAME_CHAOPIPE
+pointer  pumpkin_hill_kinds  0x00000178  cage_init
+pointer  pumpkin_hill_kinds  0x0000017c  SET_NAME_ORI
+pointer  pumpkin_hill_kinds  0x00000188  wood_box_init
+pointer  pumpkin_hill_kinds  0x0000018c  SET_NAME_CONTWOOD
+pointer  pumpkin_hill_kinds  0x00000198  iron_box_init
+pointer  pumpkin_hill_kinds  0x0000019c  SET_NAME_CONTIRON
+pointer  pumpkin_hill_kinds  0x000001a8  upgrade_init
+pointer  pumpkin_hill_kinds  0x000001ac  SET_NAME_LEVUPDAI
+pointer  pumpkin_hill_kinds  0x000001b8  missile_init
+pointer  pumpkin_hill_kinds  0x000001bc  SET_NAME_ROCKETMISSSILE
+pointer  pumpkin_hill_kinds  0x000001c8  skull_still_init
+pointer  pumpkin_hill_kinds  0x000001cc  SET_NAME_SKULL
+pointer  pumpkin_hill_kinds  0x000001d8  emi_step
+pointer  pumpkin_hill_kinds  0x000001dc  SET_NAME_E_EMI
+pointer  pumpkin_hill_kinds  0x000001e8  ghost_step
+pointer  pumpkin_hill_kinds  0x000001ec  SET_NAME_E_GHOST
+pointer  pumpkin_hill_kinds  0x000001f8  search_box_init
+pointer  pumpkin_hill_kinds  0x000001fc  SET_NAME_SCHBOX
+pointer  pumpkin_hill_kinds  0x00000208  hint_box_init
+pointer  pumpkin_hill_kinds  0x0000020c  SET_NAME_HINTBOX
+pointer  pumpkin_hill_kinds  0x00000218  knudai_init
+pointer  pumpkin_hill_kinds  0x0000021c  SET_NAME_KNUDAI
+pointer  pumpkin_hill_kinds  0x00000228  sss_init
+pointer  pumpkin_hill_kinds  0x0000022c  SET_NAME_SSS
+pointer  pumpkin_hill_kinds  0x00000238  drum_can_init
+pointer  pumpkin_hill_kinds  0x0000023c  SET_NAME_DRMCN
+pointer  pumpkin_hill_kinds  0x00000248  ghost_train_init
+pointer  pumpkin_hill_kinds  0x0000024c  SET_NAME_GSTRAIN
+pointer  pumpkin_hill_kinds  0x00000258  fire_statue_init
+pointer  pumpkin_hill_kinds  0x0000025c  SET_NAME_FIRZIZ
+pointer  pumpkin_hill_kinds  0x00000268  pumpkin_small_init
+pointer  pumpkin_hill_kinds  0x0000026c  SET_NAME_PPK_SM
+pointer  pumpkin_hill_kinds  0x00000278  pumpkin_big_init
+pointer  pumpkin_hill_kinds  0x0000027c  SET_NAME_PPK_BG
+pointer  pumpkin_hill_kinds  0x00000288  shed_init
+pointer  pumpkin_hill_kinds  0x0000028c  SET_NAME_PPSHED
+pointer  pumpkin_hill_kinds  0x00000298  gravestone_init
+pointer  pumpkin_hill_kinds  0x0000029c  SET_NAME_GRVSTONE
+pointer  pumpkin_hill_kinds  0x000002a8  turntable_init
+pointer  pumpkin_hill_kinds  0x000002ac  SET_NAME_TERMINAL
+pointer  pumpkin_hill_kinds  0x000002b8  tim_init
+pointer  pumpkin_hill_kinds  0x000002bc  SET_NAME_TIM
+pointer  pumpkin_hill_kinds  0x000002c8  dead_tree_init
+pointer  pumpkin_hill_kinds  0x000002cc  SET_NAME_WOODEAD
+pointer  pumpkin_hill_kinds  0x000002d8  fence_init
+pointer  pumpkin_hill_kinds  0x000002dc  SET_NAME_FENCE
+pointer  pumpkin_hill_kinds  0x000002e8  fence_small_init
+pointer  pumpkin_hill_kinds  0x000002ec  SET_NAME_FENCES
+pointer  pumpkin_hill_kinds  0x000002f8  solid_box_init
+pointer  pumpkin_hill_kinds  0x000002fc  SET_NAME_SOLIDBOX
+pointer  pumpkin_hill_kinds  0x00000308  pumsasi_init
+pointer  pumpkin_hill_kinds  0x0000030c  SET_NAME_PUMSASI
+pointer  pumpkin_hill_kinds  0x00000318  pumpkin_wall_init
+pointer  pumpkin_hill_kinds  0x0000031c  SET_NAME_PUMWALL
+pointer  pumpkin_hill_kinds  0x00000328  skull_waiting_init
+pointer  pumpkin_hill_kinds  0x0000032c  SET_NAME_KSKULL
+pointer  pumpkin_hill_kinds  0x00000338  pumpkin_wall_init
+pointer  pumpkin_hill_kinds  0x0000033c  SET_NAME_PUMWALL
+pointer  pumpkin_hill_kinds  0x00000348  pumpkin_pickup_init
+pointer  pumpkin_hill_kinds  0x0000034c  SET_NAME_PICPUM1
+pointer  pumpkin_hill_kinds  0x00000358  scarecrow_init
+pointer  pumpkin_hill_kinds  0x0000035c  SET_NAME_KAKASI
+pointer  pumpkin_hill_kinds  0x00000368  grass_init
+pointer  pumpkin_hill_kinds  0x0000036c  SET_NAME_KUSA
+pointer  pumpkin_hill_kinds  0x00000378  animal_init
+pointer  pumpkin_hill_kinds  0x0000037c  SET_NAME_MINIMAL
+pointer  pumpkin_hill_kinds  0x00000388  hidden_animal_init
+pointer  pumpkin_hill_kinds  0x0000038c  SET_NAME_WSMMLS
+pointer  pumpkin_hill_kinds  0x00000398  skull_lying_init
+pointer  pumpkin_hill_kinds  0x0000039c  SET_NAME_PSKULL
+pointer  pumpkin_hill_kinds  0x000003a8  knudai_foothold_init
+pointer  pumpkin_hill_kinds  0x000003ac  SET_NAME_KDASIBA
+pointer  pumpkin_hill_kinds  0x000003b8  knudai_warp_hole_init
+pointer  pumpkin_hill_kinds  0x000003bc  SET_NAME_KDWARPHOLE
+pointer  pumpkin_hill_kinds  0x000003c8  knudai_door_init
+pointer  pumpkin_hill_kinds  0x000003cc  SET_NAME_KDDOOR
+pointer  pumpkin_hill_kinds  0x000003d8  knudai_item_box_init
+pointer  pumpkin_hill_kinds  0x000003dc  SET_NAME_KDITEMBOX
+pointer  pumpkin_hill_kinds  0x000003e8  chao_box_init
+pointer  pumpkin_hill_kinds  0x000003ec  SET_NAME_CONTCHAO
+pointer  pumpkin_hill_kinds  0x000003f8  knudai_ring_linear_init
+pointer  pumpkin_hill_kinds  0x000003fc  SET_NAME_KDDRNGL
+pointer  pumpkin_hill_kinds  0x00000408  knudai_ring_circle_init
+pointer  pumpkin_hill_kinds  0x0000040c  SET_NAME_KDDRNGC
+pointer  pumpkin_hill_kinds  0x00000418  knudai_spring_init
+pointer  pumpkin_hill_kinds  0x0000041c  SET_NAME_KDSPRING
+pointer  pumpkin_hill_kinds  0x00000428  knudai_spring_b_init
+pointer  pumpkin_hill_kinds  0x0000042c  SET_NAME_KDSPRINGB
+pointer  pumpkin_hill_kinds  0x00000438  effect_object_init
+pointer  pumpkin_hill_kinds  0x0000043c  SET_NAME_EFFOBJ0
+pointer  pumpkin_hill_kinds  0x00000448  collision_sphere_step
+pointer  pumpkin_hill_kinds  0x0000044c  SET_NAME_SPHERE
+pointer  pumpkin_hill_kinds  0x00000458  collision_cylinder_step
+pointer  pumpkin_hill_kinds  0x0000045c  SET_NAME_CCYL
+pointer  pumpkin_hill_kinds  0x00000468  collision_cube_step
+pointer  pumpkin_hill_kinds  0x0000046c  SET_NAME_CCUBE
+pointer  pumpkin_hill_kinds  0x00000478  collision_wall_step
+pointer  pumpkin_hill_kinds  0x0000047c  SET_NAME_CWALL
+pointer  pumpkin_hill_kinds  0x00000488  collision_circle_step
+pointer  pumpkin_hill_kinds  0x0000048c  SET_NAME_CCIRCLE
+pointer  pumpkin_hill_kinds  0x00000498  messenger_init
+pointer  pumpkin_hill_kinds  0x0000049c  SET_NAME_MSGER
+pointer  pumpkin_hill_kinds  0x000004a8  sg_spring_a_step
+pointer  pumpkin_hill_kinds  0x000004ac  SET_NAME_SGSPRING
+pointer  pumpkin_hill_kinds  0x000004b8  sg_spring_b_step
+pointer  pumpkin_hill_kinds  0x000004bc  SET_NAME_SGSPRINGB
+pointer  pumpkin_hill_kinds  0x000004c8  sg_ring_step
+pointer  pumpkin_hill_kinds  0x000004cc  SET_NAME_SGRING
+pointer  pumpkin_hill_kinds  0x000004d8  sg_item_box_step
+pointer  pumpkin_hill_kinds  0x000004dc  SET_NAME_SGITEMBOX
+pointer  pumpkin_hill_kinds  0x000004e8  search_box_sg_init
+pointer  pumpkin_hill_kinds  0x000004ec  SET_NAME_SGSCHBOX
+pointer  pumpkin_hill_kinds  0x000004f8  emerald_init
+pointer  pumpkin_hill_kinds  0x000004fc  SET_NAME_EMERALD_F
+pointer  pumpkin_hill_kinds  0x00000508  big_step
+pointer  pumpkin_hill_kinds  0x0000050c  SET_NAME_BIG_THE_CAT
+pointer  pumpkin_hill_kinds  0x00000518  technique_link_init
+pointer  pumpkin_hill_kinds  0x0000051c  SET_NAME_LINKLINK
+pointer  pumpkin_hill_kinds  0x00000528  path_enemy_step
+pointer  pumpkin_hill_kinds  0x0000052c  SET_NAME_E_PATH
+pointer  pumpkin_hill_kinds  0x00000538  gold_beetle_step
+pointer  pumpkin_hill_kinds  0x0000053c  SET_NAME_E_GOLD
+pointer  pumpkin_hill_kinds  0x00000548  train_gate_init
+pointer  pumpkin_hill_kinds  0x0000054c  SET_NAME_GSGATE
+pointer  pumpkin_hill_2p_kinds  0x00000008  ring_step
+pointer  pumpkin_hill_2p_kinds  0x0000000c  SET_NAME_RING
+pointer  pumpkin_hill_2p_kinds  0x00000018  spring_a_step
+pointer  pumpkin_hill_2p_kinds  0x0000001c  SET_NAME_SPRA
+pointer  pumpkin_hill_2p_kinds  0x00000028  spring_b_step
+pointer  pumpkin_hill_2p_kinds  0x0000002c  SET_NAME_SPRB
+pointer  pumpkin_hill_2p_kinds  0x00000038  dash_panel_step
+pointer  pumpkin_hill_2p_kinds  0x0000003c  SET_NAME_KASOKU
+pointer  pumpkin_hill_2p_kinds  0x00000048  save_point_step
+pointer  pumpkin_hill_2p_kinds  0x0000004c  SET_NAME_SAVEPOINT
+pointer  pumpkin_hill_2p_kinds  0x00000058  switch_step
+pointer  pumpkin_hill_2p_kinds  0x0000005c  SET_NAME_SWITCH
+pointer  pumpkin_hill_2p_kinds  0x00000068  item_box_step
+pointer  pumpkin_hill_2p_kinds  0x0000006c  SET_NAME_ITEMBOX
+pointer  pumpkin_hill_2p_kinds  0x00000078  item_box_air_step
+pointer  pumpkin_hill_2p_kinds  0x0000007c  SET_NAME_ITEMBOXAIR
+pointer  pumpkin_hill_2p_kinds  0x00000088  iron_ball_init
+pointer  pumpkin_hill_2p_kinds  0x0000008c  SET_NAME_IRONBALL2
+pointer  pumpkin_hill_2p_kinds  0x00000098  big_jump_step
+pointer  pumpkin_hill_2p_kinds  0x0000009c  SET_NAME_BIGJUMP
+pointer  pumpkin_hill_2p_kinds  0x000000a8  rocket_init
+pointer  pumpkin_hill_2p_kinds  0x000000ac  SET_NAME_ROCKET
+pointer  pumpkin_hill_2p_kinds  0x000000b8  kyoko_step
+pointer  pumpkin_hill_2p_kinds  0x000000bc  SET_NAME_E_KYOKO
+pointer  pumpkin_hill_2p_kinds  0x000000c8  modifier_volume_init
+pointer  pumpkin_hill_2p_kinds  0x000000cc  SET_NAME_MODMOD
+pointer  pumpkin_hill_2p_kinds  0x000000d8  item_balloon_step
+pointer  pumpkin_hill_2p_kinds  0x000000dc  SET_NAME_ITEMBOXBALLOON
+pointer  pumpkin_hill_2p_kinds  0x000000e8  goal_ring_init
+pointer  pumpkin_hill_2p_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  pumpkin_hill_2p_kinds  0x000000f8  emerald_init
+pointer  pumpkin_hill_2p_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  pumpkin_hill_2p_kinds  0x00000108  weight_init
+pointer  pumpkin_hill_2p_kinds  0x0000010c  SET_NAME_BUNCHIN
+pointer  pumpkin_hill_2p_kinds  0x00000118  ring_linear_init
+pointer  pumpkin_hill_2p_kinds  0x0000011c  SET_NAME_RING_LINEAR
+pointer  pumpkin_hill_2p_kinds  0x00000128  ring_circle_init
+pointer  pumpkin_hill_2p_kinds  0x0000012c  SET_NAME_RING_CIRCLE
+pointer  pumpkin_hill_2p_kinds  0x00000138  triple_spring_init
+pointer  pumpkin_hill_2p_kinds  0x0000013c  SET_NAME_3SPRING
+pointer  pumpkin_hill_2p_kinds  0x00000148  dynamite_init
+pointer  pumpkin_hill_2p_kinds  0x0000014c  SET_NAME_DYNAMITE
+pointer  pumpkin_hill_2p_kinds  0x00000158  reel_init
+pointer  pumpkin_hill_2p_kinds  0x0000015c  SET_NAME_UDREEL
+pointer  pumpkin_hill_2p_kinds  0x00000168  chao_pipe_init
+pointer  pumpkin_hill_2p_kinds  0x0000016c  SET_NAME_CHAOPIPE
+pointer  pumpkin_hill_2p_kinds  0x00000178  cage_init
+pointer  pumpkin_hill_2p_kinds  0x0000017c  SET_NAME_ORI
+pointer  pumpkin_hill_2p_kinds  0x00000188  wood_box_init
+pointer  pumpkin_hill_2p_kinds  0x0000018c  SET_NAME_CONTWOOD
+pointer  pumpkin_hill_2p_kinds  0x00000198  iron_box_init
+pointer  pumpkin_hill_2p_kinds  0x0000019c  SET_NAME_CONTIRON
+pointer  pumpkin_hill_2p_kinds  0x000001a8  upgrade_init
+pointer  pumpkin_hill_2p_kinds  0x000001ac  SET_NAME_LEVUPDAI
+pointer  pumpkin_hill_2p_kinds  0x000001b8  missile_init
+pointer  pumpkin_hill_2p_kinds  0x000001bc  SET_NAME_ROCKETMISSSILE
+pointer  pumpkin_hill_2p_kinds  0x000001c8  skull_still_init
+pointer  pumpkin_hill_2p_kinds  0x000001cc  SET_NAME_SKULL
+pointer  pumpkin_hill_2p_kinds  0x000001d8  emi_step
+pointer  pumpkin_hill_2p_kinds  0x000001dc  SET_NAME_E_EMI
+pointer  pumpkin_hill_2p_kinds  0x000001e8  ghost_step
+pointer  pumpkin_hill_2p_kinds  0x000001ec  SET_NAME_E_GHOST
+pointer  pumpkin_hill_2p_kinds  0x000001f8  search_box_init
+pointer  pumpkin_hill_2p_kinds  0x000001fc  SET_NAME_SCHBOX
+pointer  pumpkin_hill_2p_kinds  0x00000208  hint_box_init
+pointer  pumpkin_hill_2p_kinds  0x0000020c  SET_NAME_HINTBOX
+pointer  pumpkin_hill_2p_kinds  0x00000218  knudai_init
+pointer  pumpkin_hill_2p_kinds  0x0000021c  SET_NAME_KNUDAI
+pointer  pumpkin_hill_2p_kinds  0x00000228  sss_init
+pointer  pumpkin_hill_2p_kinds  0x0000022c  SET_NAME_SSS
+pointer  pumpkin_hill_2p_kinds  0x00000238  drum_can_init
+pointer  pumpkin_hill_2p_kinds  0x0000023c  SET_NAME_DRMCN
+pointer  pumpkin_hill_2p_kinds  0x00000248  ghost_train_init
+pointer  pumpkin_hill_2p_kinds  0x0000024c  SET_NAME_GSTRAIN
+pointer  pumpkin_hill_2p_kinds  0x00000258  fire_statue_init
+pointer  pumpkin_hill_2p_kinds  0x0000025c  SET_NAME_FIRZIZ
+pointer  pumpkin_hill_2p_kinds  0x00000268  pumpkin_small_init
+pointer  pumpkin_hill_2p_kinds  0x0000026c  SET_NAME_PPK_SM
+pointer  pumpkin_hill_2p_kinds  0x00000278  pumpkin_big_init
+pointer  pumpkin_hill_2p_kinds  0x0000027c  SET_NAME_PPK_BG
+pointer  pumpkin_hill_2p_kinds  0x00000288  shed_init
+pointer  pumpkin_hill_2p_kinds  0x0000028c  SET_NAME_PPSHED
+pointer  pumpkin_hill_2p_kinds  0x00000298  gravestone_init
+pointer  pumpkin_hill_2p_kinds  0x0000029c  SET_NAME_GRVSTONE
+pointer  pumpkin_hill_2p_kinds  0x000002a8  turntable_init
+pointer  pumpkin_hill_2p_kinds  0x000002ac  SET_NAME_TERMINAL
+pointer  pumpkin_hill_2p_kinds  0x000002b8  tim_init
+pointer  pumpkin_hill_2p_kinds  0x000002bc  SET_NAME_TIM
+pointer  pumpkin_hill_2p_kinds  0x000002c8  dead_tree_init
+pointer  pumpkin_hill_2p_kinds  0x000002cc  SET_NAME_WOODEAD
+pointer  pumpkin_hill_2p_kinds  0x000002d8  fence_init
+pointer  pumpkin_hill_2p_kinds  0x000002dc  SET_NAME_FENCE
+pointer  pumpkin_hill_2p_kinds  0x000002e8  fence_small_init
+pointer  pumpkin_hill_2p_kinds  0x000002ec  SET_NAME_FENCES
+pointer  pumpkin_hill_2p_kinds  0x000002f8  solid_box_init
+pointer  pumpkin_hill_2p_kinds  0x000002fc  SET_NAME_SOLIDBOX
+pointer  pumpkin_hill_2p_kinds  0x00000308  pumsasi_init
+pointer  pumpkin_hill_2p_kinds  0x0000030c  SET_NAME_PUMSASI
+pointer  pumpkin_hill_2p_kinds  0x00000318  pumpkin_wall_init
+pointer  pumpkin_hill_2p_kinds  0x0000031c  SET_NAME_PUMWALL
+pointer  pumpkin_hill_2p_kinds  0x00000328  skull_waiting_init
+pointer  pumpkin_hill_2p_kinds  0x0000032c  SET_NAME_KSKULL
+pointer  pumpkin_hill_2p_kinds  0x00000338  pumpkin_wall_init
+pointer  pumpkin_hill_2p_kinds  0x0000033c  SET_NAME_PUMWALL
+pointer  pumpkin_hill_2p_kinds  0x00000348  pumpkin_pickup_init
+pointer  pumpkin_hill_2p_kinds  0x0000034c  SET_NAME_PICPUM1
+pointer  pumpkin_hill_2p_kinds  0x00000358  scarecrow_init
+pointer  pumpkin_hill_2p_kinds  0x0000035c  SET_NAME_KAKASI
+pointer  pumpkin_hill_2p_kinds  0x00000368  grass_init
+pointer  pumpkin_hill_2p_kinds  0x0000036c  SET_NAME_KUSA
+pointer  pumpkin_hill_2p_kinds  0x00000378  animal_init
+pointer  pumpkin_hill_2p_kinds  0x0000037c  SET_NAME_MINIMAL
+pointer  pumpkin_hill_2p_kinds  0x00000388  hidden_animal_init
+pointer  pumpkin_hill_2p_kinds  0x0000038c  SET_NAME_WSMMLS
+pointer  pumpkin_hill_2p_kinds  0x00000398  skull_lying_init
+pointer  pumpkin_hill_2p_kinds  0x0000039c  SET_NAME_PSKULL
+pointer  pumpkin_hill_2p_kinds  0x000003a8  knudai_foothold_init
+pointer  pumpkin_hill_2p_kinds  0x000003ac  SET_NAME_KDASIBA
+pointer  pumpkin_hill_2p_kinds  0x000003b8  knudai_warp_hole_init
+pointer  pumpkin_hill_2p_kinds  0x000003bc  SET_NAME_KDWARPHOLE
+pointer  pumpkin_hill_2p_kinds  0x000003c8  knudai_door_init
+pointer  pumpkin_hill_2p_kinds  0x000003cc  SET_NAME_KDDOOR
+pointer  pumpkin_hill_2p_kinds  0x000003d8  knudai_item_box_init
+pointer  pumpkin_hill_2p_kinds  0x000003dc  SET_NAME_KDITEMBOX
+pointer  pumpkin_hill_2p_kinds  0x000003e8  chao_box_init
+pointer  pumpkin_hill_2p_kinds  0x000003ec  SET_NAME_CONTCHAO
+pointer  pumpkin_hill_2p_kinds  0x000003f8  knudai_ring_linear_init
+pointer  pumpkin_hill_2p_kinds  0x000003fc  SET_NAME_KDDRNGL
+pointer  pumpkin_hill_2p_kinds  0x00000408  knudai_ring_circle_init
+pointer  pumpkin_hill_2p_kinds  0x0000040c  SET_NAME_KDDRNGC
+pointer  pumpkin_hill_2p_kinds  0x00000418  knudai_spring_init
+pointer  pumpkin_hill_2p_kinds  0x0000041c  SET_NAME_KDSPRING
+pointer  pumpkin_hill_2p_kinds  0x00000428  knudai_spring_b_init
+pointer  pumpkin_hill_2p_kinds  0x0000042c  SET_NAME_KDSPRINGB
+pointer  pumpkin_hill_2p_kinds  0x00000438  effect_object_init
+pointer  pumpkin_hill_2p_kinds  0x0000043c  SET_NAME_EFFOBJ0
+pointer  pumpkin_hill_2p_kinds  0x00000448  collision_sphere_step
+pointer  pumpkin_hill_2p_kinds  0x0000044c  SET_NAME_SPHERE
+pointer  pumpkin_hill_2p_kinds  0x00000458  collision_cylinder_step
+pointer  pumpkin_hill_2p_kinds  0x0000045c  SET_NAME_CCYL
+pointer  pumpkin_hill_2p_kinds  0x00000468  collision_cube_step
+pointer  pumpkin_hill_2p_kinds  0x0000046c  SET_NAME_CCUBE
+pointer  pumpkin_hill_2p_kinds  0x00000478  collision_wall_step
+pointer  pumpkin_hill_2p_kinds  0x0000047c  SET_NAME_CWALL
+pointer  pumpkin_hill_2p_kinds  0x00000488  collision_circle_step
+pointer  pumpkin_hill_2p_kinds  0x0000048c  SET_NAME_CCIRCLE
+pointer  pumpkin_hill_2p_kinds  0x00000498  messenger_init
+pointer  pumpkin_hill_2p_kinds  0x0000049c  SET_NAME_MSGER
+pointer  pumpkin_hill_2p_kinds  0x000004a8  sg_spring_a_step
+pointer  pumpkin_hill_2p_kinds  0x000004ac  SET_NAME_SGSPRING
+pointer  pumpkin_hill_2p_kinds  0x000004b8  sg_spring_b_step
+pointer  pumpkin_hill_2p_kinds  0x000004bc  SET_NAME_SGSPRINGB
+pointer  pumpkin_hill_2p_kinds  0x000004c8  sg_ring_step
+pointer  pumpkin_hill_2p_kinds  0x000004cc  SET_NAME_SGRING
+pointer  pumpkin_hill_2p_kinds  0x000004d8  sg_item_box_step
+pointer  pumpkin_hill_2p_kinds  0x000004dc  SET_NAME_SGITEMBOX
+pointer  pumpkin_hill_2p_kinds  0x000004e8  search_box_sg_init
+pointer  pumpkin_hill_2p_kinds  0x000004ec  SET_NAME_SGSCHBOX
+pointer  pumpkin_hill_2p_kinds  0x000004f8  emerald_init
+pointer  pumpkin_hill_2p_kinds  0x000004fc  SET_NAME_EMERALD_F
+pointer  pumpkin_hill_2p_kinds  0x00000508  big_step
+pointer  pumpkin_hill_2p_kinds  0x0000050c  SET_NAME_BIG_THE_CAT
+pointer  pumpkin_hill_2p_kinds  0x00000518  technique_link_init
+pointer  pumpkin_hill_2p_kinds  0x0000051c  SET_NAME_LINKLINK
+pointer  pumpkin_hill_2p_kinds  0x00000528  path_enemy_step
+pointer  pumpkin_hill_2p_kinds  0x0000052c  SET_NAME_E_PATH
+pointer  pumpkin_hill_2p_kinds  0x00000538  gold_beetle_step
+pointer  pumpkin_hill_2p_kinds  0x0000053c  SET_NAME_E_GOLD
+pointer  pumpkin_hill_2p_kinds  0x00000548  train_gate_init
+pointer  pumpkin_hill_2p_kinds  0x0000054c  SET_NAME_GSGATE

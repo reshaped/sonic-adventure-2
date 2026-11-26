@@ -1,0 +1,3 @@
+pointer  crab_motions  0x00000000  crab_idle_motion
+pointer  crab_motions  0x0000001c  crab_walk_motion
+pointer  crab_motions  0x00000038  crab_hold_motion

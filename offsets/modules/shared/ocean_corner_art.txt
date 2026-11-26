@@ -1,0 +1,4 @@
+datum  corner_polygons  D  0x00000000  3450
+datum  corner_vertices  D  0x00000d7c  7804
+datum  corner_model  D  0x00002bf8  24
+datum  corner_object  D  0x00002c10  52

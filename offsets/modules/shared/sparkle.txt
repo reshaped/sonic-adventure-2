@@ -1,0 +1,6 @@
+text  SPARKLE_TEXTURE_01  C  0x00000000  8
+text  SPARKLE_TEXTURE_02  C  0x00000008  8
+text  SPARKLE_TEXTURE_03  C  0x00000010  8
+text  SPARKLE_TEXTURE_04  C  0x00000018  8
+datum  sparkle_texnames  D  0x00000000  48
+datum  sparkle_texlist  D  0x00000030  8

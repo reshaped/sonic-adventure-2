@@ -1,0 +1,24 @@
+text  CITY_TEXTURE_CE64_ITA002  12
+text  CITY_TEXTURE_MIU128_CE002  13
+text  CITY_TEXTURE_MIU128_CE008  13
+text  CITY_TEXTURE_MIU64_CE041  12
+text  CITY_TEXTURE_SCITY_KAGE32  13
+text  CITY_TEXTURE_MIU128_CE009  13
+text  CITY_TEXTURE_MIU128_CE005  13
+text  CITY_TEXTURE_MIU128_CE010  13
+text  CITY_TEXTURE_MIU128_CE011  13
+pointer  signboard_texnames  0x00000000  CITY_TEXTURE_CE64_ITA002
+pointer  signboard_texnames  0x0000000c  CITY_TEXTURE_MIU128_CE002
+pointer  signboard_texnames  0x00000018  CITY_TEXTURE_MIU128_CE008
+pointer  signboard_texnames  0x00000024  CITY_TEXTURE_MIU64_CE041
+pointer  signboard_texnames  0x00000030  CITY_TEXTURE_SCITY_KAGE32
+pointer  signboard_texnames  0x0000003c  CITY_TEXTURE_MIU128_CE008
+pointer  signboard_texnames  0x00000048  CITY_TEXTURE_MIU128_CE009
+pointer  signboard_texnames  0x00000054  CITY_TEXTURE_MIU128_CE005
+pointer  signboard_texnames  0x00000060  CITY_TEXTURE_MIU128_CE010
+pointer  signboard_texnames  0x0000006c  CITY_TEXTURE_MIU128_CE011
+pointer  signboard_texlist  0x00000000  signboard_texnames
+pointer  signboard_model  0x00000000  signboard_vertices
+pointer  signboard_model  0x00000004  signboard_polygons
+pointer  signboard_object  0x00000004  signboard_model
+pointer  signboard_texlists  0x00000000  signboard_texlist

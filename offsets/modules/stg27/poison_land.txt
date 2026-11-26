@@ -1,0 +1,17 @@
+datum  colony_poison_land_filenames  C  0x00000000  221
+datum  colony_poison_land_entries  D  0x00000000  96
+datum  colony_poison_land  D  0x00000060  32
+datum  colony_poison_land_textures  D  0x00000080  156
+datum  colony_poison_texlist  D  0x0000011c  8
+datum  colony_poison_land_draw_2_polygons  D  0x00000124  46
+datum  colony_poison_land_draw_2_vertices  D  0x00000154  76
+datum  colony_poison_land_draw_2_model  D  0x000001a0  24
+datum  colony_poison_land_draw_2  D  0x000001b8  52
+datum  colony_poison_land_draw_1_polygons  D  0x000001ec  46
+datum  colony_poison_land_draw_1_vertices  D  0x0000021c  76
+datum  colony_poison_land_draw_1_model  D  0x00000268  24
+datum  colony_poison_land_draw_1  D  0x00000280  52
+datum  colony_poison_land_draw_0_polygons  D  0x000002b4  46
+datum  colony_poison_land_draw_0_vertices  D  0x000002e4  76
+datum  colony_poison_land_draw_0_model  D  0x00000330  24
+datum  colony_poison_land_draw_0  D  0x00000348  52

@@ -1,0 +1,1 @@
+datum  base_desert_pyramid2  C  0x00000000  15

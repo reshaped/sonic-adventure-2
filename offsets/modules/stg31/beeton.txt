@@ -1,0 +1,2 @@
+datum  pieces  D  0x00000030  24
+datum  actions  D  0x00000048  64

@@ -1,0 +1,59 @@
+Checks:
+  - -*
+  - clang-diagnostic-*
+  - bugprone-*
+  - misc-*
+  - readability-*
+  # preserve the original parameter order
+  - -bugprone-easily-swappable-parameters
+  # preserve SHC's implicit narrowing conversions
+  - -bugprone-narrowing-conversions
+  # preserve switches that have no default case
+  - -bugprone-switch-missing-default-case
+  # preserve assignments whose stored values are tested immediately
+  - -bugprone-assignment-in-if-condition
+  # preserve duplicate branches required for matching
+  - -bugprone-branch-clone
+  # a pointer to a pointer tested against NULL is no conversion to mind
+  - -bugprone-multi-level-implicit-pointer-conversion
+  # the game keeps small numbers in signed bytes, which are not text
+  - -bugprone-signed-char-misuse
+  # preserve a step inside a test that && or || orders, which is defined
+  - -bugprone-inc-dec-in-conditions
+  # preserve the game's random numbers, which come from rand
+  - -misc-predictable-rand
+  # preserve unused parameters in original interfaces
+  - -misc-unused-parameters
+  # preserve recursive tree and list traversal
+  - -misc-no-recursion
+  # preserve control-flow structure required for matching
+  - -readability-else-after-return
+  # do not split functions merely to reduce a complexity score
+  - -readability-function-cognitive-complexity
+  # literal constants can encode hardware, format or matching requirements
+  - -readability-magic-numbers
+WarningsAsErrors: '*'
+# the headers under src/ and modules/, as clang-tidy names them when make
+# runs it from the root. the SDK's headers are not checked
+HeaderFilterRegex: '^(src|modules)/'
+CheckOptions:
+  # include-cleaner can suggest C++'s <cstddef> for NULL in C code, and
+  # config/intrinsics.h, which compile_flags.txt includes ahead of each
+  # source, for the intrinsics mathf.h and ninja.h name
+  misc-include-cleaner.IgnoreHeaders: '<cstddef>;config/intrinsics\.h'
+  readability-identifier-naming.FunctionCase: lower_case
+  # the start-up the SDK gives as sample source keeps the SDK's names
+  readability-identifier-naming.FunctionIgnoredRegexp: '^sb(Init|Exit)System$'
+  readability-identifier-naming.VariableCase: lower_case
+  readability-identifier-naming.ParameterCase: lower_case
+  readability-identifier-naming.MemberCase: lower_case
+  readability-identifier-naming.StructCase: lower_case
+  readability-identifier-naming.UnionCase: lower_case
+  readability-identifier-naming.EnumCase: lower_case
+  readability-identifier-naming.EnumConstantCase: UPPER_CASE
+  readability-identifier-naming.MacroDefinitionCase: UPPER_CASE
+  readability-identifier-naming.TypedefCase: lower_case
+  readability-identifier-length.MinimumVariableNameLength: 2
+  readability-identifier-length.MinimumParameterNameLength: 2
+  readability-identifier-length.IgnoredVariableNames: '^[ijkxyz]$'
+  readability-identifier-length.IgnoredParameterNames: '^[ijkxyz]$'

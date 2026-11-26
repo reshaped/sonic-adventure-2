@@ -1,0 +1,100 @@
+        .IMPORT     __errno
+        .EXPORT     __divlu
+
+; errno.h's code for a division by zero
+EDIV:           .EQU    1102
+
+        .SECTION    P,CODE,ALIGN=4
+
+; unsigned division for compiled code: R0 = R1 / R0. it changes R0, R1 and
+; SR's Q, M and T bits, and no other register. a zero divisor sets errno to
+; EDIV and returns 0
+; @asm opcode: rotcl, ROTCL R1 at 0x8c0c0e7a and the 32 after it shift the
+; dividend out of R1 through T, and the quotient into R1
+__divlu:
+        TST         R0,R0
+        MOV.L       R2,@-R15
+        BT          ?divide_by_zero
+        MOV         #0,R2
+        DIV0U
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        DIV1        R0,R2
+        ROTCL       R1
+        MOV         R1,R0
+        RTS
+        MOV.L       @R15+,R2
+?divide_by_zero:
+        MOV.L       ?errno_address,R2
+        MOV.L       ?errno_value,R1
+        MOV         #0,R0
+        MOV.L       R1,@R2
+        RTS
+        MOV.L       @R15+,R2
+        .ALIGN      4
+?errno_address:
+        .DATA.L     __errno
+?errno_value:
+        .DATA.L     EDIV
+        .END

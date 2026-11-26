@@ -1,0 +1,6 @@
+datum  textures  D  0x00000000  24
+datum  security_cylinder_wall_texlist  D  0x00000018  8
+datum  security_cylinder_wall_polygons  D  0x00000020  190
+datum  security_cylinder_wall_vertices  D  0x000000e0  220
+datum  security_cylinder_wall_model  D  0x000001bc  24
+datum  security_cylinder_wall_object  D  0x000001d4  52

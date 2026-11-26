@@ -1,0 +1,17 @@
+text  RING_SPARKLE_TEXTURE_01  7
+text  RING_SPARKLE_TEXTURE_02  7
+text  RING_SPARKLE_TEXTURE_03  7
+text  RING_SPARKLE_TEXTURE_04  7
+text  RING_SPARKLE_TEXTURE_05  7
+text  RING_SPARKLE_TEXTURE_06  7
+text  RING_SPARKLE_TEXTURE_07  7
+text  RING_SPARKLE_TEXTURE_08  7
+pointer  ring_sparkle_texnames  0x00000000  RING_SPARKLE_TEXTURE_01
+pointer  ring_sparkle_texnames  0x0000000c  RING_SPARKLE_TEXTURE_02
+pointer  ring_sparkle_texnames  0x00000018  RING_SPARKLE_TEXTURE_03
+pointer  ring_sparkle_texnames  0x00000024  RING_SPARKLE_TEXTURE_04
+pointer  ring_sparkle_texnames  0x00000030  RING_SPARKLE_TEXTURE_05
+pointer  ring_sparkle_texnames  0x0000003c  RING_SPARKLE_TEXTURE_06
+pointer  ring_sparkle_texnames  0x00000048  RING_SPARKLE_TEXTURE_07
+pointer  ring_sparkle_texnames  0x00000054  RING_SPARKLE_TEXTURE_08
+pointer  ring_sparkle_texlist  0x00000000  ring_sparkle_texnames

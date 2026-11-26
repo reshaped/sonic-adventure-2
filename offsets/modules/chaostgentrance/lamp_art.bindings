@@ -1,0 +1,7 @@
+pointer  entrance_lamp_glow  0x00000000  lamp_glow_vertices
+pointer  entrance_lamp_glow  0x00000004  lamp_glow_polygons
+pointer  lamp_glow  0x00000004  entrance_lamp_glow
+pointer  lamp_fixture_geometry  0x00000000  lamp_fixture_vertices
+pointer  lamp_fixture_geometry  0x00000004  lamp_fixture_polygons
+pointer  entrance_lamp_model  0x00000004  lamp_fixture_geometry
+pointer  entrance_lamp_model  0x0000002c  lamp_glow

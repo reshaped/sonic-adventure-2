@@ -1,0 +1,78 @@
+text  CITY_SCENERY_CE64_ITA002  12
+text  CITY_SCENERY_MIU128_CE003  13
+text  CITY_SCENERY_MIU128_CE004  13
+text  CITY_SCENERY_MIU64_CE041  12
+text  CITY_SCENERY_MIU64_CE037  12
+text  CITY_SCENERY_SCITY128_3  11
+text  CITY_SCENERY_MIU128_CE001  13
+text  CITY_SCENERY_MIU32_CE015  12
+text  CITY_SCENERY_MIU128_CE002  13
+text  CITY_SCENERY_MIU64_CE003  12
+text  CITY_SCENERY_MIU64_CE039  12
+text  CITY_SCENERY_MIU64_CE048  12
+text  CITY_SCENERY_MIU64_CE049  12
+text  CITY_SCENERY_SCITY32_14  11
+pointer  sblg_texnames  0x00000000  CITY_SCENERY_CE64_ITA002
+pointer  sblg_texnames  0x0000000c  CITY_SCENERY_MIU128_CE003
+pointer  sblg_texnames  0x00000018  CITY_SCENERY_MIU128_CE004
+pointer  sblg_texnames  0x00000024  CITY_SCENERY_MIU64_CE041
+pointer  sblg_texlist  0x00000000  sblg_texnames
+pointer  sblg_model  0x00000000  sblg_vertices
+pointer  sblg_model  0x00000004  sblg_polygons
+pointer  sblg_object  0x00000004  sblg_model
+pointer  green_b_texnames  0x00000000  CITY_SCENERY_MIU64_CE037
+pointer  green_b_texnames  0x0000000c  CITY_SCENERY_SCITY128_3
+pointer  green_b_texlist  0x00000000  green_b_texnames
+pointer  green_b_model  0x00000000  green_b_vertices
+pointer  green_b_model  0x00000004  green_b_polygons
+pointer  green_b_object  0x00000004  green_b_model
+pointer  green_b_collision_meshsets  0x00000004  green_b_collision_meshes
+pointer  green_b_collision_model  0x00000000  green_b_collision_points
+pointer  green_b_collision_model  0x00000004  green_b_collision_normals
+pointer  green_b_collision_model  0x0000000c  green_b_collision_meshsets
+pointer  green_b_collision_model  0x00000010  green_b_collision_materials
+pointer  green_b_collision  0x00000004  green_b_collision_model
+pointer  palm_texnames  0x00000000  CITY_SCENERY_MIU128_CE001
+pointer  palm_texnames  0x0000000c  CITY_SCENERY_MIU32_CE015
+pointer  palm_texlist  0x00000000  palm_texnames
+pointer  palm_model  0x00000000  palm_vertices
+pointer  palm_model  0x00000004  palm_polygons
+pointer  palm_object  0x00000004  palm_model
+pointer  slider_texnames  0x00000000  CITY_SCENERY_CE64_ITA002
+pointer  slider_texnames  0x0000000c  CITY_SCENERY_MIU128_CE002
+pointer  slider_texnames  0x00000018  CITY_SCENERY_MIU64_CE003
+pointer  slider_texnames  0x00000024  CITY_SCENERY_MIU64_CE039
+pointer  slider_texnames  0x00000030  CITY_SCENERY_MIU64_CE048
+pointer  slider_texnames  0x0000003c  CITY_SCENERY_MIU64_CE049
+pointer  slider_texlist  0x00000000  slider_texnames
+pointer  slider_model  0x00000000  slider_vertices
+pointer  slider_model  0x00000004  slider_polygons
+pointer  slider_object  0x00000004  slider_model
+pointer  slider_collision_meshsets  0x00000004  slider_collision_meshes
+pointer  slider_collision_model  0x00000000  slider_collision_points
+pointer  slider_collision_model  0x00000004  slider_collision_normals
+pointer  slider_collision_model  0x0000000c  slider_collision_meshsets
+pointer  slider_collision_model  0x00000010  slider_collision_materials
+pointer  slider_collision  0x00000004  slider_collision_model
+pointer  bar_texnames  0x00000000  CITY_SCENERY_SCITY32_14
+pointer  bar_texlist  0x00000000  bar_texnames
+pointer  bar_model  0x00000000  bar_vertices
+pointer  bar_model  0x00000004  bar_polygons
+pointer  bar_object  0x00000004  bar_model
+pointer  fence_short_texnames  0x00000000  CITY_SCENERY_MIU128_CE002
+pointer  fence_short_texlist  0x00000000  fence_short_texnames
+pointer  fence_short_model  0x00000000  fence_short_vertices
+pointer  fence_short_model  0x00000004  fence_short_polygons
+pointer  fence_short_object  0x00000004  fence_short_model
+pointer  fence_long_texnames  0x00000000  CITY_SCENERY_MIU128_CE002
+pointer  fence_long_texlist  0x00000000  fence_long_texnames
+pointer  fence_long_model  0x00000000  fence_long_vertices
+pointer  fence_long_model  0x00000004  fence_long_polygons
+pointer  fence_long_object  0x00000004  fence_long_model
+pointer  scenery_texlists  0x00000000  sblg_texlist
+pointer  scenery_texlists  0x00000004  green_b_texlist
+pointer  scenery_texlists  0x00000008  palm_texlist
+pointer  scenery_texlists  0x0000000c  slider_texlist
+pointer  scenery_texlists  0x00000010  bar_texlist
+pointer  scenery_texlists  0x00000014  fence_long_texlist
+pointer  scenery_texlists  0x00000018  fence_short_texlist

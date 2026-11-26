@@ -1,0 +1,33 @@
+text  SKY_ET64_3  7
+text  SKY_SPACE128_17  12
+text  SKY_SPACE128_2  11
+text  SKY_SPACE128_3  11
+text  SKY_SPACE128_4  11
+text  SKY_SPACE128_7  11
+text  SKY_SPACE128_9  11
+text  SKY_SPACE256_1  11
+text  SKY_SPACE256_7  11
+text  SKY_SPACE32_4  10
+text  SKY_SPACE32_7  10
+text  SKY_SPACE512_1  11
+text  SKY_SPACE512_2  11
+text  SKY_SPACE64_18  11
+text  SKY_SPACE64_19  11
+text  SKY_SPACE64_9  10
+
+pointer  textures  0x00000000  SKY_ET64_3
+pointer  textures  0x0000000c  SKY_SPACE128_17
+pointer  textures  0x00000018  SKY_SPACE128_2
+pointer  textures  0x00000024  SKY_SPACE128_3
+pointer  textures  0x00000030  SKY_SPACE128_4
+pointer  textures  0x0000003c  SKY_SPACE128_7
+pointer  textures  0x00000048  SKY_SPACE128_9
+pointer  textures  0x00000054  SKY_SPACE256_1
+pointer  textures  0x00000060  SKY_SPACE256_7
+pointer  textures  0x0000006c  SKY_SPACE32_4
+pointer  textures  0x00000078  SKY_SPACE32_7
+pointer  textures  0x00000084  SKY_SPACE512_1
+pointer  textures  0x00000090  SKY_SPACE512_2
+pointer  textures  0x0000009c  SKY_SPACE64_18
+pointer  textures  0x000000a8  SKY_SPACE64_19
+pointer  textures  0x000000c0  SKY_SPACE64_9

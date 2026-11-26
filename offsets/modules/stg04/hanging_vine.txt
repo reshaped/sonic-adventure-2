@@ -1,0 +1,17 @@
+text  HANGING_VINE_TEXTURE_JUNGLE128_13  C  0x0000007c  13
+text  HANGING_VINE_TEXTURE_MIU64_GREEN006  C  0x0000008c  15
+text  HANGING_VINE_TEXTURE_MIU64_GREEN008  C  0x0000009c  15
+datum  model_textures  D  0x00000000  36
+datum  hanging_vine_texlist  D  0x00000024  8
+datum  grip_polygons  D  0x0000002c  510
+datum  grip_vertices  D  0x0000022c  780
+datum  grip_mesh  D  0x00000538  24
+datum  hanging_vine_tip  D  0x00000550  52
+datum  stem_polygons  D  0x00000584  490
+datum  stem_vertices  D  0x00000770  668
+datum  stem_mesh  D  0x00000a0c  24
+datum  stem_object  D  0x00000a24  52
+datum  anchor_polygons  D  0x00000a58  634
+datum  anchor_vertices  D  0x00000cd4  556
+datum  anchor_mesh  D  0x00000f00  24
+datum  hanging_vine_object  D  0x00000f18  52

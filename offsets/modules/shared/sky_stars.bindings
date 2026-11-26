@@ -1,0 +1,3 @@
+include  orbital_star_materials
+
+pointer  textures  0x000000b4  sky_stars_20_texture

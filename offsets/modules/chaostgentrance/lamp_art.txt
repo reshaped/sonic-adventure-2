@@ -1,0 +1,8 @@
+datum  lamp_glow_polygons  D  0x00000000  174
+datum  lamp_glow_vertices  D  0x000000b0  268
+datum  entrance_lamp_glow  D  0x000001bc  24
+datum  lamp_glow  D  0x000001d4  52
+datum  lamp_fixture_polygons  D  0x00000208  1214
+datum  lamp_fixture_vertices  D  0x000006c8  2188
+datum  lamp_fixture_geometry  D  0x00000f54  24
+datum  entrance_lamp_model  D  0x00000f6c  52

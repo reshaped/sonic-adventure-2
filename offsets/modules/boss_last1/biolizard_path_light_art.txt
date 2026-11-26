@@ -1,0 +1,4 @@
+datum  light_polygons  D  0x00000000  278
+datum  light_vertices  D  0x00000118  1068
+datum  light_mesh  D  0x00000544  24
+datum  unused_path_light  D  0x0000055c  52

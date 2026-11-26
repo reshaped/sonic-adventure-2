@@ -1,0 +1,51 @@
+text  GOLD_BEETLE_TEXTURE_ARCHIVE  10
+text  GOLD_BEETLE_TEXTURE_TASK_NAME  7
+text  GOLD_BEETLE_DEBUG_PHASE  11
+text  GOLD_BEETLE_DEBUG_EXISTENCE  13
+text  GOLD_BEETLE_DEBUG_FRAMES  9
+text  GOLD_BEETLE_DEBUG_SPEED  9
+text  GOLD_BEETLE_DEBUG_VERTICAL_RANGE  11
+text  GOLD_BEETLE_DEBUG_DETECTION_RANGE  9
+text  GOLD_BEETLE_DEBUG_YAW  10
+text  GOLD_BEETLE_DEBUG_ID  5
+text  GOLD_BEETLE_DEBUG_SHADOW_KIND  16
+text  GOLD_BEETLE_DEBUG_ON  3
+text  GOLD_BEETLE_DEBUG_OFF  4
+text  GOLD_BEETLE_TEXTURE_GUN_LOGO  12
+text  GOLD_BEETLE_TEXTURE_GUN_NUMBER  10
+text  GOLD_BEETLE_TEXTURE_GOLD  9
+text  GOLD_BEETLE_SET_TITLE  23
+pointer  gold_beetle_texnames  0x00000000  GOLD_BEETLE_TEXTURE_GUN_LOGO
+pointer  gold_beetle_texnames  0x0000000c  GOLD_BEETLE_TEXTURE_GUN_NUMBER
+pointer  gold_beetle_texnames  0x00000018  GOLD_BEETLE_TEXTURE_GOLD
+pointer  gold_beetle_texlist  0x00000000  gold_beetle_texnames
+pointer  gold_beetle_node_5_model  0x00000000  gold_beetle_node_5_vertices
+pointer  gold_beetle_node_5_model  0x00000004  gold_beetle_node_5_polygons
+pointer  gold_beetle_node_5_object  0x00000004  gold_beetle_node_5_model
+pointer  gold_beetle_node_4_model  0x00000000  gold_beetle_node_4_vertices
+pointer  gold_beetle_node_4_model  0x00000004  gold_beetle_node_4_polygons
+pointer  gold_beetle_node_4_object  0x00000004  gold_beetle_node_4_model
+pointer  gold_beetle_node_4_object  0x00000030  gold_beetle_node_5_object
+pointer  gold_beetle_node_3_model  0x00000000  gold_beetle_node_3_vertices
+pointer  gold_beetle_node_3_model  0x00000004  gold_beetle_node_3_polygons
+pointer  gold_beetle_node_3_object  0x00000004  gold_beetle_node_3_model
+pointer  gold_beetle_node_3_object  0x00000030  gold_beetle_node_4_object
+pointer  gold_beetle_node_2_model  0x00000000  gold_beetle_node_2_vertices
+pointer  gold_beetle_node_2_model  0x00000004  gold_beetle_node_2_polygons
+pointer  gold_beetle_node_2_object  0x00000004  gold_beetle_node_2_model
+pointer  gold_beetle_node_2_object  0x00000030  gold_beetle_node_3_object
+pointer  gold_beetle_node_1_model  0x00000000  gold_beetle_node_1_vertices
+pointer  gold_beetle_node_1_model  0x00000004  gold_beetle_node_1_polygons
+pointer  gold_beetle_node_1_object  0x00000004  gold_beetle_node_1_model
+pointer  gold_beetle_node_1_object  0x00000030  gold_beetle_node_2_object
+pointer  gold_beetle_object  0x0000002c  gold_beetle_node_1_object
+pointer  gold_beetle_motion_data  0x00000014  gold_beetle_node_1_ang_keys
+pointer  gold_beetle_motion_data  0x00000050  gold_beetle_node_5_pos_keys
+pointer  gold_beetle_motion  0x00000000  gold_beetle_motion_data
+pointer  gold_beetle_pieces  0x00000000  gold_beetle_node_5_model
+pointer  gold_beetle_pieces  0x00000004  gold_beetle_node_4_model
+pointer  gold_beetle_pieces  0x00000008  gold_beetle_node_3_model
+pointer  gold_beetle_pieces  0x0000000c  gold_beetle_node_2_model
+pointer  gold_beetle_pieces  0x00000010  gold_beetle_node_1_model
+pointer  gold_beetle_actions  0x00000000  gold_beetle_motion
+pointer  gold_beetle_action_names  0x00000000  GOLD_BEETLE_SET_TITLE

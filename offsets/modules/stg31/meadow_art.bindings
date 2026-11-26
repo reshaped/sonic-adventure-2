@@ -1,0 +1,83 @@
+pointer  palm_model  0x00000000  palm_vertices
+pointer  palm_model  0x00000004  palm_polygons
+
+pointer  green_hill_palm_object  0x00000004  palm_model
+
+pointer  palm_collision_meshsets  0x00000004  palm_collision_faces
+
+pointer  palm_collision_model  0x00000000  palm_collision_points
+pointer  palm_collision_model  0x00000004  palm_collision_normals
+pointer  palm_collision_model  0x0000000c  palm_collision_meshsets
+pointer  palm_collision_model  0x00000010  palm_collision_materials
+
+pointer  green_hill_palm_collision  0x00000004  palm_collision_model
+
+pointer  turning_flower_a_head_model  0x00000000  turning_flower_a_head_vertices
+pointer  turning_flower_a_head_model  0x00000004  turning_flower_a_head_polygons
+
+pointer  turning_flower_a_head  0x00000004  turning_flower_a_head_model
+
+pointer  turning_flower_a_model  0x00000000  turning_flower_a_vertices
+pointer  turning_flower_a_model  0x00000004  turning_flower_a_polygons
+
+pointer  green_hill_turning_flower_a  0x00000004  turning_flower_a_model
+pointer  green_hill_turning_flower_a  0x0000002c  turning_flower_a_head
+
+pointer  turning_flower_b_head_model  0x00000000  turning_flower_b_head_vertices
+pointer  turning_flower_b_head_model  0x00000004  turning_flower_b_head_polygons
+
+pointer  turning_flower_b_head  0x00000004  turning_flower_b_head_model
+
+pointer  turning_flower_b_model  0x00000000  turning_flower_b_vertices
+pointer  turning_flower_b_model  0x00000004  turning_flower_b_polygons
+
+pointer  green_hill_turning_flower_b  0x00000004  turning_flower_b_model
+pointer  green_hill_turning_flower_b  0x0000002c  turning_flower_b_head
+
+pointer  turning_flower_bounds_model  0x00000000  turning_flower_bounds_vertices
+pointer  turning_flower_bounds_model  0x00000004  turning_flower_bounds_polygons
+
+pointer  green_hill_turning_flower_bounds  0x00000004  turning_flower_bounds_model
+
+pointer  bobbing_flower_head_model  0x00000000  bobbing_flower_head_vertices
+pointer  bobbing_flower_head_model  0x00000004  bobbing_flower_head_polygons
+
+pointer  bobbing_flower_head  0x00000004  bobbing_flower_head_model
+
+pointer  bobbing_flower_model  0x00000000  bobbing_flower_vertices
+pointer  bobbing_flower_model  0x00000004  bobbing_flower_polygons
+
+pointer  green_hill_bobbing_flower  0x00000004  bobbing_flower_model
+pointer  green_hill_bobbing_flower  0x0000002c  bobbing_flower_head
+
+pointer  flower_collision_meshsets  0x00000004  flower_collision_faces
+
+pointer  flower_collision_model  0x00000000  flower_collision_points
+pointer  flower_collision_model  0x00000004  flower_collision_normals
+pointer  flower_collision_model  0x0000000c  flower_collision_meshsets
+pointer  flower_collision_model  0x00000010  flower_collision_materials
+
+pointer  green_hill_flower_collision  0x00000004  flower_collision_model
+
+pointer  grass_model  0x00000000  grass_vertices
+pointer  grass_model  0x00000004  grass_polygons
+
+pointer  green_hill_grass_object  0x00000004  grass_model
+
+pointer  grass_collision_meshsets  0x00000004  grass_collision_faces
+
+pointer  grass_collision_model  0x00000000  grass_collision_points
+pointer  grass_collision_model  0x00000004  grass_collision_normals
+pointer  grass_collision_model  0x0000000c  grass_collision_meshsets
+pointer  grass_collision_model  0x00000010  grass_collision_materials
+
+pointer  green_hill_grass_collision  0x00000004  grass_collision_model
+
+pointer  rock_collision_meshsets  0x00000004  rock_collision_faces
+
+pointer  rock_collision_model  0x00000000  rock_collision_points
+pointer  rock_collision_model  0x00000004  rock_collision_normals
+pointer  rock_collision_model  0x0000000c  rock_collision_meshsets
+pointer  rock_collision_model  0x00000010  rock_collision_materials
+
+pointer  green_hill_rock_collision  0x00000004  rock_collision_model

@@ -1,0 +1,8 @@
+datum  machine_textures  D  0x00000000  12
+datum  machine_models  D  0x0000000c  12
+datum  machine_door_motions  D  0x00000018  12
+datum  machine_hero_trim  D  0x00000024  12
+datum  machine_hero_trim_motions  D  0x00000030  12
+datum  machine_buttons  D  0x0000003c  12
+datum  machine_doors  D  0x00000048  12
+datum  machine_bases  D  0x00000054  12

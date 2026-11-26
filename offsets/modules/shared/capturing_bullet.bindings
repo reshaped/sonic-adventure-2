@@ -1,0 +1,13 @@
+text  CAPTURING_BULLET_ENEMY5  7
+
+pointer  capturing_bullet_texname  0x00000000  CAPTURING_BULLET_ENEMY5
+pointer  capturing_bullet_texlist  0x00000000  capturing_bullet_texname
+pointer  capturing_bullet_fly_model  0x00000000  capturing_bullet_fly_vertices
+pointer  capturing_bullet_fly_model  0x00000004  capturing_bullet_fly_polygons
+pointer  capturing_bullet_fly_object  0x00000004  capturing_bullet_fly_model
+pointer  capturing_bullet_burst_model  0x00000000  capturing_bullet_burst_vertices
+pointer  capturing_bullet_burst_model  0x00000004  capturing_bullet_burst_polygons
+pointer  capturing_bullet_burst_object  0x00000004  capturing_bullet_burst_model
+pointer  capturing_bullet_hold_model  0x00000000  capturing_bullet_hold_vertices
+pointer  capturing_bullet_hold_model  0x00000004  capturing_bullet_hold_polygons
+pointer  capturing_bullet_hold_object  0x00000004  capturing_bullet_hold_model

@@ -1,0 +1,2 @@
+datum  staff_glyphs  D  0x00000000  1308
+datum  staff_photo_cell  D  0x0000051c  20

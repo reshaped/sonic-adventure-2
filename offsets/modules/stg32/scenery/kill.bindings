@@ -1,0 +1,6 @@
+pointer  meteor_herd_kill_object_meshsets  0x00000004  meteor_herd_kill_object_faces
+pointer  meteor_herd_kill_object_model  0x00000000  meteor_herd_kill_object_points
+pointer  meteor_herd_kill_object_model  0x00000004  meteor_herd_kill_object_normals
+pointer  meteor_herd_kill_object_model  0x0000000c  meteor_herd_kill_object_meshsets
+pointer  meteor_herd_kill_object_model  0x00000010  meteor_herd_kill_object_materials
+pointer  meteor_herd_kill_object  0x00000004  meteor_herd_kill_object_model

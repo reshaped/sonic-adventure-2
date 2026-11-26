@@ -1,0 +1,8 @@
+datum  walk_vmu_model_polygons  D  0x00000000  534
+datum  walk_vmu_model_vertices  D  0x00000218  1260
+datum  walk_vmu_model_model  D  0x00000704  24
+datum  walk_vmu_model  D  0x0000071c  52
+datum  walk_multi_vmu_model_polygons  D  0x00000750  414
+datum  walk_multi_vmu_model_vertices  D  0x000008f0  684
+datum  walk_multi_vmu_model_model  D  0x00000b9c  24
+datum  walk_multi_vmu_model  D  0x00000bb4  52

@@ -1,0 +1,16 @@
+pointer  left_panel_mesh  0x00000000  left_panel_vertices
+pointer  left_panel_mesh  0x00000004  left_panel_polygons
+pointer  last_step_left_panel  0x00000004  left_panel_mesh
+pointer  unfogged_mesh  0x00000000  unfogged_vertices
+pointer  unfogged_mesh  0x00000004  unfogged_polygons
+pointer  last_step_unfogged  0x00000004  unfogged_mesh
+pointer  last_step_unfogged  0x00000030  last_step_left_panel
+pointer  right_panel_mesh  0x00000000  right_panel_vertices
+pointer  right_panel_mesh  0x00000004  right_panel_polygons
+pointer  last_step_right_panel  0x00000004  right_panel_mesh
+pointer  last_step_right_panel  0x00000030  last_step_unfogged
+pointer  last_step_model  0x00000000  deck_vertices
+pointer  last_step_model  0x00000004  deck_polygons
+pointer  deck_object  0x00000004  last_step_model
+pointer  deck_object  0x0000002c  last_step_right_panel
+include last_step_collision

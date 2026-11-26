@@ -1,0 +1,91 @@
+text  SHOUKO_TEXTURE_ARCHIVE  9
+text  SHOUKO_TEXTURE_TASK_NAME  7
+text  SHOUKO_DEBUG_YAW  10
+text  SHOUKO_DEBUG_ID  5
+text  SHOUKO_DEBUG_PATH  9
+text  SHOUKO_DEBUG_KIND  7
+text  SHOUKO_DEBUG_SHOOTING_X  18
+text  SHOUKO_DEBUG_SHOOTING_Y  18
+text  SHOUKO_DEBUG_SHOOTING_Z  18
+text  SHOUKO_DEBUG_BOMB  6
+text  SHOUKO_DEBUG_BOMB_SEPARATOR  2
+text  SHOUKO_DEBUG_BOMBING_RADIUS  18
+text  SHOUKO_DEBUG_BOMBING_X  17
+text  SHOUKO_DEBUG_BOMBING_Y  17
+text  SHOUKO_DEBUG_BOMBING_Z  17
+text  SHOUKO_DEBUG_SWITCH_BOX  14
+text  SHOUKO_DEBUG_SWITCH_YAW_AND_ID  15
+text  SHOUKO_DEBUG_SWITCH_ROLL  9
+text  SHOUKO_DEBUG_SWITCH_SCALE_X  9
+text  SHOUKO_DEBUG_SWITCH_SCALE_Y  9
+text  SHOUKO_DEBUG_SWITCH_SCALE_Z  9
+text  SHOUKO_DEBUG_SWITCH_SPHERE  16
+text  SHOUKO_DEBUG_SWITCH_ID  7
+text  SHOUKO_DEBUG_SWITCH_RADIUS  9
+text  SHOUKO_BULLET_TASK_NAME  26
+text  SHOUKO_BOMB_TASK_NAME  24
+text  SHOUKO_TEXTURE_ENEMY_01  9
+text  SHOUKO_TEXTURE_GUN_LOGO001  12
+text  SHOUKO_TEXTURE_AIRFORCE  9
+text  SHOUKO_TEXTURE_LOGO  5
+text  SHOUKO_GUNNER_LABEL  24
+text  SHOUKO_THREE_BOMB_LABEL  26
+text  SHOUKO_TWO_BOMB_LABEL  26
+text  SHOUKO_ONE_BOMB_LABEL  26
+text  SHOUKO_CUBE_SWITCH_LABEL  5
+text  SHOUKO_SPHERE_SWITCH_LABEL  7
+pointer  shouko_texname  0x00000000  SHOUKO_TEXTURE_ENEMY_01
+pointer  shouko_texname  0x0000000c  SHOUKO_TEXTURE_GUN_LOGO001
+pointer  shouko_texname  0x00000018  SHOUKO_TEXTURE_AIRFORCE
+pointer  shouko_texname  0x00000024  SHOUKO_TEXTURE_LOGO
+pointer  shouko_texlist  0x00000000  shouko_texname
+pointer  shouko_node_6_model  0x00000000  shouko_node_6_vertices
+pointer  shouko_node_6_model  0x00000004  shouko_node_6_polygons
+pointer  shouko_node_6_object  0x00000004  shouko_node_6_model
+pointer  shouko_node_5_model  0x00000000  shouko_node_5_vertices
+pointer  shouko_node_5_model  0x00000004  shouko_node_5_polygons
+pointer  shouko_node_5_object  0x00000004  shouko_node_5_model
+pointer  shouko_node_5_object  0x00000030  shouko_node_6_object
+pointer  shouko_node_4_model  0x00000000  shouko_node_4_vertices
+pointer  shouko_node_4_model  0x00000004  shouko_node_4_polygons
+pointer  shouko_node_4_object  0x00000004  shouko_node_4_model
+pointer  shouko_node_4_object  0x00000030  shouko_node_5_object
+pointer  shouko_node_3_model  0x00000000  shouko_node_3_vertices
+pointer  shouko_node_3_model  0x00000004  shouko_node_3_polygons
+pointer  shouko_node_3_object  0x00000004  shouko_node_3_model
+pointer  shouko_node_3_object  0x00000030  shouko_node_4_object
+pointer  shouko_node_2_model  0x00000000  shouko_node_2_vertices
+pointer  shouko_node_2_model  0x00000004  shouko_node_2_polygons
+pointer  shouko_node_2_object  0x00000004  shouko_node_2_model
+pointer  shouko_node_2_object  0x00000030  shouko_node_3_object
+pointer  shouko_node_1_model  0x00000000  shouko_node_1_vertices
+pointer  shouko_node_1_model  0x00000004  shouko_node_1_polygons
+pointer  shouko_node_1_object  0x00000004  shouko_node_1_model
+pointer  shouko_node_1_object  0x00000030  shouko_node_2_object
+pointer  shouko_model  0x00000000  shouko_vertices
+pointer  shouko_model  0x00000004  shouko_polygons
+pointer  shouko_object  0x00000004  shouko_model
+pointer  shouko_object  0x0000002c  shouko_node_1_object
+pointer  shouko_bomb_model  0x00000000  bomb_vertices
+pointer  shouko_bomb_model  0x00000004  bomb_polygons
+pointer  bomb_object  0x00000004  shouko_bomb_model
+pointer  shouko_shadow_model  0x00000000  shouko_shadow_vertices
+pointer  shouko_shadow_model  0x00000004  shouko_shadow_polygons
+pointer  shouko_shadow_object  0x00000004  shouko_shadow_model
+pointer  shouko_path_0  0x00000008  shouko_path_0_points
+pointer  shouko_path_1  0x00000008  shouko_path_1_points
+pointer  shouko_pieces  0x00000000  shouko_node_6_model
+pointer  shouko_pieces  0x00000004  shouko_node_5_model
+pointer  shouko_pieces  0x00000008  shouko_node_4_model
+pointer  shouko_pieces  0x0000000c  shouko_node_3_model
+pointer  shouko_pieces  0x00000010  shouko_node_2_model
+pointer  shouko_pieces  0x00000014  shouko_node_1_model
+pointer  shouko_pieces  0x00000018  shouko_model
+pointer  shouko_paths  0x00000000  shouko_path_0
+pointer  shouko_paths  0x00000004  shouko_path_1
+pointer  shouko_titles  0x00000000  SHOUKO_GUNNER_LABEL
+pointer  shouko_titles  0x00000004  SHOUKO_THREE_BOMB_LABEL
+pointer  shouko_titles  0x00000008  SHOUKO_TWO_BOMB_LABEL
+pointer  shouko_titles  0x0000000c  SHOUKO_ONE_BOMB_LABEL
+pointer  switch_shape_names  0x00000000  SHOUKO_CUBE_SWITCH_LABEL
+pointer  switch_shape_names  0x00000004  SHOUKO_SPHERE_SWITCH_LABEL

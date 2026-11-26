@@ -1,0 +1,6 @@
+pointer  sky_names  0x00000000  carrier_sky_clouds
+pointer  sky_names  0x0000000c  carrier_sky_horizon
+pointer  carrier_sky_texlist  0x00000000  sky_names
+pointer  sky_model  0x00000000  sky_vertices
+pointer  sky_model  0x00000004  sky_polygons
+pointer  carrier_sky  0x00000004  sky_model

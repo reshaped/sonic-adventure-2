@@ -1,0 +1,3 @@
+text  OCEAN_TEXTURE_KD_SO_HIKARI1  C  0x00000000  14
+datum  textures  D  0x00000000  12
+datum  swaying_light_texlist  D  0x0000000c  8

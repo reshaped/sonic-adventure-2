@@ -1,0 +1,7 @@
+text  PANELS_TEXTURE_MIU64_SH007  C  0x00000000  12
+datum  textures  D  0x00000000  36
+datum  security_panel_c_texlist  D  0x00000024  8
+datum  security_panel_c_object_polygons  D  0x0000002c  514
+datum  security_panel_c_object_vertices  D  0x00000230  972
+datum  security_panel_c_object_model  D  0x000005fc  24
+datum  security_panel_c_object  D  0x00000614  52

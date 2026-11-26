@@ -1,0 +1,9 @@
+text  SPARKLE_TEXTURE_01  8
+text  SPARKLE_TEXTURE_02  8
+text  SPARKLE_TEXTURE_03  8
+text  SPARKLE_TEXTURE_04  8
+pointer  sparkle_texnames  0x00000000  SPARKLE_TEXTURE_01
+pointer  sparkle_texnames  0x0000000c  SPARKLE_TEXTURE_02
+pointer  sparkle_texnames  0x00000018  SPARKLE_TEXTURE_03
+pointer  sparkle_texnames  0x00000024  SPARKLE_TEXTURE_04
+pointer  sparkle_texlist  0x00000000  sparkle_texnames

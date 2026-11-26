@@ -1,0 +1,32 @@
+text  PNP_TEXTURE_MIU128_LOCO001  15
+text  PNP_TEXTURE_MIU64_MO004  12
+text  PNP_TEXTURE_MIU64_MO005  12
+text  PNP_TEXTURE_MIU64_MO006  12
+text  PNP_TEXTURE_MIU32_MO001  12
+
+pointer  pnp_texlist_names  0x00000000  PNP_TEXTURE_MIU128_LOCO001
+pointer  pnp_texlist_names  0x0000000c  PNP_TEXTURE_MIU64_MO004
+pointer  pnp_texlist_names  0x00000018  PNP_TEXTURE_MIU64_MO005
+pointer  pnp_texlist_names  0x00000024  PNP_TEXTURE_MIU64_MO006
+pointer  pnp_texlist  0x00000000  pnp_texlist_names
+pointer  pnp_object_child_sibling_model  0x00000000  pnp_object_child_sibling_vertices
+pointer  pnp_object_child_sibling_model  0x00000004  pnp_object_child_sibling_polygons
+pointer  pnp_object_child_sibling  0x00000004  pnp_object_child_sibling_model
+pointer  pnp_object_child_model  0x00000000  pnp_object_child_vertices
+pointer  pnp_object_child_model  0x00000004  pnp_object_child_polygons
+pointer  pnp_object_child  0x00000004  pnp_object_child_model
+pointer  pnp_object_child  0x00000030  pnp_object_child_sibling
+pointer  pnp_model  0x00000000  pnp_vertices
+pointer  pnp_model  0x00000004  pnp_polygons
+pointer  pnp_object  0x00000004  pnp_model
+pointer  pnp_object  0x0000002c  pnp_object_child
+pointer  pnp_floor_texlist_names  0x00000000  PNP_TEXTURE_MIU32_MO001
+pointer  pnp_floor_texlist  0x00000000  pnp_floor_texlist_names
+pointer  pnp_floor_model  0x00000000  pnp_floor_vertices
+pointer  pnp_floor_model  0x00000004  pnp_floor_polygons
+pointer  pnp_floor_object  0x00000004  pnp_floor_model
+pointer  pnp_ceiling_texlist_names  0x00000000  PNP_TEXTURE_MIU32_MO001
+pointer  pnp_ceiling_texlist  0x00000000  pnp_ceiling_texlist_names
+pointer  pnp_ceiling_model  0x00000000  pnp_ceiling_vertices
+pointer  pnp_ceiling_model  0x00000004  pnp_ceiling_polygons
+pointer  pnp_ceiling_object  0x00000004  pnp_ceiling_model

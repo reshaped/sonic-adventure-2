@@ -1,0 +1,8 @@
+modules/stg38/core_knuckles_channel_scenery.c
+modules/stg38/core_knuckles_channel_scenery_filenames.c
+modules/stg38/core_knuckles_shaft_scenery_filenames.c
+modules/stg38/player_motions.c
+modules/stg38/poison_scenery.c
+modules/stg38/shaft_scenery.c
+modules/stg38/terrain.c
+modules/stg38/wall_placements.c

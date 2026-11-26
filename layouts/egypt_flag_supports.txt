@@ -1,0 +1,13 @@
+# Both Egyptian stages draw the shadowed or bright support at the flag actor's tilt.
+.flag_shadow_support_textures  texture_names  2
+flag_shadow_support_texlist  texture_list  .flag_shadow_support_textures
+.flag_shadow_support_polygons  chunk_polygons  75
+.flag_shadow_support_vertices  chunk_vertices  51
+flag_shadow_support  chunk_model  .flag_shadow_support_vertices .flag_shadow_support_polygons
+flag_shadow_support_root  chunk_object  flag_shadow_support - -
+.flag_bright_support_textures  texture_names  1
+flag_bright_support_texlist  texture_list  .flag_bright_support_textures
+.flag_bright_support_polygons  chunk_polygons  57
+.flag_bright_support_vertices  chunk_vertices  35
+flag_bright_support  chunk_model  .flag_bright_support_vertices .flag_bright_support_polygons
+flag_bright_support_root  chunk_object  flag_bright_support - -

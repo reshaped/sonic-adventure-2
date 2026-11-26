@@ -1,0 +1,13 @@
+file                    SONIC2/TITLE.PRS
+
+# section               start       end
+DHEAD                   0x8c500000  0x8c500020
+P                       0x8c500020  0x8c5023e0
+C                       0x8c5023e0  0x8c502eec
+D                       0x8c502eec  0x8c504c64
+
+# source                section     start       end
+modules/title/head.c    DHEAD       0x8c500000  0x8c500018
+modules/title/title.c   P           0x8c500020  0x8c5023e0
+modules/title/title.c   C           0x8c5023e0  0x8c502eea
+modules/title/title.c   D           0x8c502eec  0x8c504c64

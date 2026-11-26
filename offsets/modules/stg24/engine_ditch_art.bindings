@@ -1,0 +1,7 @@
+pointer  engine_ditch_object_child_model  0x00000000  engine_ditch_object_child_vertices
+pointer  engine_ditch_object_child_model  0x00000004  engine_ditch_object_child_polygons
+pointer  engine_ditch_object_child  0x00000004  engine_ditch_object_child_model
+pointer  engine_ditch_model  0x00000000  engine_ditch_vertices
+pointer  engine_ditch_model  0x00000004  engine_ditch_polygons
+pointer  engine_ditch_object  0x00000004  engine_ditch_model
+pointer  engine_ditch_object  0x0000002c  engine_ditch_object_child

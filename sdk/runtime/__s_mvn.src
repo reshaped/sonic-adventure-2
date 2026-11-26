@@ -1,0 +1,44 @@
+; __s_mvn.obj is member 32 (zero-based) of Katana R11b sh4nlfzn.lib.
+; Its linked text matches the retail image. Its SYSROF record names
+; A_SH as the tool that wrote the object.
+
+        .EXPORT     __slow_mvn
+
+        .SECTION    P,CODE,ALIGN=4
+
+; copy R0 bytes from R2 to R1, a byte at a time from the first byte up.
+; neither block needs to be aligned, and R0 may be 0. it changes R0, R1 and
+; T, and keeps every other register
+; @asm open: no inspect rule reads R0 to R2 at its entry
+__slow_mvn:
+        MOV.L       R2,@-R15
+        MOV.L       R3,@-R15
+        MOV.L       R4,@-R15
+        CMP/EQ      #0,R0
+        BT          ?copy_done
+        MOV         R2,R4
+        ADD         R0,R4
+?copy_four:
+        MOV.B       @R2+,R0
+        MOV.B       R0,@R1
+        CMP/HI      R2,R4
+        BF          ?copy_done
+        MOV.B       @R2+,R0
+        MOV.B       R0,@(1,R1)
+        CMP/HI      R2,R4
+        BF          ?copy_done
+        MOV.B       @R2+,R0
+        MOV.B       R0,@(2,R1)
+        CMP/HI      R2,R4
+        BF          ?copy_done
+        MOV.B       @R2+,R0
+        MOV.B       R0,@(3,R1)
+        CMP/HI      R2,R4
+        ADD         #4,R1
+        BT          ?copy_four
+?copy_done:
+        MOV.L       @R15+,R4
+        MOV.L       @R15+,R3
+        RTS
+        MOV.L       @R15+,R2
+        .END

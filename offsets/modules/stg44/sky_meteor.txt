@@ -1,0 +1,4 @@
+datum  meteor_polygons  D  0x00000014  5534
+datum  meteor_vertices  D  0x000015b4  6652
+datum  sky_meteor_mesh  D  0x00002fb0  24
+datum  background_4_object  D  0x00002fc8  52

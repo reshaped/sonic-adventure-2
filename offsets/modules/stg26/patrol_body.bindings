@@ -1,0 +1,3 @@
+pointer  object_model  0x00000000  object_vertices
+pointer  object_model  0x00000004  object_polygons
+pointer  quarters_guard_object  0x00000004  object_model

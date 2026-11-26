@@ -1,0 +1,5 @@
+text  OCEAN_TEXTURE_KD_SO_SEKIHI4  14
+pointer  textures  0x00000000  box_pillar_texture
+pointer  textures  0x0000000c  OCEAN_TEXTURE_KD_SO_SEKIHI4
+pointer  textures  0x00000018  box_stone_texture
+pointer  box_base_texlist  0x00000000  textures

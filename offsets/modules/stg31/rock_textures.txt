@@ -1,0 +1,2 @@
+text  ROCK_MATERIAL_ROCK  C  0x00000000  5
+datum  textures  D  0x00000000  12

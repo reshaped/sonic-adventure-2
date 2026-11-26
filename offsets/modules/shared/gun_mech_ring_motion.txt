@@ -1,0 +1,11 @@
+datum  mech_boss_sight_ring_motion_joint_1_scale  D  0x00000000  48
+datum  mech_boss_sight_ring_motion_tracks  D  0x00000030  48
+datum  mech_boss_sight_ring_motion  D  0x00000060  12
+datum  sight_ring_action  D  0x0000006c  8
+datum  mech_boss_sight_motion_joint_1_angles  D  0x00000074  48
+datum  mech_boss_sight_motion_joint_2_angles  D  0x000000a4  48
+datum  mech_boss_sight_motion_joint_3_angles  D  0x000000d4  48
+datum  mech_boss_sight_motion_joint_4_scale  D  0x00000104  48
+datum  mech_boss_sight_motion_tracks  D  0x00000134  120
+datum  mech_boss_sight_motion  D  0x000001ac  12
+datum  sight_action  D  0x000001b8  8

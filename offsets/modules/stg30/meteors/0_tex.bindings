@@ -1,0 +1,5 @@
+include  final_rush_placed_meteor_textures
+pointer  meteor_0_texlist  0x00000000  textures
+pointer  meteor_0_mesh  0x00000000  meteor_0_vertices
+pointer  meteor_0_mesh  0x00000004  meteor_0_polygons
+pointer  meteor_0_object  0x00000004  meteor_0_mesh

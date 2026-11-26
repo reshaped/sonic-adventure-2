@@ -1,0 +1,3 @@
+datum  tier_asiba128  C  0x00000000  16
+datum  tier_asiba32  C  0x00000010  16
+datum  tier_asiba4  C  0x00000020  13

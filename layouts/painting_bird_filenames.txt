@@ -1,0 +1,4 @@
+# Death Chamber shares the shadow name with the other two paintings.
+# Its first painting supplies both names in one C input section.
+painting_shadow_name  texture_filename  17
+.picture_filename  texture_filename  24

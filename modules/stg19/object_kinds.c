@@ -1,0 +1,36 @@
+/* the kinds of object that the set files of Sonic and Shadow's first duel
+ * name */
+/* The generated SET roster names these actor constructors. */
+#include "stg19/object_kinds/text.inc"
+#include "object/set.h"
+#include "shared/big_the_cat.h"
+#include "shared/cage.h"
+#include "shared/collision_object.h"
+#include "shared/effect_object.h"
+#include "shared/fallen_tree.h"
+#include "shared/hint_box.h"
+#include "shared/hover_lift.h"
+#include "shared/iron_box.h"
+#include "shared/item_box.h"
+#include "shared/item_box_air.h"
+#include "shared/jungle_prop.h"
+#include "shared/light_switch.h"
+#include "shared/looping_vine.h"
+#include "shared/messenger.h"
+#include "shared/modifier_volume.h"
+#include "shared/reel.h"
+#include "shared/ring.h"
+#include "shared/ring_group.h"
+#include "shared/search_box.h"
+#include "shared/skull.h"
+#include "shared/solid_scenery.h"
+#include "shared/stop.h"
+#include "shared/test_wood.h"
+#include "shared/twining_vine.h"
+#include "shared/wood_box.h"
+#include "shared/wood_fence.h"
+#include "stg19/object_kinds.h"
+
+struct object_kind versus_sonic_1_kinds[VERSUS_SONIC_1_KIND_COUNT] = {
+#include "stg19/object_kinds/versus_sonic_1_kinds.inc"
+};

@@ -1,0 +1,8 @@
+datum  body_shadow_polygons  D  0x00000000  562
+datum  body_shadow_vertices  D  0x00000234  636
+datum  foot_shadow_polygons  D  0x000004fc  238
+datum  foot_shadow_vertices  D  0x000005ec  264
+datum  body_shadow_mesh  D  0x000004b0  24
+datum  mech_boss_body_shadow  D  0x000004c8  52
+datum  foot_shadow_mesh  D  0x000006f4  24
+datum  mech_boss_foot_shadow  D  0x0000070c  52

@@ -1,0 +1,5 @@
+text  HIGHWAY_TEXT_MIU128_RH013  C  0x00000048  13
+text  HIGHWAY_TEXT_MIU128_RH015  C  0x00000058  13
+datum  highway_poster_textures  D  0x00000000  24
+datum  highway_poster_texlist  D  0x00000018  8
+datum  highway_poster_texlists  D  0x00000020  8

@@ -1,0 +1,95 @@
+text  SPACE_TEXTURE_2  5
+text  SPACE_TEXTURE_3  5
+text  SPACE_TEXTURE_4  11
+text  SPACE_TEXTURE_5  7
+text  SPACE_TEXTURE_6  7
+text  SPACE_TEXTURE_7  13
+text  SPACE_TEXTURE_8  12
+text  SPACE_TEXTURE_9  12
+text  SPACE_TEXTURE_10  12
+text  SPACE_TEXTURE_11  12
+text  SPACE_TEXTURE_12  11
+text  SPACE_TEXTURE_13  11
+text  SPACE_TEXTURE_14  11
+text  SPACE_TEXTURE_15  11
+text  SPACE_TEXTURE_16  11
+text  SPACE_TEXTURE_17  11
+text  SPACE_TEXTURE_18  11
+text  SPACE_TEXTURE_19  11
+text  SPACE_TEXTURE_20  11
+text  SPACE_TEXTURE_21  10
+text  SPACE_TEXTURE_22  10
+text  SPACE_TEXTURE_23  11
+text  SPACE_TEXTURE_24  11
+text  SPACE_TEXTURE_25  11
+text  SPACE_TEXTURE_26  11
+text  SPACE_TEXTURE_27  11
+text  SPACE_TEXTURE_28  10
+text  SPACE_TEXTURE_29  12
+text  SPACE_TEXTURE_30  12
+text  SPACE_TEXTURE_31  11
+text  SPACE_TEXTURE_32  9
+text  ORBIT_TEXTURE_1  11
+text  PLANET_TEXTURE_1  11
+text  PLANET_TEXTURE_2  9
+text  ARK_TEXTURE_4  7
+text  ARK_TEXTURE_10  11
+text  BACKGROUND_ARCHIVE  13
+pointer sky_orbit_64_mesh       0x00000000  sky_orbit_64_vertices
+pointer sky_orbit_64_mesh       0x00000004  sky_orbit_64_polygons
+pointer orbit                   0x00000004  sky_orbit_64_mesh
+pointer earth_mesh              0x00000000  earth_vertices
+pointer earth_mesh              0x00000004  earth_polygons
+pointer finalhazard_earth       0x00000004  earth_mesh
+pointer sky_earth_mesh          0x00000000  sky_earth_vertices
+pointer sky_earth_mesh          0x00000004  sky_earth_polygons
+pointer finalhazard_planet      0x00000004  sky_earth_mesh
+pointer ark_mesh                0x00000000  ark_vertices
+pointer ark_mesh                0x00000004  ark_polygons
+pointer finalhazard_sky         0x00000004  ark_mesh
+pointer  space_textures  0x00000000  first_space_texture
+pointer  space_textures  0x0000000c  SPACE_TEXTURE_2
+pointer  space_textures  0x00000018  SPACE_TEXTURE_3
+pointer  space_textures  0x00000024  SPACE_TEXTURE_4
+pointer  space_textures  0x00000030  SPACE_TEXTURE_5
+pointer  space_textures  0x0000003c  SPACE_TEXTURE_6
+pointer  space_textures  0x00000048  SPACE_TEXTURE_7
+pointer  space_textures  0x00000054  SPACE_TEXTURE_8
+pointer  space_textures  0x00000060  SPACE_TEXTURE_9
+pointer  space_textures  0x0000006c  SPACE_TEXTURE_10
+pointer  space_textures  0x00000078  SPACE_TEXTURE_11
+pointer  space_textures  0x00000084  SPACE_TEXTURE_12
+pointer  space_textures  0x00000090  SPACE_TEXTURE_13
+pointer  space_textures  0x0000009c  SPACE_TEXTURE_14
+pointer  space_textures  0x000000a8  SPACE_TEXTURE_15
+pointer  space_textures  0x000000b4  SPACE_TEXTURE_16
+pointer  space_textures  0x000000c0  SPACE_TEXTURE_17
+pointer  space_textures  0x000000cc  SPACE_TEXTURE_18
+pointer  space_textures  0x000000d8  SPACE_TEXTURE_19
+pointer  space_textures  0x000000e4  SPACE_TEXTURE_20
+pointer  space_textures  0x000000f0  SPACE_TEXTURE_21
+pointer  space_textures  0x000000fc  SPACE_TEXTURE_22
+pointer  space_textures  0x00000108  SPACE_TEXTURE_23
+pointer  space_textures  0x00000114  SPACE_TEXTURE_24
+pointer  space_textures  0x00000120  SPACE_TEXTURE_25
+pointer  space_textures  0x0000012c  SPACE_TEXTURE_26
+pointer  space_textures  0x00000138  SPACE_TEXTURE_27
+pointer  space_textures  0x00000144  SPACE_TEXTURE_28
+pointer  space_textures  0x00000150  SPACE_TEXTURE_29
+pointer  space_textures  0x0000015c  SPACE_TEXTURE_30
+pointer  space_textures  0x00000168  SPACE_TEXTURE_31
+pointer  space_textures  0x00000174  SPACE_TEXTURE_32
+pointer  orbit_textures  0x00000000  ORBIT_TEXTURE_1
+pointer  earth_textures  0x00000000  SPACE_TEXTURE_30
+pointer  planet_textures  0x00000000  PLANET_TEXTURE_1
+pointer  planet_textures  0x0000000c  PLANET_TEXTURE_2
+pointer  ark_textures  0x00000000  first_space_texture
+pointer  ark_textures  0x0000000c  SPACE_TEXTURE_2
+pointer  ark_textures  0x00000018  SPACE_TEXTURE_3
+pointer  ark_textures  0x00000024  ARK_TEXTURE_4
+pointer  ark_textures  0x00000030  SPACE_TEXTURE_7
+pointer  ark_textures  0x0000003c  SPACE_TEXTURE_8
+pointer  ark_textures  0x00000048  SPACE_TEXTURE_11
+pointer  ark_textures  0x00000054  SPACE_TEXTURE_15
+pointer  ark_textures  0x00000060  SPACE_TEXTURE_17
+pointer  ark_textures  0x0000006c  ARK_TEXTURE_10

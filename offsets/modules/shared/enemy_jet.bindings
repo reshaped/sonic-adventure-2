@@ -1,0 +1,2 @@
+text  ENEMY_JET_MATERIAL_01  5
+pointer  enemy_jet_texname  0x00000000  ENEMY_JET_MATERIAL_01

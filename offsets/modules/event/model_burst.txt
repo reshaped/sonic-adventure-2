@@ -1,0 +1,16 @@
+datum  texture_name  C  0x00000000  32
+datum  crystal_polygons  D  0x00000000  166
+datum  crystal_vertices  D  0x000000a8  300
+datum  crystal_model  D  0x000001d4  24
+datum  crystal  D  0x000001ec  52
+datum  long_shard_polygons  D  0x00000220  42
+datum  long_shard_vertices  D  0x0000024c  108
+datum  long_shard_model  D  0x000002b8  24
+datum  long_shard  D  0x000002d0  52
+datum  short_shard_polygons  D  0x00000304  42
+datum  short_shard_vertices  D  0x00000330  108
+datum  short_shard_model  D  0x0000039c  24
+datum  short_shard  D  0x000003b4  52
+datum  textures  D  0x000003e8  12
+datum  event_effect_texlist  D  0x000003f4  8
+datum  models  D  0x000003fc  12

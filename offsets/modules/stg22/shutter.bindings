@@ -1,0 +1,80 @@
+text  GADGET_SHUTTER_MIU128_CG004  13
+text  GADGET_SHUTTER_MIU128_CG008  13
+text  GADGET_SHUTTER_MIU128_CG016  13
+text  GADGET_SHUTTER_MIU128_CG022  13
+text  GADGET_SHUTTER_MIU256_CG004  13
+text  GADGET_SHUTTER_MIU256_CG005  13
+text  GADGET_SHUTTER_MIU256_CG006  13
+text  GADGET_SHUTTER_MIU32_CG001  12
+text  GADGET_SHUTTER_MIU64_CG009  12
+text  GADGET_SHUTTER_MIU64_CG019  12
+text  GADGET_SHUTTER_MIU64_CG021  12
+text  GADGET_SHUTTER_SWITCH  7
+text  GADGET_SHUTTER_ENEMY  6
+text  GADGET_SHUTTER_DYNAMITE  9
+text  GADGET_SHUTTER_NEAR  5
+
+pointer  gadget_shutter_front_textures  0x00000000  GADGET_SHUTTER_MIU128_CG004
+pointer  gadget_shutter_front_textures  0x0000000c  GADGET_SHUTTER_MIU128_CG008
+pointer  gadget_shutter_front_textures  0x00000018  GADGET_SHUTTER_MIU128_CG016
+pointer  gadget_shutter_front_textures  0x00000024  GADGET_SHUTTER_MIU128_CG022
+pointer  gadget_shutter_front_textures  0x00000030  GADGET_SHUTTER_MIU256_CG004
+pointer  gadget_shutter_front_textures  0x0000003c  GADGET_SHUTTER_MIU256_CG005
+pointer  gadget_shutter_front_textures  0x00000048  GADGET_SHUTTER_MIU256_CG006
+pointer  gadget_shutter_front_textures  0x00000054  GADGET_SHUTTER_MIU32_CG001
+pointer  gadget_shutter_front_textures  0x00000060  GADGET_SHUTTER_MIU64_CG009
+pointer  gadget_shutter_front_textures  0x0000006c  GADGET_SHUTTER_MIU64_CG019
+pointer  gadget_shutter_front_textures  0x00000078  GADGET_SHUTTER_MIU64_CG021
+pointer  gadget_shutter_front_texlist  0x00000000  gadget_shutter_front_textures
+pointer  gadget_shutter_lamp_mesh  0x00000000  gadget_shutter_lamp_vertices
+pointer  gadget_shutter_lamp_mesh  0x00000004  gadget_shutter_lamp_polygons
+pointer  gadget_shutter_lamp  0x00000004  gadget_shutter_lamp_mesh
+pointer  gadget_shutter_right_mesh  0x00000000  gadget_shutter_right_vertices
+pointer  gadget_shutter_right_mesh  0x00000004  gadget_shutter_right_polygons
+pointer  gadget_shutter_right  0x00000004  gadget_shutter_right_mesh
+pointer  gadget_shutter_right  0x00000030  gadget_shutter_lamp
+pointer  gadget_shutter_left_mesh  0x00000000  gadget_shutter_left_vertices
+pointer  gadget_shutter_left_mesh  0x00000004  gadget_shutter_left_polygons
+pointer  gadget_shutter_left  0x00000004  gadget_shutter_left_mesh
+pointer  gadget_shutter_left  0x00000030  gadget_shutter_right
+pointer  gadget_shutter_stop_lamp_mesh  0x00000000  gadget_shutter_stop_lamp_vertices
+pointer  gadget_shutter_stop_lamp_mesh  0x00000004  gadget_shutter_stop_lamp_polygons
+pointer  gadget_shutter_stop_lamp  0x00000004  gadget_shutter_stop_lamp_mesh
+pointer  gadget_shutter_stop_lamp  0x00000030  gadget_shutter_left
+pointer  gadget_shutter_top_mesh  0x00000000  gadget_shutter_top_vertices
+pointer  gadget_shutter_top_mesh  0x00000004  gadget_shutter_top_polygons
+pointer  gadget_shutter_top  0x00000004  gadget_shutter_top_mesh
+pointer  gadget_shutter_top  0x00000030  gadget_shutter_stop_lamp
+pointer  gadget_shutter_latch_mesh  0x00000000  gadget_shutter_latch_vertices
+pointer  gadget_shutter_latch_mesh  0x00000004  gadget_shutter_latch_polygons
+pointer  gadget_shutter_latch  0x00000004  gadget_shutter_latch_mesh
+pointer  gadget_shutter_latch  0x00000030  gadget_shutter_top
+pointer  gadget_shutter_go_lamp_mesh  0x00000000  gadget_shutter_go_lamp_vertices
+pointer  gadget_shutter_go_lamp_mesh  0x00000004  gadget_shutter_go_lamp_polygons
+pointer  gadget_shutter_go_lamp  0x00000004  gadget_shutter_go_lamp_mesh
+pointer  gadget_shutter_go_lamp  0x00000030  gadget_shutter_latch
+pointer  front_panel_root  0x0000002c  gadget_shutter_go_lamp
+pointer  gadget_shutter_back_textures  0x00000000  GADGET_SHUTTER_MIU256_CG004
+pointer  gadget_shutter_back_textures  0x0000000c  GADGET_SHUTTER_MIU256_CG005
+pointer  gadget_shutter_back_textures  0x00000018  GADGET_SHUTTER_MIU256_CG006
+pointer  gadget_shutter_back_textures  0x00000024  GADGET_SHUTTER_MIU32_CG001
+pointer  gadget_shutter_back_textures  0x00000030  GADGET_SHUTTER_MIU64_CG009
+pointer  gadget_shutter_back_textures  0x0000003c  GADGET_SHUTTER_MIU64_CG019
+pointer  gadget_shutter_back_texlist  0x00000000  gadget_shutter_back_textures
+pointer  gadget_shutter_back_stop_lamp_mesh  0x00000000  gadget_shutter_back_stop_lamp_vertices
+pointer  gadget_shutter_back_stop_lamp_mesh  0x00000004  gadget_shutter_back_stop_lamp_polygons
+pointer  gadget_shutter_back_stop_lamp  0x00000004  gadget_shutter_back_stop_lamp_mesh
+pointer  gadget_shutter_back_lamp_mesh  0x00000000  gadget_shutter_back_lamp_vertices
+pointer  gadget_shutter_back_lamp_mesh  0x00000004  gadget_shutter_back_lamp_polygons
+pointer  gadget_shutter_back_lamp  0x00000004  gadget_shutter_back_lamp_mesh
+pointer  gadget_shutter_back_lamp  0x00000030  gadget_shutter_back_stop_lamp
+pointer  gadget_shutter_back_mesh  0x00000000  gadget_shutter_back_vertices
+pointer  gadget_shutter_back_mesh  0x00000004  gadget_shutter_back_polygons
+pointer  gadget_shutter_back  0x00000004  gadget_shutter_back_mesh
+pointer  gadget_shutter_back  0x0000002c  gadget_shutter_back_lamp
+pointer  gadget_shutter_texlists  0x00000000  gadget_shutter_front_texlist
+pointer  gadget_shutter_texlists  0x00000004  gadget_shutter_back_texlist
+pointer  trigger_names  0x00000000  GADGET_SHUTTER_SWITCH
+pointer  trigger_names  0x00000004  GADGET_SHUTTER_ENEMY
+pointer  trigger_names  0x00000008  GADGET_SHUTTER_DYNAMITE
+pointer  trigger_names  0x0000000c  GADGET_SHUTTER_NEAR

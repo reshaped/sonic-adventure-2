@@ -1,0 +1,48 @@
+# Texture names and Ninja model bindings for the seven KAZOBJ placements.
+text  ENGINE_TEXTURE_MIU64_EE002  12
+text  ENGINE_TEXTURE_MIU256_CG001  13
+text  ENGINE_TEXTURE_MIU128_CG016  13
+text  ENGINE_TEXTURE_MIU256_CG004  13
+text  ENGINE_TEXTURE_MIU512_CG003  13
+text  ENGINE_TEXTURE_MIU64_CG009  12
+text  ENGINE_TEXTURE_MIU64_CG012  12
+pointer  kazobj_texlist_0_names  0x00000000  ENGINE_TEXTURE_MIU64_EE002
+pointer  kazobj_texlist_0  0x00000000  kazobj_texlist_0_names
+pointer  kazobj_model_0_model  0x00000000  kazobj_model_0_vertices
+pointer  kazobj_model_0_model  0x00000004  kazobj_model_0_polygons
+pointer  kazobj_model_0  0x00000004  kazobj_model_0_model
+pointer  kazobj_texlist_1_names  0x00000000  ENGINE_TEXTURE_MIU64_EE002
+pointer  kazobj_texlist_1  0x00000000  kazobj_texlist_1_names
+pointer  kazobj_model_1_model  0x00000000  kazobj_model_1_vertices
+pointer  kazobj_model_1_model  0x00000004  kazobj_model_1_polygons
+pointer  kazobj_model_1  0x00000004  kazobj_model_1_model
+pointer  kazobj_texlist_2_names  0x00000000  ENGINE_TEXTURE_MIU64_EE002
+pointer  kazobj_texlist_2  0x00000000  kazobj_texlist_2_names
+pointer  kazobj_model_2_model  0x00000000  kazobj_model_2_vertices
+pointer  kazobj_model_2_model  0x00000004  kazobj_model_2_polygons
+pointer  kazobj_model_2  0x00000004  kazobj_model_2_model
+pointer  kazobj_texlist_3_names  0x00000000  ENGINE_TEXTURE_MIU64_EE002
+pointer  kazobj_texlist_3  0x00000000  kazobj_texlist_3_names
+pointer  kazobj_model_3_model  0x00000000  kazobj_model_3_vertices
+pointer  kazobj_model_3_model  0x00000004  kazobj_model_3_polygons
+pointer  kazobj_model_3  0x00000004  kazobj_model_3_model
+pointer  kazobj_texlist_5_names  0x00000000  ENGINE_TEXTURE_MIU256_CG001
+pointer  kazobj_texlist_5  0x00000000  kazobj_texlist_5_names
+pointer  kazobj_model_5_model  0x00000000  kazobj_model_5_vertices
+pointer  kazobj_model_5_model  0x00000004  kazobj_model_5_polygons
+pointer  kazobj_model_5  0x00000004  kazobj_model_5_model
+pointer  kazobj_texlist_6_names  0x00000000  ENGINE_TEXTURE_MIU128_CG016
+pointer  kazobj_texlist_6_names  0x0000000c  ENGINE_TEXTURE_MIU256_CG004
+pointer  kazobj_texlist_6_names  0x00000018  ENGINE_TEXTURE_MIU512_CG003
+pointer  kazobj_texlist_6  0x00000000  kazobj_texlist_6_names
+pointer  kazobj_model_6_model  0x00000000  kazobj_model_6_vertices
+pointer  kazobj_model_6_model  0x00000004  kazobj_model_6_polygons
+pointer  kazobj_model_6  0x00000004  kazobj_model_6_model
+pointer  kazobj_texlist_7_names  0x00000000  ENGINE_TEXTURE_MIU256_CG001
+pointer  kazobj_texlist_7_names  0x0000000c  ENGINE_TEXTURE_MIU256_CG004
+pointer  kazobj_texlist_7_names  0x00000018  ENGINE_TEXTURE_MIU64_CG009
+pointer  kazobj_texlist_7_names  0x00000024  ENGINE_TEXTURE_MIU64_CG012
+pointer  kazobj_texlist_7  0x00000000  kazobj_texlist_7_names
+pointer  kazobj_model_7_model  0x00000000  kazobj_model_7_vertices
+pointer  kazobj_model_7_model  0x00000004  kazobj_model_7_polygons
+pointer  kazobj_model_7  0x00000004  kazobj_model_7_model

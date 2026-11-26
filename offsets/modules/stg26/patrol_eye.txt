@@ -1,0 +1,4 @@
+datum  eye_polygons  D  0x00000000  938
+datum  eye_vertices  D  0x000003ac  1356
+datum  guard_eye_model  D  0x000008f8  24
+datum  guard_eye_object  D  0x00000910  52

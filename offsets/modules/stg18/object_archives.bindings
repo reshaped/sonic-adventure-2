@@ -1,0 +1,185 @@
+include  objtex_common
+include  efftex_common
+text  LAGOON_SHARD_TEXTURE_13  12
+text  LAGOON_SHARD_TEXTURE_14  12
+text  LAGOON_SHARD_TEXTURE_15  12
+pointer  lagoon_shard_names  0x00000000  LAGOON_SHARD_TEXTURE_13
+pointer  lagoon_shard_names  0x0000000c  LAGOON_SHARD_TEXTURE_14
+pointer  lagoon_shard_names  0x00000018  LAGOON_SHARD_TEXTURE_15
+pointer  lagoon_shard_texlist  0x00000000  lagoon_shard_names
+pointer  lagoon_shard_model  0x00000000  emerald_shard_vertices
+pointer  lagoon_shard_model  0x00000004  emerald_shard_polygons
+pointer  lagoon_shard_object  0x00000004  lagoon_shard_model
+
+text  STAGE_TEXTURE_DZ_DL_AQUAPLANT_KUKI8  22
+text  STAGE_TEXTURE_DZ_DL_AQUAPLANT_LONG128  24
+text  STAGE_TEXTURE_DZ_DL_AQUAPLANT_SHORT64  24
+text  STAGE_TEXTURE_DZ_DL_BUTTERFLY_BLUE32  23
+text  STAGE_TEXTURE_DZ_DL_BUTTERFLY_WHITE32  24
+text  STAGE_TEXTURE_DZ_DL_BUTTERFLY_YELLOW32  25
+text  STAGE_TEXTURE_DZ_DL_FISH01  13
+text  STAGE_TEXTURE_DZ_DL_FISH02  13
+text  STAGE_TEXTURE_DZ_DL_FISH03  13
+text  STAGE_TEXTURE_DZ_DL_KANOE_BLUELINE64  23
+text  STAGE_TEXTURE_DZ_DL_KANOE_DECK64  19
+text  STAGE_TEXTURE_DZ_DL_KANOE_ROKKAKU64  22
+text  STAGE_TEXTURE_DZ_DL_KANOE_TRI128  19
+text  STAGE_TEXTURE_DZ_DL_PALMETTO128  18
+text  STAGE_TEXTURE_DZ_DL_PALMETTOTREE128  22
+text  STAGE_TEXTURE_DZ_DL_PALMETTO_LEAF128  23
+text  STAGE_TEXTURE_DZ_DL_PLANT_ALPHA128  21
+text  STAGE_TEXTURE_DZ_DL_PLANT_HAPPA128  21
+text  STAGE_TEXTURE_DZ_DL_PLANT_MARUHA64  21
+text  STAGE_TEXTURE_DZ_DL_PLANT_MARUHA_KUKI8  25
+text  STAGE_TEXTURE_DZ_DL_PLANT_SITABAE64  22
+text  STAGE_TEXTURE_DZ_DL_PLANT_SITABAE_KUKI64  27
+text  STAGE_TEXTURE_DZ_DL_STONEHEAD_F128  21
+text  STAGE_TEXTURE_DZ_DL_STONEHEAD_T128  21
+text  STAGE_TEXTURE_DZ_DL_TUBO_SMALL32  19
+text  STAGE_TEXTURE_DZ_SWALLPAINT  14
+text  STAGE_TEXTURE_DZ_WC_SHADOW32  15
+text  STAGE_TEXTURE_DZ_WC_SHADOW_SQ32  18
+text  STAGE_TEXTURE_DZ_WC_SIGNPLATE64  18
+text  STAGE_TEXTURE_DZ_WC_STONEHEAD_F128  21
+text  STAGE_TEXTURE_DZ_WC_STONEHEAD_RAIL64  23
+text  STAGE_TEXTURE_DZ_WC_STONEHEAD_RAILEDGA64  27
+text  STAGE_TEXTURE_DZ_WC_STONEHEAD_T128  21
+text  STAGE_TEXTURE_KD_DL_KAME1_VQ  15
+text  STAGE_TEXTURE_KD_DL_KAME2_VQ  15
+text  STAGE_TEXTURE_KD_DL_SIBUKI1_VQ  17
+text  STAGE_TEXTURE_KD_DL_SIBUKI2  14
+text  STAGE_TEXTURE_KD_NDE_HASIRA9_VQ  18
+text  STAGE_TEXTURE_MIU32_MI001  12
+text  PVM_LEVUPDAI_TMTEX  15
+text  PVM_OBJTEX_STG18  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+text  PVM_STG18_SUIMENANIM  17
+
+pointer  stage_archive_names  0x00000000  STAGE_TEXTURE_DZ_DL_AQUAPLANT_KUKI8
+pointer  stage_archive_names  0x0000000c  STAGE_TEXTURE_DZ_DL_AQUAPLANT_LONG128
+pointer  stage_archive_names  0x00000018  STAGE_TEXTURE_DZ_DL_AQUAPLANT_SHORT64
+pointer  stage_archive_names  0x00000024  STAGE_TEXTURE_DZ_DL_BUTTERFLY_BLUE32
+pointer  stage_archive_names  0x00000030  STAGE_TEXTURE_DZ_DL_BUTTERFLY_WHITE32
+pointer  stage_archive_names  0x0000003c  STAGE_TEXTURE_DZ_DL_BUTTERFLY_YELLOW32
+pointer  stage_archive_names  0x00000048  STAGE_TEXTURE_DZ_DL_FISH01
+pointer  stage_archive_names  0x00000054  STAGE_TEXTURE_DZ_DL_FISH02
+pointer  stage_archive_names  0x00000060  STAGE_TEXTURE_DZ_DL_FISH03
+pointer  stage_archive_names  0x0000006c  STAGE_TEXTURE_DZ_DL_KANOE_BLUELINE64
+pointer  stage_archive_names  0x00000078  STAGE_TEXTURE_DZ_DL_KANOE_DECK64
+pointer  stage_archive_names  0x00000084  STAGE_TEXTURE_DZ_DL_KANOE_ROKKAKU64
+pointer  stage_archive_names  0x00000090  STAGE_TEXTURE_DZ_DL_KANOE_TRI128
+pointer  stage_archive_names  0x0000009c  STAGE_TEXTURE_DZ_DL_PALMETTO128
+pointer  stage_archive_names  0x000000a8  STAGE_TEXTURE_DZ_DL_PALMETTOTREE128
+pointer  stage_archive_names  0x000000b4  STAGE_TEXTURE_DZ_DL_PALMETTO_LEAF128
+pointer  stage_archive_names  0x000000c0  STAGE_TEXTURE_DZ_DL_PLANT_ALPHA128
+pointer  stage_archive_names  0x000000cc  STAGE_TEXTURE_DZ_DL_PLANT_HAPPA128
+pointer  stage_archive_names  0x000000d8  STAGE_TEXTURE_DZ_DL_PLANT_MARUHA64
+pointer  stage_archive_names  0x000000e4  STAGE_TEXTURE_DZ_DL_PLANT_MARUHA_KUKI8
+pointer  stage_archive_names  0x000000f0  STAGE_TEXTURE_DZ_DL_PLANT_SITABAE64
+pointer  stage_archive_names  0x000000fc  STAGE_TEXTURE_DZ_DL_PLANT_SITABAE_KUKI64
+pointer  stage_archive_names  0x00000108  STAGE_TEXTURE_DZ_DL_STONEHEAD_F128
+pointer  stage_archive_names  0x00000114  STAGE_TEXTURE_DZ_DL_STONEHEAD_T128
+pointer  stage_archive_names  0x00000120  STAGE_TEXTURE_DZ_DL_TUBO_SMALL32
+pointer  stage_archive_names  0x0000012c  STAGE_TEXTURE_DZ_SWALLPAINT
+pointer  stage_archive_names  0x00000138  STAGE_TEXTURE_DZ_WC_SHADOW32
+pointer  stage_archive_names  0x00000144  STAGE_TEXTURE_DZ_WC_SHADOW_SQ32
+pointer  stage_archive_names  0x00000150  STAGE_TEXTURE_DZ_WC_SIGNPLATE64
+pointer  stage_archive_names  0x0000015c  STAGE_TEXTURE_DZ_WC_STONEHEAD_F128
+pointer  stage_archive_names  0x00000168  STAGE_TEXTURE_DZ_WC_STONEHEAD_RAIL64
+pointer  stage_archive_names  0x00000174  STAGE_TEXTURE_DZ_WC_STONEHEAD_RAILEDGA64
+pointer  stage_archive_names  0x00000180  STAGE_TEXTURE_DZ_WC_STONEHEAD_T128
+pointer  stage_archive_names  0x0000018c  STAGE_TEXTURE_KD_DL_KAME1_VQ
+pointer  stage_archive_names  0x00000198  STAGE_TEXTURE_KD_DL_KAME2_VQ
+pointer  stage_archive_names  0x000001a4  STAGE_TEXTURE_KD_DL_SIBUKI1_VQ
+pointer  stage_archive_names  0x000001b0  STAGE_TEXTURE_KD_DL_SIBUKI2
+pointer  stage_archive_names  0x000001bc  STAGE_TEXTURE_KD_NDE_HASIRA9_VQ
+pointer  stage_archive_names  0x000001c8  STAGE_TEXTURE_MIU32_MI001
+pointer  stage_archive_names  0x000001d4  LAGOON_SHARD_TEXTURE_13
+pointer  stage_archive_names  0x000001e0  LAGOON_SHARD_TEXTURE_14
+pointer  stage_archive_names  0x000001ec  LAGOON_SHARD_TEXTURE_15
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  stage_textures  0x0000003c  lagoon_shard_texlist
+pointer  stage_textures  0x00000040  ripple_texlist
+pointer  stage_textures  0x00000044  specks_texlist
+pointer  dry_lagoon_texture_groups  0x00000000  stage_textures
+pointer  dry_lagoon_texture_groups  0x00000004  goal_ring_texlists
+pointer  dry_lagoon_texture_groups  0x00000008  emerald_texlists
+pointer  dry_lagoon_texture_groups  0x0000000c  item_box_texlists
+pointer  dry_lagoon_texture_groups  0x00000010  item_box_air_texlists
+pointer  dry_lagoon_texture_groups  0x00000014  weight_texlists
+pointer  dry_lagoon_texture_groups  0x00000018  iron_ball_texlists
+pointer  dry_lagoon_texture_groups  0x0000001c  triple_spring_texlists
+pointer  dry_lagoon_texture_groups  0x00000020  dynamite_texlists
+pointer  dry_lagoon_texture_groups  0x00000024  reel_texlists
+pointer  dry_lagoon_texture_groups  0x00000028  chao_pipe_texlists
+pointer  dry_lagoon_texture_groups  0x0000002c  cage_texlists
+pointer  dry_lagoon_texture_groups  0x00000030  wood_box_texlists
+pointer  dry_lagoon_texture_groups  0x00000034  iron_box_texlists
+pointer  dry_lagoon_texture_groups  0x00000038  upgrade_texlists
+pointer  dry_lagoon_texture_groups  0x0000003c  missile_texlists
+pointer  dry_lagoon_texture_groups  0x00000040  skull_texlists
+pointer  dry_lagoon_texture_groups  0x00000044  rocket_texlists
+pointer  dry_lagoon_texture_groups  0x00000048  search_box_texlists
+pointer  dry_lagoon_texture_groups  0x0000004c  hint_box_texlists
+pointer  dry_lagoon_texture_groups  0x00000050  knudai_texlists
+pointer  dry_lagoon_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  dry_lagoon_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  dry_lagoon_texture_groups  0x0000005c  knudai_door_texlists
+pointer  dry_lagoon_texture_groups  0x00000060  chao_box_texlists
+pointer  dry_lagoon_texture_groups  0x00000064  chao_key_texlists
+pointer  dry_lagoon_texture_groups  0x00000068  object_effect_texlists
+pointer  dry_lagoon_texture_groups  0x0000006c  messenger_texlists
+pointer  dry_lagoon_texture_groups  0x00000070  ring_effect_texlists
+pointer  dry_lagoon_texture_groups  0x00000074  turtle_texture_group
+pointer  dry_lagoon_texture_groups  0x00000078  sign_plate_texlists
+pointer  dry_lagoon_texture_groups  0x0000007c  plant_texlists
+pointer  dry_lagoon_texture_groups  0x00000080  plant2_texlists
+pointer  dry_lagoon_texture_groups  0x00000084  plant3_texlists
+pointer  dry_lagoon_texture_groups  0x00000088  plant4_texlists
+pointer  dry_lagoon_texture_groups  0x0000008c  pool_texlists
+pointer  dry_lagoon_texture_groups  0x00000090  lagoon_wall_warp_texlists
+pointer  dry_lagoon_texture_groups  0x00000094  canoe_texlists
+pointer  dry_lagoon_texture_groups  0x00000098  palm_texlists
+pointer  dry_lagoon_texture_groups  0x0000009c  sasa_texlists
+pointer  dry_lagoon_texture_groups  0x000000a0  leaf_texlists
+pointer  dry_lagoon_texture_groups  0x000000a4  flower_texlists
+pointer  dry_lagoon_texture_groups  0x000000a8  chin_texlists
+pointer  dry_lagoon_texture_groups  0x000000ac  chin2_texlists
+pointer  dry_lagoon_texture_groups  0x000000b0  chin3_texlists
+pointer  dry_lagoon_texture_groups  0x000000b4  pot_texlists
+pointer  dry_lagoon_texture_groups  0x000000b8  lagoon_stone_head_texlists
+pointer  dry_lagoon_texture_groups  0x000000bc  small_pot_texlists
+pointer  dry_lagoon_texture_groups  0x000000c0  lagoon_fish_texlists
+pointer  dry_lagoon_texture_groups  0x000000c4  butterflies_texlists
+pointer  dry_lagoon_texture_groups  0x000000c8  solid_box_texlists
+pointer  dry_lagoon_texture_groups  0x000000cc  spray_texlists
+pointer  dry_lagoon_texture_groups  0x000000d0  stake_texlists
+pointer  dry_lagoon_texture_groups  0x000000d4  shelf_texlists
+pointer  dry_lagoon_texture_groups  0x000000d8  container_texlists
+pointer  dry_lagoon_pvms  0x00000000  PVM_LEVUPDAI_TMTEX
+pointer  dry_lagoon_pvms  0x00000004  upgrade_melody_texlist
+pointer  dry_lagoon_pvms  0x00000008  PVM_OBJTEX_STG18
+pointer  dry_lagoon_pvms  0x0000000c  stage_archive
+pointer  dry_lagoon_pvms  0x00000010  PVM_EFFTEX_COMMON
+pointer  dry_lagoon_pvms  0x00000014  efftex_common_texlist
+pointer  dry_lagoon_pvms  0x00000018  PVM_OBJTEX_COMMON
+pointer  dry_lagoon_pvms  0x0000001c  objtex_common_texlist
+pointer  dry_lagoon_pvms  0x00000020  PVM_STG18_SUIMENANIM
+pointer  dry_lagoon_pvms  0x00000024  lagoon_water_texlist
+pointer  dry_lagoon_pvms  0x0000002c  dry_lagoon_land_texlist

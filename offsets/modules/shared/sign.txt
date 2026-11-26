@@ -1,0 +1,16 @@
+text  SIGN_EDITOR_ROT_X  C  0x00000000  9
+text  SIGN_EDITOR_ROT_Y  C  0x0000000c  9
+text  SIGN_EDITOR_ROT_Z  C  0x00000018  9
+text  SIGN_TEXTURE_MIU64_IG018  C  0x00000024  12
+text  SIGN_TEXTURE_PR128_12  C  0x00000030  9
+datum  sign_names  D  0x00000000  24
+datum  sign_texlist  D  0x00000018  8
+datum  sign_panel_polygons  D  0x00000020  98
+datum  sign_panel_vertices  D  0x00000084  124
+datum  sign_panel_model  D  0x00000100  24
+datum  sign_panel  D  0x00000118  52
+datum  sign_polygons  D  0x0000014c  206
+datum  sign_vertices  D  0x0000021c  252
+datum  sign_model  D  0x00000318  24
+datum  sign_object  D  0x00000330  52
+datum  sign_texlists  D  0x00000364  8

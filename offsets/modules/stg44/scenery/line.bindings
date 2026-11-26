@@ -1,0 +1,3 @@
+pointer  mad_space_line_object_model  0x00000000  mad_space_line_object_vertices
+pointer  mad_space_line_object_model  0x00000004  mad_space_line_object_polygons
+pointer  mad_space_line_object  0x00000004  mad_space_line_object_model

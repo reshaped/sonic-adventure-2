@@ -1,0 +1,17 @@
+datum  sheet_1  C  0x00000000  16
+datum  sheet_2  C  0x00000010  16
+datum  sheet_3  C  0x00000020  16
+datum  jp_title_1  C  0x00000030  16
+datum  jp_title_2  C  0x00000040  16
+datum  jp_take_out_1  C  0x00000050  16
+datum  jp_take_out_2  C  0x00000060  16
+datum  jp_confirm  C  0x00000070  12
+datum  jp_cancel  C  0x0000007c  12
+datum  intl_title_1  C  0x00000088  16
+datum  intl_title_2  C  0x00000098  16
+datum  intl_take_out_1  C  0x000000a8  16
+datum  intl_take_out_2  C  0x000000b8  16
+datum  intl_confirm  C  0x000000c8  12
+datum  intl_cancel  C  0x000000d4  12
+datum  names_jp  D  0x00000000  108
+datum  names_intl  D  0x00000074  108

@@ -1,0 +1,19 @@
+text  STORE_COLOR_BLUE  6
+text  STORE_COLOR_GREEN  6
+text  STORE_COLOR_RED  6
+
+pointer  store_box_models  0x00000000  store_box_blue_model
+pointer  store_box_models  0x00000004  store_box_green_model
+pointer  store_box_models  0x00000008  store_box_red_model
+pointer  store_box_texlists  0x00000000  store_box_blue_texlist
+pointer  store_box_texlists  0x00000004  store_box_green_texlist
+pointer  store_box_texlists  0x00000008  store_box_red_texlist
+pointer  store_box_color_names  0x00000000  STORE_COLOR_BLUE
+pointer  store_box_color_names  0x00000004  STORE_COLOR_GREEN
+pointer  store_box_color_names  0x00000008  STORE_COLOR_RED
+pointer  store_box_builds  0x00000004  store_box_blue_texlist
+pointer  store_box_builds  0x00000008  store_box_blue_object
+pointer  store_box_builds  0x00000014  store_box_green_texlist
+pointer  store_box_builds  0x00000018  store_box_green_object
+pointer  store_box_builds  0x00000024  store_box_red_texlist
+pointer  store_box_builds  0x00000028  store_box_red_object

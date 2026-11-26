@@ -1,0 +1,11 @@
+datum  cave_spider_web_texture_names  D  0x00000000  12
+datum  cave_spider_web_texlist  D  0x0000000c  8
+datum  cave_spider_web_polygons  D  0x00000014  50
+datum  cave_spider_web_vertices  D  0x00000048  76
+datum  cave_spider_web_model  D  0x00000094  24
+datum  cave_spider_web_object  D  0x000000ac  52
+datum  spider_web_models  D  0x000000e0  4
+datum  cave_spider_web_texlists  D  0x000000e4  8
+datum  spider_web_kind_names  D  0x000000f0  4
+text  SPIDER_WEB_TEXTURE_DZ_PC_SPIDER128  C  0x00000050  16
+text  SPIDER_WEB_KIND_BLANK  C  0x00000060  2

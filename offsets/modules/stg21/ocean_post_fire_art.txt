@@ -1,0 +1,4 @@
+datum  post_fire_polygons  D  0x00000000  602
+datum  post_fire_vertices  D  0x0000025c  924
+datum  post_fire_model  D  0x000005f8  24
+datum  post_fire_object  D  0x00000610  52

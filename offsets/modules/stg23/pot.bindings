@@ -1,0 +1,4 @@
+pointer  pot_models  0x00000000  bright_pot_model
+pointer  pot_models  0x00000004  dark_pot_model
+pointer  pot_textures  0x00000000  bright_pot_texlist
+pointer  pot_textures  0x00000004  dark_pot_texlist

@@ -1,0 +1,101 @@
+# The mine frame, lift, bar and timbers share texture filenames.
+text SOLID_MODEL_ANGLE_X_LABEL 11
+text SOLID_MODEL_ANGLE_Y_LABEL 11
+text SOLID_MODEL_ANGLE_Z_LABEL 11
+text SOLID_MODEL_TEXTURE_MIU64_MI001 12
+text SOLID_MODEL_TEXTURE_MIU64_MI002 12
+text SOLID_MODEL_TEXTURE_MIU128_MI002 13
+text SOLID_MODEL_TEXTURE_MIU64_LOCO002 14
+text SOLID_MODEL_TEXTURE_MIU64_LOCO005 14
+text SOLID_MODEL_TEXTURE_MIU64_MI004 12
+text SOLID_MODEL_TEXTURE_MIU64_MO014 12
+text SOLID_MODEL_TEXTURE_MIU64_MS005 12
+text SOLID_MODEL_TEXTURE_PUM128_13 10
+text SOLID_MODEL_TEXTURE_PUM128_14 10
+text SOLID_MODEL_TEXTURE_PUM128_20 10
+text SOLID_MODEL_TEXTURE_PUM128_22 10
+text SOLID_MODEL_TEXTURE_PUM256_7 9
+text SOLID_MODEL_TEXTURE_PUM32_1 8
+text SOLID_MODEL_TEXTURE_PUM64_2 8
+text SOLID_MODEL_TEXTURE_PUM64_4 8
+text SOLID_MODEL_TEXTURE_MIU64_MI005 12
+text SOLID_MODEL_TEXTURE_MIU64_MI006 12
+text SOLID_MODEL_TEXTURE_PUM128_7 9
+
+pointer miwood_texlist_names  0x00000000  SOLID_MODEL_TEXTURE_MIU64_MI001
+pointer miwood_texlist_names  0x0000000c  SOLID_MODEL_TEXTURE_MIU64_MI002
+pointer miwood_texlist  0x00000000  miwood_texlist_names
+pointer miwood_model  0x00000000  miwood_vertices
+pointer miwood_model  0x00000004  miwood_polygons
+pointer miwood_object  0x00000004  miwood_model
+pointer miwood_collision_faces  0x00000004  miwood_collision_strips
+pointer miwood_collision_model  0x00000000  miwood_collision_points
+pointer miwood_collision_model  0x00000004  miwood_collision_normals
+pointer miwood_collision_model  0x0000000c  miwood_collision_faces
+pointer miwood_collision_model  0x00000010  miwood_collision_materials
+pointer miwood_collision  0x00000004  miwood_collision_model
+pointer miwoody_texlist_names  0x00000000  SOLID_MODEL_TEXTURE_MIU64_MI001
+pointer miwoody_texlist_names  0x0000000c  SOLID_MODEL_TEXTURE_MIU64_MI002
+pointer miwoody_texlist  0x00000000  miwoody_texlist_names
+pointer miwoody_model  0x00000000  miwoody_vertices
+pointer miwoody_model  0x00000004  miwoody_polygons
+pointer miwoody_object  0x00000004  miwoody_model
+pointer miwoody_collision_faces  0x00000004  miwoody_collision_strips
+pointer miwoody_collision_model  0x00000000  miwoody_collision_points
+pointer miwoody_collision_model  0x00000004  miwoody_collision_normals
+pointer miwoody_collision_model  0x0000000c  miwoody_collision_faces
+pointer miwoody_collision_model  0x00000010  miwoody_collision_materials
+pointer miwoody_collision  0x00000004  miwoody_collision_model
+pointer mibar_texlist_names  0x00000000  SOLID_MODEL_TEXTURE_MIU128_MI002
+pointer mibar_texlist  0x00000000  mibar_texlist_names
+pointer mibar_model  0x00000000  mibar_vertices
+pointer mibar_model  0x00000004  mibar_polygons
+pointer mibar_object  0x00000004  mibar_model
+pointer mibar_collision_faces  0x00000004  mibar_collision_strips
+pointer mibar_collision_model  0x00000000  mibar_collision_points
+pointer mibar_collision_model  0x00000004  mibar_collision_normals
+pointer mibar_collision_model  0x0000000c  mibar_collision_faces
+pointer mibar_collision_model  0x00000010  mibar_collision_materials
+pointer mibar_collision  0x00000004  mibar_collision_model
+pointer milift_texlist_names  0x00000000  SOLID_MODEL_TEXTURE_MIU64_LOCO002
+pointer milift_texlist_names  0x0000000c  SOLID_MODEL_TEXTURE_MIU64_LOCO005
+pointer milift_texlist_names  0x00000018  SOLID_MODEL_TEXTURE_MIU64_MI004
+pointer milift_texlist_names  0x00000024  SOLID_MODEL_TEXTURE_MIU64_MO014
+pointer milift_texlist_names  0x00000030  SOLID_MODEL_TEXTURE_MIU64_MS005
+pointer milift_texlist_names  0x0000003c  SOLID_MODEL_TEXTURE_PUM128_13
+pointer milift_texlist_names  0x00000048  SOLID_MODEL_TEXTURE_PUM128_14
+pointer milift_texlist_names  0x00000054  SOLID_MODEL_TEXTURE_PUM128_20
+pointer milift_texlist_names  0x00000060  SOLID_MODEL_TEXTURE_PUM128_22
+pointer milift_texlist_names  0x0000006c  SOLID_MODEL_TEXTURE_PUM256_7
+pointer milift_texlist_names  0x00000078  SOLID_MODEL_TEXTURE_PUM32_1
+pointer milift_texlist_names  0x00000084  SOLID_MODEL_TEXTURE_PUM64_2
+pointer milift_texlist_names  0x00000090  SOLID_MODEL_TEXTURE_PUM64_4
+pointer milift_texlist  0x00000000  milift_texlist_names
+pointer milift_model  0x00000000  milift_vertices
+pointer milift_model  0x00000004  milift_polygons
+pointer milift_object  0x00000004  milift_model
+pointer milift_collision_faces  0x00000004  milift_collision_strips
+pointer milift_collision_model  0x00000000  milift_collision_points
+pointer milift_collision_model  0x00000004  milift_collision_normals
+pointer milift_collision_model  0x0000000c  milift_collision_faces
+pointer milift_collision_model  0x00000010  milift_collision_materials
+pointer milift_collision  0x00000004  milift_collision_model
+pointer miframe_texlist_names  0x00000000  SOLID_MODEL_TEXTURE_MIU64_MI005
+pointer miframe_texlist_names  0x0000000c  SOLID_MODEL_TEXTURE_MIU64_MI006
+pointer miframe_texlist_names  0x00000018  SOLID_MODEL_TEXTURE_PUM128_22
+pointer miframe_texlist_names  0x00000024  SOLID_MODEL_TEXTURE_PUM128_7
+pointer miframe_texlist  0x00000000  miframe_texlist_names
+pointer miframe_model  0x00000000  miframe_vertices
+pointer miframe_model  0x00000004  miframe_polygons
+pointer miframe_object  0x00000004  miframe_model
+pointer miframe_collision_faces  0x00000004  miframe_collision_strips
+pointer miframe_collision_model  0x00000000  miframe_collision_points
+pointer miframe_collision_model  0x00000004  miframe_collision_normals
+pointer miframe_collision_model  0x0000000c  miframe_collision_faces
+pointer miframe_collision_model  0x00000010  miframe_collision_materials
+pointer miframe_collision  0x00000004  miframe_collision_model
+pointer solid_models_texlists  0x00000000  miwood_texlist
+pointer solid_models_texlists  0x00000004  miwoody_texlist
+pointer solid_models_texlists  0x00000008  mibar_texlist
+pointer solid_models_texlists  0x0000000c  milift_texlist
+pointer solid_models_texlists  0x00000010  miframe_texlist

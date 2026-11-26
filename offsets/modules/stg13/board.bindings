@@ -1,0 +1,15 @@
+text  CITY_TEXTURE_CE64_ITA001  12
+text  CITY_TEXTURE_CE64_ITA002  12
+text  CITY_TEXTURE_CE64_ITA003  12
+pointer  board_texnames  0x00000000  CITY_TEXTURE_CE64_ITA001
+pointer  board_texnames  0x0000000c  CITY_TEXTURE_CE64_ITA002
+pointer  board_texnames  0x00000018  CITY_TEXTURE_CE64_ITA003
+pointer  board_texlist  0x00000000  board_texnames
+pointer  board_model  0x00000000  board_vertices
+pointer  board_model  0x00000004  board_polygons
+pointer  board_object  0x00000004  board_model
+pointer  board_root  0x0000002c  board_object
+pointer  board_shadow_model  0x00000000  board_shadow_vertices
+pointer  board_shadow_model  0x00000004  board_shadow_polygons
+pointer  board_shadow_object  0x00000004  board_shadow_model
+pointer  board_texlists  0x00000000  board_texlist

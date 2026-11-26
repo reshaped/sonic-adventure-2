@@ -1,0 +1,2 @@
+datum  metal_harbor_sounds  C  0x00000000  104
+datum  metal_harbor_sound_list  C  0x00000068  8

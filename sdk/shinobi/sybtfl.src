@@ -1,0 +1,54 @@
+; the boot ROM's flash memory services. each entry puts its service's number
+; in R7 and jumps to the boot ROM's entry for them, which returns to the
+; caller. R4 to R6 reach the service as the caller left them
+
+        .EXPORT     _syBtFlGetInfo
+        .EXPORT     _syBtFlRead
+        .EXPORT     _syBtFlWrite
+        .EXPORT     _syBtFlDeleteSct
+
+; the address of the word that holds the boot ROM's entry for these services
+FLASH_VECTOR:   .EQU    H'8C0000B8
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; Sint32 syBtFlGetInfo(Sint32 part, SY_BT_FL_BLKINFO *info)
+; @asm operand: integer-constant, MOV.L at 0x8c15cef4 loads its service, 0,
+; from the pool
+_syBtFlGetInfo:
+        MOV.L       #0,R7
+        MOV.L       #FLASH_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 syBtFlRead(Sint32 address, void *buffer, Sint32 size)
+; @asm operand: integer-constant, MOV.L at 0x8c15cf08 loads its service, 1,
+; from the pool
+_syBtFlRead:
+        MOV.L       #1,R7
+        MOV.L       #FLASH_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 syBtFlWrite(Sint32 address, void *buffer, Sint32 size)
+; @asm operand: integer-constant, MOV.L at 0x8c15cf1c loads its service, 2,
+; from the pool
+_syBtFlWrite:
+        MOV.L       #2,R7
+        MOV.L       #FLASH_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 syBtFlDeleteSct(Sint32 address)
+; @asm operand: integer-constant, MOV.L at 0x8c15cf30 loads its service, 3,
+; from the pool
+_syBtFlDeleteSct:
+        MOV.L       #3,R7
+        MOV.L       #FLASH_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+        .END

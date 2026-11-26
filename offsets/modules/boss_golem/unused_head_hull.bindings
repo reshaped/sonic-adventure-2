@@ -1,0 +1,6 @@
+pointer  upper_hull_meshes  0x00000004  upper_hull_faces
+pointer  upper_hull_model  0x00000000  upper_hull_points
+pointer  upper_hull_model  0x00000004  upper_hull_normals
+pointer  upper_hull_model  0x0000000c  upper_hull_meshes
+pointer  upper_hull_model  0x00000010  upper_hull_materials
+pointer  upper_hull  0x00000004  upper_hull_model

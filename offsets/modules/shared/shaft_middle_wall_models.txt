@@ -1,0 +1,8 @@
+datum  shaft_middle_wall_slots  D  0x00000000  24
+datum  middle_wall_textures  D  0x00000018  8
+datum  shaft_middle_wall_poses  D  0x00000020  20480
+datum  shaft_middle_wall_root  D  0x00005020  52
+datum  shaft_outer_wall_slots  D  0x00005054  24
+datum  outer_wall_textures  D  0x0000506c  8
+datum  shaft_outer_wall_poses  D  0x00005074  20480
+datum  shaft_outer_wall_root  D  0x0000a074  52

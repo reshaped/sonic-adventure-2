@@ -1,0 +1,3 @@
+text  BACKGROUND_ARCHIVE  C  0x00000000  8
+datum  core_sonic_bg_groups  D  0x00000000  8
+datum  core_sonic_bg_pvms  D  0x00000008  24

@@ -1,0 +1,10 @@
+datum  textures  D  0x00000000  48
+datum  arrow_2_texlist  D  0x00000030  8
+datum  arrow_2_light_1_polygons  D  0x00000038  114
+datum  arrow_2_light_1_vertices  D  0x000000ac  140
+datum  arrow_2_light_1_mesh  D  0x00000138  24
+datum  arrow_2_light_1  D  0x00000150  52
+datum  arrow_2_polygons  D  0x00000184  282
+datum  arrow_2_vertices  D  0x000002a0  332
+datum  arrow_2_mesh  D  0x000003ec  24
+datum  arrow_2_object  D  0x00000404  52

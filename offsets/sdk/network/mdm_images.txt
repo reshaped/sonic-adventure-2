@@ -1,0 +1,2 @@
+datum  DspImage      D  0x00000000  28588
+datum  CountryImage  D  0x00006fac  5056

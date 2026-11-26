@@ -1,0 +1,25 @@
+text  TEXTURE_HPBAR  12
+text  TEXTURE_HPBAR_F0  15
+text  TEXTURE_HPBAR_F1  15
+text  TEXTURE_HPBAR_F2  15
+text  TEXTURE_HPBAR_F3  15
+text  TEXTURE_HPBAR_F4  15
+text  TEXTURE_HPBAR_ENEMY0  19
+text  TEXTURE_HPBAR_ENEMY1  19
+text  TEXTURE_HPBAR_ENEMY2  19
+text  TEXTURE_HPBAR_ENEMY3  19
+text  TEXTURE_HPBAR_ENEMY4  19
+text  TEXTURE_HPBAR_F5  15
+
+pointer  boss_gauge_texname  0x00000000  TEXTURE_HPBAR
+pointer  boss_gauge_texname  0x0000000c  TEXTURE_HPBAR_F0
+pointer  boss_gauge_texname  0x00000018  TEXTURE_HPBAR_F1
+pointer  boss_gauge_texname  0x00000024  TEXTURE_HPBAR_F2
+pointer  boss_gauge_texname  0x00000030  TEXTURE_HPBAR_F3
+pointer  boss_gauge_texname  0x0000003c  TEXTURE_HPBAR_F4
+pointer  boss_gauge_texname  0x00000048  TEXTURE_HPBAR_ENEMY0
+pointer  boss_gauge_texname  0x00000054  TEXTURE_HPBAR_ENEMY1
+pointer  boss_gauge_texname  0x00000060  TEXTURE_HPBAR_ENEMY2
+pointer  boss_gauge_texname  0x0000006c  TEXTURE_HPBAR_ENEMY3
+pointer  boss_gauge_texname  0x00000078  TEXTURE_HPBAR_ENEMY4
+pointer  boss_gauge_texname  0x00000084  TEXTURE_HPBAR_F5

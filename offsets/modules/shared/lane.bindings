@@ -1,0 +1,62 @@
+text  STREET_TEXT_MIU64_MS001  12
+text  STREET_TEXT_MIU64_MS002  12
+text  STREET_TEXT_PR128_37  9
+text  STREET_TEXT_SHCITY128_14  13
+text  STREET_TEXT_SHCITY128_19  13
+text  STREET_TEXT_SHCITY256_5  12
+text  STREET_TEXT_SHCITY32_2  11
+text  STREET_TEXT_MIU128_MS001  13
+text  STREET_TEXT_TYPE_A  7
+text  STREET_TEXT_TYPE_B  7
+text  STREET_TEXT_TYPE_C  7
+text  STREET_TEXT_TYPE_D  7
+text  STREET_TEXT_TYPE_E  7
+text  STREET_TEXT_TYPE_F  7
+pointer  lane_textures  0x00000000  STREET_TEXT_MIU64_MS001
+pointer  lane_textures  0x0000000c  STREET_TEXT_MIU64_MS002
+pointer  lane_textures  0x00000018  STREET_TEXT_PR128_37
+pointer  lane_textures  0x00000024  STREET_TEXT_SHCITY128_14
+pointer  lane_textures  0x00000030  STREET_TEXT_SHCITY128_19
+pointer  lane_textures  0x0000003c  STREET_TEXT_SHCITY256_5
+pointer  lane_textures  0x00000048  STREET_TEXT_SHCITY32_2
+pointer  lane_texlist  0x00000000  lane_textures
+pointer  lane_mesh  0x00000000  lane_vertices
+pointer  lane_mesh  0x00000004  lane_polygons
+pointer  lane_object  0x00000004  lane_mesh
+pointer  lane_cracked_textures  0x00000000  STREET_TEXT_MIU128_MS001
+pointer  lane_cracked_textures  0x0000000c  STREET_TEXT_MIU64_MS001
+pointer  lane_cracked_textures  0x00000018  STREET_TEXT_MIU64_MS002
+pointer  lane_cracked_textures  0x00000024  STREET_TEXT_PR128_37
+pointer  lane_cracked_textures  0x00000030  STREET_TEXT_SHCITY128_14
+pointer  lane_cracked_textures  0x0000003c  STREET_TEXT_SHCITY256_5
+pointer  lane_cracked_textures  0x00000048  STREET_TEXT_SHCITY32_2
+pointer  lane_cracked_texlist  0x00000000  lane_cracked_textures
+pointer  lane_debris_origin_5  0x00000030  lane_debris_origin_6
+pointer  lane_debris_origin_4  0x00000030  lane_debris_origin_5
+pointer  lane_debris_origin_3  0x00000030  lane_debris_origin_4
+pointer  lane_debris_origin_2  0x00000030  lane_debris_origin_3
+pointer  lane_debris_origin_1  0x00000030  lane_debris_origin_2
+pointer  lane_cracked_mesh  0x00000000  lane_cracked_vertices
+pointer  lane_cracked_mesh  0x00000004  lane_cracked_polygons
+pointer  lane_cracked_object  0x00000004  lane_cracked_mesh
+pointer  lane_cracked_object  0x0000002c  lane_debris_origin_1
+pointer  lane_world_meshsets  0x00000004  lane_world_indices_0
+pointer  lane_world_model  0x00000000  lane_world_points
+pointer  lane_world_model  0x00000004  lane_world_normals
+pointer  lane_world_model  0x0000000c  lane_world_meshsets
+pointer  lane_world_model  0x00000010  lane_world_materials
+pointer  lane_world  0x00000004  lane_world_model
+pointer  lane_swing_world_meshsets  0x00000004  lane_swing_world_indices_0
+pointer  lane_swing_world_model  0x00000000  lane_swing_world_points
+pointer  lane_swing_world_model  0x00000004  lane_swing_world_normals
+pointer  lane_swing_world_model  0x0000000c  lane_swing_world_meshsets
+pointer  lane_swing_world_model  0x00000010  lane_swing_world_materials
+pointer  lane_swing_world  0x00000004  lane_swing_world_model
+pointer  lane_texlists  0x00000000  lane_texlist
+pointer  lane_texlists  0x00000004  lane_cracked_texlist
+pointer  lane_type_names  0x00000000  STREET_TEXT_TYPE_A
+pointer  lane_type_names  0x00000004  STREET_TEXT_TYPE_B
+pointer  lane_type_names  0x00000008  STREET_TEXT_TYPE_C
+pointer  lane_type_names  0x0000000c  STREET_TEXT_TYPE_D
+pointer  lane_type_names  0x00000010  STREET_TEXT_TYPE_E
+pointer  lane_type_names  0x00000014  STREET_TEXT_TYPE_F

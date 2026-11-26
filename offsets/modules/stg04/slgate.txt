@@ -1,0 +1,17 @@
+text  SLGATE_EDITOR_ANGLE_Y  C  0x00000000  11
+text  SLGATE_TEXTURE_MIU32_KAGE001  C  0x0000000c  14
+text  SLGATE_TEXTURE_MIU64_GREEN011  C  0x0000001c  15
+datum  model_textures  D  0x00000000  24
+datum  slgate_texlist  D  0x00000018  8
+datum  gate_polygons  D  0x00000020  922
+datum  gate_vertices  D  0x000003bc  1836
+datum  slgate_model  D  0x00000ae8  24
+datum  gate_object  D  0x00000b00  52
+datum  gate_collision_material  D  0x00000b34  20
+datum  gate_collision_indices  D  0x00000b48  86
+datum  gate_collision_meshset  D  0x00000ba0  24
+datum  gate_collision_points  D  0x00000bb8  192
+datum  gate_collision_normals  D  0x00000c78  192
+datum  gate_collision_model  D  0x00000d38  40
+datum  slgate_collision  D  0x00000d60  52
+datum  slgate_parts  D  0x00000d94  8

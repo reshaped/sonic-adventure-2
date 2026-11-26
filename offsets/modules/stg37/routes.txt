@@ -1,0 +1,5 @@
+datum  west_current_points  D  0x00000000  180
+datum  west_current  D  0x000000b4  16
+datum  east_current_points  D  0x000000c4  180
+datum  east_current  D  0x00000178  16
+datum  core_rouge_paths  D  0x00000188  12

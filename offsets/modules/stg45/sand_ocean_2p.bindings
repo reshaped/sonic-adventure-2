@@ -1,0 +1,11 @@
+text SAND_OCEAN_LIGHT_FILE 16
+text SAND_OCEAN_FOG_FILE 14
+
+pointer  quicksand_anim  0x00000010  ocean_2p_quicksand_uvs
+pointer  kill_area_meshset  0x00000004  kill_area_mesh
+pointer  kill_area_model  0x00000000  kill_area_points
+pointer  kill_area_model  0x00000004  kill_area_normals
+pointer  kill_area_model  0x0000000c  kill_area_meshset
+pointer  kill_area_model  0x00000010  kill_area_material
+pointer  kill_area_object  0x00000004  kill_area_model
+pointer  sand_ocean_2p_kill_areas  0x00000004  kill_area_object

@@ -1,0 +1,1 @@
+datum  path_draw_triangle  D  0x00000000  48

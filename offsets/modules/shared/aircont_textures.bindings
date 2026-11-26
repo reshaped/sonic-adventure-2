@@ -1,0 +1,33 @@
+text  FRSTAGE_MIU128_MEH002  14
+text  FRSTAGE_MIU128_MEH003  14
+text  FRSTAGE_MIU128_MEH004  14
+text  FRSTAGE_MIU256_MEH001  14
+text  FRSTAGE_MIU32_MEH002  13
+text  FRSTAGE_MIU64_CG020  12
+text  FRSTAGE_MIU64_MEH002  13
+text  FRSTAGE_MIU64_MEH003  13
+text  FRSTAGE_MIU64_MEH004  13
+
+pointer  textures  0x00000000  FRSTAGE_MIU128_MEH002
+pointer  textures  0x0000000c  FRSTAGE_MIU128_MEH003
+pointer  textures  0x00000018  FRSTAGE_MIU128_MEH004
+pointer  textures  0x00000024  FRSTAGE_MIU256_MEH001
+pointer  textures  0x00000030  FRSTAGE_MIU32_MEH002
+pointer  textures  0x0000003c  FRSTAGE_MIU64_CG020
+pointer  textures  0x00000048  FRSTAGE_MIU64_MEH002
+pointer  textures  0x00000054  FRSTAGE_MIU64_MEH003
+pointer  textures  0x00000060  FRSTAGE_MIU64_MEH004
+pointer  frstage_texlist  0x00000000  textures
+pointer  frstage_light_model  0x00000000  frstage_light_vertices
+pointer  frstage_light_model  0x00000004  frstage_light_polygons
+pointer  frstage_light  0x00000004  frstage_light_model
+pointer  frstage_floor_model  0x00000000  frstage_floor_vertices
+pointer  frstage_floor_model  0x00000004  frstage_floor_polygons
+pointer  frstage_floor  0x00000004  frstage_floor_model
+pointer  frstage_floor  0x0000002c  frstage_light
+pointer  frstage_collision_meshsets  0x00000004  frstage_collision_faces
+pointer  frstage_collision_model  0x00000000  frstage_collision_points
+pointer  frstage_collision_model  0x00000004  frstage_collision_normals
+pointer  frstage_collision_model  0x0000000c  frstage_collision_meshsets
+pointer  frstage_collision_model  0x00000010  frstage_collision_materials
+pointer  frstage_collision  0x00000004  frstage_collision_model

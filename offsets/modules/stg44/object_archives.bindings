@@ -1,0 +1,174 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_8ORANGE  8
+text  ARCHIVE_MIU128_FR002  13
+text  ARCHIVE_MIU128_MAD001  14
+text  ARCHIVE_MIU128_MAD002  14
+text  ARCHIVE_MIU128_MAD003  14
+text  ARCHIVE_MIU128_MAD004  14
+text  ARCHIVE_MIU128_MAD005  14
+text  ARCHIVE_MIU128_MAD006  14
+text  ARCHIVE_MIU128_MEH001  14
+text  ARCHIVE_MIU128_MEH002  14
+text  ARCHIVE_MIU128_MEH003  14
+text  ARCHIVE_MIU128_MEH004  14
+text  ARCHIVE_MIU128_MEH006  14
+text  ARCHIVE_MIU128_MEH010  14
+text  ARCHIVE_MIU256_MAD001  14
+text  ARCHIVE_MIU256_MAD002  14
+text  ARCHIVE_MIU256_MEH001  14
+text  ARCHIVE_MIU32_MEH002  13
+text  ARCHIVE_MIU32_PSO001  13
+text  ARCHIVE_MIU32_PSO002  13
+text  ARCHIVE_MIU32_PSO003  13
+text  ARCHIVE_MIU64_CG020  12
+text  ARCHIVE_MIU64_MAD001  13
+text  ARCHIVE_MIU64_MAD002  13
+text  ARCHIVE_MIU64_MAD003  13
+text  ARCHIVE_MIU64_MAD004  13
+text  ARCHIVE_MIU64_MAD005  13
+text  ARCHIVE_MIU64_MAD006  13
+text  ARCHIVE_MIU64_MAD007  13
+text  ARCHIVE_MIU64_MAD008  13
+text  ARCHIVE_MIU64_MAD009  13
+text  ARCHIVE_MIU64_MAD010  13
+text  ARCHIVE_MIU64_MAD011  13
+text  ARCHIVE_MIU64_MAD012  13
+text  ARCHIVE_MIU64_MAD013  13
+text  ARCHIVE_MIU64_MAD014  13
+text  ARCHIVE_MIU64_MAD015  13
+text  ARCHIVE_MIU64_MAD016  13
+text  ARCHIVE_MIU64_MEH001  13
+text  ARCHIVE_MIU64_MEH002  13
+text  ARCHIVE_MIU64_MEH003  13
+text  ARCHIVE_MIU64_MEH004  13
+text  ARCHIVE_MIU64_MEH007  13
+text  ARCHIVE_MIU64_MEH008  13
+text  ARCHIVE_MIU64_MEH009  13
+text  ARCHIVE_MIU64_MEH010  13
+text  ARCHIVE_OBJTEX_STG44  13
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_LANDTX44_UV  12
+
+pointer  stage_archive_names  0x00000000  ARCHIVE_8ORANGE
+pointer  stage_archive_names  0x0000000c  ARCHIVE_MIU128_FR002
+pointer  stage_archive_names  0x00000018  ARCHIVE_MIU128_MAD001
+pointer  stage_archive_names  0x00000024  ARCHIVE_MIU128_MAD002
+pointer  stage_archive_names  0x00000030  ARCHIVE_MIU128_MAD003
+pointer  stage_archive_names  0x0000003c  ARCHIVE_MIU128_MAD004
+pointer  stage_archive_names  0x00000048  ARCHIVE_MIU128_MAD005
+pointer  stage_archive_names  0x00000054  ARCHIVE_MIU128_MAD006
+pointer  stage_archive_names  0x00000060  ARCHIVE_MIU128_MEH001
+pointer  stage_archive_names  0x0000006c  ARCHIVE_MIU128_MEH002
+pointer  stage_archive_names  0x00000078  ARCHIVE_MIU128_MEH003
+pointer  stage_archive_names  0x00000084  ARCHIVE_MIU128_MEH004
+pointer  stage_archive_names  0x00000090  ARCHIVE_MIU128_MEH006
+pointer  stage_archive_names  0x0000009c  ARCHIVE_MIU128_MEH010
+pointer  stage_archive_names  0x000000a8  ARCHIVE_MIU256_MAD001
+pointer  stage_archive_names  0x000000b4  ARCHIVE_MIU256_MAD002
+pointer  stage_archive_names  0x000000c0  ARCHIVE_MIU256_MEH001
+pointer  stage_archive_names  0x000000cc  ARCHIVE_MIU32_MEH002
+pointer  stage_archive_names  0x000000d8  ARCHIVE_MIU32_PSO001
+pointer  stage_archive_names  0x000000e4  ARCHIVE_MIU32_PSO002
+pointer  stage_archive_names  0x000000f0  ARCHIVE_MIU32_PSO003
+pointer  stage_archive_names  0x000000fc  ARCHIVE_MIU64_CG020
+pointer  stage_archive_names  0x00000108  ARCHIVE_MIU64_MAD001
+pointer  stage_archive_names  0x00000114  ARCHIVE_MIU64_MAD002
+pointer  stage_archive_names  0x00000120  ARCHIVE_MIU64_MAD003
+pointer  stage_archive_names  0x0000012c  ARCHIVE_MIU64_MAD004
+pointer  stage_archive_names  0x00000138  ARCHIVE_MIU64_MAD005
+pointer  stage_archive_names  0x00000144  ARCHIVE_MIU64_MAD006
+pointer  stage_archive_names  0x00000150  ARCHIVE_MIU64_MAD007
+pointer  stage_archive_names  0x0000015c  ARCHIVE_MIU64_MAD008
+pointer  stage_archive_names  0x00000168  ARCHIVE_MIU64_MAD009
+pointer  stage_archive_names  0x00000174  ARCHIVE_MIU64_MAD010
+pointer  stage_archive_names  0x00000180  ARCHIVE_MIU64_MAD011
+pointer  stage_archive_names  0x0000018c  ARCHIVE_MIU64_MAD012
+pointer  stage_archive_names  0x00000198  ARCHIVE_MIU64_MAD013
+pointer  stage_archive_names  0x000001a4  ARCHIVE_MIU64_MAD014
+pointer  stage_archive_names  0x000001b0  ARCHIVE_MIU64_MAD015
+pointer  stage_archive_names  0x000001bc  ARCHIVE_MIU64_MAD016
+pointer  stage_archive_names  0x000001c8  ARCHIVE_MIU64_MEH001
+pointer  stage_archive_names  0x000001d4  ARCHIVE_MIU64_MEH002
+pointer  stage_archive_names  0x000001e0  ARCHIVE_MIU64_MEH003
+pointer  stage_archive_names  0x000001ec  ARCHIVE_MIU64_MEH004
+pointer  stage_archive_names  0x000001f8  ARCHIVE_MIU64_MEH007
+pointer  stage_archive_names  0x00000204  ARCHIVE_MIU64_MEH008
+pointer  stage_archive_names  0x00000210  ARCHIVE_MIU64_MEH009
+pointer  stage_archive_names  0x0000021c  ARCHIVE_MIU64_MEH010
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  mad_space_texture_groups  0x00000000  stage_textures
+pointer  mad_space_texture_groups  0x00000004  goal_ring_texlists
+pointer  mad_space_texture_groups  0x00000008  emerald_texlists
+pointer  mad_space_texture_groups  0x0000000c  item_box_texlists
+pointer  mad_space_texture_groups  0x00000010  item_box_air_texlists
+pointer  mad_space_texture_groups  0x00000014  weight_texlists
+pointer  mad_space_texture_groups  0x00000018  iron_ball_texlists
+pointer  mad_space_texture_groups  0x0000001c  triple_spring_texlists
+pointer  mad_space_texture_groups  0x00000020  dynamite_texlists
+pointer  mad_space_texture_groups  0x00000024  reel_texlists
+pointer  mad_space_texture_groups  0x00000028  chao_pipe_texlists
+pointer  mad_space_texture_groups  0x0000002c  cage_texlists
+pointer  mad_space_texture_groups  0x00000030  wood_box_texlists
+pointer  mad_space_texture_groups  0x00000034  iron_box_texlists
+pointer  mad_space_texture_groups  0x00000038  upgrade_texlists
+pointer  mad_space_texture_groups  0x0000003c  missile_texlists
+pointer  mad_space_texture_groups  0x00000040  skull_texlists
+pointer  mad_space_texture_groups  0x00000044  rocket_texlists
+pointer  mad_space_texture_groups  0x00000048  search_box_texlists
+pointer  mad_space_texture_groups  0x0000004c  hint_box_texlists
+pointer  mad_space_texture_groups  0x00000050  knudai_texlists
+pointer  mad_space_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  mad_space_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  mad_space_texture_groups  0x0000005c  knudai_door_texlists
+pointer  mad_space_texture_groups  0x00000060  chao_box_texlists
+pointer  mad_space_texture_groups  0x00000064  chao_key_texlists
+pointer  mad_space_texture_groups  0x00000068  object_effect_texlists
+pointer  mad_space_texture_groups  0x0000006c  messenger_texlists
+pointer  mad_space_texture_groups  0x00000070  ring_effect_texlists
+pointer  mad_space_texture_groups  0x00000074  solid_box_texlists
+pointer  mad_space_texture_groups  0x00000078  empty_object_texlists
+pointer  mad_space_texture_groups  0x0000007c  frstage_texlists
+pointer  mad_space_texture_groups  0x00000080  spin_iron_texlists
+pointer  mad_space_texture_groups  0x00000084  spin_solid_texlists
+pointer  mad_space_texture_groups  0x00000088  mad_space_shutter_textures
+pointer  mad_space_texture_groups  0x0000008c  mad_space_fireball_textures
+pointer  mad_space_texture_groups  0x00000090  mad_space_marker_textures
+pointer  mad_space_texture_groups  0x00000094  mad_space_ore_textures
+pointer  mad_space_texture_groups  0x00000098  mad_space_sl_textures
+pointer  mad_space_texture_groups  0x0000009c  mad_space_foothold_textures
+pointer  mad_space_texture_groups  0x000000a0  landing_textures
+pointer  mad_space_texture_groups  0x000000a4  space_pickup_textures
+pointer  mad_space_texture_groups  0x000000a8  mad_space_pole_textures
+pointer  mad_space_texture_groups  0x000000ac  mad_space_carriage_textures
+pointer  mad_space_texture_groups  0x000000b0  mad_space_platform_textures
+pointer  mad_space_texture_groups  0x000000b4  planter_textures
+pointer  mad_space_texture_groups  0x000000b8  mad_space_line_textures
+pointer  mad_space_texture_groups  0x000000bc  spin_wood_texlists
+pointer  mad_space_texture_groups  0x000000c0  mad_space_fence_textures
+pointer  mad_space_pvms  0x00000000  ARCHIVE_OBJTEX_STG44
+pointer  mad_space_pvms  0x00000004  stage_archive
+pointer  mad_space_pvms  0x00000008  ARCHIVE_EFFTEX_COMMON
+pointer  mad_space_pvms  0x0000000c  efftex_common_texlist
+pointer  mad_space_pvms  0x00000010  ARCHIVE_OBJTEX_COMMON
+pointer  mad_space_pvms  0x00000014  objtex_common_texlist
+pointer  mad_space_pvms  0x00000018  ARCHIVE_LANDTX44_UV
+pointer  mad_space_pvms  0x0000001c  mad_space_animated_surface_texlist
+pointer  mad_space_pvms  0x00000024  mad_space_land_texlist

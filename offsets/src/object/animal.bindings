@@ -1,0 +1,47 @@
+pointer  animal_bubble_model  0x00000000  animal_bubble_vertices
+pointer  animal_bubble_model  0x00000004  animal_bubble_polygons
+pointer  animal_bubble_object  0x00000004  animal_bubble_model
+
+text  ANIMAL_ARCHIVE_PEN  4
+text  ANIMAL_ARCHIVE_GOMA  5
+text  ANIMAL_ARCHIVE_RAKO  5
+text  ANIMAL_ARCHIVE_USA  4
+text  ANIMAL_ARCHIVE_CHIT  5
+text  ANIMAL_ARCHIVE_INO  4
+text  ANIMAL_ARCHIVE_KUMA  5
+text  ANIMAL_ARCHIVE_TORA  5
+text  ANIMAL_ARCHIVE_GORI  5
+text  ANIMAL_ARCHIVE_KUJA  5
+text  ANIMAL_ARCHIVE_OUM  4
+text  ANIMAL_ARCHIVE_KON  4
+text  ANIMAL_ARCHIVE_SKA  4
+text  ANIMAL_ARCHIVE_SHEP  5
+text  ANIMAL_ARCHIVE_ARA  4
+text  ANIMAL_ARCHIVE_HAN  4
+text  ANIMAL_ARCHIVE_BONE  5
+text  ANIMAL_ARCHIVE_BATMAN  7
+text  ANIMAL_ARCHIVE_DRA  4
+text  ANIMAL_ARCHIVE_UNI  4
+text  ANIMAL_ARCHIVE_PHEN  5
+
+pointer  animal_files  0x00000000  ANIMAL_ARCHIVE_PEN
+pointer  animal_files  0x00000008  ANIMAL_ARCHIVE_GOMA
+pointer  animal_files  0x00000010  ANIMAL_ARCHIVE_RAKO
+pointer  animal_files  0x00000018  ANIMAL_ARCHIVE_USA
+pointer  animal_files  0x00000020  ANIMAL_ARCHIVE_CHIT
+pointer  animal_files  0x00000028  ANIMAL_ARCHIVE_INO
+pointer  animal_files  0x00000030  ANIMAL_ARCHIVE_KUMA
+pointer  animal_files  0x00000038  ANIMAL_ARCHIVE_TORA
+pointer  animal_files  0x00000040  ANIMAL_ARCHIVE_GORI
+pointer  animal_files  0x00000048  ANIMAL_ARCHIVE_KUJA
+pointer  animal_files  0x00000050  ANIMAL_ARCHIVE_OUM
+pointer  animal_files  0x00000058  ANIMAL_ARCHIVE_KON
+pointer  animal_files  0x00000060  ANIMAL_ARCHIVE_SKA
+pointer  animal_files  0x00000068  ANIMAL_ARCHIVE_SHEP
+pointer  animal_files  0x00000070  ANIMAL_ARCHIVE_ARA
+pointer  animal_files  0x00000078  ANIMAL_ARCHIVE_HAN
+pointer  animal_files  0x00000080  ANIMAL_ARCHIVE_BONE
+pointer  animal_files  0x00000088  ANIMAL_ARCHIVE_BATMAN
+pointer  animal_files  0x00000090  ANIMAL_ARCHIVE_DRA
+pointer  animal_files  0x00000098  ANIMAL_ARCHIVE_UNI
+pointer  animal_files  0x000000a0  ANIMAL_ARCHIVE_PHEN

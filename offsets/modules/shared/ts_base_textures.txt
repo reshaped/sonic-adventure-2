@@ -1,0 +1,9 @@
+text  CORE_TEXTURE_DZ_CC_TSWITCHA32  C  0x00000000  17
+text  CORE_TEXTURE_DZ_CC_TSWITCHB32  C  0x00000014  17
+text  CORE_TEXTURE_DZ_CC_TSWITCHC32  C  0x00000028  17
+datum  textures  D  0x00000000  36
+datum  time_switch_base_texlist  D  0x00000024  8
+datum  time_switch_base_polygons  D  0x0000002c  1078
+datum  time_switch_base_vertices  D  0x00000464  988
+datum  time_switch_base  D  0x00000840  24
+datum  pedestal  D  0x00000858  52

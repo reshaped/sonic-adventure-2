@@ -1,0 +1,26 @@
+text ROLLER_EDITOR_ROT_X 9
+text ROLLER_EDITOR_ROT_Y 9
+text ROLLER_EDITOR_ROT_Z 9
+text ROLLER_EDITOR_ROTSPD 10
+text ROLLER_TEXTURE_MIU128_PL001 13
+text ROLLER_TEXTURE_MIU64_IG014 12
+text ROLLER_TEXTURE_PR128_12 9
+text ROLLER_TEXTURE_PR128_15 9
+text ROLLER_TEXTURE_PR128_2 8
+text ROLLER_TEXTURE_PR64_7 7
+
+pointer roller_names 0x00000000 ROLLER_TEXTURE_MIU128_PL001
+pointer roller_names 0x0000000c ROLLER_TEXTURE_MIU64_IG014
+pointer roller_names 0x00000018 ROLLER_TEXTURE_PR128_12
+pointer roller_names 0x00000024 ROLLER_TEXTURE_PR128_15
+pointer roller_names 0x00000030 ROLLER_TEXTURE_PR128_2
+pointer roller_names 0x0000003c ROLLER_TEXTURE_PR64_7
+pointer roller_texlist 0x00000000 roller_names
+pointer roller_drum_model 0x00000000 roller_drum_vertices
+pointer roller_drum_model 0x00000004 roller_drum_polygons
+pointer roller_drum_object 0x00000004 roller_drum_model
+pointer roller_model 0x00000000 roller_vertices
+pointer roller_model 0x00000004 roller_polygons
+pointer roller_object 0x00000004 roller_model
+pointer roller_object 0x0000002c roller_drum_object
+pointer roller_texlists 0x00000000 roller_texlist

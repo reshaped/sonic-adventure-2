@@ -1,0 +1,39 @@
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_JUMP_PANEL  11
+text  SET_NAME_DASH_PANEL  11
+text  SET_NAME_GATE  5
+text  SET_NAME_GATE2  6
+text  SET_NAME_KANBAN  7
+text  SET_NAME_RESTART_OBJ  12
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_CART_RING  10
+text  SET_NAME_BALOON  7
+text  SET_NAME_HIKOUSEN  9
+text  SET_NAME_KAKUSI  7
+text  SET_NAME_G_RING  7
+pointer  cart_kinds  0x00000008  dummy_object_init
+pointer  cart_kinds  0x0000000c  SET_NAME_DMYOBJ
+pointer  cart_kinds  0x00000018  cart_jump_step
+pointer  cart_kinds  0x0000001c  SET_NAME_JUMP_PANEL
+pointer  cart_kinds  0x00000028  cart_dash_step
+pointer  cart_kinds  0x0000002c  SET_NAME_DASH_PANEL
+pointer  cart_kinds  0x00000038  cart_start_gate_step
+pointer  cart_kinds  0x0000003c  SET_NAME_GATE
+pointer  cart_kinds  0x00000048  cart_checkpoint_step
+pointer  cart_kinds  0x0000004c  SET_NAME_GATE2
+pointer  cart_kinds  0x00000058  cart_sign_step
+pointer  cart_kinds  0x0000005c  SET_NAME_KANBAN
+pointer  cart_kinds  0x00000068  cart_restart_step
+pointer  cart_kinds  0x0000006c  SET_NAME_RESTART_OBJ
+pointer  cart_kinds  0x00000078  light_switch_init
+pointer  cart_kinds  0x0000007c  SET_NAME_LIGHT_SW
+pointer  cart_kinds  0x00000088  cart_ring_step
+pointer  cart_kinds  0x0000008c  SET_NAME_CART_RING
+pointer  cart_kinds  0x00000098  cart_balloon_step
+pointer  cart_kinds  0x0000009c  SET_NAME_BALOON
+pointer  cart_kinds  0x000000a8  cart_airship_step
+pointer  cart_kinds  0x000000ac  SET_NAME_HIKOUSEN
+pointer  cart_kinds  0x000000b8  cart_kakusi_step
+pointer  cart_kinds  0x000000bc  SET_NAME_KAKUSI
+pointer  cart_kinds  0x000000c8  cart_ring_group_step
+pointer  cart_kinds  0x000000cc  SET_NAME_G_RING

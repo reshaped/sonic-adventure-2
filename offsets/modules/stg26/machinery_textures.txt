@@ -1,0 +1,5 @@
+datum  machinery_texture_128a  C  0x00000000  20
+datum  machinery_texture_64a  C  0x00000014  20
+datum  machinery_texture_64b  C  0x00000028  18
+datum  textures  D  0x00000000  36
+datum  machinery_curve_texlist  D  0x00000024  8

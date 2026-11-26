@@ -1,0 +1,11 @@
+text  CITY_TEXTURE_MIU128_CE002  13
+text  CITY_TEXTURE_MIU32_CE009  12
+text  CITY_TEXTURE_SCITY64_16  11
+pointer  lamp_texnames  0x00000000  CITY_TEXTURE_MIU128_CE002
+pointer  lamp_texnames  0x0000000c  CITY_TEXTURE_MIU32_CE009
+pointer  lamp_texnames  0x00000018  CITY_TEXTURE_SCITY64_16
+pointer  lamp_texlist  0x00000000  lamp_texnames
+pointer  lamp_model  0x00000000  lamp_vertices
+pointer  lamp_model  0x00000004  lamp_polygons
+pointer  lamp_object  0x00000004  lamp_model
+pointer  lamp_texlists  0x00000000  lamp_texlist

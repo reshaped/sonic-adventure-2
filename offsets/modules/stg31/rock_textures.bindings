@@ -1,0 +1,3 @@
+text  ROCK_MATERIAL_ROCK  5
+
+pointer  textures  0x00000000  ROCK_MATERIAL_ROCK

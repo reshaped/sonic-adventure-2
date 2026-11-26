@@ -1,0 +1,6 @@
+datum curtain_panel_filename C 0x00000014 12
+datum curtain_border_filename C 0x00000020 12
+datum curtain_frames D 0x00000000 97092
+datum quarters_curtain_models D 0x00017b44 124
+datum quarters_curtain_texlists D 0x00017bc0 128
+datum curtain_build D 0x00017c74 16

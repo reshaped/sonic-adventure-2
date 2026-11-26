@@ -1,0 +1,5 @@
+datum  textures  D  0x00000000  24
+datum  sky_orbit_128_polygons  D  0x00000020  1670
+datum  sky_orbit_128_vertices  D  0x000006a8  1836
+datum  sky_orbit_128_mesh  D  0x00000dd4  24
+datum  background_2_object  D  0x00000dec  52

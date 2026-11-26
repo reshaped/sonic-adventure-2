@@ -1,0 +1,5 @@
+datum  arc_polygons  D  0x00000008  66
+datum  arc_vertices  D  0x0000004c  364
+datum  arc_model  D  0x000001b8  24
+datum  arc_object  D  0x000001d0  52
+datum  highway_iron_bar_texlists  D  0x00000224  4

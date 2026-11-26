@@ -1,0 +1,9 @@
+datum  frame_body  D  0x000000c0  96
+datum  frame_left  D  0x00000060  96
+datum  frame_right  D  0x00000120  96
+datum  frame_tail  D  0x00000180  96
+datum  glyph  D  0x00000000  96
+datum  shadow_body  D  0x00000240  96
+datum  shadow_left  D  0x000001e0  96
+datum  shadow_right  D  0x000002a0  96
+datum  shadow_tail  D  0x00000300  96

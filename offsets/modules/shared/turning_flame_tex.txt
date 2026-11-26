@@ -1,0 +1,2 @@
+text  KD_SO_HI_01  C  0x00000000  12
+datum  texture  D  0x00000000  12

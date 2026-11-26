@@ -1,0 +1,8 @@
+datum  hatch_miu128_cg001  C  0x00000000  16
+datum  hatch_miu128_cg005  C  0x00000010  16
+datum  hatch_miu128_cg007  C  0x00000020  16
+datum  hatch_miu128_ee001  C  0x00000030  16
+datum  hatch_miu128_ee003  C  0x00000040  16
+datum  hatch_miu64_cg008  C  0x00000050  12
+datum  hatch_miu64_cg010  C  0x0000005c  12
+datum  textures  D  0x00000000  84

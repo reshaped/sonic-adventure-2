@@ -1,0 +1,35 @@
+text  CAVE_BOARD_TEXTURE_DC_PC_CROUCHWALL_PILLAR256  27
+text  CAVE_BOARD_TEXTURE_DZ_PC_DOORKEY_NEON64  21
+text  CAVE_BOARD_KIND_BLUE  6
+text  CAVE_BOARD_KIND_GREEN  6
+
+pointer cave_board_blue_texture_names  0x00000000  CAVE_BOARD_TEXTURE_DC_PC_CROUCHWALL_PILLAR256
+pointer cave_board_blue_texture_names  0x0000000c  CAVE_BOARD_TEXTURE_DZ_PC_DOORKEY_NEON64
+pointer cave_board_blue_texlist  0x00000000  cave_board_blue_texture_names
+pointer cave_board_blue_glow_model  0x00000000  cave_board_blue_glow_vertices
+pointer cave_board_blue_glow_model  0x00000004  cave_board_blue_glow_polygons
+pointer cave_board_blue_object_sibling  0x00000004  cave_board_blue_glow_model
+pointer cave_board_blue_model  0x00000000  cave_board_blue_vertices
+pointer cave_board_blue_model  0x00000004  cave_board_blue_polygons
+pointer cave_board_blue_object  0x00000004  cave_board_blue_model
+pointer cave_board_blue_object  0x00000030  cave_board_blue_object_sibling
+pointer cave_board_blue_assembly  0x0000002c  cave_board_blue_object
+pointer cave_board_green_texture_names  0x00000000  CAVE_BOARD_TEXTURE_DC_PC_CROUCHWALL_PILLAR256
+pointer cave_board_green_texture_names  0x0000000c  CAVE_BOARD_TEXTURE_DZ_PC_DOORKEY_NEON64
+pointer cave_board_green_texlist  0x00000000  cave_board_green_texture_names
+pointer cave_board_green_glow_model  0x00000000  cave_board_green_glow_vertices
+pointer cave_board_green_glow_model  0x00000004  cave_board_green_glow_polygons
+pointer cave_board_green_object_sibling  0x00000004  cave_board_green_glow_model
+pointer cave_board_green_model  0x00000000  cave_board_green_vertices
+pointer cave_board_green_model  0x00000004  cave_board_green_polygons
+pointer cave_board_green_object  0x00000004  cave_board_green_model
+pointer cave_board_green_object  0x00000030  cave_board_green_object_sibling
+pointer cave_board_green_assembly  0x0000002c  cave_board_green_object
+pointer cave_board_models  0x00000000  cave_board_blue_model
+pointer cave_board_models  0x00000004  cave_board_green_model
+pointer cave_board_glow_models  0x00000000  cave_board_blue_glow_model
+pointer cave_board_glow_models  0x00000004  cave_board_green_glow_model
+pointer cave_board_texlists  0x00000000  cave_board_blue_texlist
+pointer cave_board_texlists  0x00000004  cave_board_green_texlist
+pointer cave_board_kind_names  0x00000000  CAVE_BOARD_KIND_BLUE
+pointer cave_board_kind_names  0x00000004  CAVE_BOARD_KIND_GREEN

@@ -1,0 +1,13 @@
+text  PLAIN_TREE_ART_TEXTURE_MIU256_CE001  C  0x00000000  13
+text  PLAIN_TREE_ART_TEXTURE_MIU32_CE003  C  0x00000010  12
+text  PLAIN_TREE_ART_TEXTURE_MIU64_MS009  C  0x0000001c  12
+datum  plain_tree_textures  D  0x00000000  36
+datum  plain_tree_texlist  D  0x00000024  8
+datum  plain_tree_object_child_polygons  D  0x0000002c  398
+datum  plain_tree_object_child_vertices  D  0x000001bc  668
+datum  plain_tree_object_child_model  D  0x00000458  24
+datum  plain_tree_object_child  D  0x00000470  52
+datum  plain_tree_polygons  D  0x000004a4  50
+datum  plain_tree_vertices  D  0x000004d8  76
+datum  plain_tree_model  D  0x00000524  24
+datum  plain_tree_object  D  0x0000053c  52

@@ -1,0 +1,24 @@
+file                              SONIC2/ENDING.PRS
+
+# section                         start       end
+DHEAD                             0x8c500000  0x8c500020
+P                                 0x8c500020  0x8c500920
+C                                 0x8c500920  0x8c5027c4
+D                                 0x8c5027c4  0x8c506c60
+B                                 0x8c506c60  0x8c506c6c
+
+# source                          section     start       end
+modules/ending/head.c             DHEAD       0x8c500000  0x8c500018
+modules/ending/ending.c           P           0x8c500020  0x8c5001a0
+modules/shared/staff_roll.c       P           0x8c5001a0  0x8c500600
+modules/shared/staff_roll_text.c  P           0x8c500600  0x8c500920
+modules/ending/ending.c           C           0x8c500920  0x8c50093d
+modules/shared/staff_roll.c       C           0x8c500940  0x8c500979
+modules/shared/staff_art.c        C           0x8c50097c  0x8c501519
+modules/shared/staff_credits.c    C           0x8c50151c  0x8c5027c3
+modules/ending/ending.c           D           0x8c5027c4  0x8c5027c8
+modules/shared/staff_roll.c       D           0x8c5027c8  0x8c5027e8
+modules/shared/staff_art.c        D           0x8c5027e8  0x8c50384c
+modules/shared/staff_font.c       D           0x8c50384c  0x8c503d7c
+modules/shared/staff_credits.c    D           0x8c503d7c  0x8c506c60
+modules/shared/staff_roll.c       B           0x8c506c60  0x8c506c6c

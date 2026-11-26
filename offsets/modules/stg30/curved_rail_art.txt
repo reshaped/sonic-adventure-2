@@ -1,0 +1,2 @@
+datum  points  D  0x00000000  260
+datum  curved_rail_path  D  0x00000104  16

@@ -1,0 +1,2 @@
+text  SPECKS_MATERIAL_01  C  0x00000010  12
+datum  speck_texture  D  0x00000000  12

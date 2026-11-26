@@ -1,0 +1,7 @@
+pointer sign_end_face_mesh 0x00000000 sign_end_face_vertices
+pointer sign_end_face_mesh 0x00000004 sign_end_face_polygons
+pointer sign_end_face 0x00000004 sign_end_face_mesh
+pointer sign_end_mesh 0x00000000 sign_end_vertices
+pointer sign_end_mesh 0x00000004 sign_end_polygons
+pointer sign_end_object 0x00000004 sign_end_mesh
+pointer sign_end_object 0x0000002c sign_end_face

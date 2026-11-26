@@ -1,0 +1,124 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_MIU128_FR002  13
+text  STAGE_TEXTURE_MIU256_CG005  13
+text  STAGE_TEXTURE_MIU256_CG006  13
+text  STAGE_TEXTURE_MIU256_FR001  13
+text  STAGE_TEXTURE_MIU32_CG001  12
+text  STAGE_TEXTURE_MIU32_CG006  12
+text  STAGE_TEXTURE_MIU32_CG008  12
+text  STAGE_TEXTURE_MIU32_CG009  12
+text  STAGE_TEXTURE_MIU64_CG006  12
+text  STAGE_TEXTURE_MIU64_CG013  12
+text  STAGE_TEXTURE_MIU64_CG014  12
+text  STAGE_TEXTURE_MIU64_CG015  12
+text  STAGE_TEXTURE_MIU64_CG018  12
+text  STAGE_TEXTURE_MIU64_CG019  12
+text  STAGE_TEXTURE_MIU64_CG020  12
+text  STAGE_TEXTURE_MIU64_CG021  12
+text  STAGE_TEXTURE_MIU64_CG022  12
+text  STAGE_TEXTURE_MIU64_CG023  12
+text  STAGE_TEXTURE_MIU64_CG024  12
+text  STAGE_TEXTURE_MIU64_EE001  12
+text  STAGE_TEXTURE_MIU64_EE002  12
+text  PVM_OBJTEX_STG22  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+
+pointer  stage_texlist_names  0x00000000  STAGE_TEXTURE_MIU128_FR002
+pointer  stage_texlist_names  0x0000000c  STAGE_TEXTURE_MIU256_CG005
+pointer  stage_texlist_names  0x00000018  STAGE_TEXTURE_MIU256_CG006
+pointer  stage_texlist_names  0x00000024  STAGE_TEXTURE_MIU256_FR001
+pointer  stage_texlist_names  0x00000030  STAGE_TEXTURE_MIU32_CG001
+pointer  stage_texlist_names  0x0000003c  STAGE_TEXTURE_MIU32_CG006
+pointer  stage_texlist_names  0x00000048  STAGE_TEXTURE_MIU32_CG008
+pointer  stage_texlist_names  0x00000054  STAGE_TEXTURE_MIU32_CG009
+pointer  stage_texlist_names  0x00000060  STAGE_TEXTURE_MIU64_CG006
+pointer  stage_texlist_names  0x0000006c  STAGE_TEXTURE_MIU64_CG013
+pointer  stage_texlist_names  0x00000078  STAGE_TEXTURE_MIU64_CG014
+pointer  stage_texlist_names  0x00000084  STAGE_TEXTURE_MIU64_CG015
+pointer  stage_texlist_names  0x00000090  STAGE_TEXTURE_MIU64_CG018
+pointer  stage_texlist_names  0x0000009c  STAGE_TEXTURE_MIU64_CG019
+pointer  stage_texlist_names  0x000000a8  STAGE_TEXTURE_MIU64_CG020
+pointer  stage_texlist_names  0x000000b4  STAGE_TEXTURE_MIU64_CG021
+pointer  stage_texlist_names  0x000000c0  STAGE_TEXTURE_MIU64_CG022
+pointer  stage_texlist_names  0x000000cc  STAGE_TEXTURE_MIU64_CG023
+pointer  stage_texlist_names  0x000000d8  STAGE_TEXTURE_MIU64_CG024
+pointer  stage_texlist_names  0x000000e4  STAGE_TEXTURE_MIU64_EE001
+pointer  stage_texlist_names  0x000000f0  STAGE_TEXTURE_MIU64_EE002
+pointer  stage_texlist  0x00000000  stage_texlist_names
+pointer  common_group  0x00000000  spring_texlist
+pointer  common_group  0x00000004  ring_texlist
+pointer  common_group  0x00000008  switch_texlist
+pointer  common_group  0x0000000c  dash_panel_texlist
+pointer  common_group  0x00000010  dash_panel_anim_texlist
+pointer  common_group  0x00000014  save_point_texlist
+pointer  common_group  0x00000018  iron_ball_texlist
+pointer  common_group  0x0000001c  big_jump_anim_texlist
+pointer  common_group  0x00000020  big_jump_texlist
+pointer  common_group  0x00000024  dirt_texlist
+pointer  common_group  0x00000028  ring_shadow_texlist
+pointer  common_group  0x0000002c  effect_texlist
+pointer  common_group  0x00000030  item_balloon_texlist
+pointer  common_group  0x00000034  ring_sparkle_texlist
+pointer  common_group  0x00000038  burst_texlist
+pointer  common_group  0x0000003c  lens_flare_texlist
+pointer  gadget_object_groups  0x00000000  common_group
+pointer  gadget_object_groups  0x00000004  goal_ring_texlists
+pointer  gadget_object_groups  0x00000008  emerald_texlists
+pointer  gadget_object_groups  0x0000000c  item_box_texlists
+pointer  gadget_object_groups  0x00000010  item_box_air_texlists
+pointer  gadget_object_groups  0x00000014  weight_texlists
+pointer  gadget_object_groups  0x00000018  iron_ball_texlists
+pointer  gadget_object_groups  0x0000001c  triple_spring_texlists
+pointer  gadget_object_groups  0x00000020  dynamite_texlists
+pointer  gadget_object_groups  0x00000024  reel_texlists
+pointer  gadget_object_groups  0x00000028  chao_pipe_texlists
+pointer  gadget_object_groups  0x0000002c  cage_texlists
+pointer  gadget_object_groups  0x00000030  wood_box_texlists
+pointer  gadget_object_groups  0x00000034  iron_box_texlists
+pointer  gadget_object_groups  0x00000038  upgrade_texlists
+pointer  gadget_object_groups  0x0000003c  missile_texlists
+pointer  gadget_object_groups  0x00000040  skull_texlists
+pointer  gadget_object_groups  0x00000044  rocket_texlists
+pointer  gadget_object_groups  0x00000048  search_box_texlists
+pointer  gadget_object_groups  0x0000004c  hint_box_texlists
+pointer  gadget_object_groups  0x00000050  knudai_texlists
+pointer  gadget_object_groups  0x00000054  knudai_foothold_texlists
+pointer  gadget_object_groups  0x00000058  knudai_warp_hole_texlists
+pointer  gadget_object_groups  0x0000005c  knudai_door_texlists
+pointer  gadget_object_groups  0x00000060  chao_box_texlists
+pointer  gadget_object_groups  0x00000064  chao_key_texlists
+pointer  gadget_object_groups  0x00000068  object_effect_texlists
+pointer  gadget_object_groups  0x0000006c  messenger_texlists
+pointer  gadget_object_groups  0x00000070  ring_effect_texlists
+pointer  gadget_object_groups  0x00000074  switch_ring_texlists
+pointer  gadget_object_groups  0x00000078  gadget_gravity_switch_texlists
+pointer  gadget_object_groups  0x0000007c  gadget_wood_box_texlists
+pointer  gadget_object_groups  0x00000080  solid_box_texlists
+pointer  gadget_object_groups  0x00000084  gadget_iron_box_texlists
+pointer  gadget_object_groups  0x00000088  gadget_lid_texlists
+pointer  gadget_object_groups  0x0000008c  gadget_cage_texlists
+pointer  gadget_object_groups  0x00000090  gadget_intake_texlists
+pointer  gadget_object_groups  0x00000094  gadget_shutter_texlists
+pointer  gadget_object_groups  0x00000098  gadget_grind_rail_texlists
+pointer  gadget_object_groups  0x0000009c  gadget_rail_marker_texlists
+pointer  gadget_object_groups  0x000000a0  gadget_poison_texlists
+pointer  gadget_object_groups  0x000000a4  gadget_lamp_texlists
+pointer  gadget_object_groups  0x000000a8  gadget_sign_texlists
+pointer  gadget_object_groups  0x000000ac  engine_ditch_texlists
+pointer  gadget_object_groups  0x000000b0  gadget_machine_texlists
+pointer  gadget_object_groups  0x000000b4  gadget_capsule_texlists
+pointer  gadget_object_groups  0x000000b8  core_laser_texlists
+pointer  gadget_object_groups  0x000000bc  pickup_object_2_texlists
+pointer  gadget_object_groups  0x000000c0  gadget_arrow_texlists
+pointer  gadget_object_groups  0x000000c4  rolling_drum_texlists
+pointer  gadget_object_pvms  0x00000000  PVM_OBJTEX_STG22
+pointer  gadget_object_pvms  0x00000004  stage_texlist
+pointer  gadget_object_pvms  0x00000008  PVM_EFFTEX_COMMON
+pointer  gadget_object_pvms  0x0000000c  efftex_common_texlist
+pointer  gadget_object_pvms  0x00000010  PVM_OBJTEX_COMMON
+pointer  gadget_object_pvms  0x00000014  objtex_common_texlist
+pointer  gadget_object_pvms  0x0000001c  gadget_land_texlist
+pointer  gadget_object_pvms  0x00000024  gadget_background_texlist

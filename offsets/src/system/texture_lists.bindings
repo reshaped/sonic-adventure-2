@@ -1,0 +1,171 @@
+text  TEXTURE_NO_00  6
+text  TEXTURE_NO_01  6
+text  TEXTURE_NO_02  6
+text  TEXTURE_NO_03  6
+text  TEXTURE_NO_04  6
+text  TEXTURE_NO_05  6
+text  TEXTURE_NO_06  6
+text  TEXTURE_NO_07  6
+text  TEXTURE_NO_08  6
+text  TEXTURE_NO_09  6
+text  TEXTURE_NO_COLON  9
+text  TEXTURE_RING_KAZU  10
+text  TEXTURE_ACTIONW01  10
+text  TEXTURE_ACTIONW02  10
+text  TEXTURE_2PVS_ON  8
+text  TEXTURE_2PVS_OFF  9
+text  TEXTURE_H_TECKPOINT_ALL  16
+text  TEXTURE_CHAOKEY  8
+text  TEXTURE_H_POSE_BAR0  12
+text  TEXTURE_H_POSE_BAR00  13
+text  TEXTURE_H_POSE_BAR01  13
+text  TEXTURE_H_POSE_BAR1  12
+text  TEXTURE_H_POSE_BASE  12
+text  TEXTURE_H_POSE_MOJI  12
+text  TEXTURE_H_POSE_MOJI_2P  15
+text  TEXTURE_BARRIA_N01  11
+text  TEXTURE_BARRIA_N02  11
+text  TEXTURE_BARRIA_N03  11
+text  TEXTURE_BARRIA_N04  11
+text  TEXTURE_BARRIA_N05  11
+text  TEXTURE_BARRIA_N06  11
+text  TEXTURE_BARRIA_N07  11
+text  TEXTURE_BARRIA_N08  11
+text  TEXTURE_BARRIA_T01  11
+text  TEXTURE_BARRIA_T02  11
+text  TEXTURE_BARRIA_T03  11
+text  TEXTURE_BARRIA_T04  11
+text  TEXTURE_BARRIA_T05  11
+text  TEXTURE_BARRIA_T06  11
+text  TEXTURE_BARRIA_T07  11
+text  TEXTURE_BARRIA_T08  11
+text  TEXTURE_BARRIA_T09  11
+text  TEXTURE_BARRIA_T10  11
+text  TEXTURE_BARRIA_T11  11
+text  TEXTURE_MUTEKI01  9
+text  TEXTURE_MUTEKI02  9
+text  TEXTURE_MUTEKI03  9
+text  TEXTURE_MUTEKI04  9
+text  TEXTURE_MUTEKI05  9
+text  TEXTURE_MUTEKI06  9
+text  TEXTURE_MUTEKI07  9
+text  TEXTURE_MUTEKI08  9
+text  TEXTURE_MUTEKIBALL  11
+text  TEXTURE_BUBBLE  7
+text  TEXTURE_FLAME01  8
+text  TEXTURE_FLAME02  8
+text  TEXTURE_FLAME03  8
+text  TEXTURE_FLAME04  8
+text  TEXTURE_FLAME05  8
+text  TEXTURE_FLAME06  8
+text  TEXTURE_FLAME07  8
+text  TEXTURE_FLAME08  8
+text  TEXTURE_FLAME09  8
+text  TEXTURE_FLAME10  8
+text  TEXTURE_ZANKI_SONIC  12
+text  TEXTURE_ZANKI_KNUCKLE  14
+text  TEXTURE_ZANKI_TAILS  12
+text  TEXTURE_ZANKI_EGG1  11
+text  TEXTURE_ZANKI_EGG2  11
+text  TEXTURE_ZANKI_SHADOW  13
+text  TEXTURE_ZANKI_ROUGE  12
+text  TEXTURE_ZANKI_AMY  10
+text  TEXTURE_ZANKI_METAL  12
+text  TEXTURE_ZANKI_TICAL  12
+text  TEXTURE_ZANKI_CHAOS0  13
+text  TEXTURE_ZANKI_CHAO  11
+text  TEXTURE_ZANKI_BIG0  11
+text  TEXTURE_ZANKI_BIG1  11
+text  TEXTURE_H_RESULT_ALL  13
+text  TEXTURE_H_RESULT_BAR0  14
+text  TEXTURE_H_RESULT_BAR1  14
+text  TEXTURE_H_RESULT_BG0  13
+text  TEXTURE_PALDAM_ON  10
+text  TEXTURE_PALDAM_OFF  11
+text  TEXTURE_MOJI2P_BIG  11
+
+pointer  console_textures  0x00000000  TEXTURE_NO_00
+pointer  console_textures  0x0000000c  TEXTURE_NO_01
+pointer  console_textures  0x00000018  TEXTURE_NO_02
+pointer  console_textures  0x00000024  TEXTURE_NO_03
+pointer  console_textures  0x00000030  TEXTURE_NO_04
+pointer  console_textures  0x0000003c  TEXTURE_NO_05
+pointer  console_textures  0x00000048  TEXTURE_NO_06
+pointer  console_textures  0x00000054  TEXTURE_NO_07
+pointer  console_textures  0x00000060  TEXTURE_NO_08
+pointer  console_textures  0x0000006c  TEXTURE_NO_09
+pointer  console_textures  0x00000078  TEXTURE_NO_COLON
+pointer  console_textures  0x00000084  TEXTURE_RING_KAZU
+pointer  console_textures  0x00000090  TEXTURE_ACTIONW01
+pointer  console_textures  0x0000009c  TEXTURE_ACTIONW02
+pointer  console_textures  0x000000a8  TEXTURE_2PVS_ON
+pointer  console_textures  0x000000b4  TEXTURE_2PVS_OFF
+pointer  console_textures  0x000000c0  TEXTURE_H_TECKPOINT_ALL
+pointer  console_textures  0x000000cc  TEXTURE_CHAOKEY
+pointer  console_textures  0x000000d8  TEXTURE_H_POSE_BAR0
+pointer  console_textures  0x000000e4  TEXTURE_H_POSE_BAR00
+pointer  console_textures  0x000000f0  TEXTURE_H_POSE_BAR01
+pointer  console_textures  0x000000fc  TEXTURE_H_POSE_BAR1
+pointer  console_textures  0x00000108  TEXTURE_H_POSE_BASE
+pointer  console_textures  0x00000114  TEXTURE_H_POSE_MOJI
+pointer  console_textures  0x00000120  TEXTURE_H_POSE_MOJI_2P
+pointer  effect_texnames  0x00000000  TEXTURE_BARRIA_N01
+pointer  effect_texnames  0x0000000c  TEXTURE_BARRIA_N02
+pointer  effect_texnames  0x00000018  TEXTURE_BARRIA_N03
+pointer  effect_texnames  0x00000024  TEXTURE_BARRIA_N04
+pointer  effect_texnames  0x00000030  TEXTURE_BARRIA_N05
+pointer  effect_texnames  0x0000003c  TEXTURE_BARRIA_N06
+pointer  effect_texnames  0x00000048  TEXTURE_BARRIA_N07
+pointer  effect_texnames  0x00000054  TEXTURE_BARRIA_N08
+pointer  effect_texnames  0x00000060  TEXTURE_BARRIA_T01
+pointer  effect_texnames  0x0000006c  TEXTURE_BARRIA_T02
+pointer  effect_texnames  0x00000078  TEXTURE_BARRIA_T03
+pointer  effect_texnames  0x00000084  TEXTURE_BARRIA_T04
+pointer  effect_texnames  0x00000090  TEXTURE_BARRIA_T05
+pointer  effect_texnames  0x0000009c  TEXTURE_BARRIA_T06
+pointer  effect_texnames  0x000000a8  TEXTURE_BARRIA_T07
+pointer  effect_texnames  0x000000b4  TEXTURE_BARRIA_T08
+pointer  effect_texnames  0x000000c0  TEXTURE_BARRIA_T09
+pointer  effect_texnames  0x000000cc  TEXTURE_BARRIA_T10
+pointer  effect_texnames  0x000000d8  TEXTURE_BARRIA_T11
+pointer  effect_texnames  0x000000e4  TEXTURE_MUTEKI01
+pointer  effect_texnames  0x000000f0  TEXTURE_MUTEKI02
+pointer  effect_texnames  0x000000fc  TEXTURE_MUTEKI03
+pointer  effect_texnames  0x00000108  TEXTURE_MUTEKI04
+pointer  effect_texnames  0x00000114  TEXTURE_MUTEKI05
+pointer  effect_texnames  0x00000120  TEXTURE_MUTEKI06
+pointer  effect_texnames  0x0000012c  TEXTURE_MUTEKI07
+pointer  effect_texnames  0x00000138  TEXTURE_MUTEKI08
+pointer  effect_texnames  0x00000144  TEXTURE_MUTEKIBALL
+pointer  effect_texnames  0x00000150  TEXTURE_BUBBLE
+pointer  effect_texnames  0x0000015c  TEXTURE_FLAME01
+pointer  effect_texnames  0x00000168  TEXTURE_FLAME02
+pointer  effect_texnames  0x00000174  TEXTURE_FLAME03
+pointer  effect_texnames  0x00000180  TEXTURE_FLAME04
+pointer  effect_texnames  0x0000018c  TEXTURE_FLAME05
+pointer  effect_texnames  0x00000198  TEXTURE_FLAME06
+pointer  effect_texnames  0x000001a4  TEXTURE_FLAME07
+pointer  effect_texnames  0x000001b0  TEXTURE_FLAME08
+pointer  effect_texnames  0x000001bc  TEXTURE_FLAME09
+pointer  effect_texnames  0x000001c8  TEXTURE_FLAME10
+pointer  zanki_sonic_textures  0x00000000  TEXTURE_ZANKI_SONIC
+pointer  zanki_knuckle_textures  0x00000000  TEXTURE_ZANKI_KNUCKLE
+pointer  zanki_tails_textures  0x00000000  TEXTURE_ZANKI_TAILS
+pointer  zanki_egg_textures  0x00000000  TEXTURE_ZANKI_EGG1
+pointer  zanki_egg_textures  0x0000000c  TEXTURE_ZANKI_EGG2
+pointer  zanki_shadow_textures  0x00000000  TEXTURE_ZANKI_SHADOW
+pointer  zanki_rouge_textures  0x00000000  TEXTURE_ZANKI_ROUGE
+pointer  zanki_amy_textures  0x00000000  TEXTURE_ZANKI_AMY
+pointer  zanki_metal_textures  0x00000000  TEXTURE_ZANKI_METAL
+pointer  zanki_tical_textures  0x00000000  TEXTURE_ZANKI_TICAL
+pointer  zanki_chaos0_textures  0x00000000  TEXTURE_ZANKI_CHAOS0
+pointer  zanki_chao_textures  0x00000000  TEXTURE_ZANKI_CHAO
+pointer  zanki_big_textures  0x00000000  TEXTURE_ZANKI_BIG0
+pointer  zanki_big_textures  0x0000000c  TEXTURE_ZANKI_BIG1
+pointer  result_textures  0x00000000  TEXTURE_H_RESULT_ALL
+pointer  result_textures  0x0000000c  TEXTURE_H_RESULT_BAR0
+pointer  result_textures  0x00000018  TEXTURE_H_RESULT_BAR1
+pointer  result_textures  0x00000024  TEXTURE_H_RESULT_BG0
+pointer  paldam_textures  0x00000000  TEXTURE_PALDAM_ON
+pointer  paldam_textures  0x0000000c  TEXTURE_PALDAM_OFF
+pointer  game2p_textures  0x00000000  TEXTURE_MOJI2P_BIG

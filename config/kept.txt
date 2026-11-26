@@ -1,0 +1,366 @@
+# The words the shift test finds keeping a value in their image's span that
+# take no name, and why. A row is IMAGE START [END] REASON: the word at
+# START, or with END each word from START up to END. A reason says how the
+# image reads the word. For data, it names the datum, what the word holds
+# of it, and the C type of each part. For a fixed address, it names the
+# constant or the name that gives the address, and what lies there. In
+# code, "two instructions" is a word its source's listing shows as two
+# instructions, and "two 16-bit literals" a pair of halfwords that MOV.W
+# reads. "an instruction, then a 16-bit literal" is one of each. "two
+# offsets in a switch's table" is a pair that MOV.W @(R0,Rn) reads before a
+# BRAF.
+#
+# image          start       end         reason
+1st_read         0x8c0135f8  two instructions
+1st_read         0x8c0147c0  two instructions
+1st_read         0x8c02a7d0  two instructions
+1st_read         0x8c036488  two instructions
+1st_read         0x8c042f64  two instructions
+1st_read         0x8c043c38  two instructions
+1st_read         0x8c048518  two instructions
+1st_read         0x8c049254  two instructions
+1st_read         0x8c05f918  two instructions
+1st_read         0x8c05f9d4  two instructions
+1st_read         0x8c05fb5c  two instructions
+1st_read         0x8c061104  two instructions
+1st_read         0x8c074628  two instructions
+1st_read         0x8c074658  two instructions
+1st_read         0x8c0748a4  two instructions
+1st_read         0x8c079268  two offsets in a switch's table
+1st_read         0x8c0b3bfc  two instructions
+1st_read         0x8c0cfdac  0x8c0cfe0c  ascii_widths's glyph widths, Sint8s
+1st_read         0x8c0cfe0c  0x8c0cfeec  latin_widths's glyph widths, Sint8s
+1st_read         0x8c0e60c4  time_limits's stages and times, Sint8s
+1st_read         0x8c0ff1f0  sonic_second_picture's pixels for the VMU's screen, Uint8s
+1st_read         0x8c0ff438  rouge_second_picture's pixels for the VMU's screen, Uint8s
+1st_read         0x8c0ff92c  sonic_picture's pixels for the VMU's screen, Uint8s
+1st_read         0x8c0ff9cc  tails_picture's pixels for the VMU's screen, Uint8s
+1st_read         0x8c0ff9ec  tails_picture's pixels for the VMU's screen, Uint8s
+1st_read         0x8c102a38  two instructions
+1st_read         0x8c107a14  two 16-bit literals
+1st_read         0x8c107b6c  an instruction, then a 16-bit literal
+1st_read         0x8c109a70  two 16-bit literals
+1st_read         0x8c109f84  two 16-bit literals
+1st_read         0x8c12093c  two instructions
+1st_read         0x8c133728  two instructions
+1st_read         0x8c137978  two instructions
+1st_read         0x8c13e5d8  two instructions
+1st_read         0x8c14eef8  two instructions
+1st_read         0x8c16c05c  two instructions
+1st_read         0x8c17a51c  mpvvlt_run_level_0b's runs and levels, Uint16s
+1st_read         0x8c17c10c  lcd_root_ports's port numbers, Uint8s
+1st_read         0x8c17c1f4  vib_root_ports's port numbers, Uint8s
+1st_read         0x8c183bd0  0x8c1847d0  group9's samples, Sint8s
+1st_read         0x8c18a0b8  two 16-bit literals
+advertise        0x8c500148  STAGE_SLOT, where main reads each program's head
+advertise        0x8c512280  two instructions
+advertise        0x8c524704  stage_slot, main's name for the slot each overlay loads in
+advertise        0x8c52f128  two instructions
+advertise        0x8c53d81c  a message's Shift-JIS chars, which game_messages_japanese points to
+advertise        0x8c5405fc  a message's Shift-JIS chars, which game_messages_japanese points to
+advertise        0x8c5406c8  a message's Shift-JIS chars, which game_messages_japanese points to
+boss_bigbogy     0x8c503774  two instructions
+boss_bigbogy     0x8c5150d0  two instructions
+boss_bigbogy     0x8c52cdf8  two instructions
+boss_bigbogy     0x8c534b0c  two instructions
+boss_bigbogy     0x8c541d04  stage_slot, main's name for the slot each overlay loads in
+boss_bigbogy     0x8c547508  two instructions
+boss_bigfoot     0x8c5005dc  two instructions
+boss_bigfoot     0x8c5073e4  two instructions
+boss_bigfoot     0x8c5124b0  two instructions
+boss_bigfoot     0x8c52c5f8  two instructions
+boss_bigfoot     0x8c53430c  two instructions
+boss_bigfoot     0x8c5414e8  two instructions
+boss_bigfoot     0x8c545444  stage_slot, main's name for the slot each overlay loads in
+boss_fdog        0x8c500634  two instructions
+boss_fdog        0x8c50bff0  two instructions
+boss_fdog        0x8c521d58  two instructions
+boss_fdog        0x8c529a6c  two instructions
+boss_fdog        0x8c53d8c4  stage_slot, main's name for the slot each overlay loads in
+boss_fdog        0x8c543908  two instructions
+boss_golem       0x8c516250  two instructions
+boss_golem       0x8c52ddb8  two instructions
+boss_golem       0x8c535acc  two instructions
+boss_golem       0x8c541228  two instructions
+boss_golem       0x8c5446c4  stage_slot, main's name for the slot each overlay loads in
+boss_golem_e     0x8c516890  two instructions
+boss_golem_e     0x8c52ea18  two instructions
+boss_golem_e     0x8c53672c  two instructions
+boss_golem_e     0x8c541e88  two instructions
+boss_golem_e     0x8c544d04  stage_slot, main's name for the slot each overlay loads in
+boss_hotshot     0x8c50061c  two instructions
+boss_hotshot     0x8c50d130  two instructions
+boss_hotshot     0x8c522b18  two instructions
+boss_hotshot     0x8c52a82c  two instructions
+boss_hotshot     0x8c53e844  stage_slot, main's name for the slot each overlay loads in
+boss_hotshot     0x8c544888  two instructions
+boss_last1       0x8c514ed0  two instructions
+boss_last1       0x8c52d158  two instructions
+boss_last1       0x8c534e6c  two instructions
+boss_last1       0x8c542424  stage_slot, main's name for the slot each overlay loads in
+boss_last1       0x8c547c28  two instructions
+boss_last2       0x8c508418  two instructions
+boss_last2       0x8c524d04  stage_slot, main's name for the slot each overlay loads in
+boss_last2       0x8c52a448  two instructions
+cart             0x8c50398c  two instructions
+cart             0x8c51eda8  two instructions
+cart             0x8c5271c4  stage_slot, main's name for the slot each overlay loads in
+chao             0x0c53e53c  two instructions
+chao             0x0c53ea1c  two instructions
+chao             0x0c54b024  stage_slot, main's name for the slot each overlay loads in
+chao             0x0c554788  two instructions
+chao             0x0c624cf0  garden_evergreen_node_2_polygons's strip1[8] index and u, a Uint16 and a Sint16
+chao             0x0c624f50  garden_evergreen_node_1_polygons's strip1[8] index and u, a Uint16 and a Sint16
+chaostgkinder    0x0c9de9b0  two instructions
+chaostgkinder    0x0c9feca4  0x0ca51ca4  ask_dictionary_rom's dictionary file for ASK, Uint8s
+chaostgkinder    0x0caccbe0  0x0cad3a54  DspImage's payload, the modem data pump's modules, Uint8s
+chaostgkinder    0x0cad4468  CountryImage's usa timing.hook_flash and handshake.options, Uint8s
+stg03            0x8c50795c  two instructions
+stg03            0x8c512130  two instructions
+stg03            0x8c5220c8  two instructions
+stg03            0x8c532258  two instructions
+stg03            0x8c5377ec  two instructions
+stg03            0x8c53fcc4  stage_slot, main's name for the slot each overlay loads in
+stg04            0x8c50dc70  two instructions
+stg04            0x8c52a598  two instructions
+stg04            0x8c52fb2c  two instructions
+stg04            0x8c5380a8  two instructions
+stg04            0x8c53bf24  stage_slot, main's name for the slot each overlay loads in
+stg05            0x8c50cc90  two instructions
+stg05            0x8c51ff68  two instructions
+stg05            0x8c53268c  two instructions
+stg05            0x8c53abc4  stage_slot, main's name for the slot each overlay loads in
+stg06            0x8c50311c  two instructions
+stg06            0x8c50b670  two instructions
+stg06            0x8c51e748  two instructions
+stg06            0x8c52d2f8  two instructions
+stg06            0x8c53236c  two instructions
+stg06            0x8c538a64  stage_slot, main's name for the slot each overlay loads in
+stg06            0x8c541c20  grind_rail_3_points's slope_x and slope_z, Sint16s
+stg06            0x8c542650  grind_rail_6_points's slope_x and slope_z, Sint16s
+stg07            0x8c50d270  two instructions
+stg07            0x8c51fb88  two instructions
+stg07            0x8c5316d8  two instructions
+stg07            0x8c534b4c  two instructions
+stg07            0x8c53cca4  stage_slot, main's name for the slot each overlay loads in
+stg08            0x8c50cb90  two instructions
+stg08            0x8c5201c8  two instructions
+stg08            0x8c5311f8  two instructions
+stg08            0x8c53838c  two instructions
+stg08            0x8c53cd04  stage_slot, main's name for the slot each overlay loads in
+stg09            0x8c50cef0  two instructions
+stg09            0x8c520988  two instructions
+stg09            0x8c530a98  two instructions
+stg09            0x8c5387ac  two instructions
+stg09            0x8c539dac  two instructions
+stg09            0x8c53e584  stage_slot, main's name for the slot each overlay loads in
+stg10            0x8c502ac4  two instructions
+stg10            0x8c50f610  two instructions
+stg10            0x8c522ee8  two instructions
+stg10            0x8c532558  two instructions
+stg10            0x8c537e0c  two instructions
+stg10            0x8c53dde4  stage_slot, main's name for the slot each overlay loads in
+stg10            0x8c547a0c  approach_3_points's slope_x and slope_z, Sint16s
+stg10            0x8c547c00  approach_3_points's slope_x and slope_z, Sint16s
+stg11            0x8c50f730  two instructions
+stg11            0x8c523848  two instructions
+stg11            0x8c533ab8  two instructions
+stg11            0x8c53ac4c  two instructions
+stg11            0x8c53ec24  stage_slot, main's name for the slot each overlay loads in
+stg12            0x8c50d490  two instructions
+stg12            0x8c520568  two instructions
+stg12            0x8c532cec  two instructions
+stg12            0x8c5363ec  two instructions
+stg12            0x8c53bc44  stage_slot, main's name for the slot each overlay loads in
+stg13            0x8c5038fc  two instructions
+stg13            0x8c503f38  two instructions
+stg13            0x8c515770  two instructions
+stg13            0x8c5272a8  two instructions
+stg13            0x8c537438  two instructions
+stg13            0x8c53b10c  two instructions
+stg13            0x8c5427c4  stage_slot, main's name for the slot each overlay loads in
+stg14            0x8c50da70  two instructions
+stg14            0x8c51ebe8  two instructions
+stg14            0x8c52d8f8  two instructions
+stg14            0x8c53a2e4  stage_slot, main's name for the slot each overlay loads in
+stg14            0x8c5448b8  join_5_points's slope_x and slope_z, Sint16s
+stg14            0x8c544930  join_5_points's slope_x and slope_z, Sint16s
+stg15            0x8c50c730  two instructions
+stg15            0x8c51f808  two instructions
+stg15            0x8c52f878  two instructions
+stg15            0x8c53c0a4  stage_slot, main's name for the slot each overlay loads in
+stg16            0x8c50f490  two instructions
+stg16            0x8c522568  two instructions
+stg16            0x8c532418  two instructions
+stg16            0x8c53be24  stage_slot, main's name for the slot each overlay loads in
+stg17            0x8c501cf8  two instructions
+stg17            0x8c503e04  two instructions
+stg17            0x8c5134f0  two instructions
+stg17            0x8c5265c8  two instructions
+stg17            0x8c53922c  two instructions
+stg17            0x8c53c92c  two instructions
+stg17            0x8c541c24  stage_slot, main's name for the slot each overlay loads in
+stg18            0x8c5044f4  two instructions
+stg18            0x8c5096b0  two instructions
+stg18            0x8c509710  two instructions
+stg18            0x8c5131b0  two instructions
+stg18            0x8c526288  two instructions
+stg18            0x8c5365d8  two instructions
+stg18            0x8c542584  stage_slot, main's name for the slot each overlay loads in
+stg19            0x8c510168  two instructions
+stg19            0x8c524e04  stage_slot, main's name for the slot each overlay loads in
+stg20            0x8c50cbf0  two instructions
+stg20            0x8c52a2a4  stage_slot, main's name for the slot each overlay loads in
+stg20            0x8c52bfa8  two instructions
+stg21            0x8c50fd10  two instructions
+stg21            0x8c522de8  two instructions
+stg21            0x8c532a98  two instructions
+stg21            0x8c539c0c  two instructions
+stg21            0x8c53fe04  stage_slot, main's name for the slot each overlay loads in
+stg22            0x8c500e14  two instructions
+stg22            0x8c5012a8  two instructions
+stg22            0x8c50a7c8  two instructions
+stg22            0x8c5132f0  two instructions
+stg22            0x8c526d88  two instructions
+stg22            0x8c536718  two instructions
+stg22            0x8c53a3ec  two instructions
+stg22            0x8c545c44  stage_slot, main's name for the slot each overlay loads in
+stg23            0x8c50fdb0  two instructions
+stg23            0x8c522e88  two instructions
+stg23            0x8c532bf8  two instructions
+stg23            0x8c5384ac  two instructions
+stg23            0x8c541ee4  stage_slot, main's name for the slot each overlay loads in
+stg24            0x8c50a348  two instructions
+stg24            0x8c513970  two instructions
+stg24            0x8c527408  two instructions
+stg24            0x8c536a24  stage_slot, main's name for the slot each overlay loads in
+stg24            0x8c537858  two instructions
+stg24            0x8c539f8c  two instructions
+stg24            0x8c53b58c  two instructions
+stg25            0x8c5144d0  two instructions
+stg25            0x8c5262e8  two instructions
+stg25            0x8c536a58  two instructions
+stg25            0x8c5470e4  stage_slot, main's name for the slot each overlay loads in
+stg26            0x8c512850  two instructions
+stg26            0x8c524668  two instructions
+stg26            0x8c534dd8  two instructions
+stg26            0x8c544f04  stage_slot, main's name for the slot each overlay loads in
+stg27            0x8c501e08  two instructions
+stg27            0x8c50f510  two instructions
+stg27            0x8c520608  two instructions
+stg27            0x8c52f838  two instructions
+stg27            0x8c53382c  two instructions
+stg27            0x8c534e2c  two instructions
+stg27            0x8c53e044  stage_slot, main's name for the slot each overlay loads in
+stg28            0x8c515070  two instructions
+stg28            0x8c526e88  two instructions
+stg28            0x8c5361cc  two instructions
+stg28            0x8c542e84  stage_slot, main's name for the slot each overlay loads in
+stg29            0x8c50a930  two instructions
+stg29            0x8c528064  stage_slot, main's name for the slot each overlay loads in
+stg29            0x8c528f28  two instructions
+stg30            0x8c50d4b0  two instructions
+stg30            0x8c51eda8  two instructions
+stg30            0x8c52df38  two instructions
+stg30            0x8c53438c  two instructions
+stg30            0x8c53598c  two instructions
+stg30            0x8c542f04  stage_slot, main's name for the slot each overlay loads in
+stg31            0x8c50a350  two instructions
+stg31            0x8c5194e8  two instructions
+stg31            0x8c5290ec  two instructions
+stg31            0x8c52ce98  two instructions
+stg31            0x8c536d24  stage_slot, main's name for the slot each overlay loads in
+stg32            0x8c50f7d0  two instructions
+stg32            0x8c5228a8  two instructions
+stg32            0x8c532c38  two instructions
+stg32            0x8c53536c  two instructions
+stg32            0x8c53696c  two instructions
+stg32            0x8c5469e4  stage_slot, main's name for the slot each overlay loads in
+stg33            0x8c527124  stage_slot, main's name for the slot each overlay loads in
+stg33            0x8c528e28  two instructions
+stg34            0x8c5095e8  two instructions
+stg34            0x8c511d10  two instructions
+stg34            0x8c524de8  two instructions
+stg34            0x8c53766c  two instructions
+stg34            0x8c538c6c  two instructions
+stg34            0x8c54aca4  stage_slot, main's name for the slot each overlay loads in
+stg34            0x8c68cb78  pillar_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c68cbac  fan_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c68cbdc  gate_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c68cc0c  gate_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c68cc3c  entry_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c690590  rider_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c691f38  block_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c691f68  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c691fc8  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c691ff8  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c692028  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c692058  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c6936c4  block_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c6936f4  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c693754  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c693784  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c6937b4  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c6937e4  portal_shapes's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c69d3dc  base_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c69dbec  pillar_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg34            0x8c69ea38  pillar_shape's id, form, push and levels, a Sint8 and three Uint8s
+stg35            0x8c501258  two instructions
+stg35            0x8c50d688  two instructions
+stg35            0x8c515bb0  two instructions
+stg35            0x8c528c88  two instructions
+stg35            0x8c539bb8  two instructions
+stg35            0x8c5418cc  two instructions
+stg35            0x8c544fcc  two instructions
+stg35            0x8c550864  stage_slot, main's name for the slot each overlay loads in
+stg36            0x8c501308  two instructions
+stg36            0x8c5013d8  two instructions
+stg36            0x8c50dcc8  two instructions
+stg36            0x8c5161f0  two instructions
+stg36            0x8c529c88  two instructions
+stg36            0x8c53a858  two instructions
+stg36            0x8c53f0ac  two instructions
+stg36            0x8c54f6a4  stage_slot, main's name for the slot each overlay loads in
+stg37            0x8c5090a8  two instructions
+stg37            0x8c511950  two instructions
+stg37            0x8c524a28  two instructions
+stg37            0x8c53744c  two instructions
+stg37            0x8c543e04  stage_slot, main's name for the slot each overlay loads in
+stg38            0x8c508588  two instructions
+stg38            0x8c5099f8  two instructions
+stg38            0x8c5134f0  two instructions
+stg38            0x8c5265c8  two instructions
+stg38            0x8c537858  two instructions
+stg38            0x8c53f56c  two instructions
+stg38            0x8c54bf24  stage_slot, main's name for the slot each overlay loads in
+stg39            0x8c501ba4  two instructions
+stg39            0x8c509d18  two instructions
+stg39            0x8c512530  two instructions
+stg39            0x8c52c7a8  two instructions
+stg39            0x8c52f744  stage_slot, main's name for the slot each overlay loads in
+stg40            0x8c50bc10  two instructions
+stg40            0x8c51cd08  two instructions
+stg40            0x8c52ba18  two instructions
+stg40            0x8c53026c  two instructions
+stg40            0x8c53186c  two instructions
+stg40            0x8c53fa64  stage_slot, main's name for the slot each overlay loads in
+stg41            0x8c50f2d0  two instructions
+stg41            0x8c5223a8  two instructions
+stg41            0x8c532258  two instructions
+stg41            0x8c53bc64  stage_slot, main's name for the slot each overlay loads in
+stg42            0x8c525024  stage_slot, main's name for the slot each overlay loads in
+stg43            0x8c50e210  two instructions
+stg43            0x8c51f188  two instructions
+stg43            0x8c52f298  two instructions
+stg43            0x8c5319cc  two instructions
+stg43            0x8c532fcc  two instructions
+stg43            0x8c540624  stage_slot, main's name for the slot each overlay loads in
+stg44            0x8c50f3d0  two instructions
+stg44            0x8c522328  two instructions
+stg44            0x8c5313e4  stage_slot, main's name for the slot each overlay loads in
+stg44            0x8c532218  two instructions
+stg44            0x8c539f2c  two instructions
+stg44            0x8c53b52c  two instructions
+stg45            0x8c509d90  two instructions
+stg45            0x8c520208  two instructions
+stg45            0x8c526164  stage_slot, main's name for the slot each overlay loads in

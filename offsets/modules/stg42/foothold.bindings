@@ -1,0 +1,26 @@
+text FOOTHOLD_TEXTURE_SPACE128_5 11
+text FOOTHOLD_TEXTURE_SPACE128_9 11
+text FOOTHOLD_TEXTURE_SPACE32_2 10
+text FOOTHOLD_TEXTURE_SPACE32_5 10
+text FOOTHOLD_TEXTURE_SPACE32_6 10
+text FOOTHOLD_TEXTURE_SPACE512_2 11
+text FOOTHOLD_TEXTURE_VS256_1 8
+
+pointer  foothold_textures  0x00000000  FOOTHOLD_TEXTURE_SPACE128_5
+pointer  foothold_textures  0x0000000c  FOOTHOLD_TEXTURE_SPACE128_9
+pointer  foothold_textures  0x00000018  FOOTHOLD_TEXTURE_SPACE32_2
+pointer  foothold_textures  0x00000024  FOOTHOLD_TEXTURE_SPACE32_5
+pointer  foothold_textures  0x00000030  FOOTHOLD_TEXTURE_SPACE32_6
+pointer  foothold_textures  0x0000003c  FOOTHOLD_TEXTURE_SPACE512_2
+pointer  foothold_textures  0x00000048  FOOTHOLD_TEXTURE_VS256_1
+pointer  foothold_texlist  0x00000000  foothold_textures
+pointer  foothold_model  0x00000000  foothold_vertices
+pointer  foothold_model  0x00000004  foothold_polygons
+pointer  foothold_object  0x00000004  foothold_model
+pointer  foothold_collision_meshsets  0x00000004  foothold_collision_indices_0
+pointer  foothold_collision_model  0x00000000  foothold_collision_points
+pointer  foothold_collision_model  0x00000004  foothold_collision_normals
+pointer  foothold_collision_model  0x0000000c  foothold_collision_meshsets
+pointer  foothold_collision_model  0x00000010  foothold_collision_materials
+pointer  foothold_collision  0x00000004  foothold_collision_model
+pointer  foothold_texture_group  0x00000000  foothold_texlist

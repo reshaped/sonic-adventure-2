@@ -1,0 +1,68 @@
+; ACCESS's context switch, over cmcontex.h's CM_CONTEXT
+        .EXPORT     _cmSwitchContext
+        .EXPORT     _cmGetSP
+
+; the offsets of CM_CONTEXT's r1, and of its dummy, the word past sr
+CONTEXT_R1:     .EQU    8
+CONTEXT_DUMMY:  .EQU    76
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void cmSwitchContext(CM_CONTEXT *next, CM_CONTEXT *previous)
+; R0 goes in previous's id and comes back from next's. neither context's r0
+; is read or written
+; @asm abi: stack-written, MOV.L @R0+,R15 at 0x0cad54fc loads the stack
+; pointer saved in next
+_cmSwitchContext:
+        MOV.L       R0,@R5
+        MOV         R5,R0
+        ADD         #CONTEXT_DUMMY,R0
+        STC.L       SR,@-R0
+        STS.L       PR,@-R0
+        MOV.L       R15,@-R0
+        MOV.L       R14,@-R0
+        MOV.L       R13,@-R0
+        MOV.L       R12,@-R0
+        MOV.L       R11,@-R0
+        MOV.L       R10,@-R0
+        MOV.L       R9,@-R0
+        MOV.L       R8,@-R0
+        MOV.L       R7,@-R0
+        MOV.L       R6,@-R0
+        MOV.L       R5,@-R0
+        MOV.L       R4,@-R0
+        MOV.L       R3,@-R0
+        MOV.L       R2,@-R0
+        MOV.L       R1,@-R0
+
+        MOV         R4,R0
+        ADD         #CONTEXT_R1,R0
+        MOV.L       @R0+,R1
+        MOV.L       @R0+,R2
+        MOV.L       @R0+,R3
+        MOV.L       @R0+,R4
+        MOV.L       @R0+,R5
+        MOV.L       @R0+,R6
+        MOV.L       @R0+,R7
+        MOV.L       @R0+,R8
+        MOV.L       @R0+,R9
+        MOV.L       @R0+,R10
+        MOV.L       @R0+,R11
+        MOV.L       @R0+,R12
+        MOV.L       @R0+,R13
+        MOV.L       @R0+,R14
+        MOV.L       @R0+,R15
+        LDS.L       @R0+,PR
+        LDC.L       @R0+,SR
+        ADD         #-CONTEXT_DUMMY,R0
+        MOV.L       @R0,R0
+        RTS
+        NOP
+
+; Uint32 *cmGetSP(void)
+; the stack pointer, as its caller has it
+; @asm open: no inspect rule reads its copy of R15 into R0
+_cmGetSP:
+        RTS
+        MOV         R15,R0
+        .END

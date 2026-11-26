@@ -1,0 +1,2 @@
+datum  pot_surface_name  C  0x00000000  16
+datum  shadow_name  C  0x00000010  18

@@ -1,0 +1,4 @@
+datum  cocoon_model_polygons  D  0x00000000  562
+datum  cocoon_model_vertices  D  0x00000234  828
+datum  cocoon_mesh  D  0x00000570  24
+datum  cocoon_model  D  0x00000588  52

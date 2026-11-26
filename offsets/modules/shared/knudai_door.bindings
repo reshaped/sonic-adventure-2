@@ -1,0 +1,27 @@
+text  KNUDAI_DOOR_DEBUG_ID  6
+text  KNUDAI_DOOR_HORIZONTAL_DOUBLE_LABEL  12
+text  KNUDAI_DOOR_HORIZONTAL_LABEL  11
+text  KNUDAI_DOOR_VERTICAL_LABEL  11
+text  KNUDAI_DOOR_DEBUG_YAW  11
+text  KNUDAI_DOOR_DEBUG_SCALE_X  9
+text  KNUDAI_DOOR_DEBUG_SCALE_Y  9
+text  KNUDAI_DOOR_DEBUG_SCALE_Z  9
+text  KNUDAI_DOOR_TEXTURE_22  13
+text  KNUDAI_DOOR_TEXTURE_31  14
+text  KNUDAI_DOOR_TEXTURE_32  13
+pointer  knudai_door_texnames  0x00000000  KNUDAI_DOOR_TEXTURE_22
+pointer  knudai_door_texnames  0x0000000c  KNUDAI_DOOR_TEXTURE_31
+pointer  knudai_door_texnames  0x00000018  KNUDAI_DOOR_TEXTURE_32
+pointer  knudai_door_texlist  0x00000000  knudai_door_texnames
+pointer  knudai_door_model  0x00000000  knudai_door_vertices
+pointer  knudai_door_model  0x00000004  knudai_door_polygons
+pointer  knudai_door_object  0x00000004  knudai_door_model
+pointer  knudai_door_box_meshsets  0x00000004  knudai_door_box_meshes
+pointer  knudai_door_box_model  0x00000000  knudai_door_box_points
+pointer  knudai_door_box_model  0x00000004  knudai_door_box_normals
+pointer  knudai_door_box_model  0x0000000c  knudai_door_box_meshsets
+pointer  knudai_door_box_model  0x00000010  knudai_door_box_material
+pointer  knudai_door_box_object  0x00000004  knudai_door_box_model
+pointer  knudai_door_texlists  0x00000000  knudai_door_texlist
+pointer  knudai_door_texlists  0x00000004  ring_sparkle_texlist
+pointer  knudai_door_texlists  0x00000008  dust_texlist

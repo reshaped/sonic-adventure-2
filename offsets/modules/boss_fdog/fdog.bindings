@@ -1,0 +1,5 @@
+pointer  fdog_motions  0x00000000  fdog_hit_motion
+pointer  fdog_motions  0x0000001c  fdog_open_motion
+pointer  fdog_motions  0x00000038  fdog_hit_motion
+pointer  fdog_motions  0x00000054  fdog_hit_motion
+pointer  fdog_motions  0x00000070  fdog_hit_motion

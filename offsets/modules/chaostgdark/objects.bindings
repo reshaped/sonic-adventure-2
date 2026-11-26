@@ -1,0 +1,45 @@
+text  SET_NAME_FENCE_L  8
+text  SET_NAME_FENCE_M  8
+text  SET_NAME_FENCE_S  8
+text  SET_NAME_HAKA_A  7
+text  SET_NAME_HAKA_B  7
+text  SET_NAME_KIRIKABU  9
+text  SET_NAME_KUWA_A  7
+text  SET_NAME_KUSA_B  7
+text  SET_NAME_C_SPHERE  9
+text  SET_NAME_C_CYL  6
+text  SET_NAME_C_CUBE  7
+text  SET_NAME_WALL_PLANE  11
+text  SET_NAME_LOBBY  6
+text  SET_NAME_C_CLIMB  8
+text  SET_NAME_C_CUBE2  8
+pointer  chaostgdark_kinds  0x00000008  dark_long_fence_init
+pointer  chaostgdark_kinds  0x0000000c  SET_NAME_FENCE_L
+pointer  chaostgdark_kinds  0x00000018  dark_medium_fence_init
+pointer  chaostgdark_kinds  0x0000001c  SET_NAME_FENCE_M
+pointer  chaostgdark_kinds  0x00000028  dark_short_fence_init
+pointer  chaostgdark_kinds  0x0000002c  SET_NAME_FENCE_S
+pointer  chaostgdark_kinds  0x00000038  dark_grave_a_init
+pointer  chaostgdark_kinds  0x0000003c  SET_NAME_HAKA_A
+pointer  chaostgdark_kinds  0x00000048  dark_grave_b_init
+pointer  chaostgdark_kinds  0x0000004c  SET_NAME_HAKA_B
+pointer  chaostgdark_kinds  0x00000058  dark_stump_init
+pointer  chaostgdark_kinds  0x0000005c  SET_NAME_KIRIKABU
+pointer  chaostgdark_kinds  0x00000068  dark_kuwa_a_init
+pointer  chaostgdark_kinds  0x0000006c  SET_NAME_KUWA_A
+pointer  chaostgdark_kinds  0x00000078  dark_grass_b_init
+pointer  chaostgdark_kinds  0x0000007c  SET_NAME_KUSA_B
+pointer  chaostgdark_kinds  0x00000088  collision_sphere_step
+pointer  chaostgdark_kinds  0x0000008c  SET_NAME_C_SPHERE
+pointer  chaostgdark_kinds  0x00000098  collision_cylinder_step
+pointer  chaostgdark_kinds  0x0000009c  SET_NAME_C_CYL
+pointer  chaostgdark_kinds  0x000000a8  collision_cube_step
+pointer  chaostgdark_kinds  0x000000ac  SET_NAME_C_CUBE
+pointer  chaostgdark_kinds  0x000000b8  collision_wall_step
+pointer  chaostgdark_kinds  0x000000bc  SET_NAME_WALL_PLANE
+pointer  chaostgdark_kinds  0x000000c8  garden_lobby_trigger
+pointer  chaostgdark_kinds  0x000000cc  SET_NAME_LOBBY
+pointer  chaostgdark_kinds  0x000000d8  garden_climb_field
+pointer  chaostgdark_kinds  0x000000dc  SET_NAME_C_CLIMB
+pointer  chaostgdark_kinds  0x000000e8  garden_cube_field
+pointer  chaostgdark_kinds  0x000000ec  SET_NAME_C_CUBE2

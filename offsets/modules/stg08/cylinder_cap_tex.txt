@@ -1,0 +1,6 @@
+datum  textures  D  0x00000000  24
+datum  security_cylinder_cap_texlist  D  0x00000018  8
+datum  security_cylinder_cap_polygons  D  0x00000020  378
+datum  security_cylinder_cap_vertices  D  0x0000019c  812
+datum  security_cylinder_cap_model  D  0x000004c8  24
+datum  security_cylinder_cap_object  D  0x000004e0  52

@@ -1,0 +1,2 @@
+datum  stones  D  0x000000e4  12
+datum  rubble  D  0x000000f0  8

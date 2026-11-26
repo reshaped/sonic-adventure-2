@@ -1,0 +1,28 @@
+text  IRON_BALL_TEXTURE_SIKAKE_01_128  14
+text  IRON_BALL_TEXTURE_SIKAKE_04_64  13
+
+pointer  iron_ball_texnames  0x00000000  IRON_BALL_TEXTURE_SIKAKE_01_128
+pointer  iron_ball_texnames  0x0000000c  IRON_BALL_TEXTURE_SIKAKE_04_64
+pointer  iron_ball_texlist  0x00000000  iron_ball_texnames
+pointer  iron_ball_model  0x00000000  iron_ball_vertices
+pointer  iron_ball_model  0x00000004  iron_ball_polygons
+pointer  iron_ball_object  0x00000004  iron_ball_model
+pointer  iron_ball_bar_texnames  0x00000000  IRON_BALL_TEXTURE_SIKAKE_01_128
+pointer  iron_ball_bar_texnames  0x0000000c  IRON_BALL_TEXTURE_SIKAKE_04_64
+pointer  iron_ball_bar_texlist  0x00000000  iron_ball_bar_texnames
+pointer  iron_ball_bar_model  0x00000000  iron_ball_bar_vertices
+pointer  iron_ball_bar_model  0x00000004  iron_ball_bar_polygons
+pointer  iron_ball_bar_object  0x00000004  iron_ball_bar_model
+pointer  iron_ball_hub_model  0x00000000  iron_ball_hub_vertices
+pointer  iron_ball_hub_model  0x00000004  iron_ball_hub_polygons
+pointer  iron_ball_hub_object  0x00000004  iron_ball_hub_model
+pointer  iron_ball_hub_object  0x0000002c  iron_ball_bar_object
+pointer  iron_ball_texlists  0x00000000  iron_ball_texlist
+pointer  iron_ball_texlists  0x00000004  iron_ball_bar_texlist
+pointer  iron_ball_texlists  0x00000008  dust_texlist
+pointer  iron_ball_builds  0x00000004  iron_ball_texlist
+pointer  iron_ball_builds  0x00000008  iron_ball_object
+pointer  iron_ball_builds  0x00000014  iron_ball_bar_texlist
+pointer  iron_ball_builds  0x00000018  iron_ball_hub_object
+pointer  iron_ball_builds  0x00000024  iron_ball_bar_texlist
+pointer  iron_ball_builds  0x00000028  iron_ball_bar_object

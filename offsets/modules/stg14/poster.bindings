@@ -1,0 +1,6 @@
+text  HIGHWAY_TEXT_MIU128_RH013  13
+text  HIGHWAY_TEXT_MIU128_RH015  13
+pointer  highway_poster_textures  0x00000000  HIGHWAY_TEXT_MIU128_RH013
+pointer  highway_poster_textures  0x0000000c  HIGHWAY_TEXT_MIU128_RH015
+pointer  highway_poster_texlist  0x00000000  highway_poster_textures
+pointer  highway_poster_texlists  0x00000000  highway_poster_texlist

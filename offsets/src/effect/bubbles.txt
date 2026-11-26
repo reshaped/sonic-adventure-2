@@ -1,0 +1,1 @@
+datum  bubble_texanim  D  0x000003fc  20

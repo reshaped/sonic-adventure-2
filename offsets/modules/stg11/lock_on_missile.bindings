@@ -1,0 +1,31 @@
+text  LOCK_ON_MISSILE_EDIT_EVERY  9
+text  LOCK_ON_MISSILE_EDIT_ONCE  8
+text  LOCK_ON_MISSILE_EDIT_SWITCH  10
+text  LOCK_ON_MISSILE_EDIT_EVERY_REV  14
+text  LOCK_ON_MISSILE_EDIT_ONCE_REV  13
+text  LOCK_ON_MISSILE_EDIT_SWITCH_REV  15
+
+pointer  lock_on_missile_body_model  0x00000000  lock_on_missile_body_vertices
+pointer  lock_on_missile_body_model  0x00000004  lock_on_missile_body_polygons
+pointer  lock_on_missile_body  0x00000004  lock_on_missile_body_model
+pointer  lock_on_missile_cover_model  0x00000000  lock_on_missile_cover_vertices
+pointer  lock_on_missile_cover_model  0x00000004  lock_on_missile_cover_polygons
+pointer  lock_on_missile_cover  0x00000004  lock_on_missile_cover_model
+pointer  lock_on_missile_cover  0x00000030  lock_on_missile_body
+pointer  lock_on_missile_lamp_model  0x00000000  lock_on_missile_lamp_vertices
+pointer  lock_on_missile_lamp_model  0x00000004  lock_on_missile_lamp_polygons
+pointer  lock_on_missile_lamp  0x00000004  lock_on_missile_lamp_model
+pointer  lock_on_missile_lamp  0x00000030  lock_on_missile_cover
+pointer  lock_on_missile_base_model  0x00000000  lock_on_missile_base_vertices
+pointer  lock_on_missile_base_model  0x00000004  lock_on_missile_base_polygons
+pointer  lock_on_missile_base  0x00000004  lock_on_missile_base_model
+pointer  lock_on_missile_base  0x0000002c  lock_on_missile_lamp
+pointer  lock_on_missile_texlists  0x00000000  lock_on_missile_texlist
+pointer  lock_on_missile_texlists  0x00000004  burst_texlist
+pointer  lock_on_missile_texlists  0x00000008  rocket_thrust_texlist
+pointer  launch_labels  0x00000000  LOCK_ON_MISSILE_EDIT_EVERY
+pointer  launch_labels  0x00000004  LOCK_ON_MISSILE_EDIT_ONCE
+pointer  launch_labels  0x00000008  LOCK_ON_MISSILE_EDIT_SWITCH
+pointer  launch_labels  0x0000000c  LOCK_ON_MISSILE_EDIT_EVERY_REV
+pointer  launch_labels  0x00000010  LOCK_ON_MISSILE_EDIT_ONCE_REV
+pointer  launch_labels  0x00000014  LOCK_ON_MISSILE_EDIT_SWITCH_REV

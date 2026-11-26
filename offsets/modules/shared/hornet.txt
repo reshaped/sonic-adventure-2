@@ -1,0 +1,8 @@
+datum  hornet_3_pieces  D  0x00000180  20
+datum  hornet_6_pieces  D  0x00000194  20
+datum  hornet_9_pieces  D  0x000001a8  20
+datum  laser_hornet_pieces  D  0x000001bc  24
+datum  bomb_mounts  D  0x000002a4  108
+datum  bomb_rolls  D  0x00000310  36
+datum  laser_muzzles  D  0x00000338  36
+datum  dat_hornet_1  D  0x00000234  108

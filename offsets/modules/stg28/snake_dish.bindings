@@ -1,0 +1,29 @@
+text  SNAKE_DISH_TEXTURE_DZ_PC_HI_RED01  15
+text  SNAKE_DISH_TEXTURE_DZ_PC_CHAIN8  13
+text  SNAKE_DISH_TEXTURE_DZ_PC_HASIRA128  16
+text  SNAKE_DISH_TEXTURE_DZ_PC_SKIN64  13
+text  SNAKE_DISH_TEXTURE_KD_PC_HASIRA4  14
+text  SNAKE_DISH_TEXTURE_KD_PC_HASIRA5  14
+text  SNAKE_DISH_TEXTURE_KD_PC_HEBI2  12
+text  SNAKE_DISH_KIND_RED  6
+
+pointer snake_dish_models  0x00000000  cave_snake_dish_model
+pointer snake_dish_fire_models  0x00000000  cave_snake_dish_fire_model
+pointer cave_snake_dish_texlists  0x00000000  cave_snake_dish_texlist
+pointer snake_dish_fire_texlists  0x00000000  pyramid_cave_fire_texlist
+pointer snake_dish_kind_names  0x00000000  SNAKE_DISH_KIND_RED
+pointer cave_snake_dish_fire_texture_names  0x00000000  SNAKE_DISH_TEXTURE_DZ_PC_HI_RED01
+pointer cave_snake_dish_fire_texlist  0x00000000  cave_snake_dish_fire_texture_names
+pointer cave_snake_dish_fire_model  0x00000000  cave_snake_dish_fire_vertices
+pointer cave_snake_dish_fire_model  0x00000004  cave_snake_dish_fire_polygons
+pointer cave_snake_dish_fire_object  0x00000004  cave_snake_dish_fire_model
+pointer cave_snake_dish_texture_names  0x00000000  SNAKE_DISH_TEXTURE_DZ_PC_CHAIN8
+pointer cave_snake_dish_texture_names  0x0000000c  SNAKE_DISH_TEXTURE_DZ_PC_HASIRA128
+pointer cave_snake_dish_texture_names  0x00000018  SNAKE_DISH_TEXTURE_DZ_PC_SKIN64
+pointer cave_snake_dish_texture_names  0x00000024  SNAKE_DISH_TEXTURE_KD_PC_HASIRA4
+pointer cave_snake_dish_texture_names  0x00000030  SNAKE_DISH_TEXTURE_KD_PC_HASIRA5
+pointer cave_snake_dish_texture_names  0x0000003c  SNAKE_DISH_TEXTURE_KD_PC_HEBI2
+pointer cave_snake_dish_texlist  0x00000000  cave_snake_dish_texture_names
+pointer cave_snake_dish_model  0x00000000  cave_snake_dish_vertices
+pointer cave_snake_dish_model  0x00000004  cave_snake_dish_polygons
+pointer cave_snake_dish_object  0x00000004  cave_snake_dish_model

@@ -1,0 +1,8 @@
+text  HORNET_THREE_BOMB_LABEL  18
+text  HORNET_SIX_BOMB_LABEL  18
+text  HORNET_NINE_BOMB_LABEL  18
+text  LASER_HORNET_LABEL  22
+pointer  hornet_form_names  0x00000000  HORNET_THREE_BOMB_LABEL
+pointer  hornet_form_names  0x00000004  HORNET_SIX_BOMB_LABEL
+pointer  hornet_form_names  0x00000008  HORNET_NINE_BOMB_LABEL
+pointer  hornet_form_names  0x0000000c  LASER_HORNET_LABEL

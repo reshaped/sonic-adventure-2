@@ -1,0 +1,2 @@
+datum  race_hud_positions  D  0x00000020  64
+datum  screen_pairs  D  0x00000000  32

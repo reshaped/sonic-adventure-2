@@ -1,0 +1,26 @@
+text  DECK_SHUTTER_TEXTURE_MIU128_WB002  13
+text  DECK_SHUTTER_TEXTURE_MIU64_WB002  12
+
+pointer  deck_shutter_textures  0x00000000  DECK_SHUTTER_TEXTURE_MIU128_WB002
+pointer  deck_shutter_textures  0x0000000c  DECK_SHUTTER_TEXTURE_MIU64_WB002
+pointer  deck_shutter_texlist  0x00000000  deck_shutter_textures
+pointer  deck_shutter_model  0x00000000  deck_shutter_vertices
+pointer  deck_shutter_model  0x00000004  deck_shutter_polygons
+pointer  deck_shutter_object  0x00000004  deck_shutter_model
+pointer  shutter_piece_textures  0x00000000  DECK_SHUTTER_TEXTURE_MIU128_WB002
+pointer  shutter_piece_texlist  0x00000000  shutter_piece_textures
+pointer  shutter_piece_model  0x00000000  shutter_piece_vertices
+pointer  shutter_piece_model  0x00000004  shutter_piece_polygons
+pointer  shutter_piece_piece_object  0x00000004  shutter_piece_model
+pointer  deck_shutter_texlists  0x00000000  deck_shutter_texlist
+pointer  deck_shutter_texlists  0x00000004  shutter_piece_texlist
+pointer  parts  0x00000000  shutter_piece_texlist
+pointer  parts  0x00000004  shutter_piece_model
+pointer  parts  0x00000020  shutter_piece_texlist
+pointer  parts  0x00000024  shutter_piece_model
+pointer  parts  0x00000040  shutter_piece_texlist
+pointer  parts  0x00000044  shutter_piece_model
+pointer  parts  0x00000060  shutter_piece_texlist
+pointer  parts  0x00000064  shutter_piece_model
+pointer  parts  0x00000080  shutter_piece_texlist
+pointer  parts  0x00000084  shutter_piece_model

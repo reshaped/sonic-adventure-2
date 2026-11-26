@@ -1,0 +1,156 @@
+# Each texture name is shared at its original address. Path and model pointers retain their C targets.
+text RAIL_TEXTURE_MIU128_CG005 13
+text RAIL_TEXTURE_MIU128_CG010 13
+text RAIL_TEXTURE_MIU128_CG016 13
+text RAIL_TEXTURE_MIU128_CG017 13
+text RAIL_TEXTURE_MIU128_CG021 13
+text RAIL_TEXTURE_MIU128_CG022 13
+text RAIL_TEXTURE_MIU256_CG004 13
+text RAIL_TEXTURE_MIU64_CG008 12
+text RAIL_TEXTURE_MIU64_CG013 12
+text RAIL_TEXTURE_MIU64_CG014 12
+text RAIL_TEXTURE_MIU64_CG015 12
+text RAIL_TEXTURE_MIU128_CG015 13
+text RAIL_TEXTURE_MIU128_CG023 13
+text RAIL_TEXTURE_MIU64_CG001 12
+text RAIL_TEXTURE_MIU64_CG006 12
+text RAIL_TEXTURE_MIU64_CG010 12
+text RAIL_TEXTURE_MIU64_CG019 12
+text RAIL_TEXTURE_MIU64_CG021 12
+text RAIL_TEXTURE_MIU64_EE002 12
+
+pointer rail_exit_textures  0x00000000  RAIL_TEXTURE_MIU128_CG005
+pointer rail_exit_textures  0x0000000c  RAIL_TEXTURE_MIU128_CG010
+pointer rail_exit_textures  0x00000018  RAIL_TEXTURE_MIU128_CG016
+pointer rail_exit_textures  0x00000024  RAIL_TEXTURE_MIU128_CG017
+pointer rail_exit_textures  0x00000030  RAIL_TEXTURE_MIU128_CG021
+pointer rail_exit_textures  0x0000003c  RAIL_TEXTURE_MIU128_CG022
+pointer rail_exit_textures  0x00000048  RAIL_TEXTURE_MIU256_CG004
+pointer rail_exit_textures  0x00000054  RAIL_TEXTURE_MIU64_CG008
+pointer rail_exit_textures  0x00000060  RAIL_TEXTURE_MIU64_CG013
+pointer rail_exit_textures  0x0000006c  RAIL_TEXTURE_MIU64_CG014
+pointer rail_exit_textures  0x00000078  RAIL_TEXTURE_MIU64_CG015
+pointer rail_exit_texlist  0x00000000  rail_exit_textures
+pointer rail_exit_panel_mesh  0x00000000  rail_exit_panel_vertices
+pointer rail_exit_panel_mesh  0x00000004  rail_exit_panel_polygons
+pointer rail_exit_panel  0x00000004  rail_exit_panel_mesh
+pointer rail_exit_root_node_3_mesh  0x00000000  rail_exit_root_node_3_vertices
+pointer rail_exit_root_node_3_mesh  0x00000004  rail_exit_root_node_3_polygons
+pointer rail_exit_root_node_3  0x00000004  rail_exit_root_node_3_mesh
+pointer rail_exit_root_node_3  0x00000030  rail_exit_panel
+pointer rail_exit_root_node_2_mesh  0x00000000  rail_exit_root_node_2_vertices
+pointer rail_exit_root_node_2_mesh  0x00000004  rail_exit_root_node_2_polygons
+pointer rail_exit_root_node_2  0x00000004  rail_exit_root_node_2_mesh
+pointer rail_exit_root_node_2  0x00000030  rail_exit_root_node_3
+pointer rail_exit_root_node_1_mesh  0x00000000  rail_exit_root_node_1_vertices
+pointer rail_exit_root_node_1_mesh  0x00000004  rail_exit_root_node_1_polygons
+pointer rail_exit_root_node_1  0x00000004  rail_exit_root_node_1_mesh
+pointer rail_exit_root_node_1  0x00000030  rail_exit_root_node_2
+pointer rail_exit_root_mesh  0x00000000  rail_exit_root_vertices
+pointer rail_exit_root_mesh  0x00000004  rail_exit_root_polygons
+pointer rail_exit_root  0x00000004  rail_exit_root_mesh
+pointer rail_exit_root  0x0000002c  rail_exit_root_node_1
+pointer rail_exit_collision_meshsets  0x00000004  rail_exit_collision_indices_0
+pointer rail_exit_collision_model  0x00000000  rail_exit_collision_points
+pointer rail_exit_collision_model  0x00000004  rail_exit_collision_normals
+pointer rail_exit_collision_model  0x0000000c  rail_exit_collision_meshsets
+pointer rail_exit_collision_model  0x00000010  rail_exit_collision_materials
+pointer rail_exit_collision  0x00000004  rail_exit_collision_model
+pointer rail_intake_collision_meshsets  0x00000004  rail_intake_collision_indices_0
+pointer rail_intake_collision_model  0x00000000  rail_intake_collision_points
+pointer rail_intake_collision_model  0x00000004  rail_intake_collision_normals
+pointer rail_intake_collision_model  0x0000000c  rail_intake_collision_meshsets
+pointer rail_intake_collision_model  0x00000010  rail_intake_collision_materials
+pointer rail_intake_collision  0x00000004  rail_intake_collision_model
+pointer gadget_intake_textures  0x00000000  RAIL_TEXTURE_MIU128_CG015
+pointer gadget_intake_textures  0x0000000c  RAIL_TEXTURE_MIU128_CG021
+pointer gadget_intake_textures  0x00000018  RAIL_TEXTURE_MIU128_CG023
+pointer gadget_intake_textures  0x00000024  RAIL_TEXTURE_MIU64_CG001
+pointer gadget_intake_textures  0x00000030  RAIL_TEXTURE_MIU64_CG006
+pointer gadget_intake_textures  0x0000003c  RAIL_TEXTURE_MIU64_CG010
+pointer gadget_intake_textures  0x00000048  RAIL_TEXTURE_MIU64_CG013
+pointer gadget_intake_textures  0x00000054  RAIL_TEXTURE_MIU64_CG014
+pointer gadget_intake_textures  0x00000060  RAIL_TEXTURE_MIU64_CG015
+pointer gadget_intake_textures  0x0000006c  RAIL_TEXTURE_MIU64_CG019
+pointer gadget_intake_textures  0x00000078  RAIL_TEXTURE_MIU64_CG021
+pointer gadget_intake_textures  0x00000084  RAIL_TEXTURE_MIU64_EE002
+pointer gadget_intake_texlist  0x00000000  gadget_intake_textures
+pointer gadget_intake_rib_a_mesh  0x00000000  gadget_intake_rib_a_vertices
+pointer gadget_intake_rib_a_mesh  0x00000004  gadget_intake_rib_a_polygons
+pointer gadget_intake_rib_a  0x00000004  gadget_intake_rib_a_mesh
+pointer gadget_intake_rib_b_mesh  0x00000000  gadget_intake_rib_b_vertices
+pointer gadget_intake_rib_b_mesh  0x00000004  gadget_intake_rib_b_polygons
+pointer gadget_intake_rib_b  0x00000004  gadget_intake_rib_b_mesh
+pointer gadget_intake_rib_b  0x00000030  gadget_intake_rib_a
+pointer gadget_intake_rib_c_mesh  0x00000000  gadget_intake_rib_c_vertices
+pointer gadget_intake_rib_c_mesh  0x00000004  gadget_intake_rib_c_polygons
+pointer gadget_intake_rib_c  0x00000004  gadget_intake_rib_c_mesh
+pointer gadget_intake_rib_c  0x00000030  gadget_intake_rib_b
+pointer gadget_intake_cover_mesh  0x00000000  gadget_intake_cover_vertices
+pointer gadget_intake_cover_mesh  0x00000004  gadget_intake_cover_polygons
+pointer gadget_intake_cover  0x00000004  gadget_intake_cover_mesh
+pointer gadget_intake_cover  0x00000030  gadget_intake_rib_c
+pointer gadget_intake_lamp_mesh  0x00000000  gadget_intake_lamp_vertices
+pointer gadget_intake_lamp_mesh  0x00000004  gadget_intake_lamp_polygons
+pointer gadget_intake_lamp  0x00000004  gadget_intake_lamp_mesh
+pointer gadget_intake_lamp  0x00000030  gadget_intake_cover
+pointer gadget_intake_glow_mesh  0x00000000  gadget_intake_glow_vertices
+pointer gadget_intake_glow_mesh  0x00000004  gadget_intake_glow_polygons
+pointer gadget_intake_glow  0x00000004  gadget_intake_glow_mesh
+pointer gadget_intake_glow  0x00000030  gadget_intake_lamp
+pointer gadget_intake_belt_mesh  0x00000000  gadget_intake_belt_vertices
+pointer gadget_intake_belt_mesh  0x00000004  gadget_intake_belt_polygons
+pointer gadget_intake_belt  0x00000004  gadget_intake_belt_mesh
+pointer gadget_intake_belt  0x00000030  gadget_intake_glow
+pointer gadget_intake_base_mesh  0x00000000  gadget_intake_base_vertices
+pointer gadget_intake_base_mesh  0x00000004  gadget_intake_base_polygons
+pointer gadget_intake_base  0x00000004  gadget_intake_base_mesh
+pointer gadget_intake_base  0x0000002c  gadget_intake_belt
+pointer gadget_intake_scroll  0x00000010  belt_uvs
+pointer rail_first_path  0x00000008  first_path_points
+pointer rail_second_path  0x00000008  second_path_points
+pointer rail_third_path  0x00000008  third_path_points
+pointer rail_second_markers  0x00000008  second_markers_points
+pointer gadget_intake_shard_a_textures  0x00000000  RAIL_TEXTURE_MIU64_EE002
+pointer gadget_intake_shard_a_texlist  0x00000000  gadget_intake_shard_a_textures
+pointer gadget_intake_shard_a  0x00000000  gadget_intake_shard_a_vertices
+pointer gadget_intake_shard_a  0x00000004  gadget_intake_shard_a_polygons
+pointer gadget_intake_shard_a_object  0x00000004  gadget_intake_shard_a
+pointer gadget_intake_shard_b_textures  0x00000000  RAIL_TEXTURE_MIU64_EE002
+pointer gadget_intake_shard_b_texlist  0x00000000  gadget_intake_shard_b_textures
+pointer gadget_intake_shard_b  0x00000000  gadget_intake_shard_b_vertices
+pointer gadget_intake_shard_b  0x00000004  gadget_intake_shard_b_polygons
+pointer gadget_intake_shard_b_object  0x00000004  gadget_intake_shard_b
+pointer gadget_intake_texlists  0x00000000  rail_exit_texlist
+pointer gadget_intake_texlists  0x00000004  gadget_intake_texlist
+pointer gadget_intake_texlists  0x00000008  gadget_intake_shard_a_texlist
+pointer gadget_intake_texlists  0x0000000c  gadget_intake_shard_b_texlist
+pointer gadget_intake_texlists  0x00000010  burst_texlist
+pointer intake_shard_layout  0x00000000  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x00000004  gadget_intake_shard_a
+pointer intake_shard_layout  0x00000020  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x00000024  gadget_intake_shard_a
+pointer intake_shard_layout  0x00000040  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x00000044  gadget_intake_shard_a
+pointer intake_shard_layout  0x00000060  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x00000064  gadget_intake_shard_a
+pointer intake_shard_layout  0x00000080  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x00000084  gadget_intake_shard_a
+pointer intake_shard_layout  0x000000a0  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x000000a4  gadget_intake_shard_a
+pointer intake_shard_layout  0x000000c0  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x000000c4  gadget_intake_shard_a
+pointer intake_shard_layout  0x000000e0  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x000000e4  gadget_intake_shard_a
+pointer intake_shard_layout  0x00000100  gadget_intake_shard_b_texlist
+pointer intake_shard_layout  0x00000104  gadget_intake_shard_b
+pointer intake_shard_layout  0x00000120  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x00000124  gadget_intake_shard_a
+pointer intake_shard_layout  0x00000140  gadget_intake_shard_a_texlist
+pointer intake_shard_layout  0x00000144  gadget_intake_shard_a
+pointer gadget_rails  0x00000000  rail_first_path
+pointer gadget_rails  0x00000004  rail_first_path
+pointer gadget_rails  0x00000020  rail_second_path
+pointer gadget_rails  0x00000024  rail_second_markers
+pointer gadget_rails  0x00000040  rail_third_path
+pointer gadget_rails  0x00000044  rail_third_path

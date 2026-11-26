@@ -1,0 +1,2 @@
+text  DZ_EQ_PATBUGCAM32  C  0x00000000  18
+datum  textures  D  0x00000000  12

@@ -1,0 +1,7 @@
+# Picture 1 of the Death Chamber and Egg Quarters sets. Texture slot 0 holds the shadow and slot 1 holds the picture.
+.textures  texture_names  2
+painting_texlist_0  texture_list  .textures
+.polygons  chunk_polygons  113
+.vertices  chunk_vertices  115
+painting_model_0  chunk_model  .vertices  .polygons
+painting_object_0  chunk_object  painting_model_0  -  -

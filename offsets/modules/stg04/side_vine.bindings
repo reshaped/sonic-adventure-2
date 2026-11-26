@@ -1,0 +1,27 @@
+text SIDE_VINE_EDITOR_ANGLE_MOVE_X 21
+text SIDE_VINE_EDITOR_ANGLE_ROT_POS_Y 23
+text SIDE_VINE_EDITOR_ANGLE_HANDLE 21
+text SIDE_VINE_EDITOR_SCL_MOVE_SCL 21
+text SIDE_VINE_EDITOR_ADD_SPD 11
+text SIDE_VINE_EDITOR_MOVE_SPD 13
+text SIDE_VINE_TEXTURE_JUNGLE128_11 13
+text SIDE_VINE_TEXTURE_JUNGLE128_13 13
+text SIDE_VINE_TEXTURE_MIU64_GREEN006 15
+text SIDE_VINE_TEXTURE_MIU64_GREEN008 15
+
+pointer  model_textures  0x00000000  SIDE_VINE_TEXTURE_JUNGLE128_11
+pointer  model_textures  0x0000000c  SIDE_VINE_TEXTURE_JUNGLE128_13
+pointer  model_textures  0x00000018  SIDE_VINE_TEXTURE_MIU64_GREEN006
+pointer  model_textures  0x00000024  SIDE_VINE_TEXTURE_MIU64_GREEN008
+pointer  side_vine_texlist  0x00000000  model_textures
+pointer  grip_mesh  0x00000000  grip_vertices
+pointer  grip_mesh  0x00000004  grip_polygons
+pointer  side_vine_tip  0x00000004  grip_mesh
+pointer  stem_mesh  0x00000000  stem_vertices
+pointer  stem_mesh  0x00000004  stem_polygons
+pointer  stem_object  0x00000004  stem_mesh
+pointer  stem_object  0x0000002c  side_vine_tip
+pointer  anchor_mesh  0x00000000  anchor_vertices
+pointer  anchor_mesh  0x00000004  anchor_polygons
+pointer  side_vine_object  0x00000004  anchor_mesh
+pointer  side_vine_object  0x0000002c  stem_object

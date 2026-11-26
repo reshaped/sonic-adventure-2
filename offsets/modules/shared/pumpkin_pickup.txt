@@ -1,0 +1,11 @@
+datum  pumpkin_pickup_texlist_names  D  0x00000000  36
+datum  pumpkin_pickup_texlist  D  0x00000024  8
+datum  pumpkin_pickup_polygons  D  0x0000002c  950
+datum  pumpkin_pickup_vertices  D  0x000003e4  796
+datum  pumpkin_pickup_model  D  0x00000700  24
+datum  pumpkin_pickup_object  D  0x00000718  52
+datum  pumpkin_pickup_texlists  D  0x0000074c  8
+datum  pumpkin_pickup_shapes  D  0x00000754  144
+text  PUMPKIN_PICKUP_TEXTURE_MIU64_MO007  C  0x00000028  12
+text  PUMPKIN_PICKUP_TEXTURE_MIU64_MO008  C  0x00000034  12
+text  PUMPKIN_PICKUP_TEXTURE_MIU64_MO009  C  0x00000040  12

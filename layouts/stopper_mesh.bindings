@@ -1,0 +1,5 @@
+pointer  lamp_mesh  0x00000000  lamp_vertices
+pointer  lamp_mesh  0x00000004  lamp_polygons
+pointer  lamp_object  0x00000004  lamp_mesh
+pointer  body_mesh  0x00000000  body_vertices
+pointer  body_mesh  0x00000004  body_polygons

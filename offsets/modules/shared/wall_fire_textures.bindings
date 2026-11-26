@@ -1,0 +1,5 @@
+text KD_SO_KAGE3 12
+text KD_SO_SARA1 12
+
+pointer  textures  0x00000000  KD_SO_KAGE3
+pointer  textures  0x0000000c  KD_SO_SARA1

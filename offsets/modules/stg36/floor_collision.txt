@@ -1,0 +1,7 @@
+datum  floor_material  D  0x00000000  20
+datum  floor_faces  D  0x00000014  28
+datum  floor_meshset  D  0x00000030  24
+datum  floor_points  D  0x00000048  144
+datum  floor_normals  D  0x000000d8  144
+datum  floor_model  D  0x00000168  40
+datum  tails_floor_template  D  0x00000190  52

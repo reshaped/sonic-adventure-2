@@ -1,0 +1,9 @@
+pointer  textures  0x00000000  miu128_cg007
+pointer  textures  0x0000000c  miu128_cg010
+pointer  textures  0x00000018  camera_miu32_ee001
+pointer  textures  0x00000024  camera_miu64_cg004
+pointer  textures  0x00000030  camera_miu64_cg008
+pointer  textures  0x0000003c  camera_miu64_cg010
+pointer  textures  0x00000048  camera_miu64_cg020
+pointer  textures  0x00000054  camera_miu64_ee001
+include  vertical_camera

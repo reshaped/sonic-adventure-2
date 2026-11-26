@@ -1,0 +1,4 @@
+datum  faces  D  0x00000000  178
+datum  vertices  D  0x000000b4  204
+datum  shadow_model  D  0x00000180  24
+datum  shadow_object  D  0x00000198  52

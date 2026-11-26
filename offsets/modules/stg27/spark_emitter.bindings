@@ -1,0 +1,3 @@
+text  COLONY_TEXT_LCSPARK  8
+pointer  emitter_effects  0x00000000  COLONY_TEXT_LCSPARK
+pointer  colony_spark_texlists  0x00000000  colony_spark_texlist

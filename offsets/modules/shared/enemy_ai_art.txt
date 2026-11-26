@@ -1,0 +1,3 @@
+datum  ai_texture_filenames  C  0x00000000  50
+datum  hunter_textures  D  0x00000000  60
+datum  ai_texlist  D  0x0000003c  8

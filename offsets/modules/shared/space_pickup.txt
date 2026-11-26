@@ -1,0 +1,1 @@
+datum  space_pickup_textures  D  0x00000000  16

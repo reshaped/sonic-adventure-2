@@ -1,0 +1,28 @@
+text  PLATFORM_EDITOR_SAKU_ON_OFF  15
+text  PLATFORM_EDITOR_ANGLE_Y  11
+
+pointer  frstage_light_model  0x00000000  frstage_light_vertices
+pointer  frstage_light_model  0x00000004  frstage_light_polygons
+pointer  frstage_light  0x00000004  frstage_light_model
+pointer  frstage_fence_0_model  0x00000000  frstage_fence_0_vertices
+pointer  frstage_fence_0_model  0x00000004  frstage_fence_0_polygons
+pointer  frstage_fence_0  0x00000004  frstage_fence_0_model
+pointer  frstage_fence_0  0x00000030  frstage_light
+pointer  frstage_floor_model  0x00000000  frstage_floor_vertices
+pointer  frstage_floor_model  0x00000004  frstage_floor_polygons
+pointer  frstage_floor  0x00000004  frstage_floor_model
+pointer  frstage_floor  0x0000002c  frstage_fence_0
+pointer  frstage_fence_collision_0_meshes  0x00000004  frstage_fence_collision_0_faces_0
+pointer  frstage_fence_collision_0_model  0x00000000  frstage_fence_collision_0_points
+pointer  frstage_fence_collision_0_model  0x00000004  frstage_fence_collision_0_normals
+pointer  frstage_fence_collision_0_model  0x0000000c  frstage_fence_collision_0_meshes
+pointer  frstage_fence_collision_0_model  0x00000010  frstage_fence_collision_0_material
+pointer  frstage_fence_collision_0  0x00000004  frstage_fence_collision_0_model
+pointer  frstage_collision_meshes  0x00000004  frstage_collision_faces_0
+pointer  frstage_collision_model  0x00000000  frstage_collision_points
+pointer  frstage_collision_model  0x00000004  frstage_collision_normals
+pointer  frstage_collision_model  0x0000000c  frstage_collision_meshes
+pointer  frstage_collision_model  0x00000010  frstage_collision_material
+pointer  frstage_collision  0x00000004  frstage_collision_model
+pointer  frstage_collision  0x0000002c  frstage_fence_collision_0
+pointer  frstage_texlists  0x00000000  frstage_texlist

@@ -1,0 +1,4 @@
+text  TEXTURE_PRESSSTART  11
+
+pointer  press_start_texname  0x00000000  TEXTURE_PRESSSTART
+pointer  press_start_texlist  0x00000000  press_start_texname

@@ -1,0 +1,2 @@
+datum  walk_cells  D  0x00000004  1060
+datum  walk_message_links  D  0x00000428  232

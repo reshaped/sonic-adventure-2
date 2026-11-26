@@ -1,0 +1,4 @@
+datum  cart_icon_polygon  D  0x00000390  96
+datum  frame_polygon  D  0x000003f0  96
+datum  icon_polygon  D  0x00000330  96
+datum  text_polygon  D  0x000002d0  96

@@ -1,0 +1,15 @@
+datum  miu128_cg005  C  0x00000000  16
+datum  miu128_cg009  C  0x00000010  16
+datum  miu128_cg016  C  0x00000020  16
+datum  miu128_cg017  C  0x00000030  16
+datum  miu256_cg001  C  0x00000040  16
+datum  miu64_cg003  C  0x00000050  12
+datum  miu64_cg005  C  0x0000005c  12
+datum  miu64_cg006  C  0x00000068  12
+datum  miu64_cg007  C  0x00000074  12
+datum  miu64_cg009  C  0x00000080  12
+datum  miu64_cg020  C  0x0000008c  12
+datum  miu64_cg021  C  0x00000098  12
+datum  miu64_ee001  C  0x000000a4  12
+datum  textures  D  0x00000000  156
+datum  last_step_texlist  D  0x0000009c  8

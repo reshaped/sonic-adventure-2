@@ -1,0 +1,3 @@
+datum  rockfall_texlists  D  0x00000000  20
+datum  objects  D  0x00000014  16
+datum  sizes  D  0x00000024  48

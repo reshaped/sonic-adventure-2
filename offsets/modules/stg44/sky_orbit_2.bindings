@@ -1,0 +1,6 @@
+pointer  textures  0x00000000  mad_space_nebula_128
+pointer  textures  0x0000000c  sky_orbit_texture
+
+pointer  sky_orbit_128_mesh  0x00000000  sky_orbit_128_vertices
+pointer  sky_orbit_128_mesh  0x00000004  sky_orbit_128_polygons
+pointer  background_2_object  0x00000004  sky_orbit_128_mesh

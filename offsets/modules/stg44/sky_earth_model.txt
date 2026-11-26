@@ -1,0 +1,4 @@
+datum  sky_earth_polygons  D  0x00000000  2570
+datum  sky_earth_vertices  D  0x00000a0c  3452
+datum  sky_earth_mesh  D  0x00001788  24
+datum  background_0_object  D  0x000017a0  52

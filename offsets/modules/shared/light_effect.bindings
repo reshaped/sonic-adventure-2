@@ -1,0 +1,6 @@
+text  LIGHT_EFFECT_MATERIAL_01  13
+text  LIGHT_EFFECT_MATERIAL_02  13
+text  LIGHT_EFFECT_MATERIAL_03  13
+pointer  light_effect_texnames  0x00000000  LIGHT_EFFECT_MATERIAL_01
+pointer  light_effect_texnames  0x0000000c  LIGHT_EFFECT_MATERIAL_02
+pointer  light_effect_texnames  0x00000018  LIGHT_EFFECT_MATERIAL_03

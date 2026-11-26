@@ -1,0 +1,5 @@
+datum  cart_hud_sprites  D  0x00000000  680
+datum  result_cells  D  0x00000478  160
+text  KART_RESULT_MATERIAL  C  0x00000034  29
+datum  layout  D  0x00000308  348
+datum  result_texture  D  0x00000464  12

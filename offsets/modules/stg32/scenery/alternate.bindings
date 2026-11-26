@@ -1,0 +1,3 @@
+pointer  meteor_platform_alt_object_model  0x00000000  meteor_platform_alt_object_vertices
+pointer  meteor_platform_alt_object_model  0x00000004  meteor_platform_alt_object_polygons
+pointer  meteor_platform_alt_object  0x00000004  meteor_platform_alt_object_model

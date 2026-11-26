@@ -1,0 +1,2 @@
+datum  tails_anims  D  0x00000000  1856
+datum  tails_shapes  D  0x00000740  192

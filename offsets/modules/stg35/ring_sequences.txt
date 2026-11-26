@@ -1,0 +1,6 @@
+datum  eggman_inner_lamps_a  D  0x00000000  24
+datum  eggman_inner_lamps_b  D  0x00000018  24
+datum  eggman_outer_lamps_a  D  0x00000030  60
+datum  eggman_outer_lamps_b  D  0x0000006c  48
+datum  eggman_outer_lamps_c  D  0x0000009c  48
+datum  eggman_outer_lamps_d  D  0x000000cc  60

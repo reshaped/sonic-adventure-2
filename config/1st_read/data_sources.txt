@@ -1,0 +1,7 @@
+src/camera/dat_8c0fb7e0.c
+src/collision/dat_8c0d1c48.c
+src/draw/dat_8c0d2f1c.c
+src/player/pose_camera.c
+src/player/trick_camera.c
+src/stage/winner_camera.c
+src/system/dat_8c0fe7c0.c

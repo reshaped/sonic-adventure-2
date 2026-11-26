@@ -1,0 +1,17 @@
+datum  miu128_cg003  C  0x00000000  16
+datum  miu128_cg007  C  0x00000010  16
+datum  miu128_cg010  C  0x00000020  16
+datum  textures  D  0x00000000  108
+datum  vertical_camera_texlist  D  0x0000006c  8
+datum  vertical_camera_light_polygons  D  0x00000074  50
+datum  vertical_camera_light_vertices  D  0x000000a8  76
+datum  vertical_camera_light_model  D  0x000000f4  24
+datum  vertical_camera_light  D  0x0000010c  52
+datum  vertical_camera_head_polygons  D  0x00000140  570
+datum  vertical_camera_head_vertices  D  0x0000037c  844
+datum  vertical_camera_head_model  D  0x000006c8  24
+datum  vertical_camera_head  D  0x000006e0  52
+datum  vertical_camera_polygons  D  0x00000714  466
+datum  vertical_camera_vertices  D  0x000008e8  780
+datum  vertical_camera_model  D  0x00000bf4  24
+datum  vertical_camera_object  D  0x00000c0c  52

@@ -1,0 +1,26 @@
+text  OPTIONS_MUSIC  13
+text  THEME_FILE_01_KEY  16
+text  THEME_FILE_02_KEY  16
+text  THEME_FILE_03_KEY  16
+text  THEME_FILE_04_KEY  16
+text  THEME_FILE_05_KEY  16
+text  THEME_FILE_06_KEY  16
+text  THEME_FILE_07_KEY  16
+text  THEME_FILE_08_KEY  16
+text  THEME_FILE_09_KEY  16
+text  THEME_FILE_10_KEY  16
+text  THEME_FILE_11_KEY  16
+text  THEME_FILE_12_KEY  16
+
+pointer  theme_keys  0x00000004  THEME_FILE_01_KEY
+pointer  theme_keys  0x00000008  THEME_FILE_02_KEY
+pointer  theme_keys  0x0000000c  THEME_FILE_03_KEY
+pointer  theme_keys  0x00000010  THEME_FILE_04_KEY
+pointer  theme_keys  0x00000014  THEME_FILE_05_KEY
+pointer  theme_keys  0x00000018  THEME_FILE_06_KEY
+pointer  theme_keys  0x0000001c  THEME_FILE_07_KEY
+pointer  theme_keys  0x00000020  THEME_FILE_08_KEY
+pointer  theme_keys  0x00000024  THEME_FILE_09_KEY
+pointer  theme_keys  0x00000028  THEME_FILE_10_KEY
+pointer  theme_keys  0x0000002c  THEME_FILE_11_KEY
+pointer  theme_keys  0x00000030  THEME_FILE_12_KEY

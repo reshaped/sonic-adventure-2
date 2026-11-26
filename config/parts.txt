@@ -1,0 +1,166 @@
+# Who reads the floats each source computes, its bin, which sets whether a
+# build that isn't SHC's must keep the console's bits there. tools/parts.py
+# reads the table, and tools/fmacs.py counts the fused products of each bin.
+#
+# A row is PATH BIN. PATH is a file, or a directory, which ends in /, and a
+# file takes the row with the longest PATH that is the file or a directory
+# above it. Each C source, header and .src file under src/, sdk/, modules/
+# and engine/ takes a row, and some such file takes each row:
+# tests/test_parts.py holds both.
+#
+# BIN is one of tools/parts.py's BINS:
+#   play     a game step reads a float the source computes. A source whose
+#            floats' reader isn't known is play, and so is a source that
+#            computes play's floats beside the screen's
+#   picture  only the screen takes the floats the source computes: what
+#            lies below the draw calls, and the effects, the menus and the
+#            screens no game step reads
+#   none     neither a game step nor the screen takes them: the sound the
+#            speakers play
+#
+# path                                    bin
+engine/                                 play
+engine/dc/direct_points.c               picture
+engine/dc/draw_transform.h              picture
+engine/dc/line.c                        picture
+modules/                                play
+modules/advertise/                      picture
+modules/emblemget/                      picture
+modules/ending/                         picture
+modules/mcwarn/                         picture
+modules/otherprint/                     picture
+modules/shared/big_splash.c             picture
+modules/shared/black_smoke.c            picture
+modules/shared/fluorescent_lamp.c       picture
+modules/shared/boss_title.c             picture
+modules/shared/mech_boss_title.c        picture
+modules/shared/canyon_lens_flare.c      picture
+modules/shared/debris.c                 picture
+modules/shared/dirt.c                   picture
+modules/shared/dust.c                   picture
+modules/shared/effect_object.c          picture
+modules/shared/emblem.c                 picture
+modules/shared/flame.c                  picture
+modules/shared/flash.c                  picture
+modules/shared/fog.c                    picture
+modules/shared/glow_light.c             picture
+modules/shared/item_icon.c              picture
+modules/shared/lens_flare.c             picture
+modules/shared/mech_boss_laser_beam.c   picture
+modules/shared/object_light.c           picture
+modules/shared/paper.c                  picture
+modules/shared/ring_sparkle.c           picture
+modules/shared/rocket_thrust.c          picture
+modules/shared/smoke_puff.c             picture
+modules/shared/spark.c                  picture
+modules/shared/spark_point.c            picture
+modules/shared/spark_sprite.c           picture
+modules/shared/sparkle.c                picture
+modules/shared/splash.c                 picture
+modules/shared/stage_sounds.c           none
+modules/shared/warp_hole.c              picture
+modules/shared/water_specks.c           picture
+modules/shared/white_breath.c           picture
+modules/stg03/stars.c                   picture
+modules/stg04/stars.c                   picture
+modules/stg10/clouds.c                  picture
+modules/stg10/sea.c                     picture
+modules/stg10/seagulls.c                picture
+modules/stg11/fluorescent_lamp.c        picture
+modules/stg13/stage_sounds.c            none
+modules/stg14/glow_light.c              picture
+modules/stg14/gust_sound.c              none
+modules/title/                          picture
+sdk/                                    play
+sdk/ninja/                              picture
+sdk/ninja/njAddVector.c                 play
+sdk/ninja/njCalcPoint.c                 play
+sdk/ninja/njCalcPoints.c                play
+sdk/ninja/njCalcVector.c                play
+sdk/ninja/njCameraMotion.c              play
+sdk/ninja/njCardinal.c                  play
+sdk/ninja/njCheckBBox.c                 play
+sdk/ninja/njClipZ.c                     play
+sdk/ninja/njCnkMotInt.c                 play
+sdk/ninja/njCnkMotLinkE.c               play
+sdk/ninja/njCnkMotLinkS.c               play
+sdk/ninja/njCnkMotLinkSrc.c             play
+sdk/ninja/njCnkMotSrc.c                 play
+sdk/ninja/njCnkMotionE.c                play
+sdk/ninja/njCnkMotionEM.c               play
+sdk/ninja/njCnkMotionS.c                play
+sdk/ninja/njCollisionCheckBC.c          play
+sdk/ninja/njCollisionCheckSS.c          play
+sdk/ninja/njCos.c                       play
+sdk/ninja/njCubicBezier.c               play
+sdk/ninja/njDetMatrix.c                 play
+sdk/ninja/njDistanceL2PL.c              play
+sdk/ninja/njDistanceP2L.c               play
+sdk/ninja/njDistanceP2P.c               play
+sdk/ninja/njDistanceP2PL.c              play
+sdk/ninja/njDistancePL2PL.c             play
+sdk/ninja/njFraction.c                  play
+sdk/ninja/njGetBoxMinMax.c              play
+sdk/ninja/njGetCameraMotion.c           play
+sdk/ninja/njGetCapsuleMinMax.c          play
+sdk/ninja/njGetMatrix.c                 play
+sdk/ninja/njGetPlaneNormal.c            play
+sdk/ninja/njGetTranslation.c            play
+sdk/ninja/njInitCamera.c                play
+sdk/ninja/njInitMatrix.c                play
+sdk/ninja/njInnerProduct.c              play
+sdk/ninja/njInvertMatrix.c              play
+sdk/ninja/njIsParalellL2PL.c            play
+sdk/ninja/njIsParalellPL2PL.c           play
+sdk/ninja/njMem.src                     play
+sdk/ninja/njMemScalar.c                 play
+sdk/ninja/njMirror.c                    play
+sdk/ninja/njMotSrc.c                    play
+sdk/ninja/njMultiMatrix.c               play
+sdk/ninja/njOuterProduct.c              play
+sdk/ninja/njOverhauser.c                play
+sdk/ninja/njPointCamereInterest.c       play
+sdk/ninja/njPopMatrix.c                 play
+sdk/ninja/njPopMatrixEx.c               play
+sdk/ninja/njProjectScreen.c             play
+sdk/ninja/njPushMatrix.c                play
+sdk/ninja/njPushMatrixEx.c              play
+sdk/ninja/njRollCameraInterest.c        play
+sdk/ninja/njRotate.c                    play
+sdk/ninja/njRotateEx.c                  play
+sdk/ninja/njRotateX.c                   play
+sdk/ninja/njRotateXYZ.c                 play
+sdk/ninja/njRotateY.c                   play
+sdk/ninja/njRotateZ.c                   play
+sdk/ninja/njRotateZXY.c                 play
+sdk/ninja/njRoundOff.c                  play
+sdk/ninja/njRoundUp.c                   play
+sdk/ninja/njScale.c                     play
+sdk/ninja/njScaleEx.c                   play
+sdk/ninja/njScaleV.c                    play
+sdk/ninja/njScalor.c                    play
+sdk/ninja/njScalor2.c                   play
+sdk/ninja/njSetCamera.c                 play
+sdk/ninja/njSetCameraAngle.c            play
+sdk/ninja/njSetMatrix.c                 play
+sdk/ninja/njSetPerspective.c            play
+sdk/ninja/njSetScreen.c                 play
+sdk/ninja/njSin.c                       play
+sdk/ninja/njSqrt.c                      play
+sdk/ninja/njSubVector.c                 play
+sdk/ninja/njTan.c                       play
+sdk/ninja/njTranslate.c                 play
+sdk/ninja/njTranslateEx.c               play
+sdk/ninja/njTranslateV.c                play
+sdk/ninja/njUnitMatrix.c                play
+sdk/ninja/njUnitVector.c                play
+sdk/sofdec/                             none
+sdk/sound/                              none
+src/                                    play
+src/draw/                               picture
+src/draw/helpers.c                      play
+src/draw/motion.c                       play
+src/effect/                             picture
+src/effect/sonic_effect.c               play
+src/hud/                                picture
+src/sound/                              none

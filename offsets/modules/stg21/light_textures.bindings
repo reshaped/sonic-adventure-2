@@ -1,0 +1,3 @@
+text  OCEAN_TEXTURE_KD_SO_HIKARI1  14
+pointer  textures  0x00000000  OCEAN_TEXTURE_KD_SO_HIKARI1
+pointer  swaying_light_texlist  0x00000000  textures

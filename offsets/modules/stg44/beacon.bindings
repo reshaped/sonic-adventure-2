@@ -1,0 +1,6 @@
+pointer  mad_space_sl_textures  0x00000000  mad_space_sl_first_texlist
+pointer  mad_space_sl_textures  0x00000004  mad_space_sl_second_texlist
+pointer  mad_space_sl_textures  0x00000008  mad_space_sl_third_texlist
+pointer  housings  0x00000000  mad_space_sl_first_object
+pointer  housings  0x00000004  mad_space_sl_second_object
+pointer  housings  0x00000008  mad_space_sl_third_object

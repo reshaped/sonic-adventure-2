@@ -1,0 +1,22 @@
+# The startup table in sdk/shinobi/strt1.src holds the original linked end
+# of each decoder section and the start of its successor.
+# section   next       end word    next start word
+PSGSFD00    PSGSFD01   0x8c179f08  0x8c179ecc
+PSGSFD01    PSGSFD02   0x8c179f0c  0x8c179ed0
+
+# All 224 native P inputs in the whole link, followed by C on four.
+# strt2's relocated _D_ROM pointer addresses the first word of strt1's C.
+# section   next       inputs  ordered input SHA256  object export  pointer word
+P C inputs 8a8c4b0624a923ba18656a8129fb7b92286699f9fda0938da99793799bfff467 __D_ROM 0x8c100650
+
+# All 93 native C inputs end before strt1's empty C32 section, aligned to 32.
+# Its first C word carries a STARTOF D relocation to the first data input.
+C D inputs 59e67b3a0e5186576d86f318706a5255d5e061cd3f46313b3edfca2599ebfe7a C32 0x8c0cd860
+
+# The 109 CSG inputs precede startup's empty 32-aligned CSG32.
+# _DSG_ROM points to strt2's first DSG word through STARTOF DSG.
+CSG DSG inputs 3eb9ce5b1f0c9bc337d459640ff87f123a8aa2adddd767ecda46500dbf255d81 CSG32 0x8c179e9c
+
+# The 95 DSG inputs end before njGlobalMatrix's 32-aligned DSG32.
+# _DSG32_ROM holds STARTOF DSG32, where njGlobalMatrix exports its first matrix array.
+DSG DSG32 inputs 952c1eac926c7573184101582108506ee83f847110a475faaaf589c2baf99209 __nj_lcolor_easy 0x8c179ea0

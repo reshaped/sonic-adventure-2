@@ -1,0 +1,9 @@
+text TEXTURE_SIKAKE_46_128 14
+text TEXTURE_SIKAKE_47_128 14
+
+pointer  textures  0x00000000  TEXTURE_SIKAKE_46_128
+pointer  textures  0x0000000c  TEXTURE_SIKAKE_47_128
+pointer  spin_solid_texlist  0x00000000  textures
+pointer  spin_solid_model  0x00000000  crate_vertices
+pointer  spin_solid_model  0x00000004  spin_solid_polygons
+pointer  spin_solid_object  0x00000004  spin_solid_model

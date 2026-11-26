@@ -1,0 +1,1 @@
+datum  camera_path_spans  D  0x00000000  52

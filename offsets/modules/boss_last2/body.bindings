@@ -1,0 +1,7 @@
+pointer  body_motions  0x00000000  finalhazard_intro_motion
+pointer  body_motions  0x0000001c  finalhazard_idle_motion
+pointer  body_motions  0x00000038  finalhazard_hit_motion
+pointer  body_motions  0x00000054  finalhazard_defeat_motion
+pointer  body_title  0x00000000  title_letters
+pointer  body_title  0x0000000c  title_bar
+pointer  body_title  0x00000018  finalhazard_title_texlist

@@ -1,0 +1,7 @@
+text  LAGOON_TEXTURE_DZ_DL_TUBO_SMALL32  C  0x00000000  19
+datum  textures  D  0x00000000  12
+datum  small_pot_texlist  D  0x0000000c  8
+datum  small_pot_polygons  D  0x00000014  1194
+datum  small_pot_vertices  D  0x000004c0  1164
+datum  small_pot_model  D  0x0000094c  24
+datum  small_pot_object  D  0x00000964  52

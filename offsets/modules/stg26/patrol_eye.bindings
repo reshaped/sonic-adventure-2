@@ -1,0 +1,3 @@
+pointer  guard_eye_model  0x00000000  eye_vertices
+pointer  guard_eye_model  0x00000004  eye_polygons
+pointer  guard_eye_object  0x00000004  guard_eye_model

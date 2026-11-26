@@ -1,0 +1,9 @@
+datum  engine_poison_land_filenames  C  0x00000000  221
+datum  engine_poison_land_entries  D  0x00000000  32
+datum  engine_poison_land  D  0x00000020  32
+datum  engine_poison_land_textures  D  0x00000040  156
+datum  engine_poison_texlist  D  0x000000dc  8
+datum  engine_poison_land_draw_0_polygons  D  0x000000e4  38
+datum  engine_poison_land_draw_0_vertices  D  0x0000010c  76
+datum  engine_poison_land_draw_0_model  D  0x00000158  24
+datum  engine_poison_land_draw_0  D  0x00000170  52

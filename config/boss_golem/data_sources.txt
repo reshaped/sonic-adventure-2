@@ -1,0 +1,8 @@
+modules/boss_golem/dat_8c606ba8.c
+modules/boss_golem/dat_8c609a3c.c
+modules/boss_golem/dat_8c60f6d8.c
+modules/boss_golem/golem_face_textures.c
+modules/boss_golem/golem_skin_names.c
+modules/boss_golem/golem_statue.c
+modules/boss_golem/player_motions.c
+modules/boss_golem/terrain.c

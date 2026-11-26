@@ -1,0 +1,416 @@
+include  objtex_common
+include  efftex_common
+text  HARBOR_ECSC_S_CLA  11
+text  HARBOR_ECSC_S_CLB  11
+text  HARBOR_ECSC_S_CLC  11
+text  HARBOR_MIU128_MH001  13
+text  HARBOR_MIU128_MH002  13
+text  HARBOR_MIU128_MH003  13
+text  HARBOR_MIU128_WB001  13
+text  HARBOR_MIU256_MH001  13
+text  HARBOR_MIU256_MH002  13
+text  HARBOR_MIU32_MH001  12
+text  HARBOR_MIU32_MH002  12
+text  HARBOR_MIU32_MH003  12
+text  HARBOR_MIU32_MH004  12
+text  HARBOR_MIU32_MH005  12
+text  HARBOR_MIU32_MH006  12
+text  HARBOR_MIU32_WB001  12
+text  HARBOR_MIU64_IG007  12
+text  HARBOR_MIU64_IG019  12
+text  HARBOR_MIU64_MH001  12
+text  HARBOR_MIU64_MH002  12
+text  HARBOR_MIU64_MH003  12
+text  HARBOR_MIU64_MH004  12
+text  HARBOR_MIU64_MH005  12
+text  HARBOR_MIU64_MH006  12
+text  HARBOR_MIU64_MH007  12
+text  HARBOR_MIU64_MH008  12
+text  HARBOR_MIU64_MH009  12
+text  HARBOR_MIU64_MH010  12
+text  HARBOR_MIU64_WB001  12
+text  HARBOR_MIU64_WB010  12
+text  HARBOR_PR128_31  9
+text  HARBOR_OBJTEX_STG10  13
+text  HARBOR_EFFTEX_COMMON  14
+text  HARBOR_OBJTEX_COMMON  14
+pointer  stage_names  0x00000000  HARBOR_ECSC_S_CLA
+pointer  stage_names  0x0000000c  HARBOR_ECSC_S_CLB
+pointer  stage_names  0x00000018  HARBOR_ECSC_S_CLC
+pointer  stage_names  0x00000024  HARBOR_MIU128_MH001
+pointer  stage_names  0x00000030  HARBOR_MIU128_MH002
+pointer  stage_names  0x0000003c  HARBOR_MIU128_MH003
+pointer  stage_names  0x00000048  HARBOR_MIU128_WB001
+pointer  stage_names  0x00000054  HARBOR_MIU256_MH001
+pointer  stage_names  0x00000060  HARBOR_MIU256_MH002
+pointer  stage_names  0x0000006c  HARBOR_MIU32_MH001
+pointer  stage_names  0x00000078  HARBOR_MIU32_MH002
+pointer  stage_names  0x00000084  HARBOR_MIU32_MH003
+pointer  stage_names  0x00000090  HARBOR_MIU32_MH004
+pointer  stage_names  0x0000009c  HARBOR_MIU32_MH005
+pointer  stage_names  0x000000a8  HARBOR_MIU32_MH006
+pointer  stage_names  0x000000b4  HARBOR_MIU32_WB001
+pointer  stage_names  0x000000c0  HARBOR_MIU64_IG007
+pointer  stage_names  0x000000cc  HARBOR_MIU64_IG019
+pointer  stage_names  0x000000d8  HARBOR_MIU64_MH001
+pointer  stage_names  0x000000e4  HARBOR_MIU64_MH002
+pointer  stage_names  0x000000f0  HARBOR_MIU64_MH003
+pointer  stage_names  0x000000fc  HARBOR_MIU64_MH004
+pointer  stage_names  0x00000108  HARBOR_MIU64_MH005
+pointer  stage_names  0x00000114  HARBOR_MIU64_MH006
+pointer  stage_names  0x00000120  HARBOR_MIU64_MH007
+pointer  stage_names  0x0000012c  HARBOR_MIU64_MH008
+pointer  stage_names  0x00000138  HARBOR_MIU64_MH009
+pointer  stage_names  0x00000144  HARBOR_MIU64_MH010
+pointer  stage_names  0x00000150  HARBOR_MIU64_WB001
+pointer  stage_names  0x0000015c  HARBOR_MIU64_WB010
+pointer  stage_names  0x00000168  HARBOR_PR128_31
+pointer  stage_archive  0x00000000  stage_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  metal_harbor_object_texture_groups  0x00000000  stage_textures
+pointer  metal_harbor_object_texture_groups  0x00000004  goal_ring_texlists
+pointer  metal_harbor_object_texture_groups  0x00000008  emerald_texlists
+pointer  metal_harbor_object_texture_groups  0x0000000c  item_box_texlists
+pointer  metal_harbor_object_texture_groups  0x00000010  item_box_air_texlists
+pointer  metal_harbor_object_texture_groups  0x00000014  weight_texlists
+pointer  metal_harbor_object_texture_groups  0x00000018  iron_ball_texlists
+pointer  metal_harbor_object_texture_groups  0x0000001c  triple_spring_texlists
+pointer  metal_harbor_object_texture_groups  0x00000020  dynamite_texlists
+pointer  metal_harbor_object_texture_groups  0x00000024  reel_texlists
+pointer  metal_harbor_object_texture_groups  0x00000028  chao_pipe_texlists
+pointer  metal_harbor_object_texture_groups  0x0000002c  cage_texlists
+pointer  metal_harbor_object_texture_groups  0x00000030  wood_box_texlists
+pointer  metal_harbor_object_texture_groups  0x00000034  iron_box_texlists
+pointer  metal_harbor_object_texture_groups  0x00000038  upgrade_texlists
+pointer  metal_harbor_object_texture_groups  0x0000003c  missile_texlists
+pointer  metal_harbor_object_texture_groups  0x00000040  skull_texlists
+pointer  metal_harbor_object_texture_groups  0x00000044  rocket_texlists
+pointer  metal_harbor_object_texture_groups  0x00000048  search_box_texlists
+pointer  metal_harbor_object_texture_groups  0x0000004c  hint_box_texlists
+pointer  metal_harbor_object_texture_groups  0x00000050  knudai_texlists
+pointer  metal_harbor_object_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  metal_harbor_object_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  metal_harbor_object_texture_groups  0x0000005c  knudai_door_texlists
+pointer  metal_harbor_object_texture_groups  0x00000060  chao_box_texlists
+pointer  metal_harbor_object_texture_groups  0x00000064  chao_key_texlists
+pointer  metal_harbor_object_texture_groups  0x00000068  object_effect_texlists
+pointer  metal_harbor_object_texture_groups  0x0000006c  messenger_texlists
+pointer  metal_harbor_object_texture_groups  0x00000070  ring_effect_texlists
+pointer  metal_harbor_object_texture_groups  0x00000074  harbor_missile_texlists
+pointer  metal_harbor_object_texture_groups  0x00000078  container_texlists
+pointer  metal_harbor_object_texture_groups  0x0000007c  container_b_texlists
+pointer  metal_harbor_object_texture_groups  0x00000080  missile_bridge_texlists
+pointer  metal_harbor_object_texture_groups  0x00000084  stopper_texlists
+pointer  metal_harbor_object_texture_groups  0x00000088  harbor_scenery_texlists
+pointer  metal_harbor_object_texture_groups  0x0000008c  clouds_texlists
+pointer  metal_harbor_object_texture_groups  0x00000090  radar_texlists
+pointer  metal_harbor_object_texture_groups  0x00000094  signal_texlists
+pointer  metal_harbor_object_texture_groups  0x00000098  container_0_texlists
+pointer  metal_harbor_object_texture_groups  0x0000009c  breakable_slab_texlists
+pointer  metal_harbor_object_texture_groups  0x000000a0  pickup_object_texlists
+pointer  metal_harbor_object_texture_groups  0x000000a4  harbor_truck_texlists
+pointer  metal_harbor_object_texture_groups  0x000000a8  seagulls_texlists
+pointer  metal_harbor_object_texture_groups  0x000000ac  harbor_stopper_texlists
+pointer  metal_harbor_object_texture_groups  0x000000b0  harbor_tank_texlists
+pointer  metal_harbor_object_texture_groups  0x000000b4  solid_box_texlists
+pointer  metal_harbor_object_texture_groups  0x000000b8  harbor_board_texlists
+pointer  metal_harbor_object_pvms  0x00000000  HARBOR_OBJTEX_STG10
+pointer  metal_harbor_object_pvms  0x00000004  stage_archive
+pointer  metal_harbor_object_pvms  0x00000008  HARBOR_EFFTEX_COMMON
+pointer  metal_harbor_object_pvms  0x0000000c  efftex_common_texlist
+pointer  metal_harbor_object_pvms  0x00000010  HARBOR_OBJTEX_COMMON
+pointer  metal_harbor_object_pvms  0x00000014  objtex_common_texlist
+pointer  metal_harbor_object_pvms  0x0000001c  metal_harbor_terrain_textures
+text  OBJECT_NAME_RING  8
+text  OBJECT_NAME_RING_LINEAR  12
+text  OBJECT_NAME_RING_CIRCLE  12
+text  OBJECT_NAME_SPRA  8
+text  OBJECT_NAME_SPRB  8
+text  OBJECT_NAME_3SPRING  8
+text  OBJECT_NAME_BIGJUMP  11
+text  OBJECT_NAME_KASOKU  8
+text  OBJECT_NAME_SAVEPOINT  10
+text  OBJECT_NAME_SWITCH  10
+text  OBJECT_NAME_ITEMBOX  11
+text  OBJECT_NAME_ITEMBOXAIR  14
+text  OBJECT_NAME_ITEMBOXBALLOON  15
+text  OBJECT_NAME_LEVUPDAI  9
+text  OBJECT_NAME_GOALRING  9
+text  OBJECT_NAME_EMERALD  8
+text  OBJECT_NAME_UDREEL  7
+text  OBJECT_NAME_ORI  4
+text  OBJECT_NAME_DYNAMITE  9
+text  OBJECT_NAME_CONTWOOD  9
+text  OBJECT_NAME_CONTIRON  9
+text  OBJECT_NAME_ROCKET  10
+text  OBJECT_NAME_ROCKETMISSSILE  15
+text  OBJECT_NAME_SCHBOX  7
+text  OBJECT_NAME_HINTBOX  8
+text  OBJECT_NAME_MSGER  6
+text  OBJECT_NAME_SSS  4
+text  OBJECT_NAME_SOLIDBOX  9
+text  OBJECT_NAME_DMYOBJ  7
+text  OBJECT_NAME_SOAP_SW  8
+text  OBJECT_NAME_SKULL  6
+text  OBJECT_NAME_PSKULL  7
+text  OBJECT_NAME_CHAOPIPE  9
+text  OBJECT_NAME_MINIMAL  8
+text  OBJECT_NAME_WSMMLS  7
+text  OBJECT_NAME_CONTCHAO  9
+text  OBJECT_NAME_STOPLSD  8
+text  OBJECT_NAME_KNUDAI  7
+text  OBJECT_NAME_KDASIBA  8
+text  OBJECT_NAME_KDWARPHOLE  11
+text  OBJECT_NAME_KDDOOR  7
+text  OBJECT_NAME_KDITEMBOX  10
+text  OBJECT_NAME_KDDRNGL  8
+text  OBJECT_NAME_KDDRNGC  8
+text  OBJECT_NAME_KDSPRING  9
+text  OBJECT_NAME_KDSPRINGB  10
+text  OBJECT_NAME_SPHERE  7
+text  OBJECT_NAME_CCYL  5
+text  OBJECT_NAME_CCUBE  6
+text  OBJECT_NAME_CWALL  6
+text  OBJECT_NAME_CCIRCLE  8
+text  OBJECT_NAME_MODMOD  8
+text  OBJECT_NAME_EFFOBJ0  8
+text  OBJECT_NAME_EFLENSF0  9
+text  OBJECT_NAME_BUNCHIN  8
+text  OBJECT_NAME_IRONBALL2  10
+text  OBJECT_NAME_E_KUMI  7
+text  OBJECT_NAME_E_GOLD  7
+text  OBJECT_NAME_E_PATH  7
+text  OBJECT_NAME_E_KYOKO  8
+text  OBJECT_NAME_E_SHOUKO  9
+text  OBJECT_NAME_E_SW_SHOUKO  12
+text  OBJECT_NAME_MHMISSILE  10
+text  OBJECT_NAME_MHCONT  7
+text  OBJECT_NAME_MHCONTB  8
+text  OBJECT_NAME_LIGHT_SW  9
+text  OBJECT_NAME_MSBRILONG  10
+text  OBJECT_NAME_MSBRISHORT  11
+text  OBJECT_NAME_MSBRIMINI  10
+text  OBJECT_NAME_MSBRISLOPE  11
+text  OBJECT_NAME_MHSLIDER  9
+text  OBJECT_NAME_COVER  6
+text  OBJECT_NAME_RADER  6
+text  OBJECT_NAME_SIGNAL  7
+text  OBJECT_NAME_CBRI  5
+text  OBJECT_NAME_DAMMY  6
+text  OBJECT_NAME_BCOL  5
+text  OBJECT_NAME_MHCONT0  8
+text  OBJECT_NAME_BOAB  5
+text  OBJECT_NAME_STOPPER  8
+text  OBJECT_NAME_PIC  4
+text  OBJECT_NAME_TRUCK  6
+text  OBJECT_NAME_NET  4
+text  OBJECT_NAME_KAMOME  7
+text  OBJECT_NAME_MHCONT_F  9
+text  OBJECT_NAME_SIGNAL_F  9
+text  OBJECT_NAME_MHCONT0_F  10
+text  OBJECT_NAME_ISLAND  7
+text  OBJECT_NAME_TANK  5
+text  OBJECT_NAME_BIG_THE_CAT  12
+text  OBJECT_NAME_LINKLINK  9
+text  OBJECT_NAME_BOARD  6
+text  OBJECT_NAME_G_LIGHT_SW  11
+pointer  metal_harbor_kinds  0x00000008  ring_step
+pointer  metal_harbor_kinds  0x0000000c  OBJECT_NAME_RING
+pointer  metal_harbor_kinds  0x00000018  ring_linear_init
+pointer  metal_harbor_kinds  0x0000001c  OBJECT_NAME_RING_LINEAR
+pointer  metal_harbor_kinds  0x00000028  ring_circle_init
+pointer  metal_harbor_kinds  0x0000002c  OBJECT_NAME_RING_CIRCLE
+pointer  metal_harbor_kinds  0x00000038  spring_a_step
+pointer  metal_harbor_kinds  0x0000003c  OBJECT_NAME_SPRA
+pointer  metal_harbor_kinds  0x00000048  spring_b_step
+pointer  metal_harbor_kinds  0x0000004c  OBJECT_NAME_SPRB
+pointer  metal_harbor_kinds  0x00000058  triple_spring_init
+pointer  metal_harbor_kinds  0x0000005c  OBJECT_NAME_3SPRING
+pointer  metal_harbor_kinds  0x00000068  big_jump_step
+pointer  metal_harbor_kinds  0x0000006c  OBJECT_NAME_BIGJUMP
+pointer  metal_harbor_kinds  0x00000078  dash_panel_step
+pointer  metal_harbor_kinds  0x0000007c  OBJECT_NAME_KASOKU
+pointer  metal_harbor_kinds  0x00000088  save_point_step
+pointer  metal_harbor_kinds  0x0000008c  OBJECT_NAME_SAVEPOINT
+pointer  metal_harbor_kinds  0x00000098  switch_step
+pointer  metal_harbor_kinds  0x0000009c  OBJECT_NAME_SWITCH
+pointer  metal_harbor_kinds  0x000000a8  item_box_step
+pointer  metal_harbor_kinds  0x000000ac  OBJECT_NAME_ITEMBOX
+pointer  metal_harbor_kinds  0x000000b8  item_box_air_step
+pointer  metal_harbor_kinds  0x000000bc  OBJECT_NAME_ITEMBOXAIR
+pointer  metal_harbor_kinds  0x000000c8  item_balloon_step
+pointer  metal_harbor_kinds  0x000000cc  OBJECT_NAME_ITEMBOXBALLOON
+pointer  metal_harbor_kinds  0x000000d8  upgrade_init
+pointer  metal_harbor_kinds  0x000000dc  OBJECT_NAME_LEVUPDAI
+pointer  metal_harbor_kinds  0x000000e8  goal_ring_init
+pointer  metal_harbor_kinds  0x000000ec  OBJECT_NAME_GOALRING
+pointer  metal_harbor_kinds  0x000000f8  emerald_init
+pointer  metal_harbor_kinds  0x000000fc  OBJECT_NAME_EMERALD
+pointer  metal_harbor_kinds  0x00000108  reel_init
+pointer  metal_harbor_kinds  0x0000010c  OBJECT_NAME_UDREEL
+pointer  metal_harbor_kinds  0x00000118  cage_init
+pointer  metal_harbor_kinds  0x0000011c  OBJECT_NAME_ORI
+pointer  metal_harbor_kinds  0x00000128  dynamite_init
+pointer  metal_harbor_kinds  0x0000012c  OBJECT_NAME_DYNAMITE
+pointer  metal_harbor_kinds  0x00000138  wood_box_init
+pointer  metal_harbor_kinds  0x0000013c  OBJECT_NAME_CONTWOOD
+pointer  metal_harbor_kinds  0x00000148  iron_box_init
+pointer  metal_harbor_kinds  0x0000014c  OBJECT_NAME_CONTIRON
+pointer  metal_harbor_kinds  0x00000158  rocket_init
+pointer  metal_harbor_kinds  0x0000015c  OBJECT_NAME_ROCKET
+pointer  metal_harbor_kinds  0x00000168  missile_init
+pointer  metal_harbor_kinds  0x0000016c  OBJECT_NAME_ROCKETMISSSILE
+pointer  metal_harbor_kinds  0x00000178  search_box_init
+pointer  metal_harbor_kinds  0x0000017c  OBJECT_NAME_SCHBOX
+pointer  metal_harbor_kinds  0x00000188  hint_box_init
+pointer  metal_harbor_kinds  0x0000018c  OBJECT_NAME_HINTBOX
+pointer  metal_harbor_kinds  0x00000198  messenger_init
+pointer  metal_harbor_kinds  0x0000019c  OBJECT_NAME_MSGER
+pointer  metal_harbor_kinds  0x000001a8  sss_init
+pointer  metal_harbor_kinds  0x000001ac  OBJECT_NAME_SSS
+pointer  metal_harbor_kinds  0x000001b8  solid_box_init
+pointer  metal_harbor_kinds  0x000001bc  OBJECT_NAME_SOLIDBOX
+pointer  metal_harbor_kinds  0x000001c8  dummy_object_init
+pointer  metal_harbor_kinds  0x000001cc  OBJECT_NAME_DMYOBJ
+pointer  metal_harbor_kinds  0x000001d8  soap_switch_init
+pointer  metal_harbor_kinds  0x000001dc  OBJECT_NAME_SOAP_SW
+pointer  metal_harbor_kinds  0x000001e8  skull_still_init
+pointer  metal_harbor_kinds  0x000001ec  OBJECT_NAME_SKULL
+pointer  metal_harbor_kinds  0x000001f8  skull_lying_init
+pointer  metal_harbor_kinds  0x000001fc  OBJECT_NAME_PSKULL
+pointer  metal_harbor_kinds  0x00000208  chao_pipe_init
+pointer  metal_harbor_kinds  0x0000020c  OBJECT_NAME_CHAOPIPE
+pointer  metal_harbor_kinds  0x00000218  animal_init
+pointer  metal_harbor_kinds  0x0000021c  OBJECT_NAME_MINIMAL
+pointer  metal_harbor_kinds  0x00000228  hidden_animal_init
+pointer  metal_harbor_kinds  0x0000022c  OBJECT_NAME_WSMMLS
+pointer  metal_harbor_kinds  0x00000238  chao_box_init
+pointer  metal_harbor_kinds  0x0000023c  OBJECT_NAME_CONTCHAO
+pointer  metal_harbor_kinds  0x00000248  stop_lsd_init
+pointer  metal_harbor_kinds  0x0000024c  OBJECT_NAME_STOPLSD
+pointer  metal_harbor_kinds  0x00000258  knudai_init
+pointer  metal_harbor_kinds  0x0000025c  OBJECT_NAME_KNUDAI
+pointer  metal_harbor_kinds  0x00000268  knudai_foothold_init
+pointer  metal_harbor_kinds  0x0000026c  OBJECT_NAME_KDASIBA
+pointer  metal_harbor_kinds  0x00000278  knudai_warp_hole_init
+pointer  metal_harbor_kinds  0x0000027c  OBJECT_NAME_KDWARPHOLE
+pointer  metal_harbor_kinds  0x00000288  knudai_door_init
+pointer  metal_harbor_kinds  0x0000028c  OBJECT_NAME_KDDOOR
+pointer  metal_harbor_kinds  0x00000298  knudai_item_box_init
+pointer  metal_harbor_kinds  0x0000029c  OBJECT_NAME_KDITEMBOX
+pointer  metal_harbor_kinds  0x000002a8  knudai_ring_linear_init
+pointer  metal_harbor_kinds  0x000002ac  OBJECT_NAME_KDDRNGL
+pointer  metal_harbor_kinds  0x000002b8  knudai_ring_circle_init
+pointer  metal_harbor_kinds  0x000002bc  OBJECT_NAME_KDDRNGC
+pointer  metal_harbor_kinds  0x000002c8  knudai_spring_init
+pointer  metal_harbor_kinds  0x000002cc  OBJECT_NAME_KDSPRING
+pointer  metal_harbor_kinds  0x000002d8  knudai_spring_b_init
+pointer  metal_harbor_kinds  0x000002dc  OBJECT_NAME_KDSPRINGB
+pointer  metal_harbor_kinds  0x000002e8  collision_sphere_step
+pointer  metal_harbor_kinds  0x000002ec  OBJECT_NAME_SPHERE
+pointer  metal_harbor_kinds  0x000002f8  collision_cylinder_step
+pointer  metal_harbor_kinds  0x000002fc  OBJECT_NAME_CCYL
+pointer  metal_harbor_kinds  0x00000308  collision_cube_step
+pointer  metal_harbor_kinds  0x0000030c  OBJECT_NAME_CCUBE
+pointer  metal_harbor_kinds  0x00000318  collision_wall_step
+pointer  metal_harbor_kinds  0x0000031c  OBJECT_NAME_CWALL
+pointer  metal_harbor_kinds  0x00000328  collision_circle_step
+pointer  metal_harbor_kinds  0x0000032c  OBJECT_NAME_CCIRCLE
+pointer  metal_harbor_kinds  0x00000338  modifier_volume_init
+pointer  metal_harbor_kinds  0x0000033c  OBJECT_NAME_MODMOD
+pointer  metal_harbor_kinds  0x00000348  effect_object_init
+pointer  metal_harbor_kinds  0x0000034c  OBJECT_NAME_EFFOBJ0
+pointer  metal_harbor_kinds  0x00000358  lens_flare_init
+pointer  metal_harbor_kinds  0x0000035c  OBJECT_NAME_EFLENSF0
+pointer  metal_harbor_kinds  0x00000368  weight_init
+pointer  metal_harbor_kinds  0x0000036c  OBJECT_NAME_BUNCHIN
+pointer  metal_harbor_kinds  0x00000378  iron_ball_init
+pointer  metal_harbor_kinds  0x0000037c  OBJECT_NAME_IRONBALL2
+pointer  metal_harbor_kinds  0x00000388  beetle_step
+pointer  metal_harbor_kinds  0x0000038c  OBJECT_NAME_E_KUMI
+pointer  metal_harbor_kinds  0x00000398  gold_beetle_step
+pointer  metal_harbor_kinds  0x0000039c  OBJECT_NAME_E_GOLD
+pointer  metal_harbor_kinds  0x000003a8  path_enemy_step
+pointer  metal_harbor_kinds  0x000003ac  OBJECT_NAME_E_PATH
+pointer  metal_harbor_kinds  0x000003b8  kyoko_step
+pointer  metal_harbor_kinds  0x000003bc  OBJECT_NAME_E_KYOKO
+pointer  metal_harbor_kinds  0x000003c8  shouko_step
+pointer  metal_harbor_kinds  0x000003cc  OBJECT_NAME_E_SHOUKO
+pointer  metal_harbor_kinds  0x000003d8  shouko_switch_init
+pointer  metal_harbor_kinds  0x000003dc  OBJECT_NAME_E_SW_SHOUKO
+pointer  metal_harbor_kinds  0x000003e8  harbor_missile_init
+pointer  metal_harbor_kinds  0x000003ec  OBJECT_NAME_MHMISSILE
+pointer  metal_harbor_kinds  0x000003f8  container_init
+pointer  metal_harbor_kinds  0x000003fc  OBJECT_NAME_MHCONT
+pointer  metal_harbor_kinds  0x00000408  container_b_init
+pointer  metal_harbor_kinds  0x0000040c  OBJECT_NAME_MHCONTB
+pointer  metal_harbor_kinds  0x00000418  light_switch_init
+pointer  metal_harbor_kinds  0x0000041c  OBJECT_NAME_LIGHT_SW
+pointer  metal_harbor_kinds  0x00000428  missile_bridge_long_init
+pointer  metal_harbor_kinds  0x0000042c  OBJECT_NAME_MSBRILONG
+pointer  metal_harbor_kinds  0x00000438  missile_bridge_short_init
+pointer  metal_harbor_kinds  0x0000043c  OBJECT_NAME_MSBRISHORT
+pointer  metal_harbor_kinds  0x00000448  missile_bridge_mini_init
+pointer  metal_harbor_kinds  0x0000044c  OBJECT_NAME_MSBRIMINI
+pointer  metal_harbor_kinds  0x00000458  missile_bridge_slope_init
+pointer  metal_harbor_kinds  0x0000045c  OBJECT_NAME_MSBRISLOPE
+pointer  metal_harbor_kinds  0x00000468  stopper_init
+pointer  metal_harbor_kinds  0x0000046c  OBJECT_NAME_MHSLIDER
+pointer  metal_harbor_kinds  0x00000478  cover_init
+pointer  metal_harbor_kinds  0x0000047c  OBJECT_NAME_COVER
+pointer  metal_harbor_kinds  0x00000488  radar_init
+pointer  metal_harbor_kinds  0x0000048c  OBJECT_NAME_RADER
+pointer  metal_harbor_kinds  0x00000498  signal_init
+pointer  metal_harbor_kinds  0x0000049c  OBJECT_NAME_SIGNAL
+pointer  metal_harbor_kinds  0x000004a8  cbri_init
+pointer  metal_harbor_kinds  0x000004ac  OBJECT_NAME_CBRI
+pointer  metal_harbor_kinds  0x000004b8  dammy_init
+pointer  metal_harbor_kinds  0x000004bc  OBJECT_NAME_DAMMY
+pointer  metal_harbor_kinds  0x000004c8  harbor_board_trigger_init
+pointer  metal_harbor_kinds  0x000004cc  OBJECT_NAME_BCOL
+pointer  metal_harbor_kinds  0x000004d8  container_0_init
+pointer  metal_harbor_kinds  0x000004dc  OBJECT_NAME_MHCONT0
+pointer  metal_harbor_kinds  0x000004e8  breakable_slab_init
+pointer  metal_harbor_kinds  0x000004ec  OBJECT_NAME_BOAB
+pointer  metal_harbor_kinds  0x000004f8  harbor_stopper_init
+pointer  metal_harbor_kinds  0x000004fc  OBJECT_NAME_STOPPER
+pointer  metal_harbor_kinds  0x00000508  pickup_object_init
+pointer  metal_harbor_kinds  0x0000050c  OBJECT_NAME_PIC
+pointer  metal_harbor_kinds  0x00000518  harbor_truck_init
+pointer  metal_harbor_kinds  0x0000051c  OBJECT_NAME_TRUCK
+pointer  metal_harbor_kinds  0x00000528  net_init
+pointer  metal_harbor_kinds  0x0000052c  OBJECT_NAME_NET
+pointer  metal_harbor_kinds  0x00000538  seagulls_init
+pointer  metal_harbor_kinds  0x0000053c  OBJECT_NAME_KAMOME
+pointer  metal_harbor_kinds  0x00000548  container_init
+pointer  metal_harbor_kinds  0x0000054c  OBJECT_NAME_MHCONT_F
+pointer  metal_harbor_kinds  0x00000558  signal_init
+pointer  metal_harbor_kinds  0x0000055c  OBJECT_NAME_SIGNAL_F
+pointer  metal_harbor_kinds  0x00000568  container_0_init
+pointer  metal_harbor_kinds  0x0000056c  OBJECT_NAME_MHCONT0_F
+pointer  metal_harbor_kinds  0x00000578  island_init
+pointer  metal_harbor_kinds  0x0000057c  OBJECT_NAME_ISLAND
+pointer  metal_harbor_kinds  0x00000588  harbor_tank_init
+pointer  metal_harbor_kinds  0x0000058c  OBJECT_NAME_TANK
+pointer  metal_harbor_kinds  0x00000598  big_step
+pointer  metal_harbor_kinds  0x0000059c  OBJECT_NAME_BIG_THE_CAT
+pointer  metal_harbor_kinds  0x000005a8  technique_link_init
+pointer  metal_harbor_kinds  0x000005ac  OBJECT_NAME_LINKLINK
+pointer  metal_harbor_kinds  0x000005b8  harbor_board_init
+pointer  metal_harbor_kinds  0x000005bc  OBJECT_NAME_BOARD
+pointer  metal_harbor_kinds  0x000005c8  global_light_switch_init
+pointer  metal_harbor_kinds  0x000005cc  OBJECT_NAME_G_LIGHT_SW

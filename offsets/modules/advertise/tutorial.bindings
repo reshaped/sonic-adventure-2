@@ -1,0 +1,8 @@
+text  TUTORIAL_MESSAGES  7
+text  TUTORIAL_MUSIC  13
+
+pointer  pages  0x00000000  kihon_lines
+pointer  pages  0x00000008  sonic_lines
+pointer  pages  0x00000010  tails_lines
+pointer  pages  0x00000018  knuckles_lines
+pointer  pages  0x00000020  chao_lines

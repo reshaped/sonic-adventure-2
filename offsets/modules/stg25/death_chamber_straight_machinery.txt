@@ -1,0 +1,4 @@
+datum  machinery_straight_polygons  D  0x00000000  1754
+datum  machinery_straight_vertices  D  0x000006dc  3212
+datum  machinery_straight_model  D  0x00001368  24
+datum  machinery_straight_object  D  0x00001380  52

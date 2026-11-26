@@ -1,0 +1,7 @@
+text  HIGHWAY_TEXT_MIU128_RH004  13
+text  HIGHWAY_TEXT_MIU32_RH003  12
+pointer  highway_glow_light_textures  0x00000000  HIGHWAY_TEXT_MIU128_RH004
+pointer  highway_glow_light_textures  0x0000000c  HIGHWAY_TEXT_MIU32_RH003
+pointer  highway_glow_light_texlist  0x00000000  highway_glow_light_textures
+pointer  highway_glow_light_texlists  0x00000000  highway_glow_light_texlist
+pointer  glow_trail_style  0x00000014  highway_glow_light_texlist

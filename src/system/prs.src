@@ -1,0 +1,113 @@
+; decoding PRS, the LZ77 that packs the disc's files
+
+        .EXPORT     _prs_decompress
+
+        .SECTION    P,CODE,ALIGN=32
+
+; Sint32 prs_decompress(const void *from, void *to)
+; decode the PRS stream at from into to, and return the decoded size in
+; bytes. it reads a control byte whenever it needs a bit and has none left,
+; and takes the bits from the low end. each item is one of:
+;
+;   1 b        the byte b
+;   00 x y b   copy 2x+y+2 bytes (2-5) from 256-b back (1-256)
+;   01 w       copy (w&7)+2 bytes (3-9) from 8192-(w>>3) back (1-8192)
+;   01 w n     the same, with w&7 0: copy n+1 bytes (1-256), from 1-8191 back
+;   01 0       the end
+;
+; 1, 00, 01, x and y are control bits, b and n are bytes, and w is a
+; little-endian word
+;
+; R3 keeps to, for the size. R6 holds the control bits left, and R7 one
+; more than their count. R8 holds -8192 and R9 -256. ORed with R8, a long
+; copy's w>>3 is minus the copy's distance, and so is a short copy's b ORed
+; with R9
+; @asm opcode: rotcl, ROTCL R0 at 0x8c023e64 and 0x8c023e74 shifts each length
+; bit in from T
+_prs_decompress:
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        MOV.W       #-256,R9
+        MOV.W       #-8192,R8
+        MOV.B       @R4+,R6
+        MOV         #9,R7
+        BRA         ?next
+        MOV         R5,R3
+?literal:
+        MOV.B       @R4+,R1
+        MOV.B       R1,@R5
+        ADD         #1,R5
+?next:
+        DT          R7
+        BF/S        ?kind
+        SHLR        R6
+        MOV.B       @R4+,R6
+        MOV         #8,R7
+        SHLR        R6
+?kind:
+        BT          ?literal
+        DT          R7
+        BF/S        ?reach
+        SHLR        R6
+        MOV.B       @R4+,R6
+        MOV         #8,R7
+        SHLR        R6
+?reach:
+        BT          ?long
+        MOV         #0,R0
+        DT          R7
+        BF/S        ?length_high
+        SHLR        R6
+        MOV.B       @R4+,R6
+        MOV         #8,R7
+        SHLR        R6
+?length_high:
+        ROTCL       R0
+        DT          R7
+        BF/S        ?length_low
+        SHLR        R6
+        MOV.B       @R4+,R6
+        MOV         #8,R7
+        SHLR        R6
+?length_low:
+        MOV.B       @R4+,R2
+        ROTCL       R0
+        OR          R9,R2
+?short:
+        ADD         #2,R0
+        ADD         R5,R2
+?copy:
+        MOV.B       @R2+,R1
+        DT          R0
+        MOV.B       R1,@R5
+        BF/S        ?copy
+        ADD         #1,R5
+        BRA         ?next
+        NOP
+?long:
+        MOV.B       @R4+,R0
+        MOV.B       @R4+,R1
+        EXTU.B      R0,R2
+        SHLL8       R1
+        OR          R1,R2
+        TST         R2,R2
+        BT          ?done
+        SHLR2       R2
+        SHLR        R2
+        AND         #H'07,R0
+        TST         R0,R0
+        BF/S        ?short
+        OR          R8,R2
+        MOV.B       @R4+,R0
+        ADD         R5,R2
+        EXTU.B      R0,R0
+        BRA         ?copy
+        ADD         #1,R0
+?done:
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        MOV         R5,R0
+        RTS
+        SUB         R3,R0
+
+        .END

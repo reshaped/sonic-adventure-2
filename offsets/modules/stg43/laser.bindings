@@ -1,0 +1,62 @@
+text  LASER_EDITOR_ANGLE_X_LASER_ROTATION  33
+text  LASER_EDITOR_ANGLE_Y  11
+text  LASER_EDITOR_ANGLE_Z  11
+text  LASER_EDITOR_LASER_LENGTH  17
+text  LASER_EDITOR_WAIT_TIME  13
+text  LASER_EDITOR_LASER_SPEED  17
+text  LASER_TEXTURE_METEO128_13  12
+text  LASER_TEXTURE_MIU128_CW001  13
+text  LASER_TEXTURE_MIU128_CW004  13
+text  LASER_TEXTURE_MIU256_CW001  13
+text  LASER_TEXTURE_MIU64_CW005  12
+text  LASER_TEXTURE_MIU64_CW007  12
+text  LASER_TEXTURE_MIU64_CW010  12
+text  LASER_TEXTURE_MIU64_FR004  12
+text  LASER_TEXTURE_MIU128_CW005  13
+
+pointer  cosmic_laser_texlists  0x00000000  turret_texlist
+pointer  cosmic_laser_texlists  0x00000004  turret_shard_texlist
+pointer  cosmic_laser_texlists  0x00000008  turret_wreck_texlist
+pointer  cosmic_laser_texlists  0x0000000c  turret_barrel_texlist
+pointer  barrel_part  0x00000000  turret_barrel_texlist
+pointer  barrel_part  0x00000004  turret_barrel
+pointer  turret_textures  0x00000000  LASER_TEXTURE_METEO128_13
+pointer  turret_textures  0x0000000c  LASER_TEXTURE_MIU128_CW001
+pointer  turret_textures  0x00000018  LASER_TEXTURE_MIU128_CW004
+pointer  turret_textures  0x00000024  LASER_TEXTURE_MIU256_CW001
+pointer  turret_textures  0x00000030  LASER_TEXTURE_MIU64_CW005
+pointer  turret_textures  0x0000003c  LASER_TEXTURE_MIU64_CW007
+pointer  turret_textures  0x00000048  LASER_TEXTURE_MIU64_CW010
+pointer  turret_textures  0x00000054  LASER_TEXTURE_MIU64_FR004
+pointer  turret_texlist  0x00000000  turret_textures
+pointer  turret_elevating_barrel_model  0x00000000  turret_elevating_barrel_vertices
+pointer  turret_elevating_barrel_model  0x00000004  turret_elevating_barrel_polygons
+pointer  turret_elevating_barrel  0x00000004  turret_elevating_barrel_model
+pointer  turret_model  0x00000000  turret_vertices
+pointer  turret_model  0x00000004  turret_polygons
+pointer  turret_object  0x00000004  turret_model
+pointer  turret_object  0x0000002c  turret_elevating_barrel
+pointer  turret_barrel_textures  0x00000000  LASER_TEXTURE_METEO128_13
+pointer  turret_barrel_textures  0x0000000c  LASER_TEXTURE_MIU128_CW004
+pointer  turret_barrel_textures  0x00000018  LASER_TEXTURE_MIU128_CW005
+pointer  turret_barrel_textures  0x00000024  LASER_TEXTURE_MIU64_CW005
+pointer  turret_barrel_texlist  0x00000000  turret_barrel_textures
+pointer  turret_barrel  0x00000000  turret_barrel_vertices
+pointer  turret_barrel  0x00000004  turret_barrel_polygons
+pointer  turret_barrel_object  0x00000004  turret_barrel
+pointer  turret_shard_textures  0x00000000  LASER_TEXTURE_MIU128_CW004
+pointer  turret_shard_texlist  0x00000000  turret_shard_textures
+pointer  turret_shard  0x00000000  turret_shard_vertices
+pointer  turret_shard  0x00000004  turret_shard_polygons
+pointer  turret_shard_object  0x00000004  turret_shard
+pointer  turret_wreck_textures  0x00000000  LASER_TEXTURE_MIU128_CW001
+pointer  turret_wreck_textures  0x0000000c  LASER_TEXTURE_MIU128_CW004
+pointer  turret_wreck_textures  0x00000018  LASER_TEXTURE_MIU128_CW005
+pointer  turret_wreck_textures  0x00000024  LASER_TEXTURE_MIU256_CW001
+pointer  turret_wreck_textures  0x00000030  LASER_TEXTURE_MIU64_CW007
+pointer  turret_wreck_textures  0x0000003c  LASER_TEXTURE_MIU64_CW010
+pointer  turret_wreck_textures  0x00000048  LASER_TEXTURE_MIU64_FR004
+pointer  turret_wreck_texlist  0x00000000  turret_wreck_textures
+pointer  turret_wreck_model  0x00000000  turret_wreck_vertices
+pointer  turret_wreck_model  0x00000004  turret_wreck_polygons
+pointer  turret_wreck  0x00000004  turret_wreck_model

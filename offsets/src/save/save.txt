@@ -1,0 +1,2 @@
+datum  save_icon_palette  D  0x00000024  32
+datum  save_icon  D  0x00000044  512

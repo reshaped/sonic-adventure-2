@@ -1,0 +1,15 @@
+text  SLIDING_DOOR_EDITOR_ENE_ID  C  0x00000000  10
+text  SLIDING_DOOR_EDITOR_ANGLE_Y  C  0x0000000c  11
+text  SLIDING_DOOR_EDITOR_DOORMODE  C  0x00000018  12
+text  SLIDING_DOOR_EDITOR_SHUT_SPEED  C  0x00000024  14
+text  SLIDING_DOOR_TEXTURE_MIU64_PL001  C  0x00000034  12
+text  SLIDING_DOOR_TEXTURE_PR128_8  C  0x00000040  8
+text  SLIDING_DOOR_TEXTURE_PR64_6  C  0x00000048  7
+datum  sliding_door_names  D  0x00000000  36
+datum  sliding_door_texlist  D  0x00000024  8
+datum  sliding_door_polygons  D  0x0000002c  942
+datum  sliding_door_vertices  D  0x000003dc  1948
+datum  sliding_door_model  D  0x00000b78  24
+datum  sliding_door_object  D  0x00000b90  52
+datum  sliding_door_texlists  D  0x00000bc4  12
+datum  sliding_door_shapes  D  0x00000bd0  48

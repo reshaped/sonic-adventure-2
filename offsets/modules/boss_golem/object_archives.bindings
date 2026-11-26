@@ -1,0 +1,11 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_OBJTEX_GOLEM  13
+text  ARCHIVE_BOSS_PWGUAGE_TEX  17
+include  golem_object_archives
+pointer  golem_texture_groups  0x00000048  golem_texlists
+pointer  golem_texture_pvms  0x00000010  ARCHIVE_OBJTEX_GOLEM
+pointer  golem_texture_pvms  0x00000014  golem_object_texlist

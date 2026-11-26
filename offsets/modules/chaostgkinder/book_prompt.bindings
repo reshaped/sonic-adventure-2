@@ -1,0 +1,11 @@
+selector  buttons[0].message  1
+selector  buttons[1].box.id  1
+selector  buttons[1].message  2
+selector  choices[0].kind  FORM_BUTTON
+selector  choices[1].kind  FORM_BUTTON
+selector  panel.box.id  0xffffffff
+selector  panel.count  2
+
+pointer  choices  0x00000004  buttons
+pointer  choices  0x0000000c  buttons+0x1c
+pointer  panel  0x00000020  choices

@@ -1,0 +1,4 @@
+pointer  ectoplasm_texlists  0x00000000  effect_texnames+0xcc
+pointer  ectoplasm_texlists  0x00000008  effect_texnames+0x54
+pointer  ectoplasm_texlists  0x00000010  effect_texnames+0x144
+pointer  ectoplasm_sprite  0x0000001c  ectoplasm_texanim

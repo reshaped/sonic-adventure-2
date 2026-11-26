@@ -1,0 +1,16 @@
+text  CAPTURING_BULLET_ENEMY5  C  0x00000058  7
+datum  capturing_bullet_texname  D  0x00000000  12
+datum  capturing_bullet_texlist  D  0x0000000c  8
+datum  capturing_bullet_fly_polygons  D  0x00000014  298
+datum  capturing_bullet_fly_vertices  D  0x00000140  252
+datum  capturing_bullet_fly_model  D  0x0000023c  24
+datum  capturing_bullet_fly_object  D  0x00000254  52
+datum  capturing_bullet_burst_polygons  D  0x00000288  582
+datum  capturing_bullet_burst_vertices  D  0x000004d0  780
+datum  capturing_bullet_burst_model  D  0x000007dc  24
+datum  capturing_bullet_burst_object  D  0x000007f4  52
+datum  capturing_bullet_hold_polygons  D  0x00000828  714
+datum  capturing_bullet_hold_vertices  D  0x00000af4  684
+datum  capturing_bullet_hold_model  D  0x00000da0  24
+datum  capturing_bullet_hold_object  D  0x00000db8  52
+datum  capturing_bullet_shape  D  0x00000dec  48

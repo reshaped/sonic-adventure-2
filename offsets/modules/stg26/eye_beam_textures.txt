@@ -1,0 +1,2 @@
+text  DZ_EQ_LAZER32  C  0x00000000  14
+datum  textures  D  0x00000000  12

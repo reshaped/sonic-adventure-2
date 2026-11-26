@@ -1,0 +1,110 @@
+text CORE_TEXTURE_CT128_1 8
+text CORE_TEXTURE_CT256_1 8
+text CORE_TEXTURE_DZ_CC_BLACKBOX256 18
+text CORE_TEXTURE_DZ_CC_BLACKBOXLIGHT128 23
+text CORE_TEXTURE_DZ_CC_BLACKBOXLIGHTIN128 25
+text CORE_TEXTURE_DZ_CC_BLACKBOXLIGHTOUT128 26
+text CORE_TEXTURE_DZ_CC_BLACKBOXSIDE256 22
+text CORE_TEXTURE_DZ_CC_BLACKBOX_SHADOW32 24
+text CORE_TEXTURE_DZ_CC_CLEARSWITCH64 20
+text CORE_TEXTURE_DZ_CC_GOALDOOR128 18
+text CORE_TEXTURE_DZ_CC_GOALDOOR_GLASS32 23
+text CORE_TEXTURE_DZ_CC_GOALDOOR_MECHA128 24
+text CORE_TEXTURE_DZ_CC_GOALDOOR_SHAFT32 23
+text CORE_TEXTURE_DZ_CC_GOALDOOR_SIDE32 22
+text CORE_TEXTURE_DZ_CC_TIMESWITCH_CIRCLE32 26
+text CORE_TEXTURE_DZ_CC_TSWITCHA16 17
+text CORE_TEXTURE_DZ_CC_TSWITCHA32 17
+text CORE_TEXTURE_DZ_CC_TSWITCHB16 17
+text CORE_TEXTURE_DZ_CC_TSWITCHB32 17
+text CORE_TEXTURE_DZ_CC_TSWITCHBALL32 20
+text CORE_TEXTURE_DZ_CC_TSWITCHC32 17
+text CORE_TEXTURE_DZ_CC_TSWITCHD32 17
+text CORE_TEXTURE_ET64_3 7
+text CORE_TEXTURE_KD_LS_UNIT804 14
+text CORE_TEXTURE_KD_LS_UNIT805 14
+text CORE_TEXTURE_KD_LS_UNIT806 14
+text CORE_TEXTURE_KD_LS_UNIT807 14
+text CORE_TEXTURE_KD_LS_UNIT808 14
+text CORE_TEXTURE_KD_LS_UNIT809 14
+text CORE_TEXTURE_KD_LS_UNIT810 14
+text CORE_TEXTURE_KD_LS_UNIT811 14
+text CORE_TEXTURE_MIU128_CC009 13
+text CORE_TEXTURE_MIU128_CC019 13
+text CORE_TEXTURE_MIU128_CC021 13
+text CORE_TEXTURE_MIU128_CG001 13
+text CORE_TEXTURE_MIU128_CG005 13
+text CORE_TEXTURE_MIU128_CG007 13
+text CORE_TEXTURE_MIU128_CG016 13
+text CORE_TEXTURE_MIU128_CG022 13
+text CORE_TEXTURE_MIU256_CC002 13
+text CORE_TEXTURE_MIU32_CC002 12
+text CORE_TEXTURE_MIU32_MI001 12
+text CORE_TEXTURE_MIU64_CC021 12
+text CORE_TEXTURE_MIU64_CG003 12
+text CORE_TEXTURE_MIU64_CG005 12
+text CORE_TEXTURE_MIU64_CG006 12
+text CORE_TEXTURE_MIU64_CG007 12
+text CORE_TEXTURE_MIU64_CG010 12
+text CORE_TEXTURE_MIU64_CG012 12
+text CORE_TEXTURE_MIU64_CG020 12
+text CORE_TEXTURE_MIU64_CG021 12
+text CORE_TEXTURE_MIU64_EE001 12
+text CORE_TEXTURE_P_SHADOW 9
+text CORE_TEXTURE_TX_CCPOISON001 15
+
+pointer  core_object_textures_names  0x00000000  CORE_TEXTURE_CT128_1
+pointer  core_object_textures_names  0x0000000c  CORE_TEXTURE_CT256_1
+pointer  core_object_textures_names  0x00000018  CORE_TEXTURE_DZ_CC_BLACKBOX256
+pointer  core_object_textures_names  0x00000024  CORE_TEXTURE_DZ_CC_BLACKBOXLIGHT128
+pointer  core_object_textures_names  0x00000030  CORE_TEXTURE_DZ_CC_BLACKBOXLIGHTIN128
+pointer  core_object_textures_names  0x0000003c  CORE_TEXTURE_DZ_CC_BLACKBOXLIGHTOUT128
+pointer  core_object_textures_names  0x00000048  CORE_TEXTURE_DZ_CC_BLACKBOXSIDE256
+pointer  core_object_textures_names  0x00000054  CORE_TEXTURE_DZ_CC_BLACKBOX_SHADOW32
+pointer  core_object_textures_names  0x00000060  CORE_TEXTURE_DZ_CC_CLEARSWITCH64
+pointer  core_object_textures_names  0x0000006c  CORE_TEXTURE_DZ_CC_GOALDOOR128
+pointer  core_object_textures_names  0x00000078  CORE_TEXTURE_DZ_CC_GOALDOOR_GLASS32
+pointer  core_object_textures_names  0x00000084  CORE_TEXTURE_DZ_CC_GOALDOOR_MECHA128
+pointer  core_object_textures_names  0x00000090  CORE_TEXTURE_DZ_CC_GOALDOOR_SHAFT32
+pointer  core_object_textures_names  0x0000009c  CORE_TEXTURE_DZ_CC_GOALDOOR_SIDE32
+pointer  core_object_textures_names  0x000000a8  CORE_TEXTURE_DZ_CC_TIMESWITCH_CIRCLE32
+pointer  core_object_textures_names  0x000000b4  CORE_TEXTURE_DZ_CC_TSWITCHA16
+pointer  core_object_textures_names  0x000000c0  CORE_TEXTURE_DZ_CC_TSWITCHA32
+pointer  core_object_textures_names  0x000000cc  CORE_TEXTURE_DZ_CC_TSWITCHB16
+pointer  core_object_textures_names  0x000000d8  CORE_TEXTURE_DZ_CC_TSWITCHB32
+pointer  core_object_textures_names  0x000000e4  CORE_TEXTURE_DZ_CC_TSWITCHBALL32
+pointer  core_object_textures_names  0x000000f0  CORE_TEXTURE_DZ_CC_TSWITCHC32
+pointer  core_object_textures_names  0x000000fc  CORE_TEXTURE_DZ_CC_TSWITCHD32
+pointer  core_object_textures_names  0x00000108  CORE_TEXTURE_ET64_3
+pointer  core_object_textures_names  0x00000114  CORE_TEXTURE_KD_LS_UNIT804
+pointer  core_object_textures_names  0x00000120  CORE_TEXTURE_KD_LS_UNIT805
+pointer  core_object_textures_names  0x0000012c  CORE_TEXTURE_KD_LS_UNIT806
+pointer  core_object_textures_names  0x00000138  CORE_TEXTURE_KD_LS_UNIT807
+pointer  core_object_textures_names  0x00000144  CORE_TEXTURE_KD_LS_UNIT808
+pointer  core_object_textures_names  0x00000150  CORE_TEXTURE_KD_LS_UNIT809
+pointer  core_object_textures_names  0x0000015c  CORE_TEXTURE_KD_LS_UNIT810
+pointer  core_object_textures_names  0x00000168  CORE_TEXTURE_KD_LS_UNIT811
+pointer  core_object_textures_names  0x00000174  CORE_TEXTURE_MIU128_CC009
+pointer  core_object_textures_names  0x00000180  CORE_TEXTURE_MIU128_CC019
+pointer  core_object_textures_names  0x0000018c  CORE_TEXTURE_MIU128_CC021
+pointer  core_object_textures_names  0x00000198  CORE_TEXTURE_MIU128_CG001
+pointer  core_object_textures_names  0x000001a4  CORE_TEXTURE_MIU128_CG005
+pointer  core_object_textures_names  0x000001b0  CORE_TEXTURE_MIU128_CG007
+pointer  core_object_textures_names  0x000001bc  CORE_TEXTURE_MIU128_CG016
+pointer  core_object_textures_names  0x000001c8  CORE_TEXTURE_MIU128_CG022
+pointer  core_object_textures_names  0x000001d4  CORE_TEXTURE_MIU256_CC002
+pointer  core_object_textures_names  0x000001e0  CORE_TEXTURE_MIU32_CC002
+pointer  core_object_textures_names  0x000001ec  CORE_TEXTURE_MIU32_MI001
+pointer  core_object_textures_names  0x000001f8  CORE_TEXTURE_MIU64_CC021
+pointer  core_object_textures_names  0x00000204  CORE_TEXTURE_MIU64_CG003
+pointer  core_object_textures_names  0x00000210  CORE_TEXTURE_MIU64_CG005
+pointer  core_object_textures_names  0x0000021c  CORE_TEXTURE_MIU64_CG006
+pointer  core_object_textures_names  0x00000228  CORE_TEXTURE_MIU64_CG007
+pointer  core_object_textures_names  0x00000234  CORE_TEXTURE_MIU64_CG010
+pointer  core_object_textures_names  0x00000240  CORE_TEXTURE_MIU64_CG012
+pointer  core_object_textures_names  0x0000024c  CORE_TEXTURE_MIU64_CG020
+pointer  core_object_textures_names  0x00000258  CORE_TEXTURE_MIU64_CG021
+pointer  core_object_textures_names  0x00000264  CORE_TEXTURE_MIU64_EE001
+pointer  core_object_textures_names  0x00000270  CORE_TEXTURE_P_SHADOW
+pointer  core_object_textures_names  0x0000027c  CORE_TEXTURE_TX_CCPOISON001
+pointer  core_object_textures  0x00000000  core_object_textures_names

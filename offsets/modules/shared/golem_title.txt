@@ -1,0 +1,14 @@
+text  TITLE_BAR_0  C  0x00000000  9
+text  TITLE_BAR_1  C  0x0000000c  9
+text  TITLE_BAR_2  C  0x00000018  9
+text  TITLE_BAR_3  C  0x00000024  9
+text  TITLE_BAR_4  C  0x00000030  9
+text  TITLE_BAR_5  C  0x0000003c  9
+text  TITLE_BAR_6  C  0x00000048  9
+text  TITLE_LETTER_E  C  0x00000054  6
+text  TITLE_LETTER_G  C  0x0000005c  6
+text  TITLE_LETTER_L  C  0x00000064  6
+text  TITLE_LETTER_M  C  0x0000006c  6
+text  TITLE_LETTER_O  C  0x00000074  6
+datum  title_textures  D  0x00000000  144
+datum  golem_title_texlist  D  0x00000090  8

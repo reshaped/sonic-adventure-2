@@ -1,0 +1,23 @@
+text  COLONY_TEXT_MIU256_CG006  13
+text  COLONY_TEXT_MIU128_CG009  13
+text  COLONY_TEXT_MIU128_CG010  13
+text  COLONY_TEXT_MIU128_CG017  13
+text  COLONY_TEXT_MIU256_CG001  13
+text  COLONY_TEXT_MIU256_CG004  13
+text  COLONY_TEXT_MIU64_CG004  12
+text  COLONY_TEXT_MIU64_CG009  12
+text  COLONY_TEXT_MIU64_CG020  12
+pointer  spinning_drum_names  0x00000000  COLONY_TEXT_MIU256_CG006
+pointer  spinning_drum_names  0x0000000c  COLONY_TEXT_MIU128_CG009
+pointer  spinning_drum_names  0x00000018  COLONY_TEXT_MIU128_CG010
+pointer  spinning_drum_names  0x00000024  COLONY_TEXT_MIU128_CG017
+pointer  spinning_drum_names  0x00000030  COLONY_TEXT_MIU256_CG001
+pointer  spinning_drum_names  0x0000003c  COLONY_TEXT_MIU256_CG004
+pointer  spinning_drum_names  0x00000048  COLONY_TEXT_MIU64_CG004
+pointer  spinning_drum_names  0x00000054  COLONY_TEXT_MIU64_CG009
+pointer  spinning_drum_names  0x00000060  COLONY_TEXT_MIU64_CG020
+pointer  spinning_drum_texlist  0x00000000  spinning_drum_names
+pointer  spinning_drum_model  0x00000000  spinning_drum_vertices
+pointer  spinning_drum_model  0x00000004  spinning_drum_polygons
+pointer  spinning_drum_object  0x00000004  spinning_drum_model
+pointer  spinning_drum_texlists  0x00000000  spinning_drum_texlist

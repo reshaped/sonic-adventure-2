@@ -1,0 +1,25 @@
+text  CANYON_TEXT_DZ_WC_WALLPAINT_GODOWN256  26
+text  CANYON_TEXT_BRIGHT  8
+text  CANYON_TEXT_DARK  8
+pointer  board2_bright_texlist_names  0x00000000  CANYON_TEXT_DZ_WC_WALLPAINT_GODOWN256
+pointer  board2_bright_texlist  0x00000000  board2_bright_texlist_names
+pointer  board2_bright_model  0x00000000  board2_bright_vertices
+pointer  board2_bright_model  0x00000004  board2_bright_polygons
+pointer  board2_bright_object  0x00000004  board2_bright_model
+pointer  board2_dark_texlist_names  0x00000000  CANYON_TEXT_DZ_WC_WALLPAINT_GODOWN256
+pointer  board2_dark_texlist  0x00000000  board2_dark_texlist_names
+pointer  board2_dark_model  0x00000000  board2_dark_vertices
+pointer  board2_dark_model  0x00000004  board2_dark_polygons
+pointer  board2_dark_object  0x00000004  board2_dark_model
+pointer  board2_collision_faces  0x00000004  board2_collision_strips
+pointer  board2_collision_model  0x00000000  board2_collision_points
+pointer  board2_collision_model  0x00000004  board2_collision_normals
+pointer  board2_collision_model  0x0000000c  board2_collision_faces
+pointer  board2_collision_model  0x00000010  board2_collision_materials
+pointer  board2_collision  0x00000004  board2_collision_model
+pointer  board2_models  0x00000000  board2_bright_model
+pointer  board2_models  0x00000004  board2_dark_model
+pointer  board2_texlists  0x00000000  board2_bright_texlist
+pointer  board2_texlists  0x00000004  board2_dark_texlist
+pointer  board2_names  0x00000000  CANYON_TEXT_BRIGHT
+pointer  board2_names  0x00000004  CANYON_TEXT_DARK

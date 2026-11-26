@@ -1,0 +1,16 @@
+datum  triple_spring_board_polygons  D  0x00000038  794
+datum  triple_spring_board_vertices  D  0x00000354  1044
+datum  triple_spring_base_polygons  D  0x000007b4  570
+datum  triple_spring_base_vertices  D  0x000009f0  924
+datum  triple_spring_shape  D  0x00000de0  48
+text  TRIPLE_SPRING_TEXT_SIKAKE_01_128  C  0x0000003c  14
+text  TRIPLE_SPRING_TEXT_SIKAKE_02_128  C  0x0000004c  14
+text  TRIPLE_SPRING_TEXT_SIKAKE_08_64  C  0x0000005c  13
+text  TRIPLE_SPRING_TEXT_SIKAKE_15_64  C  0x0000006c  13
+datum  triple_spring_texnames  D  0x00000000  48
+datum  triple_spring_texlist  D  0x00000030  8
+datum  triple_spring_board_model  D  0x00000768  24
+datum  triple_spring_board_object  D  0x00000780  52
+datum  triple_spring_base_model  D  0x00000d8c  24
+datum  triple_spring_base_object  D  0x00000da4  52
+datum  triple_spring_texlists  D  0x00000dd8  8

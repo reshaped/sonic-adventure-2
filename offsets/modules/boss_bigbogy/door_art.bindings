@@ -1,0 +1,14 @@
+text  DOOR_ART_TEXTURE_1  20
+
+pointer  floor_textures  0x00000000  DOOR_ART_TEXTURE_1
+pointer  bigbogy_floor_door_texlist  0x00000000  floor_textures
+pointer  bigbogy_floor_door_model  0x00000000  floor_vertices
+pointer  bigbogy_floor_door_model  0x00000004  floor_polygons
+pointer  floor_door  0x00000004  bigbogy_floor_door_model
+pointer  wall_textures  0x00000000  DOOR_ART_TEXTURE_1
+pointer  bigbogy_wall_door_texlist  0x00000000  wall_textures
+pointer  bigbogy_wall_door_model  0x00000000  wall_vertices
+pointer  bigbogy_wall_door_model  0x00000004  wall_polygons
+pointer  wall_door  0x00000004  bigbogy_wall_door_model
+pointer  bigbogy_door_texlists  0x00000000  bigbogy_wall_door_texlist
+pointer  bigbogy_door_texlists  0x00000004  bigbogy_floor_door_texlist

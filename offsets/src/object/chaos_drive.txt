@@ -1,0 +1,7 @@
+datum  glow_cell  C  0x00000000  20
+text  TEXTURE_SIKAKE_24_64  C  0x00000050  13
+datum  trail_texname  D  0x00000068  12
+datum  trail_texlist  D  0x00000074  8
+datum  chaos_drive_texlists  D  0x0000007c  8
+datum  chaos_drive_trail_style  D  0x00000084  28
+datum  chaos_drive_objects  D  0x000000c0  16

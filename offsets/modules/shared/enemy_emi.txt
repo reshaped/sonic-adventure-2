@@ -1,0 +1,6 @@
+datum  emi_shapes  D  0x00000000  192
+datum  emi_pieces  D  0x000000c0  28
+datum  emi_spiked_pieces  D  0x000000dc  28
+datum  emi_cannon_pieces  D  0x000000f8  32
+datum  emi_armored_pieces  D  0x00000118  28
+datum  emi_actions  D  0x00000134  144

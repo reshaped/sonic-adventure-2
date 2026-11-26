@@ -1,0 +1,3 @@
+datum  knuckles_shaft_wall_name  C  0x00000000  12
+datum  knuckles_water_frame_name  C  0x0000000c  16
+datum  knuckles_fence_texture_name  C  0x0000001c  12

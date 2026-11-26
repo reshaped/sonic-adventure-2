@@ -1,0 +1,33 @@
+pointer  dialog_panel  0x00000000  kinder_service_textures
+pointer  dialog_panel  0x00000004  dialog_fill
+pointer  yes_style  0x00000004  kinder_service_textures
+pointer  yes_style  0x00000008  selected_face
+pointer  yes_style  0x00000010  normal_face
+pointer  no_style  0x00000004  kinder_service_textures
+pointer  no_style  0x00000008  selected_face
+pointer  no_style  0x00000010  normal_face
+pointer  notice_panel  0x00000000  kinder_service_textures
+pointer  notice_panel  0x00000004  notice_fill
+
+selector  dial_dialog.kind  WIDGET_CONTAINER
+selector  no.kind  WIDGET_BUTTON
+selector  no.id  2
+selector  notice_dialog.kind  WIDGET_CONTAINER
+selector  notice_label.kind  WIDGET_LABEL
+selector  status.kind  WIDGET_LABEL
+selector  status.id  1
+selector  title.kind  WIDGET_LABEL
+selector  yes.kind  WIDGET_BUTTON
+selector  yes.id  1
+
+pointer  dial_dialog  0x00000014  dialog_panel
+pointer  dial_dialog  0x00000018  dialog_event
+pointer  no  0x00000014  no_style
+pointer  no  0x00000018  decline_notice
+pointer  notice_dialog  0x00000014  notice_panel
+pointer  notice_dialog  0x00000018  cancel_notice
+pointer  notice_label  0x00000014  notice_text
+pointer  status  0x00000014  status_text
+pointer  title  0x00000014  title_text
+pointer  yes  0x00000014  yes_style
+pointer  yes  0x00000018  accept_notice

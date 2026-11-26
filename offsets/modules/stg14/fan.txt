@@ -1,0 +1,14 @@
+text  ROAD_TEXTURE_MIU128_RH002  C  0x0000000c  13
+text  ROAD_TEXTURE_MIU128_RH003  C  0x0000001c  13
+text  ROAD_TEXTURE_MIU128_RH010  C  0x0000002c  13
+datum  street_fan_textures  D  0x00000000  36
+datum  street_fan_texlist  D  0x00000024  8
+datum  street_fan_blades_polygons  D  0x0000002c  294
+datum  street_fan_blades_vertices  D  0x00000154  524
+datum  street_fan_blades_mesh  D  0x00000360  24
+datum  street_fan_blades  D  0x00000378  52
+datum  street_fan_polygons  D  0x000003ac  418
+datum  street_fan_vertices  D  0x00000550  572
+datum  street_fan_mesh  D  0x0000078c  24
+datum  street_fan_object  D  0x000007a4  52
+datum  highway_fan_texlists  D  0x000007d8  8

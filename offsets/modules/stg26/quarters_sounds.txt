@@ -1,0 +1,2 @@
+datum  programs  C  0x00000000  80
+datum  quarters_sounds  C  0x00000050  8

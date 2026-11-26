@@ -1,0 +1,111 @@
+pointer  approach_1  0x00000008  approach_1_points
+pointer  approach_1  0x0000000c  path_join_step
+pointer  approach_2  0x00000008  approach_2_points
+pointer  approach_2  0x0000000c  path_join_step
+pointer  approach_3  0x00000008  approach_3_points
+pointer  approach_3  0x0000000c  path_join_step
+pointer  approach_4  0x00000008  approach_4_points
+pointer  approach_4  0x0000000c  path_join_step
+pointer  rail_1  0x00000008  rail_1_points
+pointer  rail_1  0x0000000c  path_rail_init
+pointer  rail_2  0x00000008  rail_2_points
+pointer  rail_2  0x0000000c  path_rail_init
+pointer  rail_3  0x00000008  rail_3_points
+pointer  rail_3  0x0000000c  path_rail_init
+pointer  rail_4  0x00000008  rail_4_points
+pointer  rail_4  0x0000000c  path_rail_init
+pointer  metal_harbor_paths  0x00000000  approach_1
+pointer  metal_harbor_paths  0x00000004  approach_2
+pointer  metal_harbor_paths  0x00000008  approach_3
+pointer  metal_harbor_paths  0x0000000c  approach_4
+pointer  metal_harbor_paths  0x00000010  rail_1
+pointer  metal_harbor_paths  0x00000014  rail_2
+pointer  metal_harbor_paths  0x00000018  rail_3
+pointer  metal_harbor_paths  0x0000001c  rail_4
+text  TEXTURE_TX_SEA001  10
+text  TEXTURE_TX_SEA002  10
+text  TEXTURE_TX_SEA003  10
+text  TEXTURE_TX_SEA004  10
+text  TEXTURE_TX_SEA005  10
+text  TEXTURE_TX_SEA006  10
+text  TEXTURE_TX_SEA007  10
+text  TEXTURE_TX_SEA008  10
+text  TEXTURE_TX_SEA009  10
+text  TEXTURE_TX_SEA010  10
+text  TEXTURE_TX_SEA011  10
+text  TEXTURE_TX_SEA012  10
+text  TEXTURE_TX_SEA013  10
+text  TEXTURE_TX_SEA014  10
+text  TEXTURE_TX_SEA015  10
+text  TEXTURE_TX_SEA016  10
+text  TEXTURE_TX_SEA017  10
+text  TEXTURE_TX_SEA018  10
+text  TEXTURE_TX_SEA019  10
+text  TEXTURE_TX_SEA020  10
+text  TEXTURE_PRNBG8_1  9
+text  TEXTURE_PRNBG_2  8
+text  TEXTURE_BGTEX10  8
+pointer  sea_names  0x00000000  TEXTURE_TX_SEA001
+pointer  sea_names  0x0000000c  TEXTURE_TX_SEA002
+pointer  sea_names  0x00000018  TEXTURE_TX_SEA003
+pointer  sea_names  0x00000024  TEXTURE_TX_SEA004
+pointer  sea_names  0x00000030  TEXTURE_TX_SEA005
+pointer  sea_names  0x0000003c  TEXTURE_TX_SEA006
+pointer  sea_names  0x00000048  TEXTURE_TX_SEA007
+pointer  sea_names  0x00000054  TEXTURE_TX_SEA008
+pointer  sea_names  0x00000060  TEXTURE_TX_SEA009
+pointer  sea_names  0x0000006c  TEXTURE_TX_SEA010
+pointer  sea_names  0x00000078  TEXTURE_TX_SEA011
+pointer  sea_names  0x00000084  TEXTURE_TX_SEA012
+pointer  sea_names  0x00000090  TEXTURE_TX_SEA013
+pointer  sea_names  0x0000009c  TEXTURE_TX_SEA014
+pointer  sea_names  0x000000a8  TEXTURE_TX_SEA015
+pointer  sea_names  0x000000b4  TEXTURE_TX_SEA016
+pointer  sea_names  0x000000c0  TEXTURE_TX_SEA017
+pointer  sea_names  0x000000cc  TEXTURE_TX_SEA018
+pointer  sea_names  0x000000d8  TEXTURE_TX_SEA019
+pointer  sea_names  0x000000e4  TEXTURE_TX_SEA020
+pointer  sea_texlist  0x00000000  sea_names
+include  sea_mesh
+pointer  sea_object  0x00000004  sea_model
+pointer  sky_names  0x00000000  TEXTURE_PRNBG8_1
+pointer  sky_names  0x0000000c  TEXTURE_PRNBG_2
+pointer  sky_texlist  0x00000000  sky_names
+pointer  sky_model  0x00000000  sky_vertices
+pointer  sky_model  0x00000004  sky_polygons
+pointer  sky_object  0x00000004  sky_model
+pointer  background_archive_names  0x00000000  TEXTURE_PRNBG8_1
+pointer  background_archive_names  0x0000000c  TEXTURE_PRNBG_2
+pointer  background_archive_names  0x00000018  TEXTURE_TX_SEA001
+pointer  background_archive_names  0x00000024  TEXTURE_TX_SEA002
+pointer  background_archive_names  0x00000030  TEXTURE_TX_SEA003
+pointer  background_archive_names  0x0000003c  TEXTURE_TX_SEA004
+pointer  background_archive_names  0x00000048  TEXTURE_TX_SEA005
+pointer  background_archive_names  0x00000054  TEXTURE_TX_SEA006
+pointer  background_archive_names  0x00000060  TEXTURE_TX_SEA007
+pointer  background_archive_names  0x0000006c  TEXTURE_TX_SEA008
+pointer  background_archive_names  0x00000078  TEXTURE_TX_SEA009
+pointer  background_archive_names  0x00000084  TEXTURE_TX_SEA010
+pointer  background_archive_names  0x00000090  TEXTURE_TX_SEA011
+pointer  background_archive_names  0x0000009c  TEXTURE_TX_SEA012
+pointer  background_archive_names  0x000000a8  TEXTURE_TX_SEA013
+pointer  background_archive_names  0x000000b4  TEXTURE_TX_SEA014
+pointer  background_archive_names  0x000000c0  TEXTURE_TX_SEA015
+pointer  background_archive_names  0x000000cc  TEXTURE_TX_SEA016
+pointer  background_archive_names  0x000000d8  TEXTURE_TX_SEA017
+pointer  background_archive_names  0x000000e4  TEXTURE_TX_SEA018
+pointer  background_archive_names  0x000000f0  TEXTURE_TX_SEA019
+pointer  background_archive_names  0x000000fc  TEXTURE_TX_SEA020
+pointer  background_archive  0x00000000  background_archive_names
+pointer  background_lists  0x00000000  sea_texlist
+pointer  background_lists  0x00000004  sky_texlist
+pointer  background_groups  0x00000000  background_lists
+pointer  background_pvms  0x00000000  TEXTURE_BGTEX10
+pointer  background_pvms  0x00000004  background_archive
+pointer  kill_faces  0x00000004  kill_strip
+pointer  kill_model  0x00000000  kill_points
+pointer  kill_model  0x00000004  kill_normals
+pointer  kill_model  0x0000000c  kill_faces
+pointer  kill_model  0x00000010  kill_material
+pointer  kill_plane  0x00000004  kill_model
+pointer  metal_harbor_kill_areas  0x00000004  kill_plane

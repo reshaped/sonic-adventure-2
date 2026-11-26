@@ -1,0 +1,4 @@
+datum  shots  D  0x00000004  144
+datum  intro  D  0x00000094  24
+datum  charge  D  0x000000ac  24
+datum  defeat  D  0x000000c4  24

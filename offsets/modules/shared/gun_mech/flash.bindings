@@ -1,0 +1,3 @@
+pointer  colored_flash_mesh  0x00000000  colored_flash_vertices
+pointer  colored_flash_mesh  0x00000004  colored_flash_polygons
+pointer  colored_flash  0x00000004  colored_flash_mesh

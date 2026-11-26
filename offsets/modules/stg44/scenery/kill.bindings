@@ -1,0 +1,6 @@
+pointer  mad_space_kill_object_meshsets  0x00000004  mad_space_kill_object_faces
+pointer  mad_space_kill_object_model  0x00000000  mad_space_kill_object_points
+pointer  mad_space_kill_object_model  0x00000004  mad_space_kill_object_normals
+pointer  mad_space_kill_object_model  0x0000000c  mad_space_kill_object_meshsets
+pointer  mad_space_kill_object_model  0x00000010  mad_space_kill_object_materials
+pointer  mad_space_kill_object  0x00000004  mad_space_kill_object_model

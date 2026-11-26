@@ -1,0 +1,3 @@
+pointer  shot_sprite  0x00000018  grobo_eff_texlist
+pointer  shot_sprite  0x0000001c  shot_cell
+pointer  charge_anim  0x00000010  charge_anim_uvs

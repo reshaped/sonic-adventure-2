@@ -1,0 +1,5 @@
+datum  beginner_races  D  0x00000000  240
+datum  jewel_races  D  0x000000f0  600
+datum  challenge_races  D  0x00000348  240
+datum  dark_land_races  D  0x00000438  80
+datum  hero_land_races  D  0x00000488  80

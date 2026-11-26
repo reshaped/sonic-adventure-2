@@ -1,0 +1,3 @@
+datum  bar  D  0x00000000  256
+datum  name  D  0x00000100  208
+datum  bigbogy_title  D  0x000001d0  44

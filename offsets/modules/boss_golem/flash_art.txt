@@ -1,0 +1,9 @@
+datum  golem_flash_texture  C  0x00000000  12
+datum  flash_textures  D  0x00000000  12
+datum  golem_flash_texlist  D  0x0000000c  8
+datum  flash_polygons  D  0x00000014  426
+datum  flash_vertices  D  0x000001c0  780
+datum  flash_model  D  0x000004cc  24
+datum  golem_flash_object  D  0x000004e4  52
+datum  flash_uvs  D  0x00000518  292
+datum  golem_flash_anim  D  0x0000063c  36

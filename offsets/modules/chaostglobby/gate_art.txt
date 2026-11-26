@@ -1,0 +1,8 @@
+datum  lobby_dark_arch_polygons  D  0x00000000  21238
+datum  lobby_dark_arch_vertices  D  0x000052f8  35788
+datum  lobby_dark_arch_model  D  0x0000dec4  24
+datum  lobby_dark_arch  D  0x0000dedc  52
+datum  lobby_dark_threshold_polygons  D  0x0000df10  310
+datum  lobby_dark_threshold_vertices  D  0x0000e048  412
+datum  lobby_dark_threshold_model  D  0x0000e1e4  24
+datum  lobby_dark_threshold  D  0x0000e1fc  52

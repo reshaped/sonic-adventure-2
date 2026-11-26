@@ -1,0 +1,10 @@
+datum  solid_box_polygons  D  0x00000020  166
+datum  solid_box_vertices  D  0x000000c8  204
+text  SOLID_BOX_TEXT_SIKAKE_46_128  C  0x0000000c  14
+text  SOLID_BOX_TEXT_SIKAKE_47_128  C  0x0000001c  14
+datum  solid_box_texnames  D  0x00000000  24
+datum  solid_box_texlist  D  0x00000018  8
+datum  solid_box_model  D  0x00000194  24
+datum  solid_box_object  D  0x000001ac  52
+datum  solid_box_texlists  D  0x000001e0  8
+datum  solid_box_shapes  D  0x000001e8  48

@@ -1,0 +1,3 @@
+pointer  light_mesh  0x00000000  light_vertices
+pointer  light_mesh  0x00000004  light_polygons
+pointer  unused_path_light  0x00000004  light_mesh

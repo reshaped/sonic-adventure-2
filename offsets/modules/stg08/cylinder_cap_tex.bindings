@@ -1,0 +1,6 @@
+pointer  security_cylinder_cap_model  0x00000000  security_cylinder_cap_vertices
+pointer  security_cylinder_cap_model  0x00000004  security_cylinder_cap_polygons
+pointer  security_cylinder_cap_object  0x00000004  security_cylinder_cap_model
+pointer  textures  0x00000000  security_miu64_ig011
+pointer  textures  0x0000000c  security_miu64_sh001
+pointer  security_cylinder_cap_texlist  0x00000000  textures

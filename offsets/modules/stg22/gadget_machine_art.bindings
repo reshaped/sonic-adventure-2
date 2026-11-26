@@ -1,0 +1,39 @@
+text  GADGET_MACHINE_ART_TEXTURE_1  13
+text  GADGET_MACHINE_ART_TEXTURE_2  12
+text  GADGET_MACHINE_ART_TEXTURE_3  12
+text  GADGET_MACHINE_ART_TEXTURE_4  12
+text  GADGET_MACHINE_ART_TEXTURE_5  12
+
+pointer  textures  0x00000000  GADGET_MACHINE_ART_TEXTURE_1
+pointer  textures  0x0000000c  GADGET_MACHINE_ART_TEXTURE_2
+pointer  textures  0x00000018  GADGET_MACHINE_ART_TEXTURE_3
+pointer  textures  0x00000024  GADGET_MACHINE_ART_TEXTURE_4
+pointer  textures  0x00000030  GADGET_MACHINE_ART_TEXTURE_5
+pointer  gadget_machine_texlist  0x00000000  textures
+pointer  gadget_machine_object_node_6_mesh  0x00000000  gadget_machine_object_node_6_vertices
+pointer  gadget_machine_object_node_6_mesh  0x00000004  gadget_machine_object_node_6_polygons
+pointer  gadget_machine_object_node_6  0x00000004  gadget_machine_object_node_6_mesh
+pointer  gadget_machine_object_node_5_mesh  0x00000000  gadget_machine_object_node_5_vertices
+pointer  gadget_machine_object_node_5_mesh  0x00000004  gadget_machine_object_node_5_polygons
+pointer  gadget_machine_object_node_5  0x00000004  gadget_machine_object_node_5_mesh
+pointer  gadget_machine_object_node_5  0x00000030  gadget_machine_object_node_6
+pointer  gadget_machine_object_node_4_mesh  0x00000000  gadget_machine_object_node_4_vertices
+pointer  gadget_machine_object_node_4_mesh  0x00000004  gadget_machine_object_node_4_polygons
+pointer  gadget_machine_object_node_4  0x00000004  gadget_machine_object_node_4_mesh
+pointer  gadget_machine_object_node_4  0x00000030  gadget_machine_object_node_5
+pointer  gadget_machine_object_node_3_mesh  0x00000000  gadget_machine_object_node_3_vertices
+pointer  gadget_machine_object_node_3_mesh  0x00000004  gadget_machine_object_node_3_polygons
+pointer  gadget_machine_object_node_3  0x00000004  gadget_machine_object_node_3_mesh
+pointer  gadget_machine_object_node_3  0x00000030  gadget_machine_object_node_4
+pointer  gadget_machine_object_node_2_mesh  0x00000000  gadget_machine_object_node_2_vertices
+pointer  gadget_machine_object_node_2_mesh  0x00000004  gadget_machine_object_node_2_polygons
+pointer  gadget_machine_object_node_2  0x00000004  gadget_machine_object_node_2_mesh
+pointer  gadget_machine_object_node_2  0x00000030  gadget_machine_object_node_3
+pointer  gadget_machine_object_node_1_mesh  0x00000000  gadget_machine_object_node_1_vertices
+pointer  gadget_machine_object_node_1_mesh  0x00000004  gadget_machine_object_node_1_polygons
+pointer  gadget_machine_object_node_1  0x00000004  gadget_machine_object_node_1_mesh
+pointer  gadget_machine_object_node_1  0x00000030  gadget_machine_object_node_2
+pointer  gadget_machine_mesh  0x00000000  gadget_machine_vertices
+pointer  gadget_machine_mesh  0x00000004  gadget_machine_polygons
+pointer  gadget_machine_object  0x00000004  gadget_machine_mesh
+pointer  gadget_machine_object  0x0000002c  gadget_machine_object_node_1

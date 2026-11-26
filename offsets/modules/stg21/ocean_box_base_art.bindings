@@ -1,0 +1,3 @@
+pointer  box_base_model  0x00000000  box_base_vertices
+pointer  box_base_model  0x00000004  box_base_polygons
+pointer  box_base_object  0x00000004  box_base_model

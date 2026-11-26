@@ -1,0 +1,6 @@
+pointer  pieces  0x00000000  green_hill_batabata_piece_0
+pointer  pieces  0x00000004  green_hill_batabata_piece_1
+pointer  pieces  0x00000008  green_hill_batabata_piece_2
+pointer  pieces  0x0000000c  green_hill_batabata_body_model
+pointer  actions  0x00000000  green_hill_batabata_flight_motion
+pointer  actions  0x00000010  green_hill_batabata_flight_motion

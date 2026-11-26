@@ -1,0 +1,34 @@
+text TAILS_TITLE_ARCHIVE 15
+text EGGMAN_TITLE_ARCHIVE 16
+text WALKER_TITLE_T 10
+text WALKER_TITLE_A 10
+text WALKER_TITLE_I 10
+text WALKER_TITLE_L 10
+text WALKER_TITLE_S 10
+text WALKER_TITLE_D 10
+text WALKER_TITLE_R 10
+text WALKER_TITLE_DOT 12
+text WALKER_TITLE_E 10
+text WALKER_TITLE_G 10
+text WALKER_TITLE_M 10
+text WALKER_TITLE_N 10
+
+pointer  tails_title_texnames  0x00000000  WALKER_TITLE_T
+pointer  tails_title_texnames  0x0000000c  WALKER_TITLE_A
+pointer  tails_title_texnames  0x00000018  WALKER_TITLE_I
+pointer  tails_title_texnames  0x00000024  WALKER_TITLE_L
+pointer  tails_title_texnames  0x00000030  WALKER_TITLE_S
+pointer  tails_title_texlist  0x00000000  tails_title_texnames
+pointer  eggman_title_texnames  0x00000000  WALKER_TITLE_D
+pointer  eggman_title_texnames  0x0000000c  WALKER_TITLE_R
+pointer  eggman_title_texnames  0x00000018  WALKER_TITLE_DOT
+pointer  eggman_title_texnames  0x00000024  WALKER_TITLE_E
+pointer  eggman_title_texnames  0x00000030  WALKER_TITLE_G
+pointer  eggman_title_texnames  0x0000003c  WALKER_TITLE_M
+pointer  eggman_title_texnames  0x00000048  WALKER_TITLE_A
+pointer  eggman_title_texnames  0x00000054  WALKER_TITLE_N
+pointer  eggman_title_texlist  0x00000000  eggman_title_texnames
+pointer  tails_title  0x00000000  tails_letters
+pointer  tails_title  0x00000018  tails_title_texlist
+pointer  eggman_title  0x00000000  eggman_letters
+pointer  eggman_title  0x00000018  eggman_title_texlist

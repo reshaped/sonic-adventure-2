@@ -1,0 +1,7 @@
+text  MONEY_TEXTURE_MIU64_SH011  12
+
+pointer  security_money_object_model  0x00000000  security_money_object_vertices
+pointer  security_money_object_model  0x00000004  security_money_object_polygons
+pointer  security_money_object  0x00000004  security_money_object_model
+pointer  texture  0x00000000  MONEY_TEXTURE_MIU64_SH011
+pointer  security_money_texlist  0x00000000  texture

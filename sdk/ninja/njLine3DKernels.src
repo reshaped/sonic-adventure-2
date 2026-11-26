@@ -1,0 +1,317 @@
+; the kernels of njDrawLine3DExSetStrip and njDrawLine3DExSetList.
+; njCalcPoint3DLine projects points, and njCalcLine3D and njCalcLine3DClip
+; send lines between them. a line goes out at line_cursor as an untextured
+; sprite, a quad that reaches line_half_width to each side of the line.
+; line_cursor then moves past it. each kernel needs FPSCR.SZ clear, and leaves
+; it so
+;
+; a sprite's corners A and B lie to one side of the line, at its first and
+; second points. C and D lie to the other side, at its second and first. PREF
+; of a store queue address sends the QUEUE_BYTES block that holds it, and a
+; sprite takes two blocks. the kernels write its first SPRITE_WRITTEN bytes:
+; its parameter control word, A's, B's and C's x, y and 1/z, and D's x and y.
+; the rest of its second block goes unwritten
+
+; the bytes of a struct line_point and of two
+POINT_BYTES:        .EQU    16
+PAIR_BYTES:         .EQU    32
+; the bytes of a store queue's block, and of the part of a sprite the kernels
+; write
+QUEUE_BYTES:        .EQU    32
+SPRITE_WRITTEN:     .EQU    48
+; the parameter control word of a strip's last vertex
+KM_VERTEXPARAM_ENDOFSTRIP:  .EQU    H'F0000000
+
+        .IMPORT     _line_projection
+        .IMPORT     _line_cursor
+        .IMPORT     _line_half_width
+        .IMPORT     _njCalcLine3DNearClip
+        .EXPORT     _njCalcPoint3DLine
+        .EXPORT     _njCalcLine3D
+        .EXPORT     _njCalcLine3DClip
+        .SECTION    PSG,CODE,ALIGN=4
+
+; Int njCalcPoint3DLine(const NJS_POINT3 *points, struct line_point *result,
+;                       Int count)
+; each pass projects two points into one 32-byte cache line of result
+; @asm opcode: movca, MOVCA.L at 0x8c12e1ec takes each pair's cache line
+; without reading it
+_njCalcPoint3DLine:
+        MOV         #0,R0
+        MOV.L       projection,R1
+        ADD         #POINT_BYTES,R5
+        FMOV.S      @R1+,FR4
+        FMOV.S      @R1+,FR5
+        FMOV.S      @R1+,FR6
+        FMOV.S      @R1+,FR7
+project_pair:
+        FMOV.S      @R4+,FR0
+        FMOV.S      @R4+,FR1
+        FMOV.S      @R4+,FR2
+        FLDI1       FR3
+        FTRV        XMTRX,FV0
+        MOVCA.L     R0,@R5
+        FSCHG
+        FCMP/GT     FR3,FR2
+        FDIV        FR2,FR3
+        BT          first_in_front
+        ADD         #1,R0
+first_in_front:
+        FMUL        FR4,FR0
+        FMOV        DR2,@-R5
+        FMUL        FR3,FR0
+        FADD        FR6,FR0
+        FMUL        FR5,FR1
+        DT          R6
+        FMUL        FR3,FR1
+        FADD        FR7,FR1
+        FMOV        DR0,@-R5
+        FSCHG
+        ADD         #PAIR_BYTES,R5
+        BT          projection_done
+        FMOV.S      @R4+,FR0
+        FMOV.S      @R4+,FR1
+        FMOV.S      @R4+,FR2
+        FLDI1       FR3
+        FTRV        XMTRX,FV0
+        FSCHG
+        FCMP/GT     FR3,FR2
+        FDIV        FR2,FR3
+        BT          second_in_front
+        ADD         #1,R0
+second_in_front:
+        FMUL        FR4,FR0
+        FMOV        DR2,@-R5
+        FMUL        FR3,FR0
+        FADD        FR6,FR0
+        FMUL        FR5,FR1
+        DT          R6
+        FMUL        FR3,FR1
+        FADD        FR7,FR1
+        FMOV        DR0,@-R5
+        FSCHG
+        BF/S        project_pair
+        ADD         #PAIR_BYTES,R5
+projection_done:
+        RTS
+        NOP
+projection:
+        .DATA.L     _line_projection
+; no path reaches the RTS and NOP below, which SHC writes after an inline body
+        RTS
+        NOP
+
+; void njCalcLine3D(const struct line_point *points, Int count, Int stride)
+; stride is POINT_BYTES for a strip, and PAIR_BYTES for a list
+; @asm epilogue: dead-return, the RTS at 0x8c12e300 follows the return at
+; 0x8c12e2ec and its pool
+_njCalcLine3D:
+        FMOV.S      FR8,@-R15
+        FMOV.S      FR9,@-R15
+        FMOV.S      FR10,@-R15
+        FMOV.S      FR11,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        MOV         R5,R7
+        ADD         #-PAIR_BYTES,R6
+        MOV.L       batch_cursor,R2
+        MOV.L       @R2,R5
+        MOV.L       batch_width,R0
+        FMOV.S      @R0,FR15
+        MOV.L       batch_command,R0
+        MOV.L       @R0,R1
+next_line:
+        FSCHG
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        FMOV        @R4+,DR4
+        FMOV        @R4+,DR6
+        FSCHG
+        PREF        @R4
+; FR8 and FR9 take the line's direction on the screen, line_half_width long
+        FMOV.S      FR4,FR8
+        FSUB        FR0,FR8
+        FMOV.S      FR5,FR9
+        FSUB        FR1,FR9
+        FMOV.S      FR8,FR10
+        FMUL        FR8,FR10
+        FMOV.S      FR9,FR11
+        FMUL        FR9,FR11
+        FADD        FR10,FR11
+        FSRRA       FR11
+        ADD         R6,R4
+        DT          R7
+        ADD         #QUEUE_BYTES,R5
+        FMUL        FR11,FR8
+        FMUL        FR15,FR8
+        FMUL        FR11,FR9
+        FMUL        FR15,FR9
+        FMOV.S      FR4,FR12
+        FSUB        FR9,FR12
+        FMOV.S      FR5,FR13
+        FSUB        FR8,FR13
+        FMOV.S      FR4,FR14
+        FADD        FR9,FR14
+        FMOV.S      FR12,@-R5
+        FMOV.S      FR7,@-R5
+        FMOV.S      FR13,@-R5
+        FMOV.S      FR14,@-R5
+        FMOV.S      FR1,FR12
+        FSUB        FR8,FR12
+        FMOV.S      FR0,FR13
+        FADD        FR9,FR13
+        FMOV.S      FR3,@-R5
+        FMOV.S      FR12,@-R5
+        FMOV.S      FR13,@-R5
+        MOV.L       R1,@-R5
+        PREF        @R5
+        ADD         #SPRITE_WRITTEN,R5
+        FMOV.S      FR1,FR12
+        FADD        FR8,FR12
+        FMOV.S      FR0,FR13
+        FSUB        FR9,FR13
+        FMOV.S      FR5,FR14
+        FADD        FR8,FR14
+        FMOV.S      FR12,@-R5
+        FMOV.S      FR13,@-R5
+        FMOV.S      FR7,@-R5
+        FMOV.S      FR14,@-R5
+        PREF        @R5
+        BF/S        next_line
+        ADD         #QUEUE_BYTES,R5
+        MOV.L       R5,@R2
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        FMOV.S      @R15+,FR11
+        FMOV.S      @R15+,FR10
+        FMOV.S      @R15+,FR9
+        FMOV.S      @R15+,FR8
+        RTS
+        NOP
+batch_cursor:
+        .DATA.L     _line_cursor
+batch_width:
+        .DATA.L     _line_half_width
+batch_command:
+        .DATA.L     end_of_strip
+end_of_strip:
+        .DATA.L     KM_VERTEXPARAM_ENDOFSTRIP
+        RTS
+        NOP
+
+; void njCalcLine3DClip(const struct line_point *points)
+; @asm epilogue: dead-return, the RTS at 0x8c12e3d0 follows the return at
+; 0x8c12e3c0 and its pool
+_njCalcLine3DClip:
+        STS.L       PR,@-R15
+        FMOV.S      FR8,@-R15
+        FMOV.S      FR9,@-R15
+        FMOV.S      FR10,@-R15
+        FMOV.S      FR11,@-R15
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        MOV         R4,R1
+        FSCHG
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        FMOV        @R4+,DR4
+        FMOV        @R4+,DR6
+        FSCHG
+        FLDI1       FR10
+        FCMP/GT     FR2,FR10
+        BT          first_behind
+        FCMP/GT     FR6,FR10
+        BF          write_quad
+        BSR         _njCalcLine3DNearClip
+        MOV         R1,R4
+        BRA         clipped_done
+        NOP
+first_behind:
+        FCMP/GT     FR6,FR10
+        BT          clipped_done
+        BSR         _njCalcLine3DNearClip
+        MOV         R1,R4
+        BRA         clipped_done
+        NOP
+write_quad:
+        FMOV.S      FR4,FR8
+        FSUB        FR0,FR8
+        FMOV.S      FR5,FR9
+        FSUB        FR1,FR9
+        FMOV.S      FR8,FR10
+        FMUL        FR8,FR10
+        FMOV.S      FR9,FR11
+        FMUL        FR9,FR11
+        FADD        FR10,FR11
+        MOV.L       clipped_cursor,R2
+        FSRRA       FR11
+        MOV.L       @R2,R5
+        MOV.L       clipped_width,R0
+        FMOV.S      @R0,FR15
+        MOV.L       clipped_command,R0
+        MOV.L       @R0,R1
+        ADD         #QUEUE_BYTES,R5
+        FMUL        FR11,FR8
+        FMUL        FR15,FR8
+        FMUL        FR11,FR9
+        FMUL        FR15,FR9
+        FMOV.S      FR4,FR12
+        FSUB        FR9,FR12
+        FMOV.S      FR5,FR13
+        FSUB        FR8,FR13
+        FMOV.S      FR4,FR14
+        FADD        FR9,FR14
+        FMOV.S      FR12,@-R5
+        FMOV.S      FR7,@-R5
+        FMOV.S      FR13,@-R5
+        FMOV.S      FR14,@-R5
+        FMOV.S      FR1,FR12
+        FSUB        FR8,FR12
+        FMOV.S      FR0,FR13
+        FADD        FR9,FR13
+        FMOV.S      FR3,@-R5
+        FMOV.S      FR12,@-R5
+        FMOV.S      FR13,@-R5
+        MOV.L       R1,@-R5
+        PREF        @R5
+        ADD         #SPRITE_WRITTEN,R5
+        FMOV.S      FR1,FR12
+        FADD        FR8,FR12
+        FMOV.S      FR0,FR13
+        FSUB        FR9,FR13
+        FMOV.S      FR5,FR14
+        FADD        FR8,FR14
+        FMOV.S      FR12,@-R5
+        FMOV.S      FR13,@-R5
+        FMOV.S      FR7,@-R5
+        FMOV.S      FR14,@-R5
+        PREF        @R5
+        ADD         #QUEUE_BYTES,R5
+        MOV.L       R5,@R2
+clipped_done:
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        FMOV.S      @R15+,FR11
+        FMOV.S      @R15+,FR10
+        FMOV.S      @R15+,FR9
+        FMOV.S      @R15+,FR8
+        LDS.L       @R15+,PR
+        RTS
+        NOP
+clipped_cursor:
+        .DATA.L     _line_cursor
+clipped_width:
+        .DATA.L     _line_half_width
+clipped_command:
+        .DATA.L     end_of_strip
+        RTS
+        NOP
+        .END

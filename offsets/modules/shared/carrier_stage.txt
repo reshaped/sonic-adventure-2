@@ -1,0 +1,15 @@
+datum  background_names  D  0x00000000  264
+datum  background_texlist  D  0x00000108  8
+datum  sky_builds  D  0x00000114  16
+datum  background_group  D  0x00000124  12
+datum  background_groups  D  0x00000130  8
+datum  background_pvms  D  0x00000138  16
+datum  water_material  D  0x00000148  20
+datum  water_indices  D  0x0000015c  10
+datum  water_mesh  D  0x00000168  24
+datum  water_corners  D  0x00000180  48
+datum  water_normals  D  0x000001b0  48
+datum  water_plane  D  0x000001e0  40
+datum  water_object  D  0x00000208  52
+datum  kill_areas_on_deck  D  0x0000023c  16
+datum  deck_lights  D  0x0000024c  64

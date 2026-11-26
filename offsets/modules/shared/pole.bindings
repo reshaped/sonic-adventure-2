@@ -1,0 +1,17 @@
+text  CANYON_TEXT_DZ_WC_SHADOW_SQ32  18
+text  CANYON_TEXT_KD_NDE_HASIRA1_VQ  18
+text  CANYON_TEXT_KD_NDE_KABEPIC2_VQ  19
+pointer  pole_texlist_names  0x00000000  CANYON_TEXT_DZ_WC_SHADOW_SQ32
+pointer  pole_texlist_names  0x0000000c  CANYON_TEXT_KD_NDE_HASIRA1_VQ
+pointer  pole_texlist_names  0x00000018  CANYON_TEXT_KD_NDE_KABEPIC2_VQ
+pointer  pole_texlist  0x00000000  pole_texlist_names
+pointer  pole_model  0x00000000  pole_vertices
+pointer  pole_model  0x00000004  pole_polygons
+pointer  pole_object  0x00000004  pole_model
+pointer  pole_collision_faces  0x00000004  pole_collision_strips
+pointer  pole_collision_model  0x00000000  pole_collision_points
+pointer  pole_collision_model  0x00000004  pole_collision_normals
+pointer  pole_collision_model  0x0000000c  pole_collision_faces
+pointer  pole_collision_model  0x00000010  pole_collision_materials
+pointer  pole_collision  0x00000004  pole_collision_model
+pointer  pole_texlists  0x00000000  pole_texlist

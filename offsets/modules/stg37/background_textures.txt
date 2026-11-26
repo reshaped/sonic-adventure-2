@@ -1,0 +1,3 @@
+datum  background_slots  D  0x00000000  108
+datum  core_rouge_background_textures  D  0x0000006c  8
+datum  core_rouge_background_lists  D  0x00000074  88

@@ -1,0 +1,49 @@
+; the boot ROM's configuration services. each entry puts its service's number
+; in R7 and jumps to the boot ROM's entry for the services, which returns to
+; the caller. R4 to R6 reach the service as the caller left them. shinobi.h
+; states kbCfgIni's and kbCfgGetId's contracts. no header declares
+; kbCfgGetIcon
+
+        .EXPORT     _kbCfgIni
+        .EXPORT     _kbCfgGetIcon
+        .EXPORT     _kbCfgGetId
+
+; the address of the word that holds the boot ROM's entry for these services
+CFG_VECTOR:     .EQU    H'8C0000B0
+; the services' numbers
+CFG_INI:        .EQU    0
+CFG_GET_ICON:   .EQU    2
+CFG_GET_ID:     .EQU    3
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; Sint32 kbCfgIni(Sint32 permit)
+; @asm operand: integer-constant, MOV.L at 0x8c13738c loads CFG_INI, 0, from
+; the pool
+_kbCfgIni:
+        MOV.L       #CFG_INI,R7
+        MOV.L       #CFG_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint32 kbCfgGetIcon(Sint32 number, void *pbuf)
+; @asm operand: integer-constant, MOV.L at 0x8c1373a0 loads CFG_GET_ICON, 2,
+; from the pool
+_kbCfgGetIcon:
+        MOV.L       #CFG_GET_ICON,R7
+        MOV.L       #CFG_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+
+; Sint8 *kbCfgGetId(void)
+; @asm operand: integer-constant, MOV.L at 0x8c1373b4 loads CFG_GET_ID, 3,
+; from the pool
+_kbCfgGetId:
+        MOV.L       #CFG_GET_ID,R7
+        MOV.L       #CFG_VECTOR,R0
+        MOV.L       @R0,R0
+        JMP         @R0
+        NOP
+        .END

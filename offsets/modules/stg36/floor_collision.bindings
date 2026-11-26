@@ -1,0 +1,6 @@
+pointer  floor_meshset  0x00000004  floor_faces
+pointer  floor_model  0x00000000  floor_points
+pointer  floor_model  0x00000004  floor_normals
+pointer  floor_model  0x0000000c  floor_meshset
+pointer  floor_model  0x00000010  floor_material
+pointer  tails_floor_template  0x00000004  floor_model

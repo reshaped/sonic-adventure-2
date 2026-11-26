@@ -1,0 +1,15 @@
+text  CHIN_TEX_KD_DL_HASIRA3_VQ  C  0x00000000  17
+text  CHIN_TEX_KD_DL_IDO2_VQ  C  0x00000014  14
+datum  chin_texlist_names  D  0x00000000  24
+datum  chin_texlist  D  0x00000018  8
+datum  chin_polygons  D  0x00000020  354
+datum  chin_vertices  D  0x00000184  652
+datum  chin_model  D  0x00000410  24
+datum  chin_object  D  0x00000428  52
+datum  chin_collision_materials  D  0x0000045c  20
+datum  chin_collision_strips  D  0x00000470  106
+datum  chin_collision_faces  D  0x000004dc  24
+datum  chin_collision_points  D  0x000004f4  144
+datum  chin_collision_normals  D  0x00000584  144
+datum  chin_collision_model  D  0x00000614  40
+datum  chin_collision  D  0x0000063c  52

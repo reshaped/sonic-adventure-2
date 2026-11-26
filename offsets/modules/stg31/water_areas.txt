@@ -1,0 +1,14 @@
+datum  water_a_material  D  0x00000000  20
+datum  water_a_strips  D  0x00000014  42
+datum  water_a_meshes  D  0x00000040  24
+datum  water_a_points  D  0x00000058  204
+datum  water_a_normals  D  0x00000124  204
+datum  water_a_model  D  0x000001f0  40
+datum  green_hill_water_area_a  D  0x00000218  52
+datum  water_b_material  D  0x0000024c  20
+datum  water_b_strips  D  0x00000260  60
+datum  water_b_meshes  D  0x0000029c  24
+datum  water_b_points  D  0x000002b4  216
+datum  water_b_normals  D  0x0000038c  216
+datum  water_b_model  D  0x00000464  40
+datum  green_hill_water_area_b  D  0x0000048c  52

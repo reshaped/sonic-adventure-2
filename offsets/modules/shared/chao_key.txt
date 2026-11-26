@@ -1,0 +1,14 @@
+datum  chao_key_glow_polygons  D  0x0000002c  50
+datum  chao_key_glow_vertices  D  0x00000060  108
+datum  chao_key_polygons  D  0x00000118  374
+datum  chao_key_vertices  D  0x00000290  1260
+text  CHAO_KEY_TEXT_SIKAKE_36_32  C  0x0000002c  13
+text  CHAO_KEY_TEXT_SIKAKE_40_64  C  0x0000003c  13
+text  CHAO_KEY_TEXT_SIKAKE_42_32  C  0x0000004c  13
+datum  chao_key_texnames  D  0x00000000  36
+datum  chao_key_texlist  D  0x00000024  8
+datum  chao_key_glow_model  D  0x000000cc  24
+datum  chao_key_glow_object  D  0x000000e4  52
+datum  chao_key_model  D  0x0000077c  24
+datum  chao_key_object  D  0x00000794  52
+datum  chao_key_texlists  D  0x000007c8  8

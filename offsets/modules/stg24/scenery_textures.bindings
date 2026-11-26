@@ -1,0 +1,7 @@
+pointer  engine_kazobj_texlists  0x00000000  kazobj_texlist_0
+pointer  engine_kazobj_texlists  0x00000004  kazobj_texlist_1
+pointer  engine_kazobj_texlists  0x00000008  kazobj_texlist_2
+pointer  engine_kazobj_texlists  0x0000000c  kazobj_texlist_3
+pointer  engine_kazobj_texlists  0x00000010  kazobj_texlist_5
+pointer  engine_kazobj_texlists  0x00000014  kazobj_texlist_6
+pointer  engine_kazobj_texlists  0x00000018  kazobj_texlist_7

@@ -1,0 +1,32 @@
+text  INDICATOR_EDITOR_ANGLE_Y  11
+text  INDICATOR_EDITOR_MODEL  14
+text  INDICATOR_TEXTURE_MIU32_CW005  12
+text  INDICATOR_TEXTURE_MIU64_CW005  12
+text  INDICATOR_TEXTURE_MIU64_FR004  12
+
+pointer  cosmic_indicator_texlists  0x00000000  indicator_2_texlist
+pointer  cosmic_indicator_texlists  0x00000004  indicator_texlist
+pointer  indicator_textures  0x00000000  INDICATOR_TEXTURE_MIU32_CW005
+pointer  indicator_textures  0x0000000c  INDICATOR_TEXTURE_MIU64_CW005
+pointer  indicator_textures  0x00000018  INDICATOR_TEXTURE_MIU64_FR004
+pointer  indicator_texlist  0x00000000  indicator_textures
+pointer  indicator_panel_model  0x00000000  indicator_panel_vertices
+pointer  indicator_panel_model  0x00000004  indicator_panel_polygons
+pointer  indicator_panel  0x00000004  indicator_panel_model
+pointer  indicator_model  0x00000000  indicator_vertices
+pointer  indicator_model  0x00000004  indicator_polygons
+pointer  indicator_object  0x00000004  indicator_model
+pointer  indicator_object  0x0000002c  indicator_panel
+pointer  indicator_2_textures  0x00000000  INDICATOR_TEXTURE_MIU32_CW005
+pointer  indicator_2_textures  0x0000000c  INDICATOR_TEXTURE_MIU64_CW005
+pointer  indicator_2_textures  0x00000018  INDICATOR_TEXTURE_MIU64_FR004
+pointer  indicator_2_texlist  0x00000000  indicator_2_textures
+pointer  indicator_2_panel_model  0x00000000  indicator_2_panel_vertices
+pointer  indicator_2_panel_model  0x00000004  indicator_2_panel_polygons
+pointer  indicator_2_panel  0x00000004  indicator_2_panel_model
+pointer  indicator_2_model  0x00000000  indicator_2_vertices
+pointer  indicator_2_model  0x00000004  indicator_2_polygons
+pointer  indicator_2_object  0x00000004  indicator_2_model
+pointer  indicator_2_object  0x0000002c  indicator_2_panel
+pointer  indicator_scroll  0x00000010  indicator_scroll_uvs
+pointer  indicator_2_scroll  0x00000010  indicator_2_scroll_uvs

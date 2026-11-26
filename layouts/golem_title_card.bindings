@@ -1,0 +1,3 @@
+pointer  golem_title  0x00000000  title_letters
+pointer  golem_title  0x0000000c  title_bar
+pointer  golem_title  0x00000018  golem_title_texlist

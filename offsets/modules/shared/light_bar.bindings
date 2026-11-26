@@ -1,0 +1,60 @@
+text LIGHT_BAR_TEXTURE_MIU128_FR001 13
+text LIGHT_BAR_TEXTURE_MIU32_FR002 12
+text LIGHT_BAR_TEXTURE_MIU64_FR004 12
+text LIGHT_BAR_TEXTURE_MIU64_FR008 12
+
+pointer light_bar_textures  0x00000000  LIGHT_BAR_TEXTURE_MIU128_FR001
+pointer light_bar_textures  0x0000000c  LIGHT_BAR_TEXTURE_MIU32_FR002
+pointer light_bar_textures  0x00000018  LIGHT_BAR_TEXTURE_MIU64_FR004
+pointer light_bar_textures  0x00000024  LIGHT_BAR_TEXTURE_MIU64_FR008
+
+pointer light_bar_texlist  0x00000000  light_bar_textures
+
+pointer light_bar_lamp_7_mesh  0x00000000  light_bar_lamp_7_vertices
+pointer light_bar_lamp_7_mesh  0x00000004  light_bar_lamp_7_polygons
+
+pointer light_bar_lamp_7  0x00000004  light_bar_lamp_7_mesh
+
+pointer light_bar_lamp_6_mesh  0x00000000  light_bar_lamp_6_vertices
+pointer light_bar_lamp_6_mesh  0x00000004  light_bar_lamp_6_polygons
+
+pointer light_bar_lamp_6  0x00000004  light_bar_lamp_6_mesh
+pointer light_bar_lamp_6  0x00000030  light_bar_lamp_7
+
+pointer light_bar_lamp_5_mesh  0x00000000  light_bar_lamp_5_vertices
+pointer light_bar_lamp_5_mesh  0x00000004  light_bar_lamp_5_polygons
+
+pointer light_bar_lamp_5  0x00000004  light_bar_lamp_5_mesh
+pointer light_bar_lamp_5  0x00000030  light_bar_lamp_6
+
+pointer light_bar_lamp_4_mesh  0x00000000  light_bar_lamp_4_vertices
+pointer light_bar_lamp_4_mesh  0x00000004  light_bar_lamp_4_polygons
+
+pointer light_bar_lamp_4  0x00000004  light_bar_lamp_4_mesh
+pointer light_bar_lamp_4  0x00000030  light_bar_lamp_5
+
+pointer light_bar_lamp_3_mesh  0x00000000  light_bar_lamp_3_vertices
+pointer light_bar_lamp_3_mesh  0x00000004  light_bar_lamp_3_polygons
+
+pointer light_bar_lamp_3  0x00000004  light_bar_lamp_3_mesh
+pointer light_bar_lamp_3  0x00000030  light_bar_lamp_4
+
+pointer light_bar_lamp_2_mesh  0x00000000  light_bar_lamp_2_vertices
+pointer light_bar_lamp_2_mesh  0x00000004  light_bar_lamp_2_polygons
+
+pointer light_bar_lamp_2  0x00000004  light_bar_lamp_2_mesh
+pointer light_bar_lamp_2  0x00000030  light_bar_lamp_3
+
+pointer light_bar_lamp_1_mesh  0x00000000  light_bar_lamp_1_vertices
+pointer light_bar_lamp_1_mesh  0x00000004  light_bar_lamp_1_polygons
+
+pointer light_bar_lamp_1  0x00000004  light_bar_lamp_1_mesh
+pointer light_bar_lamp_1  0x00000030  light_bar_lamp_2
+
+pointer light_bar_mesh  0x00000000  light_bar_vertices
+pointer light_bar_mesh  0x00000004  light_bar_polygons
+
+pointer light_bar_object  0x00000004  light_bar_mesh
+pointer light_bar_object  0x0000002c  light_bar_lamp_1
+
+pointer light_bar_texlists  0x00000000  light_bar_texlist

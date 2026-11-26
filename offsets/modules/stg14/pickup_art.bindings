@@ -1,0 +1,6 @@
+text  HIGHWAY_TEXT_MIU32_RH001  12
+pointer  materials  0x00000000  HIGHWAY_TEXT_MIU32_RH001
+pointer  pickup_object_texlist  0x00000000  materials
+pointer  pickup_object_model  0x00000000  pickup_vertices
+pointer  pickup_object_model  0x00000004  pickup_polygons
+pointer  pickup_object_node  0x00000004  pickup_object_model

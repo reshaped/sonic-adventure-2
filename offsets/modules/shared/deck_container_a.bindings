@@ -1,0 +1,74 @@
+text  DECK_CONTAINER_A_TEXTURE_MIU128_MH001  13
+text  DECK_CONTAINER_A_TEXTURE_MIU128_WB003  13
+text  DECK_CONTAINER_A_TEXTURE_MIU64_MH005  12
+text  DECK_CONTAINER_A_TEXTURE_MIU64_WB004  12
+text  DECK_CONTAINER_A_TEXTURE_PR64_15  8
+text  DECK_CONTAINER_A_TEXTURE_PR64_3  7
+text  DECK_CONTAINER_A_TEXTURE_PR_KAGE32  10
+text  DECK_CONTAINER_A_TEXTURE_MIU64_WB005  12
+
+pointer  deck_container_a_textures  0x00000000  DECK_CONTAINER_A_TEXTURE_MIU128_MH001
+pointer  deck_container_a_textures  0x0000000c  DECK_CONTAINER_A_TEXTURE_MIU128_WB003
+pointer  deck_container_a_textures  0x00000018  DECK_CONTAINER_A_TEXTURE_MIU64_MH005
+pointer  deck_container_a_textures  0x00000024  DECK_CONTAINER_A_TEXTURE_MIU64_WB004
+pointer  deck_container_a_textures  0x00000030  DECK_CONTAINER_A_TEXTURE_PR64_15
+pointer  deck_container_a_textures  0x0000003c  DECK_CONTAINER_A_TEXTURE_PR64_3
+pointer  deck_container_a_textures  0x00000048  DECK_CONTAINER_A_TEXTURE_PR_KAGE32
+pointer  deck_container_a_texlist  0x00000000  deck_container_a_textures
+pointer  deck_container_a_part_1_model  0x00000000  deck_container_a_part_1_vertices
+pointer  deck_container_a_part_1_model  0x00000004  deck_container_a_part_1_polygons
+pointer  deck_container_a_part_1  0x00000004  deck_container_a_part_1_model
+pointer  deck_container_a_object_model  0x00000000  deck_container_a_object_vertices
+pointer  deck_container_a_object_model  0x00000004  deck_container_a_object_polygons
+pointer  deck_container_a_object  0x00000004  deck_container_a_object_model
+pointer  deck_container_a_object  0x0000002c  deck_container_a_part_1
+pointer  deck_container_a_collision_meshes  0x00000004  deck_container_a_collision_faces_0
+pointer  deck_container_a_collision_model  0x00000000  deck_container_a_collision_points
+pointer  deck_container_a_collision_model  0x00000004  deck_container_a_collision_normals
+pointer  deck_container_a_collision_model  0x0000000c  deck_container_a_collision_meshes
+pointer  deck_container_a_collision_model  0x00000010  deck_container_a_collision_material
+pointer  deck_container_a_collision  0x00000004  deck_container_a_collision_model
+pointer  cargo_plate_textures  0x00000000  DECK_CONTAINER_A_TEXTURE_MIU64_MH005
+pointer  cargo_plate_texlist  0x00000000  cargo_plate_textures
+pointer  cargo_plate  0x00000000  cargo_plate_node_vertices
+pointer  cargo_plate  0x00000004  cargo_plate_node_polygons
+pointer  cargo_plate_node  0x00000004  cargo_plate
+pointer  cargo_panel_textures  0x00000000  DECK_CONTAINER_A_TEXTURE_MIU128_WB003
+pointer  cargo_panel_texlist  0x00000000  cargo_panel_textures
+pointer  cargo_panel  0x00000000  cargo_panel_node_vertices
+pointer  cargo_panel  0x00000004  cargo_panel_node_polygons
+pointer  cargo_panel_node  0x00000004  cargo_panel
+pointer  cargo_side_textures  0x00000000  DECK_CONTAINER_A_TEXTURE_MIU64_WB004
+pointer  cargo_side_textures  0x0000000c  DECK_CONTAINER_A_TEXTURE_MIU64_WB005
+pointer  cargo_side_texlist  0x00000000  cargo_side_textures
+pointer  cargo_side  0x00000000  cargo_side_node_vertices
+pointer  cargo_side  0x00000004  cargo_side_node_polygons
+pointer  cargo_side_node  0x00000004  cargo_side
+pointer  deck_container_a_texlists  0x00000000  deck_container_a_texlist
+pointer  deck_container_a_texlists  0x00000004  cargo_plate_texlist
+pointer  deck_container_a_texlists  0x00000008  cargo_panel_texlist
+pointer  deck_container_a_texlists  0x0000000c  cargo_side_texlist
+pointer  cargo  0x00000000  cargo_plate_texlist
+pointer  cargo  0x00000004  cargo_plate
+pointer  cargo  0x00000020  cargo_plate_texlist
+pointer  cargo  0x00000024  cargo_plate
+pointer  cargo  0x00000040  cargo_panel_texlist
+pointer  cargo  0x00000044  cargo_panel
+pointer  cargo  0x00000060  cargo_panel_texlist
+pointer  cargo  0x00000064  cargo_panel
+pointer  cargo  0x00000080  cargo_panel_texlist
+pointer  cargo  0x00000084  cargo_panel
+pointer  cargo  0x000000a0  cargo_side_texlist
+pointer  cargo  0x000000a4  cargo_side
+pointer  cargo  0x000000c0  cargo_side_texlist
+pointer  cargo  0x000000c4  cargo_side
+pointer  cargo  0x000000e0  cargo_side_texlist
+pointer  cargo  0x000000e4  cargo_side
+pointer  cargo  0x00000100  cargo_side_texlist
+pointer  cargo  0x00000104  cargo_side
+pointer  cargo  0x00000120  cargo_side_texlist
+pointer  cargo  0x00000124  cargo_side
+pointer  cargo  0x00000140  cargo_side_texlist
+pointer  cargo  0x00000144  cargo_side
+pointer  cargo  0x00000160  cargo_panel_texlist
+pointer  cargo  0x00000164  cargo_panel

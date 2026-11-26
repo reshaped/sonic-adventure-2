@@ -1,0 +1,2 @@
+# The original overlay header points to an export in its first code input.
+DHEAD P inputs 3d907290ae3b13de30661b31eb119d5b6a7c0bb5e1588535ed9e33f1fc0ea506 _chao_init 0x0c50000c

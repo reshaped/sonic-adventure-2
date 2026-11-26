@@ -1,0 +1,49 @@
+text  AKAHIGE_TEX_ENEMY2_FILENAME  7
+text  AKAHIGE_TEX_ENEMY_01_FILENAME  9
+text  AKAHIGE_TEX_GUN_LOGO001_FILENAME  12
+text  AKAHIGE_TEX_ENEMY6_FILENAME  7
+text  AKAHIGE_TEX_ENEMY7_FILENAME  7
+text  AKAHIGE_TEX_GUN_NUM05_FILENAME  10
+text  AKAHIGE_TEX_ENEMY_10_FILENAME  9
+pointer  akahige_textures  0x00000000  AKAHIGE_TEX_ENEMY2_FILENAME
+pointer  akahige_textures  0x0000000c  AKAHIGE_TEX_ENEMY_01_FILENAME
+pointer  akahige_textures  0x00000018  AKAHIGE_TEX_GUN_LOGO001_FILENAME
+pointer  akahige_textures  0x00000024  AKAHIGE_TEX_ENEMY6_FILENAME
+pointer  akahige_textures  0x00000030  AKAHIGE_TEX_ENEMY7_FILENAME
+pointer  akahige_textures  0x0000003c  AKAHIGE_TEX_GUN_NUM05_FILENAME
+pointer  akahige_textures  0x00000048  AKAHIGE_TEX_ENEMY_10_FILENAME
+pointer  akahige_texlist  0x00000000  akahige_textures
+pointer  akahige_bomb_model  0x00000000  hornet_bomb_vertices
+pointer  akahige_bomb_model  0x00000004  hornet_bomb_polygons
+pointer  akahige_bomb_object  0x00000004  akahige_bomb_model
+pointer  akahige_bomb_anim  0x00000010  akahige_bomb_uvs
+pointer  akahige_3_piece_0  0x00000000  akahige_3_rack_vertices
+pointer  akahige_3_piece_0  0x00000004  akahige_3_rack_polygons
+pointer  akahige_3_rack  0x00000004  akahige_3_piece_0
+pointer  akahige_3_piece_1  0x00000000  akahige_3_canopy_vertices
+pointer  akahige_3_piece_1  0x00000004  akahige_3_canopy_polygons
+pointer  akahige_3_canopy  0x00000004  akahige_3_piece_1
+pointer  akahige_3_canopy  0x00000030  akahige_3_rack
+pointer  akahige_3_piece_2  0x00000000  akahige_3_nozzle_vertices
+pointer  akahige_3_piece_2  0x00000004  akahige_3_nozzle_polygons
+pointer  akahige_3_nozzle  0x00000004  akahige_3_piece_2
+pointer  akahige_3_nozzle  0x00000030  akahige_3_canopy
+pointer  akahige_3_model  0x00000000  akahige_3_fuselage_vertices
+pointer  akahige_3_model  0x00000004  akahige_3_fuselage_polygons
+pointer  akahige_3_object  0x00000004  akahige_3_model
+pointer  akahige_3_object  0x0000002c  akahige_3_nozzle
+pointer  akahige_6_piece_0  0x00000000  akahige_6_canopy_vertices
+pointer  akahige_6_piece_0  0x00000004  akahige_6_canopy_polygons
+pointer  akahige_6_canopy  0x00000004  akahige_6_piece_0
+pointer  akahige_6_piece_1  0x00000000  akahige_6_nozzle_vertices
+pointer  akahige_6_piece_1  0x00000004  akahige_6_nozzle_polygons
+pointer  akahige_6_nozzle  0x00000004  akahige_6_piece_1
+pointer  akahige_6_nozzle  0x00000030  akahige_6_canopy
+pointer  akahige_6_piece_2  0x00000000  akahige_6_rack_vertices
+pointer  akahige_6_piece_2  0x00000004  akahige_6_rack_polygons
+pointer  akahige_6_rack  0x00000004  akahige_6_piece_2
+pointer  akahige_6_rack  0x00000030  akahige_6_nozzle
+pointer  akahige_6_model  0x00000000  akahige_6_fuselage_vertices
+pointer  akahige_6_model  0x00000004  akahige_6_fuselage_polygons
+pointer  akahige_6_object  0x00000004  akahige_6_model
+pointer  akahige_6_object  0x0000002c  akahige_6_rack

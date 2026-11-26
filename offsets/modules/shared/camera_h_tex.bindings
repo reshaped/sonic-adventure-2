@@ -1,0 +1,29 @@
+pointer  textures  0x00000000  miu64_cg014
+pointer  textures  0x0000000c  miu128_cg011
+pointer  textures  0x00000018  miu128_cg017
+pointer  textures  0x00000024  camera_miu32_ee001
+pointer  textures  0x00000030  camera_miu64_cg004
+pointer  textures  0x0000003c  miu64_cg006
+pointer  textures  0x00000048  camera_miu64_cg008
+pointer  textures  0x00000054  camera_miu64_cg010
+pointer  textures  0x00000060  camera_miu64_cg020
+pointer  textures  0x0000006c  camera_miu64_ee001
+
+pointer  horizontal_camera_texlist  0x00000000  textures
+
+pointer  horizontal_camera_light_model  0x00000000  horizontal_camera_light_vertices
+pointer  horizontal_camera_light_model  0x00000004  horizontal_camera_light_polygons
+
+pointer  horizontal_camera_light  0x00000004  horizontal_camera_light_model
+
+pointer  horizontal_camera_head_model  0x00000000  horizontal_camera_head_vertices
+pointer  horizontal_camera_head_model  0x00000004  horizontal_camera_head_polygons
+
+pointer  horizontal_camera_head  0x00000004  horizontal_camera_head_model
+pointer  horizontal_camera_head  0x00000030  horizontal_camera_light
+
+pointer  horizontal_camera_model  0x00000000  horizontal_camera_vertices
+pointer  horizontal_camera_model  0x00000004  horizontal_camera_polygons
+
+pointer  horizontal_camera_object  0x00000004  horizontal_camera_model
+pointer  horizontal_camera_object  0x0000002c  horizontal_camera_head

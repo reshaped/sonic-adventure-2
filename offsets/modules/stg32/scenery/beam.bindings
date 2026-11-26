@@ -1,0 +1,6 @@
+text  HERD_TEXTURE_G_L  4
+pointer  herd_beam_names  0x00000000  HERD_TEXTURE_G_L
+pointer  herd_beam_texlist  0x00000000  herd_beam_names
+pointer  herd_beam_object_model  0x00000000  herd_beam_object_vertices
+pointer  herd_beam_object_model  0x00000004  herd_beam_object_polygons
+pointer  herd_beam_object  0x00000004  herd_beam_object_model

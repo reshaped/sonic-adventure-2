@@ -1,0 +1,14 @@
+text  MATERIAL_01  12
+text  MATERIAL_02  10
+text  MATERIAL_03  14
+text  MATERIAL_04  14
+text  MATERIAL_05  14
+text  MATERIAL_06  13
+text  MATERIAL_07  13
+pointer  textures  0x00000000  MATERIAL_01
+pointer  textures  0x0000000c  MATERIAL_02
+pointer  textures  0x00000018  MATERIAL_03
+pointer  textures  0x00000024  MATERIAL_04
+pointer  textures  0x00000030  MATERIAL_05
+pointer  textures  0x0000003c  MATERIAL_06
+pointer  textures  0x00000048  MATERIAL_07

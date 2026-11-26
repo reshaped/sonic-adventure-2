@@ -1,0 +1,1 @@
+datum  eggman_barrier_positions  D  0x00000000  84

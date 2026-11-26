@@ -1,0 +1,12 @@
+modules/stg22/dat_8c5cda74.c
+modules/stg22/dat_8c5cda94.c
+modules/stg22/gadget_arrow_art.c
+modules/stg22/gadget_capsule_art.c
+modules/stg22/gadget_grind_rail_art.c
+modules/stg22/gadget_machine_art.c
+modules/stg22/gadget_rail_marker_art.c
+modules/stg22/gadget_sign_panel_art.c
+modules/stg22/player_motions.c
+modules/stg22/scrolling_land.c
+modules/stg22/stage_data.c
+modules/stg22/terrain.c

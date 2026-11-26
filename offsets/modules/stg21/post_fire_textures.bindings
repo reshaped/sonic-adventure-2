@@ -1,0 +1,7 @@
+text  OCEAN_TEXTURE_KD_SO_KAGE3  12
+text  OCEAN_TEXTURE_KD_SO_SAKU1  12
+text  OCEAN_TEXTURE_KD_SO_SARA1  12
+pointer  textures  0x00000000  OCEAN_TEXTURE_KD_SO_KAGE3
+pointer  textures  0x0000000c  OCEAN_TEXTURE_KD_SO_SAKU1
+pointer  textures  0x00000018  OCEAN_TEXTURE_KD_SO_SARA1
+pointer  post_fire_texlist  0x00000000  textures

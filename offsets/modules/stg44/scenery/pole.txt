@@ -1,0 +1,8 @@
+datum  mad_space_pole_object_1_polygons  D  0x00000000  182
+datum  mad_space_pole_object_1_vertices  D  0x000000b8  204
+datum  mad_space_pole_object_1_model  D  0x00000184  24
+datum  mad_space_pole_object_1  D  0x0000019c  52
+datum  mad_space_pole_object_polygons  D  0x000001d0  742
+datum  mad_space_pole_object_vertices  D  0x000004b8  1244
+datum  mad_space_pole_object_model  D  0x00000994  24
+datum  mad_space_pole_object  D  0x000009ac  52

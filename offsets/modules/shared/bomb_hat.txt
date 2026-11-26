@@ -1,0 +1,7 @@
+datum  bomb_hat_polygons  D  0x00000014  230
+datum  bomb_hat_vertices  D  0x000000fc  780
+text  BOMB_HAT_TEXT_BOMBFIRE  C  0x00000010  9
+datum  bomb_hat_texnames  D  0x00000000  12
+datum  bomb_hat_texlist  D  0x0000000c  8
+datum  bomb_hat_model  D  0x00000408  24
+datum  bomb_hat_object  D  0x00000420  52

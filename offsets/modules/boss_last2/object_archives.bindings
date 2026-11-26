@@ -1,0 +1,23 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_BOSS_PWGUAGE_TEX  17
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  ring_shadow_texlist
+pointer  stage_textures  0x0000000c  effect_texlist
+pointer  stage_textures  0x00000010  burst_texlist
+pointer  stage_textures  0x00000014  lens_flare_texlist
+pointer  finalhazard_common_groups  0x00000000  stage_textures
+pointer  finalhazard_common_groups  0x00000004  item_box_texlists
+pointer  finalhazard_common_groups  0x00000008  item_box_air_texlists
+pointer  finalhazard_common_groups  0x0000000c  object_effect_texlists
+pointer  finalhazard_common_groups  0x00000010  goal_ring_texlists
+pointer  finalhazard_common_pvms  0x00000000  ARCHIVE_EFFTEX_COMMON
+pointer  finalhazard_common_pvms  0x00000004  efftex_common_texlist
+pointer  finalhazard_common_pvms  0x00000008  ARCHIVE_OBJTEX_COMMON
+pointer  finalhazard_common_pvms  0x0000000c  objtex_common_texlist
+pointer  finalhazard_common_pvms  0x00000010  ARCHIVE_BOSS_PWGUAGE_TEX
+pointer  finalhazard_common_pvms  0x00000014  boss_gauge_texlist

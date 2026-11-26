@@ -1,0 +1,176 @@
+; syIntBrkRteRte, the handler syIntInit gives each exception and interrupt
+; code from 0x40 to 0x800
+
+        .IMPORT     _syIntChkDump
+        .IMPORT     _syIntLastStack
+        .IMPORT     _syIntIntStack
+        .IMPORT     _syIntEvent
+        .IMPORT     _syIntNestCount
+        .EXPORT     _syIntBrkRteRte
+
+; SR's bits that block exceptions and interrupts and select register bank 1
+SR_BL_RB:       .EQU    H'30000000
+; the high half of the FPSCR the masters run a handler under. DN is set,
+; so the FPU treats a denormal as 0, and every other bit is clear
+FPSCR_DN_HIGH:  .EQU    4
+; the high byte of H'200, the first interrupt code. a lower code is an
+; exception's
+FIRST_IRQ_HIGH: .EQU    2
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void syIntBrkRteRte(void)
+; a master calls it on the master's frame, with the event's code in R4. it
+; never returns. it blocks every exception and calls
+; syIntChkDump(code, frame), where frame points at the words of DBR, SGR and
+; bank 0's R0 to R7, in that order. it then pops the master's frame as the
+; master would. it leaves an interrupt through the copy of syIntISRRTE at
+; VBR, and an exception by a jump to H'AC000010
+; @asm abi: stack-written, MOV.L @R15+,R15 at 0x8c135264 takes back the stack
+; pointer the master saved
+_syIntBrkRteRte:
+        MOV.L       ?bl_rb,R0
+        STC         SR,R1
+        OR          R0,R1
+        LDC         R1,SR
+        MOV.L       ?int_stack,R0
+        MOV.L       @R0,R0
+        TST         R0,R0
+        BT/S        ?counted
+        CLRT
+        MOV.L       ?nesting,R0
+        MOV.L       @R0,R1
+        ADD         #-1,R1
+        MOV.L       R1,@R0
+        TST         R1,R1
+        ; T now marks the outermost event on syIntIntStack, whose exit takes
+        ; the interrupted stack back from syIntLastStack. where
+        ; syIntIntStack is null, the CLRT left T clear
+?counted:
+        MOV         #FPSCR_DN_HIGH,R0
+        SHLL16      R0
+        LDS         R0,FPSCR
+        XOR         R0,R0
+        LDS         R0,FPUL
+        FRCHG
+        STC.L       R7_BANK,@-R15
+        STC.L       R6_BANK,@-R15
+        STC.L       R5_BANK,@-R15
+        STC.L       R4_BANK,@-R15
+        STC.L       R3_BANK,@-R15
+        STC.L       R2_BANK,@-R15
+        STC.L       R1_BANK,@-R15
+        STC.L       R0_BANK,@-R15
+        STC.L       SGR,@-R15
+        STC.L       DBR,@-R15
+        MOV         R15,R5
+        STC.L       SR,@-R15
+        MOV.L       ?chk_dump,R0
+        JSR         @R0
+        NOP
+        ; SR's pop brings T back from before the call. SGR's word goes to
+        ; R4 and is dropped
+        LDC.L       @R15+,SR
+        LDC.L       @R15+,DBR
+        MOV.L       @R15+,R4
+        LDC.L       @R15+,R0_BANK
+        LDC.L       @R15+,R1_BANK
+        LDC.L       @R15+,R2_BANK
+        LDC.L       @R15+,R3_BANK
+        LDC.L       @R15+,R4_BANK
+        LDC.L       @R15+,R5_BANK
+        LDC.L       @R15+,R6_BANK
+        LDC.L       @R15+,R7_BANK
+        ; the master's frame: the floats in pairs, then the stack pointer as
+        ; it was before the master aligned the frame for them, which leads to
+        ; the registers
+        FSCHG
+        ; @bug logic: the interrupted program gets its two float banks back
+        ; exchanged, XMTRX among them. FRCHG at 0x8c13520a sets FPSCR.FR, and
+        ; the pops from FMOV @R15+,XD0 at 0x8c135242 run under it. so the
+        ; words the master pushed from XF go to FR, and those from FR to XF.
+        ; syIntChkDump returns for every code, so every event that reaches
+        ; this handler leaves this way
+        FMOV        @R15+,XD0
+        FMOV        @R15+,XD2
+        FMOV        @R15+,XD4
+        FMOV        @R15+,XD6
+        FMOV        @R15+,XD8
+        FMOV        @R15+,XD10
+        FMOV        @R15+,XD12
+        FMOV        @R15+,XD14
+        FMOV        @R15+,DR0
+        FMOV        @R15+,DR2
+        FMOV        @R15+,DR4
+        FMOV        @R15+,DR6
+        FMOV        @R15+,DR8
+        FMOV        @R15+,DR10
+        FMOV        @R15+,DR12
+        FMOV        @R15+,DR14
+        FSCHG
+        MOV.L       @R15+,R15
+        LDS.L       @R15+,FPSCR
+        LDS.L       @R15+,FPUL
+        ; SR's word goes to R4, whose own pop overwrites it, so SR keeps T
+        MOV.L       @R15+,R4
+        MOV.L       @R15+,R0
+        MOV.L       @R15+,R1
+        MOV.L       @R15+,R2
+        MOV.L       @R15+,R3
+        MOV.L       @R15+,R4
+        MOV.L       @R15+,R5
+        MOV.L       @R15+,R6
+        MOV.L       @R15+,R7
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R10
+        MOV.L       @R15+,R11
+        MOV.L       @R15+,R12
+        MOV.L       @R15+,R13
+        MOV.L       @R15+,R14
+        LDS.L       @R15+,MACL
+        LDS.L       @R15+,MACH
+        LDC.L       @R15+,VBR
+        LDC.L       @R15+,GBR
+        LDS.L       @R15+,PR
+        LDC.L       @R15+,SPC
+        LDC.L       @R15+,SSR
+        BF          ?leave
+        MOV.L       ?last_stack,R15
+        MOV.L       @R15,R15
+?leave:
+        MOV.L       R0,@-R15
+        MOV.L       R1,@-R15
+        MOV.L       ?event,R1
+        MOV.L       ?irq,R0
+        MOV.L       @R1,R1
+        SHLL8       R0
+        CMP/GE      R0,R1
+        BF/S        ?exception
+        MOV.L       @R15+,R1
+        STC         VBR,R0
+        JMP         @R0
+        MOV.L       @R15+,R0
+        .DATA.W     0                       ; aligns the pool
+?irq:
+        .DATA.L     FIRST_IRQ_HIGH
+?exception:
+        MOV         #-84,R0                 ; H'AC, the address's top byte
+        SHLL16      R0
+        SHLL8       R0
+        OR          #H'10,R0
+        JMP         @R0
+        MOV.L       @R15+,R0
+?bl_rb:
+        .DATA.L     SR_BL_RB
+?nesting:
+        .DATA.L     _syIntNestCount
+?last_stack:
+        .DATA.L     _syIntLastStack
+?int_stack:
+        .DATA.L     _syIntIntStack
+?chk_dump:
+        .DATA.L     _syIntChkDump
+?event:
+        .DATA.L     _syIntEvent
+        .END

@@ -1,0 +1,10 @@
+text  CONGRATULATIONS_ARCHIVE  16
+text  TITLE_TEXTURE  29
+text  RAINBOW_TEXTURE  29
+pointer  congratulations_texnames  0x00000000  TITLE_TEXTURE
+pointer  congratulations_texnames  0x0000000c  RAINBOW_TEXTURE
+pointer  congratulations_texlist  0x00000000  congratulations_texnames
+pointer  title_sprite  0x00000000  congratulations_texlist
+pointer  rainbow_sprite  0x00000000  congratulations_texlist
+pointer  title_sprite  0x00000004  congratulations_cells
+pointer  rainbow_sprite  0x00000004  congratulations_cells

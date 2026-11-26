@@ -1,0 +1,16 @@
+text  ARCHIVE_PR128_5  8
+text  ARCHIVE_PR128_8  8
+text  ARCHIVE_PR64_15  8
+text  ARCHIVE_PR64_17  8
+text  ARCHIVE_PR64_23  8
+text  ARCHIVE_PR_2KAGE32  11
+text  ARCHIVE_PR_3KAGE32  11
+text  ARCHIVE_PR_KAGE32  10
+pointer  deck_names  0x000001b0  ARCHIVE_PR128_5
+pointer  deck_names  0x000001bc  ARCHIVE_PR128_8
+pointer  deck_names  0x000001c8  ARCHIVE_PR64_15
+pointer  deck_names  0x000001d4  ARCHIVE_PR64_17
+pointer  deck_names  0x000001e0  ARCHIVE_PR64_23
+pointer  deck_names  0x000001ec  ARCHIVE_PR_2KAGE32
+pointer  deck_names  0x000001f8  ARCHIVE_PR_3KAGE32
+pointer  deck_names  0x00000204  ARCHIVE_PR_KAGE32

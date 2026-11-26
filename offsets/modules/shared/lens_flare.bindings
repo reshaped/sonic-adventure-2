@@ -1,0 +1,19 @@
+text  LENS_FLARE_TEXTURE_LENS01  7
+text  LENS_FLARE_TEXTURE_LENS02  7
+text  LENS_FLARE_TEXTURE_LENS03  7
+text  LENS_FLARE_TEXTURE_LENS04  7
+text  LENS_FLARE_TEXTURE_LENS05  7
+text  LENS_FLARE_TEXTURE_LENS06  7
+text  LENS_FLARE_TEXTURE_LENS07  7
+text  LENS_FLARE_TEXTURE_PANLIGHT  9
+pointer  lens_flare_texname  0x00000000  LENS_FLARE_TEXTURE_LENS01
+pointer  lens_flare_texname  0x0000000c  LENS_FLARE_TEXTURE_LENS02
+pointer  lens_flare_texname  0x00000018  LENS_FLARE_TEXTURE_LENS03
+pointer  lens_flare_texname  0x00000024  LENS_FLARE_TEXTURE_LENS04
+pointer  lens_flare_texname  0x00000030  LENS_FLARE_TEXTURE_LENS05
+pointer  lens_flare_texname  0x0000003c  LENS_FLARE_TEXTURE_LENS06
+pointer  lens_flare_texname  0x00000048  LENS_FLARE_TEXTURE_LENS07
+pointer  lens_flare_texname  0x00000054  LENS_FLARE_TEXTURE_PANLIGHT
+pointer  lens_flare_texlist  0x00000000  lens_flare_texname
+pointer  lens_flare_sprite  0x00000018  lens_flare_texlist
+pointer  lens_flare_sprite  0x0000001c  lens_flare_cells

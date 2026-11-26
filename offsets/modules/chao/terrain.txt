@@ -1,0 +1,3 @@
+datum  neutral_spawn_grid  D  0x00000000  5120
+datum  hero_spawn_grid  D  0x00001400  5120
+datum  dark_spawn_grid  D  0x00002800  5120

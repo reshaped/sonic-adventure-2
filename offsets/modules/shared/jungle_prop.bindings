@@ -1,0 +1,168 @@
+text  PROP_EDITOR_ANGLE_X  11
+text  PROP_EDITOR_ANGLE_Y  11
+text  PROP_EDITOR_ANGLE_Z  11
+text  PROP_EDITOR_SHAPE_RANGE  15
+text  PROP_EDITOR_SHAPE  9
+text  JUNGLE_TEXTURE_MIU128_GREEN002  16
+text  JUNGLE_TEXTURE_MIU128_GREEN003  16
+text  JUNGLE_TEXTURE_MIU128_GREEN004  16
+text  JUNGLE_TEXTURE_MIU128_GREEN007  16
+text  JUNGLE_TEXTURE_MIU64_GREEN006  15
+text  JUNGLE_TEXTURE_MIU128_GREEN006  16
+text  JUNGLE_TEXTURE_MIU64_GREEN001  15
+text  JUNGLE_TEXTURE_MIU64_GREEN003  15
+text  JUNGLE_TEXTURE_MIU128_GREEN009  16
+text  JUNGLE_TEXTURE_MIU128_GREEN001  16
+text  JUNGLE_TEXTURE_MIU64_GREEN002  15
+text  JUNGLE_TEXTURE_MIU64_GREEN005  15
+text  JUNGLE_TEXTURE_MIU64_GREEN004  15
+text  JUNGLE_TEXTURE_MIU64_KAGE001  14
+text  JUNGLE_TEXTURE_MIU128_GREEN008  16
+text  JUNGLE_TEXTURE_JUNGLE128_3  12
+pointer  prop_0_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN002
+pointer  prop_0_names  0x0000000c  JUNGLE_TEXTURE_MIU128_GREEN003
+pointer  prop_0_names  0x00000018  JUNGLE_TEXTURE_MIU128_GREEN004
+pointer  prop_0_textures  0x00000000  prop_0_names
+pointer  prop_0_model  0x00000000  prop_0_vertices
+pointer  prop_0_model  0x00000004  prop_0_polygons
+pointer  prop_0_object  0x00000004  prop_0_model
+pointer  prop_1_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN007
+pointer  prop_1_names  0x0000000c  JUNGLE_TEXTURE_MIU64_GREEN006
+pointer  prop_1_textures  0x00000000  prop_1_names
+pointer  prop_1_model  0x00000000  prop_1_vertices
+pointer  prop_1_model  0x00000004  prop_1_polygons
+pointer  prop_1_object  0x00000004  prop_1_model
+pointer  prop_2_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN006
+pointer  prop_2_textures  0x00000000  prop_2_names
+pointer  prop_2_model  0x00000000  prop_2_vertices
+pointer  prop_2_model  0x00000004  prop_2_polygons
+pointer  prop_2_object  0x00000004  prop_2_model
+pointer  prop_3_names  0x00000000  JUNGLE_TEXTURE_MIU64_GREEN006
+pointer  prop_3_textures  0x00000000  prop_3_names
+pointer  prop_3_model  0x00000000  prop_3_vertices
+pointer  prop_3_model  0x00000004  prop_3_polygons
+pointer  prop_3_object  0x00000004  prop_3_model
+pointer  prop_4_names  0x00000000  JUNGLE_TEXTURE_MIU64_GREEN001
+pointer  prop_4_names  0x0000000c  JUNGLE_TEXTURE_MIU64_GREEN003
+pointer  prop_4_textures  0x00000000  prop_4_names
+pointer  prop_4_model  0x00000000  prop_4_vertices
+pointer  prop_4_model  0x00000004  prop_4_polygons
+pointer  prop_4_object  0x00000004  prop_4_model
+pointer  prop_5_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN004
+pointer  prop_5_names  0x0000000c  JUNGLE_TEXTURE_MIU128_GREEN009
+pointer  prop_5_textures  0x00000000  prop_5_names
+pointer  prop_5_model  0x00000000  prop_5_vertices
+pointer  prop_5_model  0x00000004  prop_5_polygons
+pointer  prop_5_object  0x00000004  prop_5_model
+pointer  prop_6_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN001
+pointer  prop_6_names  0x0000000c  JUNGLE_TEXTURE_MIU128_GREEN009
+pointer  prop_6_textures  0x00000000  prop_6_names
+pointer  prop_6_model  0x00000000  prop_6_vertices
+pointer  prop_6_model  0x00000004  prop_6_polygons
+pointer  prop_6_object  0x00000004  prop_6_model
+pointer  prop_7_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN007
+pointer  prop_7_names  0x0000000c  JUNGLE_TEXTURE_MIU64_GREEN002
+pointer  prop_7_textures  0x00000000  prop_7_names
+pointer  prop_7_model  0x00000000  prop_7_vertices
+pointer  prop_7_model  0x00000004  prop_7_polygons
+pointer  prop_7_object  0x00000004  prop_7_model
+pointer  prop_8_names  0x00000000  JUNGLE_TEXTURE_MIU64_GREEN005
+pointer  prop_8_textures  0x00000000  prop_8_names
+pointer  prop_8_model  0x00000000  prop_8_vertices
+pointer  prop_8_model  0x00000004  prop_8_polygons
+pointer  prop_8_object  0x00000004  prop_8_model
+pointer  prop_9_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN009
+pointer  prop_9_names  0x0000000c  JUNGLE_TEXTURE_MIU64_GREEN005
+pointer  prop_9_names  0x00000018  JUNGLE_TEXTURE_MIU64_GREEN006
+pointer  prop_9_textures  0x00000000  prop_9_names
+pointer  prop_9_model  0x00000000  prop_9_vertices
+pointer  prop_9_model  0x00000004  prop_9_polygons
+pointer  prop_9_object  0x00000004  prop_9_model
+pointer  prop_16_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN004
+pointer  prop_16_textures  0x00000000  prop_16_names
+pointer  prop_16_model  0x00000000  prop_16_vertices
+pointer  prop_16_model  0x00000004  prop_16_polygons
+pointer  prop_16_object  0x00000004  prop_16_model
+pointer  prop_10_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN007
+pointer  prop_10_names  0x0000000c  JUNGLE_TEXTURE_MIU64_GREEN002
+pointer  prop_10_names  0x00000018  JUNGLE_TEXTURE_MIU64_GREEN004
+pointer  prop_10_names  0x00000024  JUNGLE_TEXTURE_MIU64_KAGE001
+pointer  jungle_prop_texlist_10  0x00000000  prop_10_names
+pointer  jungle_prop_model_10  0x00000000  prop_10_vertices
+pointer  jungle_prop_model_10  0x00000004  prop_10_polygons
+pointer  prop_10_object  0x00000004  jungle_prop_model_10
+pointer  prop_11_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN001
+pointer  prop_11_names  0x0000000c  JUNGLE_TEXTURE_MIU128_GREEN009
+pointer  prop_11_names  0x00000018  JUNGLE_TEXTURE_MIU64_GREEN002
+pointer  prop_11_textures  0x00000000  prop_11_names
+pointer  prop_11_model  0x00000000  prop_11_vertices
+pointer  prop_11_model  0x00000004  prop_11_polygons
+pointer  prop_11_object  0x00000004  prop_11_model
+pointer  prop_12_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN007
+pointer  prop_12_names  0x0000000c  JUNGLE_TEXTURE_MIU128_GREEN009
+pointer  prop_12_names  0x00000018  JUNGLE_TEXTURE_MIU64_GREEN003
+pointer  prop_12_textures  0x00000000  prop_12_names
+pointer  prop_12_model  0x00000000  prop_12_vertices
+pointer  prop_12_model  0x00000004  prop_12_polygons
+pointer  prop_12_object  0x00000004  prop_12_model
+pointer  prop_13_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN008
+pointer  prop_13_names  0x0000000c  JUNGLE_TEXTURE_MIU128_GREEN009
+pointer  prop_13_names  0x00000018  JUNGLE_TEXTURE_MIU64_GREEN003
+pointer  prop_13_names  0x00000024  JUNGLE_TEXTURE_MIU64_GREEN006
+pointer  prop_13_textures  0x00000000  prop_13_names
+pointer  prop_13_model  0x00000000  prop_13_vertices
+pointer  prop_13_model  0x00000004  prop_13_polygons
+pointer  prop_13_object  0x00000004  prop_13_model
+pointer  prop_14_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN008
+pointer  prop_14_names  0x0000000c  JUNGLE_TEXTURE_MIU64_GREEN003
+pointer  prop_14_textures  0x00000000  prop_14_names
+pointer  prop_14_model  0x00000000  prop_14_vertices
+pointer  prop_14_model  0x00000004  prop_14_polygons
+pointer  prop_14_object  0x00000004  prop_14_model
+pointer  prop_15_names  0x00000000  JUNGLE_TEXTURE_MIU128_GREEN007
+pointer  prop_15_names  0x0000000c  JUNGLE_TEXTURE_MIU64_GREEN003
+pointer  prop_15_textures  0x00000000  prop_15_names
+pointer  prop_15_model  0x00000000  prop_15_vertices
+pointer  prop_15_model  0x00000004  prop_15_polygons
+pointer  prop_15_object  0x00000004  prop_15_model
+pointer  prop_17_names  0x00000000  JUNGLE_TEXTURE_JUNGLE128_3
+pointer  prop_17_textures  0x00000000  prop_17_names
+pointer  prop_17_model  0x00000000  prop_17_vertices
+pointer  prop_17_model  0x00000004  prop_17_polygons
+pointer  prop_17_object  0x00000004  prop_17_model
+pointer  jungle_prop_texlists  0x00000000  prop_0_textures
+pointer  jungle_prop_texlists  0x00000004  prop_1_textures
+pointer  jungle_prop_texlists  0x00000008  prop_2_textures
+pointer  jungle_prop_texlists  0x0000000c  prop_3_textures
+pointer  jungle_prop_texlists  0x00000010  prop_4_textures
+pointer  jungle_prop_texlists  0x00000014  prop_5_textures
+pointer  jungle_prop_texlists  0x00000018  prop_6_textures
+pointer  jungle_prop_texlists  0x0000001c  prop_7_textures
+pointer  jungle_prop_texlists  0x00000020  prop_8_textures
+pointer  jungle_prop_texlists  0x00000024  prop_9_textures
+pointer  jungle_prop_texlists  0x00000028  jungle_prop_texlist_10
+pointer  jungle_prop_texlists  0x0000002c  prop_11_textures
+pointer  jungle_prop_texlists  0x00000030  prop_12_textures
+pointer  jungle_prop_texlists  0x00000034  prop_13_textures
+pointer  jungle_prop_texlists  0x00000038  prop_14_textures
+pointer  jungle_prop_texlists  0x0000003c  prop_15_textures
+pointer  jungle_prop_texlists  0x00000040  prop_16_textures
+pointer  jungle_prop_texlists  0x00000044  prop_17_textures
+pointer  jungle_prop_models  0x00000000  prop_0_model
+pointer  jungle_prop_models  0x00000004  prop_1_model
+pointer  jungle_prop_models  0x00000008  prop_2_model
+pointer  jungle_prop_models  0x0000000c  prop_3_model
+pointer  jungle_prop_models  0x00000010  prop_4_model
+pointer  jungle_prop_models  0x00000014  prop_5_model
+pointer  jungle_prop_models  0x00000018  prop_6_model
+pointer  jungle_prop_models  0x0000001c  prop_7_model
+pointer  jungle_prop_models  0x00000020  prop_8_model
+pointer  jungle_prop_models  0x00000024  prop_9_model
+pointer  jungle_prop_models  0x00000028  jungle_prop_model_10
+pointer  jungle_prop_models  0x0000002c  prop_11_model
+pointer  jungle_prop_models  0x00000030  prop_12_model
+pointer  jungle_prop_models  0x00000034  prop_13_model
+pointer  jungle_prop_models  0x00000038  prop_14_model
+pointer  jungle_prop_models  0x0000003c  prop_15_model
+pointer  jungle_prop_models  0x00000040  prop_16_model
+pointer  jungle_prop_models  0x00000044  prop_17_model

@@ -1,0 +1,3 @@
+datum  inner_wall_frames  D  0x00000000  64
+datum  middle_wall_frames  D  0x00000040  64
+datum  outer_wall_frames  D  0x00000080  64

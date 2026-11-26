@@ -1,0 +1,4 @@
+include orbital_pickup
+
+pointer textures 0x00000000 pickup_object_2_miu64_fr005
+pointer pickup_object_2_texlist 0x00000000 textures

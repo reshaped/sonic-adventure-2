@@ -1,0 +1,7 @@
+# Terrain entries share a compiled, word-aligned pool of archive and texture names.
+0x8c54d900  layout  painting_bird_filenames
+0x8c54d92c  .goat_picture_filename  texture_filename  24
+0x8c54d944  .lion_picture_filename  texture_filename  24
+0x8c5dc38c  layout  painting_0
+0x8c5dc6a8  layout  painting_1
+0x8c5dc9c4  layout  painting_2

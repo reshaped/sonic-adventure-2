@@ -1,0 +1,2 @@
+datum  menu_sound_list  C  0x0000000c  72
+datum  menu_sounds  C  0x00000054  8

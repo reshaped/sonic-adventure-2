@@ -1,0 +1,3 @@
+datum  capsule_bomb_shapes  D  0x00000014  144
+datum  capsule_bomb_damage_shape  D  0x000000a4  48
+datum  dat_capsule_bomb_0  D  0x000000d4  48

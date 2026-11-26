@@ -1,0 +1,139 @@
+include  objtex_common
+include  efftex_common
+
+text  OBJECT_TEXTURE_MIU128_LOCO001  15
+text  OBJECT_TEXTURE_MIU128_LOCO002  15
+text  OBJECT_TEXTURE_MIU128_MS001  13
+text  OBJECT_TEXTURE_MIU128_MS002  13
+text  OBJECT_TEXTURE_MIU32_MO001  12
+text  OBJECT_TEXTURE_MIU32_MO004  12
+text  OBJECT_TEXTURE_MIU32_MS001  12
+text  OBJECT_TEXTURE_MIU64_LOCO002  14
+text  OBJECT_TEXTURE_MIU64_LOCO003  14
+text  OBJECT_TEXTURE_MIU64_LOCO004  14
+text  OBJECT_TEXTURE_MIU64_MO001  12
+text  OBJECT_TEXTURE_MIU64_MO002  12
+text  OBJECT_TEXTURE_MIU64_MO003  12
+text  OBJECT_TEXTURE_MIU64_MO004  12
+text  OBJECT_TEXTURE_MIU64_MO005  12
+text  OBJECT_TEXTURE_MIU64_MO006  12
+text  OBJECT_TEXTURE_MIU64_MO011  12
+text  OBJECT_TEXTURE_MIU64_MO013  12
+text  OBJECT_TEXTURE_MIU64_MO014  12
+text  OBJECT_TEXTURE_MIU64_MO015  12
+text  OBJECT_TEXTURE_MIU64_MO016  12
+text  OBJECT_TEXTURE_MIU64_MO017  12
+text  OBJECT_TEXTURE_MIU64_MO018  12
+text  OBJECT_TEXTURE_MIU64_MS001  12
+text  OBJECT_TEXTURE_MIU64_MS002  12
+text  OBJECT_TEXTURE_MIU64_MS003  12
+text  OBJECT_TEXTURE_MIU64_MS004  12
+text  OBJECT_TEXTURE_MIU64_MS005  12
+text  OBJECT_TEXTURE_MIU64_MS006  12
+text  OBJECT_TEXTURE_MIU64_MS007  12
+text  OBJECT_TEXTURE_MIU64_MS008  12
+text  OBJECT_TEXTURE_MIU64_MS009  12
+text  OBJECT_TEXTURE_MIU64_MS010  12
+text  OBJECT_TEXTURE_MIU64_SR001  12
+text  OBJECT_TEXTURE_OBJTEX_STG06  13
+text  OBJECT_TEXTURE_EFFTEX_COMMON  14
+text  OBJECT_TEXTURE_OBJTEX_COMMON  14
+text  OBJECT_TEXTURE_LEVUPDAI_THTEX  15
+
+pointer  stage_archive_names  0x00000000  OBJECT_TEXTURE_MIU128_LOCO001
+pointer  stage_archive_names  0x0000000c  OBJECT_TEXTURE_MIU128_LOCO002
+pointer  stage_archive_names  0x00000018  OBJECT_TEXTURE_MIU128_MS001
+pointer  stage_archive_names  0x00000024  OBJECT_TEXTURE_MIU128_MS002
+pointer  stage_archive_names  0x00000030  OBJECT_TEXTURE_MIU32_MO001
+pointer  stage_archive_names  0x0000003c  OBJECT_TEXTURE_MIU32_MO004
+pointer  stage_archive_names  0x00000048  OBJECT_TEXTURE_MIU32_MS001
+pointer  stage_archive_names  0x00000054  OBJECT_TEXTURE_MIU64_LOCO002
+pointer  stage_archive_names  0x00000060  OBJECT_TEXTURE_MIU64_LOCO003
+pointer  stage_archive_names  0x0000006c  OBJECT_TEXTURE_MIU64_LOCO004
+pointer  stage_archive_names  0x00000078  OBJECT_TEXTURE_MIU64_MO001
+pointer  stage_archive_names  0x00000084  OBJECT_TEXTURE_MIU64_MO002
+pointer  stage_archive_names  0x00000090  OBJECT_TEXTURE_MIU64_MO003
+pointer  stage_archive_names  0x0000009c  OBJECT_TEXTURE_MIU64_MO004
+pointer  stage_archive_names  0x000000a8  OBJECT_TEXTURE_MIU64_MO005
+pointer  stage_archive_names  0x000000b4  OBJECT_TEXTURE_MIU64_MO006
+pointer  stage_archive_names  0x000000c0  OBJECT_TEXTURE_MIU64_MO011
+pointer  stage_archive_names  0x000000cc  OBJECT_TEXTURE_MIU64_MO013
+pointer  stage_archive_names  0x000000d8  OBJECT_TEXTURE_MIU64_MO014
+pointer  stage_archive_names  0x000000e4  OBJECT_TEXTURE_MIU64_MO015
+pointer  stage_archive_names  0x000000f0  OBJECT_TEXTURE_MIU64_MO016
+pointer  stage_archive_names  0x000000fc  OBJECT_TEXTURE_MIU64_MO017
+pointer  stage_archive_names  0x00000108  OBJECT_TEXTURE_MIU64_MO018
+pointer  stage_archive_names  0x00000114  OBJECT_TEXTURE_MIU64_MS001
+pointer  stage_archive_names  0x00000120  OBJECT_TEXTURE_MIU64_MS002
+pointer  stage_archive_names  0x0000012c  OBJECT_TEXTURE_MIU64_MS003
+pointer  stage_archive_names  0x00000138  OBJECT_TEXTURE_MIU64_MS004
+pointer  stage_archive_names  0x00000144  OBJECT_TEXTURE_MIU64_MS005
+pointer  stage_archive_names  0x00000150  OBJECT_TEXTURE_MIU64_MS006
+pointer  stage_archive_names  0x0000015c  OBJECT_TEXTURE_MIU64_MS007
+pointer  stage_archive_names  0x00000168  OBJECT_TEXTURE_MIU64_MS008
+pointer  stage_archive_names  0x00000174  OBJECT_TEXTURE_MIU64_MS009
+pointer  stage_archive_names  0x00000180  OBJECT_TEXTURE_MIU64_MS010
+pointer  stage_archive_names  0x0000018c  OBJECT_TEXTURE_MIU64_SR001
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  sky_rail_texture_groups  0x00000000  stage_textures
+pointer  sky_rail_texture_groups  0x00000004  goal_ring_texlists
+pointer  sky_rail_texture_groups  0x00000008  emerald_texlists
+pointer  sky_rail_texture_groups  0x0000000c  item_box_texlists
+pointer  sky_rail_texture_groups  0x00000010  item_box_air_texlists
+pointer  sky_rail_texture_groups  0x00000014  weight_texlists
+pointer  sky_rail_texture_groups  0x00000018  iron_ball_texlists
+pointer  sky_rail_texture_groups  0x0000001c  triple_spring_texlists
+pointer  sky_rail_texture_groups  0x00000020  dynamite_texlists
+pointer  sky_rail_texture_groups  0x00000024  reel_texlists
+pointer  sky_rail_texture_groups  0x00000028  chao_pipe_texlists
+pointer  sky_rail_texture_groups  0x0000002c  cage_texlists
+pointer  sky_rail_texture_groups  0x00000030  wood_box_texlists
+pointer  sky_rail_texture_groups  0x00000034  iron_box_texlists
+pointer  sky_rail_texture_groups  0x00000038  upgrade_texlists
+pointer  sky_rail_texture_groups  0x0000003c  missile_texlists
+pointer  sky_rail_texture_groups  0x00000040  skull_texlists
+pointer  sky_rail_texture_groups  0x00000044  rocket_texlists
+pointer  sky_rail_texture_groups  0x00000048  search_box_texlists
+pointer  sky_rail_texture_groups  0x0000004c  hint_box_texlists
+pointer  sky_rail_texture_groups  0x00000050  knudai_texlists
+pointer  sky_rail_texture_groups  0x00000054  pnp_texlists
+pointer  sky_rail_texture_groups  0x00000058  fire_statue_texlists
+pointer  sky_rail_texture_groups  0x0000005c  scenery_texlists
+pointer  sky_rail_texture_groups  0x00000060  sky_rail_drum_can_texlists
+pointer  sky_rail_texture_groups  0x00000064  solid_models_texlists
+pointer  sky_rail_texture_groups  0x00000068  rail_objects_texlists
+pointer  sky_rail_texture_groups  0x0000006c  knudai_foothold_texlists
+pointer  sky_rail_texture_groups  0x00000070  knudai_warp_hole_texlists
+pointer  sky_rail_texture_groups  0x00000074  knudai_door_texlists
+pointer  sky_rail_texture_groups  0x00000078  movent_texlists
+pointer  sky_rail_texture_groups  0x0000007c  chao_box_texlists
+pointer  sky_rail_texture_groups  0x00000080  chao_key_texlists
+pointer  sky_rail_texture_groups  0x00000084  object_effect_texlists
+pointer  sky_rail_texture_groups  0x00000088  messenger_texlists
+pointer  sky_rail_texture_groups  0x0000008c  ring_effect_texlists
+pointer  sky_rail_texture_groups  0x00000090  solid_box_texlists
+pointer  sky_rail_texture_groups  0x00000094  kazani_texlists
+pointer  sky_rail_pvms  0x00000000  OBJECT_TEXTURE_OBJTEX_STG06
+pointer  sky_rail_pvms  0x00000004  stage_archive
+pointer  sky_rail_pvms  0x00000008  OBJECT_TEXTURE_EFFTEX_COMMON
+pointer  sky_rail_pvms  0x0000000c  efftex_common_texlist
+pointer  sky_rail_pvms  0x00000010  OBJECT_TEXTURE_OBJTEX_COMMON
+pointer  sky_rail_pvms  0x00000014  objtex_common_texlist
+pointer  sky_rail_pvms  0x00000018  OBJECT_TEXTURE_LEVUPDAI_THTEX
+pointer  sky_rail_pvms  0x0000001c  upgrade_sparkle_texlist
+pointer  sky_rail_pvms  0x00000024  sky_rail_land_texlist

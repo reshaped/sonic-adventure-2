@@ -1,0 +1,6 @@
+pointer  ramp_strips  0x00000004  ramp_indices
+pointer  ramp_model  0x00000000  ramp_points
+pointer  ramp_model  0x00000004  ramp_normals
+pointer  ramp_model  0x0000000c  ramp_strips
+pointer  ramp_model  0x00000010  ramp_material
+pointer  cart_jump_land  0x00000004  ramp_model

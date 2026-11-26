@@ -1,0 +1,10 @@
+include  iron_gate_missile_shutters
+
+pointer  missile_shutter_h_door_texlist  0x00000000  missile_shutter_names
+pointer  missile_shutter_h_door_model  0x00000000  missile_shutter_h_door_vertices
+pointer  missile_shutter_h_door_model  0x00000004  missile_shutter_h_door_polygons
+pointer  missile_shutter_h_door_object  0x00000004  missile_shutter_h_door_model
+pointer  missile_shutter_h_texlists  0x00000000  missile_shutter_h_door_texlist
+pointer  missile_shutter_h_texlists  0x00000004  shutter_frame_texlist
+pointer  missile_shutter_h_texlists  0x00000008  dust_texlist
+pointer  missile_shutter_h_texlists  0x0000000c  flash_texlist

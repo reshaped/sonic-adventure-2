@@ -1,0 +1,4 @@
+datum  floor_polygons  D  0x00000000  986
+datum  floor_vertices  D  0x000003dc  1308
+datum  floor_model  D  0x000008f8  24
+datum  green_hill_floor_object  D  0x00000910  52

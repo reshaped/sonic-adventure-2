@@ -1,0 +1,240 @@
+text  KIND_RING  8
+text  KIND_RING_LINEAR  12
+text  KIND_RING_CIRCLE  12
+text  KIND_SPRA  8
+text  KIND_SPRB  8
+text  KIND_3SPRING  8
+text  KIND_BIGJUMP  11
+text  KIND_KASOKU  8
+text  KIND_SAVEPOINT  10
+text  KIND_SWITCH  10
+text  KIND_ITEMBOX  11
+text  KIND_ITEMBOXAIR  14
+text  KIND_ITEMBOXBALLOON  15
+text  KIND_LEVUPDAI  9
+text  KIND_GOALRING  9
+text  KIND_EMERALD  8
+text  KIND_UDREEL  7
+text  KIND_ORI  4
+text  KIND_DYNAMITE  9
+text  KIND_CONTWOOD  9
+text  KIND_CONTIRON  9
+text  KIND_ROCKET  10
+text  KIND_ROCKETMISSSILE  15
+text  KIND_SCHBOX  7
+text  KIND_HINTBOX  8
+text  KIND_MSGER  6
+text  KIND_SSS  4
+text  KIND_SOLIDBOX  9
+text  KIND_DMYOBJ  7
+text  KIND_SOAP_SW  8
+text  KIND_SKULL  6
+text  KIND_PSKULL  7
+text  KIND_CHAOPIPE  9
+text  KIND_MINIMAL  8
+text  KIND_WSMMLS  7
+text  KIND_CONTCHAO  9
+text  KIND_STOPLSD  8
+text  KIND_KNUDAI  7
+text  KIND_KDASIBA  8
+text  KIND_KDWARPHOLE  11
+text  KIND_KDDOOR  7
+text  KIND_KDITEMBOX  10
+text  KIND_KDDRNGL  8
+text  KIND_KDDRNGC  8
+text  KIND_KDSPRING  9
+text  KIND_KDSPRINGB  10
+text  KIND_SPHERE  7
+text  KIND_CCYL  5
+text  KIND_CCUBE  6
+text  KIND_CWALL  6
+text  KIND_CCIRCLE  8
+text  KIND_MODMOD  8
+text  KIND_EFFOBJ0  8
+text  KIND_EFLENSF0  9
+text  KIND_BUNCHIN  8
+text  KIND_IRONBALL2  10
+text  KIND_E_KUMI  7
+text  KIND_E_GOLD  7
+text  KIND_E_EMI  6
+text  KIND_E_PATH  7
+text  KIND_E_NAMIE  8
+text  KIND_LINKLINK  9
+text  KIND_LIGHT_SW  9
+text  KIND_STOPLOCKON  11
+text  KIND_BIG_THE_CAT  12
+text  KIND_BRIDGE  7
+text  KIND_LAZER  6
+text  KIND_FOGCOL  7
+text  KIND_STEP  5
+text  KIND_BRIDGE_DYNA  12
+text  KIND_SHUTTER  8
+text  KIND_LASTSTEP  9
+text  KIND_CONT  5
+text  KIND_CAMV  5
+text  KIND_CAMH  5
+text  KIND_CAPSULEBOMB  12
+text  KIND_KAZOBJ  7
+text  KIND_SPARK  6
+text  KIND_REDLA  6
+text  KIND_REDLB  6
+pointer  lost_colony_kinds  0x00000008  ring_step
+pointer  lost_colony_kinds  0x0000000c  KIND_RING
+pointer  lost_colony_kinds  0x00000018  ring_linear_init
+pointer  lost_colony_kinds  0x0000001c  KIND_RING_LINEAR
+pointer  lost_colony_kinds  0x00000028  ring_circle_init
+pointer  lost_colony_kinds  0x0000002c  KIND_RING_CIRCLE
+pointer  lost_colony_kinds  0x00000038  spring_a_step
+pointer  lost_colony_kinds  0x0000003c  KIND_SPRA
+pointer  lost_colony_kinds  0x00000048  spring_b_step
+pointer  lost_colony_kinds  0x0000004c  KIND_SPRB
+pointer  lost_colony_kinds  0x00000058  triple_spring_init
+pointer  lost_colony_kinds  0x0000005c  KIND_3SPRING
+pointer  lost_colony_kinds  0x00000068  big_jump_step
+pointer  lost_colony_kinds  0x0000006c  KIND_BIGJUMP
+pointer  lost_colony_kinds  0x00000078  dash_panel_step
+pointer  lost_colony_kinds  0x0000007c  KIND_KASOKU
+pointer  lost_colony_kinds  0x00000088  save_point_step
+pointer  lost_colony_kinds  0x0000008c  KIND_SAVEPOINT
+pointer  lost_colony_kinds  0x00000098  switch_step
+pointer  lost_colony_kinds  0x0000009c  KIND_SWITCH
+pointer  lost_colony_kinds  0x000000a8  item_box_step
+pointer  lost_colony_kinds  0x000000ac  KIND_ITEMBOX
+pointer  lost_colony_kinds  0x000000b8  item_box_air_step
+pointer  lost_colony_kinds  0x000000bc  KIND_ITEMBOXAIR
+pointer  lost_colony_kinds  0x000000c8  item_balloon_step
+pointer  lost_colony_kinds  0x000000cc  KIND_ITEMBOXBALLOON
+pointer  lost_colony_kinds  0x000000d8  upgrade_init
+pointer  lost_colony_kinds  0x000000dc  KIND_LEVUPDAI
+pointer  lost_colony_kinds  0x000000e8  goal_ring_init
+pointer  lost_colony_kinds  0x000000ec  KIND_GOALRING
+pointer  lost_colony_kinds  0x000000f8  emerald_init
+pointer  lost_colony_kinds  0x000000fc  KIND_EMERALD
+pointer  lost_colony_kinds  0x00000108  reel_init
+pointer  lost_colony_kinds  0x0000010c  KIND_UDREEL
+pointer  lost_colony_kinds  0x00000118  cage_init
+pointer  lost_colony_kinds  0x0000011c  KIND_ORI
+pointer  lost_colony_kinds  0x00000128  dynamite_init
+pointer  lost_colony_kinds  0x0000012c  KIND_DYNAMITE
+pointer  lost_colony_kinds  0x00000138  wood_box_init
+pointer  lost_colony_kinds  0x0000013c  KIND_CONTWOOD
+pointer  lost_colony_kinds  0x00000148  iron_box_init
+pointer  lost_colony_kinds  0x0000014c  KIND_CONTIRON
+pointer  lost_colony_kinds  0x00000158  rocket_init
+pointer  lost_colony_kinds  0x0000015c  KIND_ROCKET
+pointer  lost_colony_kinds  0x00000168  missile_init
+pointer  lost_colony_kinds  0x0000016c  KIND_ROCKETMISSSILE
+pointer  lost_colony_kinds  0x00000178  search_box_init
+pointer  lost_colony_kinds  0x0000017c  KIND_SCHBOX
+pointer  lost_colony_kinds  0x00000188  hint_box_init
+pointer  lost_colony_kinds  0x0000018c  KIND_HINTBOX
+pointer  lost_colony_kinds  0x00000198  messenger_init
+pointer  lost_colony_kinds  0x0000019c  KIND_MSGER
+pointer  lost_colony_kinds  0x000001a8  sss_init
+pointer  lost_colony_kinds  0x000001ac  KIND_SSS
+pointer  lost_colony_kinds  0x000001b8  solid_box_init
+pointer  lost_colony_kinds  0x000001bc  KIND_SOLIDBOX
+pointer  lost_colony_kinds  0x000001c8  dummy_object_init
+pointer  lost_colony_kinds  0x000001cc  KIND_DMYOBJ
+pointer  lost_colony_kinds  0x000001d8  soap_switch_init
+pointer  lost_colony_kinds  0x000001dc  KIND_SOAP_SW
+pointer  lost_colony_kinds  0x000001e8  skull_still_init
+pointer  lost_colony_kinds  0x000001ec  KIND_SKULL
+pointer  lost_colony_kinds  0x000001f8  skull_lying_init
+pointer  lost_colony_kinds  0x000001fc  KIND_PSKULL
+pointer  lost_colony_kinds  0x00000208  chao_pipe_init
+pointer  lost_colony_kinds  0x0000020c  KIND_CHAOPIPE
+pointer  lost_colony_kinds  0x00000218  animal_init
+pointer  lost_colony_kinds  0x0000021c  KIND_MINIMAL
+pointer  lost_colony_kinds  0x00000228  hidden_animal_init
+pointer  lost_colony_kinds  0x0000022c  KIND_WSMMLS
+pointer  lost_colony_kinds  0x00000238  chao_box_init
+pointer  lost_colony_kinds  0x0000023c  KIND_CONTCHAO
+pointer  lost_colony_kinds  0x00000248  stop_lsd_init
+pointer  lost_colony_kinds  0x0000024c  KIND_STOPLSD
+pointer  lost_colony_kinds  0x00000258  knudai_init
+pointer  lost_colony_kinds  0x0000025c  KIND_KNUDAI
+pointer  lost_colony_kinds  0x00000268  knudai_foothold_init
+pointer  lost_colony_kinds  0x0000026c  KIND_KDASIBA
+pointer  lost_colony_kinds  0x00000278  knudai_warp_hole_init
+pointer  lost_colony_kinds  0x0000027c  KIND_KDWARPHOLE
+pointer  lost_colony_kinds  0x00000288  knudai_door_init
+pointer  lost_colony_kinds  0x0000028c  KIND_KDDOOR
+pointer  lost_colony_kinds  0x00000298  knudai_item_box_init
+pointer  lost_colony_kinds  0x0000029c  KIND_KDITEMBOX
+pointer  lost_colony_kinds  0x000002a8  knudai_ring_linear_init
+pointer  lost_colony_kinds  0x000002ac  KIND_KDDRNGL
+pointer  lost_colony_kinds  0x000002b8  knudai_ring_circle_init
+pointer  lost_colony_kinds  0x000002bc  KIND_KDDRNGC
+pointer  lost_colony_kinds  0x000002c8  knudai_spring_init
+pointer  lost_colony_kinds  0x000002cc  KIND_KDSPRING
+pointer  lost_colony_kinds  0x000002d8  knudai_spring_b_init
+pointer  lost_colony_kinds  0x000002dc  KIND_KDSPRINGB
+pointer  lost_colony_kinds  0x000002e8  collision_sphere_step
+pointer  lost_colony_kinds  0x000002ec  KIND_SPHERE
+pointer  lost_colony_kinds  0x000002f8  collision_cylinder_step
+pointer  lost_colony_kinds  0x000002fc  KIND_CCYL
+pointer  lost_colony_kinds  0x00000308  collision_cube_step
+pointer  lost_colony_kinds  0x0000030c  KIND_CCUBE
+pointer  lost_colony_kinds  0x00000318  collision_wall_step
+pointer  lost_colony_kinds  0x0000031c  KIND_CWALL
+pointer  lost_colony_kinds  0x00000328  collision_circle_step
+pointer  lost_colony_kinds  0x0000032c  KIND_CCIRCLE
+pointer  lost_colony_kinds  0x00000338  modifier_volume_init
+pointer  lost_colony_kinds  0x0000033c  KIND_MODMOD
+pointer  lost_colony_kinds  0x00000348  effect_object_init
+pointer  lost_colony_kinds  0x0000034c  KIND_EFFOBJ0
+pointer  lost_colony_kinds  0x00000358  lens_flare_init
+pointer  lost_colony_kinds  0x0000035c  KIND_EFLENSF0
+pointer  lost_colony_kinds  0x00000368  weight_init
+pointer  lost_colony_kinds  0x0000036c  KIND_BUNCHIN
+pointer  lost_colony_kinds  0x00000378  iron_ball_init
+pointer  lost_colony_kinds  0x0000037c  KIND_IRONBALL2
+pointer  lost_colony_kinds  0x00000388  beetle_step
+pointer  lost_colony_kinds  0x0000038c  KIND_E_KUMI
+pointer  lost_colony_kinds  0x00000398  gold_beetle_step
+pointer  lost_colony_kinds  0x0000039c  KIND_E_GOLD
+pointer  lost_colony_kinds  0x000003a8  emi_step
+pointer  lost_colony_kinds  0x000003ac  KIND_E_EMI
+pointer  lost_colony_kinds  0x000003b8  path_enemy_step
+pointer  lost_colony_kinds  0x000003bc  KIND_E_PATH
+pointer  lost_colony_kinds  0x000003c8  hornet_step
+pointer  lost_colony_kinds  0x000003cc  KIND_E_NAMIE
+pointer  lost_colony_kinds  0x000003d8  technique_link_init
+pointer  lost_colony_kinds  0x000003dc  KIND_LINKLINK
+pointer  lost_colony_kinds  0x000003e8  light_switch_init
+pointer  lost_colony_kinds  0x000003ec  KIND_LIGHT_SW
+pointer  lost_colony_kinds  0x000003f8  stop_lockon_init
+pointer  lost_colony_kinds  0x000003fc  KIND_STOPLOCKON
+pointer  lost_colony_kinds  0x00000408  big_step
+pointer  lost_colony_kinds  0x0000040c  KIND_BIG_THE_CAT
+pointer  lost_colony_kinds  0x00000418  fixed_bridge_init
+pointer  lost_colony_kinds  0x0000041c  KIND_BRIDGE
+pointer  lost_colony_kinds  0x00000428  core_laser_init
+pointer  lost_colony_kinds  0x0000042c  KIND_LAZER
+pointer  lost_colony_kinds  0x00000438  flash_zone_init
+pointer  lost_colony_kinds  0x0000043c  KIND_FOGCOL
+pointer  lost_colony_kinds  0x00000448  colony_step_init
+pointer  lost_colony_kinds  0x0000044c  KIND_STEP
+pointer  lost_colony_kinds  0x00000458  dynamite_bridge_init
+pointer  lost_colony_kinds  0x0000045c  KIND_BRIDGE_DYNA
+pointer  lost_colony_kinds  0x00000468  core_shutter_init
+pointer  lost_colony_kinds  0x0000046c  KIND_SHUTTER
+pointer  lost_colony_kinds  0x00000478  last_step_init
+pointer  lost_colony_kinds  0x0000047c  KIND_LASTSTEP
+pointer  lost_colony_kinds  0x00000488  spinning_drum_init
+pointer  lost_colony_kinds  0x0000048c  KIND_CONT
+pointer  lost_colony_kinds  0x00000498  vertical_camera_init
+pointer  lost_colony_kinds  0x0000049c  KIND_CAMV
+pointer  lost_colony_kinds  0x000004a8  horizontal_camera_init
+pointer  lost_colony_kinds  0x000004ac  KIND_CAMH
+pointer  lost_colony_kinds  0x000004b8  capsule_bomb_init
+pointer  lost_colony_kinds  0x000004bc  KIND_CAPSULEBOMB
+pointer  lost_colony_kinds  0x000004c8  kazobj_init
+pointer  lost_colony_kinds  0x000004cc  KIND_KAZOBJ
+pointer  lost_colony_kinds  0x000004d8  colony_spark_init
+pointer  lost_colony_kinds  0x000004dc  KIND_SPARK
+pointer  lost_colony_kinds  0x000004e8  red_lamp_a_init
+pointer  lost_colony_kinds  0x000004ec  KIND_REDLA
+pointer  lost_colony_kinds  0x000004f8  red_lamp_b_init
+pointer  lost_colony_kinds  0x000004fc  KIND_REDLB

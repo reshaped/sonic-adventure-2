@@ -1,0 +1,24 @@
+text  KNUDAI_DEBUG_ID  6
+text  KNUDAI_DEBUG_YAW  11
+text  STAND_IN_PLAYING  23
+text  STAND_IN_CANT_PLAY  37
+text  STAND_IN_PLAY_AGAIN  41
+text  KNUDAI_TEXTURE_STONE  13
+text  KNUDAI_TEXTURE_26  13
+text  KNUDAI_TEXTURE_27  13
+text  KNUDAI_TEXTURE_28  13
+pointer  knudai_texnames  0x00000000  KNUDAI_TEXTURE_STONE
+pointer  knudai_texnames  0x0000000c  KNUDAI_TEXTURE_26
+pointer  knudai_texnames  0x00000018  KNUDAI_TEXTURE_27
+pointer  knudai_texnames  0x00000024  KNUDAI_TEXTURE_28
+pointer  knudai_texlist  0x00000000  knudai_texnames
+pointer  knudai_model  0x00000000  knudai_vertices
+pointer  knudai_model  0x00000004  knudai_polygons
+pointer  knudai_object  0x00000004  knudai_model
+pointer  knudai_collision_meshset  0x00000004  knudai_collision_meshes
+pointer  knudai_collision_model  0x00000000  knudai_collision_points
+pointer  knudai_collision_model  0x00000004  knudai_collision_normals
+pointer  knudai_collision_model  0x0000000c  knudai_collision_meshset
+pointer  knudai_collision_model  0x00000010  knudai_collision_material
+pointer  knudai_collision  0x00000004  knudai_collision_model
+pointer  knudai_texlists  0x00000000  knudai_texlist

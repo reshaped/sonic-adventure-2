@@ -1,0 +1,2 @@
+datum  iron_gate_sound_table  C  0x00000000  120
+datum  iron_gate_sounds  C  0x00000078  8

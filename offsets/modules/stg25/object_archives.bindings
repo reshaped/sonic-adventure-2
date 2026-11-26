@@ -1,0 +1,322 @@
+include  objtex_common
+include  efftex_common
+
+text TEXTURE_DZ_DC_BAT64 12
+text TEXTURE_DZ_DC_BIRIBIRI512 18
+text TEXTURE_DZ_DC_BUGORNAMENT128 21
+text TEXTURE_DZ_DC_DOORSIDE 15
+text TEXTURE_DZ_DC_DOORSIDESMALL 20
+text TEXTURE_DZ_DC_DOORSIDE_LITE 20
+text TEXTURE_DZ_DC_FIREMOUTH256 19
+text TEXTURE_DZ_DC_FIREPOT128 17
+text TEXTURE_DZ_DC_HI_BLUE01 16
+text TEXTURE_DZ_DC_HI_GREEN01 17
+text TEXTURE_DZ_DC_HI_RED01 15
+text TEXTURE_DZ_DC_LIONHEAD64 17
+text TEXTURE_DZ_DC_MAPDOT 13
+text TEXTURE_DZ_DC_MAPLETTER 16
+text TEXTURE_DZ_DC_MAPSIDE 14
+text TEXTURE_DZ_DC_MARUKAGE32 17
+text TEXTURE_DZ_DC_MARUKAGE64 17
+text TEXTURE_DZ_DC_MECHANIX128A 19
+text TEXTURE_DZ_DC_MECHANIX128B 19
+text TEXTURE_DZ_DC_MECHANIX64A 18
+text TEXTURE_DZ_DC_MECHANIX64B 18
+text TEXTURE_DZ_DC_MECHANIX64C 18
+text TEXTURE_DZ_DC_MECHANIX64D 18
+text TEXTURE_DZ_DC_MIKOSI128 16
+text TEXTURE_DZ_DC_MIKOSI_CORE64 20
+text TEXTURE_DZ_DC_MIKOSI_GUARD64 21
+text TEXTURE_DZ_DC_MIKOSI_TOP64 19
+text TEXTURE_DZ_DC_SCORPIO128 17
+text TEXTURE_DZ_DC_STOREBOX128 18
+text TEXTURE_DZ_DC_STOREBOX_TOP128 22
+text TEXTURE_DZ_DC_TAKARABAKO128 20
+text TEXTURE_DZ_DC_TORCHKAGE32 18
+text TEXTURE_DZ_DC_TORCH_STICK128 21
+text TEXTURE_DZ_DC_WALLPAINT_BIRD256 24
+text TEXTURE_DZ_DC_WALLPAINT_GOAT256 24
+text TEXTURE_DZ_DC_WALLPAINT_LION256 24
+text TEXTURE_DZ_EQ_EGGKEY64 15
+text TEXTURE_DZ_EQ_EGGKEYEYE16 18
+text TEXTURE_DZ_EQ_EGGKEY_METAL64 21
+text TEXTURE_DZ_GHOSTCEILINGDOOR 20
+text TEXTURE_DZ_KANKYOU128 14
+text TEXTURE_DZ_SAND 8
+text TEXTURE_DZ_SANDGLASS_BODY128 21
+text TEXTURE_DZ_SANDGLASS_BUTTAN128 23
+text TEXTURE_DZ_SANDGLASS_EDGE32 20
+text TEXTURE_DZ_SANDGLASS_SAND64 20
+text TEXTURE_DZ_VERTICAL_WARPWALL 21
+text TEXTURE_KD_DC_YUKA2 12
+text TEXTURE_KD_DC_YUKA4 12
+text TEXTURE_MIU32_MI001 12
+text TEXTURE_DZ_DC_HI_BLUE02 16
+text TEXTURE_DZ_DC_HI_BLUE03 16
+text TEXTURE_DZ_DC_HI_BLUE04 16
+text TEXTURE_DZ_DC_HI_BLUE05 16
+text TEXTURE_DZ_DC_HI_BLUE06 16
+text TEXTURE_DZ_DC_HI_BLUE07 16
+text TEXTURE_DZ_DC_HI_BLUE08 16
+text TEXTURE_DZ_DC_HI_BLUE09 16
+text TEXTURE_DZ_DC_HI_BLUE10 16
+text TEXTURE_DZ_DC_HI_BLUE11 16
+text TEXTURE_DZ_DC_HI_BLUE12 16
+text TEXTURE_DZ_DC_HI_BLUE13 16
+text TEXTURE_DZ_DC_HI_BLUE14 16
+text TEXTURE_DZ_DC_HI_BLUE15 16
+text TEXTURE_DZ_DC_HI_BLUE16 16
+text TEXTURE_DZ_DC_HI_GREEN02 17
+text TEXTURE_DZ_DC_HI_GREEN03 17
+text TEXTURE_DZ_DC_HI_GREEN04 17
+text TEXTURE_DZ_DC_HI_GREEN05 17
+text TEXTURE_DZ_DC_HI_GREEN06 17
+text TEXTURE_DZ_DC_HI_GREEN07 17
+text TEXTURE_DZ_DC_HI_GREEN08 17
+text TEXTURE_DZ_DC_HI_GREEN09 17
+text TEXTURE_DZ_DC_HI_GREEN10 17
+text TEXTURE_DZ_DC_HI_GREEN11 17
+text TEXTURE_DZ_DC_HI_GREEN12 17
+text TEXTURE_DZ_DC_HI_GREEN13 17
+text TEXTURE_DZ_DC_HI_GREEN14 17
+text TEXTURE_DZ_DC_HI_GREEN15 17
+text TEXTURE_DZ_DC_HI_GREEN16 17
+text TEXTURE_DZ_DC_HI_RED02 15
+text TEXTURE_DZ_DC_HI_RED03 15
+text TEXTURE_DZ_DC_HI_RED04 15
+text TEXTURE_DZ_DC_HI_RED05 15
+text TEXTURE_DZ_DC_HI_RED06 15
+text TEXTURE_DZ_DC_HI_RED07 15
+text TEXTURE_DZ_DC_HI_RED08 15
+text TEXTURE_DZ_DC_HI_RED09 15
+text TEXTURE_DZ_DC_HI_RED10 15
+text TEXTURE_DZ_DC_HI_RED11 15
+text TEXTURE_DZ_DC_HI_RED12 15
+text TEXTURE_DZ_DC_HI_RED13 15
+text TEXTURE_DZ_DC_HI_RED14 15
+text TEXTURE_DZ_DC_HI_RED15 15
+text TEXTURE_DZ_DC_HI_RED16 15
+text TEXTURE_DZ_DC_MAP01 12
+text TEXTURE_DZ_DC_MAP02 12
+text TEXTURE_DZ_DC_MAP03 12
+text TEXTURE_SIKAKE_18_128E 15
+text TEXTURE_SIKAKE_20_128E 15
+text TEXTURE_SIKAKE_46_128E 15
+text TEXTURE_SIKAKE_47_128E 15
+text ARCHIVE_OBJTEX_STG25 13
+text ARCHIVE_EFFTEX_COMMON 14
+text ARCHIVE_OBJTEX_COMMON 14
+text ARCHIVE_STG25_FIRE_BLUE 16
+text ARCHIVE_STG25_FIRE_GREEN 17
+text ARCHIVE_STG25_FIRE_RED 15
+text ARCHIVE_STG25_WATER 12
+text ARCHIVE_STG25_MAP 10
+text ARCHIVE_EGGCONTTEX 11
+
+include egg_key_geometry
+
+pointer  stage_archive_names  0x00000000  TEXTURE_DZ_DC_BAT64
+pointer  stage_archive_names  0x0000000c  TEXTURE_DZ_DC_BIRIBIRI512
+pointer  stage_archive_names  0x00000018  TEXTURE_DZ_DC_BUGORNAMENT128
+pointer  stage_archive_names  0x00000024  TEXTURE_DZ_DC_DOORSIDE
+pointer  stage_archive_names  0x00000030  TEXTURE_DZ_DC_DOORSIDESMALL
+pointer  stage_archive_names  0x0000003c  TEXTURE_DZ_DC_DOORSIDE_LITE
+pointer  stage_archive_names  0x00000048  TEXTURE_DZ_DC_FIREMOUTH256
+pointer  stage_archive_names  0x00000054  TEXTURE_DZ_DC_FIREPOT128
+pointer  stage_archive_names  0x00000060  TEXTURE_DZ_DC_HI_BLUE01
+pointer  stage_archive_names  0x0000006c  TEXTURE_DZ_DC_HI_GREEN01
+pointer  stage_archive_names  0x00000078  TEXTURE_DZ_DC_HI_RED01
+pointer  stage_archive_names  0x00000084  TEXTURE_DZ_DC_LIONHEAD64
+pointer  stage_archive_names  0x00000090  TEXTURE_DZ_DC_MAPDOT
+pointer  stage_archive_names  0x0000009c  TEXTURE_DZ_DC_MAPLETTER
+pointer  stage_archive_names  0x000000a8  TEXTURE_DZ_DC_MAPSIDE
+pointer  stage_archive_names  0x000000b4  TEXTURE_DZ_DC_MARUKAGE32
+pointer  stage_archive_names  0x000000c0  TEXTURE_DZ_DC_MARUKAGE64
+pointer  stage_archive_names  0x000000cc  TEXTURE_DZ_DC_MECHANIX128A
+pointer  stage_archive_names  0x000000d8  TEXTURE_DZ_DC_MECHANIX128B
+pointer  stage_archive_names  0x000000e4  TEXTURE_DZ_DC_MECHANIX64A
+pointer  stage_archive_names  0x000000f0  TEXTURE_DZ_DC_MECHANIX64B
+pointer  stage_archive_names  0x000000fc  TEXTURE_DZ_DC_MECHANIX64C
+pointer  stage_archive_names  0x00000108  TEXTURE_DZ_DC_MECHANIX64D
+pointer  stage_archive_names  0x00000114  TEXTURE_DZ_DC_MIKOSI128
+pointer  stage_archive_names  0x00000120  TEXTURE_DZ_DC_MIKOSI_CORE64
+pointer  stage_archive_names  0x0000012c  TEXTURE_DZ_DC_MIKOSI_GUARD64
+pointer  stage_archive_names  0x00000138  TEXTURE_DZ_DC_MIKOSI_TOP64
+pointer  stage_archive_names  0x00000144  TEXTURE_DZ_DC_SCORPIO128
+pointer  stage_archive_names  0x00000150  TEXTURE_DZ_DC_STOREBOX128
+pointer  stage_archive_names  0x0000015c  TEXTURE_DZ_DC_STOREBOX_TOP128
+pointer  stage_archive_names  0x00000168  TEXTURE_DZ_DC_TAKARABAKO128
+pointer  stage_archive_names  0x00000174  TEXTURE_DZ_DC_TORCHKAGE32
+pointer  stage_archive_names  0x00000180  TEXTURE_DZ_DC_TORCH_STICK128
+pointer  stage_archive_names  0x0000018c  TEXTURE_DZ_DC_WALLPAINT_BIRD256
+pointer  stage_archive_names  0x00000198  TEXTURE_DZ_DC_WALLPAINT_GOAT256
+pointer  stage_archive_names  0x000001a4  TEXTURE_DZ_DC_WALLPAINT_LION256
+pointer  stage_archive_names  0x000001b0  TEXTURE_DZ_EQ_EGGKEY64
+pointer  stage_archive_names  0x000001bc  TEXTURE_DZ_EQ_EGGKEYEYE16
+pointer  stage_archive_names  0x000001c8  TEXTURE_DZ_EQ_EGGKEY_METAL64
+pointer  stage_archive_names  0x000001d4  TEXTURE_DZ_GHOSTCEILINGDOOR
+pointer  stage_archive_names  0x000001e0  TEXTURE_DZ_KANKYOU128
+pointer  stage_archive_names  0x000001ec  TEXTURE_DZ_SAND
+pointer  stage_archive_names  0x000001f8  TEXTURE_DZ_SANDGLASS_BODY128
+pointer  stage_archive_names  0x00000204  TEXTURE_DZ_SANDGLASS_BUTTAN128
+pointer  stage_archive_names  0x00000210  TEXTURE_DZ_SANDGLASS_EDGE32
+pointer  stage_archive_names  0x0000021c  TEXTURE_DZ_SANDGLASS_SAND64
+pointer  stage_archive_names  0x00000228  TEXTURE_DZ_VERTICAL_WARPWALL
+pointer  stage_archive_names  0x00000234  TEXTURE_KD_DC_YUKA2
+pointer  stage_archive_names  0x00000240  TEXTURE_KD_DC_YUKA4
+pointer  stage_archive_names  0x0000024c  TEXTURE_MIU32_MI001
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  chamber_flame_blue_texlist_names  0x00000000  TEXTURE_DZ_DC_HI_BLUE01
+pointer  chamber_flame_blue_texlist_names  0x0000000c  TEXTURE_DZ_DC_HI_BLUE02
+pointer  chamber_flame_blue_texlist_names  0x00000018  TEXTURE_DZ_DC_HI_BLUE03
+pointer  chamber_flame_blue_texlist_names  0x00000024  TEXTURE_DZ_DC_HI_BLUE04
+pointer  chamber_flame_blue_texlist_names  0x00000030  TEXTURE_DZ_DC_HI_BLUE05
+pointer  chamber_flame_blue_texlist_names  0x0000003c  TEXTURE_DZ_DC_HI_BLUE06
+pointer  chamber_flame_blue_texlist_names  0x00000048  TEXTURE_DZ_DC_HI_BLUE07
+pointer  chamber_flame_blue_texlist_names  0x00000054  TEXTURE_DZ_DC_HI_BLUE08
+pointer  chamber_flame_blue_texlist_names  0x00000060  TEXTURE_DZ_DC_HI_BLUE09
+pointer  chamber_flame_blue_texlist_names  0x0000006c  TEXTURE_DZ_DC_HI_BLUE10
+pointer  chamber_flame_blue_texlist_names  0x00000078  TEXTURE_DZ_DC_HI_BLUE11
+pointer  chamber_flame_blue_texlist_names  0x00000084  TEXTURE_DZ_DC_HI_BLUE12
+pointer  chamber_flame_blue_texlist_names  0x00000090  TEXTURE_DZ_DC_HI_BLUE13
+pointer  chamber_flame_blue_texlist_names  0x0000009c  TEXTURE_DZ_DC_HI_BLUE14
+pointer  chamber_flame_blue_texlist_names  0x000000a8  TEXTURE_DZ_DC_HI_BLUE15
+pointer  chamber_flame_blue_texlist_names  0x000000b4  TEXTURE_DZ_DC_HI_BLUE16
+pointer  chamber_flame_blue_texlist  0x00000000  chamber_flame_blue_texlist_names
+pointer  chamber_flame_green_texlist_names  0x00000000  TEXTURE_DZ_DC_HI_GREEN01
+pointer  chamber_flame_green_texlist_names  0x0000000c  TEXTURE_DZ_DC_HI_GREEN02
+pointer  chamber_flame_green_texlist_names  0x00000018  TEXTURE_DZ_DC_HI_GREEN03
+pointer  chamber_flame_green_texlist_names  0x00000024  TEXTURE_DZ_DC_HI_GREEN04
+pointer  chamber_flame_green_texlist_names  0x00000030  TEXTURE_DZ_DC_HI_GREEN05
+pointer  chamber_flame_green_texlist_names  0x0000003c  TEXTURE_DZ_DC_HI_GREEN06
+pointer  chamber_flame_green_texlist_names  0x00000048  TEXTURE_DZ_DC_HI_GREEN07
+pointer  chamber_flame_green_texlist_names  0x00000054  TEXTURE_DZ_DC_HI_GREEN08
+pointer  chamber_flame_green_texlist_names  0x00000060  TEXTURE_DZ_DC_HI_GREEN09
+pointer  chamber_flame_green_texlist_names  0x0000006c  TEXTURE_DZ_DC_HI_GREEN10
+pointer  chamber_flame_green_texlist_names  0x00000078  TEXTURE_DZ_DC_HI_GREEN11
+pointer  chamber_flame_green_texlist_names  0x00000084  TEXTURE_DZ_DC_HI_GREEN12
+pointer  chamber_flame_green_texlist_names  0x00000090  TEXTURE_DZ_DC_HI_GREEN13
+pointer  chamber_flame_green_texlist_names  0x0000009c  TEXTURE_DZ_DC_HI_GREEN14
+pointer  chamber_flame_green_texlist_names  0x000000a8  TEXTURE_DZ_DC_HI_GREEN15
+pointer  chamber_flame_green_texlist_names  0x000000b4  TEXTURE_DZ_DC_HI_GREEN16
+pointer  chamber_flame_green_texlist  0x00000000  chamber_flame_green_texlist_names
+pointer  chamber_flame_red_texlist_names  0x00000000  TEXTURE_DZ_DC_HI_RED01
+pointer  chamber_flame_red_texlist_names  0x0000000c  TEXTURE_DZ_DC_HI_RED02
+pointer  chamber_flame_red_texlist_names  0x00000018  TEXTURE_DZ_DC_HI_RED03
+pointer  chamber_flame_red_texlist_names  0x00000024  TEXTURE_DZ_DC_HI_RED04
+pointer  chamber_flame_red_texlist_names  0x00000030  TEXTURE_DZ_DC_HI_RED05
+pointer  chamber_flame_red_texlist_names  0x0000003c  TEXTURE_DZ_DC_HI_RED06
+pointer  chamber_flame_red_texlist_names  0x00000048  TEXTURE_DZ_DC_HI_RED07
+pointer  chamber_flame_red_texlist_names  0x00000054  TEXTURE_DZ_DC_HI_RED08
+pointer  chamber_flame_red_texlist_names  0x00000060  TEXTURE_DZ_DC_HI_RED09
+pointer  chamber_flame_red_texlist_names  0x0000006c  TEXTURE_DZ_DC_HI_RED10
+pointer  chamber_flame_red_texlist_names  0x00000078  TEXTURE_DZ_DC_HI_RED11
+pointer  chamber_flame_red_texlist_names  0x00000084  TEXTURE_DZ_DC_HI_RED12
+pointer  chamber_flame_red_texlist_names  0x00000090  TEXTURE_DZ_DC_HI_RED13
+pointer  chamber_flame_red_texlist_names  0x0000009c  TEXTURE_DZ_DC_HI_RED14
+pointer  chamber_flame_red_texlist_names  0x000000a8  TEXTURE_DZ_DC_HI_RED15
+pointer  chamber_flame_red_texlist_names  0x000000b4  TEXTURE_DZ_DC_HI_RED16
+pointer  chamber_flame_red_texlist  0x00000000  chamber_flame_red_texlist_names
+pointer  death_chamber_map_texlist_names  0x00000000  TEXTURE_DZ_DC_MAP01
+pointer  death_chamber_map_texlist_names  0x0000000c  TEXTURE_DZ_DC_MAP02
+pointer  death_chamber_map_texlist_names  0x00000018  TEXTURE_DZ_DC_MAP03
+pointer  death_chamber_map_texlist  0x00000000  death_chamber_map_texlist_names
+pointer  eggman_container_textures_names  0x00000000  TEXTURE_SIKAKE_18_128E
+pointer  eggman_container_textures_names  0x0000000c  TEXTURE_SIKAKE_20_128E
+pointer  eggman_container_textures_names  0x00000018  TEXTURE_SIKAKE_46_128E
+pointer  eggman_container_textures_names  0x00000024  TEXTURE_SIKAKE_47_128E
+pointer  eggman_container_textures  0x00000000  eggman_container_textures_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  stage_textures  0x0000003c  ripple_texlist
+pointer  stage_textures  0x00000040  water_specks_texlist
+pointer  stage_textures  0x00000044  egg_key_texlist
+pointer  death_chamber_texture_groups  0x00000000  stage_textures
+pointer  death_chamber_texture_groups  0x00000004  goal_ring_texlists
+pointer  death_chamber_texture_groups  0x00000008  emerald_texlists
+pointer  death_chamber_texture_groups  0x0000000c  item_box_texlists
+pointer  death_chamber_texture_groups  0x00000010  item_box_air_texlists
+pointer  death_chamber_texture_groups  0x00000014  weight_texlists
+pointer  death_chamber_texture_groups  0x00000018  iron_ball_texlists
+pointer  death_chamber_texture_groups  0x0000001c  triple_spring_texlists
+pointer  death_chamber_texture_groups  0x00000020  dynamite_texlists
+pointer  death_chamber_texture_groups  0x00000024  reel_texlists
+pointer  death_chamber_texture_groups  0x00000028  chao_pipe_texlists
+pointer  death_chamber_texture_groups  0x0000002c  cage_texlists
+pointer  death_chamber_texture_groups  0x00000030  wood_box_e_texlists
+pointer  death_chamber_texture_groups  0x00000034  iron_box_e_texlists
+pointer  death_chamber_texture_groups  0x00000038  upgrade_texlists
+pointer  death_chamber_texture_groups  0x0000003c  missile_texlists
+pointer  death_chamber_texture_groups  0x00000040  skull_texlists
+pointer  death_chamber_texture_groups  0x00000044  rocket_texlists
+pointer  death_chamber_texture_groups  0x00000048  search_box_texlists
+pointer  death_chamber_texture_groups  0x0000004c  hint_box_texlists
+pointer  death_chamber_texture_groups  0x00000050  knudai_texlists
+pointer  death_chamber_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  death_chamber_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  death_chamber_texture_groups  0x0000005c  knudai_door_texlists
+pointer  death_chamber_texture_groups  0x00000060  chao_box_texlists
+pointer  death_chamber_texture_groups  0x00000064  chao_key_texlists
+pointer  death_chamber_texture_groups  0x00000068  object_effect_texlists
+pointer  death_chamber_texture_groups  0x0000006c  messenger_texlists
+pointer  death_chamber_texture_groups  0x00000070  ring_effect_texlists
+pointer  death_chamber_texture_groups  0x00000074  sandglass_texlists
+pointer  death_chamber_texture_groups  0x00000078  chamber_sandglass_door_texlists
+pointer  death_chamber_texture_groups  0x0000007c  solid_box_e_texlists
+pointer  death_chamber_texture_groups  0x00000080  chamber_fire_pot_texlists
+pointer  death_chamber_texture_groups  0x00000084  chamber_fire_mouth_texlists
+pointer  death_chamber_texture_groups  0x00000088  chamber_torch_texlists
+pointer  death_chamber_texture_groups  0x0000008c  chamber_torch2_texlists
+pointer  death_chamber_texture_groups  0x00000090  chamber_mikoshi_texlists
+pointer  death_chamber_texture_groups  0x00000094  chamber_mikoshi_pieces_texlists
+pointer  death_chamber_texture_groups  0x00000098  chamber_treasure_texlists
+pointer  death_chamber_texture_groups  0x0000009c  chamber_treasure_pieces_texlists
+pointer  death_chamber_texture_groups  0x000000a0  store_box_texlists
+pointer  death_chamber_texture_groups  0x000000a4  painting_texlists
+pointer  death_chamber_texture_groups  0x000000a8  chamber_round_shadow_texlists
+pointer  death_chamber_texture_groups  0x000000ac  chamber_bat_texlists
+pointer  death_chamber_texture_groups  0x000000b0  chamber_wall_warp_texlists
+pointer  death_chamber_texture_groups  0x000000b4  chamber_ground_warp_texlists
+pointer  death_chamber_texture_groups  0x000000b8  chamber_fan_texlists
+pointer  death_chamber_texture_groups  0x000000bc  chamber_mecha_texlists
+pointer  death_chamber_texture_groups  0x000000c0  shaft_texlists
+pointer  death_chamber_texture_groups  0x000000c4  spinner_texlists
+pointer  death_chamber_texture_groups  0x000000c8  chamber_lion_head_texlists
+pointer  death_chamber_texture_groups  0x000000cc  chamber_biribiri_texlists
+pointer  death_chamber_texture_groups  0x000000d0  chamber_door_light_texlists
+pointer  death_chamber_texture_groups  0x000000d4  chamber_map_texlists
+pointer  death_chamber_texture_groups  0x000000d8  chamber_floor_tiles_texlists
+pointer  death_chamber_texture_groups  0x000000dc  chamber_scorpion_texlists
+pointer  death_chamber_texture_groups  0x000000e0  chamber_bug_ornament_texlists
+pointer  death_chamber_pvms  0x00000000  ARCHIVE_OBJTEX_STG25
+pointer  death_chamber_pvms  0x00000004  stage_archive
+pointer  death_chamber_pvms  0x00000008  ARCHIVE_EFFTEX_COMMON
+pointer  death_chamber_pvms  0x0000000c  efftex_common_texlist
+pointer  death_chamber_pvms  0x00000010  ARCHIVE_OBJTEX_COMMON
+pointer  death_chamber_pvms  0x00000014  objtex_common_texlist
+pointer  death_chamber_pvms  0x00000018  ARCHIVE_STG25_FIRE_BLUE
+pointer  death_chamber_pvms  0x0000001c  chamber_flame_blue_texlist
+pointer  death_chamber_pvms  0x00000020  ARCHIVE_STG25_FIRE_GREEN
+pointer  death_chamber_pvms  0x00000024  chamber_flame_green_texlist
+pointer  death_chamber_pvms  0x00000028  ARCHIVE_STG25_FIRE_RED
+pointer  death_chamber_pvms  0x0000002c  chamber_flame_red_texlist
+pointer  death_chamber_pvms  0x00000030  ARCHIVE_STG25_WATER
+pointer  death_chamber_pvms  0x00000034  death_chamber_water_texlist
+pointer  death_chamber_pvms  0x00000038  ARCHIVE_STG25_MAP
+pointer  death_chamber_pvms  0x0000003c  death_chamber_map_texlist
+pointer  death_chamber_pvms  0x00000040  ARCHIVE_EGGCONTTEX
+pointer  death_chamber_pvms  0x00000044  eggman_container_textures
+pointer  death_chamber_pvms  0x0000004c  death_chamber_land_texlist

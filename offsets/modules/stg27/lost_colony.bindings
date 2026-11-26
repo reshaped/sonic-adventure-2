@@ -1,0 +1,102 @@
+text  COLONY_TEXT_ET512_2  8
+text  COLONY_TEXT_LOST64_1  9
+text  COLONY_TEXT_MIU256_CG001  13
+text  COLONY_TEXT_MIU256_LC001  13
+text  COLONY_TEXT_SPACENBG128  12
+text  COLONY_TEXT_SPACENBG64  11
+text  COLONY_TEXT_TX_POISON001  13
+text  COLONY_TEXT_TX_POISON002  13
+text  COLONY_TEXT_TX_POISON003  13
+text  COLONY_TEXT_TX_POISON004  13
+text  COLONY_TEXT_TX_POISON005  13
+text  COLONY_TEXT_TX_POISON006  13
+text  COLONY_TEXT_TX_POISON007  13
+text  COLONY_TEXT_TX_POISON008  13
+text  COLONY_TEXT_TX_POISON009  13
+text  COLONY_TEXT_TX_POISON010  13
+text  COLONY_TEXT_TX_POISON011  13
+text  COLONY_TEXT_TX_POISON012  13
+text  COLONY_TEXT_TX_POISON013  13
+text  COLONY_TEXT_BGTEX27  8
+pointer  colony_background_names  0x00000000  COLONY_TEXT_ET512_2
+pointer  colony_background_names  0x0000000c  COLONY_TEXT_LOST64_1
+pointer  colony_background_names  0x00000018  COLONY_TEXT_MIU256_CG001
+pointer  colony_background_names  0x00000024  COLONY_TEXT_MIU256_LC001
+pointer  colony_background_names  0x00000030  COLONY_TEXT_SPACENBG128
+pointer  colony_background_names  0x0000003c  COLONY_TEXT_SPACENBG64
+pointer  colony_background_names  0x00000048  COLONY_TEXT_TX_POISON001
+pointer  colony_background_names  0x00000054  COLONY_TEXT_TX_POISON002
+pointer  colony_background_names  0x00000060  COLONY_TEXT_TX_POISON003
+pointer  colony_background_names  0x0000006c  COLONY_TEXT_TX_POISON004
+pointer  colony_background_names  0x00000078  COLONY_TEXT_TX_POISON005
+pointer  colony_background_names  0x00000084  COLONY_TEXT_TX_POISON006
+pointer  colony_background_names  0x00000090  COLONY_TEXT_TX_POISON007
+pointer  colony_background_names  0x0000009c  COLONY_TEXT_TX_POISON008
+pointer  colony_background_names  0x000000a8  COLONY_TEXT_TX_POISON009
+pointer  colony_background_names  0x000000b4  COLONY_TEXT_TX_POISON010
+pointer  colony_background_names  0x000000c0  COLONY_TEXT_TX_POISON011
+pointer  colony_background_names  0x000000cc  COLONY_TEXT_TX_POISON012
+pointer  colony_background_names  0x000000d8  COLONY_TEXT_TX_POISON013
+pointer  colony_background_texlist  0x00000000  colony_background_names
+pointer  colony_sky_names  0x00000000  COLONY_TEXT_ET512_2
+pointer  colony_sky_names  0x0000000c  COLONY_TEXT_MIU256_CG001
+pointer  colony_sky_texlist  0x00000000  colony_sky_names
+pointer  colony_sky_model  0x00000000  colony_sky_vertices
+pointer  colony_sky_model  0x00000004  colony_sky_polygons
+pointer  colony_sky  0x00000004  colony_sky_model
+pointer  sky_copy_names  0x00000000  COLONY_TEXT_ET512_2
+pointer  sky_copy_names  0x0000000c  COLONY_TEXT_MIU256_CG001
+pointer  sky_copy_texlist  0x00000000  sky_copy_names
+pointer  sky_copy_model  0x00000000  sky_copy_vertices
+pointer  sky_copy_model  0x00000004  sky_copy_polygons
+pointer  sky_copy_object  0x00000004  sky_copy_model
+pointer  colony_sky_build  0x00000004  colony_sky_texlist
+pointer  colony_sky_build  0x00000008  colony_sky
+pointer  background_textures  0x00000000  colony_sky_texlist
+pointer  background_textures  0x00000004  sky_copy_texlist
+pointer  background_textures  0x00000008  colony_poison_texlist
+pointer  background_textures  0x0000000c  colony_lamp_texlist
+pointer  background_textures  0x00000010  colony_sky_land_texlist
+pointer  colony_bg_groups  0x00000000  background_textures
+pointer  colony_bg_pvms  0x00000000  COLONY_TEXT_BGTEX27
+pointer  colony_bg_pvms  0x00000004  colony_background_texlist
+pointer  kill_0_solid_faces  0x00000004  kill_0_solid_strips
+pointer  kill_0_solid_model  0x00000000  kill_0_solid_points
+pointer  kill_0_solid_model  0x00000004  kill_0_solid_normals
+pointer  kill_0_solid_model  0x0000000c  kill_0_solid_faces
+pointer  kill_0_solid_model  0x00000010  kill_0_solid_materials
+pointer  colony_kill_0  0x00000004  kill_0_solid_model
+pointer  kill_1_solid_faces  0x00000004  kill_1_solid_strips
+pointer  kill_1_solid_model  0x00000000  kill_1_solid_points
+pointer  kill_1_solid_model  0x00000004  kill_1_solid_normals
+pointer  kill_1_solid_model  0x0000000c  kill_1_solid_faces
+pointer  kill_1_solid_model  0x00000010  kill_1_solid_materials
+pointer  colony_kill_1  0x00000004  kill_1_solid_model
+pointer  kill_2_solid_faces  0x00000004  kill_2_solid_strips
+pointer  kill_2_solid_model  0x00000000  kill_2_solid_points
+pointer  kill_2_solid_model  0x00000004  kill_2_solid_normals
+pointer  kill_2_solid_model  0x0000000c  kill_2_solid_faces
+pointer  kill_2_solid_model  0x00000010  kill_2_solid_materials
+pointer  colony_kill_2  0x00000004  kill_2_solid_model
+pointer  kill_3_solid_faces  0x00000004  kill_3_solid_strips
+pointer  kill_3_solid_model  0x00000000  kill_3_solid_points
+pointer  kill_3_solid_model  0x00000004  kill_3_solid_normals
+pointer  kill_3_solid_model  0x0000000c  kill_3_solid_faces
+pointer  kill_3_solid_model  0x00000010  kill_3_solid_materials
+pointer  colony_kill_3  0x00000004  kill_3_solid_model
+pointer  kill_areas_list  0x00000004  colony_kill_0
+pointer  kill_areas_list  0x0000000c  colony_kill_1
+pointer  kill_areas_list  0x00000014  colony_kill_2
+pointer  kill_areas_list  0x0000001c  colony_kill_3
+pointer  scenery_models  0x00000000  colony_scenery_0
+pointer  scenery_models  0x00000004  colony_scenery_1
+pointer  scenery_models  0x00000008  colony_scenery_2
+pointer  scenery_models  0x0000000c  colony_scenery_3
+pointer  scenery_models  0x00000010  colony_scenery_4
+pointer  scenery_models  0x00000014  colony_scenery_5
+pointer  scenery_models  0x00000018  colony_scenery_6
+pointer  scenery_models  0x0000001c  colony_scenery_7
+pointer  scenery_models  0x00000020  colony_scenery_8
+pointer  pulse_models  0x00000000  colony_pulse_0
+pointer  pulse_models  0x00000008  colony_pulse_1
+pointer  pulse_models  0x00000010  colony_pulse_2

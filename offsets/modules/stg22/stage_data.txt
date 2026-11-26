@@ -1,0 +1,15 @@
+datum  inverted_rail_1_points  D  0x00000000  260
+datum  inverted_rail_1  D  0x00000104  16
+datum  inverted_rail_2_points  D  0x00000114  260
+datum  inverted_rail_2  D  0x00000218  16
+datum  inverted_rail_3_points  D  0x00000228  260
+datum  inverted_rail_3  D  0x0000032c  16
+datum  inverted_rail_4_points  D  0x0000033c  260
+datum  inverted_rail_4  D  0x00000440  16
+datum  inverted_rail_5_points  D  0x00000450  260
+datum  inverted_rail_5  D  0x00000554  16
+datum  inverted_rail_6_points  D  0x00000564  420
+datum  inverted_rail_6  D  0x00000708  16
+datum  upright_rail_points  D  0x00000718  240
+datum  upright_rail  D  0x00000808  16
+datum  crazy_gadget_paths  D  0x00000818  32

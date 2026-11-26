@@ -1,0 +1,3 @@
+modules/stg28/dat_8c54def0.c
+modules/stg28/paths.c
+modules/stg28/terrain.c

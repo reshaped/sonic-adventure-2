@@ -1,0 +1,14 @@
+text  CITY_TEXTURE_MIU256_CE001  C  0x0000000c  13
+text  CITY_TEXTURE_MIU32_CE003  C  0x0000001c  12
+text  CITY_TEXTURE_MIU64_CE001  C  0x00000028  12
+datum  tree_texnames  D  0x00000000  36
+datum  tree_texlist  D  0x00000024  8
+datum  tree_polygons  D  0x0000002c  398
+datum  tree_vertices  D  0x000001bc  668
+datum  tree_model  D  0x00000458  24
+datum  tree_object  D  0x00000470  52
+datum  tree_ground_polygons  D  0x000004a4  78
+datum  tree_ground_vertices  D  0x000004f4  140
+datum  tree_ground_model  D  0x00000580  24
+datum  tree_root  D  0x00000598  52
+datum  tree_texlists  D  0x000005cc  8

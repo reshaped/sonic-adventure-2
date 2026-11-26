@@ -1,0 +1,27 @@
+#ifndef STG31_FLIER_ART_H
+#define STG31_FLIER_ART_H
+
+#include <ninja.h>
+
+extern NJS_TEXLIST green_hill_beeton_texlist;
+extern NJS_CNK_MODEL green_hill_beeton_piece_0;
+extern NJS_CNK_MODEL green_hill_beeton_piece_1;
+extern NJS_CNK_MODEL green_hill_beeton_piece_2;
+extern NJS_CNK_MODEL green_hill_beeton_piece_3;
+extern NJS_CNK_MODEL green_hill_beeton_body_model;
+extern NJS_CNK_OBJECT green_hill_beeton_body;
+extern NJS_MOTION green_hill_beeton_flight_motion;
+extern NJS_MOTION green_hill_beeton_unfold_motion;
+extern NJS_MOTION green_hill_beeton_aim_motion;
+extern char *green_hill_beeton_form_names[1];
+
+extern NJS_TEXLIST green_hill_batabata_texlist;
+extern NJS_CNK_MODEL green_hill_batabata_piece_0;
+extern NJS_CNK_MODEL green_hill_batabata_piece_1;
+extern NJS_CNK_MODEL green_hill_batabata_piece_2;
+extern NJS_CNK_MODEL green_hill_batabata_body_model;
+extern NJS_CNK_OBJECT green_hill_batabata_body;
+extern NJS_MOTION green_hill_batabata_flight_motion;
+extern char *green_hill_batabata_form_names[1];
+
+#endif

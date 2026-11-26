@@ -1,0 +1,16 @@
+text  MACHINE_EDITOR_ROT_Y  C  0x00000000  9
+text  MACHINE_TEXTURE_MIU128_IG009  C  0x0000000c  13
+text  MACHINE_TEXTURE_MIU128_IG010  C  0x0000001c  13
+text  MACHINE_TEXTURE_MIU32_PL001  C  0x0000002c  12
+text  MACHINE_TEXTURE_MIU64_IG010  C  0x00000038  12
+datum  machine_names  D  0x00000000  48
+datum  machine_texlist  D  0x00000030  8
+datum  machine_lamp_polygons  D  0x00000038  50
+datum  machine_lamp_vertices  D  0x0000006c  76
+datum  machine_lamp_model  D  0x000000b8  24
+datum  machine_lamp  D  0x000000d0  52
+datum  machine_polygons  D  0x00000104  282
+datum  machine_vertices  D  0x00000220  556
+datum  machine_model  D  0x0000044c  24
+datum  machine_object  D  0x00000464  52
+datum  machine_texlists  D  0x00000498  8

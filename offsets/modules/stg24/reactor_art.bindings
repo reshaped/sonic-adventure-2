@@ -1,0 +1,256 @@
+text  REACTOR_TEXTURE_MIU128_CG007  13
+text  REACTOR_TEXTURE_MIU128_CG008  13
+text  REACTOR_TEXTURE_EYE_RIGHT  10
+text  REACTOR_TEXTURE_MIU128_CG004  13
+text  REACTOR_TEXTURE_MIU128_CG005  13
+text  REACTOR_TEXTURE_MIU128_CG009  13
+text  REACTOR_TEXTURE_MIU128_CG010  13
+text  REACTOR_TEXTURE_MIU128_CG016  13
+text  REACTOR_TEXTURE_MIU128_CG017  13
+text  REACTOR_TEXTURE_MIU128_CG022  13
+text  REACTOR_TEXTURE_MIU64_CG003  12
+text  REACTOR_TEXTURE_MIU64_CG004  12
+text  REACTOR_TEXTURE_MIU64_CG005  12
+text  REACTOR_TEXTURE_MIU64_CG008  12
+text  REACTOR_TEXTURE_MIU64_CG009  12
+text  REACTOR_TEXTURE_MIU64_CG010  12
+text  REACTOR_TEXTURE_MIU64_CG021  12
+text  REACTOR_TEXTURE_P_SHADOW  9
+text  REACTOR_TEXTURE_EYE_RIGHT2  11
+text  REACTOR_TEXTURE_TAMA  5
+text  REACTOR_TEXTURE_LTAM  5
+text  REACTOR_TEXTURE_TAMA1  6
+text  REACTOR_TEXTURE_MIU256_CG001  13
+text  REACTOR_TEXTURE_MIU64_CG014  12
+text  REACTOR_TEXTURE_FLAME01  8
+text  REACTOR_TEXTURE_FLAME02  8
+text  REACTOR_TEXTURE_FLAME03  8
+text  REACTOR_TEXTURE_FLAME04  8
+text  REACTOR_TEXTURE_FLAME05  8
+text  REACTOR_TEXTURE_FLAME06  8
+text  REACTOR_TEXTURE_FLAME07  8
+text  REACTOR_TEXTURE_FLAME08  8
+text  REACTOR_TEXTURE_FLAME09  8
+text  REACTOR_TEXTURE_FLAME10  8
+pointer  reactor_textures_names  0x00000000  REACTOR_TEXTURE_MIU128_CG007
+pointer  reactor_textures_names  0x0000000c  REACTOR_TEXTURE_MIU128_CG008
+pointer  reactor_textures_names  0x00000018  REACTOR_TEXTURE_EYE_RIGHT
+pointer  reactor_textures_names  0x00000024  REACTOR_TEXTURE_MIU128_CG004
+pointer  reactor_textures_names  0x00000030  REACTOR_TEXTURE_MIU128_CG005
+pointer  reactor_textures_names  0x0000003c  REACTOR_TEXTURE_MIU128_CG009
+pointer  reactor_textures_names  0x00000048  REACTOR_TEXTURE_MIU128_CG010
+pointer  reactor_textures_names  0x00000054  REACTOR_TEXTURE_MIU128_CG016
+pointer  reactor_textures_names  0x00000060  REACTOR_TEXTURE_MIU128_CG017
+pointer  reactor_textures_names  0x0000006c  REACTOR_TEXTURE_MIU128_CG022
+pointer  reactor_textures_names  0x00000078  REACTOR_TEXTURE_MIU64_CG003
+pointer  reactor_textures_names  0x00000084  REACTOR_TEXTURE_MIU64_CG004
+pointer  reactor_textures_names  0x00000090  REACTOR_TEXTURE_MIU64_CG005
+pointer  reactor_textures_names  0x0000009c  REACTOR_TEXTURE_MIU64_CG008
+pointer  reactor_textures_names  0x000000a8  REACTOR_TEXTURE_MIU64_CG009
+pointer  reactor_textures_names  0x000000b4  REACTOR_TEXTURE_MIU64_CG010
+pointer  reactor_textures_names  0x000000c0  REACTOR_TEXTURE_MIU64_CG021
+pointer  reactor_textures_names  0x000000cc  REACTOR_TEXTURE_P_SHADOW
+pointer  reactor_textures  0x00000000  reactor_textures_names
+pointer  reactor_body_part_18_model  0x00000000  reactor_body_part_18_vertices
+pointer  reactor_body_part_18_model  0x00000004  reactor_body_part_18_polygons
+pointer  reactor_body_part_18  0x00000004  reactor_body_part_18_model
+pointer  reactor_body_part_17_model  0x00000000  reactor_body_part_17_vertices
+pointer  reactor_body_part_17_model  0x00000004  reactor_body_part_17_polygons
+pointer  reactor_body_part_17  0x00000004  reactor_body_part_17_model
+pointer  reactor_body_part_17  0x00000030  reactor_body_part_18
+pointer  reactor_body_part_16_model  0x00000000  reactor_body_part_16_vertices
+pointer  reactor_body_part_16_model  0x00000004  reactor_body_part_16_polygons
+pointer  reactor_body_part_16  0x00000004  reactor_body_part_16_model
+pointer  reactor_body_part_16  0x00000030  reactor_body_part_17
+pointer  reactor_body_part_15_model  0x00000000  reactor_body_part_15_vertices
+pointer  reactor_body_part_15_model  0x00000004  reactor_body_part_15_polygons
+pointer  reactor_body_part_15  0x00000004  reactor_body_part_15_model
+pointer  reactor_body_part_15  0x00000030  reactor_body_part_16
+pointer  reactor_body_part_14_model  0x00000000  reactor_body_part_14_vertices
+pointer  reactor_body_part_14_model  0x00000004  reactor_body_part_14_polygons
+pointer  reactor_body_part_14  0x00000004  reactor_body_part_14_model
+pointer  reactor_body_part_14  0x00000030  reactor_body_part_15
+pointer  reactor_body_part_13_model  0x00000000  reactor_body_part_13_vertices
+pointer  reactor_body_part_13_model  0x00000004  reactor_body_part_13_polygons
+pointer  reactor_body_part_13  0x00000004  reactor_body_part_13_model
+pointer  reactor_body_part_13  0x00000030  reactor_body_part_14
+pointer  reactor_body_part_12_model  0x00000000  reactor_body_part_12_vertices
+pointer  reactor_body_part_12_model  0x00000004  reactor_body_part_12_polygons
+pointer  reactor_body_part_12  0x00000004  reactor_body_part_12_model
+pointer  reactor_body_part_12  0x00000030  reactor_body_part_13
+pointer  reactor_body_part_11_model  0x00000000  reactor_body_part_11_vertices
+pointer  reactor_body_part_11_model  0x00000004  reactor_body_part_11_polygons
+pointer  reactor_body_part_11  0x00000004  reactor_body_part_11_model
+pointer  reactor_body_part_11  0x00000030  reactor_body_part_12
+pointer  reactor_left_gun_model  0x00000000  reactor_left_gun_vertices
+pointer  reactor_left_gun_model  0x00000004  reactor_left_gun_polygons
+pointer  reactor_left_gun  0x00000004  reactor_left_gun_model
+pointer  reactor_left_gun  0x00000030  reactor_body_part_11
+pointer  reactor_left_support_model  0x00000000  reactor_left_support_vertices
+pointer  reactor_left_support_model  0x00000004  reactor_left_support_polygons
+pointer  reactor_left_support  0x00000004  reactor_left_support_model
+pointer  reactor_left_support  0x00000030  reactor_left_gun
+pointer  reactor_first_coil_model  0x00000000  reactor_first_coil_vertices
+pointer  reactor_first_coil_model  0x00000004  reactor_first_coil_polygons
+pointer  reactor_first_coil  0x00000004  reactor_first_coil_model
+pointer  reactor_first_coil  0x00000030  reactor_left_support
+pointer  reactor_body_part_7_model  0x00000000  reactor_body_part_7_vertices
+pointer  reactor_body_part_7_model  0x00000004  reactor_body_part_7_polygons
+pointer  reactor_body_part_7  0x00000004  reactor_body_part_7_model
+pointer  reactor_body_part_7  0x00000030  reactor_first_coil
+pointer  reactor_second_coil_model  0x00000000  reactor_second_coil_vertices
+pointer  reactor_second_coil_model  0x00000004  reactor_second_coil_polygons
+pointer  reactor_second_coil  0x00000004  reactor_second_coil_model
+pointer  reactor_second_coil  0x00000030  reactor_body_part_7
+pointer  reactor_body_part_5_model  0x00000000  reactor_body_part_5_vertices
+pointer  reactor_body_part_5_model  0x00000004  reactor_body_part_5_polygons
+pointer  reactor_body_part_5  0x00000004  reactor_body_part_5_model
+pointer  reactor_body_part_5  0x00000030  reactor_second_coil
+pointer  reactor_right_gun_model  0x00000000  reactor_right_gun_vertices
+pointer  reactor_right_gun_model  0x00000004  reactor_right_gun_polygons
+pointer  reactor_right_gun  0x00000004  reactor_right_gun_model
+pointer  reactor_right_gun  0x00000030  reactor_body_part_5
+pointer  reactor_right_support_model  0x00000000  reactor_right_support_vertices
+pointer  reactor_right_support_model  0x00000004  reactor_right_support_polygons
+pointer  reactor_right_support  0x00000004  reactor_right_support_model
+pointer  reactor_right_support  0x00000030  reactor_right_gun
+pointer  reactor_body_part_2_model  0x00000000  reactor_body_part_2_vertices
+pointer  reactor_body_part_2_model  0x00000004  reactor_body_part_2_polygons
+pointer  reactor_body_part_2  0x00000004  reactor_body_part_2_model
+pointer  reactor_body_part_2  0x00000030  reactor_right_support
+pointer  reactor_body_model  0x00000000  reactor_body_vertices
+pointer  reactor_body_model  0x00000004  reactor_body_polygons
+pointer  reactor_body  0x00000004  reactor_body_model
+pointer  reactor_body  0x0000002c  reactor_body_part_2
+pointer  reactor_body_collision_meshsets  0x00000004  reactor_body_collision_indices
+pointer  reactor_body_collision_model  0x00000000  reactor_body_collision_points
+pointer  reactor_body_collision_model  0x00000004  reactor_body_collision_normals
+pointer  reactor_body_collision_model  0x0000000c  reactor_body_collision_meshsets
+pointer  reactor_body_collision_model  0x00000010  reactor_body_collision_materials
+pointer  reactor_body_collision  0x00000004  reactor_body_collision_model
+pointer  reactor_lid_textures_names  0x00000000  REACTOR_TEXTURE_MIU128_CG004
+pointer  reactor_lid_textures_names  0x0000000c  REACTOR_TEXTURE_MIU128_CG007
+pointer  reactor_lid_textures_names  0x00000018  REACTOR_TEXTURE_MIU128_CG009
+pointer  reactor_lid_textures_names  0x00000024  REACTOR_TEXTURE_MIU128_CG022
+pointer  reactor_lid_textures_names  0x00000030  REACTOR_TEXTURE_MIU64_CG003
+pointer  reactor_lid_textures_names  0x0000003c  REACTOR_TEXTURE_MIU64_CG004
+pointer  reactor_lid_textures_names  0x00000048  REACTOR_TEXTURE_P_SHADOW
+pointer  reactor_lid_textures  0x00000000  reactor_lid_textures_names
+pointer  reactor_lid_model_model  0x00000000  reactor_lid_model_vertices
+pointer  reactor_lid_model_model  0x00000004  reactor_lid_model_polygons
+pointer  reactor_lid_model  0x00000004  reactor_lid_model_model
+pointer  reactor_lid_collision_meshsets  0x00000004  reactor_lid_collision_indices
+pointer  reactor_lid_collision_model  0x00000000  reactor_lid_collision_points
+pointer  reactor_lid_collision_model  0x00000004  reactor_lid_collision_normals
+pointer  reactor_lid_collision_model  0x0000000c  reactor_lid_collision_meshsets
+pointer  reactor_lid_collision_model  0x00000010  reactor_lid_collision_materials
+pointer  reactor_lid_collision  0x00000004  reactor_lid_collision_model
+pointer  reactor_rim_textures_names  0x00000000  REACTOR_TEXTURE_MIU128_CG016
+pointer  reactor_rim_textures  0x00000000  reactor_rim_textures_names
+pointer  reactor_rim_model  0x00000000  reactor_rim_vertices
+pointer  reactor_rim_model  0x00000004  reactor_rim_polygons
+pointer  reactor_rim  0x00000004  reactor_rim_model
+pointer  reactor_fragment_1_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG004
+pointer  reactor_fragment_1_texlist_names  0x0000000c  REACTOR_TEXTURE_MIU64_CG004
+pointer  reactor_fragment_1_texlist  0x00000000  reactor_fragment_1_texlist_names
+pointer  reactor_fragment_1_model  0x00000000  reactor_fragment_1_vertices
+pointer  reactor_fragment_1_model  0x00000004  reactor_fragment_1_polygons
+pointer  reactor_fragment_1  0x00000004  reactor_fragment_1_model
+pointer  reactor_fragment_2_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG009
+pointer  reactor_fragment_2_texlist_names  0x0000000c  REACTOR_TEXTURE_MIU64_CG004
+pointer  reactor_fragment_2_texlist  0x00000000  reactor_fragment_2_texlist_names
+pointer  reactor_fragment_2_model  0x00000000  reactor_fragment_2_vertices
+pointer  reactor_fragment_2_model  0x00000004  reactor_fragment_2_polygons
+pointer  reactor_fragment_2  0x00000004  reactor_fragment_2_model
+pointer  reactor_fragment_3_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG007
+pointer  reactor_fragment_3_texlist  0x00000000  reactor_fragment_3_texlist_names
+pointer  reactor_fragment_3_model  0x00000000  reactor_fragment_3_vertices
+pointer  reactor_fragment_3_model  0x00000004  reactor_fragment_3_polygons
+pointer  reactor_fragment_3  0x00000004  reactor_fragment_3_model
+pointer  reactor_fragment_4_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG009
+pointer  reactor_fragment_4_texlist_names  0x0000000c  REACTOR_TEXTURE_MIU64_CG004
+pointer  reactor_fragment_4_texlist  0x00000000  reactor_fragment_4_texlist_names
+pointer  reactor_fragment_4_model  0x00000000  reactor_fragment_4_vertices
+pointer  reactor_fragment_4_model  0x00000004  reactor_fragment_4_polygons
+pointer  reactor_fragment_4  0x00000004  reactor_fragment_4_model
+pointer  reactor_fragment_5_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG004
+pointer  reactor_fragment_5_texlist_names  0x0000000c  REACTOR_TEXTURE_MIU128_CG007
+pointer  reactor_fragment_5_texlist_names  0x00000018  REACTOR_TEXTURE_MIU128_CG009
+pointer  reactor_fragment_5_texlist  0x00000000  reactor_fragment_5_texlist_names
+pointer  reactor_fragment_5_model  0x00000000  reactor_fragment_5_vertices
+pointer  reactor_fragment_5_model  0x00000004  reactor_fragment_5_polygons
+pointer  reactor_fragment_5  0x00000004  reactor_fragment_5_model
+pointer  reactor_fragment_6_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG004
+pointer  reactor_fragment_6_texlist_names  0x0000000c  REACTOR_TEXTURE_MIU64_CG003
+pointer  reactor_fragment_6_texlist_names  0x00000018  REACTOR_TEXTURE_MIU64_CG004
+pointer  reactor_fragment_6_texlist  0x00000000  reactor_fragment_6_texlist_names
+pointer  reactor_fragment_6_model  0x00000000  reactor_fragment_6_vertices
+pointer  reactor_fragment_6_model  0x00000004  reactor_fragment_6_polygons
+pointer  reactor_fragment_6  0x00000004  reactor_fragment_6_model
+pointer  reactor_fragment_7_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG007
+pointer  reactor_fragment_7_texlist  0x00000000  reactor_fragment_7_texlist_names
+pointer  reactor_fragment_7_model  0x00000000  reactor_fragment_7_vertices
+pointer  reactor_fragment_7_model  0x00000004  reactor_fragment_7_polygons
+pointer  reactor_fragment_7  0x00000004  reactor_fragment_7_model
+pointer  reactor_fragment_8_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG009
+pointer  reactor_fragment_8_texlist_names  0x0000000c  REACTOR_TEXTURE_MIU64_CG003
+pointer  reactor_fragment_8_texlist_names  0x00000018  REACTOR_TEXTURE_MIU64_CG004
+pointer  reactor_fragment_8_texlist_names  0x00000024  REACTOR_TEXTURE_P_SHADOW
+pointer  reactor_fragment_8_texlist  0x00000000  reactor_fragment_8_texlist_names
+pointer  reactor_fragment_8_model  0x00000000  reactor_fragment_8_vertices
+pointer  reactor_fragment_8_model  0x00000004  reactor_fragment_8_polygons
+pointer  reactor_fragment_8  0x00000004  reactor_fragment_8_model
+pointer  reactor_panel_bright_names  0x00000000  REACTOR_TEXTURE_EYE_RIGHT
+pointer  reactor_panel_bright  0x00000000  reactor_panel_bright_names
+pointer  reactor_panel_dim_names  0x00000000  REACTOR_TEXTURE_EYE_RIGHT2
+pointer  reactor_panel_dim  0x00000000  reactor_panel_dim_names
+pointer  reactor_panel_model  0x00000000  reactor_panel_vertices
+pointer  reactor_panel_model  0x00000004  reactor_panel_polygons
+pointer  reactor_panel  0x00000004  reactor_panel_model
+pointer  cannon_shot_bright_names  0x00000000  REACTOR_TEXTURE_TAMA
+pointer  cannon_shot_bright_names  0x0000000c  REACTOR_TEXTURE_LTAM
+pointer  cannon_shot_bright  0x00000000  cannon_shot_bright_names
+pointer  cannon_shot_dim_names  0x00000000  REACTOR_TEXTURE_TAMA1
+pointer  cannon_shot_dim_names  0x0000000c  REACTOR_TEXTURE_LTAM
+pointer  cannon_shot_dim  0x00000000  cannon_shot_dim_names
+pointer  shot_spark_down_model  0x00000000  shot_spark_down_vertices
+pointer  shot_spark_down_model  0x00000004  shot_spark_down_polygons
+pointer  shot_spark_down  0x00000004  shot_spark_down_model
+pointer  shot_spark_back_model  0x00000000  shot_spark_back_vertices
+pointer  shot_spark_back_model  0x00000004  shot_spark_back_polygons
+pointer  shot_spark_back  0x00000004  shot_spark_back_model
+pointer  shot_spark_back  0x00000030  shot_spark_down
+pointer  shot_spark_front_model  0x00000000  shot_spark_front_vertices
+pointer  shot_spark_front_model  0x00000004  shot_spark_front_polygons
+pointer  shot_spark_front  0x00000004  shot_spark_front_model
+pointer  shot_spark_front  0x00000030  shot_spark_back
+pointer  shot_spark_up_model  0x00000000  shot_spark_up_vertices
+pointer  shot_spark_up_model  0x00000004  shot_spark_up_polygons
+pointer  shot_spark_up  0x00000004  shot_spark_up_model
+pointer  shot_spark_up  0x00000030  shot_spark_front
+pointer  shot_center_model  0x00000000  cannon_shot_model_vertices
+pointer  shot_center_model  0x00000004  cannon_shot_model_polygons
+pointer  cannon_shot_model  0x00000004  shot_center_model
+pointer  cannon_shot_model  0x0000002c  shot_spark_up
+pointer  cannon_texlist_names  0x00000000  REACTOR_TEXTURE_MIU128_CG007
+pointer  cannon_texlist_names  0x0000000c  REACTOR_TEXTURE_MIU128_CG017
+pointer  cannon_texlist_names  0x00000018  REACTOR_TEXTURE_MIU256_CG001
+pointer  cannon_texlist_names  0x00000024  REACTOR_TEXTURE_MIU64_CG014
+pointer  cannon_texlist_names  0x00000030  REACTOR_TEXTURE_MIU64_CG021
+pointer  cannon_texlist_names  0x0000003c  REACTOR_TEXTURE_MIU128_CG009
+pointer  cannon_texlist  0x00000000  cannon_texlist_names
+pointer  cannon_barrel  0x00000000  cannon_mount_vertices
+pointer  cannon_barrel  0x00000004  cannon_mount_polygons
+pointer  cannon_mount  0x00000004  cannon_barrel
+pointer  reactor_smoke_textures_names  0x00000000  REACTOR_TEXTURE_FLAME01
+pointer  reactor_smoke_textures_names  0x0000000c  REACTOR_TEXTURE_FLAME02
+pointer  reactor_smoke_textures_names  0x00000018  REACTOR_TEXTURE_FLAME03
+pointer  reactor_smoke_textures_names  0x00000024  REACTOR_TEXTURE_FLAME04
+pointer  reactor_smoke_textures_names  0x00000030  REACTOR_TEXTURE_FLAME05
+pointer  reactor_smoke_textures_names  0x0000003c  REACTOR_TEXTURE_FLAME06
+pointer  reactor_smoke_textures_names  0x00000048  REACTOR_TEXTURE_FLAME07
+pointer  reactor_smoke_textures_names  0x00000054  REACTOR_TEXTURE_FLAME08
+pointer  reactor_smoke_textures_names  0x00000060  REACTOR_TEXTURE_FLAME09
+pointer  reactor_smoke_textures_names  0x0000006c  REACTOR_TEXTURE_FLAME10
+pointer  reactor_smoke_textures  0x00000000  reactor_smoke_textures_names
+pointer  reactor_rim_anim  0x00000010  reactor_rim_scroll_keys

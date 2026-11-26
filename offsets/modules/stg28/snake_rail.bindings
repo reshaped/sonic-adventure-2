@@ -1,0 +1,19 @@
+text  SNAKE_RAIL_TEXTURE_DZ_PC_SNAKE_FIREPOT256  23
+text  SNAKE_RAIL_TEXTURE_DZ_PC_SNAKEBASE64  18
+text  SNAKE_RAIL_KIND_BLANK  2
+
+pointer snake_rail_models  0x00000000  cave_snake_rail_model
+pointer cave_snake_rail_texlists  0x00000000  cave_snake_rail_texlist
+pointer snake_rail_kind_names  0x00000000  SNAKE_RAIL_KIND_BLANK
+pointer cave_snake_rail_texture_names  0x00000000  SNAKE_RAIL_TEXTURE_DZ_PC_SNAKE_FIREPOT256
+pointer cave_snake_rail_texture_names  0x0000000c  SNAKE_RAIL_TEXTURE_DZ_PC_SNAKEBASE64
+pointer cave_snake_rail_texlist  0x00000000  cave_snake_rail_texture_names
+pointer cave_snake_rail_model  0x00000000  cave_snake_rail_vertices
+pointer cave_snake_rail_model  0x00000004  cave_snake_rail_polygons
+pointer cave_snake_rail_object  0x00000004  cave_snake_rail_model
+pointer cave_snake_rail_collision_meshsets  0x00000004  cave_snake_rail_collision_indices
+pointer cave_snake_rail_collision_model  0x00000000  cave_snake_rail_collision_points
+pointer cave_snake_rail_collision_model  0x00000004  cave_snake_rail_collision_normals
+pointer cave_snake_rail_collision_model  0x0000000c  cave_snake_rail_collision_meshsets
+pointer cave_snake_rail_collision_model  0x00000010  cave_snake_rail_collision_materials
+pointer cave_snake_rail_collision  0x00000004  cave_snake_rail_collision_model

@@ -1,0 +1,16 @@
+text  PROJECTILE_TEXTURE_BOMBFIRE  9
+pointer  blast_texnames  0x00000000  PROJECTILE_TEXTURE_BOMBFIRE
+pointer  blast_texlist  0x00000000  blast_texnames
+pointer  blast_model_0  0x00000000  blast_vertices_0
+pointer  blast_model_0  0x00000004  blast_polygons_0
+pointer  blast_object_0  0x00000004  blast_model_0
+pointer  blast_model_1  0x00000000  blast_vertices_1
+pointer  blast_model_1  0x00000004  blast_polygons_1
+pointer  blast_object_1  0x00000004  blast_model_1
+pointer  blast_model_2  0x00000000  blast_vertices_2
+pointer  blast_model_2  0x00000004  blast_polygons_2
+pointer  blast_object_2  0x00000004  blast_model_2
+pointer  blast_texture_anim  0x00000010  blast_texture_anim_uvs
+pointer  blast_models  0x00000000  blast_model_0
+pointer  blast_models  0x00000004  blast_model_1
+pointer  blast_models  0x00000008  blast_model_2

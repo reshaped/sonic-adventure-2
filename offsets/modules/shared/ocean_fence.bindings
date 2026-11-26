@@ -1,0 +1,4 @@
+pointer  fence_models  0x00000000  ocean_fence_bright_model
+pointer  fence_models  0x00000004  ocean_fence_dark_model
+pointer  ocean_fence_texlists  0x00000000  ocean_fence_bright_texlist
+pointer  ocean_fence_texlists  0x00000004  ocean_fence_dark_texlist

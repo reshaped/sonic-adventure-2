@@ -1,0 +1,7 @@
+datum  green_hill_floor_face_1  C  0x00000000  16
+datum  green_hill_floor_face_2  C  0x00000010  16
+datum  green_hill_floor_face_3  C  0x00000020  16
+datum  green_hill_floor_face_4  C  0x00000030  16
+datum  floor_top  C  0x00000040  16
+datum  green_hill_floor_edge  C  0x00000050  14
+datum  textures  D  0x00000000  72

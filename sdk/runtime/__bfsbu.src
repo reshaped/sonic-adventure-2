@@ -1,0 +1,43 @@
+        .EXPORT     __bfsbu
+
+REGISTER_BITS:  .EQU    32
+BYTE_BITS:      .EQU    8
+
+        .SECTION    P,CODE,ALIGN=4
+
+; store R0 in an unsigned bit field of the byte at R2, for compiled code.
+; R1's bits 0 to 7 give the field's width. its bits 8 to 15 give the number
+; of the byte's bits above the field. return the field's new value in R0,
+; zero-extended. it changes R0, and no other register
+; @asm opcode: swap, SWAP.B R1,R3 at 0x0c9f20f6 brings R1's bits 8 to 15
+; down to R3's low byte
+__bfsbu:
+        MOV.L       R3,@-R15
+        SWAP.B      R1,R3
+        MOV.L       R1,@-R15
+        EXTU.B      R1,R1
+        MOV.L       R4,@-R15
+        EXTU.B      R3,R3
+        MOV.L       R5,@-R15
+        MOV         #REGISTER_BITS,R5
+        MOV.B       @R2,R4
+        SUB         R1,R5
+        MOV         R4,R1
+        SHLD        R5,R0
+        ADD         #REGISTER_BITS-BYTE_BITS,R3
+        SHLD        R3,R1           ; the field's top bit to bit 31
+        XOR         R0,R1           ; R1's top bits, the old field XOR the new
+        NEG         R5,R5
+        SHLD        R5,R1
+        SHLD        R5,R0
+        NEG         R5,R5
+        SUB         R3,R5           ; R5, the number of bits below the field
+        SHLD        R5,R1           ; R1, that XOR in the field, 0 outside it
+        MOV.L       @R15+,R5
+        XOR         R4,R1           ; R1, the old byte with the new field
+        MOV.L       @R15+,R4
+        MOV.B       R1,@R2
+        MOV.L       @R15+,R1
+        RTS
+        MOV.L       @R15+,R3
+        .END

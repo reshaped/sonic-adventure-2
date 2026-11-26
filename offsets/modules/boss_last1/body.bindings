@@ -1,0 +1,74 @@
+text MOTION_NAME_APPEAR 11
+text MOTION_NAME_STAND_L 12
+text MOTION_NAME_STAND_R 12
+text MOTION_NAME_WALKLL 11
+text MOTION_NAME_WALKLR 11
+text MOTION_NAME_WALKRR 11
+text MOTION_NAME_WALKRL 11
+text MOTION_NAME_ENERGY_L 13
+text MOTION_NAME_ENERGY_R 13
+text MOTION_NAME_GLIDE_L 12
+text MOTION_NAME_GLIDE_R 12
+text MOTION_NAME_ATTACK_L 13
+text MOTION_NAME_ATTACK_R 13
+text MOTION_NAME_IKURA_0 12
+text MOTION_NAME_IKURA_1 12
+text MOTION_NAME_DAMAGE 11
+text MOTION_NAME_LTOR 9
+text MOTION_NAME_RTOL 9
+text MOTION_NAME_DEAD 9
+
+pointer  body_motions  0x00000000  biolizard_motion_0
+pointer  body_motions  0x0000001c  biolizard_motion_1
+pointer  body_motions  0x00000038  biolizard_motion_2
+pointer  body_motions  0x00000054  biolizard_motion_3
+pointer  body_motions  0x00000070  biolizard_motion_3
+pointer  body_motions  0x0000008c  biolizard_motion_5
+pointer  body_motions  0x000000a8  biolizard_motion_5
+pointer  body_motions  0x000000c4  biolizard_motion_7
+pointer  body_motions  0x000000e0  biolizard_motion_8
+pointer  body_motions  0x000000fc  biolizard_motion_9
+pointer  body_motions  0x00000118  biolizard_motion_10
+pointer  body_motions  0x00000134  biolizard_motion_11
+pointer  body_motions  0x00000150  biolizard_motion_12
+pointer  body_motions  0x0000016c  biolizard_motion_13
+pointer  body_motions  0x00000188  biolizard_motion_13
+pointer  body_motions  0x000001a4  biolizard_motion_15
+pointer  body_motions  0x000001c0  biolizard_motion_16
+pointer  body_motions  0x000001dc  biolizard_motion_17
+pointer  body_motions  0x000001f8  biolizard_motion_18
+pointer  body_motions  0x00000214  biolizard_motion_19
+pointer  body_motions  0x00000230  biolizard_motion_7
+pointer  body_motions  0x0000024c  biolizard_motion_7
+pointer  body_motions  0x00000268  biolizard_motion_7
+pointer  body_motions  0x00000284  biolizard_motion_8
+pointer  body_motions  0x000002a0  biolizard_motion_8
+pointer  body_motions  0x000002bc  biolizard_motion_8
+pointer  body_title  0x00000000  title_letters
+pointer  body_title  0x0000000c  title_bar
+pointer  body_title  0x00000018  biolizard_title_texlist
+pointer  motion_names  0x00000000  MOTION_NAME_APPEAR
+pointer  motion_names  0x00000004  MOTION_NAME_STAND_L
+pointer  motion_names  0x00000008  MOTION_NAME_STAND_R
+pointer  motion_names  0x0000000c  MOTION_NAME_WALKLL
+pointer  motion_names  0x00000010  MOTION_NAME_WALKLR
+pointer  motion_names  0x00000014  MOTION_NAME_WALKRR
+pointer  motion_names  0x00000018  MOTION_NAME_WALKRL
+pointer  motion_names  0x0000001c  MOTION_NAME_ENERGY_L
+pointer  motion_names  0x00000020  MOTION_NAME_ENERGY_R
+pointer  motion_names  0x00000024  MOTION_NAME_GLIDE_L
+pointer  motion_names  0x00000028  MOTION_NAME_GLIDE_R
+pointer  motion_names  0x0000002c  MOTION_NAME_ATTACK_L
+pointer  motion_names  0x00000030  MOTION_NAME_ATTACK_R
+pointer  motion_names  0x00000034  MOTION_NAME_IKURA_0
+pointer  motion_names  0x00000038  MOTION_NAME_IKURA_1
+pointer  motion_names  0x0000003c  MOTION_NAME_DAMAGE
+pointer  motion_names  0x00000040  MOTION_NAME_LTOR
+pointer  motion_names  0x00000044  MOTION_NAME_RTOL
+pointer  motion_names  0x00000048  MOTION_NAME_DEAD
+pointer  camera_points  0x00000000  biolizard_arena_center
+pointer  camera_points  0x00000010  biolizard_joint_positions
+pointer  camera_points  0x00000020  biolizard_joint_positions+0xc
+pointer  camera_points  0x00000030  biolizard_arena_center
+pointer  camera_points  0x00000040  biolizard_joint_positions+0x18
+pointer  camera_points  0x00000050  biolizard_joint_positions+0x3c

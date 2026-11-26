@@ -1,0 +1,4 @@
+datum  meteor_platform_alt_object_polygons  D  0x00000000  1834
+datum  meteor_platform_alt_object_vertices  D  0x0000072c  2380
+datum  meteor_platform_alt_object_model  D  0x00001078  24
+datum  meteor_platform_alt_object  D  0x00001090  52

@@ -1,0 +1,7 @@
+text  HIDDEN_BASE_MAT_MAT_TEXTURE  C  0x00000000  17
+datum  textures  D  0x00000000  12
+datum  base_mat_texlist  D  0x0000000c  8
+datum  base_mat_polygons  D  0x00000014  50
+datum  base_mat_vertices  D  0x00000048  76
+datum  base_mat_model  D  0x00000094  24
+datum  base_mat_object  D  0x000000ac  52

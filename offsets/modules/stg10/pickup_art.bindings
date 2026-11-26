@@ -1,0 +1,8 @@
+text  HARBOR_TEXTURE_MIU64_MH008  12
+text  HARBOR_TEXTURE_PR64_14  8
+pointer  materials  0x00000000  HARBOR_TEXTURE_MIU64_MH008
+pointer  materials  0x0000000c  HARBOR_TEXTURE_PR64_14
+pointer  pickup_object_texlist  0x00000000  materials
+pointer  pickup_object_model  0x00000000  pickup_vertices
+pointer  pickup_object_model  0x00000004  pickup_polygons
+pointer  pickup_object_node  0x00000004  pickup_object_model

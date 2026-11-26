@@ -1,0 +1,12 @@
+datum  soap_grade_a_camera_joint_0_position  D  0x00000000  576
+datum  soap_grade_a_camera_joint_0_target  D  0x00000240  32
+datum  soap_grade_a_camera_joint_0_roll  D  0x00000260  16
+datum  soap_grade_a_camera_joint_0_fov  D  0x00000270  16
+datum  soap_grade_a_camera_tracks  D  0x00000280  32
+datum  soap_grade_a_camera  D  0x000002a0  12
+datum  soap_grade_b_camera_joint_0_position  D  0x000002ac  448
+datum  soap_grade_b_camera_joint_0_target  D  0x0000046c  336
+datum  soap_grade_b_camera_joint_0_roll  D  0x000005bc  16
+datum  soap_grade_b_camera_joint_0_fov  D  0x000005cc  16
+datum  soap_grade_b_camera_tracks  D  0x000005dc  32
+datum  soap_grade_b_camera  D  0x000005fc  12

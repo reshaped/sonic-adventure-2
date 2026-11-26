@@ -1,0 +1,2 @@
+datum  pot_models  D  0x00000000  8
+datum  pot_textures  D  0x00000008  12

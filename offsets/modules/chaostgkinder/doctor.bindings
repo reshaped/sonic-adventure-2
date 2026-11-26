@@ -1,0 +1,3 @@
+pointer  motions  0x00000000  kinder_doctor_motion_a
+pointer  motions  0x00000004  kinder_doctor_motion_b
+pointer  motions  0x00000008  kinder_doctor_motion_c

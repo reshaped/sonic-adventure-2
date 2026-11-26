@@ -1,0 +1,4 @@
+pointer  stage_rocket_texlists  0x00000000  rocket_texlist
+pointer  stage_rocket_texlists  0x00000004  rocket_base_texlist
+pointer  stage_rocket_texlists  0x00000008  rocket_thrust_texlist
+pointer  stage_rocket_texlists  0x0000000c  burst_texlist

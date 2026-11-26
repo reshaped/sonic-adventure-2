@@ -1,0 +1,17 @@
+text  LAGOON_TEXTURE_DZ_DL_KANOE_BLUELINE64  C  0x00000000  23
+text  LAGOON_TEXTURE_DZ_DL_KANOE_DECK64  C  0x00000018  19
+text  LAGOON_TEXTURE_DZ_DL_KANOE_ROKKAKU64  C  0x0000002c  22
+text  LAGOON_TEXTURE_DZ_DL_KANOE_TRI128  C  0x00000044  19
+datum  canoe_texlist_names  D  0x00000000  48
+datum  canoe_texlist  D  0x00000030  8
+datum  canoe_polygons  D  0x00000038  1170
+datum  canoe_vertices  D  0x000004cc  1212
+datum  canoe_model  D  0x00000988  24
+datum  canoe_object  D  0x000009a0  52
+datum  canoe_collision_materials  D  0x000009d4  20
+datum  canoe_collision_strips  D  0x000009e8  380
+datum  canoe_collision_faces  D  0x00000b64  24
+datum  canoe_collision_points  D  0x00000b7c  588
+datum  canoe_collision_normals  D  0x00000dc8  588
+datum  canoe_collision_model  D  0x00001014  40
+datum  canoe_collision  D  0x0000103c  52

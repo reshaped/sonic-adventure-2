@@ -1,0 +1,40 @@
+text  WEED_TEXTURE_DZ_PC_PLANT_ALPHA128  21
+text  WEED_KIND_SMALL  6
+text  WEED_KIND_LARGE  6
+
+pointer cave_weed_small_texture_names  0x00000000  WEED_TEXTURE_DZ_PC_PLANT_ALPHA128
+pointer cave_weed_small_texlist  0x00000000  cave_weed_small_texture_names
+pointer cave_weed_small_model  0x00000000  cave_weed_small_vertices
+pointer cave_weed_small_model  0x00000004  cave_weed_small_polygons
+pointer cave_weed_small_object  0x00000004  cave_weed_small_model
+pointer cave_weed_small_motion  0x00000000  cave_weed_small_motion_tracks
+pointer cave_weed_small_shape_vertex_keys  0x00000004  cave_weed_small_shape_vertex_frame_0
+pointer cave_weed_small_shape_vertex_keys  0x0000000c  cave_weed_small_shape_vertex_frame_5
+pointer cave_weed_small_shape_vertex_keys  0x00000014  cave_weed_small_shape_vertex_frame_11
+pointer cave_weed_small_shape_vertex_keys  0x0000001c  cave_weed_small_shape_vertex_frame_15
+pointer cave_weed_small_shape_vertex_keys  0x00000024  cave_weed_small_shape_vertex_frame_19
+pointer cave_weed_small_shape_tracks  0x00000000  cave_weed_small_shape_vertex_keys
+pointer cave_weed_small_shape  0x00000000  cave_weed_small_shape_tracks
+pointer cave_weed_large_texture_names  0x00000000  WEED_TEXTURE_DZ_PC_PLANT_ALPHA128
+pointer cave_weed_large_texlist  0x00000000  cave_weed_large_texture_names
+pointer cave_weed_large_model  0x00000000  cave_weed_large_vertices
+pointer cave_weed_large_model  0x00000004  cave_weed_large_polygons
+pointer cave_weed_large_object  0x00000004  cave_weed_large_model
+pointer cave_weed_large_motion  0x00000000  cave_weed_large_motion_tracks
+pointer cave_weed_large_shape_vertex_keys  0x00000004  cave_weed_large_shape_vertex_frame_0
+pointer cave_weed_large_shape_vertex_keys  0x0000000c  cave_weed_large_shape_vertex_frame_5
+pointer cave_weed_large_shape_vertex_keys  0x00000014  cave_weed_large_shape_vertex_frame_11
+pointer cave_weed_large_shape_vertex_keys  0x0000001c  cave_weed_large_shape_vertex_frame_15
+pointer cave_weed_large_shape_vertex_keys  0x00000024  cave_weed_large_shape_vertex_frame_19
+pointer cave_weed_large_shape_tracks  0x00000000  cave_weed_large_shape_vertex_keys
+pointer cave_weed_large_shape  0x00000000  cave_weed_large_shape_tracks
+pointer weed_objects  0x00000000  cave_weed_small_object
+pointer weed_objects  0x00000004  cave_weed_large_object
+pointer cave_weed_texlists  0x00000000  cave_weed_small_texlist
+pointer cave_weed_texlists  0x00000004  cave_weed_large_texlist
+pointer weed_motions  0x00000000  cave_weed_small_motion
+pointer weed_motions  0x00000004  cave_weed_large_motion
+pointer weed_shapes  0x00000000  cave_weed_small_shape
+pointer weed_shapes  0x00000004  cave_weed_large_shape
+pointer weed_kind_names  0x00000000  WEED_KIND_SMALL
+pointer weed_kind_names  0x00000004  WEED_KIND_LARGE

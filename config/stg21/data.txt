@@ -1,0 +1,3 @@
+# Terrain entries share a compiled, word-aligned pool of archive and texture names.
+0x8c5450e4  layout  egypt_flag_supports_filenames
+0x8c593b58  layout  egypt_flag_supports

@@ -1,0 +1,331 @@
+text  SET_NAME_RING  8
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_ROCKET  10
+text  SET_NAME_MODMOD  8
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_3SPRING  8
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_UDREEL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_ORI  4
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SKULL  6
+text  SET_NAME_SCHBOX  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_SSS  4
+text  SET_NAME_E_EMI  6
+text  SET_NAME_E_GHOST  8
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_KSKULL  7
+text  SET_NAME_PIC  4
+text  SET_NAME_DRMCN  6
+text  SET_NAME_FIRZIZ  7
+text  SET_NAME_BUBBLE  7
+text  SET_NAME_BUBBLES  8
+text  SET_NAME_UKIASIBA  9
+text  SET_NAME_MIMOCL  7
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_MSGER  6
+text  SET_NAME_MIKILN  7
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_MITOOL  7
+text  SET_NAME_MIBAR  6
+text  SET_NAME_MILIFT  7
+text  SET_NAME_MIRING  7
+text  SET_NAME_MILUMP  7
+text  SET_NAME_MIFENCE  8
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_MIINFO  7
+text  SET_NAME_MIFRAME  8
+text  SET_NAME_MIWOOD  7
+text  SET_NAME_MIRAIL  7
+text  SET_NAME_MILATTI  8
+text  SET_NAME_MIZUKUSA  9
+text  SET_NAME_MITRUCK  8
+text  SET_NAME_MITRUCKP  9
+text  SET_NAME_MIKUSA  7
+text  SET_NAME_MIWOODY  8
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_SGSPRING  9
+text  SET_NAME_SGSPRINGB  10
+text  SET_NAME_SGRING  7
+text  SET_NAME_SGITEMBOX  10
+text  SET_NAME_SGSCHBOX  9
+text  SET_NAME_EMERALD_F  10
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_E_PATH  7
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_CMDOOR  7
+text  SET_NAME_SIGN  5
+text  SET_NAME_NOCOLSKULL  11
+text  SET_NAME_SEARCHBOX  10
+text  SET_NAME_MINIMAL_ANIMAL_INIT  8
+text  SET_NAME_CHAOPIPE_CHAO_PIPE_INIT  9
+text  SET_NAME_CONTWOOD_WOOD_BOX_INIT  9
+text  SET_NAME_CONTIRON_IRON_BOX_INIT  9
+text  SET_NAME_CONTCHAO_CHAO_BOX_INIT  9
+text  SET_NAME_ITEMBOXAIR_ITEM_BOX_AIR_STEP  11
+text  SET_NAME_DRMCUN  7
+text  SET_NAME_FIRZIZ_FIRE_STATUE_INIT  7
+text  SET_NAME_MILUMP_LAMP_INIT  7
+text  SET_NAME_MIFENCE_MIFENCE_INIT  8
+text  SET_NAME_MIWOOD_MIWOOD_INIT  7
+text  SET_NAME_MIRAIL_MIRAIL_INIT  7
+text  SET_NAME_MIZUKUSA_WATERWEED_INIT  9
+text  SET_NAME_MITRUCK_MINE_TRUCK_INIT  8
+text  SET_NAME_MITRUCKP_MITRUCKP_INIT  9
+text  SET_NAME_MIKUSA_MIKUSA_INIT  7
+text  SET_NAME_MIWOODY_MIWOODY_INIT  8
+pointer  aquatic_mine_kinds  0x00000008  ring_step
+pointer  aquatic_mine_kinds  0x0000000c  SET_NAME_RING
+pointer  aquatic_mine_kinds  0x00000018  spring_a_step
+pointer  aquatic_mine_kinds  0x0000001c  SET_NAME_SPRA
+pointer  aquatic_mine_kinds  0x00000028  spring_b_step
+pointer  aquatic_mine_kinds  0x0000002c  SET_NAME_SPRB
+pointer  aquatic_mine_kinds  0x00000038  dash_panel_step
+pointer  aquatic_mine_kinds  0x0000003c  SET_NAME_KASOKU
+pointer  aquatic_mine_kinds  0x00000048  save_point_step
+pointer  aquatic_mine_kinds  0x0000004c  SET_NAME_SAVEPOINT
+pointer  aquatic_mine_kinds  0x00000058  switch_step
+pointer  aquatic_mine_kinds  0x0000005c  SET_NAME_SWITCH
+pointer  aquatic_mine_kinds  0x00000068  item_box_step
+pointer  aquatic_mine_kinds  0x0000006c  SET_NAME_ITEMBOX
+pointer  aquatic_mine_kinds  0x00000078  item_box_air_step
+pointer  aquatic_mine_kinds  0x0000007c  SET_NAME_ITEMBOXAIR
+pointer  aquatic_mine_kinds  0x00000088  iron_ball_init
+pointer  aquatic_mine_kinds  0x0000008c  SET_NAME_IRONBALL2
+pointer  aquatic_mine_kinds  0x00000098  big_jump_step
+pointer  aquatic_mine_kinds  0x0000009c  SET_NAME_BIGJUMP
+pointer  aquatic_mine_kinds  0x000000a8  rocket_init
+pointer  aquatic_mine_kinds  0x000000ac  SET_NAME_ROCKET
+pointer  aquatic_mine_kinds  0x000000b8  modifier_volume_init
+pointer  aquatic_mine_kinds  0x000000bc  SET_NAME_MODMOD
+pointer  aquatic_mine_kinds  0x000000c8  item_balloon_step
+pointer  aquatic_mine_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  aquatic_mine_kinds  0x000000d8  goal_ring_init
+pointer  aquatic_mine_kinds  0x000000dc  SET_NAME_GOALRING
+pointer  aquatic_mine_kinds  0x000000e8  emerald_init
+pointer  aquatic_mine_kinds  0x000000ec  SET_NAME_EMERALD
+pointer  aquatic_mine_kinds  0x000000f8  weight_init
+pointer  aquatic_mine_kinds  0x000000fc  SET_NAME_BUNCHIN
+pointer  aquatic_mine_kinds  0x00000108  ring_linear_init
+pointer  aquatic_mine_kinds  0x0000010c  SET_NAME_RING_LINEAR
+pointer  aquatic_mine_kinds  0x00000118  ring_circle_init
+pointer  aquatic_mine_kinds  0x0000011c  SET_NAME_RING_CIRCLE
+pointer  aquatic_mine_kinds  0x00000128  triple_spring_init
+pointer  aquatic_mine_kinds  0x0000012c  SET_NAME_3SPRING
+pointer  aquatic_mine_kinds  0x00000138  dynamite_init
+pointer  aquatic_mine_kinds  0x0000013c  SET_NAME_DYNAMITE
+pointer  aquatic_mine_kinds  0x00000148  reel_init
+pointer  aquatic_mine_kinds  0x0000014c  SET_NAME_UDREEL
+pointer  aquatic_mine_kinds  0x00000158  chao_pipe_init
+pointer  aquatic_mine_kinds  0x0000015c  SET_NAME_CHAOPIPE
+pointer  aquatic_mine_kinds  0x00000168  cage_init
+pointer  aquatic_mine_kinds  0x0000016c  SET_NAME_ORI
+pointer  aquatic_mine_kinds  0x00000178  wood_box_init
+pointer  aquatic_mine_kinds  0x0000017c  SET_NAME_CONTWOOD
+pointer  aquatic_mine_kinds  0x00000188  iron_box_init
+pointer  aquatic_mine_kinds  0x0000018c  SET_NAME_CONTIRON
+pointer  aquatic_mine_kinds  0x00000198  upgrade_init
+pointer  aquatic_mine_kinds  0x0000019c  SET_NAME_LEVUPDAI
+pointer  aquatic_mine_kinds  0x000001a8  missile_init
+pointer  aquatic_mine_kinds  0x000001ac  SET_NAME_ROCKETMISSSILE
+pointer  aquatic_mine_kinds  0x000001b8  skull_still_init
+pointer  aquatic_mine_kinds  0x000001bc  SET_NAME_SKULL
+pointer  aquatic_mine_kinds  0x000001c8  search_box_init
+pointer  aquatic_mine_kinds  0x000001cc  SET_NAME_SCHBOX
+pointer  aquatic_mine_kinds  0x000001d8  hint_box_init
+pointer  aquatic_mine_kinds  0x000001dc  SET_NAME_HINTBOX
+pointer  aquatic_mine_kinds  0x000001e8  knudai_init
+pointer  aquatic_mine_kinds  0x000001ec  SET_NAME_KNUDAI
+pointer  aquatic_mine_kinds  0x000001f8  sss_init
+pointer  aquatic_mine_kinds  0x000001fc  SET_NAME_SSS
+pointer  aquatic_mine_kinds  0x00000208  emi_step
+pointer  aquatic_mine_kinds  0x0000020c  SET_NAME_E_EMI
+pointer  aquatic_mine_kinds  0x00000218  ghost_step
+pointer  aquatic_mine_kinds  0x0000021c  SET_NAME_E_GHOST
+pointer  aquatic_mine_kinds  0x00000228  beetle_step
+pointer  aquatic_mine_kinds  0x0000022c  SET_NAME_E_KUMI
+pointer  aquatic_mine_kinds  0x00000238  skull_waiting_init
+pointer  aquatic_mine_kinds  0x0000023c  SET_NAME_KSKULL
+pointer  aquatic_mine_kinds  0x00000248  pickup_init
+pointer  aquatic_mine_kinds  0x0000024c  SET_NAME_PIC
+pointer  aquatic_mine_kinds  0x00000258  mine_drum_can_init
+pointer  aquatic_mine_kinds  0x0000025c  SET_NAME_DRMCN
+pointer  aquatic_mine_kinds  0x00000268  fire_statue_init
+pointer  aquatic_mine_kinds  0x0000026c  SET_NAME_FIRZIZ
+pointer  aquatic_mine_kinds  0x00000278  bubble_source_init
+pointer  aquatic_mine_kinds  0x0000027c  SET_NAME_BUBBLE
+pointer  aquatic_mine_kinds  0x00000288  bubble_field_init
+pointer  aquatic_mine_kinds  0x0000028c  SET_NAME_BUBBLES
+pointer  aquatic_mine_kinds  0x00000298  floating_foothold_init
+pointer  aquatic_mine_kinds  0x0000029c  SET_NAME_UKIASIBA
+pointer  aquatic_mine_kinds  0x000002a8  mimocl_init
+pointer  aquatic_mine_kinds  0x000002ac  SET_NAME_MIMOCL
+pointer  aquatic_mine_kinds  0x000002b8  animal_init
+pointer  aquatic_mine_kinds  0x000002bc  SET_NAME_MINIMAL
+pointer  aquatic_mine_kinds  0x000002c8  hidden_animal_init
+pointer  aquatic_mine_kinds  0x000002cc  SET_NAME_WSMMLS
+pointer  aquatic_mine_kinds  0x000002d8  knudai_foothold_init
+pointer  aquatic_mine_kinds  0x000002dc  SET_NAME_KDASIBA
+pointer  aquatic_mine_kinds  0x000002e8  knudai_warp_hole_init
+pointer  aquatic_mine_kinds  0x000002ec  SET_NAME_KDWARPHOLE
+pointer  aquatic_mine_kinds  0x000002f8  knudai_door_init
+pointer  aquatic_mine_kinds  0x000002fc  SET_NAME_KDDOOR
+pointer  aquatic_mine_kinds  0x00000308  knudai_item_box_init
+pointer  aquatic_mine_kinds  0x0000030c  SET_NAME_KDITEMBOX
+pointer  aquatic_mine_kinds  0x00000318  messenger_init
+pointer  aquatic_mine_kinds  0x0000031c  SET_NAME_MSGER
+pointer  aquatic_mine_kinds  0x00000328  kiln_init
+pointer  aquatic_mine_kinds  0x0000032c  SET_NAME_MIKILN
+pointer  aquatic_mine_kinds  0x00000338  chao_box_init
+pointer  aquatic_mine_kinds  0x0000033c  SET_NAME_CONTCHAO
+pointer  aquatic_mine_kinds  0x00000348  mine_tool_init
+pointer  aquatic_mine_kinds  0x0000034c  SET_NAME_MITOOL
+pointer  aquatic_mine_kinds  0x00000358  mibar_init
+pointer  aquatic_mine_kinds  0x0000035c  SET_NAME_MIBAR
+pointer  aquatic_mine_kinds  0x00000368  milift_init
+pointer  aquatic_mine_kinds  0x0000036c  SET_NAME_MILIFT
+pointer  aquatic_mine_kinds  0x00000378  miring_init
+pointer  aquatic_mine_kinds  0x0000037c  SET_NAME_MIRING
+pointer  aquatic_mine_kinds  0x00000388  lamp_init
+pointer  aquatic_mine_kinds  0x0000038c  SET_NAME_MILUMP
+pointer  aquatic_mine_kinds  0x00000398  mifence_init
+pointer  aquatic_mine_kinds  0x0000039c  SET_NAME_MIFENCE
+pointer  aquatic_mine_kinds  0x000003a8  knudai_ring_linear_init
+pointer  aquatic_mine_kinds  0x000003ac  SET_NAME_KDDRNGL
+pointer  aquatic_mine_kinds  0x000003b8  knudai_ring_circle_init
+pointer  aquatic_mine_kinds  0x000003bc  SET_NAME_KDDRNGC
+pointer  aquatic_mine_kinds  0x000003c8  knudai_spring_init
+pointer  aquatic_mine_kinds  0x000003cc  SET_NAME_KDSPRING
+pointer  aquatic_mine_kinds  0x000003d8  knudai_spring_b_init
+pointer  aquatic_mine_kinds  0x000003dc  SET_NAME_KDSPRINGB
+pointer  aquatic_mine_kinds  0x000003e8  info_init
+pointer  aquatic_mine_kinds  0x000003ec  SET_NAME_MIINFO
+pointer  aquatic_mine_kinds  0x000003f8  miframe_init
+pointer  aquatic_mine_kinds  0x000003fc  SET_NAME_MIFRAME
+pointer  aquatic_mine_kinds  0x00000408  miwood_init
+pointer  aquatic_mine_kinds  0x0000040c  SET_NAME_MIWOOD
+pointer  aquatic_mine_kinds  0x00000418  mirail_init
+pointer  aquatic_mine_kinds  0x0000041c  SET_NAME_MIRAIL
+pointer  aquatic_mine_kinds  0x00000428  milatti_init
+pointer  aquatic_mine_kinds  0x0000042c  SET_NAME_MILATTI
+pointer  aquatic_mine_kinds  0x00000438  waterweed_init
+pointer  aquatic_mine_kinds  0x0000043c  SET_NAME_MIZUKUSA
+pointer  aquatic_mine_kinds  0x00000448  mine_truck_init
+pointer  aquatic_mine_kinds  0x0000044c  SET_NAME_MITRUCK
+pointer  aquatic_mine_kinds  0x00000458  mitruckp_init
+pointer  aquatic_mine_kinds  0x0000045c  SET_NAME_MITRUCKP
+pointer  aquatic_mine_kinds  0x00000468  mikusa_init
+pointer  aquatic_mine_kinds  0x0000046c  SET_NAME_MIKUSA
+pointer  aquatic_mine_kinds  0x00000478  miwoody_init
+pointer  aquatic_mine_kinds  0x0000047c  SET_NAME_MIWOODY
+pointer  aquatic_mine_kinds  0x00000488  effect_object_init
+pointer  aquatic_mine_kinds  0x0000048c  SET_NAME_EFFOBJ0
+pointer  aquatic_mine_kinds  0x00000498  collision_sphere_step
+pointer  aquatic_mine_kinds  0x0000049c  SET_NAME_SPHERE
+pointer  aquatic_mine_kinds  0x000004a8  collision_cylinder_step
+pointer  aquatic_mine_kinds  0x000004ac  SET_NAME_CCYL
+pointer  aquatic_mine_kinds  0x000004b8  collision_cube_step
+pointer  aquatic_mine_kinds  0x000004bc  SET_NAME_CCUBE
+pointer  aquatic_mine_kinds  0x000004c8  collision_wall_step
+pointer  aquatic_mine_kinds  0x000004cc  SET_NAME_CWALL
+pointer  aquatic_mine_kinds  0x000004d8  collision_circle_step
+pointer  aquatic_mine_kinds  0x000004dc  SET_NAME_CCIRCLE
+pointer  aquatic_mine_kinds  0x000004e8  sg_spring_a_step
+pointer  aquatic_mine_kinds  0x000004ec  SET_NAME_SGSPRING
+pointer  aquatic_mine_kinds  0x000004f8  sg_spring_b_step
+pointer  aquatic_mine_kinds  0x000004fc  SET_NAME_SGSPRINGB
+pointer  aquatic_mine_kinds  0x00000508  sg_spring_a_step
+pointer  aquatic_mine_kinds  0x0000050c  SET_NAME_SGSPRING
+pointer  aquatic_mine_kinds  0x00000518  sg_spring_b_step
+pointer  aquatic_mine_kinds  0x0000051c  SET_NAME_SGSPRINGB
+pointer  aquatic_mine_kinds  0x00000528  sg_ring_step
+pointer  aquatic_mine_kinds  0x0000052c  SET_NAME_SGRING
+pointer  aquatic_mine_kinds  0x00000538  sg_item_box_step
+pointer  aquatic_mine_kinds  0x0000053c  SET_NAME_SGITEMBOX
+pointer  aquatic_mine_kinds  0x00000548  search_box_sg_init
+pointer  aquatic_mine_kinds  0x0000054c  SET_NAME_SGSCHBOX
+pointer  aquatic_mine_kinds  0x00000558  emerald_init
+pointer  aquatic_mine_kinds  0x0000055c  SET_NAME_EMERALD_F
+pointer  aquatic_mine_kinds  0x00000568  big_step
+pointer  aquatic_mine_kinds  0x0000056c  SET_NAME_BIG_THE_CAT
+pointer  aquatic_mine_kinds  0x00000578  technique_link_init
+pointer  aquatic_mine_kinds  0x0000057c  SET_NAME_LINKLINK
+pointer  aquatic_mine_kinds  0x00000588  path_enemy_step
+pointer  aquatic_mine_kinds  0x0000058c  SET_NAME_E_PATH
+pointer  aquatic_mine_kinds  0x00000598  gold_beetle_step
+pointer  aquatic_mine_kinds  0x0000059c  SET_NAME_E_GOLD
+pointer  aquatic_mine_kinds  0x000005a8  cmdoor_init
+pointer  aquatic_mine_kinds  0x000005ac  SET_NAME_CMDOOR
+pointer  aquatic_mine_kinds  0x000005b8  mine_sign_init
+pointer  aquatic_mine_kinds  0x000005bc  SET_NAME_SIGN
+pointer  aquatic_mine_kinds  0x000005c8  nocolskull_init
+pointer  aquatic_mine_kinds  0x000005cc  SET_NAME_NOCOLSKULL
+pointer  aquatic_mine_kinds  0x000005d8  search_box_init
+pointer  aquatic_mine_kinds  0x000005dc  SET_NAME_SEARCHBOX
+pointer  aquatic_mine_kinds  0x000005e8  animal_init
+pointer  aquatic_mine_kinds  0x000005ec  SET_NAME_MINIMAL_ANIMAL_INIT
+pointer  aquatic_mine_kinds  0x000005f8  chao_pipe_init
+pointer  aquatic_mine_kinds  0x000005fc  SET_NAME_CHAOPIPE_CHAO_PIPE_INIT
+pointer  aquatic_mine_kinds  0x00000608  wood_box_init
+pointer  aquatic_mine_kinds  0x0000060c  SET_NAME_CONTWOOD_WOOD_BOX_INIT
+pointer  aquatic_mine_kinds  0x00000618  iron_box_init
+pointer  aquatic_mine_kinds  0x0000061c  SET_NAME_CONTIRON_IRON_BOX_INIT
+pointer  aquatic_mine_kinds  0x00000628  chao_box_init
+pointer  aquatic_mine_kinds  0x0000062c  SET_NAME_CONTCHAO_CHAO_BOX_INIT
+pointer  aquatic_mine_kinds  0x00000638  item_box_air_step
+pointer  aquatic_mine_kinds  0x0000063c  SET_NAME_ITEMBOXAIR_ITEM_BOX_AIR_STEP
+pointer  aquatic_mine_kinds  0x00000648  mine_drum_can_init
+pointer  aquatic_mine_kinds  0x0000064c  SET_NAME_DRMCUN
+pointer  aquatic_mine_kinds  0x00000658  fire_statue_init
+pointer  aquatic_mine_kinds  0x0000065c  SET_NAME_FIRZIZ_FIRE_STATUE_INIT
+pointer  aquatic_mine_kinds  0x00000668  lamp_init
+pointer  aquatic_mine_kinds  0x0000066c  SET_NAME_MILUMP_LAMP_INIT
+pointer  aquatic_mine_kinds  0x00000678  mifence_init
+pointer  aquatic_mine_kinds  0x0000067c  SET_NAME_MIFENCE_MIFENCE_INIT
+pointer  aquatic_mine_kinds  0x00000688  miwood_init
+pointer  aquatic_mine_kinds  0x0000068c  SET_NAME_MIWOOD_MIWOOD_INIT
+pointer  aquatic_mine_kinds  0x00000698  mirail_init
+pointer  aquatic_mine_kinds  0x0000069c  SET_NAME_MIRAIL_MIRAIL_INIT
+pointer  aquatic_mine_kinds  0x000006a8  waterweed_init
+pointer  aquatic_mine_kinds  0x000006ac  SET_NAME_MIZUKUSA_WATERWEED_INIT
+pointer  aquatic_mine_kinds  0x000006b8  mine_truck_init
+pointer  aquatic_mine_kinds  0x000006bc  SET_NAME_MITRUCK_MINE_TRUCK_INIT
+pointer  aquatic_mine_kinds  0x000006c8  mitruckp_init
+pointer  aquatic_mine_kinds  0x000006cc  SET_NAME_MITRUCKP_MITRUCKP_INIT
+pointer  aquatic_mine_kinds  0x000006d8  mikusa_init
+pointer  aquatic_mine_kinds  0x000006dc  SET_NAME_MIKUSA_MIKUSA_INIT
+pointer  aquatic_mine_kinds  0x000006e8  miwoody_init
+pointer  aquatic_mine_kinds  0x000006ec  SET_NAME_MIWOODY_MIWOODY_INIT

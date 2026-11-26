@@ -1,0 +1,166 @@
+include  objtex_common
+include  efftex_common
+text  SECURITY_PIECE_TEXTURE_13  12
+text  SECURITY_PIECE_TEXTURE_14  12
+text  SECURITY_PIECE_TEXTURE_15  12
+pointer  security_piece_3_names  0x00000000  SECURITY_PIECE_TEXTURE_13
+pointer  security_piece_3_texlist  0x00000000  security_piece_3_names
+pointer  security_piece_1_names  0x00000000  SECURITY_PIECE_TEXTURE_14
+pointer  security_piece_1_texlist  0x00000000  security_piece_1_names
+pointer  security_piece_2_names  0x00000000  SECURITY_PIECE_TEXTURE_15
+pointer  security_piece_2_texlist  0x00000000  security_piece_2_names
+pointer  security_piece_model  0x00000000  emerald_shard_vertices
+pointer  security_piece_model  0x00000004  emerald_shard_polygons
+pointer  security_piece_object  0x00000004  security_piece_model
+
+text  OBJECT_TEXTURE_ENEMY2  7
+text  OBJECT_TEXTURE_ENEMY_01  9
+text  OBJECT_TEXTURE_GUN01  6
+text  OBJECT_TEXTURE_GUN_LOGO001  12
+text  OBJECT_TEXTURE_MIU128_IG009  13
+text  OBJECT_TEXTURE_MIU128_PL001  13
+text  OBJECT_TEXTURE_MIU128_SH001  13
+text  OBJECT_TEXTURE_MIU128_SH002  13
+text  OBJECT_TEXTURE_MIU128_SH003  13
+text  OBJECT_TEXTURE_MIU128_SH004  13
+text  OBJECT_TEXTURE_MIU128_SH005  13
+text  OBJECT_TEXTURE_MIU128_SH006  13
+text  OBJECT_TEXTURE_MIU128_SH007  13
+text  OBJECT_TEXTURE_MIU128_SH008  13
+text  OBJECT_TEXTURE_MIU128_SH010  13
+text  OBJECT_TEXTURE_MIU256_SH001  13
+text  OBJECT_TEXTURE_MIU32_IG002  12
+text  OBJECT_TEXTURE_MIU32_SH001  12
+text  OBJECT_TEXTURE_MIU32_SH002  12
+text  OBJECT_TEXTURE_MIU64_IG008  12
+text  OBJECT_TEXTURE_MIU64_IG011  12
+text  OBJECT_TEXTURE_MIU64_IG015  12
+text  OBJECT_TEXTURE_MIU64_IG017  12
+text  OBJECT_TEXTURE_MIU64_IG019  12
+text  OBJECT_TEXTURE_MIU64_SH001  12
+text  OBJECT_TEXTURE_MIU64_SH002  12
+text  OBJECT_TEXTURE_MIU64_SH003  12
+text  OBJECT_TEXTURE_MIU64_SH004  12
+text  OBJECT_TEXTURE_MIU64_SH005  12
+text  OBJECT_TEXTURE_MIU64_SH006  12
+text  OBJECT_TEXTURE_MIU64_SH007  12
+text  OBJECT_TEXTURE_MIU64_SH008  12
+text  OBJECT_TEXTURE_MIU64_SH010  12
+text  OBJECT_TEXTURE_MIU64_SH011  12
+text  OBJECT_TEXTURE_MIU64_SH012  12
+text  OBJECT_TEXTURE_PR64_6  7
+text  OBJECT_TEXTURE_PR_KAGE32  10
+text  OBJECT_TEXTURE_OBJTEX_STG08  13
+text  OBJECT_TEXTURE_EFFTEX_COMMON  14
+text  OBJECT_TEXTURE_OBJTEX_COMMON  14
+
+pointer  stage_names  0x00000000  OBJECT_TEXTURE_ENEMY2
+pointer  stage_names  0x0000000c  OBJECT_TEXTURE_ENEMY_01
+pointer  stage_names  0x00000018  OBJECT_TEXTURE_GUN01
+pointer  stage_names  0x00000024  OBJECT_TEXTURE_GUN_LOGO001
+pointer  stage_names  0x00000030  OBJECT_TEXTURE_MIU128_IG009
+pointer  stage_names  0x0000003c  OBJECT_TEXTURE_MIU128_PL001
+pointer  stage_names  0x00000048  OBJECT_TEXTURE_MIU128_SH001
+pointer  stage_names  0x00000054  OBJECT_TEXTURE_MIU128_SH002
+pointer  stage_names  0x00000060  OBJECT_TEXTURE_MIU128_SH003
+pointer  stage_names  0x0000006c  OBJECT_TEXTURE_MIU128_SH004
+pointer  stage_names  0x00000078  OBJECT_TEXTURE_MIU128_SH005
+pointer  stage_names  0x00000084  OBJECT_TEXTURE_MIU128_SH006
+pointer  stage_names  0x00000090  OBJECT_TEXTURE_MIU128_SH007
+pointer  stage_names  0x0000009c  OBJECT_TEXTURE_MIU128_SH008
+pointer  stage_names  0x000000a8  OBJECT_TEXTURE_MIU128_SH010
+pointer  stage_names  0x000000b4  OBJECT_TEXTURE_MIU256_SH001
+pointer  stage_names  0x000000c0  OBJECT_TEXTURE_MIU32_IG002
+pointer  stage_names  0x000000cc  OBJECT_TEXTURE_MIU32_SH001
+pointer  stage_names  0x000000d8  OBJECT_TEXTURE_MIU32_SH002
+pointer  stage_names  0x000000e4  OBJECT_TEXTURE_MIU64_IG008
+pointer  stage_names  0x000000f0  OBJECT_TEXTURE_MIU64_IG011
+pointer  stage_names  0x000000fc  OBJECT_TEXTURE_MIU64_IG015
+pointer  stage_names  0x00000108  OBJECT_TEXTURE_MIU64_IG017
+pointer  stage_names  0x00000114  OBJECT_TEXTURE_MIU64_IG019
+pointer  stage_names  0x00000120  OBJECT_TEXTURE_MIU64_SH001
+pointer  stage_names  0x0000012c  OBJECT_TEXTURE_MIU64_SH002
+pointer  stage_names  0x00000138  OBJECT_TEXTURE_MIU64_SH003
+pointer  stage_names  0x00000144  OBJECT_TEXTURE_MIU64_SH004
+pointer  stage_names  0x00000150  OBJECT_TEXTURE_MIU64_SH005
+pointer  stage_names  0x0000015c  OBJECT_TEXTURE_MIU64_SH006
+pointer  stage_names  0x00000168  OBJECT_TEXTURE_MIU64_SH007
+pointer  stage_names  0x00000174  OBJECT_TEXTURE_MIU64_SH008
+pointer  stage_names  0x00000180  OBJECT_TEXTURE_MIU64_SH010
+pointer  stage_names  0x0000018c  OBJECT_TEXTURE_MIU64_SH011
+pointer  stage_names  0x00000198  OBJECT_TEXTURE_MIU64_SH012
+pointer  stage_names  0x000001a4  SECURITY_PIECE_TEXTURE_13
+pointer  stage_names  0x000001b0  SECURITY_PIECE_TEXTURE_14
+pointer  stage_names  0x000001bc  SECURITY_PIECE_TEXTURE_15
+pointer  stage_names  0x000001c8  OBJECT_TEXTURE_PR64_6
+pointer  stage_names  0x000001d4  OBJECT_TEXTURE_PR_KAGE32
+pointer  stage_archive  0x00000000  stage_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  stage_textures  0x0000003c  security_piece_3_texlist
+pointer  stage_textures  0x00000040  security_piece_1_texlist
+pointer  stage_textures  0x00000044  security_piece_2_texlist
+pointer  security_texture_groups  0x00000000  stage_textures
+pointer  security_texture_groups  0x00000004  goal_ring_texlists
+pointer  security_texture_groups  0x00000008  emerald_texlists
+pointer  security_texture_groups  0x0000000c  item_box_texlists
+pointer  security_texture_groups  0x00000010  item_box_air_texlists
+pointer  security_texture_groups  0x00000014  weight_texlists
+pointer  security_texture_groups  0x00000018  iron_ball_texlists
+pointer  security_texture_groups  0x0000001c  triple_spring_texlists
+pointer  security_texture_groups  0x00000020  dynamite_texlists
+pointer  security_texture_groups  0x00000024  reel_texlists
+pointer  security_texture_groups  0x00000028  chao_pipe_texlists
+pointer  security_texture_groups  0x0000002c  cage_texlists
+pointer  security_texture_groups  0x00000030  wood_box_texlists
+pointer  security_texture_groups  0x00000034  iron_box_texlists
+pointer  security_texture_groups  0x00000038  upgrade_texlists
+pointer  security_texture_groups  0x0000003c  missile_texlists
+pointer  security_texture_groups  0x00000040  skull_texlists
+pointer  security_texture_groups  0x00000044  rocket_texlists
+pointer  security_texture_groups  0x00000048  search_box_texlists
+pointer  security_texture_groups  0x0000004c  hint_box_texlists
+pointer  security_texture_groups  0x00000050  knudai_texlists
+pointer  security_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  security_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  security_texture_groups  0x0000005c  knudai_door_texlists
+pointer  security_texture_groups  0x00000060  chao_box_texlists
+pointer  security_texture_groups  0x00000064  chao_key_texlists
+pointer  security_texture_groups  0x00000068  object_effect_texlists
+pointer  security_texture_groups  0x0000006c  messenger_texlists
+pointer  security_texture_groups  0x00000070  ring_effect_texlists
+pointer  security_texture_groups  0x00000074  security_empty_textures
+pointer  security_texture_groups  0x00000078  security_laser_textures
+pointer  security_texture_groups  0x0000007c  security_tank_textures
+pointer  security_texture_groups  0x00000080  security_cylinder_textures
+pointer  security_texture_groups  0x00000084  security_safe_textures
+pointer  security_texture_groups  0x00000088  security_fan_textures
+pointer  security_texture_groups  0x0000008c  security_panel_textures
+pointer  security_texture_groups  0x00000090  security_red_lamp_textures
+pointer  security_texture_groups  0x00000094  security_lamp_textures
+pointer  security_texture_groups  0x00000098  security_container_textures
+pointer  security_texture_groups  0x0000009c  pickup_object_2_texlists
+pointer  security_texture_groups  0x000000a0  security_money_textures
+pointer  security_texture_groups  0x000000a4  solid_box_texlists
+pointer  security_texture_groups  0x000000a8  security_scenery_textures
+pointer  security_texture_groups  0x000000ac  security_platform_textures
+pointer  security_pvms  0x00000000  OBJECT_TEXTURE_OBJTEX_STG08
+pointer  security_pvms  0x00000004  stage_archive
+pointer  security_pvms  0x00000008  OBJECT_TEXTURE_EFFTEX_COMMON
+pointer  security_pvms  0x0000000c  efftex_common_texlist
+pointer  security_pvms  0x00000010  OBJECT_TEXTURE_OBJTEX_COMMON
+pointer  security_pvms  0x00000014  objtex_common_texlist
+pointer  security_pvms  0x0000001c  security_hall_terrain_textures

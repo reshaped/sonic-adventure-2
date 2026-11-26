@@ -1,0 +1,10 @@
+text  TEXTURE_SIKAKE_24_64  13
+
+pointer  trail_texname  0x00000000  TEXTURE_SIKAKE_24_64
+pointer  trail_texlist  0x00000000  trail_texname
+pointer  chaos_drive_texlists  0x00000000  trail_texlist
+pointer  chaos_drive_trail_style  0x00000014  trail_texlist
+pointer  chaos_drive_objects  0x00000000  chaos_drive_yellow_object
+pointer  chaos_drive_objects  0x00000004  chaos_drive_green_object
+pointer  chaos_drive_objects  0x00000008  chaos_drive_red_object
+pointer  chaos_drive_objects  0x0000000c  chaos_drive_purple_object

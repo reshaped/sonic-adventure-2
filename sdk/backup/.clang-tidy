@@ -1,0 +1,5 @@
+InheritParentConfig: true
+CheckOptions:
+  bugprone-unused-return-value.AllowCastToVoid: true
+# the fibers save a context with setjmp only to return to it, and never test
+# what that first call returns

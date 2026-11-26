@@ -1,0 +1,9 @@
+datum  material_hasira1  C  0x00000000  16
+datum  material_kabe2  C  0x00000010  12
+datum  material_kage3  C  0x0000001c  12
+datum  pillar3_textures  D  0x00000000  36
+datum  pillar3_texlist  D  0x00000024  8
+datum  pillar3_polygons  D  0x0000002c  486
+datum  pillar3_vertices  D  0x00000214  1036
+datum  pillar3_model  D  0x00000620  24
+datum  pillar3_object  D  0x00000638  52

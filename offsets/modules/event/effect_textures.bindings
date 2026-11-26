@@ -1,0 +1,19 @@
+include  efftex_common
+
+text  OBJECT_TEXTURE_EFFTEX_COMMON  14
+
+pointer  effect_textures  0x00000000  dust_texlist
+pointer  effect_textures  0x00000004  sparkle_texlist
+pointer  effect_textures  0x00000008  ring_sparkle_texlist
+pointer  effect_textures  0x0000000c  dirt_texlist
+pointer  effect_textures  0x00000010  burst_texlist
+pointer  effect_textures  0x00000014  rocket_thrust_texlist
+pointer  effect_textures  0x00000018  white_breath_texlist
+pointer  effect_textures  0x0000001c  lens_flare_texlist
+pointer  effect_textures  0x00000020  splash_texlist
+pointer  effect_textures  0x00000024  flame_texlist
+pointer  effect_textures  0x00000028  flash_texlist
+pointer  effect_textures  0x0000002c  warp_hole_texlist
+pointer  event_texture_groups  0x00000000  effect_textures
+pointer  event_pvms  0x00000000  OBJECT_TEXTURE_EFFTEX_COMMON
+pointer  event_pvms  0x00000004  efftex_common_texlist

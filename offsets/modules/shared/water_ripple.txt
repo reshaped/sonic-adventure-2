@@ -1,0 +1,7 @@
+datum  ripple_polygons  D  0x00000014  434
+datum  ripple_vertices  D  0x000001c8  1164
+text  WATER_RIPPLE_TEXT_WATERCOLUMN01  C  0x00000014  14
+datum  ripple_textures  D  0x00000000  12
+datum  ripple_texlist  D  0x0000000c  8
+datum  ripple_model  D  0x00000654  24
+datum  ripple_object  D  0x0000066c  52

@@ -1,0 +1,59 @@
+text TANK_TEXTURE_MIU128_IG009 13
+text TANK_TEXTURE_MIU32_IG002 12
+text TANK_TEXTURE_MIU64_IG006 12
+text TANK_TEXTURE_MIU64_IG008 12
+text TANK_TEXTURE_MIU64_IG011 12
+text TANK_TEXTURE_MIU64_IG015 12
+text TANK_TEXTURE_PR128_14 9
+
+pointer tank_names 0x00000000 TANK_TEXTURE_MIU128_IG009
+pointer tank_names 0x0000000c TANK_TEXTURE_MIU32_IG002
+pointer tank_names 0x00000018 TANK_TEXTURE_MIU64_IG006
+pointer tank_names 0x00000024 TANK_TEXTURE_MIU64_IG008
+pointer tank_names 0x00000030 TANK_TEXTURE_MIU64_IG011
+pointer tank_names 0x0000003c TANK_TEXTURE_MIU64_IG015
+pointer tank_names 0x00000048 TANK_TEXTURE_PR128_14
+pointer tank_texlist 0x00000000 tank_names
+pointer tank_cap_model 0x00000000 tank_cap_vertices
+pointer tank_cap_model 0x00000004 tank_cap_polygons
+pointer tank_cap_object 0x00000004 tank_cap_model
+pointer tank_model 0x00000000 tank_vertices
+pointer tank_model 0x00000004 tank_polygons
+pointer tank_object 0x00000004 tank_model
+pointer tank_object 0x0000002c tank_cap_object
+pointer tank_rim_names 0x00000000 TANK_TEXTURE_MIU128_IG009
+pointer tank_rim_names 0x0000000c TANK_TEXTURE_PR128_14
+pointer tank_rim_texlist 0x00000000 tank_rim_names
+pointer tank_rim_model 0x00000000 tank_rim_vertices
+pointer tank_rim_model 0x00000004 tank_rim_polygons
+pointer tank_rim_object 0x00000004 tank_rim_model
+pointer tank_base_names 0x00000000 TANK_TEXTURE_MIU64_IG006
+pointer tank_base_names 0x0000000c TANK_TEXTURE_MIU64_IG008
+pointer tank_base_names 0x00000018 TANK_TEXTURE_MIU64_IG011
+pointer tank_base_texlist 0x00000000 tank_base_names
+pointer tank_base_model 0x00000000 tank_base_vertices
+pointer tank_base_model 0x00000004 tank_base_polygons
+pointer tank_base_object 0x00000004 tank_base_model
+pointer tank_side_names 0x00000000 TANK_TEXTURE_MIU64_IG006
+pointer tank_side_names 0x0000000c TANK_TEXTURE_MIU64_IG011
+pointer tank_side_texlist 0x00000000 tank_side_names
+pointer tank_side_model 0x00000000 tank_side_vertices
+pointer tank_side_model 0x00000004 tank_side_polygons
+pointer tank_side_object 0x00000004 tank_side_model
+pointer tank_texlists 0x00000000 tank_texlist
+pointer tank_texlists 0x00000004 tank_rim_texlist
+pointer tank_texlists 0x00000008 tank_base_texlist
+pointer tank_texlists 0x0000000c tank_side_texlist
+pointer tank_texlists 0x00000010 dust_texlist
+pointer tank_pieces 0x00000000 tank_rim_texlist
+pointer tank_pieces 0x00000004 tank_rim_model
+pointer tank_pieces 0x00000020 tank_rim_texlist
+pointer tank_pieces 0x00000024 tank_rim_model
+pointer tank_pieces 0x00000040 tank_rim_texlist
+pointer tank_pieces 0x00000044 tank_rim_model
+pointer tank_pieces 0x00000060 tank_rim_texlist
+pointer tank_pieces 0x00000064 tank_rim_model
+pointer tank_pieces 0x00000080 tank_side_texlist
+pointer tank_pieces 0x00000084 tank_side_model
+pointer tank_pieces 0x000000a0 tank_base_texlist
+pointer tank_pieces 0x000000a4 tank_base_model

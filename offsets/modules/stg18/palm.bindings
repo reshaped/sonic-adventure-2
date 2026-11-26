@@ -1,0 +1,16 @@
+text  LAGOON_TEXTURE_DZ_DL_PALMETTO128  18
+text  LAGOON_TEXTURE_DZ_DL_PALMETTO_LEAF128  23
+text  LAGOON_TEXTURE_DZ_DL_PALMETTOTREE128  22
+pointer  palm_texlist_names  0x00000000  LAGOON_TEXTURE_DZ_DL_PALMETTO128
+pointer  palm_texlist_names  0x0000000c  LAGOON_TEXTURE_DZ_DL_PALMETTO_LEAF128
+pointer  palm_texlist_names  0x00000018  LAGOON_TEXTURE_DZ_DL_PALMETTOTREE128
+pointer  palm_texlist  0x00000000  palm_texlist_names
+pointer  palm_model  0x00000000  palm_vertices
+pointer  palm_model  0x00000004  palm_polygons
+pointer  palm_object  0x00000004  palm_model
+pointer  palm_collision_faces  0x00000004  palm_collision_strips
+pointer  palm_collision_model  0x00000000  palm_collision_points
+pointer  palm_collision_model  0x00000004  palm_collision_normals
+pointer  palm_collision_model  0x0000000c  palm_collision_faces
+pointer  palm_collision_model  0x00000010  palm_collision_materials
+pointer  palm_collision  0x00000004  palm_collision_model

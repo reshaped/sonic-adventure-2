@@ -1,0 +1,3 @@
+modules/stg35/machinery_art.c
+modules/stg35/panels.c
+modules/stg35/terrain.c

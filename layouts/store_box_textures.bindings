@@ -1,0 +1,3 @@
+pointer  textures  0x00000000  store_box_shadow_name
+pointer  textures  0x0000000c  store_box_side_name
+pointer  textures  0x00000018  store_box_lid_name

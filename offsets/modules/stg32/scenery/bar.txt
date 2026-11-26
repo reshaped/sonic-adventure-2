@@ -1,0 +1,11 @@
+datum  meteo_bar_model_polygons  D  0x00000000  814
+datum  meteo_bar_model_vertices  D  0x00000330  1708
+datum  meteo_bar_model_model  D  0x000009dc  24
+datum  meteo_bar_model  D  0x000009f4  52
+datum  meteo_bar_collision_materials  D  0x00000a28  20
+datum  meteo_bar_collision_faces  D  0x00000a3c  42
+datum  meteo_bar_collision_meshsets  D  0x00000a68  24
+datum  meteo_bar_collision_points  D  0x00000a80  96
+datum  meteo_bar_collision_normals  D  0x00000ae0  96
+datum  meteo_bar_collision_model  D  0x00000b40  40
+datum  meteo_bar_collision  D  0x00000b68  52

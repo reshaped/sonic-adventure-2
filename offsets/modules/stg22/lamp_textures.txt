@@ -1,0 +1,8 @@
+datum  miu64_cg022  C  0x00000000  12
+datum  miu64_cg023  C  0x0000000c  12
+datum  miu64_cg024  C  0x00000018  12
+datum  gadget_lamp_frames  D  0x00000000  60
+datum  gadget_lamp_polygons  D  0x0000003c  102
+datum  gadget_lamp_vertices  D  0x000000a4  204
+datum  gadget_lamp_mesh  D  0x00000170  24
+datum  gadget_lamp_object  D  0x00000188  52

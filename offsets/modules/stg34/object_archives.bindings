@@ -1,0 +1,143 @@
+include  objtex_common
+include  efftex_common
+
+include  core_object_archive
+include  core_block_glow_archive
+
+text CORE_TEXTURE_KD_LS_UNIT801 14
+text CORE_TEXTURE_KD_LS_UNIT802 14
+text CORE_TEXTURE_KD_LS_UNIT803 14
+text CORE_TEXTURE_KD_LS_WATER3_001 17
+text CORE_TEXTURE_KD_LS_WATER3_002 17
+text CORE_TEXTURE_KD_LS_WATER3_003 17
+text CORE_TEXTURE_KD_LS_WATER3_004 17
+text CORE_TEXTURE_KD_LS_WATER3_005 17
+text CORE_TEXTURE_KD_LS_WATER3_006 17
+text CORE_TEXTURE_KD_LS_WATER3_007 17
+text CORE_TEXTURE_KD_LS_WATER3_008 17
+text CORE_TEXTURE_KD_LS_WATER3_009 17
+text CORE_TEXTURE_KD_LS_WATER3_010 17
+text CORE_TEXTURE_KD_LS_WATER3_011 17
+text CORE_TEXTURE_KD_LS_WATER3_012 17
+text CORE_TEXTURE_KD_LS_WATER3_013 17
+text CORE_TEXTURE_KD_LS_WATER3_014 17
+text CORE_TEXTURE_KD_LS_WATER3_015 17
+text CORE_TEXTURE_KD_LS_WATER3_016 17
+text CORE_TEXTURE_KD_LS_WATER1_001 17
+text CORE_TEXTURE_KD_LS_WATER1_002 17
+text CORE_TEXTURE_KD_LS_WATER1_003 17
+text CORE_TEXTURE_KD_LS_WATER1_004 17
+text CORE_TEXTURE_KD_LS_WATER1_005 17
+text CORE_TEXTURE_KD_LS_WATER1_006 17
+text CORE_TEXTURE_KD_LS_WATER1_007 17
+text CORE_TEXTURE_KD_LS_WATER1_008 17
+text CORE_TEXTURE_OBJTEX_STG34 13
+text CORE_TEXTURE_OBJTEX_CC_COMMON 17
+text CORE_TEXTURE_EFFTEX_COMMON 14
+text CORE_TEXTURE_OBJTEX_COMMON 14
+text CORE_TEXTURE_STG34_WATER 12
+text CORE_TEXTURE_STG34_WATER2 13
+text CORE_TEXTURE_CC_POISON 10
+
+pointer  sonic_object_textures_names  0x00000000  CORE_TEXTURE_DZ_CC_BLACKBOX256
+pointer  sonic_object_textures_names  0x0000000c  CORE_TEXTURE_KD_LS_UNIT801
+pointer  sonic_object_textures_names  0x00000018  CORE_TEXTURE_KD_LS_UNIT802
+pointer  sonic_object_textures_names  0x00000024  CORE_TEXTURE_KD_LS_UNIT803
+pointer  sonic_object_textures  0x00000000  sonic_object_textures_names
+pointer  water_surface_textures_names  0x00000000  CORE_TEXTURE_KD_LS_WATER3_001
+pointer  water_surface_textures_names  0x0000000c  CORE_TEXTURE_KD_LS_WATER3_002
+pointer  water_surface_textures_names  0x00000018  CORE_TEXTURE_KD_LS_WATER3_003
+pointer  water_surface_textures_names  0x00000024  CORE_TEXTURE_KD_LS_WATER3_004
+pointer  water_surface_textures_names  0x00000030  CORE_TEXTURE_KD_LS_WATER3_005
+pointer  water_surface_textures_names  0x0000003c  CORE_TEXTURE_KD_LS_WATER3_006
+pointer  water_surface_textures_names  0x00000048  CORE_TEXTURE_KD_LS_WATER3_007
+pointer  water_surface_textures_names  0x00000054  CORE_TEXTURE_KD_LS_WATER3_008
+pointer  water_surface_textures_names  0x00000060  CORE_TEXTURE_KD_LS_WATER3_009
+pointer  water_surface_textures_names  0x0000006c  CORE_TEXTURE_KD_LS_WATER3_010
+pointer  water_surface_textures_names  0x00000078  CORE_TEXTURE_KD_LS_WATER3_011
+pointer  water_surface_textures_names  0x00000084  CORE_TEXTURE_KD_LS_WATER3_012
+pointer  water_surface_textures_names  0x00000090  CORE_TEXTURE_KD_LS_WATER3_013
+pointer  water_surface_textures_names  0x0000009c  CORE_TEXTURE_KD_LS_WATER3_014
+pointer  water_surface_textures_names  0x000000a8  CORE_TEXTURE_KD_LS_WATER3_015
+pointer  water_surface_textures_names  0x000000b4  CORE_TEXTURE_KD_LS_WATER3_016
+pointer  water_surface_textures  0x00000000  water_surface_textures_names
+pointer  waterfall_textures_names  0x00000000  CORE_TEXTURE_KD_LS_WATER1_001
+pointer  waterfall_textures_names  0x0000000c  CORE_TEXTURE_KD_LS_WATER1_002
+pointer  waterfall_textures_names  0x00000018  CORE_TEXTURE_KD_LS_WATER1_003
+pointer  waterfall_textures_names  0x00000024  CORE_TEXTURE_KD_LS_WATER1_004
+pointer  waterfall_textures_names  0x00000030  CORE_TEXTURE_KD_LS_WATER1_005
+pointer  waterfall_textures_names  0x0000003c  CORE_TEXTURE_KD_LS_WATER1_006
+pointer  waterfall_textures_names  0x00000048  CORE_TEXTURE_KD_LS_WATER1_007
+pointer  waterfall_textures_names  0x00000054  CORE_TEXTURE_KD_LS_WATER1_008
+pointer  waterfall_textures  0x00000000  waterfall_textures_names
+pointer  core_block_glow_texlist  0x00000000  core_block_glow_texlist_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  iron_ball_texlist
+pointer  stage_textures  0x0000001c  big_jump_anim_texlist
+pointer  stage_textures  0x00000020  big_jump_texlist
+pointer  stage_textures  0x00000024  dirt_texlist
+pointer  stage_textures  0x00000028  ring_shadow_texlist
+pointer  stage_textures  0x0000002c  effect_texlist
+pointer  stage_textures  0x00000030  item_balloon_texlist
+pointer  stage_textures  0x00000034  ring_sparkle_texlist
+pointer  stage_textures  0x00000038  burst_texlist
+pointer  stage_textures  0x0000003c  lens_flare_texlist
+pointer  core_sonic_object_groups  0x00000000  stage_textures
+pointer  core_sonic_object_groups  0x00000004  goal_ring_texlists
+pointer  core_sonic_object_groups  0x00000008  emerald_texlists
+pointer  core_sonic_object_groups  0x0000000c  item_box_texlists
+pointer  core_sonic_object_groups  0x00000010  item_box_air_texlists
+pointer  core_sonic_object_groups  0x00000014  weight_texlists
+pointer  core_sonic_object_groups  0x00000018  iron_ball_texlists
+pointer  core_sonic_object_groups  0x0000001c  triple_spring_texlists
+pointer  core_sonic_object_groups  0x00000020  dynamite_texlists
+pointer  core_sonic_object_groups  0x00000024  reel_texlists
+pointer  core_sonic_object_groups  0x00000028  chao_pipe_texlists
+pointer  core_sonic_object_groups  0x0000002c  cage_texlists
+pointer  core_sonic_object_groups  0x00000030  wood_box_texlists
+pointer  core_sonic_object_groups  0x00000034  iron_box_texlists
+pointer  core_sonic_object_groups  0x00000038  upgrade_texlists
+pointer  core_sonic_object_groups  0x0000003c  missile_texlists
+pointer  core_sonic_object_groups  0x00000040  skull_texlists
+pointer  core_sonic_object_groups  0x00000044  rocket_texlists
+pointer  core_sonic_object_groups  0x00000048  search_box_texlists
+pointer  core_sonic_object_groups  0x0000004c  hint_box_texlists
+pointer  core_sonic_object_groups  0x00000050  knudai_texlists
+pointer  core_sonic_object_groups  0x00000054  knudai_foothold_texlists
+pointer  core_sonic_object_groups  0x00000058  knudai_warp_hole_texlists
+pointer  core_sonic_object_groups  0x0000005c  knudai_door_texlists
+pointer  core_sonic_object_groups  0x00000060  chao_box_texlists
+pointer  core_sonic_object_groups  0x00000064  chao_key_texlists
+pointer  core_sonic_object_groups  0x00000068  object_effect_texlists
+pointer  core_sonic_object_groups  0x0000006c  messenger_texlists
+pointer  core_sonic_object_groups  0x00000070  ring_effect_texlists
+pointer  core_sonic_object_groups  0x00000074  switch_ring_texlists
+pointer  core_sonic_object_groups  0x00000078  solid_box_texlists
+pointer  core_sonic_object_groups  0x0000007c  electric_pillar_texlists
+pointer  core_sonic_object_groups  0x00000080  tall_pillar_texlists
+pointer  core_sonic_object_groups  0x00000084  core_block_texlists
+pointer  core_sonic_object_groups  0x00000088  core_lift_texlists
+pointer  core_sonic_object_groups  0x0000008c  core_shutter_texlists
+pointer  core_sonic_object_groups  0x00000090  core_step_texlists
+pointer  core_sonic_object_groups  0x00000094  core_laser_texlists
+pointer  core_sonic_object_groups  0x00000098  time_switch_texlists
+pointer  core_sonic_object_pvms  0x00000000  CORE_TEXTURE_OBJTEX_STG34
+pointer  core_sonic_object_pvms  0x00000004  sonic_object_textures
+pointer  core_sonic_object_pvms  0x00000008  CORE_TEXTURE_OBJTEX_CC_COMMON
+pointer  core_sonic_object_pvms  0x0000000c  core_object_textures
+pointer  core_sonic_object_pvms  0x00000010  CORE_TEXTURE_EFFTEX_COMMON
+pointer  core_sonic_object_pvms  0x00000014  efftex_common_texlist
+pointer  core_sonic_object_pvms  0x00000018  CORE_TEXTURE_OBJTEX_COMMON
+pointer  core_sonic_object_pvms  0x0000001c  objtex_common_texlist
+pointer  core_sonic_object_pvms  0x00000020  CORE_TEXTURE_STG34_WATER
+pointer  core_sonic_object_pvms  0x00000024  water_surface_textures
+pointer  core_sonic_object_pvms  0x00000028  CORE_TEXTURE_STG34_WATER2
+pointer  core_sonic_object_pvms  0x0000002c  waterfall_textures
+pointer  core_sonic_object_pvms  0x00000030  CORE_TEXTURE_CC_POISON
+pointer  core_sonic_object_pvms  0x00000034  core_block_glow_texlist
+pointer  core_sonic_object_pvms  0x0000003c  core_sonic_land_texlist

@@ -1,0 +1,124 @@
+; Ninja's store-queue and cache-line copies, and its doubleword copies.
+
+        .EXPORT     _njMemCopySQ
+        .EXPORT     _njMemCopy32
+        .EXPORT     _njMemCopy16
+        .EXPORT     _njMemCopy8
+
+; QACR0 and QACR1 are the store queues' area registers. each holds its
+; queue's 64 MB area as the area's address shifted right by 24 and masked by
+; QACR_AREA
+QACR0:          .EQU    H'FF000038
+QACR1:          .EQU    H'FF00003C
+QACR_AREA:      .EQU    H'1C
+; a store to SQ_AREA plus an offset below 64 MB goes to a store queue. a PREF
+; of that address writes the queue's 32 bytes to the offset in the queue's
+; area. SQ_OFFSET masks the offset
+SQ_AREA:        .EQU    H'E0000000
+SQ_OFFSET:      .EQU    H'03FFFFFF
+; a store queue's bytes, and a cache line's
+BLOCK_SIZE:     .EQU    32
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void njMemCopySQ(void *dst, const void *src, Sint32 num)
+; FSCHG makes each FMOV move a pair of longs. four pairs fill a store queue,
+; and a PREF of the queue's address writes its 32 bytes to dst. a PREF of src
+; fetches its next block into the cache before the block is read
+; @asm operand: fschg-slot, FSCHG at 0x8c11193a restores SZ in the RTS slot
+_njMemCopySQ:
+        PREF        @R5
+        MOV         R4,R0
+        SHLR16      R0
+        MOV.L       #QACR0,R1
+        SHLR8       R0
+        AND         #QACR_AREA,R0
+        MOV.L       R0,@R1
+        ADD         #QACR1-QACR0,R1
+        MOV.L       R0,@R1
+        MOV         R4,R2
+        MOV         R6,R3
+        MOV.L       #SQ_OFFSET,R1
+        AND         R1,R4
+        MOV.L       #SQ_AREA,R1
+        OR          R1,R4
+        FSCHG
+?block:
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        ADD         #BLOCK_SIZE,R4
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        PREF        @R5
+        FMOV        DR6,@-R4
+        FMOV        DR4,@-R4
+        DT          R6
+        FMOV        DR2,@-R4
+        FMOV        DR0,@-R4
+        PREF        @R4
+        BF/S        ?block
+        ADD         #BLOCK_SIZE,R4
+        RTS
+        FSCHG
+
+; void njMemCopy32(void *dst, const void *src, Sint32 num)
+; MOVCA.L takes each of dst's cache lines without reading it, and four pair
+; moves fill it
+; @asm opcode: movca, MOVCA.L R0,@R4 at 0x8c111954 takes dst's next cache
+; line
+_njMemCopy32:
+        PREF        @R5
+        FSCHG
+?block:
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        MOVCA.L     R0,@R4
+        ADD         #BLOCK_SIZE,R4
+        FMOV        DR6,@-R4
+        FMOV        DR4,@-R4
+        FMOV        DR2,@-R4
+        FMOV        DR0,@-R4
+        PREF        @R5
+        DT          R6
+        BF/S        ?block
+        ADD         #BLOCK_SIZE,R4
+        RTS
+        FSCHG
+
+; void njMemCopy16(void *dst, const void *src, Sint32 num)
+; two pair moves copy each 16-byte block
+; @asm operand: fschg-slot, FSCHG at 0x8c111982 restores SZ in the RTS slot
+_njMemCopy16:
+        FSCHG
+        .ALIGN      4
+?block:
+        FMOV        @R5+,DR0
+        ADD         #16,R4
+        FMOV        @R5+,DR2
+        DT          R6
+        FMOV        DR2,@-R4
+        FMOV        DR0,@-R4
+        BF/S        ?block
+        ADD         #16,R4
+        RTS
+        FSCHG
+
+; void njMemCopy8(void *dst, const void *src, Sint32 num)
+; one pair move copies each 8-byte block
+; @asm operand: fschg-slot, FSCHG at 0x8c111994 restores SZ in the RTS slot
+_njMemCopy8:
+        FSCHG
+        .ALIGN      4
+?block:
+        FMOV        @R5+,DR0
+        DT          R6
+        FMOV        DR0,@R4
+        BF/S        ?block
+        ADD         #8,R4
+        RTS
+        FSCHG
+
+        .ALIGN      4
+        .END

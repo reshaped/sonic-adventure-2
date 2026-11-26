@@ -1,0 +1,13 @@
+text  FAN_TEXTURE_MIU128_PL001  13
+text  FAN_TEXTURE_MIU128_SH001  13
+text  FAN_TEXTURE_MIU128_SH002  13
+text  FAN_TEXTURE_MIU64_IG008  12
+
+pointer  security_fan_object_model  0x00000000  security_fan_object_vertices
+pointer  security_fan_object_model  0x00000004  security_fan_object_polygons
+pointer  security_fan_object  0x00000004  security_fan_object_model
+pointer  textures  0x00000000  FAN_TEXTURE_MIU128_PL001
+pointer  textures  0x0000000c  FAN_TEXTURE_MIU128_SH001
+pointer  textures  0x00000018  FAN_TEXTURE_MIU128_SH002
+pointer  textures  0x00000024  FAN_TEXTURE_MIU64_IG008
+pointer  security_fan_texlist  0x00000000  textures

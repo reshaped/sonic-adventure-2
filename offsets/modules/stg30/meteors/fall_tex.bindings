@@ -1,0 +1,5 @@
+pointer  textures  0x00000000  meteor_miu64_fr006
+pointer  meteor_fall_texlist  0x00000000  textures
+pointer  meteor_fall_mesh  0x00000000  meteor_fall_vertices
+pointer  meteor_fall_mesh  0x00000004  meteor_fall_polygons
+pointer  meteor_fall_object  0x00000004  meteor_fall_mesh

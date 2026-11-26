@@ -1,0 +1,7 @@
+text  CANYON_TEXT_DZ_GYUUKOTU  12
+pointer  bone_texlist_names  0x00000000  CANYON_TEXT_DZ_GYUUKOTU
+pointer  bone_texlist  0x00000000  bone_texlist_names
+pointer  bone_model  0x00000000  bone_vertices
+pointer  bone_model  0x00000004  bone_polygons
+pointer  bone_object  0x00000004  bone_model
+pointer  bone_texlists  0x00000000  bone_texlist

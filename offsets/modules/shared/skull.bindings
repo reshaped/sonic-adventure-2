@@ -1,0 +1,8 @@
+text  SKULL_TEXT_SIKAKE_25_64  13
+
+pointer  skull_texname  0x00000000  SKULL_TEXT_SIKAKE_25_64
+pointer  skull_texlist  0x00000000  skull_texname
+pointer  skull_model  0x00000000  skull_vertices
+pointer  skull_model  0x00000004  skull_polygons
+pointer  skull_object  0x00000004  skull_model
+pointer  skull_texlists  0x00000000  skull_texlist

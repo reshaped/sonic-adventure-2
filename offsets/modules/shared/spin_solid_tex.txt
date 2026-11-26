@@ -1,0 +1,8 @@
+datum  spin_solid_polygons  D  0x00000020  194
+text  TEXTURE_SIKAKE_46_128  C  0x00000000  14
+text  TEXTURE_SIKAKE_47_128  C  0x00000010  14
+datum  textures  D  0x00000000  24
+datum  spin_solid_texlist  D  0x00000018  8
+datum  crate_vertices  D  0x000000e4  204
+datum  spin_solid_model  D  0x000001b0  24
+datum  spin_solid_object  D  0x000001c8  52

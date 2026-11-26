@@ -1,0 +1,3 @@
+modules/stg40/paths.c
+modules/stg40/sky_land.c
+modules/stg40/terrain.c

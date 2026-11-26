@@ -1,0 +1,228 @@
+text  SET_NAME_RING  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_3SPRING  8
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  14
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_UDREEL  7
+text  SET_NAME_ORI  4
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_ROCKET  10
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SCHBOX  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_MSGER  6
+text  SET_NAME_SSS  4
+text  SET_NAME_SOLIDBOX  9
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_SOAP_SW  8
+text  SET_NAME_SKULL  6
+text  SET_NAME_PSKULL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_STOPLSD  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MODMOD  8
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_EFLENSF0  9
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_E_BEETON  9
+text  SET_NAME_E_BATABATA  11
+text  SET_NAME_E_AKAHIGE  10
+text  SET_NAME_E_SARU  7
+text  SET_NAME_E_NAMIE  8
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_STOPLOCKON  11
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_YASI  5
+text  SET_NAME_HANA  5
+text  SET_NAME_HANA2  6
+text  SET_NAME_TOGE  5
+text  SET_NAME_KUSA  5
+text  SET_NAME_ROCK  5
+text  SET_NAME_KAGE  5
+text  SET_NAME_TP1  4
+text  SET_NAME_TP2  4
+text  SET_NAME_ASHIBA  7
+text  SET_NAME_FALLASHIBA  11
+pointer  green_hill_kinds  0x00000008  ring_step
+pointer  green_hill_kinds  0x0000000c  SET_NAME_RING
+pointer  green_hill_kinds  0x00000018  ring_linear_init
+pointer  green_hill_kinds  0x0000001c  SET_NAME_RING_LINEAR
+pointer  green_hill_kinds  0x00000028  ring_circle_init
+pointer  green_hill_kinds  0x0000002c  SET_NAME_RING_CIRCLE
+pointer  green_hill_kinds  0x00000038  spring_a_step
+pointer  green_hill_kinds  0x0000003c  SET_NAME_SPRA
+pointer  green_hill_kinds  0x00000048  spring_b_step
+pointer  green_hill_kinds  0x0000004c  SET_NAME_SPRB
+pointer  green_hill_kinds  0x00000058  triple_spring_init
+pointer  green_hill_kinds  0x0000005c  SET_NAME_3SPRING
+pointer  green_hill_kinds  0x00000068  big_jump_step
+pointer  green_hill_kinds  0x0000006c  SET_NAME_BIGJUMP
+pointer  green_hill_kinds  0x00000078  dash_panel_step
+pointer  green_hill_kinds  0x0000007c  SET_NAME_KASOKU
+pointer  green_hill_kinds  0x00000088  save_point_step
+pointer  green_hill_kinds  0x0000008c  SET_NAME_SAVEPOINT
+pointer  green_hill_kinds  0x00000098  switch_step
+pointer  green_hill_kinds  0x0000009c  SET_NAME_SWITCH
+pointer  green_hill_kinds  0x000000a8  item_box_step
+pointer  green_hill_kinds  0x000000ac  SET_NAME_ITEMBOX
+pointer  green_hill_kinds  0x000000b8  item_box_air_step
+pointer  green_hill_kinds  0x000000bc  SET_NAME_ITEMBOXAIR
+pointer  green_hill_kinds  0x000000c8  item_balloon_step
+pointer  green_hill_kinds  0x000000cc  SET_NAME_ITEMBOXBALLOON
+pointer  green_hill_kinds  0x000000d8  upgrade_init
+pointer  green_hill_kinds  0x000000dc  SET_NAME_LEVUPDAI
+pointer  green_hill_kinds  0x000000e8  goal_ring_init
+pointer  green_hill_kinds  0x000000ec  SET_NAME_GOALRING
+pointer  green_hill_kinds  0x000000f8  emerald_init
+pointer  green_hill_kinds  0x000000fc  SET_NAME_EMERALD
+pointer  green_hill_kinds  0x00000108  reel_init
+pointer  green_hill_kinds  0x0000010c  SET_NAME_UDREEL
+pointer  green_hill_kinds  0x00000118  cage_init
+pointer  green_hill_kinds  0x0000011c  SET_NAME_ORI
+pointer  green_hill_kinds  0x00000128  dynamite_init
+pointer  green_hill_kinds  0x0000012c  SET_NAME_DYNAMITE
+pointer  green_hill_kinds  0x00000138  wood_box_init
+pointer  green_hill_kinds  0x0000013c  SET_NAME_CONTWOOD
+pointer  green_hill_kinds  0x00000148  iron_box_init
+pointer  green_hill_kinds  0x0000014c  SET_NAME_CONTIRON
+pointer  green_hill_kinds  0x00000158  rocket_init
+pointer  green_hill_kinds  0x0000015c  SET_NAME_ROCKET
+pointer  green_hill_kinds  0x00000168  missile_init
+pointer  green_hill_kinds  0x0000016c  SET_NAME_ROCKETMISSSILE
+pointer  green_hill_kinds  0x00000178  search_box_init
+pointer  green_hill_kinds  0x0000017c  SET_NAME_SCHBOX
+pointer  green_hill_kinds  0x00000188  hint_box_init
+pointer  green_hill_kinds  0x0000018c  SET_NAME_HINTBOX
+pointer  green_hill_kinds  0x00000198  messenger_init
+pointer  green_hill_kinds  0x0000019c  SET_NAME_MSGER
+pointer  green_hill_kinds  0x000001a8  sss_init
+pointer  green_hill_kinds  0x000001ac  SET_NAME_SSS
+pointer  green_hill_kinds  0x000001b8  solid_box_init
+pointer  green_hill_kinds  0x000001bc  SET_NAME_SOLIDBOX
+pointer  green_hill_kinds  0x000001c8  dummy_object_init
+pointer  green_hill_kinds  0x000001cc  SET_NAME_DMYOBJ
+pointer  green_hill_kinds  0x000001d8  soap_switch_init
+pointer  green_hill_kinds  0x000001dc  SET_NAME_SOAP_SW
+pointer  green_hill_kinds  0x000001e8  skull_still_init
+pointer  green_hill_kinds  0x000001ec  SET_NAME_SKULL
+pointer  green_hill_kinds  0x000001f8  skull_lying_init
+pointer  green_hill_kinds  0x000001fc  SET_NAME_PSKULL
+pointer  green_hill_kinds  0x00000208  chao_pipe_init
+pointer  green_hill_kinds  0x0000020c  SET_NAME_CHAOPIPE
+pointer  green_hill_kinds  0x00000218  animal_init
+pointer  green_hill_kinds  0x0000021c  SET_NAME_MINIMAL
+pointer  green_hill_kinds  0x00000228  hidden_animal_init
+pointer  green_hill_kinds  0x0000022c  SET_NAME_WSMMLS
+pointer  green_hill_kinds  0x00000238  chao_box_init
+pointer  green_hill_kinds  0x0000023c  SET_NAME_CONTCHAO
+pointer  green_hill_kinds  0x00000248  stop_lsd_init
+pointer  green_hill_kinds  0x0000024c  SET_NAME_STOPLSD
+pointer  green_hill_kinds  0x00000258  knudai_init
+pointer  green_hill_kinds  0x0000025c  SET_NAME_KNUDAI
+pointer  green_hill_kinds  0x00000268  knudai_foothold_init
+pointer  green_hill_kinds  0x0000026c  SET_NAME_KDASIBA
+pointer  green_hill_kinds  0x00000278  knudai_warp_hole_init
+pointer  green_hill_kinds  0x0000027c  SET_NAME_KDWARPHOLE
+pointer  green_hill_kinds  0x00000288  knudai_door_init
+pointer  green_hill_kinds  0x0000028c  SET_NAME_KDDOOR
+pointer  green_hill_kinds  0x00000298  knudai_item_box_init
+pointer  green_hill_kinds  0x0000029c  SET_NAME_KDITEMBOX
+pointer  green_hill_kinds  0x000002a8  knudai_ring_linear_init
+pointer  green_hill_kinds  0x000002ac  SET_NAME_KDDRNGL
+pointer  green_hill_kinds  0x000002b8  knudai_ring_circle_init
+pointer  green_hill_kinds  0x000002bc  SET_NAME_KDDRNGC
+pointer  green_hill_kinds  0x000002c8  knudai_spring_init
+pointer  green_hill_kinds  0x000002cc  SET_NAME_KDSPRING
+pointer  green_hill_kinds  0x000002d8  knudai_spring_b_init
+pointer  green_hill_kinds  0x000002dc  SET_NAME_KDSPRINGB
+pointer  green_hill_kinds  0x000002e8  collision_sphere_step
+pointer  green_hill_kinds  0x000002ec  SET_NAME_SPHERE
+pointer  green_hill_kinds  0x000002f8  collision_cylinder_step
+pointer  green_hill_kinds  0x000002fc  SET_NAME_CCYL
+pointer  green_hill_kinds  0x00000308  collision_cube_step
+pointer  green_hill_kinds  0x0000030c  SET_NAME_CCUBE
+pointer  green_hill_kinds  0x00000318  collision_wall_step
+pointer  green_hill_kinds  0x0000031c  SET_NAME_CWALL
+pointer  green_hill_kinds  0x00000328  collision_circle_step
+pointer  green_hill_kinds  0x0000032c  SET_NAME_CCIRCLE
+pointer  green_hill_kinds  0x00000338  modifier_volume_init
+pointer  green_hill_kinds  0x0000033c  SET_NAME_MODMOD
+pointer  green_hill_kinds  0x00000348  effect_object_init
+pointer  green_hill_kinds  0x0000034c  SET_NAME_EFFOBJ0
+pointer  green_hill_kinds  0x00000358  lens_flare_init
+pointer  green_hill_kinds  0x0000035c  SET_NAME_EFLENSF0
+pointer  green_hill_kinds  0x00000368  weight_init
+pointer  green_hill_kinds  0x0000036c  SET_NAME_BUNCHIN
+pointer  green_hill_kinds  0x00000378  iron_ball_init
+pointer  green_hill_kinds  0x0000037c  SET_NAME_IRONBALL2
+pointer  green_hill_kinds  0x00000388  green_hill_beeton_step
+pointer  green_hill_kinds  0x0000038c  SET_NAME_E_BEETON
+pointer  green_hill_kinds  0x00000398  green_hill_batabata_step
+pointer  green_hill_kinds  0x0000039c  SET_NAME_E_BATABATA
+pointer  green_hill_kinds  0x000003a8  green_hill_akahige_step
+pointer  green_hill_kinds  0x000003ac  SET_NAME_E_AKAHIGE
+pointer  green_hill_kinds  0x000003b8  monkey_step
+pointer  green_hill_kinds  0x000003bc  SET_NAME_E_SARU
+pointer  green_hill_kinds  0x000003c8  hornet_step
+pointer  green_hill_kinds  0x000003cc  SET_NAME_E_NAMIE
+pointer  green_hill_kinds  0x000003d8  technique_link_init
+pointer  green_hill_kinds  0x000003dc  SET_NAME_LINKLINK
+pointer  green_hill_kinds  0x000003e8  light_switch_init
+pointer  green_hill_kinds  0x000003ec  SET_NAME_LIGHT_SW
+pointer  green_hill_kinds  0x000003f8  stop_lockon_init
+pointer  green_hill_kinds  0x000003fc  SET_NAME_STOPLOCKON
+pointer  green_hill_kinds  0x00000408  big_step
+pointer  green_hill_kinds  0x0000040c  SET_NAME_BIG_THE_CAT
+pointer  green_hill_kinds  0x00000418  green_hill_palm_init
+pointer  green_hill_kinds  0x0000041c  SET_NAME_YASI
+pointer  green_hill_kinds  0x00000428  green_hill_turning_flower_init
+pointer  green_hill_kinds  0x0000042c  SET_NAME_HANA
+pointer  green_hill_kinds  0x00000438  green_hill_bobbing_flower_init
+pointer  green_hill_kinds  0x0000043c  SET_NAME_HANA2
+pointer  green_hill_kinds  0x00000448  green_hill_spikes_init
+pointer  green_hill_kinds  0x0000044c  SET_NAME_TOGE
+pointer  green_hill_kinds  0x00000458  green_hill_grass_init
+pointer  green_hill_kinds  0x0000045c  SET_NAME_KUSA
+pointer  green_hill_kinds  0x00000468  green_hill_rock_init
+pointer  green_hill_kinds  0x0000046c  SET_NAME_ROCK
+pointer  green_hill_kinds  0x00000478  green_hill_shadow_init
+pointer  green_hill_kinds  0x0000047c  SET_NAME_KAGE
+pointer  green_hill_kinds  0x00000488  green_hill_tall_totem_init
+pointer  green_hill_kinds  0x0000048c  SET_NAME_TP1
+pointer  green_hill_kinds  0x00000498  green_hill_short_totem_init
+pointer  green_hill_kinds  0x0000049c  SET_NAME_TP2
+pointer  green_hill_kinds  0x000004a8  green_hill_platform_init
+pointer  green_hill_kinds  0x000004ac  SET_NAME_ASHIBA
+pointer  green_hill_kinds  0x000004b8  green_hill_crumbling_floor_init
+pointer  green_hill_kinds  0x000004bc  SET_NAME_FALLASHIBA

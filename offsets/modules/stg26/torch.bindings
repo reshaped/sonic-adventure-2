@@ -1,0 +1,65 @@
+# Texture slots, models and flame colors.
+text  STANDING_TORCH_TEXTURE_EQ_TORCH_STICK128  21
+text  STANDING_TORCH_TEXTURE_EQ_HI_BLUE01  16
+text  STANDING_TORCH_TEXTURE_EQ_HI_GREEN01  17
+text  STANDING_TORCH_TEXTURE_EQ_HI_RED01  15
+text  STANDING_TORCH_TEXTURE_DC_MARUKAGE32  17
+text  STANDING_TORCH_COLOR_BLUE  6
+text  STANDING_TORCH_COLOR_GREEN  6
+text  STANDING_TORCH_COLOR_RED  6
+pointer torch_blue_texture_names  0x00000000  STANDING_TORCH_TEXTURE_EQ_TORCH_STICK128
+pointer torch_blue_texlist  0x00000000  torch_blue_texture_names
+pointer torch_blue_model  0x00000000  torch_blue_vertices
+pointer torch_blue_model  0x00000004  torch_blue_polygons
+pointer torch_blue_object  0x00000004  torch_blue_model
+pointer torch_green_texture_names  0x00000000  STANDING_TORCH_TEXTURE_EQ_TORCH_STICK128
+pointer torch_green_texlist  0x00000000  torch_green_texture_names
+pointer torch_green_model  0x00000000  torch_green_vertices
+pointer torch_green_model  0x00000004  torch_green_polygons
+pointer torch_green_object  0x00000004  torch_green_model
+pointer torch_red_texture_names  0x00000000  STANDING_TORCH_TEXTURE_EQ_TORCH_STICK128
+pointer torch_red_texlist  0x00000000  torch_red_texture_names
+pointer torch_red_model  0x00000000  torch_red_vertices
+pointer torch_red_model  0x00000004  torch_red_polygons
+pointer torch_red_object  0x00000004  torch_red_model
+pointer torch_blue_flame_texture_names  0x00000000  STANDING_TORCH_TEXTURE_EQ_HI_BLUE01
+pointer torch_blue_flame_texlist  0x00000000  torch_blue_flame_texture_names
+pointer torch_blue_flame_model  0x00000000  torch_blue_flame_vertices
+pointer torch_blue_flame_model  0x00000004  torch_blue_flame_polygons
+pointer torch_blue_flame_object  0x00000004  torch_blue_flame_model
+pointer torch_green_flame_texture_names  0x00000000  STANDING_TORCH_TEXTURE_EQ_HI_GREEN01
+pointer torch_green_flame_texlist  0x00000000  torch_green_flame_texture_names
+pointer torch_green_flame_model  0x00000000  torch_green_flame_vertices
+pointer torch_green_flame_model  0x00000004  torch_green_flame_polygons
+pointer torch_green_flame_object  0x00000004  torch_green_flame_model
+pointer torch_red_flame_texture_names  0x00000000  STANDING_TORCH_TEXTURE_EQ_HI_RED01
+pointer torch_red_flame_texlist  0x00000000  torch_red_flame_texture_names
+pointer torch_red_flame_model  0x00000000  torch_red_flame_vertices
+pointer torch_red_flame_model  0x00000004  torch_red_flame_polygons
+pointer torch_red_flame_object  0x00000004  torch_red_flame_model
+pointer round_shadow_small_texture_names  0x00000000  STANDING_TORCH_TEXTURE_DC_MARUKAGE32
+pointer quarters_round_shadow_small_texlist  0x00000000  round_shadow_small_texture_names
+pointer quarters_round_shadow_small_model  0x00000000  round_shadow_small_vertices
+pointer quarters_round_shadow_small_model  0x00000004  round_shadow_small_polygons
+pointer round_shadow_small_object  0x00000004  quarters_round_shadow_small_model
+pointer chamber_torch_models  0x00000000  torch_blue_model
+pointer chamber_torch_models  0x00000004  torch_green_model
+pointer chamber_torch_models  0x00000008  torch_red_model
+pointer chamber_torch_flame_models  0x00000000  torch_blue_flame_model
+pointer chamber_torch_flame_models  0x00000004  torch_green_flame_model
+pointer chamber_torch_flame_models  0x00000008  torch_red_flame_model
+pointer quarters_torch_texlists  0x00000000  torch_blue_texlist
+pointer quarters_torch_texlists  0x00000004  torch_green_texlist
+pointer quarters_torch_texlists  0x00000008  torch_red_texlist
+pointer chamber_torch_flame_texlists  0x00000000  quarters_flame_blue_texlist
+pointer chamber_torch_flame_texlists  0x00000004  quarters_flame_green_texlist
+pointer chamber_torch_flame_texlists  0x00000008  quarters_flame_red_texlist
+pointer chamber_torch_color_names  0x00000000  STANDING_TORCH_COLOR_BLUE
+pointer chamber_torch_color_names  0x00000004  STANDING_TORCH_COLOR_GREEN
+pointer chamber_torch_color_names  0x00000008  STANDING_TORCH_COLOR_RED
+pointer chamber_torch_builds  0x00000004  torch_blue_texlist
+pointer chamber_torch_builds  0x00000008  torch_blue_object
+pointer chamber_torch_builds  0x00000014  torch_green_texlist
+pointer chamber_torch_builds  0x00000018  torch_green_object
+pointer chamber_torch_builds  0x00000024  torch_red_texlist
+pointer chamber_torch_builds  0x00000028  torch_red_object

@@ -1,0 +1,8 @@
+text  TUTORIAL_MESSAGES  C  0x00000000  7
+text  TUTORIAL_MUSIC  C  0x00000008  13
+datum  kihon_lines  D  0x00000010  340
+datum  sonic_lines  D  0x00000164  1080
+datum  tails_lines  D  0x0000059c  900
+datum  knuckles_lines  D  0x00000920  1140
+datum  chao_lines  D  0x00000d94  980
+datum  pages  D  0x00001168  40

@@ -1,0 +1,78 @@
+text  UNI_GHORA_TEXTURE_ARCHIVE  11
+text  UNI_TEXTURE_TASK_NAME  7
+text  UNI_UNIUNI_TEXTURE_ARCHIVE  9
+text  UNI_DEBUG_KIND  17
+text  UNI_DEBUG_RANGE  9
+text  UNI_DEBUG_YAW  10
+text  UNI_DEBUG_EMERALD  6
+text  UNI_TEXTURE_GORA2  6
+text  UNI_TEXTURE_EYE  6
+text  UNI_TEXTURE_UNI1  5
+text  UNI_TEXTURE_GORA1  6
+text  UNI_TEXTURE_FIREBALL  7
+text  UNI_TEXTURE_PUPURU1  8
+text  UNI_TEXTURE_PUPURU2  8
+text  UNI_TEXTURE_PUPURU3  8
+text  UNI_TEXTURE_PUPURU4  8
+text  UNI_TEXTURE_PUPURU5  8
+text  UNI_TEXTURE_PUPURU6  8
+text  UNI_TEXTURE_PUPURU7  8
+text  UNI_TEXTURE_PUPURU8  8
+text  UNI_UNIUNI_LABEL  21
+text  UNI_GHORA_LABEL  20
+pointer  uniuni_textures  0x00000000  UNI_TEXTURE_GORA2
+pointer  uniuni_textures  0x0000000c  UNI_TEXTURE_EYE
+pointer  uniuni_textures  0x00000018  UNI_TEXTURE_UNI1
+pointer  uniuni_texlist  0x00000000  uniuni_textures
+pointer  uniuni_shell_model  0x00000000  uniuni_shell_vertices
+pointer  uniuni_shell_model  0x00000004  uniuni_shell_polygons
+pointer  uniuni_shell  0x00000004  uniuni_shell_model
+pointer  uniuni_rear_spines_model  0x00000000  uniuni_rear_spines_vertices
+pointer  uniuni_rear_spines_model  0x00000004  uniuni_rear_spines_polygons
+pointer  uniuni_rear_spines  0x00000004  uniuni_rear_spines_model
+pointer  uniuni_rear_spines  0x00000030  uniuni_shell
+pointer  uniuni_body_model  0x00000000  uniuni_body_vertices
+pointer  uniuni_body_model  0x00000004  uniuni_body_polygons
+pointer  uniuni_object  0x00000004  uniuni_body_model
+pointer  uniuni_object  0x0000002c  uniuni_rear_spines
+pointer  uniuni_spike_model  0x00000000  uniuni_spike_vertices
+pointer  uniuni_spike_model  0x00000004  uniuni_spike_polygons
+pointer  uniuni_spike_object  0x00000004  uniuni_spike_model
+pointer  uniuni_spike_track  0x00000004  uniuni_spike_rotations
+pointer  uniuni_spike_motion  0x00000000  uniuni_spike_track
+pointer  ghora_textures  0x00000000  UNI_TEXTURE_GORA1
+pointer  ghora_textures  0x0000000c  UNI_TEXTURE_GORA2
+pointer  ghora_textures  0x00000018  UNI_TEXTURE_EYE
+pointer  ghora_textures  0x00000024  UNI_TEXTURE_FIREBALL
+pointer  ghora_textures  0x00000030  UNI_TEXTURE_PUPURU1
+pointer  ghora_textures  0x0000003c  UNI_TEXTURE_PUPURU2
+pointer  ghora_textures  0x00000048  UNI_TEXTURE_PUPURU3
+pointer  ghora_textures  0x00000054  UNI_TEXTURE_PUPURU4
+pointer  ghora_textures  0x00000060  UNI_TEXTURE_PUPURU5
+pointer  ghora_textures  0x0000006c  UNI_TEXTURE_PUPURU6
+pointer  ghora_textures  0x00000078  UNI_TEXTURE_PUPURU7
+pointer  ghora_textures  0x00000084  UNI_TEXTURE_PUPURU8
+pointer  ghora_texlist  0x00000000  ghora_textures
+pointer  ghora_shell_model  0x00000000  ghora_shell_vertices
+pointer  ghora_shell_model  0x00000004  ghora_shell_polygons
+pointer  ghora_shell  0x00000004  ghora_shell_model
+pointer  ghora_rear_spines_model  0x00000000  ghora_rear_spines_vertices
+pointer  ghora_rear_spines_model  0x00000004  ghora_rear_spines_polygons
+pointer  ghora_rear_spines  0x00000004  ghora_rear_spines_model
+pointer  ghora_rear_spines  0x00000030  ghora_shell
+pointer  ghora_body_model  0x00000000  ghora_body_vertices
+pointer  ghora_body_model  0x00000004  ghora_body_polygons
+pointer  ghora_object  0x00000004  ghora_body_model
+pointer  ghora_object  0x0000002c  ghora_rear_spines
+pointer  ghora_spike_model  0x00000000  ghora_spike_vertices
+pointer  ghora_spike_model  0x00000004  ghora_spike_polygons
+pointer  ghora_spike_object  0x00000004  ghora_spike_model
+pointer  uniuni_pieces  0x00000000  uniuni_shell_model
+pointer  uniuni_pieces  0x00000004  uniuni_rear_spines_model
+pointer  uniuni_pieces  0x00000008  uniuni_body_model
+pointer  ghora_pieces  0x00000000  ghora_shell_model
+pointer  ghora_pieces  0x00000004  ghora_rear_spines_model
+pointer  ghora_pieces  0x00000008  ghora_body_model
+pointer  uni_titles  0x00000000  UNI_UNIUNI_LABEL
+pointer  uni_titles  0x00000004  UNI_GHORA_LABEL
+pointer  ghora_glow  0x0000001c  ghora_glow_cell

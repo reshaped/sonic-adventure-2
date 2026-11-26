@@ -1,0 +1,7 @@
+pointer  water_mesh  0x00000004  water_indices
+pointer  water_plane  0x00000000  water_corners
+pointer  water_plane  0x00000004  water_normals
+pointer  water_plane  0x0000000c  water_mesh
+pointer  water_plane  0x00000010  water_material
+pointer  water_object  0x00000004  water_plane
+pointer  kill_areas_on_deck  0x00000004  water_object

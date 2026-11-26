@@ -1,0 +1,62 @@
+text  METEORS_EDITOR_ROTSPD_X  12
+text  METEORS_EDITOR_ROTSPD_Y  12
+text  METEORS_EDITOR_MODEL  14
+text  METEORS_TEXTURE_MIU128_MEH001  14
+text  METEORS_TEXTURE_MIU64_MEH001  13
+text  METEORS_TEXTURE_MIU128_FR002  13
+text  METEORS_TEXTURE_MIU256_FR001  13
+
+pointer  cosmic_meteor_texlists  0x00000000  meteor_large_texlist
+pointer  cosmic_meteor_texlists  0x00000004  meteor_small_texlist
+pointer  cosmic_meteor_texlists  0x00000008  meteor_flame_chip_texlist
+pointer  cosmic_meteor_texlists  0x0000000c  meteor_flame_shard_texlist
+pointer  cosmic_meteor_texlists  0x00000010  meteor_flame_texlist
+pointer  cosmic_meteor_texlists  0x00000014  meteor_chip_texlist
+pointer  cosmic_meteor_texlists  0x00000018  meteor_shard_texlist
+pointer  cosmic_meteor_texlists  0x0000001c  meteor_small_shard_texlist
+pointer  meteor_flame_textures  0x00000000  METEORS_TEXTURE_MIU128_MEH001
+pointer  meteor_flame_texlist  0x00000000  meteor_flame_textures
+pointer  meteor_flame_object  0x00000004  meteor_fireball_mesh
+pointer  meteor_flame_chip_textures  0x00000000  METEORS_TEXTURE_MIU128_MEH001
+pointer  meteor_flame_chip_textures  0x0000000c  METEORS_TEXTURE_MIU64_MEH001
+pointer  meteor_flame_chip_texlist  0x00000000  meteor_flame_chip_textures
+pointer  meteor_flame_chip  0x00000004  meteor_fragment_mesh
+pointer  meteor_flame_shard_textures  0x00000000  METEORS_TEXTURE_MIU128_MEH001
+pointer  meteor_flame_shard_textures  0x0000000c  METEORS_TEXTURE_MIU64_MEH001
+pointer  meteor_flame_shard_texlist  0x00000000  meteor_flame_shard_textures
+pointer  meteor_flame_shard  0x00000004  meteor_shard_mesh
+pointer  meteor_large_textures  0x00000000  METEORS_TEXTURE_MIU128_FR002
+pointer  meteor_large_textures  0x0000000c  METEORS_TEXTURE_MIU256_FR001
+pointer  meteor_large_texlist  0x00000000  meteor_large_textures
+pointer  meteor_large_mesh  0x00000000  meteor_large_vertices
+pointer  meteor_large_mesh  0x00000004  meteor_large_polygons
+pointer  meteor_large_object  0x00000004  meteor_large_mesh
+pointer  meteor_small_textures  0x00000000  METEORS_TEXTURE_MIU128_FR002
+pointer  meteor_small_textures  0x0000000c  METEORS_TEXTURE_MIU256_FR001
+pointer  meteor_small_texlist  0x00000000  meteor_small_textures
+pointer  meteor_small_mesh  0x00000000  meteor_small_vertices
+pointer  meteor_small_mesh  0x00000004  meteor_small_polygons
+pointer  meteor_small_object  0x00000004  meteor_small_mesh
+pointer  meteor_chip_textures  0x00000000  METEORS_TEXTURE_MIU128_FR002
+pointer  meteor_chip_textures  0x0000000c  METEORS_TEXTURE_MIU256_FR001
+pointer  meteor_chip_texlist  0x00000000  meteor_chip_textures
+pointer  meteor_chip_mesh  0x00000000  meteor_chip_vertices
+pointer  meteor_chip_mesh  0x00000004  meteor_chip_polygons
+pointer  meteor_chip  0x00000004  meteor_chip_mesh
+pointer  meteor_shard_textures  0x00000000  METEORS_TEXTURE_MIU128_FR002
+pointer  meteor_shard_texlist  0x00000000  meteor_shard_textures
+pointer  cosmic_rock_shard_mesh  0x00000000  cosmic_rock_shard_vertices
+pointer  cosmic_rock_shard_mesh  0x00000004  cosmic_rock_shard_polygons
+pointer  meteor_shard  0x00000004  cosmic_rock_shard_mesh
+pointer  meteor_small_shard_textures  0x00000000  METEORS_TEXTURE_MIU128_FR002
+pointer  meteor_small_shard_textures  0x0000000c  METEORS_TEXTURE_MIU256_FR001
+pointer  meteor_small_shard_texlist  0x00000000  meteor_small_shard_textures
+pointer  meteor_small_shard_mesh  0x00000000  meteor_small_shard_vertices
+pointer  meteor_small_shard_mesh  0x00000004  meteor_small_shard_polygons
+pointer  meteor_small_shard  0x00000004  meteor_small_shard_mesh
+pointer  meteor_fireball_mesh  0x00000000  meteor_fireball_vertices
+pointer  meteor_fireball_mesh  0x00000004  meteor_fireball_polygons
+pointer  meteor_fragment_mesh  0x00000000  meteor_fragment_vertices
+pointer  meteor_fragment_mesh  0x00000004  meteor_fragment_polygons
+pointer  meteor_shard_mesh  0x00000000  meteor_shard_vertices
+pointer  meteor_shard_mesh  0x00000004  meteor_shard_polygons

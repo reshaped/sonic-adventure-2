@@ -1,0 +1,570 @@
+; the CPU's exception and interrupt entry, whose pieces sy_int.h declares.
+; a stub latches its event's code in syIntEvent and jumps to its master. a
+; master saves every register and calls the code's handler from USER_VECT.
+; the handler runs with SR.BL clear, every interrupt masked, and DN the only
+; bit set in FPSCR
+
+        .EXPORT     _syIntExpISRTop
+        .EXPORT     _syIntExpISRBottom
+        .EXPORT     _syIntExpMastISR
+        .EXPORT     _syIntISRTop
+        .EXPORT     _syIntISRBottom
+        .EXPORT     _syIntMastISR
+        .EXPORT     _syIntISRRTE
+        .EXPORT     _syIntISRRTE_Bottom
+        .EXPORT     _syIntMasterISR
+        .EXPORT     _syIntMasterISR_2
+        .EXPORT     _syIntLastStack
+        .EXPORT     _syIntIntStack
+        .EXPORT     _syIntEvent
+        .EXPORT     _syIntNestCount
+
+; SR's fields, by their SH-4 names. BL blocks exceptions and interrupts, RB
+; selects register bank 1, and IMASK masks interrupts by level
+SR_BL:          .EQU    H'10000000
+SR_BL_RB:       .EQU    H'30000000
+SR_NOT_BL:      .EQU    H'EFFFFFFF
+SR_IMASK:       .EQU    H'F0
+; the high half of the FPSCR the masters run a handler under. DN is set,
+; so the FPU treats a denormal as 0, and every other bit is clear
+FPSCR_DN_HIGH:  .EQU    4
+; the low bytes of EXPEVT's and INTEVT's addresses, H'FF000024 and
+; H'FF000028
+EXPEVT:         .EQU    H'24
+INTEVT:         .EQU    H'28
+; the high byte of H'200, the first interrupt code. a lower code is an
+; exception's
+FIRST_IRQ_HIGH: .EQU    2
+; the address the stubs' unreached calls go to, and the codes they pass it
+; in R4 and R5
+HOOK:           .EQU    H'AC004000
+HOOK_CODE:      .EQU    H'200
+HOOK_INT:       .EQU    2
+HOOK_RTE:       .EQU    3
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; Uint32 syIntExpISRTop
+; the exception stub. it latches EXPEVT and jumps through its own copy of
+; syIntExpMastISR, so syIntInit sets that word before it copies the stub.
+; the master gets R0 as the exception left it, and R1 pushed for it to pop
+; @asm open: no inspect rule reads a vector's entry, which the CPU enters with
+; every register live
+_syIntExpISRTop:
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        MOV.L       R1,@-R15
+        MOV         R0,R1
+        MOVA        ?exp_saved_r0,R0
+        MOV.L       R1,@R0
+        MOV         #-1,R1
+        SHLL16      R1
+        SHLL8       R1
+        ADD         #EXPEVT,R1
+        MOV.L       @R1,R1
+        MOV.L       ?exp_event,R0
+        MOV.L       R1,@R0
+        MOV.L       _syIntExpMastISR,R1
+        MOV.L       ?exp_saved_r0,R0
+        JMP         @R1
+        NOP
+?exp_event:
+        .DATA.L     _syIntEvent
+?exp_saved_r0:
+        .DATA.L     0
+        ; a word that holds HOOK, which no code reads
+        .DATA.L     HOOK
+
+; void (*syIntExpMastISR)(void)
+_syIntExpMastISR:
+        .DATA.L     _syIntMasterISR
+
+; Uint32 syIntExpISRBottom
+_syIntExpISRBottom:
+; Uint32 syIntISRTop
+; the interrupt stub: the exception stub with INTEVT for EXPEVT, and
+; syIntMastISR for syIntExpMastISR. its BRA skips a call of HOOK
+; @asm open: no inspect rule reads a vector's entry, which the CPU enters with
+; every register live
+_syIntISRTop:
+        NOP
+        NOP
+        NOP
+        NOP
+        BRA         ?int_latch
+        NOP
+        STS.L       PR,@-R15
+        MOV.L       R0,@-R15
+        MOV.L       R4,@-R15
+        MOV.L       R5,@-R15
+        MOV.L       ?int_hook_code,R4
+        MOV.L       ?int_hook,R0
+        MOV.L       ?int_hook_arg,R5
+        JSR         @R0
+        NOP
+        MOV.L       @R15+,R5
+        MOV.L       @R15+,R4
+        MOV.L       @R15+,R0
+        LDS.L       @R15+,PR
+?int_latch:
+        MOV.L       R1,@-R15
+        MOV         R0,R1
+        MOVA        ?int_saved_r0,R0
+        MOV.L       R1,@R0
+        MOV         #-1,R1
+        SHLL16      R1
+        SHLL8       R1
+        ADD         #INTEVT,R1
+        MOV.L       @R1,R1
+        MOV.L       ?int_event,R0
+        MOV.L       R1,@R0
+        MOV.L       _syIntMastISR,R1
+        MOV.L       ?int_saved_r0,R0
+        JMP         @R1
+        NOP
+?int_hook_code:
+        .DATA.L     HOOK_CODE
+?int_hook_arg:
+        .DATA.L     HOOK_INT
+?int_event:
+        .DATA.L     _syIntEvent
+?int_saved_r0:
+        .DATA.L     0
+?int_hook:
+        .DATA.L     HOOK
+
+; void (*syIntMastISR)(void)
+_syIntMastISR:
+        .DATA.L     _syIntMasterISR
+
+; Uint32 syIntISRBottom
+_syIntISRBottom:
+; Uint32 syIntISRRTE
+; the RTE at VBR, through which a master leaves an interrupt. the RTE
+; returns, so the call of HOOK below it never runs
+; @asm operand: integer-constant, MOV.L at 0x8c15abac loads HOOK_CODE, 512, from
+; the pool
+_syIntISRRTE:
+        RTE
+        NOP
+        STS.L       PR,@-R15
+        MOV.L       R0,@-R15
+        MOV.L       R4,@-R15
+        MOV.L       R5,@-R15
+        MOV.L       ?rte_hook_code,R4
+        MOV.L       ?rte_hook,R0
+        MOV.L       ?rte_hook_arg,R5
+        JSR         @R0
+        NOP
+        MOV.L       @R15+,R5
+        MOV.L       @R15+,R4
+        MOV.L       @R15+,R0
+        LDS.L       @R15+,PR
+        RTE
+        NOP
+        .DATA.W     0                       ; aligns the pool
+?rte_hook_code:
+        .DATA.L     HOOK_CODE
+?rte_hook_arg:
+        .DATA.L     HOOK_RTE
+?rte_hook:
+        .DATA.L     HOOK
+
+; Uint32 syIntISRRTE_Bottom
+_syIntISRRTE_Bottom:
+; void syIntMasterISR(void)
+; the master that runs a handler on the interrupted stack. the float pairs'
+; 8-byte moves need a multiple of 8, so it moves the stack pointer down to
+; one and keeps the old pointer in the word there. it calls the handler with
+; the code in R4, unless the handler is 0, and sets SR.BL only after a call.
+; it leaves an exception by RTE, and an interrupt through syIntISRRTE at VBR
+; @asm abi: stack-written, MOV R1,R15 at 0x8c15ac1a moves the stack pointer
+; to the multiple of 8 below the frame
+_syIntMasterISR:
+        MOV.L       @R15+,R1
+        STC.L       SSR,@-R15
+        STC.L       SPC,@-R15
+        STS.L       PR,@-R15
+        STC.L       GBR,@-R15
+        STC.L       VBR,@-R15
+        STS.L       MACH,@-R15
+        STS.L       MACL,@-R15
+        MOV.L       R14,@-R15
+        MOV.L       R13,@-R15
+        MOV.L       R12,@-R15
+        MOV.L       R11,@-R15
+        MOV.L       R10,@-R15
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        MOV.L       R7,@-R15
+        MOV.L       R6,@-R15
+        MOV.L       R5,@-R15
+        MOV.L       R4,@-R15
+        MOV.L       R3,@-R15
+        MOV.L       R2,@-R15
+        MOV.L       R1,@-R15
+        MOV.L       R0,@-R15
+        STC.L       SR,@-R15
+        STS.L       FPUL,@-R15
+        STS.L       FPSCR,@-R15
+        MOV         #FPSCR_DN_HIGH,R0
+        SHLL16      R0
+        LDS         R0,FPSCR
+        XOR         R0,R0
+        LDS         R0,FPUL
+        ADD         #-8,R15
+        MOV         R15,R0
+        MOV         #-8,R1
+        AND         R0,R1
+        ADD         #8,R0
+        MOV.L       R0,@R1
+        MOV         R1,R15
+        FSCHG
+        FMOV        DR14,@-R15
+        FMOV        DR12,@-R15
+        FMOV        DR10,@-R15
+        FMOV        DR8,@-R15
+        FMOV        DR6,@-R15
+        FMOV        DR4,@-R15
+        FMOV        DR2,@-R15
+        FMOV        DR0,@-R15
+        FMOV        XD14,@-R15
+        FMOV        XD12,@-R15
+        FMOV        XD10,@-R15
+        FMOV        XD8,@-R15
+        FMOV        XD6,@-R15
+        FMOV        XD4,@-R15
+        FMOV        XD2,@-R15
+        FMOV        XD0,@-R15
+        FSCHG
+        STC         SR,R0
+        MOV.L       ?master_sr_mask,R1
+        AND         R1,R0
+        OR          #SR_IMASK,R0
+        LDC         R0,SR
+        ; R4 = syIntEvent, and R14 = USER_VECT(R4), the handler
+        MOV         #-2,R3
+        SHLL8       R3
+        STC         VBR,R14
+        MOV.L       ?master_event,R4
+        MOV.L       @R4,R4
+        MOV         R4,R2
+        ADD         R3,R2
+        MOV         #2,R0
+        SHLL8       R0
+        SHAR        R2
+        SHAR        R2
+        SHAR        R2
+        ADD         R2,R14
+        MOV.L       @(R0,R14),R14
+        TST         R14,R14
+        BT          ?master_restore
+        JSR         @R14
+        NOP
+        MOV.L       ?master_block,R0
+        STC         SR,R1
+        OR          R0,R1
+        LDC         R1,SR
+?master_restore:
+        MOV         #FPSCR_DN_HIGH,R0
+        SHLL16      R0
+        LDS         R0,FPSCR
+        XOR         R0,R0
+        LDS         R0,FPUL
+        FSCHG
+        FMOV        @R15+,XD0
+        FMOV        @R15+,XD2
+        FMOV        @R15+,XD4
+        FMOV        @R15+,XD6
+        FMOV        @R15+,XD8
+        FMOV        @R15+,XD10
+        FMOV        @R15+,XD12
+        FMOV        @R15+,XD14
+        FMOV        @R15+,DR0
+        FMOV        @R15+,DR2
+        FMOV        @R15+,DR4
+        FMOV        @R15+,DR6
+        FMOV        @R15+,DR8
+        FMOV        @R15+,DR10
+        FMOV        @R15+,DR12
+        FMOV        @R15+,DR14
+        FSCHG
+        MOV.L       @R15+,R15
+        LDS.L       @R15+,FPSCR
+        LDS.L       @R15+,FPUL
+        LDC.L       @R15+,SR
+        MOV.L       @R15+,R0
+        MOV.L       @R15+,R1
+        MOV.L       @R15+,R2
+        MOV.L       @R15+,R3
+        MOV.L       @R15+,R4
+        MOV.L       @R15+,R5
+        MOV.L       @R15+,R6
+        MOV.L       @R15+,R7
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R10
+        MOV.L       @R15+,R11
+        MOV.L       @R15+,R12
+        MOV.L       @R15+,R13
+        MOV.L       @R15+,R14
+        LDS.L       @R15+,MACL
+        LDS.L       @R15+,MACH
+        LDC.L       @R15+,VBR
+        LDC.L       @R15+,GBR
+        LDS.L       @R15+,PR
+        LDC.L       @R15+,SPC
+        LDC.L       @R15+,SSR
+        MOV.L       R0,@-R15
+        MOV.L       R1,@-R15
+        MOV.L       ?master_event,R1
+        MOV.L       ?master_irq,R0
+        MOV.L       @R1,R1
+        SHLL8       R0
+        CMP/GE      R0,R1
+        BF/S        ?master_return
+        MOV.L       @R15+,R1
+        STC         VBR,R0
+        JMP         @R0
+        MOV.L       @R15+,R0
+?master_irq:
+        .DATA.L     FIRST_IRQ_HIGH
+?master_return:
+        MOV.L       @R15+,R0
+        RTE
+        NOP
+        .ALIGN      4
+?master_sr_mask:
+        .DATA.L     SR_NOT_BL
+?master_block:
+        .DATA.L     SR_BL
+?master_event:
+        .DATA.L     _syIntEvent
+
+; void syIntMasterISR_2(void)
+; the master that runs a handler on syIntIntStack. it counts a level in
+; syIntNestCount while it runs. the outermost level moves to syIntIntStack,
+; and keeps the interrupted stack pointer in syIntLastStack until it leaves.
+; the master saves, calls and leaves as syIntMasterISR does, but sets SR.BL
+; and SR.RB whether or not it calls a handler
+; @asm abi: stack-written, MOV.L at 0x8c15ad2c loads syIntIntStack into the
+; stack pointer
+_syIntMasterISR_2:
+        MOV         R0,R1
+        MOVA        nested_end,R0
+        MOV.L       R1,@-R0
+        ADD         #-4,R0
+        MOV.L       @R0,R1
+        ADD         #1,R1
+        MOV.L       R1,@R0
+        ADD         #4,R0
+        DT          R1
+        MOV.L       @R0,R0
+        BF/S        ?nested_entry
+        MOV.L       @R15+,R1
+        MOV.L       R0,@-R15
+        MOVA        _syIntLastStack,R0
+        ADD         #4,R15
+        MOV.L       R15,@R0
+        ADD         #-4,R15
+        MOV.L       @R15+,R0
+        MOV.L       _syIntIntStack,R15
+?nested_entry:
+        STC.L       SSR,@-R15
+        STC.L       SPC,@-R15
+        STS.L       PR,@-R15
+        STC.L       GBR,@-R15
+        STC.L       VBR,@-R15
+        STS.L       MACH,@-R15
+        STS.L       MACL,@-R15
+        MOV.L       R14,@-R15
+        MOV.L       R13,@-R15
+        MOV.L       R12,@-R15
+        MOV.L       R11,@-R15
+        MOV.L       R10,@-R15
+        MOV.L       R9,@-R15
+        MOV.L       R8,@-R15
+        MOV.L       R7,@-R15
+        MOV.L       R6,@-R15
+        MOV.L       R5,@-R15
+        MOV.L       R4,@-R15
+        MOV.L       R3,@-R15
+        MOV.L       R2,@-R15
+        MOV.L       R1,@-R15
+        MOV.L       R0,@-R15
+        STC.L       SR,@-R15
+        STS.L       FPUL,@-R15
+        STS.L       FPSCR,@-R15
+        MOV         #FPSCR_DN_HIGH,R0
+        SHLL16      R0
+        LDS         R0,FPSCR
+        XOR         R0,R0
+        LDS         R0,FPUL
+        ADD         #-8,R15
+        MOV         R15,R0
+        MOV         #-8,R1
+        AND         R0,R1
+        ADD         #8,R0
+        MOV.L       R0,@R1
+        MOV         R1,R15
+        FSCHG
+        FMOV        DR14,@-R15
+        FMOV        DR12,@-R15
+        FMOV        DR10,@-R15
+        FMOV        DR8,@-R15
+        FMOV        DR6,@-R15
+        FMOV        DR4,@-R15
+        FMOV        DR2,@-R15
+        FMOV        DR0,@-R15
+        FMOV        XD14,@-R15
+        FMOV        XD12,@-R15
+        FMOV        XD10,@-R15
+        FMOV        XD8,@-R15
+        FMOV        XD6,@-R15
+        FMOV        XD4,@-R15
+        FMOV        XD2,@-R15
+        FMOV        XD0,@-R15
+        FSCHG
+        STC         SR,R0
+        MOV.L       ?nested_sr_mask,R1
+        AND         R1,R0
+        OR          #SR_IMASK,R0
+        LDC         R0,SR
+        ; R4 = syIntEvent, and R14 = USER_VECT(R4), the handler
+        MOV         #-2,R3
+        SHLL8       R3
+        STC         VBR,R14
+        MOVA        _syIntEvent,R0
+        MOV.L       @R0,R4
+        MOV         R4,R2
+        ADD         R3,R2
+        MOV         #2,R0
+        SHLL8       R0
+        SHAR        R2
+        SHAR        R2
+        SHAR        R2
+        ADD         R2,R14
+        MOV.L       @(R0,R14),R14
+        TST         R14,R14
+        BT          ?nested_unwind
+        JSR         @R14
+        NOP
+?nested_unwind:
+        MOV.L       ?nested_block,R0
+        STC         SR,R1
+        OR          R0,R1
+        LDC         R1,SR
+        ; T marks the outermost level, for the BF after the pops
+        MOVA        _syIntNestCount,R0
+        MOV.L       @R0,R1
+        ADD         #-1,R1
+        MOV.L       R1,@R0
+        TST         R1,R1
+        MOV         #FPSCR_DN_HIGH,R0
+        SHLL16      R0
+        LDS         R0,FPSCR
+        XOR         R0,R0
+        LDS         R0,FPUL
+        FSCHG
+        FMOV        @R15+,XD0
+        FMOV        @R15+,XD2
+        FMOV        @R15+,XD4
+        FMOV        @R15+,XD6
+        FMOV        @R15+,XD8
+        FMOV        @R15+,XD10
+        FMOV        @R15+,XD12
+        FMOV        @R15+,XD14
+        FMOV        @R15+,DR0
+        FMOV        @R15+,DR2
+        FMOV        @R15+,DR4
+        FMOV        @R15+,DR6
+        FMOV        @R15+,DR8
+        FMOV        @R15+,DR10
+        FMOV        @R15+,DR12
+        FMOV        @R15+,DR14
+        FSCHG
+        MOV.L       @R15+,R15
+        LDS.L       @R15+,FPSCR
+        LDS.L       @R15+,FPUL
+        ; SR's word goes to R4, whose own pop overwrites it, so SR keeps T
+        MOV.L       @R15+,R4
+        MOV.L       @R15+,R0
+        MOV.L       @R15+,R1
+        MOV.L       @R15+,R2
+        MOV.L       @R15+,R3
+        MOV.L       @R15+,R4
+        MOV.L       @R15+,R5
+        MOV.L       @R15+,R6
+        MOV.L       @R15+,R7
+        MOV.L       @R15+,R8
+        MOV.L       @R15+,R9
+        MOV.L       @R15+,R10
+        MOV.L       @R15+,R11
+        MOV.L       @R15+,R12
+        MOV.L       @R15+,R13
+        MOV.L       @R15+,R14
+        LDS.L       @R15+,MACL
+        LDS.L       @R15+,MACH
+        LDC.L       @R15+,VBR
+        LDC.L       @R15+,GBR
+        LDS.L       @R15+,PR
+        LDC.L       @R15+,SPC
+        LDC.L       @R15+,SSR
+        BF          ?nested_leave
+        MOV.L       _syIntLastStack,R15
+?nested_leave:
+        MOV.L       R0,@-R15
+        MOV.L       R1,@-R15
+        MOV.L       ?nested_event,R1
+        MOV.L       ?nested_irq,R0
+        MOV.L       @R1,R1
+        SHLL8       R0
+        CMP/GE      R0,R1
+        BF/S        ?nested_return
+        MOV.L       @R15+,R1
+        STC         VBR,R0
+        JMP         @R0
+        MOV.L       @R15+,R0
+        .DATA.W     0                       ; aligns the pool
+?nested_irq:
+        .DATA.L     FIRST_IRQ_HIGH
+?nested_return:
+        MOV.L       @R15+,R0
+        RTE
+        NOP
+        .ALIGN      4
+?nested_sr_mask:
+        .DATA.L     SR_NOT_BL
+?nested_block:
+        .DATA.L     SR_BL_RB
+?nested_event:
+        .DATA.L     _syIntEvent
+
+; void *syIntLastStack
+; the interrupted stack pointer, while syIntMasterISR_2 runs on
+; syIntIntStack
+_syIntLastStack:
+        .DATA.L     0
+
+; void *syIntIntStack
+_syIntIntStack:
+        .DATA.L     0
+
+; Sint32 syIntEvent
+; the code of the event a stub last latched
+_syIntEvent:
+        .DATA.L     0
+
+; Sint32 syIntNestCount
+_syIntNestCount:
+        .DATA.L     0
+; R0, while syIntMasterISR_2's entry counts its level. the entry finds this
+; word 4 bytes before nested_end and syIntNestCount 8 bytes before, so
+; syIntNestCount, this word and nested_end must stay in that order
+nested_r0:
+        .RES.L      1
+nested_end:
+        .END

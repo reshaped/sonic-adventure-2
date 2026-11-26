@@ -1,0 +1,6 @@
+pointer  hunter_textures  0x00000000  ai_texture_filenames
+pointer  hunter_textures  0x0000000c  ai_texture_filenames+0x8
+pointer  hunter_textures  0x00000018  ai_texture_filenames+0x14
+pointer  hunter_textures  0x00000024  ai_texture_filenames+0x1c
+pointer  hunter_textures  0x00000030  ai_texture_filenames+0x28
+pointer  ai_texlist  0x00000000  hunter_textures

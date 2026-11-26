@@ -1,0 +1,44 @@
+pointer  join_path_1  0x00000008  join_path_1_points
+pointer  join_path_1  0x0000000c  path_join_step
+pointer  join_path_2  0x00000008  join_path_2_points
+pointer  join_path_2  0x0000000c  path_join_step
+pointer  join_path_3  0x00000008  join_path_3_points
+pointer  join_path_3  0x0000000c  path_join_step
+pointer  white_jungle_paths  0x00000000  join_path_1
+pointer  white_jungle_paths  0x00000004  join_path_2
+pointer  white_jungle_paths  0x00000008  join_path_3
+
+text JUNGLE_TEXTURE_JUNGLE64_6 11
+text JUNGLE_TEXTURE_T_JUNGLENBG 12
+text JUNGLE_TEXTURE_T_JUNGLENBG2 13
+text JUNGLE_TEXTURE_T_JUNGLENBG4 13
+text JUNGLE_TEXTURE_T_JUNGLENBG3 13
+
+pointer  background_model  0x00000000  background_vertices
+pointer  background_model  0x00000004  background_polygons
+pointer  background_object  0x00000004  background_model
+pointer  background_textures  0x00000000  JUNGLE_TEXTURE_JUNGLE64_6
+pointer  background_textures  0x0000000c  JUNGLE_TEXTURE_T_JUNGLENBG
+pointer  background_textures  0x00000018  JUNGLE_TEXTURE_T_JUNGLENBG2
+pointer  background_textures  0x00000024  JUNGLE_TEXTURE_T_JUNGLENBG4
+pointer  background_textures  0x00000030  JUNGLE_TEXTURE_T_JUNGLENBG3
+pointer  background_texlist  0x00000000  background_textures
+pointer  turning_sky_model  0x00000000  turning_sky_vertices
+pointer  turning_sky_model  0x00000004  turning_sky_polygons
+pointer  turning_sky_object  0x00000004  turning_sky_model
+pointer  background_builds  0x00000004  background_texlist
+pointer  background_builds  0x00000008  background_object
+pointer  kill_area_0_meshset  0x00000004  kill_area_0_meshes
+pointer  kill_area_0_model  0x00000000  kill_area_0_points
+pointer  kill_area_0_model  0x00000004  kill_area_0_normals
+pointer  kill_area_0_model  0x0000000c  kill_area_0_meshset
+pointer  kill_area_0_model  0x00000010  kill_area_0_material
+pointer  kill_area_0  0x00000004  kill_area_0_model
+pointer  kill_area_1_meshset  0x00000004  kill_area_1_meshes
+pointer  kill_area_1_model  0x00000000  kill_area_1_points
+pointer  kill_area_1_model  0x00000004  kill_area_1_normals
+pointer  kill_area_1_model  0x0000000c  kill_area_1_meshset
+pointer  kill_area_1_model  0x00000010  kill_area_1_material
+pointer  kill_area_1  0x00000004  kill_area_1_model
+pointer  white_jungle_kill_areas  0x00000004  kill_area_0
+pointer  white_jungle_kill_areas  0x0000000c  kill_area_1

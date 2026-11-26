@@ -1,0 +1,264 @@
+text  SET_NAME_RING  8
+text  SET_NAME_SPRA  8
+text  SET_NAME_SPRB  8
+text  SET_NAME_KASOKU  8
+text  SET_NAME_SAVEPOINT  10
+text  SET_NAME_SWITCH  10
+text  SET_NAME_ITEMBOX  11
+text  SET_NAME_ITEMBOXAIR  11
+text  SET_NAME_IRONBALL2  10
+text  SET_NAME_ROLTUTA  11
+text  SET_NAME_BIGJUMP  11
+text  SET_NAME_ROCKET  10
+text  SET_NAME_E_KUMI  7
+text  SET_NAME_ROLTUTAT  10
+text  SET_NAME_MODMOD  8
+text  SET_NAME_SHOUKOU  9
+text  SET_NAME_GAKE  6
+text  SET_NAME_KARAMI  8
+text  SET_NAME_TOBOKU  8
+text  SET_NAME_BANGIETUTA  12
+text  SET_NAME_JP  4
+text  SET_NAME_JP_FAR  7
+text  SET_NAME_JO  4
+text  SET_NAME_JO_FAR  7
+text  SET_NAME_TESTWOOD  9
+text  SET_NAME_LIGHT_SW  9
+text  SET_NAME_TOBOKU_FAR  11
+text  SET_NAME_SHOUKOUK  10
+text  SET_NAME_E_EMI  6
+text  SET_NAME_E_AI  5
+text  SET_NAME_ITEMBOXBALLOON  15
+text  SET_NAME_GOALRING  9
+text  SET_NAME_EMERALD  8
+text  SET_NAME_BUNCHIN  8
+text  SET_NAME_RING_LINEAR  12
+text  SET_NAME_RING_CIRCLE  12
+text  SET_NAME_3SPRING  8
+text  SET_NAME_DYNAMITE  9
+text  SET_NAME_UDREEL  7
+text  SET_NAME_CHAOPIPE  9
+text  SET_NAME_ORI  4
+text  SET_NAME_CONTWOOD  9
+text  SET_NAME_CONTIRON  9
+text  SET_NAME_LEVUPDAI  9
+text  SET_NAME_ROCKETMISSSILE  15
+text  SET_NAME_SKULL  6
+text  SET_NAME_MINIMAL  8
+text  SET_NAME_WSMMLS  7
+text  SET_NAME_PSKULL  7
+text  SET_NAME_SCHBOX  7
+text  SET_NAME_HINTBOX  8
+text  SET_NAME_KNUDAI  7
+text  SET_NAME_KDASIBA  8
+text  SET_NAME_KDWARPHOLE  11
+text  SET_NAME_KDDOOR  7
+text  SET_NAME_KDITEMBOX  10
+text  SET_NAME_SOLIDBOX  9
+text  SET_NAME_DMYOBJ  7
+text  SET_NAME_CONTCHAO  9
+text  SET_NAME_SOAP_SW  8
+text  SET_NAME_STOPLSD  8
+text  SET_NAME_KDDRNGL  8
+text  SET_NAME_KDDRNGC  8
+text  SET_NAME_KDSPRING  9
+text  SET_NAME_KDSPRINGB  10
+text  SET_NAME_EFFOBJ0  8
+text  SET_NAME_SPHERE  7
+text  SET_NAME_CCYL  5
+text  SET_NAME_CCUBE  6
+text  SET_NAME_CWALL  6
+text  SET_NAME_CCIRCLE  8
+text  SET_NAME_MSGER  6
+text  SET_NAME_BIG_THE_CAT  12
+text  SET_NAME_LINKLINK  9
+text  SET_NAME_E_PATH  7
+text  SET_NAME_E_GOLD  7
+text  SET_NAME_SAKU  5
+text  SET_NAME_DFLY  5
+text  SET_NAME_PIC  4
+text  SET_NAME_KAZANI  7
+text  SET_NAME_BOXSHOUKOU  11
+text  SET_NAME_YAJI  5
+text  SET_NAME_YAJI2  6
+text  SET_NAME_WIND  5
+text  SET_NAME_WIND2  6
+text  SET_NAME_SWDRNGL  8
+text  SET_NAME_SWDRNGC  8
+text  SET_NAME_G_LIGHT_SW  11
+pointer  green_forest_kinds  0x00000008  ring_step
+pointer  green_forest_kinds  0x0000000c  SET_NAME_RING
+pointer  green_forest_kinds  0x00000018  spring_a_step
+pointer  green_forest_kinds  0x0000001c  SET_NAME_SPRA
+pointer  green_forest_kinds  0x00000028  spring_b_step
+pointer  green_forest_kinds  0x0000002c  SET_NAME_SPRB
+pointer  green_forest_kinds  0x00000038  dash_panel_step
+pointer  green_forest_kinds  0x0000003c  SET_NAME_KASOKU
+pointer  green_forest_kinds  0x00000048  save_point_step
+pointer  green_forest_kinds  0x0000004c  SET_NAME_SAVEPOINT
+pointer  green_forest_kinds  0x00000058  switch_step
+pointer  green_forest_kinds  0x0000005c  SET_NAME_SWITCH
+pointer  green_forest_kinds  0x00000068  item_box_step
+pointer  green_forest_kinds  0x0000006c  SET_NAME_ITEMBOX
+pointer  green_forest_kinds  0x00000078  item_box_air_step
+pointer  green_forest_kinds  0x0000007c  SET_NAME_ITEMBOXAIR
+pointer  green_forest_kinds  0x00000088  iron_ball_init
+pointer  green_forest_kinds  0x0000008c  SET_NAME_IRONBALL2
+pointer  green_forest_kinds  0x00000098  revolving_vine_init
+pointer  green_forest_kinds  0x0000009c  SET_NAME_ROLTUTA
+pointer  green_forest_kinds  0x000000a8  big_jump_step
+pointer  green_forest_kinds  0x000000ac  SET_NAME_BIGJUMP
+pointer  green_forest_kinds  0x000000b8  rocket_init
+pointer  green_forest_kinds  0x000000bc  SET_NAME_ROCKET
+pointer  green_forest_kinds  0x000000c8  beetle_step
+pointer  green_forest_kinds  0x000000cc  SET_NAME_E_KUMI
+pointer  green_forest_kinds  0x000000d8  looping_vine_init
+pointer  green_forest_kinds  0x000000dc  SET_NAME_ROLTUTAT
+pointer  green_forest_kinds  0x000000e8  modifier_volume_init
+pointer  green_forest_kinds  0x000000ec  SET_NAME_MODMOD
+pointer  green_forest_kinds  0x000000f8  hover_lift_init
+pointer  green_forest_kinds  0x000000fc  SET_NAME_SHOUKOU
+pointer  green_forest_kinds  0x00000108  falling_cliff_init
+pointer  green_forest_kinds  0x0000010c  SET_NAME_GAKE
+pointer  green_forest_kinds  0x00000118  twining_vine_init
+pointer  green_forest_kinds  0x0000011c  SET_NAME_KARAMI
+pointer  green_forest_kinds  0x00000128  fallen_tree_init
+pointer  green_forest_kinds  0x0000012c  SET_NAME_TOBOKU
+pointer  green_forest_kinds  0x00000138  bungee_vine_init
+pointer  green_forest_kinds  0x0000013c  SET_NAME_BANGIETUTA
+pointer  green_forest_kinds  0x00000148  jungle_prop_init
+pointer  green_forest_kinds  0x0000014c  SET_NAME_JP
+pointer  green_forest_kinds  0x00000158  jungle_prop_far_init
+pointer  green_forest_kinds  0x0000015c  SET_NAME_JP_FAR
+pointer  green_forest_kinds  0x00000168  solid_scenery_init
+pointer  green_forest_kinds  0x0000016c  SET_NAME_JO
+pointer  green_forest_kinds  0x00000178  solid_scenery_far_init
+pointer  green_forest_kinds  0x0000017c  SET_NAME_JO_FAR
+pointer  green_forest_kinds  0x00000188  test_wood_init
+pointer  green_forest_kinds  0x0000018c  SET_NAME_TESTWOOD
+pointer  green_forest_kinds  0x00000198  light_switch_init
+pointer  green_forest_kinds  0x0000019c  SET_NAME_LIGHT_SW
+pointer  green_forest_kinds  0x000001a8  fallen_tree_far_init
+pointer  green_forest_kinds  0x000001ac  SET_NAME_TOBOKU_FAR
+pointer  green_forest_kinds  0x000001b8  hover_lift_k_init
+pointer  green_forest_kinds  0x000001bc  SET_NAME_SHOUKOUK
+pointer  green_forest_kinds  0x000001c8  emi_step
+pointer  green_forest_kinds  0x000001cc  SET_NAME_E_EMI
+pointer  green_forest_kinds  0x000001d8  ai_step
+pointer  green_forest_kinds  0x000001dc  SET_NAME_E_AI
+pointer  green_forest_kinds  0x000001e8  item_balloon_step
+pointer  green_forest_kinds  0x000001ec  SET_NAME_ITEMBOXBALLOON
+pointer  green_forest_kinds  0x000001f8  goal_ring_init
+pointer  green_forest_kinds  0x000001fc  SET_NAME_GOALRING
+pointer  green_forest_kinds  0x00000208  emerald_init
+pointer  green_forest_kinds  0x0000020c  SET_NAME_EMERALD
+pointer  green_forest_kinds  0x00000218  weight_init
+pointer  green_forest_kinds  0x0000021c  SET_NAME_BUNCHIN
+pointer  green_forest_kinds  0x00000228  ring_linear_init
+pointer  green_forest_kinds  0x0000022c  SET_NAME_RING_LINEAR
+pointer  green_forest_kinds  0x00000238  ring_circle_init
+pointer  green_forest_kinds  0x0000023c  SET_NAME_RING_CIRCLE
+pointer  green_forest_kinds  0x00000248  triple_spring_init
+pointer  green_forest_kinds  0x0000024c  SET_NAME_3SPRING
+pointer  green_forest_kinds  0x00000258  dynamite_init
+pointer  green_forest_kinds  0x0000025c  SET_NAME_DYNAMITE
+pointer  green_forest_kinds  0x00000268  reel_init
+pointer  green_forest_kinds  0x0000026c  SET_NAME_UDREEL
+pointer  green_forest_kinds  0x00000278  chao_pipe_init
+pointer  green_forest_kinds  0x0000027c  SET_NAME_CHAOPIPE
+pointer  green_forest_kinds  0x00000288  cage_init
+pointer  green_forest_kinds  0x0000028c  SET_NAME_ORI
+pointer  green_forest_kinds  0x00000298  wood_box_init
+pointer  green_forest_kinds  0x0000029c  SET_NAME_CONTWOOD
+pointer  green_forest_kinds  0x000002a8  iron_box_init
+pointer  green_forest_kinds  0x000002ac  SET_NAME_CONTIRON
+pointer  green_forest_kinds  0x000002b8  upgrade_init
+pointer  green_forest_kinds  0x000002bc  SET_NAME_LEVUPDAI
+pointer  green_forest_kinds  0x000002c8  missile_init
+pointer  green_forest_kinds  0x000002cc  SET_NAME_ROCKETMISSSILE
+pointer  green_forest_kinds  0x000002d8  skull_still_init
+pointer  green_forest_kinds  0x000002dc  SET_NAME_SKULL
+pointer  green_forest_kinds  0x000002e8  animal_init
+pointer  green_forest_kinds  0x000002ec  SET_NAME_MINIMAL
+pointer  green_forest_kinds  0x000002f8  hidden_animal_init
+pointer  green_forest_kinds  0x000002fc  SET_NAME_WSMMLS
+pointer  green_forest_kinds  0x00000308  skull_lying_init
+pointer  green_forest_kinds  0x0000030c  SET_NAME_PSKULL
+pointer  green_forest_kinds  0x00000318  search_box_init
+pointer  green_forest_kinds  0x0000031c  SET_NAME_SCHBOX
+pointer  green_forest_kinds  0x00000328  hint_box_init
+pointer  green_forest_kinds  0x0000032c  SET_NAME_HINTBOX
+pointer  green_forest_kinds  0x00000338  knudai_init
+pointer  green_forest_kinds  0x0000033c  SET_NAME_KNUDAI
+pointer  green_forest_kinds  0x00000348  knudai_foothold_init
+pointer  green_forest_kinds  0x0000034c  SET_NAME_KDASIBA
+pointer  green_forest_kinds  0x00000358  knudai_warp_hole_init
+pointer  green_forest_kinds  0x0000035c  SET_NAME_KDWARPHOLE
+pointer  green_forest_kinds  0x00000368  knudai_door_init
+pointer  green_forest_kinds  0x0000036c  SET_NAME_KDDOOR
+pointer  green_forest_kinds  0x00000378  knudai_item_box_init
+pointer  green_forest_kinds  0x0000037c  SET_NAME_KDITEMBOX
+pointer  green_forest_kinds  0x00000388  solid_box_init
+pointer  green_forest_kinds  0x0000038c  SET_NAME_SOLIDBOX
+pointer  green_forest_kinds  0x00000398  dummy_object_init
+pointer  green_forest_kinds  0x0000039c  SET_NAME_DMYOBJ
+pointer  green_forest_kinds  0x000003a8  chao_box_init
+pointer  green_forest_kinds  0x000003ac  SET_NAME_CONTCHAO
+pointer  green_forest_kinds  0x000003b8  soap_switch_init
+pointer  green_forest_kinds  0x000003bc  SET_NAME_SOAP_SW
+pointer  green_forest_kinds  0x000003c8  stop_lsd_init
+pointer  green_forest_kinds  0x000003cc  SET_NAME_STOPLSD
+pointer  green_forest_kinds  0x000003d8  knudai_ring_linear_init
+pointer  green_forest_kinds  0x000003dc  SET_NAME_KDDRNGL
+pointer  green_forest_kinds  0x000003e8  knudai_ring_circle_init
+pointer  green_forest_kinds  0x000003ec  SET_NAME_KDDRNGC
+pointer  green_forest_kinds  0x000003f8  knudai_spring_init
+pointer  green_forest_kinds  0x000003fc  SET_NAME_KDSPRING
+pointer  green_forest_kinds  0x00000408  knudai_spring_b_init
+pointer  green_forest_kinds  0x0000040c  SET_NAME_KDSPRINGB
+pointer  green_forest_kinds  0x00000418  effect_object_init
+pointer  green_forest_kinds  0x0000041c  SET_NAME_EFFOBJ0
+pointer  green_forest_kinds  0x00000428  collision_sphere_step
+pointer  green_forest_kinds  0x0000042c  SET_NAME_SPHERE
+pointer  green_forest_kinds  0x00000438  collision_cylinder_step
+pointer  green_forest_kinds  0x0000043c  SET_NAME_CCYL
+pointer  green_forest_kinds  0x00000448  collision_cube_step
+pointer  green_forest_kinds  0x0000044c  SET_NAME_CCUBE
+pointer  green_forest_kinds  0x00000458  collision_wall_step
+pointer  green_forest_kinds  0x0000045c  SET_NAME_CWALL
+pointer  green_forest_kinds  0x00000468  collision_circle_step
+pointer  green_forest_kinds  0x0000046c  SET_NAME_CCIRCLE
+pointer  green_forest_kinds  0x00000478  messenger_init
+pointer  green_forest_kinds  0x0000047c  SET_NAME_MSGER
+pointer  green_forest_kinds  0x00000488  big_step
+pointer  green_forest_kinds  0x0000048c  SET_NAME_BIG_THE_CAT
+pointer  green_forest_kinds  0x00000498  technique_link_init
+pointer  green_forest_kinds  0x0000049c  SET_NAME_LINKLINK
+pointer  green_forest_kinds  0x000004a8  path_enemy_step
+pointer  green_forest_kinds  0x000004ac  SET_NAME_E_PATH
+pointer  green_forest_kinds  0x000004b8  gold_beetle_step
+pointer  green_forest_kinds  0x000004bc  SET_NAME_E_GOLD
+pointer  green_forest_kinds  0x000004c8  wood_fence_init
+pointer  green_forest_kinds  0x000004cc  SET_NAME_SAKU
+pointer  green_forest_kinds  0x000004d8  dragonfly_init
+pointer  green_forest_kinds  0x000004dc  SET_NAME_DFLY
+pointer  green_forest_kinds  0x000004e8  jungle_pickup_init
+pointer  green_forest_kinds  0x000004ec  SET_NAME_PIC
+pointer  green_forest_kinds  0x000004f8  dragonfly_swarm_init
+pointer  green_forest_kinds  0x000004fc  SET_NAME_KAZANI
+pointer  green_forest_kinds  0x00000508  hover_lift_box_init
+pointer  green_forest_kinds  0x0000050c  SET_NAME_BOXSHOUKOU
+pointer  green_forest_kinds  0x00000518  arrow_sign_init
+pointer  green_forest_kinds  0x0000051c  SET_NAME_YAJI
+pointer  green_forest_kinds  0x00000528  arrow_sign_2_init
+pointer  green_forest_kinds  0x0000052c  SET_NAME_YAJI2
+pointer  green_forest_kinds  0x00000538  updraft_init
+pointer  green_forest_kinds  0x0000053c  SET_NAME_WIND
+pointer  green_forest_kinds  0x00000548  updraft_box_init
+pointer  green_forest_kinds  0x0000054c  SET_NAME_WIND2
+pointer  green_forest_kinds  0x00000558  switch_ring_linear_init
+pointer  green_forest_kinds  0x0000055c  SET_NAME_SWDRNGL
+pointer  green_forest_kinds  0x00000568  switch_ring_circle_init
+pointer  green_forest_kinds  0x0000056c  SET_NAME_SWDRNGC
+pointer  green_forest_kinds  0x00000578  global_light_switch_init
+pointer  green_forest_kinds  0x0000057c  SET_NAME_G_LIGHT_SW

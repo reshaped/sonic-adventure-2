@@ -1,0 +1,30 @@
+text  TEXTURE_BETA_SEGALOGO_L  29
+text  TEXTURE_BETA_SEGALOGO_US_L  29
+text  TEXTURE_BETA_TEAMLOGO_L  29
+text  TEXTURE_TENTO_ALERT00  29
+text  TEXTURE_TENTO_ALERT01  29
+text  TEXTURE_TENTO_ALERT02  29
+text  TEXTURE_TENTO_ALERT03  29
+text  TEXTURE_TENTO_ALERT04  29
+text  TEXTURE_TENTO_ALERT05  29
+text  TEXTURE_TENTO_ALERT06  29
+text  TEXTURE_TENTO_ALERT07  29
+
+pointer  logos_texnames  0x00000000  TEXTURE_BETA_SEGALOGO_L
+pointer  logos_texnames  0x0000000c  TEXTURE_BETA_SEGALOGO_US_L
+pointer  logos_texnames  0x00000018  TEXTURE_BETA_TEAMLOGO_L
+pointer  logos_texnames  0x00000024  TEXTURE_TENTO_ALERT00
+pointer  logos_texnames  0x00000030  TEXTURE_TENTO_ALERT01
+pointer  logos_texnames  0x0000003c  TEXTURE_TENTO_ALERT02
+pointer  logos_texnames  0x00000048  TEXTURE_TENTO_ALERT03
+pointer  logos_texnames  0x00000054  TEXTURE_TENTO_ALERT04
+pointer  logos_texnames  0x00000060  TEXTURE_TENTO_ALERT05
+pointer  logos_texnames  0x0000006c  TEXTURE_TENTO_ALERT06
+pointer  logos_texnames  0x00000078  TEXTURE_TENTO_ALERT07
+pointer  logos_texlist  0x00000000  logos_texnames
+pointer  logo_sprite  0x00000000  logos_texlist
+pointer  logo_sprite  0x00000004  logo_cells
+pointer  sofdec_sprites  0x00000000  staff_roll_texlist
+pointer  sofdec_sprites  0x00000004  staff_roll_cells
+pointer  sofdec_sprites  0x00000028  staff_roll_texlist
+pointer  sofdec_sprites  0x0000002c  staff_roll_cells

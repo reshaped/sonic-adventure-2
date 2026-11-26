@@ -1,0 +1,16 @@
+datum  ipcp_protocol  DATA  0x00000000  60
+datum  ipcp_name  DATA  0x0000003c  5
+datum  ipcp_default_options  D  0x00000000  36
+datum  ipcp_default_negotiation  D  0x00000024  2
+datum  ipcp_option_lengths  D  0x00000026  16
+entry  ipcp_make_request  P  0x000001a8  2
+entry  ipcp_request  P  0x00000562  2
+entry  ipcp_ack  P  0x0000068c  2
+entry  ipcp_nak  P  0x0000073e  2
+entry  ipcp_reject  P  0x0000085a  2
+entry  ipcp_reset  P  0x0000094e  2
+entry  ipcp_stopping  P  0x0000099c  2
+entry  ipcp_closing  P  0x000009a6  2
+entry  ipcp_opening  P  0x000009c0  2
+entry  ipcp_starting  P  0x00000a30  2
+entry  ipcp_release  P  0x00000a38  2

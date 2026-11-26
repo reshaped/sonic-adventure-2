@@ -1,0 +1,11 @@
+datum  security_miu128_pl001  C  0x00000000  16
+datum  miu32_ig002  C  0x00000010  12
+datum  security_miu64_ig011  C  0x0000001c  12
+datum  miu64_ig019  C  0x00000028  12
+datum  security_miu64_sh001  C  0x00000034  12
+datum  textures  D  0x00000000  60
+datum  security_cylinder_texlist  D  0x0000003c  8
+datum  security_cylinder_object_polygons  D  0x00000044  1106
+datum  security_cylinder_object_vertices  D  0x00000498  1724
+datum  security_cylinder_object_model  D  0x00000b54  24
+datum  security_cylinder_object  D  0x00000b6c  52

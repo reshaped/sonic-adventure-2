@@ -1,0 +1,17 @@
+text  PROJECTILE_TEXTURE_ENEMY2  7
+text  PROJECTILE_TEXTURE_ENEMY3  7
+text  PROJECTILE_TEXTURE_WEAPON03  9
+pointer  enemy_bomb_texnames  0x00000000  PROJECTILE_TEXTURE_ENEMY2
+pointer  enemy_bomb_texnames  0x0000000c  PROJECTILE_TEXTURE_ENEMY3
+pointer  enemy_bomb_texnames  0x00000018  PROJECTILE_TEXTURE_WEAPON03
+pointer  enemy_bomb_texlist  0x00000000  enemy_bomb_texnames
+pointer  heavy_bomb_model  0x00000000  heavy_bomb_vertices
+pointer  heavy_bomb_model  0x00000004  heavy_bomb_polygons
+pointer  heavy_bomb_object  0x00000004  heavy_bomb_model
+pointer  enemy_bomb_normal_model  0x00000000  normal_bomb_vertices
+pointer  enemy_bomb_normal_model  0x00000004  normal_bomb_polygons
+pointer  normal_bomb_object  0x00000004  enemy_bomb_normal_model
+pointer  red_bomb_model  0x00000000  red_bomb_vertices
+pointer  red_bomb_model  0x00000004  red_bomb_polygons
+pointer  red_bomb_object  0x00000004  red_bomb_model
+pointer  heavy_bomb_anim  0x00000010  heavy_bomb_uvs

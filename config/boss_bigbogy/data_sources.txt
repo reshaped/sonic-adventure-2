@@ -1,0 +1,6 @@
+modules/boss_bigbogy/dat_8c585de4.c
+modules/boss_bigbogy/dat_8c585ef0.c
+modules/boss_bigbogy/dat_8c585f30.c
+modules/boss_bigbogy/dat_8c5860f0.c
+modules/boss_bigbogy/door_art.c
+modules/boss_bigbogy/terrain.c

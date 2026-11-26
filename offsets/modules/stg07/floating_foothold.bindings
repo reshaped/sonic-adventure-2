@@ -1,0 +1,23 @@
+text  FLOATING_FOOTHOLD_TEXTURE_MIU64_MI002  12
+text  FLOATING_FOOTHOLD_TEXTURE_PUM128_10  10
+text  FLOATING_FOOTHOLD_TEXTURE_PUM128_22  10
+text  FLOATING_FOOTHOLD_TEXTURE_PUM32_1  8
+text  FLOATING_FOOTHOLD_TEXTURE_PUM64_4  8
+
+pointer  floating_foothold_texlists  0x00000000  floating_foothold_texlist
+pointer  floating_foothold_texlists  0x00000004  ripple_texlist
+pointer  floating_foothold_texlist_names  0x00000000  FLOATING_FOOTHOLD_TEXTURE_MIU64_MI002
+pointer  floating_foothold_texlist_names  0x0000000c  FLOATING_FOOTHOLD_TEXTURE_PUM128_10
+pointer  floating_foothold_texlist_names  0x00000018  FLOATING_FOOTHOLD_TEXTURE_PUM128_22
+pointer  floating_foothold_texlist_names  0x00000024  FLOATING_FOOTHOLD_TEXTURE_PUM32_1
+pointer  floating_foothold_texlist_names  0x00000030  FLOATING_FOOTHOLD_TEXTURE_PUM64_4
+pointer  floating_foothold_texlist  0x00000000  floating_foothold_texlist_names
+pointer  floating_foothold_model  0x00000000  floating_foothold_vertices
+pointer  floating_foothold_model  0x00000004  floating_foothold_polygons
+pointer  floating_foothold_object  0x00000004  floating_foothold_model
+pointer  floating_foothold_collision_faces  0x00000004  floating_foothold_collision_strips
+pointer  floating_foothold_collision_model  0x00000000  floating_foothold_collision_points
+pointer  floating_foothold_collision_model  0x00000004  floating_foothold_collision_normals
+pointer  floating_foothold_collision_model  0x0000000c  floating_foothold_collision_faces
+pointer  floating_foothold_collision_model  0x00000010  floating_foothold_collision_materials
+pointer  floating_foothold_collision  0x00000004  floating_foothold_collision_model

@@ -1,0 +1,5 @@
+datum  shaft_rotor_texture_name  C  0x00000000  12
+datum  panel_texture  D  0x00000000  12
+datum  rotor_textures  D  0x0000000c  8
+datum  panels  D  0x00000014  11144
+datum  shaft_rotor  D  0x00002b9c  52

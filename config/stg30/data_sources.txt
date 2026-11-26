@@ -1,0 +1,5 @@
+modules/stg30/curved_rail_art.c
+modules/stg30/final_rush_starfield.c
+modules/stg30/paths.c
+modules/stg30/sky_land_tex.c
+modules/stg30/terrain.c

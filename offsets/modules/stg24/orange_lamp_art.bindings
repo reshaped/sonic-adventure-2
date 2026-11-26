@@ -1,0 +1,3 @@
+pointer  orange_lamp_model  0x00000000  orange_lamp_vertices
+pointer  orange_lamp_model  0x00000004  orange_lamp_polygons
+pointer  orange_lamp_object  0x00000004  orange_lamp_model

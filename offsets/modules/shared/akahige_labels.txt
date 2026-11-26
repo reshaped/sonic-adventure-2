@@ -1,0 +1,3 @@
+text  AKAHIGE_THREE_BOMB_LABEL  C  0x00000000  20
+text  AKAHIGE_SIX_BOMB_LABEL  C  0x00000014  20
+datum  akahige_form_names  D  0x00000000  8

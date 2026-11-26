@@ -1,0 +1,3 @@
+datum  scavenger_lane_positions  D  0x00000010  48
+datum  scavenger_item_positions  D  0x00000050  96
+datum  scavenger_panels  D  0x00000000  16

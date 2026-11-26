@@ -1,0 +1,3 @@
+datum  moving_strips  D  0x0000000c  112
+datum  sign_panels  D  0x00000094  88
+datum  sign_blocks  D  0x000000ec  88

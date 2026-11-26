@@ -1,0 +1,45 @@
+text  FIRE_STATUE_TASK_NAME  14
+text  FIRE_STATUE_TEXTURE_MIU64_LOCO002  14
+text  FIRE_STATUE_TEXTURE_MIU64_MO001  12
+text  FIRE_STATUE_TEXTURE_MIU64_MO002  12
+text  FIRE_STATUE_TEXTURE_MIU64_MO003  12
+text  FIRE_STATUE_TEXTURE_FLAME01  8
+text  FIRE_STATUE_TEXTURE_FLAME02  8
+text  FIRE_STATUE_TEXTURE_FLAME03  8
+text  FIRE_STATUE_TEXTURE_FLAME04  8
+text  FIRE_STATUE_TEXTURE_FLAME05  8
+text  FIRE_STATUE_TEXTURE_FLAME06  8
+text  FIRE_STATUE_TEXTURE_FLAME07  8
+text  FIRE_STATUE_TEXTURE_FLAME08  8
+text  FIRE_STATUE_TEXTURE_FLAME09  8
+text  FIRE_STATUE_TEXTURE_FLAME10  8
+
+pointer  fire_statue_texlists  0x00000000  fire_statue_texlist
+pointer  fire_statue_texlists  0x00000004  fire_texlist
+pointer  fire_statue_texlist_names  0x00000000  FIRE_STATUE_TEXTURE_MIU64_LOCO002
+pointer  fire_statue_texlist_names  0x0000000c  FIRE_STATUE_TEXTURE_MIU64_MO001
+pointer  fire_statue_texlist_names  0x00000018  FIRE_STATUE_TEXTURE_MIU64_MO002
+pointer  fire_statue_texlist_names  0x00000024  FIRE_STATUE_TEXTURE_MIU64_MO003
+pointer  fire_statue_texlist  0x00000000  fire_statue_texlist_names
+pointer  fire_statue_object_child_sibling_model  0x00000000  fire_statue_object_child_sibling_vertices
+pointer  fire_statue_object_child_sibling_model  0x00000004  fire_statue_object_child_sibling_polygons
+pointer  fire_statue_object_child_sibling  0x00000004  fire_statue_object_child_sibling_model
+pointer  fire_statue_object_child_model  0x00000000  fire_statue_object_child_vertices
+pointer  fire_statue_object_child_model  0x00000004  fire_statue_object_child_polygons
+pointer  fire_statue_object_child  0x00000004  fire_statue_object_child_model
+pointer  fire_statue_object_child  0x00000030  fire_statue_object_child_sibling
+pointer  fire_statue_model  0x00000000  fire_statue_vertices
+pointer  fire_statue_model  0x00000004  fire_statue_polygons
+pointer  fire_statue_object  0x00000004  fire_statue_model
+pointer  fire_statue_object  0x0000002c  fire_statue_object_child
+pointer  fire_texlist_names  0x00000000  FIRE_STATUE_TEXTURE_FLAME01
+pointer  fire_texlist_names  0x0000000c  FIRE_STATUE_TEXTURE_FLAME02
+pointer  fire_texlist_names  0x00000018  FIRE_STATUE_TEXTURE_FLAME03
+pointer  fire_texlist_names  0x00000024  FIRE_STATUE_TEXTURE_FLAME04
+pointer  fire_texlist_names  0x00000030  FIRE_STATUE_TEXTURE_FLAME05
+pointer  fire_texlist_names  0x0000003c  FIRE_STATUE_TEXTURE_FLAME06
+pointer  fire_texlist_names  0x00000048  FIRE_STATUE_TEXTURE_FLAME07
+pointer  fire_texlist_names  0x00000054  FIRE_STATUE_TEXTURE_FLAME08
+pointer  fire_texlist_names  0x00000060  FIRE_STATUE_TEXTURE_FLAME09
+pointer  fire_texlist_names  0x0000006c  FIRE_STATUE_TEXTURE_FLAME10
+pointer  fire_texlist  0x00000000  fire_texlist_names

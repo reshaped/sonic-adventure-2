@@ -1,0 +1,11 @@
+text  SPIDER_WEB_TEXTURE_DZ_PC_SPIDER128  16
+text  SPIDER_WEB_KIND_BLANK  2
+
+pointer cave_spider_web_texture_names  0x00000000  SPIDER_WEB_TEXTURE_DZ_PC_SPIDER128
+pointer cave_spider_web_texlist  0x00000000  cave_spider_web_texture_names
+pointer cave_spider_web_model  0x00000000  cave_spider_web_vertices
+pointer cave_spider_web_model  0x00000004  cave_spider_web_polygons
+pointer cave_spider_web_object  0x00000004  cave_spider_web_model
+pointer spider_web_models  0x00000000  cave_spider_web_model
+pointer cave_spider_web_texlists  0x00000000  cave_spider_web_texlist
+pointer spider_web_kind_names  0x00000000  SPIDER_WEB_KIND_BLANK

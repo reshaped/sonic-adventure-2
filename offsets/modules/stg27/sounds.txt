@@ -1,0 +1,2 @@
+datum  stage_sounds  C  0x00000000  208
+datum  lost_colony_sounds  C  0x000000d0  8

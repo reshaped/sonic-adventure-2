@@ -1,0 +1,8 @@
+datum  opponent_templates  D  0x00000000  9660
+datum  beginner_fields  D  0x000025bc  432
+datum  jewel_fields  D  0x0000276c  1080
+datum  challenge_fields  D  0x00002ba4  432
+datum  dark_fields  D  0x00002d54  144
+datum  hero_fields  D  0x00002de4  576
+datum  opponent_names_jp  D  0x00003024  80
+datum  opponent_names_en  D  0x00003074  80

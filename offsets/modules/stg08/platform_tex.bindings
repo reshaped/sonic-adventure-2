@@ -1,0 +1,23 @@
+text  PLATFORM_TEXTURE_MIU128_IG009  13
+text  PLATFORM_TEXTURE_MIU128_PL001  13
+text  PLATFORM_TEXTURE_MIU128_SH012  13
+text  PLATFORM_TEXTURE_MIU64_IG015  12
+text  PLATFORM_TEXTURE_PR128_27  9
+text  PLATFORM_TEXTURE_PR64_3  7
+
+pointer  security_platform_model  0x00000000  security_platform_vertices
+pointer  security_platform_model  0x00000004  security_platform_polygons
+pointer  security_platform_object  0x00000004  security_platform_model
+pointer  security_platform_collision_meshsets  0x00000004  security_platform_collision_faces
+pointer  security_platform_collision_model  0x00000000  security_platform_collision_points
+pointer  security_platform_collision_model  0x00000004  security_platform_collision_normals
+pointer  security_platform_collision_model  0x0000000c  security_platform_collision_meshsets
+pointer  security_platform_collision_model  0x00000010  security_platform_collision_materials
+pointer  security_platform_collision  0x00000004  security_platform_collision_model
+pointer  textures  0x00000000  PLATFORM_TEXTURE_MIU128_IG009
+pointer  textures  0x0000000c  PLATFORM_TEXTURE_MIU128_PL001
+pointer  textures  0x00000018  PLATFORM_TEXTURE_MIU128_SH012
+pointer  textures  0x00000024  PLATFORM_TEXTURE_MIU64_IG015
+pointer  textures  0x00000030  PLATFORM_TEXTURE_PR128_27
+pointer  textures  0x0000003c  PLATFORM_TEXTURE_PR64_3
+pointer  security_platform_texlist  0x00000000  textures

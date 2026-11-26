@@ -1,0 +1,31 @@
+text  FIREPOT_TEXTURE_DZ_PC_HI_RED01  15
+text  FIREPOT_TEXTURE_DZ_PC_MARUKAGE64  17
+text  FIREPOT_TEXTURE_DZ_PC_POT_WALL128  18
+text  FIREPOT_TEXTURE_KD_PC_YUKA4  12
+text  FIREPOT_TEXTURE_KD_PC_YUKA5  12
+text  FIREPOT_KIND_RED  6
+
+pointer cave_firepot_flame_texture_names  0x00000000  FIREPOT_TEXTURE_DZ_PC_HI_RED01
+pointer cave_firepot_flame_texlist  0x00000000  cave_firepot_flame_texture_names
+pointer cave_firepot_flame_model  0x00000000  cave_firepot_flame_vertices
+pointer cave_firepot_flame_model  0x00000004  cave_firepot_flame_polygons
+pointer cave_firepot_flame_object  0x00000004  cave_firepot_flame_model
+pointer cave_firepot_texture_names  0x00000000  FIREPOT_TEXTURE_DZ_PC_MARUKAGE64
+pointer cave_firepot_texture_names  0x0000000c  FIREPOT_TEXTURE_DZ_PC_POT_WALL128
+pointer cave_firepot_texture_names  0x00000018  FIREPOT_TEXTURE_KD_PC_YUKA4
+pointer cave_firepot_texture_names  0x00000024  FIREPOT_TEXTURE_KD_PC_YUKA5
+pointer cave_firepot_texlist  0x00000000  cave_firepot_texture_names
+pointer cave_firepot_model  0x00000000  cave_firepot_vertices
+pointer cave_firepot_model  0x00000004  cave_firepot_polygons
+pointer cave_firepot_object  0x00000004  cave_firepot_model
+pointer cave_firepot_collision_meshsets  0x00000004  cave_firepot_collision_indices
+pointer cave_firepot_collision_model  0x00000000  cave_firepot_collision_points
+pointer cave_firepot_collision_model  0x00000004  cave_firepot_collision_normals
+pointer cave_firepot_collision_model  0x0000000c  cave_firepot_collision_meshsets
+pointer cave_firepot_collision_model  0x00000010  cave_firepot_collision_materials
+pointer cave_firepot_collision  0x00000004  cave_firepot_collision_model
+pointer firepot_models  0x00000000  cave_firepot_model
+pointer flame_models  0x00000000  cave_firepot_flame_model
+pointer cave_firepot_texlists  0x00000000  cave_firepot_texlist
+pointer fire_texlists  0x00000000  pyramid_cave_fire_texlist
+pointer firepot_kind_names  0x00000000  FIREPOT_KIND_RED

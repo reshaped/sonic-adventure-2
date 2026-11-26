@@ -1,0 +1,7 @@
+pointer  mad_space_fence_object_1_model  0x00000000  mad_space_fence_object_1_vertices
+pointer  mad_space_fence_object_1_model  0x00000004  mad_space_fence_object_1_polygons
+pointer  mad_space_fence_object_1  0x00000004  mad_space_fence_object_1_model
+pointer  mad_space_fence_object_model  0x00000000  mad_space_fence_object_vertices
+pointer  mad_space_fence_object_model  0x00000004  mad_space_fence_object_polygons
+pointer  mad_space_fence_object  0x00000004  mad_space_fence_object_model
+pointer  mad_space_fence_object  0x0000002c  mad_space_fence_object_1

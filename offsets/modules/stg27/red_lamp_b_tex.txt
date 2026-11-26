@@ -1,0 +1,10 @@
+datum  textures  D  0x00000000  12
+datum  red_lamp_b_texlist  D  0x0000000c  8
+datum  red_lamp_b_lens_polygons  D  0x00000014  182
+datum  red_lamp_b_lens_vertices  D  0x000000cc  204
+datum  red_lamp_b_lens_model  D  0x00000198  24
+datum  red_lamp_b_lens_object  D  0x000001b0  52
+datum  red_lamp_b_polygons  D  0x000001e4  206
+datum  red_lamp_b_vertices  D  0x000002b4  268
+datum  red_lamp_b_model  D  0x000003c0  24
+datum  red_lamp_b_object  D  0x000003d8  52

@@ -1,0 +1,6 @@
+text BACKGROUND_ARCHIVE 8
+
+pointer  core_sonic_bg_groups  0x00000000  core_sonic_background_lists
+pointer  core_sonic_bg_pvms  0x00000000  BACKGROUND_ARCHIVE
+pointer  core_sonic_bg_pvms  0x00000004  core_sonic_background_textures
+pointer  core_sonic_bg_pvms  0x0000000c  core_sonic_land_texlist

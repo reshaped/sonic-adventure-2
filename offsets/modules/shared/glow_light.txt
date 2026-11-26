@@ -1,0 +1,6 @@
+text  STREET_TEXT_MIU128_RH004  C  0x0000003c  13
+text  STREET_TEXT_MIU32_RH003  C  0x0000004c  12
+datum  glow_texnames  D  0x00000000  24
+datum  glow_texlist  D  0x00000018  8
+datum  glow_texlists  D  0x00000020  8
+datum  glow_trail_style  D  0x00000028  28

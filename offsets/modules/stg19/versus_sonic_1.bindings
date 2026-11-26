@@ -1,0 +1,19 @@
+text JUNGLE_BACKGROUND_ARCHIVE 8
+
+include jungle_background_models
+
+pointer  jungle_background_model_textures  0x00000000  sky_names
+pointer  jungle_background_model_textures  0x0000000c  sky_names+0xc
+pointer  jungle_background_model_texlist  0x00000000  jungle_background_model_textures
+pointer  background_water_textures  0x00000000  sky_names+0x18
+pointer  background_water_texlist  0x00000000  background_water_textures
+pointer  arena_sky_textures  0x00000000  sky_names
+pointer  arena_sky_textures  0x0000000c  sky_names+0xc
+pointer  arena_sky_texlist  0x00000000  arena_sky_textures
+pointer  water_floor_meshset  0x00000004  water_floor_indices
+pointer  water_floor_model  0x00000000  water_floor_points
+pointer  water_floor_model  0x00000004  water_floor_normals
+pointer  water_floor_model  0x0000000c  water_floor_meshset
+pointer  water_floor_model  0x00000010  water_floor_material
+pointer  water_floor  0x00000004  water_floor_model
+pointer  versus_sonic_1_kill_areas  0x00000004  water_floor

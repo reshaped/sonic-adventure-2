@@ -1,0 +1,12 @@
+text BACKGROUND_ARCHIVE 8
+
+pointer  machinery_lists  0x00000000  tails_pipe_texlist
+pointer  machinery_lists  0x00000004  tails_rotor_texlist
+pointer  machinery_lists  0x00000008  core_stream_texlist
+pointer  machinery_lists  0x0000000c  core_segment_glow_texlist
+pointer  machinery_lists  0x00000010  core_segment_texlist
+pointer  machinery_lists  0x00000014  tails_strip_texlist
+pointer  machinery_lists  0x00000018  tails_entrance_strip_texlist
+pointer  core_tails_bg_groups  0x00000000  machinery_lists
+pointer  core_tails_bg_pvms  0x00000000  BACKGROUND_ARCHIVE
+pointer  core_tails_bg_pvms  0x00000004  core_tails_background_textures

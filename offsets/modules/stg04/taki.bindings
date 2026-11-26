@@ -1,0 +1,17 @@
+text WATERFALL_EDITOR_ROT_Y 9
+text WATERFALL_EDITOR_SPD 7
+text JUNGLE_TEXTURE_MIU128_WJ001 13
+text JUNGLE_TEXTURE_MIU64_GREEN008 15
+
+pointer  taki_textures  0x00000000  JUNGLE_TEXTURE_MIU128_WJ001
+pointer  taki_textures  0x0000000c  JUNGLE_TEXTURE_MIU64_GREEN008
+pointer  taki_texlist  0x00000000  taki_textures
+pointer  cascade_bank_mesh  0x00000000  cascade_bank_vertices
+pointer  cascade_bank_mesh  0x00000004  cascade_bank_polygons
+pointer  cascade_bank  0x00000004  cascade_bank_mesh
+pointer  cascade_mesh  0x00000000  cascade_vertices
+pointer  cascade_mesh  0x00000004  cascade_polygons
+pointer  taki_object  0x00000004  cascade_mesh
+pointer  taki_object  0x0000002c  cascade_bank
+pointer  taki_anim  0x00000010  cascade_uvs
+pointer  taki_texlists  0x00000000  taki_texlist

@@ -1,0 +1,7 @@
+datum  editor_reverse  C  0x00000000  16
+datum  editor_normal  C  0x00000010  16
+datum  editor_heading  C  0x00000020  12
+datum  editor_sway_speed  C  0x0000002c  12
+datum  editor_sway_width  C  0x00000038  16
+datum  unused_head_turn_limit  D  0x00000000  4
+datum  base_shape  D  0x00000004  48

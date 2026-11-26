@@ -1,0 +1,538 @@
+; the program's entry, its startup literals, and the words
+; that bound its sections. a _BGN word holds the address of a section's
+; first byte, and an _END word that of the byte past its last
+
+        .IMPORT     __INIT
+        .EXPORT     _START_SYS
+        .EXPORT     __D_ROM
+        .EXPORT     __D32_ROM
+        .EXPORT     __D_BGN
+        .EXPORT     __D4_END
+        .EXPORT     __D32_BGN
+        .EXPORT     __D_END
+        .EXPORT     __B_BGN
+        .EXPORT     __B4_END
+        .EXPORT     __B32_BGN
+        .EXPORT     __B_END
+        .EXPORT     __PRESG_BGN
+        .EXPORT     __PRESG_END
+        .EXPORT     __POSTSG_BGN
+        .EXPORT     __POSTSG_END
+        .EXPORT     __PRE_BGN
+        .EXPORT     __PRE_END
+        .EXPORT     __POST_BGN
+        .EXPORT     __POST_END
+        .EXPORT     __DSGLH_BGN
+        .EXPORT     __DSGLH_END
+        .EXPORT     __DSGLE_BGN
+        .EXPORT     __DSGLE_END
+        .EXPORT     __DSG_ROM
+        .EXPORT     __DSG32_ROM
+        .EXPORT     __DSG_BGN
+        .EXPORT     __DSG4_END
+        .EXPORT     __DSG32_BGN
+        .EXPORT     __DSG_END
+        .EXPORT     __BSG_BGN
+        .EXPORT     __BSG4_END
+        .EXPORT     __BSG32_BGN
+        .EXPORT     __BSG_END
+        .EXPORT     __G0_BGN
+        .EXPORT     __START_PSGSFD00
+        .EXPORT     __START_PSGSFD01
+        .EXPORT     __START_PSGSFD02
+        .EXPORT     __START_PSGSFD03
+        .EXPORT     __START_PSGSFD04
+        .EXPORT     __START_PSGSFD05
+        .EXPORT     __START_PSGSFD06
+        .EXPORT     __START_PSGSFD07
+        .EXPORT     __START_PSGSFD08
+        .EXPORT     __START_PSGSFD09
+        .EXPORT     __START_PSGSFD10
+        .EXPORT     __START_PSGSFD11
+        .EXPORT     __START_PSGSFD12
+        .EXPORT     __START_PSGSFD13
+        .EXPORT     __START_PSGSFD14
+        .EXPORT     __START_PSGSFD15
+        .EXPORT     __END_PSGSFD00
+        .EXPORT     __END_PSGSFD01
+        .EXPORT     __END_PSGSFD02
+        .EXPORT     __END_PSGSFD03
+        .EXPORT     __END_PSGSFD04
+        .EXPORT     __END_PSGSFD05
+        .EXPORT     __END_PSGSFD06
+        .EXPORT     __END_PSGSFD07
+        .EXPORT     __END_PSGSFD08
+        .EXPORT     __END_PSGSFD09
+        .EXPORT     __END_PSGSFD10
+        .EXPORT     __END_PSGSFD11
+        .EXPORT     __END_PSGSFD12
+        .EXPORT     __END_PSGSFD13
+        .EXPORT     __END_PSGSFD14
+        .EXPORT     __END_PSGSFD15
+        .EXPORT     __SIZE_PSGSFD00
+        .EXPORT     __SIZE_PSGSFD01
+        .EXPORT     __SIZE_PSGSFD02
+        .EXPORT     __SIZE_PSGSFD03
+        .EXPORT     __SIZE_PSGSFD04
+        .EXPORT     __SIZE_PSGSFD05
+        .EXPORT     __SIZE_PSGSFD06
+        .EXPORT     __SIZE_PSGSFD07
+        .EXPORT     __SIZE_PSGSFD08
+        .EXPORT     __SIZE_PSGSFD09
+        .EXPORT     __SIZE_PSGSFD10
+        .EXPORT     __SIZE_PSGSFD11
+        .EXPORT     __SIZE_PSGSFD12
+        .EXPORT     __SIZE_PSGSFD13
+        .EXPORT     __SIZE_PSGSFD14
+        .EXPORT     __SIZE_PSGSFD15
+
+        .SECTION    DSGLH,DATA,ALIGN=4
+
+; void START_SYS(void)
+; the program's entry. it invalidates the instruction cache by CCR.ICI,
+; clears the bits CCR doesn't define, and jumps to _INIT. its code fills
+; the 32 bytes that open the module, ahead of the records. its pool doubles
+; as the start record's first 16 bytes, which come before the record's ID
+_START_SYS:
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        MOV.L       ccr_address,R0
+        MOV.L       @R0,R1
+        MOV.L       ccr_defined_bits,R2
+        AND         R2,R1
+        MOV.W       ccr_ici,R2
+        OR          R2,R1
+        MOV.L       R1,@R0
+        MOV.L       init_address,R0
+        JMP         @R0
+        NOP
+ccr_ici:
+        .DATA.W     H'0800
+        .ALIGN      4
+ccr_address:
+        .DATA.L     H'FF00001C
+ccr_defined_bits:
+        .DATA.L     H'000089AF
+init_address:
+        .DATA.L     __INIT
+; strt1_records.c supplies the start ID after this pool and the end record
+; in DSGLE. ov_main.c supplies the one library handle between them.
+        .SECTION    DSGLE,DATA,ALIGN=4
+
+        .SECTION    P,CODE,ALIGN=4
+        .SECTION    C,DATA,ALIGN=4
+
+; _INITSCT copies the program's initial data from D to R and R32, and
+; zeroes B and B32. R and R32 are empty in the linked program, so the data
+; runs in place in D, and the copy moves nothing. _D4_END and _B4_END end R
+; and B, the sections aligned to 4 bytes, and _D_END and _B_END end R32 and
+; B32, aligned to 32
+
+; Uint8 *_D_ROM
+__D_ROM:
+        .DATA.L     (STARTOF D)
+; Uint8 *_D32_ROM
+__D32_ROM:
+        .DATA.L     (STARTOF D32)
+; Uint8 *_D_BGN
+__D_BGN:
+        .DATA.L     (STARTOF R)
+; Uint8 *_D4_END
+__D4_END:
+        .DATA.L     (STARTOF R)+(SIZEOF R)
+; Uint8 *_D32_BGN
+__D32_BGN:
+        .DATA.L     (STARTOF R32)
+; Uint8 *_D_END
+__D_END:
+        .DATA.L     (STARTOF R32)+(SIZEOF R32)
+; Uint32 *_B_BGN
+__B_BGN:
+        .DATA.L     (STARTOF B)
+; Uint32 *_B4_END
+__B4_END:
+        .DATA.L     (STARTOF B)+(SIZEOF B)
+; Uint32 *_B32_BGN
+__B32_BGN:
+        .DATA.L     (STARTOF B32)
+; Uint32 *_B_END
+__B_END:
+        .DATA.L     (STARTOF B32)+(SIZEOF B32)
+
+; the four tables of functions that syStartGlobalConstructor and
+; syStartGlobalDestructor call. DSG_INIT_ and DSG_END_ are the SDK's, and
+; D_INIT_ and D_END_ the program's. all four are empty in the linked
+; program
+
+; table_func *_PRESG_BGN
+__PRESG_BGN:
+        .DATA.L     (STARTOF DSG_INIT_)
+; table_func *_PRESG_END
+__PRESG_END:
+        .DATA.L     (STARTOF DSG_INIT_)+(SIZEOF DSG_INIT_)
+; table_func *_POSTSG_BGN
+__POSTSG_BGN:
+        .DATA.L     (STARTOF DSG_END_)
+; table_func *_POSTSG_END
+__POSTSG_END:
+        .DATA.L     (STARTOF DSG_END_)+(SIZEOF DSG_END_)
+; table_func *_PRE_BGN
+__PRE_BGN:
+        .DATA.L     (STARTOF D_INIT_)
+; table_func *_PRE_END
+__PRE_END:
+        .DATA.L     (STARTOF D_INIT_)+(SIZEOF D_INIT_)
+; table_func *_POST_BGN
+__POST_BGN:
+        .DATA.L     (STARTOF D_END_)
+; table_func *_POST_END
+__POST_END:
+        .DATA.L     (STARTOF D_END_)+(SIZEOF D_END_)
+
+        .SECTION    C32,DATA,ALIGN=32
+        .SECTION    D,DATA,ALIGN=4
+        .SECTION    D32,DATA,ALIGN=32
+        .SECTION    DSG_INIT_,DATA,ALIGN=4
+        .SECTION    DSG_END_,DATA,ALIGN=4
+        .SECTION    CSG_$VTBL,DATA,ALIGN=4
+        .SECTION    D_INIT_,DATA,ALIGN=4
+        .SECTION    D_END_,DATA,ALIGN=4
+        .SECTION    C_$VTBL,DATA,ALIGN=4
+        .SECTION    R,DATA,ALIGN=4
+        .SECTION    R32,DATA,ALIGN=32
+        .SECTION    PSG,CODE,ALIGN=4
+        .SECTION    CSG,DATA,ALIGN=4
+
+; OVMDL _DSGLH_BGN
+; the program's module, whose libraries _INITLIBH enters
+__DSGLH_BGN:
+        .DATA.L     (STARTOF DSGLH)
+; Uint8 *_DSGLH_END
+__DSGLH_END:
+        .DATA.L     (STARTOF DSGLH)+(SIZEOF DSGLH)
+; Uint8 *_DSGLE_BGN
+__DSGLE_BGN:
+        .DATA.L     (STARTOF DSGLE)
+; Uint8 *_DSGLE_END
+__DSGLE_END:
+        .DATA.L     (STARTOF DSGLE)+(SIZEOF DSGLE)
+
+; _INITSCT copies the libraries' initial data from DSG to RSG and RSG32,
+; and zeroes BSG and BSG32. RSG and RSG32 are empty in the linked program,
+; as R and R32 are. _DSG4_END and _BSG4_END end RSG and BSG, aligned to 4
+; bytes, and _DSG_END and _BSG_END end RSG32 and BSG32, aligned to 32
+
+; Uint8 *_DSG_ROM
+__DSG_ROM:
+        .DATA.L     (STARTOF DSG)
+; Uint8 *_DSG32_ROM
+__DSG32_ROM:
+        .DATA.L     (STARTOF DSG32)
+; Uint8 *_DSG_BGN
+__DSG_BGN:
+        .DATA.L     (STARTOF RSG)
+; Uint8 *_DSG4_END
+__DSG4_END:
+        .DATA.L     (STARTOF RSG)+(SIZEOF RSG)
+; Uint8 *_DSG32_BGN
+__DSG32_BGN:
+        .DATA.L     (STARTOF RSG32)
+; Uint8 *_DSG_END
+__DSG_END:
+        .DATA.L     (STARTOF RSG32)+(SIZEOF RSG32)
+; Uint8 *_BSG_BGN
+__BSG_BGN:
+        .DATA.L     (STARTOF BSG)
+; Uint8 *_BSG4_END
+__BSG4_END:
+        .DATA.L     (STARTOF BSG)+(SIZEOF BSG)
+; Uint8 *_BSG32_BGN
+__BSG32_BGN:
+        .DATA.L     (STARTOF BSG32)
+; Uint8 *_BSG_END
+; sbinit.c puts the heap in the area of the address space this end lies in
+__BSG_END:
+        .DATA.L     (STARTOF BSG32)+(SIZEOF BSG32)
+; Uint8 *_G0_BGN
+; $G0 holds the data addressed through GBR, and is empty in the linked
+; program
+__G0_BGN:
+        .DATA.L     (STARTOF $G0)
+
+; the bounds and sizes of PSGSFD00 to PSGSFD15, the sections of Sofdec's
+; movie decoder. mpvasec.src checks the layout of PSGSFD00 to PSGSFD02
+; against these words. PSGSFD03 to PSGSFD15 are empty in the linked program
+
+; Uint8 *_START_PSGSFD00
+__START_PSGSFD00:
+        .DATA.L     (STARTOF PSGSFD00)
+; Uint8 *_START_PSGSFD01
+__START_PSGSFD01:
+        .DATA.L     (STARTOF PSGSFD01)
+; Uint8 *_START_PSGSFD02
+__START_PSGSFD02:
+        .DATA.L     (STARTOF PSGSFD02)
+; Uint8 *_START_PSGSFD03
+__START_PSGSFD03:
+        .DATA.L     (STARTOF PSGSFD03)
+; Uint8 *_START_PSGSFD04
+__START_PSGSFD04:
+        .DATA.L     (STARTOF PSGSFD04)
+; Uint8 *_START_PSGSFD05
+__START_PSGSFD05:
+        .DATA.L     (STARTOF PSGSFD05)
+; Uint8 *_START_PSGSFD06
+__START_PSGSFD06:
+        .DATA.L     (STARTOF PSGSFD06)
+; Uint8 *_START_PSGSFD07
+__START_PSGSFD07:
+        .DATA.L     (STARTOF PSGSFD07)
+; Uint8 *_START_PSGSFD08
+__START_PSGSFD08:
+        .DATA.L     (STARTOF PSGSFD08)
+; Uint8 *_START_PSGSFD09
+__START_PSGSFD09:
+        .DATA.L     (STARTOF PSGSFD09)
+; Uint8 *_START_PSGSFD10
+__START_PSGSFD10:
+        .DATA.L     (STARTOF PSGSFD10)
+; Uint8 *_START_PSGSFD11
+__START_PSGSFD11:
+        .DATA.L     (STARTOF PSGSFD11)
+; Uint8 *_START_PSGSFD12
+__START_PSGSFD12:
+        .DATA.L     (STARTOF PSGSFD12)
+; Uint8 *_START_PSGSFD13
+__START_PSGSFD13:
+        .DATA.L     (STARTOF PSGSFD13)
+; Uint8 *_START_PSGSFD14
+__START_PSGSFD14:
+        .DATA.L     (STARTOF PSGSFD14)
+; Uint8 *_START_PSGSFD15
+__START_PSGSFD15:
+        .DATA.L     (STARTOF PSGSFD15)
+; Uint8 *_END_PSGSFD00
+__END_PSGSFD00:
+        .DATA.L     (STARTOF PSGSFD00)+(SIZEOF PSGSFD00)
+; Uint8 *_END_PSGSFD01
+__END_PSGSFD01:
+        .DATA.L     (STARTOF PSGSFD01)+(SIZEOF PSGSFD01)
+; Uint8 *_END_PSGSFD02
+__END_PSGSFD02:
+        .DATA.L     (STARTOF PSGSFD02)+(SIZEOF PSGSFD02)
+; Uint8 *_END_PSGSFD03
+__END_PSGSFD03:
+        .DATA.L     (STARTOF PSGSFD03)+(SIZEOF PSGSFD03)
+; Uint8 *_END_PSGSFD04
+__END_PSGSFD04:
+        .DATA.L     (STARTOF PSGSFD04)+(SIZEOF PSGSFD04)
+; Uint8 *_END_PSGSFD05
+__END_PSGSFD05:
+        .DATA.L     (STARTOF PSGSFD05)+(SIZEOF PSGSFD05)
+; Uint8 *_END_PSGSFD06
+__END_PSGSFD06:
+        .DATA.L     (STARTOF PSGSFD06)+(SIZEOF PSGSFD06)
+; Uint8 *_END_PSGSFD07
+__END_PSGSFD07:
+        .DATA.L     (STARTOF PSGSFD07)+(SIZEOF PSGSFD07)
+; Uint8 *_END_PSGSFD08
+__END_PSGSFD08:
+        .DATA.L     (STARTOF PSGSFD08)+(SIZEOF PSGSFD08)
+; Uint8 *_END_PSGSFD09
+__END_PSGSFD09:
+        .DATA.L     (STARTOF PSGSFD09)+(SIZEOF PSGSFD09)
+; Uint8 *_END_PSGSFD10
+__END_PSGSFD10:
+        .DATA.L     (STARTOF PSGSFD10)+(SIZEOF PSGSFD10)
+; Uint8 *_END_PSGSFD11
+__END_PSGSFD11:
+        .DATA.L     (STARTOF PSGSFD11)+(SIZEOF PSGSFD11)
+; Uint8 *_END_PSGSFD12
+__END_PSGSFD12:
+        .DATA.L     (STARTOF PSGSFD12)+(SIZEOF PSGSFD12)
+; Uint8 *_END_PSGSFD13
+__END_PSGSFD13:
+        .DATA.L     (STARTOF PSGSFD13)+(SIZEOF PSGSFD13)
+; Uint8 *_END_PSGSFD14
+__END_PSGSFD14:
+        .DATA.L     (STARTOF PSGSFD14)+(SIZEOF PSGSFD14)
+; Uint8 *_END_PSGSFD15
+__END_PSGSFD15:
+        .DATA.L     (STARTOF PSGSFD15)+(SIZEOF PSGSFD15)
+; Uint32 _SIZE_PSGSFD00
+__SIZE_PSGSFD00:
+        .DATA.L     (SIZEOF PSGSFD00)
+; Uint32 _SIZE_PSGSFD01
+__SIZE_PSGSFD01:
+        .DATA.L     (SIZEOF PSGSFD01)
+; Uint32 _SIZE_PSGSFD02
+__SIZE_PSGSFD02:
+        .DATA.L     (SIZEOF PSGSFD02)
+; Uint32 _SIZE_PSGSFD03
+__SIZE_PSGSFD03:
+        .DATA.L     (SIZEOF PSGSFD03)
+; Uint32 _SIZE_PSGSFD04
+__SIZE_PSGSFD04:
+        .DATA.L     (SIZEOF PSGSFD04)
+; Uint32 _SIZE_PSGSFD05
+__SIZE_PSGSFD05:
+        .DATA.L     (SIZEOF PSGSFD05)
+; Uint32 _SIZE_PSGSFD06
+__SIZE_PSGSFD06:
+        .DATA.L     (SIZEOF PSGSFD06)
+; Uint32 _SIZE_PSGSFD07
+__SIZE_PSGSFD07:
+        .DATA.L     (SIZEOF PSGSFD07)
+; Uint32 _SIZE_PSGSFD08
+__SIZE_PSGSFD08:
+        .DATA.L     (SIZEOF PSGSFD08)
+; Uint32 _SIZE_PSGSFD09
+__SIZE_PSGSFD09:
+        .DATA.L     (SIZEOF PSGSFD09)
+; Uint32 _SIZE_PSGSFD10
+__SIZE_PSGSFD10:
+        .DATA.L     (SIZEOF PSGSFD10)
+; Uint32 _SIZE_PSGSFD11
+__SIZE_PSGSFD11:
+        .DATA.L     (SIZEOF PSGSFD11)
+; Uint32 _SIZE_PSGSFD12
+__SIZE_PSGSFD12:
+        .DATA.L     (SIZEOF PSGSFD12)
+; Uint32 _SIZE_PSGSFD13
+__SIZE_PSGSFD13:
+        .DATA.L     (SIZEOF PSGSFD13)
+; Uint32 _SIZE_PSGSFD14
+__SIZE_PSGSFD14:
+        .DATA.L     (SIZEOF PSGSFD14)
+; Uint32 _SIZE_PSGSFD15
+__SIZE_PSGSFD15:
+        .DATA.L     (SIZEOF PSGSFD15)
+
+        .SECTION    CSG32,DATA,ALIGN=32
+        .SECTION    DSG,DATA,ALIGN=4
+        .SECTION    DSG32,DATA,ALIGN=32
+        .SECTION    RSG,DATA,ALIGN=4
+        .SECTION    RSG32,DATA,ALIGN=32
+        .SECTION    PSGNJ00,CODE,ALIGN=4
+        .SECTION    PSGNJ01,CODE,ALIGN=4
+        .SECTION    PSGNJ02,CODE,ALIGN=4
+        .SECTION    PSGNJ03,CODE,ALIGN=4
+        .SECTION    PSGNJ04,CODE,ALIGN=4
+        .SECTION    PSGNJ05,CODE,ALIGN=4
+        .SECTION    PSGNJ06,CODE,ALIGN=4
+        .SECTION    PSGNJ07,CODE,ALIGN=4
+        .SECTION    PSGNJ08,CODE,ALIGN=4
+        .SECTION    PSGNJ09,CODE,ALIGN=4
+        .SECTION    PSGNJ10,CODE,ALIGN=4
+        .SECTION    PSGNJ11,CODE,ALIGN=4
+        .SECTION    PSGNJ12,CODE,ALIGN=4
+        .SECTION    PSGNJ13,CODE,ALIGN=4
+        .SECTION    PSGNJ14,CODE,ALIGN=4
+        .SECTION    PSGNJ15,CODE,ALIGN=4
+        .SECTION    DSGNJ00,DATA,ALIGN=4
+        .SECTION    DSGNJ01,DATA,ALIGN=4
+        .SECTION    DSGNJ02,DATA,ALIGN=4
+        .SECTION    DSGNJ03,DATA,ALIGN=4
+        .SECTION    DSGNJ04,DATA,ALIGN=4
+        .SECTION    DSGNJ05,DATA,ALIGN=4
+        .SECTION    DSGNJ06,DATA,ALIGN=4
+        .SECTION    DSGNJ07,DATA,ALIGN=4
+        .SECTION    DSGNJ08,DATA,ALIGN=4
+        .SECTION    DSGNJ09,DATA,ALIGN=4
+        .SECTION    DSGNJ10,DATA,ALIGN=4
+        .SECTION    DSGNJ11,DATA,ALIGN=4
+        .SECTION    DSGNJ12,DATA,ALIGN=4
+        .SECTION    DSGNJ13,DATA,ALIGN=4
+        .SECTION    DSGNJ14,DATA,ALIGN=4
+        .SECTION    DSGNJ15,DATA,ALIGN=4
+        .SECTION    PSGMW00,CODE,ALIGN=4
+        .SECTION    PSGMW01,CODE,ALIGN=4
+        .SECTION    PSGMW02,CODE,ALIGN=4
+        .SECTION    PSGMW03,CODE,ALIGN=4
+        .SECTION    PSGMW04,CODE,ALIGN=4
+        .SECTION    PSGMW05,CODE,ALIGN=4
+        .SECTION    PSGMW06,CODE,ALIGN=4
+        .SECTION    PSGMW07,CODE,ALIGN=4
+        .SECTION    PSGMW08,CODE,ALIGN=4
+        .SECTION    PSGMW09,CODE,ALIGN=4
+        .SECTION    PSGMW10,CODE,ALIGN=4
+        .SECTION    PSGMW11,CODE,ALIGN=4
+        .SECTION    PSGMW12,CODE,ALIGN=4
+        .SECTION    PSGMW13,CODE,ALIGN=4
+        .SECTION    PSGMW14,CODE,ALIGN=4
+        .SECTION    PSGMW15,CODE,ALIGN=4
+        .SECTION    DSGMW00,DATA,ALIGN=4
+        .SECTION    DSGMW01,DATA,ALIGN=4
+        .SECTION    DSGMW02,DATA,ALIGN=4
+        .SECTION    DSGMW03,DATA,ALIGN=4
+        .SECTION    DSGMW04,DATA,ALIGN=4
+        .SECTION    DSGMW05,DATA,ALIGN=4
+        .SECTION    DSGMW06,DATA,ALIGN=4
+        .SECTION    DSGMW07,DATA,ALIGN=4
+        .SECTION    DSGMW08,DATA,ALIGN=4
+        .SECTION    DSGMW09,DATA,ALIGN=4
+        .SECTION    DSGMW10,DATA,ALIGN=4
+        .SECTION    DSGMW11,DATA,ALIGN=4
+        .SECTION    DSGMW12,DATA,ALIGN=4
+        .SECTION    DSGMW13,DATA,ALIGN=4
+        .SECTION    DSGMW14,DATA,ALIGN=4
+        .SECTION    DSGMW15,DATA,ALIGN=4
+        .SECTION    PSGSFD00,CODE,ALIGN=4
+        .SECTION    PSGSFD01,CODE,ALIGN=4
+        .SECTION    PSGSFD02,CODE,ALIGN=4
+        .SECTION    PSGSFD03,CODE,ALIGN=4
+        .SECTION    PSGSFD04,CODE,ALIGN=4
+        .SECTION    PSGSFD05,CODE,ALIGN=4
+        .SECTION    PSGSFD06,CODE,ALIGN=4
+        .SECTION    PSGSFD07,CODE,ALIGN=4
+        .SECTION    PSGSFD08,CODE,ALIGN=4
+        .SECTION    PSGSFD09,CODE,ALIGN=4
+        .SECTION    PSGSFD10,CODE,ALIGN=4
+        .SECTION    PSGSFD11,CODE,ALIGN=4
+        .SECTION    PSGSFD12,CODE,ALIGN=4
+        .SECTION    PSGSFD13,CODE,ALIGN=4
+        .SECTION    PSGSFD14,CODE,ALIGN=4
+        .SECTION    PSGSFD15,CODE,ALIGN=4
+        .SECTION    DSGSFD00,DATA,ALIGN=4
+        .SECTION    DSGSFD01,DATA,ALIGN=4
+        .SECTION    DSGSFD02,DATA,ALIGN=4
+        .SECTION    DSGSFD03,DATA,ALIGN=4
+        .SECTION    DSGSFD04,DATA,ALIGN=4
+        .SECTION    DSGSFD05,DATA,ALIGN=4
+        .SECTION    DSGSFD06,DATA,ALIGN=4
+        .SECTION    DSGSFD07,DATA,ALIGN=4
+        .SECTION    DSGSFD08,DATA,ALIGN=4
+        .SECTION    DSGSFD09,DATA,ALIGN=4
+        .SECTION    DSGSFD10,DATA,ALIGN=4
+        .SECTION    DSGSFD11,DATA,ALIGN=4
+        .SECTION    DSGSFD12,DATA,ALIGN=4
+        .SECTION    DSGSFD13,DATA,ALIGN=4
+        .SECTION    DSGSFD14,DATA,ALIGN=4
+        .SECTION    DSGSFD15,DATA,ALIGN=4
+        .SECTION    PSGRSV0,CODE,ALIGN=4
+        .SECTION    PSGRSV1,CODE,ALIGN=4
+        .SECTION    PSGRSV2,CODE,ALIGN=4
+        .SECTION    PSGRSV3,CODE,ALIGN=4
+        .SECTION    DSGRSV0,DATA,ALIGN=4
+        .SECTION    DSGRSV1,DATA,ALIGN=4
+        .SECTION    DSGRSV2,DATA,ALIGN=4
+        .SECTION    DSGRSV3,DATA,ALIGN=4
+        .SECTION    PUSER0,CODE,ALIGN=4
+        .SECTION    PUSER1,CODE,ALIGN=4
+        .SECTION    PUSER2,CODE,ALIGN=4
+        .SECTION    PUSER3,CODE,ALIGN=4
+        .SECTION    DUSER0,DATA,ALIGN=4
+        .SECTION    DUSER1,DATA,ALIGN=4
+        .SECTION    DUSER2,DATA,ALIGN=4
+        .SECTION    DUSER3,DATA,ALIGN=4
+        .SECTION    $G0,DATA,ALIGN=32
+        .SECTION    $G1,DATA,ALIGN=32
+        .SECTION    B,DATA,ALIGN=4
+        .SECTION    B32,DATA,ALIGN=32
+        .SECTION    BSG,DATA,ALIGN=4
+        .SECTION    BSG32,DATA,ALIGN=32
+        .END

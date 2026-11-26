@@ -1,0 +1,12 @@
+text  SKY_ARCHIVE  8
+
+pointer  sky_textures  0x00000000  background_2_texlist
+pointer  sky_textures  0x00000004  background_3_texlist
+pointer  sky_textures  0x00000008  background_1_texlist
+pointer  sky_textures  0x0000000c  background_0_texlist
+
+pointer  background_texture_groups  0x00000000  sky_textures
+
+pointer  background_pvms  0x00000000  SKY_ARCHIVE
+pointer  background_pvms  0x00000004  cosmic_wall_sky_texlist
+pointer  background_pvms  0x0000000c  cosmic_wall_land_texlist

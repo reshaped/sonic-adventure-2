@@ -1,0 +1,6 @@
+pointer  platform_models  0x00000000  golem_platform_a_object
+pointer  platform_models  0x00000004  golem_platform_b_object
+pointer  platform_models  0x00000008  golem_platform_c_object
+pointer  collision_models  0x00000000  golem_platform_a_collision
+pointer  collision_models  0x00000004  golem_platform_b_collision
+pointer  collision_models  0x00000008  golem_platform_c_collision

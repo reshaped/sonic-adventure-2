@@ -1,0 +1,102 @@
+text  DRILL_ASSETS_METEO128_13_FILENAME  12
+text  DRILL_ASSETS_MIU128_CW001_FILENAME  13
+text  DRILL_ASSETS_MIU128_CW002_FILENAME  13
+text  DRILL_ASSETS_MIU128_CW003_FILENAME  13
+text  DRILL_ASSETS_MIU256_CW002_FILENAME  13
+text  DRILL_ASSETS_MIU32_CW004_FILENAME  12
+text  DRILL_ASSETS_MIU64_CW001_FILENAME  12
+text  DRILL_ASSETS_MIU64_CW003_FILENAME  12
+text  DRILL_ASSETS_MIU64_CW005_FILENAME  12
+text  DRILL_ASSETS_MIU64_CW007_FILENAME  12
+text  DRILL_ASSETS_MIU64_CW008_FILENAME  12
+text  DRILL_ASSETS_MIU64_CW009_FILENAME  12
+text  DRILL_ASSETS_MIU64_FR001_FILENAME  12
+text  DRILL_ASSETS_MIU64_FR004_FILENAME  12
+text  DRILL_ASSETS_COSMIC128_3_FILENAME  12
+text  DRILL_ASSETS_COSMIC64_3_FILENAME  11
+text  DRILL_ASSETS_SIKAKE_04_64_FILENAME  13
+
+pointer  platform_textures  0x00000000  DRILL_ASSETS_METEO128_13_FILENAME
+pointer  platform_textures  0x0000000c  DRILL_ASSETS_MIU128_CW001_FILENAME
+pointer  platform_textures  0x00000018  DRILL_ASSETS_MIU128_CW002_FILENAME
+pointer  platform_textures  0x00000024  DRILL_ASSETS_MIU128_CW003_FILENAME
+pointer  platform_textures  0x00000030  DRILL_ASSETS_MIU256_CW002_FILENAME
+pointer  platform_textures  0x0000003c  DRILL_ASSETS_MIU32_CW004_FILENAME
+pointer  platform_textures  0x00000048  DRILL_ASSETS_MIU64_CW001_FILENAME
+pointer  platform_textures  0x00000054  DRILL_ASSETS_MIU64_CW003_FILENAME
+pointer  platform_textures  0x00000060  DRILL_ASSETS_MIU64_CW005_FILENAME
+pointer  platform_textures  0x0000006c  DRILL_ASSETS_MIU64_CW007_FILENAME
+pointer  platform_textures  0x00000078  DRILL_ASSETS_MIU64_CW008_FILENAME
+pointer  platform_textures  0x00000084  DRILL_ASSETS_MIU64_CW009_FILENAME
+pointer  platform_textures  0x00000090  DRILL_ASSETS_MIU64_FR001_FILENAME
+pointer  platform_textures  0x0000009c  DRILL_ASSETS_MIU64_FR004_FILENAME
+pointer  platform_texlist  0x00000000  platform_textures
+pointer  platform_left_clamp_model  0x00000000  platform_left_clamp_vertices
+pointer  platform_left_clamp_model  0x00000004  platform_left_clamp_polygons
+pointer  platform_left_clamp  0x00000004  platform_left_clamp_model
+pointer  platform_light_model  0x00000000  platform_light_vertices
+pointer  platform_light_model  0x00000004  platform_light_polygons
+pointer  platform_light  0x00000004  platform_light_model
+pointer  platform_light  0x00000030  platform_left_clamp
+pointer  platform_right_clamp_model  0x00000000  platform_right_clamp_vertices
+pointer  platform_right_clamp_model  0x00000004  platform_right_clamp_polygons
+pointer  platform_right_clamp  0x00000004  platform_right_clamp_model
+pointer  platform_right_clamp  0x00000030  platform_light
+pointer  platform_body_model  0x00000000  platform_body_vertices
+pointer  platform_body_model  0x00000004  platform_body_polygons
+pointer  platform_body  0x00000004  platform_body_model
+pointer  platform_body  0x0000002c  platform_right_clamp
+pointer  platform_collision_meshes  0x00000004  platform_collision_faces_0
+pointer  platform_collision_model  0x00000000  platform_collision_points
+pointer  platform_collision_model  0x00000004  platform_collision_normals
+pointer  platform_collision_model  0x0000000c  platform_collision_meshes
+pointer  platform_collision_model  0x00000010  platform_collision_material
+pointer  platform_collision  0x00000004  platform_collision_model
+pointer  drill_body_textures  0x00000000  DRILL_ASSETS_MIU128_CW001_FILENAME
+pointer  drill_body_textures  0x0000000c  DRILL_ASSETS_MIU128_CW002_FILENAME
+pointer  drill_body_texlist  0x00000000  drill_body_textures
+pointer  drill_body_model  0x00000000  drill_body_vertices
+pointer  drill_body_model  0x00000004  drill_body_polygons
+pointer  drill_body  0x00000004  drill_body_model
+pointer  drill_head_textures  0x00000000  DRILL_ASSETS_COSMIC128_3_FILENAME
+pointer  drill_head_textures  0x0000000c  DRILL_ASSETS_COSMIC64_3_FILENAME
+pointer  drill_head_textures  0x00000018  DRILL_ASSETS_MIU64_CW001_FILENAME
+pointer  drill_head_textures  0x00000024  DRILL_ASSETS_SIKAKE_04_64_FILENAME
+pointer  drill_head_texlist  0x00000000  drill_head_textures
+pointer  drill_tooth_5_model  0x00000000  drill_tooth_5_vertices
+pointer  drill_tooth_5_model  0x00000004  drill_tooth_5_polygons
+pointer  drill_tooth_5  0x00000004  drill_tooth_5_model
+pointer  drill_tooth_4_model  0x00000000  drill_tooth_4_vertices
+pointer  drill_tooth_4_model  0x00000004  drill_tooth_4_polygons
+pointer  drill_tooth_4  0x00000004  drill_tooth_4_model
+pointer  drill_tooth_4  0x00000030  drill_tooth_5
+pointer  drill_tooth_3_model  0x00000000  drill_tooth_3_vertices
+pointer  drill_tooth_3_model  0x00000004  drill_tooth_3_polygons
+pointer  drill_tooth_3  0x00000004  drill_tooth_3_model
+pointer  drill_tooth_3  0x00000030  drill_tooth_4
+pointer  drill_tooth_2_model  0x00000000  drill_tooth_2_vertices
+pointer  drill_tooth_2_model  0x00000004  drill_tooth_2_polygons
+pointer  drill_tooth_2  0x00000004  drill_tooth_2_model
+pointer  drill_tooth_2  0x00000030  drill_tooth_3
+pointer  drill_tooth_1_model  0x00000000  drill_tooth_1_vertices
+pointer  drill_tooth_1_model  0x00000004  drill_tooth_1_polygons
+pointer  drill_tooth_1  0x00000004  drill_tooth_1_model
+pointer  drill_tooth_1  0x00000030  drill_tooth_2
+pointer  drill_head_model  0x00000000  drill_head_vertices
+pointer  drill_head_model  0x00000004  drill_head_polygons
+pointer  drill_head  0x00000004  drill_head_model
+pointer  drill_head  0x00000030  drill_tooth_1
+pointer  drill_tooth_0_model  0x00000000  drill_tooth_0_vertices
+pointer  drill_tooth_0_model  0x00000004  drill_tooth_0_polygons
+pointer  drill_tooth_0  0x00000004  drill_tooth_0_model
+pointer  drill_tooth_0  0x00000030  drill_head
+pointer  drill_root  0x0000002c  drill_tooth_0
+pointer  cosmic_drill_texlists  0x00000000  platform_texlist
+pointer  cosmic_drill_texlists  0x00000004  drill_body_texlist
+pointer  cosmic_drill_texlists  0x00000008  drill_head_texlist
+pointer  drill_teeth  0x00000000  drill_tooth_0
+pointer  drill_teeth  0x00000004  drill_tooth_1
+pointer  drill_teeth  0x00000008  drill_tooth_2
+pointer  drill_teeth  0x0000000c  drill_tooth_3
+pointer  drill_teeth  0x00000010  drill_tooth_4
+pointer  drill_teeth  0x00000014  drill_tooth_5

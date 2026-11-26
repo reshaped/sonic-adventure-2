@@ -1,0 +1,8 @@
+datum  item_balloon_polygons  D  0x00000014  978
+datum  item_balloon_vertices  D  0x000003e8  1188
+text  ITEM_BALLOON_TEXT_SIKAKE_01_128  C  0x00000040  14
+datum  item_balloon_texname  D  0x00000000  12
+datum  item_balloon_texlist  D  0x0000000c  8
+datum  item_balloon_model  D  0x0000088c  24
+datum  item_balloon_object  D  0x000008a4  52
+datum  item_balloon_texlists  D  0x00000908  16

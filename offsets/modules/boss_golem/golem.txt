@@ -1,0 +1,7 @@
+datum  golem_motions  C  0x00000000  1792
+datum  title_bar  D  0x00000004  192
+datum  title_letters  D  0x000000c4  144
+datum  golem_title  D  0x00000154  44
+datum  golem_texlists  D  0x00000180  52
+datum  sensor_models  D  0x00000300  36
+datum  sensor_nodes  D  0x00000324  36

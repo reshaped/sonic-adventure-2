@@ -1,0 +1,17 @@
+text  AQUATIC_LEAF_TEXTURE  C  0x00000000  21
+text  AQUATIC_STEM_TEXTURE  C  0x00000018  25
+datum  plant3_names  D  0x00000000  24
+datum  sway_texlist  D  0x00000018  8
+datum  plant3_polygons  D  0x00000020  874
+datum  plant3_vertices  D  0x0000038c  1356
+datum  plant3_model  D  0x000008d8  24
+datum  sway_object  D  0x000008f0  52
+datum  plant3_pose_0  D  0x00000924  1008
+datum  plant3_pose_9  D  0x00000d14  1008
+datum  plant3_pose_18  D  0x00001104  1008
+datum  plant3_shape_keys  D  0x000014f4  24
+datum  plant3_shape_tracks  D  0x0000150c  16
+datum  sway_shape  D  0x0000151c  12
+datum  plant3_motion_tracks  D  0x00001528  16
+datum  sway_motion  D  0x00001538  12
+datum  plant3_texlists  D  0x00001544  8

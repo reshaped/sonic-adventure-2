@@ -1,0 +1,4 @@
+text  SKY_SPACENBG128  12
+
+pointer  textures  0x00000000  SKY_SPACENBG128
+pointer  textures  0x0000000c  sky_orbit_texture

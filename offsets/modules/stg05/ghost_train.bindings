@@ -1,0 +1,52 @@
+text  GHOST_TRAIN_TEXTURE_MIU128_LOCO001  15
+text  GHOST_TRAIN_TEXTURE_MIU128_LOCO002  15
+text  GHOST_TRAIN_TEXTURE_MIU128_LOCO003  15
+text  GHOST_TRAIN_TEXTURE_MIU128_LOCO004  15
+text  GHOST_TRAIN_TEXTURE_MIU128_LOCO005  15
+text  GHOST_TRAIN_TEXTURE_MIU128_LOCO006  15
+text  GHOST_TRAIN_TEXTURE_MIU64_LOCO002  14
+text  GHOST_TRAIN_TEXTURE_MIU64_LOCO003  14
+text  GHOST_TRAIN_TEXTURE_MIU64_LOCO004  14
+text  GHOST_TRAIN_TEXTURE_MIU64_LOCO005  14
+
+pointer  ghost_train_texlist_names  0x00000000  GHOST_TRAIN_TEXTURE_MIU128_LOCO001
+pointer  ghost_train_texlist_names  0x0000000c  GHOST_TRAIN_TEXTURE_MIU128_LOCO002
+pointer  ghost_train_texlist_names  0x00000018  GHOST_TRAIN_TEXTURE_MIU128_LOCO003
+pointer  ghost_train_texlist_names  0x00000024  GHOST_TRAIN_TEXTURE_MIU128_LOCO004
+pointer  ghost_train_texlist_names  0x00000030  GHOST_TRAIN_TEXTURE_MIU128_LOCO005
+pointer  ghost_train_texlist_names  0x0000003c  GHOST_TRAIN_TEXTURE_MIU128_LOCO006
+pointer  ghost_train_texlist_names  0x00000048  GHOST_TRAIN_TEXTURE_MIU64_LOCO002
+pointer  ghost_train_texlist_names  0x00000054  GHOST_TRAIN_TEXTURE_MIU64_LOCO003
+pointer  ghost_train_texlist_names  0x00000060  GHOST_TRAIN_TEXTURE_MIU64_LOCO004
+pointer  ghost_train_texlist_names  0x0000006c  GHOST_TRAIN_TEXTURE_MIU64_LOCO005
+pointer  ghost_train_texlist  0x00000000  ghost_train_texlist_names
+pointer  ghost_train_bobbing_model  0x00000000  ghost_train_bobbing_vertices
+pointer  ghost_train_bobbing_model  0x00000004  ghost_train_bobbing_polygons
+pointer  ghost_train_bobbing  0x00000004  ghost_train_bobbing_model
+pointer  ghost_train_spin_model  0x00000000  ghost_train_spin_vertices
+pointer  ghost_train_spin_model  0x00000004  ghost_train_spin_polygons
+pointer  ghost_train_spin  0x00000004  ghost_train_spin_model
+pointer  ghost_train_spin  0x00000030  ghost_train_bobbing
+pointer  ghost_train_car_model  0x00000000  ghost_train_car_vertices
+pointer  ghost_train_car_model  0x00000004  ghost_train_car_polygons
+pointer  ghost_train_car  0x00000004  ghost_train_car_model
+pointer  ghost_train_car  0x00000030  ghost_train_spin
+pointer  ghost_train_engine_model  0x00000000  ghost_train_engine_vertices
+pointer  ghost_train_engine_model  0x00000004  ghost_train_engine_polygons
+pointer  ghost_train_engine  0x00000004  ghost_train_engine_model
+pointer  ghost_train_engine  0x0000002c  ghost_train_car
+pointer  ghost_train_collision_faces  0x00000004  ghost_train_collision_strips
+pointer  ghost_train_collision_model  0x00000000  ghost_train_collision_points
+pointer  ghost_train_collision_model  0x00000004  ghost_train_collision_normals
+pointer  ghost_train_collision_model  0x0000000c  ghost_train_collision_faces
+pointer  ghost_train_collision_model  0x00000010  ghost_train_collision_materials
+pointer  ghost_train_collision  0x00000004  ghost_train_collision_model
+pointer  ghost_train_path_0  0x00000008  ghost_train_path_0_points
+pointer  ghost_train_path_1  0x00000008  ghost_train_path_1_points
+pointer  ghost_train_path_2  0x00000008  ghost_train_path_2_points
+pointer  ghost_train_path_3  0x00000008  ghost_train_path_3_points
+pointer  ghost_train_paths  0x00000000  ghost_train_path_0
+pointer  ghost_train_paths  0x00000004  ghost_train_path_3
+pointer  ghost_train_paths  0x00000008  ghost_train_path_0
+pointer  ghost_train_paths  0x0000000c  ghost_train_path_1
+pointer  ghost_train_paths  0x00000010  ghost_train_path_2

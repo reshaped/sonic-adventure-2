@@ -1,0 +1,4 @@
+text  MATERIAL_01  14
+text  MATERIAL_02  14
+pointer  textures  0x00000000  MATERIAL_01
+pointer  textures  0x0000000c  MATERIAL_02

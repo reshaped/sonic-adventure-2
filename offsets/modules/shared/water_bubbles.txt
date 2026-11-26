@@ -1,0 +1,5 @@
+datum  bubble_texanim  D  0x0000002c  20
+datum  bubble_color  D  0x00000004  16
+datum  bubble_clear  D  0x00000014  16
+datum  bubble_texlist  D  0x00000024  8
+datum  bubble_sprite  D  0x00000040  32

@@ -1,0 +1,2 @@
+datum  smoke_puff_cell  D  0x00000000  20
+datum  smoke_puff_sprite  D  0x00000014  32

@@ -1,0 +1,23 @@
+# Both Sand Ocean platforms connect their display and collision models the same way.
+pointer turning_platform_model  0x00000000  turning_platform_vertices
+pointer turning_platform_model  0x00000004  turning_platform_polygons
+
+pointer turning_platform_display  0x00000004  turning_platform_model
+
+pointer turning_platform_object_meshsets  0x00000004  turning_platform_object_faces
+
+pointer turning_platform_object_model  0x00000000  turning_platform_object_points
+pointer turning_platform_object_model  0x00000004  turning_platform_object_normals
+pointer turning_platform_object_model  0x0000000c  turning_platform_object_meshsets
+pointer turning_platform_object_model  0x00000010  turning_platform_object_materials
+
+pointer turning_platform_object  0x00000004  turning_platform_object_model
+
+pointer turning_platform_child_object_meshsets  0x00000004  turning_platform_child_object_faces
+
+pointer turning_platform_child_object_model  0x00000000  turning_platform_child_object_points
+pointer turning_platform_child_object_model  0x00000004  turning_platform_child_object_normals
+pointer turning_platform_child_object_model  0x0000000c  turning_platform_child_object_meshsets
+pointer turning_platform_child_object_model  0x00000010  turning_platform_child_object_materials
+
+pointer turning_platform_child_object  0x00000004  turning_platform_child_object_model

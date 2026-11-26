@@ -1,0 +1,1 @@
+datum  golem_skin_names  C  0x00000000  72

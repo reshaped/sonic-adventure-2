@@ -1,0 +1,1 @@
+datum  stage_kill_areas  D  0x00000000  80

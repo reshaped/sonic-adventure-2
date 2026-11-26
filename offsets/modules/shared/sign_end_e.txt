@@ -1,0 +1,13 @@
+text  SIGN_END_E_TEXTURE_MIU32_FR007  C  0x0000002c  12
+text  SIGN_END_E_TEXTURE_MIU32_FR006  C  0x00000038  12
+datum  sign_end_e_textures  D  0x00000000  12
+datum  sign_end_e_texlist  D  0x0000000c  8
+datum  sign_end_e_2_textures  D  0x00000014  12
+datum  sign_end_e_2_texlist  D  0x00000020  8
+datum  sign_end_e_polygons  D  0x00000028  154
+datum  sign_end_e_vertices  D  0x000000c4  332
+datum  sign_end_e_mesh  D  0x00000210  24
+datum  sign_end_e_object  D  0x00000228  52
+datum  sign_end_e_uvs  D  0x0000025c  100
+datum  sign_end_e_anim  D  0x000002c0  36
+datum  sign_end_e_texlists  D  0x000002e4  12

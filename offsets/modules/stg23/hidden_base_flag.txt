@@ -1,0 +1,12 @@
+text  HIDDEN_BASE_FLAG_CLOTH_FILENAME  C  0x00000000  15
+text  HIDDEN_BASE_FLAG_POLE_FILENAME  C  0x00000010  12
+datum  cloth_material  D  0x00000000  12
+datum  hidden_base_flag_cloth  D  0x0000000c  8
+datum  hidden_base_flag_frames  D  0x00000014  36360
+datum  hidden_base_flag_root  D  0x00008e1c  52
+datum  flag_support_textures  D  0x00008e50  12
+datum  flag_support_texlist  D  0x00008e5c  8
+datum  flag_support_model_polygons  D  0x00008e64  126
+datum  flag_support_model_vertices  D  0x00008ee4  140
+datum  flag_support_model  D  0x00008f70  24
+datum  flag_support_root  D  0x00008f88  52

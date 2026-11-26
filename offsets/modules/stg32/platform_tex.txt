@@ -1,0 +1,3 @@
+datum  meteor_platform_filenames  C  0x00000000  98
+datum  textures  D  0x00000000  84
+datum  meteor_platform_texlist  D  0x00000054  8

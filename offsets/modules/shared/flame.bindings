@@ -1,0 +1,21 @@
+text  FLAME_TEXTURE_01  8
+text  FLAME_TEXTURE_02  8
+text  FLAME_TEXTURE_03  8
+text  FLAME_TEXTURE_04  8
+text  FLAME_TEXTURE_05  8
+text  FLAME_TEXTURE_06  8
+text  FLAME_TEXTURE_07  8
+text  FLAME_TEXTURE_08  8
+text  FLAME_TEXTURE_09  8
+text  FLAME_TEXTURE_10  8
+pointer  flame_texnames  0x00000000  FLAME_TEXTURE_01
+pointer  flame_texnames  0x0000000c  FLAME_TEXTURE_02
+pointer  flame_texnames  0x00000018  FLAME_TEXTURE_03
+pointer  flame_texnames  0x00000024  FLAME_TEXTURE_04
+pointer  flame_texnames  0x00000030  FLAME_TEXTURE_05
+pointer  flame_texnames  0x0000003c  FLAME_TEXTURE_06
+pointer  flame_texnames  0x00000048  FLAME_TEXTURE_07
+pointer  flame_texnames  0x00000054  FLAME_TEXTURE_08
+pointer  flame_texnames  0x00000060  FLAME_TEXTURE_09
+pointer  flame_texnames  0x0000006c  FLAME_TEXTURE_10
+pointer  flame_texlist  0x00000000  flame_texnames

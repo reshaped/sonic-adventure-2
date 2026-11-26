@@ -1,0 +1,14 @@
+include  golem_motion_clips
+include  golem_title_card
+include  golem_sensor_selectors
+
+pointer  golem_e_texlists  0x00000000  golem_statue_texlist
+pointer  golem_e_texlists  0x00000004  golem_statue_texlist
+pointer  golem_e_texlists  0x00000008  golem_e_mechanism_texlist
+pointer  golem_e_texlists  0x0000000c  golem_e_piece_texlist
+pointer  golem_e_texlists  0x00000010  golem_e_weak_point_a_texlist
+pointer  golem_e_texlists  0x00000014  golem_e_weak_point_b_texlist
+pointer  golem_e_texlists  0x00000018  golem_e_weak_point_c_texlist
+pointer  golem_e_texlists  0x0000001c  golem_wave_ring_texlist
+pointer  golem_e_texlists  0x00000020  golem_wave_column_texlist
+pointer  golem_e_texlists  0x00000024  golem_e_rubble_texlist

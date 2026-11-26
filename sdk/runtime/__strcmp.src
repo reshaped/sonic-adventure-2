@@ -1,0 +1,122 @@
+; __strcmp.obj is member 39 (zero-based) of Katana R11b sh4nlfzn.lib.
+; Its linked text matches the retail image. Its SYSROF record names
+; A_SH as the tool that wrote the object.
+
+        .EXPORT     __slow_strcmp1
+        .EXPORT     __quick_strcmp1
+
+        .SECTION    P,CODE,ALIGN=4
+
+; int _slow_strcmp1(const char *s1, const char *s2)
+; return s1's byte minus s2's at the first byte where the strings differ, or
+; 0 for equal strings. each byte is read as a signed char. where both strings
+; are 4-byte aligned, it runs on into _quick_strcmp1. it changes R0 to R5 and
+; T, and keeps every other register
+; @asm open: every instruction is one SHC writes for C
+__slow_strcmp1:
+        MOV         R4,R0
+        OR          R5,R0
+        TST         #3,R0
+        BF          strcmp_unaligned_compare
+
+; int _quick_strcmp1(const char *s1, const char *s2)
+; _slow_strcmp1's result, for s1 and s2 both 4-byte aligned. it reads each
+; string a long word at a time, but past its terminator only to the end of the
+; terminator's long word. it changes R0 to R5 and T, and keeps every other
+; register
+; @asm opcode: cmp-str, CMP/STR R2,R3 at 0x8c0c8f42 tests R3 for a zero byte
+__quick_strcmp1:
+        MOV.L       @R5+,R3
+        MOV         #0,R2
+strcmp_compare_words:
+        MOV.L       @R4+,R0
+        CMP/STR     R2,R3
+        BT          strcmp_compare_bytes
+        CMP/EQ      R0,R3
+        MOV.L       @R5+,R1
+        BF          strcmp_back_one_word
+        MOV.L       @R4+,R0
+        CMP/STR     R2,R1
+        BT          strcmp_compare_bytes
+        CMP/EQ      R0,R1
+        MOV.L       @R5+,R3
+        BF          strcmp_back_one_word
+        MOV.L       @R4+,R0
+        CMP/STR     R2,R3
+        BT          strcmp_compare_bytes
+        CMP/EQ      R0,R3
+        MOV.L       @R5+,R1
+        BF          strcmp_back_one_word
+        MOV.L       @R4+,R0
+        CMP/STR     R2,R1
+        BT          strcmp_compare_bytes
+        CMP/EQ      R0,R1
+        MOV.L       @R5+,R3
+        BT          strcmp_compare_words
+; where the long words differ, the loop has already read s2's next one
+strcmp_back_one_word:
+        ADD         #-4,R5
+; here s1's and s2's long words differ, or s2's holds its terminator
+strcmp_compare_bytes:
+        ADD         #-4,R5
+        MOV.B       @R5+,R1
+        ADD         #-4,R4
+        MOV.B       @R4+,R0
+        CMP/EQ      R2,R1
+        BT          strcmp_byte_difference
+        CMP/EQ      R0,R1
+        BF          strcmp_byte_difference
+        MOV.B       @R5+,R1
+        MOV.B       @R4+,R0
+        CMP/EQ      R2,R1
+        BT          strcmp_byte_difference
+        CMP/EQ      R0,R1
+        BF          strcmp_byte_difference
+        MOV.B       @R5+,R1
+        MOV.B       @R4+,R0
+        CMP/EQ      R2,R1
+        BT          strcmp_byte_difference
+        CMP/EQ      R0,R1
+        BF          strcmp_byte_difference
+; s1's and s2's long words match in their first three bytes, and none of
+; those is 0. so their fourth bytes differ, or are both terminators. the
+; bytes' difference is the result
+        MOV.B       @R4+,R0
+        MOV.B       @R5+,R1
+strcmp_byte_difference:
+        RTS
+        SUB         R1,R0
+; nothing reaches this RTS: no branch leads here, and the RTS above returns
+        RTS
+        SUB         R3,R0
+        .ALIGN      4
+; _slow_strcmp1's compare, for strings not both 4-byte aligned
+strcmp_unaligned_compare:
+        MOV.B       @R4+,R0
+        CMP/EQ      #0,R0
+        MOV.B       @R5+,R3
+        BT          strcmp_unaligned_difference
+        CMP/EQ      R0,R3
+        BF          strcmp_unaligned_difference
+        MOV.B       @R4+,R0
+        MOV.B       @R5+,R3
+        CMP/EQ      #0,R0
+        BT          strcmp_unaligned_difference
+        CMP/EQ      R0,R3
+        BF          strcmp_unaligned_difference
+        MOV.B       @R4+,R0
+        MOV.B       @R5+,R3
+        CMP/EQ      #0,R0
+        BT          strcmp_unaligned_difference
+        CMP/EQ      R0,R3
+        BF          strcmp_unaligned_difference
+        MOV.B       @R4+,R0
+        MOV.B       @R5+,R3
+        CMP/EQ      #0,R0
+        BT          strcmp_unaligned_difference
+        CMP/EQ      R0,R3
+        BT          strcmp_unaligned_compare
+strcmp_unaligned_difference:
+        RTS
+        SUB         R3,R0
+        .END

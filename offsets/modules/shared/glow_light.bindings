@@ -1,0 +1,7 @@
+text  STREET_TEXT_MIU128_RH004  13
+text  STREET_TEXT_MIU32_RH003  12
+pointer  glow_texnames  0x00000000  STREET_TEXT_MIU128_RH004
+pointer  glow_texnames  0x0000000c  STREET_TEXT_MIU32_RH003
+pointer  glow_texlist  0x00000000  glow_texnames
+pointer  glow_texlists  0x00000000  glow_texlist
+pointer  glow_trail_style  0x00000014  glow_texlist

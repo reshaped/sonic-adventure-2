@@ -1,0 +1,3 @@
+datum  pap_protocol  DATA  0x00000000  60
+datum  pap_name  DATA  0x00000090  4
+entry  pap_release  P  0x000004f6  2

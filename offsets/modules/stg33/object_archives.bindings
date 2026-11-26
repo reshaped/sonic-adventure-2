@@ -1,0 +1,117 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_KVSR001  8
+text  STAGE_TEXTURE_KVSR002  8
+text  STAGE_TEXTURE_KVSR003  8
+text  STAGE_TEXTURE_KVSR004  8
+text  STAGE_TEXTURE_KVSR005  8
+text  STAGE_TEXTURE_KVSR006  8
+text  STAGE_TEXTURE_KVSR007  8
+text  STAGE_TEXTURE_KVSR008  8
+text  STAGE_TEXTURE_KVSR009  8
+text  STAGE_TEXTURE_KVSR010  8
+text  STAGE_TEXTURE_KVSR011  8
+text  STAGE_TEXTURE_KVSR012  8
+text  STAGE_TEXTURE_KVSR013  8
+text  STAGE_TEXTURE_KVSR014  8
+text  STAGE_TEXTURE_KVSR015  8
+text  STAGE_TEXTURE_KVSR016  8
+text  STAGE_TEXTURE_KVSR017  8
+text  STAGE_TEXTURE_KVSR018  8
+text  STAGE_TEXTURE_KVSR019  8
+text  STAGE_TEXTURE_KVSR020  8
+text  STAGE_TEXTURE_METEO128_10  12
+text  STAGE_TEXTURE_METEO128_11  12
+text  STAGE_TEXTURE_METEO64_1  10
+text  STAGE_TEXTURE_METEO64_3  10
+text  STAGE_TEXTURE_MIU128_MEH004  14
+text  STAGE_TEXTURE_MIU128_MEH009  14
+text  STAGE_TEXTURE_MIU64_CG020  12
+text  STAGE_TEXTURE_MIU64_MEH004  13
+text  STAGE_TEXTURE_MIU64_MEH009  13
+text  STAGE_TEXTURE_MIU64_MEH011  13
+text  STAGE_TEXTURE_MIU64_MEH012  13
+text  STAGE_TEXTURE_MIU64_MEH013  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+text  PVM_BOSS_PWGUAGE_TEX  17
+text  PVM_LANDTX33_UV  12
+text  PVM_STG33_OBJTEX  13
+
+pointer  stage_archive_names  0x00000000  STAGE_TEXTURE_KVSR001
+pointer  stage_archive_names  0x0000000c  STAGE_TEXTURE_KVSR002
+pointer  stage_archive_names  0x00000018  STAGE_TEXTURE_KVSR003
+pointer  stage_archive_names  0x00000024  STAGE_TEXTURE_KVSR004
+pointer  stage_archive_names  0x00000030  STAGE_TEXTURE_KVSR005
+pointer  stage_archive_names  0x0000003c  STAGE_TEXTURE_KVSR006
+pointer  stage_archive_names  0x00000048  STAGE_TEXTURE_KVSR007
+pointer  stage_archive_names  0x00000054  STAGE_TEXTURE_KVSR008
+pointer  stage_archive_names  0x00000060  STAGE_TEXTURE_KVSR009
+pointer  stage_archive_names  0x0000006c  STAGE_TEXTURE_KVSR010
+pointer  stage_archive_names  0x00000078  STAGE_TEXTURE_KVSR011
+pointer  stage_archive_names  0x00000084  STAGE_TEXTURE_KVSR012
+pointer  stage_archive_names  0x00000090  STAGE_TEXTURE_KVSR013
+pointer  stage_archive_names  0x0000009c  STAGE_TEXTURE_KVSR014
+pointer  stage_archive_names  0x000000a8  STAGE_TEXTURE_KVSR015
+pointer  stage_archive_names  0x000000b4  STAGE_TEXTURE_KVSR016
+pointer  stage_archive_names  0x000000c0  STAGE_TEXTURE_KVSR017
+pointer  stage_archive_names  0x000000cc  STAGE_TEXTURE_KVSR018
+pointer  stage_archive_names  0x000000d8  STAGE_TEXTURE_KVSR019
+pointer  stage_archive_names  0x000000e4  STAGE_TEXTURE_KVSR020
+pointer  stage_archive_names  0x000000f0  STAGE_TEXTURE_METEO128_10
+pointer  stage_archive_names  0x000000fc  STAGE_TEXTURE_METEO128_11
+pointer  stage_archive_names  0x00000108  STAGE_TEXTURE_METEO64_1
+pointer  stage_archive_names  0x00000114  STAGE_TEXTURE_METEO64_3
+pointer  stage_archive_names  0x00000120  STAGE_TEXTURE_MIU128_MEH004
+pointer  stage_archive_names  0x0000012c  STAGE_TEXTURE_MIU128_MEH009
+pointer  stage_archive_names  0x00000138  STAGE_TEXTURE_MIU64_CG020
+pointer  stage_archive_names  0x00000144  STAGE_TEXTURE_MIU64_MEH004
+pointer  stage_archive_names  0x00000150  STAGE_TEXTURE_MIU64_MEH009
+pointer  stage_archive_names  0x0000015c  STAGE_TEXTURE_MIU64_MEH011
+pointer  stage_archive_names  0x00000168  STAGE_TEXTURE_MIU64_MEH012
+pointer  stage_archive_names  0x00000174  STAGE_TEXTURE_MIU64_MEH013
+pointer  stg33_objtex_texlist  0x00000000  stage_archive_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  big_jump_anim_texlist
+pointer  stage_textures  0x00000018  big_jump_texlist
+pointer  stage_textures  0x0000001c  ring_shadow_texlist
+pointer  stage_textures  0x00000020  effect_texlist
+pointer  stage_textures  0x00000024  item_balloon_texlist
+pointer  stage_textures  0x00000028  ring_sparkle_texlist
+pointer  stage_textures  0x0000002c  burst_texlist
+pointer  stage_textures  0x00000030  lens_flare_texlist
+pointer  stage_textures  0x00000034  vent_texlist
+pointer  knuckles_rouge_texture_groups  0x00000000  stage_textures
+pointer  knuckles_rouge_texture_groups  0x00000004  item_box_texlists
+pointer  knuckles_rouge_texture_groups  0x00000008  item_box_air_texlists
+pointer  knuckles_rouge_texture_groups  0x0000000c  weight_texlists
+pointer  knuckles_rouge_texture_groups  0x00000010  iron_ball_texlists
+pointer  knuckles_rouge_texture_groups  0x00000014  triple_spring_texlists
+pointer  knuckles_rouge_texture_groups  0x00000018  dynamite_texlists
+pointer  knuckles_rouge_texture_groups  0x0000001c  reel_texlists
+pointer  knuckles_rouge_texture_groups  0x00000020  cage_texlists
+pointer  knuckles_rouge_texture_groups  0x00000024  wood_box_texlists
+pointer  knuckles_rouge_texture_groups  0x00000028  iron_box_texlists
+pointer  knuckles_rouge_texture_groups  0x0000002c  missile_texlists
+pointer  knuckles_rouge_texture_groups  0x00000030  skull_texlists
+pointer  knuckles_rouge_texture_groups  0x00000034  rocket_texlists
+pointer  knuckles_rouge_texture_groups  0x00000038  hint_box_texlists
+pointer  knuckles_rouge_texture_groups  0x0000003c  object_effect_texlists
+pointer  knuckles_rouge_texture_groups  0x00000040  messenger_texlists
+pointer  knuckles_rouge_texture_groups  0x00000044  solid_box_texlists
+pointer  knuckles_rouge_texture_groups  0x00000048  light_effect_texlists
+pointer  knuckles_rouge_pvms  0x00000000  PVM_EFFTEX_COMMON
+pointer  knuckles_rouge_pvms  0x00000004  efftex_common_texlist
+pointer  knuckles_rouge_pvms  0x00000008  PVM_OBJTEX_COMMON
+pointer  knuckles_rouge_pvms  0x0000000c  objtex_common_texlist
+pointer  knuckles_rouge_pvms  0x00000010  PVM_BOSS_PWGUAGE_TEX
+pointer  knuckles_rouge_pvms  0x00000014  boss_gauge_texlist
+pointer  knuckles_rouge_pvms  0x00000018  PVM_LANDTX33_UV
+pointer  knuckles_rouge_pvms  0x0000001c  knuckles_rouge_animated_surface_texlist
+pointer  knuckles_rouge_pvms  0x00000020  PVM_STG33_OBJTEX
+pointer  knuckles_rouge_pvms  0x00000024  stg33_objtex_texlist

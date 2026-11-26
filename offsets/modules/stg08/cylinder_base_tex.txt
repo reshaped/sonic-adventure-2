@@ -1,0 +1,6 @@
+datum  textures  D  0x00000000  12
+datum  security_cylinder_base_texlist  D  0x0000000c  8
+datum  security_cylinder_base_polygons  D  0x00000014  234
+datum  security_cylinder_base_vertices  D  0x00000100  300
+datum  security_cylinder_base_model  D  0x0000022c  24
+datum  security_cylinder_base_object  D  0x00000244  52

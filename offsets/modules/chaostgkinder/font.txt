@@ -1,0 +1,7 @@
+datum  ascii_widths  C  0x00000000  96
+datum  latin_widths  C  0x00000060  224
+datum  fonts  D  0x00000000  36
+datum  kanji_widths  B  0x00000000  3423
+text  KANJI_FONT_NAME  C  0x00000154  22
+text  LATIN_FONT_NAME  C  0x0000016c  23
+text  ASCII_FONT_NAME  C  0x00000184  23

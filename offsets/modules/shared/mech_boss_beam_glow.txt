@@ -1,0 +1,2 @@
+datum  glow_cell  D  0x00000020  20
+datum  glow_sprite  D  0x00000034  32

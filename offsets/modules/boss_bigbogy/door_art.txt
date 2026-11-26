@@ -1,0 +1,14 @@
+text  DOOR_ART_TEXTURE_1  C  0x00000000  20
+datum  floor_textures  D  0x00000000  12
+datum  bigbogy_floor_door_texlist  D  0x0000000c  8
+datum  floor_polygons  D  0x00000014  182
+datum  floor_vertices  D  0x000000cc  332
+datum  bigbogy_floor_door_model  D  0x00000218  24
+datum  floor_door  D  0x00000230  52
+datum  wall_textures  D  0x00000264  12
+datum  bigbogy_wall_door_texlist  D  0x00000270  8
+datum  wall_polygons  D  0x00000278  182
+datum  wall_vertices  D  0x00000330  332
+datum  bigbogy_wall_door_model  D  0x0000047c  24
+datum  wall_door  D  0x00000494  52
+datum  bigbogy_door_texlists  D  0x000004c8  12

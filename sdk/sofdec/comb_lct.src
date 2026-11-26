@@ -1,0 +1,45 @@
+; the twiddled index of a column and a row (sofdec_yuv.h)
+        .EXPORT     _mwYuvCombLct
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; @asm opcode: rotcr, ROTCR R5 at 0x8c54d3b2 shifts y's first bit into T
+_mwYuvCombLct:
+        MOV.L       #H'00000000,R0
+        ROTCR       R5
+        ROTCR       R0
+        ROTCR       R4
+        ROTCR       R0
+        ROTCR       R5
+        ROTCR       R0
+        ROTCR       R4
+        ROTCR       R0
+        ROTCR       R5
+        ROTCR       R0
+        ROTCR       R4
+        ROTCR       R0
+        ROTCR       R5
+        ROTCR       R0
+        ROTCR       R4
+        ROTCR       R0
+        ROTCR       R5
+        ROTCR       R0
+        ROTCR       R4
+        ROTCR       R0
+        ROTCR       R5
+        ROTCR       R0
+        ROTCR       R4
+        ROTCR       R0
+        ROTCR       R5
+        ROTCR       R0
+        ROTCR       R4
+        ROTCR       R0
+        ROTCR       R5
+        ROTCR       R0
+        ROTCR       R4
+        ROTCR       R0
+        SHLR16      R0
+        RTS
+        NOP
+
+        .END

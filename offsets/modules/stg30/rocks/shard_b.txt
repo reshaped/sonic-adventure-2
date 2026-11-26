@@ -1,0 +1,6 @@
+datum  textures  D  0x00000000  24
+datum  shard_b_texlist  D  0x00000018  8
+datum  shard_b_polygons  D  0x00000020  502
+datum  shard_b_vertices  D  0x00000218  684
+datum  shard_b_mesh  D  0x000004c4  24
+datum  shard_b_object  D  0x000004dc  52

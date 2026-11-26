@@ -1,0 +1,13 @@
+datum  pickup_polygons  D  0x0000003c  154
+datum  pickup_vertices  D  0x000000d8  236
+text  TEXTURE_MIU32_PSO001  C  0x00000000  13
+text  TEXTURE_MIU32_PSO002  C  0x00000010  13
+text  TEXTURE_MIU32_PSO003  C  0x00000020  13
+datum  first  D  0x00000000  12
+datum  space_pickup_first_texlist  D  0x0000000c  8
+datum  second  D  0x00000014  12
+datum  space_pickup_second_texlist  D  0x00000020  8
+datum  third  D  0x00000028  12
+datum  space_pickup_third_texlist  D  0x00000034  8
+datum  space_pickup_model  D  0x000001c4  24
+datum  pickup_object  D  0x000001dc  52

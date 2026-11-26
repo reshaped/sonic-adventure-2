@@ -1,0 +1,80 @@
+text  LOCKON_EDITOR_ANGLE_Y  11
+text  LOCKON_EDITOR_HUWAHUWA_SPD  16
+text  LOCKON_EDITOR_HUWAHUWA_SCL  16
+text  LOCKON_EDITOR_MODEL  14
+text  LOCKON_TEXTURE_MAD64_1  8
+text  LOCKON_TEXTURE_MIU32_CW001  12
+text  LOCKON_TEXTURE_MIU64_CW008  12
+text  LOCKON_TEXTURE_MIU64_EE002  12
+text  LOCKON_TEXTURE_MIU64_FR001  12
+text  LOCKON_TEXTURE_MIU64_FR004  12
+text  LOCKON_TEXTURE_MIU32_CW002  12
+
+pointer  cosmic_lockon_texlists  0x00000000  lockon_single_piece_b_texlist
+pointer  cosmic_lockon_texlists  0x00000004  lockon_single_piece_a_texlist
+pointer  cosmic_lockon_texlists  0x00000008  lockon_double_texlist
+pointer  cosmic_lockon_texlists  0x0000000c  lockon_double_piece_b_texlist
+pointer  cosmic_lockon_texlists  0x00000010  lockon_double_piece_a_texlist
+pointer  cosmic_lockon_texlists  0x00000014  lockon_single_texlist
+pointer  single_pieces  0x00000000  lockon_single_piece_a_texlist
+pointer  single_pieces  0x00000004  lockon_single_piece_a
+pointer  single_pieces  0x0000000c  lockon_single_piece_b_texlist
+pointer  single_pieces  0x00000010  lockon_single_piece_b
+pointer  double_pieces  0x00000000  lockon_double_piece_a_texlist
+pointer  double_pieces  0x00000004  lockon_double_piece_a
+pointer  double_pieces  0x0000000c  lockon_double_piece_b_texlist
+pointer  double_pieces  0x00000010  lockon_double_piece_b
+pointer  lockon_double_textures  0x00000000  LOCKON_TEXTURE_MAD64_1
+pointer  lockon_double_textures  0x0000000c  LOCKON_TEXTURE_MIU32_CW001
+pointer  lockon_double_textures  0x00000018  LOCKON_TEXTURE_MIU64_CW008
+pointer  lockon_double_textures  0x00000024  LOCKON_TEXTURE_MIU64_EE002
+pointer  lockon_double_textures  0x00000030  LOCKON_TEXTURE_MIU64_FR001
+pointer  lockon_double_textures  0x0000003c  LOCKON_TEXTURE_MIU64_FR004
+pointer  lockon_double_texlist  0x00000000  lockon_double_textures
+pointer  lockon_double_rotor_model  0x00000000  lockon_double_rotor_vertices
+pointer  lockon_double_rotor_model  0x00000004  lockon_double_rotor_polygons
+pointer  lockon_double_rotor  0x00000004  lockon_double_rotor_model
+pointer  lockon_double_model  0x00000000  lockon_double_vertices
+pointer  lockon_double_model  0x00000004  lockon_double_polygons
+pointer  lockon_double_object  0x00000004  lockon_double_model
+pointer  lockon_double_object  0x0000002c  lockon_double_rotor
+pointer  lockon_single_piece_a_textures  0x00000000  LOCKON_TEXTURE_MIU64_CW008
+pointer  lockon_single_piece_a_textures  0x0000000c  LOCKON_TEXTURE_MIU64_EE002
+pointer  lockon_single_piece_a_textures  0x00000018  LOCKON_TEXTURE_MIU64_FR004
+pointer  lockon_single_piece_a_texlist  0x00000000  lockon_single_piece_a_textures
+pointer  lockon_single_piece_a  0x00000000  lockon_single_piece_a_vertices
+pointer  lockon_single_piece_a  0x00000004  lockon_single_piece_a_polygons
+pointer  lockon_single_piece_a_object  0x00000004  lockon_single_piece_a
+pointer  lockon_single_piece_b_textures  0x00000000  LOCKON_TEXTURE_MAD64_1
+pointer  lockon_single_piece_b_textures  0x0000000c  LOCKON_TEXTURE_MIU64_FR001
+pointer  lockon_single_piece_b_texlist  0x00000000  lockon_single_piece_b_textures
+pointer  lockon_single_piece_b  0x00000000  lockon_single_piece_b_vertices
+pointer  lockon_single_piece_b  0x00000004  lockon_single_piece_b_polygons
+pointer  lockon_single_piece_b_object  0x00000004  lockon_single_piece_b
+pointer  lockon_single_textures  0x00000000  LOCKON_TEXTURE_MAD64_1
+pointer  lockon_single_textures  0x0000000c  LOCKON_TEXTURE_MIU32_CW002
+pointer  lockon_single_textures  0x00000018  LOCKON_TEXTURE_MIU64_CW008
+pointer  lockon_single_textures  0x00000024  LOCKON_TEXTURE_MIU64_EE002
+pointer  lockon_single_textures  0x00000030  LOCKON_TEXTURE_MIU64_FR001
+pointer  lockon_single_textures  0x0000003c  LOCKON_TEXTURE_MIU64_FR004
+pointer  lockon_single_texlist  0x00000000  lockon_single_textures
+pointer  lockon_single_rotor_model  0x00000000  lockon_single_rotor_vertices
+pointer  lockon_single_rotor_model  0x00000004  lockon_single_rotor_polygons
+pointer  lockon_single_rotor  0x00000004  lockon_single_rotor_model
+pointer  lockon_single_model  0x00000000  lockon_single_vertices
+pointer  lockon_single_model  0x00000004  lockon_single_polygons
+pointer  lockon_single_object  0x00000004  lockon_single_model
+pointer  lockon_single_object  0x0000002c  lockon_single_rotor
+pointer  lockon_double_piece_a_textures  0x00000000  LOCKON_TEXTURE_MIU64_CW008
+pointer  lockon_double_piece_a_textures  0x0000000c  LOCKON_TEXTURE_MIU64_EE002
+pointer  lockon_double_piece_a_textures  0x00000018  LOCKON_TEXTURE_MIU64_FR004
+pointer  lockon_double_piece_a_texlist  0x00000000  lockon_double_piece_a_textures
+pointer  lockon_double_piece_a  0x00000000  lockon_double_piece_a_vertices
+pointer  lockon_double_piece_a  0x00000004  lockon_double_piece_a_polygons
+pointer  lockon_double_piece_a_object  0x00000004  lockon_double_piece_a
+pointer  lockon_double_piece_b_textures  0x00000000  LOCKON_TEXTURE_MAD64_1
+pointer  lockon_double_piece_b_textures  0x0000000c  LOCKON_TEXTURE_MIU64_FR001
+pointer  lockon_double_piece_b_texlist  0x00000000  lockon_double_piece_b_textures
+pointer  lockon_double_piece_b  0x00000000  lockon_double_piece_b_vertices
+pointer  lockon_double_piece_b  0x00000004  lockon_double_piece_b_polygons
+pointer  lockon_double_piece_b_object  0x00000004  lockon_double_piece_b

@@ -1,0 +1,10 @@
+datum  pickup_texlist_names  D  0x00000000  24
+datum  pumpkin_pickup_texlist  D  0x00000018  8
+datum  pickup_polygons  D  0x00000020  758
+datum  pickup_vertices  D  0x00000318  908
+datum  pumpkin_pickup_model  D  0x000006a4  24
+datum  pickup_object  D  0x000006bc  52
+datum  pickup_texlists  D  0x000006f0  8
+datum  pumpkin_pickup_shapes  D  0x000006f8  144
+text  PICKUP_TEXTURE_MIU64_MO014  C  0x00000028  12
+text  PICKUP_TEXTURE_MIU64_MS003  C  0x00000034  12

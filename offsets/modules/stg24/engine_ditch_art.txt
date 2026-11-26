@@ -1,0 +1,8 @@
+datum  engine_ditch_object_child_polygons  D  0x00000000  102
+datum  engine_ditch_object_child_vertices  D  0x00000068  204
+datum  engine_ditch_object_child_model  D  0x00000134  24
+datum  engine_ditch_object_child  D  0x0000014c  52
+datum  engine_ditch_polygons  D  0x00000180  166
+datum  engine_ditch_vertices  D  0x00000228  204
+datum  engine_ditch_model  D  0x000002f4  24
+datum  engine_ditch_object  D  0x0000030c  52

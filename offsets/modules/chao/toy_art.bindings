@@ -1,0 +1,3 @@
+pointer  garden_shadow_model  0x00000000  shadow_vertices
+pointer  garden_shadow_model  0x00000004  shadow_triangles
+pointer  garden_shadow_object  0x00000004  garden_shadow_model

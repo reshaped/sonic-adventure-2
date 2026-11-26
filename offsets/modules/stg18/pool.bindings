@@ -1,0 +1,28 @@
+text  LAGOON_TEXTURE_KD_DL_IDO2_VQ  14
+text  LAGOON_TEXTURE_KD_DL_IDO4_VQ  14
+text  LAGOON_TEXTURE_KD_DL_YUKA1_VQ  15
+text  LAGOON_TEXTURE_KD_DL_MIZU_001  15
+pointer  pool_rim_collision_faces  0x00000004  pool_rim_collision_strips
+pointer  pool_rim_collision_model  0x00000000  pool_rim_collision_points
+pointer  pool_rim_collision_model  0x00000004  pool_rim_collision_normals
+pointer  pool_rim_collision_model  0x0000000c  pool_rim_collision_faces
+pointer  pool_rim_collision_model  0x00000010  pool_rim_collision_materials
+pointer  pool_rim_collision  0x00000004  pool_rim_collision_model
+pointer  pool_texlist_names  0x00000000  LAGOON_TEXTURE_KD_DL_IDO2_VQ
+pointer  pool_texlist_names  0x0000000c  LAGOON_TEXTURE_KD_DL_IDO4_VQ
+pointer  pool_texlist_names  0x00000018  LAGOON_TEXTURE_KD_DL_YUKA1_VQ
+pointer  pool_texlist  0x00000000  pool_texlist_names
+pointer  pool_model  0x00000000  pool_vertices
+pointer  pool_model  0x00000004  pool_polygons
+pointer  pool_object  0x00000004  pool_model
+pointer  pool_texture_set_2_names  0x00000000  LAGOON_TEXTURE_KD_DL_MIZU_001
+pointer  pool_texture_set_2  0x00000000  pool_texture_set_2_names
+pointer  pool_water_model  0x00000000  pool_water_vertices
+pointer  pool_water_model  0x00000004  pool_water_polygons
+pointer  pool_water_object  0x00000004  pool_water_model
+pointer  pool_water_collision_faces  0x00000004  pool_water_collision_strips
+pointer  pool_water_collision_model  0x00000000  pool_water_collision_points
+pointer  pool_water_collision_model  0x00000004  pool_water_collision_normals
+pointer  pool_water_collision_model  0x0000000c  pool_water_collision_faces
+pointer  pool_water_collision_model  0x00000010  pool_water_collision_materials
+pointer  pool_water_collision  0x00000004  pool_water_collision_model

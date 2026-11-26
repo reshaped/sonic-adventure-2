@@ -1,0 +1,28 @@
+file                               SONIC2/CHAOSTGHERO.PRS
+
+# section                          start       end
+DHEAD                              0x0c9c0000  0x0c9c0020
+P                                  0x0c9c0020  0x0c9c1340
+C                                  0x0c9c1340  0x0c9c189c
+D                                  0x0c9c189c  0x0c9d3e64
+
+# source                           section     start       end
+modules/chaostghero/head.c         DHEAD       0x0c9c0000  0x0c9c0014
+modules/chaostghero/garden.c       P           0x0c9c0020  0x0c9c06a0
+modules/chaostghero/props.c        P           0x0c9c06a0  0x0c9c08e0
+modules/shared/object_light.c      P           0x0c9c08e0  0x0c9c1100
+modules/shared/collision_object.c  P           0x0c9c1100  0x0c9c1340
+modules/chaostghero/garden.c       C           0x0c9c1340  0x0c9c1402
+modules/chaostghero/props.c        C           0x0c9c1404  0x0c9c1524
+modules/shared/garden_prop_editor.c C           0x0c9c1524  0x0c9c156c
+modules/chaostghero/land.c         C           0x0c9c156c  0x0c9c17b4
+modules/chaostghero/objects.c      C           0x0c9c17b4  0x0c9c1834
+modules/shared/object_light.c      C           0x0c9c1834  0x0c9c1843
+modules/shared/collision_object.c       C           0x0c9c1844  0x0c9c189c
+modules/chaostghero/garden.c       D           0x0c9c189c  0x0c9c1a20
+modules/chaostghero/prop_models.c  D           0x0c9c1a20  0x0c9c4888
+modules/chaostghero/land.c         D           0x0c9c4888  0x0c9d3c5c
+modules/chaostghero/objects.c      D           0x0c9d3c5c  0x0c9d3d3c
+modules/shared/object_light.c      D           0x0c9d3d3c  0x0c9d3d40
+modules/shared/dat_collision_object_1.c  D           0x0c9d3d40  0x0c9d3d44
+modules/shared/collision_object.c  D           0x0c9d3d44  0x0c9d3e64

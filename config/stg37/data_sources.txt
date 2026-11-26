@@ -1,0 +1,12 @@
+modules/stg37/core_rouge_column_filename.c
+modules/stg37/core_rouge_cover_filenames.c
+modules/stg37/core_rouge_effect_frames.c
+modules/stg37/core_rouge_pool_cover.c
+modules/stg37/core_rouge_ripple_frames.c
+modules/stg37/core_rouge_ripple_positions.c
+modules/stg37/core_rouge_water_effects.c
+modules/stg37/core_rouge_water_filenames.c
+modules/stg37/player_motions.c
+modules/stg37/routes.c
+modules/stg37/terrain.c
+modules/stg37/water_cover.c

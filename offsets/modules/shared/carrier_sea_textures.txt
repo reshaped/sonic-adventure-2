@@ -1,0 +1,7 @@
+datum  carrier_sea_names  C  0x00000000  240
+datum  sea_frames  D  0x00000000  240
+datum  sea_texlist  D  0x000000f0  8
+datum  sea_polygons  D  0x000000f8  1354
+datum  sea_vertices  D  0x00000644  1948
+datum  sea_model  D  0x00000de0  24
+datum  sea_object  D  0x00000df8  52

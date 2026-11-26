@@ -1,0 +1,5 @@
+text  STORY_SELECT_MUSIC  13
+
+pointer  chapters  0x00000000  hero_chapters
+pointer  chapters  0x00000004  dark_chapters
+pointer  chapters  0x00000008  last_chapters

@@ -1,0 +1,15 @@
+# The two Dry Lagoon plants use the same bright/dark selector ordering.
+text  FOLIAGE_BRIGHT_LABEL  7
+text  FOLIAGE_DARK_LABEL  7
+pointer  sasa_objects  0x00000000  foliage_bright_object
+pointer  sasa_objects  0x00000004  foliage_dark_object
+pointer  sasa_motions  0x00000000  foliage_bright_motion
+pointer  sasa_motions  0x00000004  foliage_dark_motion
+pointer  sasa_shapes  0x00000000  foliage_bright_shape
+pointer  sasa_shapes  0x00000004  foliage_dark_shape
+pointer  sasa_kind_names  0x00000000  FOLIAGE_BRIGHT_LABEL
+pointer  sasa_kind_names  0x00000004  FOLIAGE_DARK_LABEL
+pointer  sasa_builds  0x00000004  foliage_bright_texlist
+pointer  sasa_builds  0x00000008  foliage_bright_object
+pointer  sasa_builds  0x00000014  foliage_dark_texlist
+pointer  sasa_builds  0x00000018  foliage_dark_object

@@ -1,0 +1,176 @@
+text  OBJTEX_COMMON_BOMBFIRE  9
+text  OBJTEX_COMMON_ITEMP_10RING  13
+text  OBJTEX_COMMON_ITEMP_1UP  10
+text  OBJTEX_COMMON_ITEMP_1UP2  11
+text  OBJTEX_COMMON_ITEMP_1UP3  11
+text  OBJTEX_COMMON_ITEMP_1UP4  11
+text  OBJTEX_COMMON_ITEMP_1UP5  11
+text  OBJTEX_COMMON_ITEMP_1UP6  11
+text  OBJTEX_COMMON_ITEMP_20RING  13
+text  OBJTEX_COMMON_ITEMP_5RING  12
+text  OBJTEX_COMMON_ITEMP_BARRIER  14
+text  OBJTEX_COMMON_ITEMP_BOMB  11
+text  OBJTEX_COMMON_ITEMP_LIFE  11
+text  OBJTEX_COMMON_ITEMP_MAGNET  13
+text  OBJTEX_COMMON_ITEMP_RANDOMRING  17
+text  OBJTEX_COMMON_ITEMP_SPEED  12
+text  OBJTEX_COMMON_ITEMP_SUPER  12
+text  OBJTEX_COMMON_KYOTU32_MARUKAGE  17
+text  OBJTEX_COMMON_KYOTU64_MARUKAGE  17
+text  OBJTEX_COMMON_SIKAKE_01_128  14
+text  OBJTEX_COMMON_SIKAKE_02_128  14
+text  OBJTEX_COMMON_SIKAKE_03_64  13
+text  OBJTEX_COMMON_SIKAKE_04_64  13
+text  OBJTEX_COMMON_SIKAKE_05_64  13
+text  OBJTEX_COMMON_SIKAKE_06_64  13
+text  OBJTEX_COMMON_SIKAKE_07_64  13
+text  OBJTEX_COMMON_SIKAKE_08_64  13
+text  OBJTEX_COMMON_SIKAKE_09_32  13
+text  OBJTEX_COMMON_SIKAKE_10_128  14
+text  OBJTEX_COMMON_SIKAKE_11_64  13
+text  OBJTEX_COMMON_SIKAKE_12_64  13
+text  OBJTEX_COMMON_SIKAKE_13_64  13
+text  OBJTEX_COMMON_SIKAKE_14_32  13
+text  OBJTEX_COMMON_SIKAKE_15_64  13
+text  OBJTEX_COMMON_SIKAKE_16_64  13
+text  OBJTEX_COMMON_SIKAKE_17_64  13
+text  OBJTEX_COMMON_SIKAKE_18_128  14
+text  OBJTEX_COMMON_SIKAKE_19_128  14
+text  OBJTEX_COMMON_SIKAKE_20_128  14
+text  OBJTEX_COMMON_SIKAKE_21_128  14
+text  OBJTEX_COMMON_SIKAKE_22_64  13
+text  OBJTEX_COMMON_SIKAKE_23_64  13
+text  OBJTEX_COMMON_SIKAKE_24_64  13
+text  OBJTEX_COMMON_SIKAKE_25_64  13
+text  OBJTEX_COMMON_SIKAKE_26_64  13
+text  OBJTEX_COMMON_SIKAKE_27_64  13
+text  OBJTEX_COMMON_SIKAKE_28_64  13
+text  OBJTEX_COMMON_SIKAKE_29_64  13
+text  OBJTEX_COMMON_SIKAKE_30_64  13
+text  OBJTEX_COMMON_SIKAKE_31_128  14
+text  OBJTEX_COMMON_SIKAKE_32_64  13
+text  OBJTEX_COMMON_SIKAKE_33_128  14
+text  OBJTEX_COMMON_SIKAKE_34_64  13
+text  OBJTEX_COMMON_SIKAKE_35_32  13
+text  OBJTEX_COMMON_SIKAKE_36_32  13
+text  OBJTEX_COMMON_SIKAKE_37_32  13
+text  OBJTEX_COMMON_SIKAKE_38_128  14
+text  OBJTEX_COMMON_SIKAKE_39_128  14
+text  OBJTEX_COMMON_SIKAKE_40_64  13
+text  OBJTEX_COMMON_SIKAKE_41_32  13
+text  OBJTEX_COMMON_SIKAKE_42_32  13
+text  OBJTEX_COMMON_SIKAKE_43_32  13
+text  OBJTEX_COMMON_SIKAKE_44_32  13
+text  OBJTEX_COMMON_SIKAKE_45_64  13
+text  OBJTEX_COMMON_SIKAKE_46_128  14
+text  OBJTEX_COMMON_SIKAKE_47_128  14
+text  OBJTEX_COMMON_SIKAKE_48_64  13
+text  OBJTEX_COMMON_SIKAKE_49_64  13
+text  OBJTEX_COMMON_SIKAKE_50_64  13
+text  OBJTEX_COMMON_SIKAKE_51_64  13
+text  OBJTEX_COMMON_SIKAKE_52_32  13
+text  OBJTEX_COMMON_THHIKARI01  11
+text  OBJTEX_COMMON_THHIKARI02  11
+text  OBJTEX_COMMON_THHIKARI03  11
+text  OBJTEX_COMMON_THHIKARI04  11
+text  OBJTEX_COMMON_THHIKARI05  11
+text  OBJTEX_COMMON_THHIKARI06  11
+text  OBJTEX_COMMON_THHIKARI07  11
+text  OBJTEX_COMMON_THHIKARI08  11
+text  OBJTEX_COMMON_THTSUBU01  10
+text  OBJTEX_COMMON_THTSUBU02  10
+text  OBJTEX_COMMON_THTSUBU03  10
+text  OBJTEX_COMMON_THTSUBU04  10
+text  OBJTEX_COMMON_THTSUBU05  10
+text  OBJTEX_COMMON_THTSUBU06  10
+text  OBJTEX_COMMON_THTSUBU07  10
+text  OBJTEX_COMMON_THTSUBU08  10
+
+pointer  objtex_common_texnames  0x00000000  OBJTEX_COMMON_BOMBFIRE
+pointer  objtex_common_texnames  0x0000000c  OBJTEX_COMMON_ITEMP_10RING
+pointer  objtex_common_texnames  0x00000018  OBJTEX_COMMON_ITEMP_1UP
+pointer  objtex_common_texnames  0x00000024  OBJTEX_COMMON_ITEMP_1UP2
+pointer  objtex_common_texnames  0x00000030  OBJTEX_COMMON_ITEMP_1UP3
+pointer  objtex_common_texnames  0x0000003c  OBJTEX_COMMON_ITEMP_1UP4
+pointer  objtex_common_texnames  0x00000048  OBJTEX_COMMON_ITEMP_1UP5
+pointer  objtex_common_texnames  0x00000054  OBJTEX_COMMON_ITEMP_1UP6
+pointer  objtex_common_texnames  0x00000060  OBJTEX_COMMON_ITEMP_20RING
+pointer  objtex_common_texnames  0x0000006c  OBJTEX_COMMON_ITEMP_5RING
+pointer  objtex_common_texnames  0x00000078  OBJTEX_COMMON_ITEMP_BARRIER
+pointer  objtex_common_texnames  0x00000084  OBJTEX_COMMON_ITEMP_BOMB
+pointer  objtex_common_texnames  0x00000090  OBJTEX_COMMON_ITEMP_LIFE
+pointer  objtex_common_texnames  0x0000009c  OBJTEX_COMMON_ITEMP_MAGNET
+pointer  objtex_common_texnames  0x000000a8  OBJTEX_COMMON_ITEMP_RANDOMRING
+pointer  objtex_common_texnames  0x000000b4  OBJTEX_COMMON_ITEMP_SPEED
+pointer  objtex_common_texnames  0x000000c0  OBJTEX_COMMON_ITEMP_SUPER
+pointer  objtex_common_texnames  0x000000cc  OBJTEX_COMMON_KYOTU32_MARUKAGE
+pointer  objtex_common_texnames  0x000000d8  OBJTEX_COMMON_KYOTU64_MARUKAGE
+pointer  objtex_common_texnames  0x000000e4  OBJTEX_COMMON_SIKAKE_01_128
+pointer  objtex_common_texnames  0x000000f0  OBJTEX_COMMON_SIKAKE_02_128
+pointer  objtex_common_texnames  0x000000fc  OBJTEX_COMMON_SIKAKE_03_64
+pointer  objtex_common_texnames  0x00000108  OBJTEX_COMMON_SIKAKE_04_64
+pointer  objtex_common_texnames  0x00000114  OBJTEX_COMMON_SIKAKE_05_64
+pointer  objtex_common_texnames  0x00000120  OBJTEX_COMMON_SIKAKE_06_64
+pointer  objtex_common_texnames  0x0000012c  OBJTEX_COMMON_SIKAKE_07_64
+pointer  objtex_common_texnames  0x00000138  OBJTEX_COMMON_SIKAKE_08_64
+pointer  objtex_common_texnames  0x00000144  OBJTEX_COMMON_SIKAKE_09_32
+pointer  objtex_common_texnames  0x00000150  OBJTEX_COMMON_SIKAKE_10_128
+pointer  objtex_common_texnames  0x0000015c  OBJTEX_COMMON_SIKAKE_11_64
+pointer  objtex_common_texnames  0x00000168  OBJTEX_COMMON_SIKAKE_12_64
+pointer  objtex_common_texnames  0x00000174  OBJTEX_COMMON_SIKAKE_13_64
+pointer  objtex_common_texnames  0x00000180  OBJTEX_COMMON_SIKAKE_14_32
+pointer  objtex_common_texnames  0x0000018c  OBJTEX_COMMON_SIKAKE_15_64
+pointer  objtex_common_texnames  0x00000198  OBJTEX_COMMON_SIKAKE_16_64
+pointer  objtex_common_texnames  0x000001a4  OBJTEX_COMMON_SIKAKE_17_64
+pointer  objtex_common_texnames  0x000001b0  OBJTEX_COMMON_SIKAKE_18_128
+pointer  objtex_common_texnames  0x000001bc  OBJTEX_COMMON_SIKAKE_19_128
+pointer  objtex_common_texnames  0x000001c8  OBJTEX_COMMON_SIKAKE_20_128
+pointer  objtex_common_texnames  0x000001d4  OBJTEX_COMMON_SIKAKE_21_128
+pointer  objtex_common_texnames  0x000001e0  OBJTEX_COMMON_SIKAKE_22_64
+pointer  objtex_common_texnames  0x000001ec  OBJTEX_COMMON_SIKAKE_23_64
+pointer  objtex_common_texnames  0x000001f8  OBJTEX_COMMON_SIKAKE_24_64
+pointer  objtex_common_texnames  0x00000204  OBJTEX_COMMON_SIKAKE_25_64
+pointer  objtex_common_texnames  0x00000210  OBJTEX_COMMON_SIKAKE_26_64
+pointer  objtex_common_texnames  0x0000021c  OBJTEX_COMMON_SIKAKE_27_64
+pointer  objtex_common_texnames  0x00000228  OBJTEX_COMMON_SIKAKE_28_64
+pointer  objtex_common_texnames  0x00000234  OBJTEX_COMMON_SIKAKE_29_64
+pointer  objtex_common_texnames  0x00000240  OBJTEX_COMMON_SIKAKE_30_64
+pointer  objtex_common_texnames  0x0000024c  OBJTEX_COMMON_SIKAKE_31_128
+pointer  objtex_common_texnames  0x00000258  OBJTEX_COMMON_SIKAKE_32_64
+pointer  objtex_common_texnames  0x00000264  OBJTEX_COMMON_SIKAKE_33_128
+pointer  objtex_common_texnames  0x00000270  OBJTEX_COMMON_SIKAKE_34_64
+pointer  objtex_common_texnames  0x0000027c  OBJTEX_COMMON_SIKAKE_35_32
+pointer  objtex_common_texnames  0x00000288  OBJTEX_COMMON_SIKAKE_36_32
+pointer  objtex_common_texnames  0x00000294  OBJTEX_COMMON_SIKAKE_37_32
+pointer  objtex_common_texnames  0x000002a0  OBJTEX_COMMON_SIKAKE_38_128
+pointer  objtex_common_texnames  0x000002ac  OBJTEX_COMMON_SIKAKE_39_128
+pointer  objtex_common_texnames  0x000002b8  OBJTEX_COMMON_SIKAKE_40_64
+pointer  objtex_common_texnames  0x000002c4  OBJTEX_COMMON_SIKAKE_41_32
+pointer  objtex_common_texnames  0x000002d0  OBJTEX_COMMON_SIKAKE_42_32
+pointer  objtex_common_texnames  0x000002dc  OBJTEX_COMMON_SIKAKE_43_32
+pointer  objtex_common_texnames  0x000002e8  OBJTEX_COMMON_SIKAKE_44_32
+pointer  objtex_common_texnames  0x000002f4  OBJTEX_COMMON_SIKAKE_45_64
+pointer  objtex_common_texnames  0x00000300  OBJTEX_COMMON_SIKAKE_46_128
+pointer  objtex_common_texnames  0x0000030c  OBJTEX_COMMON_SIKAKE_47_128
+pointer  objtex_common_texnames  0x00000318  OBJTEX_COMMON_SIKAKE_48_64
+pointer  objtex_common_texnames  0x00000324  OBJTEX_COMMON_SIKAKE_49_64
+pointer  objtex_common_texnames  0x00000330  OBJTEX_COMMON_SIKAKE_50_64
+pointer  objtex_common_texnames  0x0000033c  OBJTEX_COMMON_SIKAKE_51_64
+pointer  objtex_common_texnames  0x00000348  OBJTEX_COMMON_SIKAKE_52_32
+pointer  objtex_common_texnames  0x00000354  OBJTEX_COMMON_THHIKARI01
+pointer  objtex_common_texnames  0x00000360  OBJTEX_COMMON_THHIKARI02
+pointer  objtex_common_texnames  0x0000036c  OBJTEX_COMMON_THHIKARI03
+pointer  objtex_common_texnames  0x00000378  OBJTEX_COMMON_THHIKARI04
+pointer  objtex_common_texnames  0x00000384  OBJTEX_COMMON_THHIKARI05
+pointer  objtex_common_texnames  0x00000390  OBJTEX_COMMON_THHIKARI06
+pointer  objtex_common_texnames  0x0000039c  OBJTEX_COMMON_THHIKARI07
+pointer  objtex_common_texnames  0x000003a8  OBJTEX_COMMON_THHIKARI08
+pointer  objtex_common_texnames  0x000003b4  OBJTEX_COMMON_THTSUBU01
+pointer  objtex_common_texnames  0x000003c0  OBJTEX_COMMON_THTSUBU02
+pointer  objtex_common_texnames  0x000003cc  OBJTEX_COMMON_THTSUBU03
+pointer  objtex_common_texnames  0x000003d8  OBJTEX_COMMON_THTSUBU04
+pointer  objtex_common_texnames  0x000003e4  OBJTEX_COMMON_THTSUBU05
+pointer  objtex_common_texnames  0x000003f0  OBJTEX_COMMON_THTSUBU06
+pointer  objtex_common_texnames  0x000003fc  OBJTEX_COMMON_THTSUBU07
+pointer  objtex_common_texnames  0x00000408  OBJTEX_COMMON_THTSUBU08
+pointer  objtex_common_texlist  0x00000000  objtex_common_texnames

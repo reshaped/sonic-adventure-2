@@ -1,0 +1,274 @@
+text  TRACK_000  13
+text  TRACK_001  13
+text  TRACK_002  12
+text  TRACK_003  13
+text  TRACK_004  13
+text  TRACK_005  13
+text  TRACK_006  13
+text  TRACK_007  13
+text  TRACK_008  13
+text  TRACK_009  13
+text  TRACK_010  13
+text  TRACK_011  13
+text  TRACK_012  13
+text  TRACK_013  13
+text  TRACK_014  13
+text  TRACK_015  13
+text  TRACK_016  13
+text  TRACK_017  13
+text  TRACK_018  13
+text  TRACK_019  13
+text  TRACK_020  13
+text  TRACK_021  13
+text  TRACK_022  13
+text  TRACK_023  13
+text  TRACK_024  13
+text  TRACK_025  13
+text  TRACK_026  13
+text  TRACK_027  13
+text  TRACK_028  13
+text  TRACK_029  13
+text  TRACK_030  13
+text  TRACK_031  13
+text  TRACK_032  13
+text  TRACK_033  13
+text  TRACK_034  11
+text  TRACK_035  13
+text  TRACK_036  13
+text  TRACK_037  13
+text  TRACK_038  13
+text  TRACK_039  13
+text  TRACK_040  12
+text  TRACK_041  12
+text  TRACK_042  12
+text  TRACK_043  12
+text  TRACK_044  12
+text  TRACK_045  13
+text  TRACK_046  13
+text  TRACK_047  13
+text  TRACK_048  13
+text  TRACK_049  13
+text  TRACK_050  13
+text  TRACK_051  13
+text  TRACK_052  11
+text  TRACK_053  17
+text  TRACK_054  17
+text  TRACK_055  17
+text  TRACK_056  18
+text  TRACK_057  18
+text  TRACK_058  19
+text  TRACK_059  18
+text  TRACK_060  19
+text  TRACK_061  19
+text  TRACK_062  17
+text  TRACK_063  16
+text  TRACK_064  21
+text  TRACK_065  22
+text  TRACK_066  21
+text  TRACK_067  21
+text  TRACK_068  21
+text  TRACK_069  21
+text  TRACK_070  22
+text  TRACK_071  20
+text  TRACK_072  21
+text  TRACK_073  14
+text  TRACK_074  23
+text  TRACK_075  21
+text  TRACK_076  20
+text  TRACK_077  22
+text  TRACK_078  22
+text  TRACK_079  22
+text  TRACK_080  22
+text  TRACK_081  22
+text  TRACK_082  22
+text  TRACK_083  13
+text  TRACK_084  20
+text  TRACK_085  13
+text  TRACK_086  13
+text  TRACK_087  13
+text  TRACK_088  13
+text  TRACK_089  21
+text  TRACK_090  13
+text  TRACK_091  20
+text  TRACK_092  13
+text  TRACK_093  13
+text  TRACK_094  13
+text  TRACK_095  13
+text  TRACK_096  13
+text  TRACK_097  13
+text  TRACK_098  13
+text  TRACK_099  13
+text  TRACK_100  13
+text  TRACK_101  13
+text  TRACK_102  12
+text  TRACK_103  12
+text  TRACK_104  11
+text  TRACK_105  12
+text  TRACK_106  11
+text  TRACK_107  11
+text  TRACK_108  11
+text  TRACK_109  13
+text  TRACK_110  13
+text  TRACK_111  9
+text  TRACK_112  13
+text  TRACK_113  12
+text  TRACK_114  12
+text  TRACK_115  11
+text  TRACK_116  12
+text  TRACK_117  13
+text  TRACK_118  11
+text  TRACK_119  11
+text  TRACK_120  11
+text  TRACK_121  11
+text  TRACK_122  10
+text  TRACK_123  13
+text  TRACK_124  11
+text  TRACK_125  12
+text  TRACK_126  11
+text  TRACK_127  12
+text  TRACK_128  13
+text  TRACK_129  13
+text  TRACK_130  13
+text  TRACK_131  11
+text  TRACK_132  10
+text  TRACK_133  10
+text  TRACK_134  10
+text  TRACK_135  13
+text  TRACK_136  12
+pointer  music_names  0x00000000  TRACK_000
+pointer  music_names  0x00000004  TRACK_001
+pointer  music_names  0x00000008  TRACK_002
+pointer  music_names  0x0000000c  TRACK_003
+pointer  music_names  0x00000010  TRACK_004
+pointer  music_names  0x00000014  TRACK_005
+pointer  music_names  0x00000018  TRACK_006
+pointer  music_names  0x0000001c  TRACK_007
+pointer  music_names  0x00000020  TRACK_008
+pointer  music_names  0x00000024  TRACK_009
+pointer  music_names  0x00000028  TRACK_010
+pointer  music_names  0x0000002c  TRACK_011
+pointer  music_names  0x00000030  TRACK_012
+pointer  music_names  0x00000034  TRACK_013
+pointer  music_names  0x00000038  TRACK_014
+pointer  music_names  0x0000003c  TRACK_015
+pointer  music_names  0x00000040  TRACK_016
+pointer  music_names  0x00000044  TRACK_017
+pointer  music_names  0x00000048  TRACK_018
+pointer  music_names  0x0000004c  TRACK_019
+pointer  music_names  0x00000050  TRACK_020
+pointer  music_names  0x00000054  TRACK_021
+pointer  music_names  0x00000058  TRACK_022
+pointer  music_names  0x0000005c  TRACK_023
+pointer  music_names  0x00000060  TRACK_024
+pointer  music_names  0x00000064  TRACK_025
+pointer  music_names  0x00000068  TRACK_026
+pointer  music_names  0x0000006c  TRACK_027
+pointer  music_names  0x00000070  TRACK_028
+pointer  music_names  0x00000074  TRACK_029
+pointer  music_names  0x00000078  TRACK_030
+pointer  music_names  0x0000007c  TRACK_031
+pointer  music_names  0x00000080  TRACK_032
+pointer  music_names  0x00000084  TRACK_033
+pointer  music_names  0x00000088  TRACK_034
+pointer  music_names  0x0000008c  TRACK_035
+pointer  music_names  0x00000090  TRACK_036
+pointer  music_names  0x00000094  TRACK_037
+pointer  music_names  0x00000098  TRACK_038
+pointer  music_names  0x0000009c  TRACK_039
+pointer  music_names  0x000000a0  TRACK_040
+pointer  music_names  0x000000a4  TRACK_041
+pointer  music_names  0x000000a8  TRACK_042
+pointer  music_names  0x000000ac  TRACK_043
+pointer  music_names  0x000000b0  TRACK_044
+pointer  music_names  0x000000b4  TRACK_045
+pointer  music_names  0x000000b8  TRACK_046
+pointer  music_names  0x000000bc  TRACK_047
+pointer  music_names  0x000000c0  TRACK_048
+pointer  music_names  0x000000c4  TRACK_049
+pointer  music_names  0x000000c8  TRACK_050
+pointer  music_names  0x000000cc  TRACK_051
+pointer  music_names  0x000000d0  TRACK_052
+pointer  music_names  0x000000d4  TRACK_053
+pointer  music_names  0x000000d8  TRACK_054
+pointer  music_names  0x000000dc  TRACK_055
+pointer  music_names  0x000000e0  TRACK_056
+pointer  music_names  0x000000e4  TRACK_057
+pointer  music_names  0x000000e8  TRACK_058
+pointer  music_names  0x000000ec  TRACK_059
+pointer  music_names  0x000000f0  TRACK_060
+pointer  music_names  0x000000f4  TRACK_061
+pointer  music_names  0x000000f8  TRACK_062
+pointer  music_names  0x000000fc  TRACK_063
+pointer  music_names  0x00000100  TRACK_064
+pointer  music_names  0x00000104  TRACK_065
+pointer  music_names  0x00000108  TRACK_066
+pointer  music_names  0x0000010c  TRACK_067
+pointer  music_names  0x00000110  TRACK_068
+pointer  music_names  0x00000114  TRACK_069
+pointer  music_names  0x00000118  TRACK_070
+pointer  music_names  0x0000011c  TRACK_071
+pointer  music_names  0x00000120  TRACK_072
+pointer  music_names  0x00000124  TRACK_073
+pointer  music_names  0x00000128  TRACK_074
+pointer  music_names  0x0000012c  TRACK_075
+pointer  music_names  0x00000130  TRACK_076
+pointer  music_names  0x00000134  TRACK_077
+pointer  music_names  0x00000138  TRACK_078
+pointer  music_names  0x0000013c  TRACK_079
+pointer  music_names  0x00000140  TRACK_080
+pointer  music_names  0x00000144  TRACK_081
+pointer  music_names  0x00000148  TRACK_082
+pointer  music_names  0x0000014c  TRACK_083
+pointer  music_names  0x00000150  TRACK_084
+pointer  music_names  0x00000154  TRACK_085
+pointer  music_names  0x00000158  TRACK_086
+pointer  music_names  0x0000015c  TRACK_087
+pointer  music_names  0x00000160  TRACK_088
+pointer  music_names  0x00000164  TRACK_089
+pointer  music_names  0x00000168  TRACK_090
+pointer  music_names  0x0000016c  TRACK_091
+pointer  music_names  0x00000170  TRACK_092
+pointer  music_names  0x00000174  TRACK_093
+pointer  music_names  0x00000178  TRACK_094
+pointer  music_names  0x0000017c  TRACK_095
+pointer  music_names  0x00000180  TRACK_096
+pointer  music_names  0x00000184  TRACK_097
+pointer  music_names  0x00000188  TRACK_098
+pointer  music_names  0x0000018c  TRACK_099
+pointer  music_names  0x00000190  TRACK_100
+pointer  music_names  0x00000194  TRACK_101
+pointer  music_names  0x00000198  TRACK_102
+pointer  music_names  0x0000019c  TRACK_103
+pointer  music_names  0x000001a0  TRACK_104
+pointer  music_names  0x000001a4  TRACK_105
+pointer  music_names  0x000001a8  TRACK_106
+pointer  music_names  0x000001ac  TRACK_107
+pointer  music_names  0x000001b0  TRACK_108
+pointer  music_names  0x000001b4  TRACK_109
+pointer  music_names  0x000001b8  TRACK_110
+pointer  music_names  0x000001bc  TRACK_111
+pointer  music_names  0x000001c0  TRACK_112
+pointer  music_names  0x000001c4  TRACK_113
+pointer  music_names  0x000001c8  TRACK_114
+pointer  music_names  0x000001cc  TRACK_115
+pointer  music_names  0x000001d0  TRACK_116
+pointer  music_names  0x000001d4  TRACK_117
+pointer  music_names  0x000001d8  TRACK_118
+pointer  music_names  0x000001dc  TRACK_119
+pointer  music_names  0x000001e0  TRACK_120
+pointer  music_names  0x000001e4  TRACK_121
+pointer  music_names  0x000001e8  TRACK_122
+pointer  music_names  0x000001ec  TRACK_123
+pointer  music_names  0x000001f0  TRACK_124
+pointer  music_names  0x000001f4  TRACK_125
+pointer  music_names  0x000001f8  TRACK_126
+pointer  music_names  0x000001fc  TRACK_127
+pointer  music_names  0x00000200  TRACK_128
+pointer  music_names  0x00000204  TRACK_129
+pointer  music_names  0x00000208  TRACK_130
+pointer  music_names  0x0000020c  TRACK_131
+pointer  music_names  0x00000210  TRACK_132
+pointer  music_names  0x00000214  TRACK_133
+pointer  music_names  0x00000218  TRACK_134
+pointer  music_names  0x0000021c  TRACK_135
+pointer  music_names  0x00000220  TRACK_136

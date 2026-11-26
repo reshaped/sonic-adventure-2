@@ -1,0 +1,71 @@
+/* the Egg Golem's motions, which golem.c's motion table plays on the statue.
+ * each has GOLEM_ANIMATED_JOINTS channels, one for each of the statue's nodes
+ * in depth-first order. each fight defines its own golem_motion_opening and
+ * golem_motion_pose_62, and the two share the rest */
+#ifndef SHARED_GOLEM_CLIPS_H
+#define SHARED_GOLEM_CLIPS_H
+
+#include <ninja.h>
+
+#define GOLEM_ANIMATED_JOINTS 21
+
+extern NJS_MOTION golem_motion_slam_start;
+extern NJS_MOTION golem_motion_slam_blows_whole;
+extern NJS_MOTION golem_motion_slam_slam_whole;
+extern NJS_MOTION golem_motion_slam_end_whole;
+extern NJS_MOTION golem_motion_slam_blows_sunk;
+extern NJS_MOTION golem_motion_slam_slam_sunk;
+extern NJS_MOTION golem_motion_slam_end_sunk;
+extern NJS_MOTION golem_motion_slam_blows_sunk_twice;
+extern NJS_MOTION golem_motion_slam_slam_sunk_twice;
+extern NJS_MOTION golem_motion_slam_end_sunk_twice;
+extern NJS_MOTION golem_motion_strike_a_start;
+extern NJS_MOTION golem_motion_strike_a_blow_whole;
+extern NJS_MOTION golem_motion_strike_a_rise_whole;
+extern NJS_MOTION golem_motion_strike_a_second_blow_whole;
+extern NJS_MOTION golem_motion_strike_a_second_rise_whole;
+extern NJS_MOTION golem_motion_strike_a_blow_sunk;
+extern NJS_MOTION golem_motion_strike_a_rise_sunk;
+extern NJS_MOTION golem_motion_strike_a_second_blow_sunk;
+extern NJS_MOTION golem_motion_strike_a_second_rise_sunk;
+extern NJS_MOTION golem_motion_strike_a_blow_sunk_twice;
+extern NJS_MOTION golem_motion_strike_a_rise_sunk_twice;
+extern NJS_MOTION golem_motion_strike_a_second_blow_sunk_twice;
+extern NJS_MOTION golem_motion_strike_a_second_rise_sunk_twice;
+extern NJS_MOTION golem_motion_strike_b_start;
+extern NJS_MOTION golem_motion_strike_b_blow_whole;
+extern NJS_MOTION golem_motion_strike_b_rise_whole;
+extern NJS_MOTION golem_motion_strike_b_second_blow_whole;
+extern NJS_MOTION golem_motion_strike_b_second_rise_whole;
+extern NJS_MOTION golem_motion_strike_b_blow_sunk;
+extern NJS_MOTION golem_motion_strike_b_rise_sunk;
+extern NJS_MOTION golem_motion_strike_b_second_blow_sunk;
+extern NJS_MOTION golem_motion_strike_b_second_rise_sunk;
+extern NJS_MOTION golem_motion_strike_b_blow_sunk_twice;
+extern NJS_MOTION golem_motion_strike_b_rise_sunk_twice;
+extern NJS_MOTION golem_motion_strike_b_second_blow_sunk_twice;
+extern NJS_MOTION golem_motion_strike_b_second_rise_sunk_twice;
+extern NJS_MOTION golem_motion_hands_down_a_lower_whole;
+extern NJS_MOTION golem_motion_hands_down_a_hold_whole;
+extern NJS_MOTION golem_motion_hands_down_a_rise_whole;
+extern NJS_MOTION golem_motion_hands_down_a_lower_sunk;
+extern NJS_MOTION golem_motion_hands_down_a_hold_sunk;
+extern NJS_MOTION golem_motion_hands_down_a_rise_sunk;
+extern NJS_MOTION golem_motion_hands_down_a_lower_sunk_twice;
+extern NJS_MOTION golem_motion_hands_down_a_hold_sunk_twice;
+extern NJS_MOTION golem_motion_hands_down_a_rise_sunk_twice;
+extern NJS_MOTION golem_motion_hands_down_b_lower_whole;
+extern NJS_MOTION golem_motion_hands_down_b_hold_whole;
+extern NJS_MOTION golem_motion_hands_down_b_rise_whole;
+extern NJS_MOTION golem_motion_hands_down_b_lower_sunk;
+extern NJS_MOTION golem_motion_hands_down_b_hold_sunk;
+extern NJS_MOTION golem_motion_hands_down_b_rise_sunk;
+extern NJS_MOTION golem_motion_hands_down_b_lower_sunk_twice;
+extern NJS_MOTION golem_motion_hands_down_b_hold_sunk_twice;
+extern NJS_MOTION golem_motion_hands_down_b_rise_sunk_twice;
+extern NJS_MOTION golem_motion_idle;
+extern NJS_MOTION golem_motion_death;
+extern NJS_MOTION golem_motion_opening;
+extern NJS_MOTION golem_motion_pose_62;
+
+#endif

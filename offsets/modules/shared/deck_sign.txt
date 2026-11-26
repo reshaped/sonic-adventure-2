@@ -1,0 +1,14 @@
+datum  editor_rotation_y  C  0x00000000  12
+text  DECK_SIGN_TEXTURE_MIU64_IG018  C  0x0000000c  12
+text  DECK_SIGN_TEXTURE_PR128_12  C  0x00000018  9
+datum  deck_sign_textures  D  0x00000000  24
+datum  deck_sign_texlist  D  0x00000018  8
+datum  deck_sign_panel_polygons  D  0x00000020  66
+datum  deck_sign_panel_vertices  D  0x00000064  108
+datum  deck_sign_panel_model  D  0x000000d0  24
+datum  deck_sign_panel  D  0x000000e8  52
+datum  deck_sign_polygons  D  0x0000011c  182
+datum  deck_sign_vertices  D  0x000001d4  204
+datum  deck_sign_model  D  0x000002a0  24
+datum  deck_sign_object  D  0x000002b8  52
+datum  deck_sign_texlists  D  0x000002ec  8

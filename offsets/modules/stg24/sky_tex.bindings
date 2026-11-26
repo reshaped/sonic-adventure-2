@@ -1,0 +1,62 @@
+text  ENGINE_SKY_SPACENBG128  12
+text  ENGINE_SKY_SPACENBG64  11
+text  ENGINE_SKY_TX_LIGHT001  12
+text  ENGINE_SKY_TX_LIGHT002  12
+text  ENGINE_SKY_TX_LIGHT003  12
+text  ENGINE_SKY_TX_LIGHT004  12
+text  ENGINE_SKY_TX_LIGHT005  12
+text  ENGINE_SKY_TX_POISON001  13
+text  ENGINE_SKY_TX_POISON002  13
+text  ENGINE_SKY_TX_POISON003  13
+text  ENGINE_SKY_TX_POISON004  13
+text  ENGINE_SKY_TX_POISON005  13
+text  ENGINE_SKY_TX_POISON006  13
+text  ENGINE_SKY_TX_POISON007  13
+text  ENGINE_SKY_TX_POISON008  13
+text  ENGINE_SKY_TX_POISON009  13
+text  ENGINE_SKY_TX_POISON010  13
+text  ENGINE_SKY_TX_POISON011  13
+text  ENGINE_SKY_TX_POISON012  13
+text  ENGINE_SKY_TX_POISON013  13
+text  ENGINE_BACKGROUND_PVM  8
+
+pointer  engine_background_archive_names  0x00000000  ENGINE_SKY_SPACENBG128
+pointer  engine_background_archive_names  0x0000000c  ENGINE_SKY_SPACENBG64
+pointer  engine_background_archive_names  0x00000018  ENGINE_SKY_TX_LIGHT001
+pointer  engine_background_archive_names  0x00000024  ENGINE_SKY_TX_LIGHT002
+pointer  engine_background_archive_names  0x00000030  ENGINE_SKY_TX_LIGHT003
+pointer  engine_background_archive_names  0x0000003c  ENGINE_SKY_TX_LIGHT004
+pointer  engine_background_archive_names  0x00000048  ENGINE_SKY_TX_LIGHT005
+pointer  engine_background_archive_names  0x00000054  ENGINE_SKY_TX_POISON001
+pointer  engine_background_archive_names  0x00000060  ENGINE_SKY_TX_POISON002
+pointer  engine_background_archive_names  0x0000006c  ENGINE_SKY_TX_POISON003
+pointer  engine_background_archive_names  0x00000078  ENGINE_SKY_TX_POISON004
+pointer  engine_background_archive_names  0x00000084  ENGINE_SKY_TX_POISON005
+pointer  engine_background_archive_names  0x00000090  ENGINE_SKY_TX_POISON006
+pointer  engine_background_archive_names  0x0000009c  ENGINE_SKY_TX_POISON007
+pointer  engine_background_archive_names  0x000000a8  ENGINE_SKY_TX_POISON008
+pointer  engine_background_archive_names  0x000000b4  ENGINE_SKY_TX_POISON009
+pointer  engine_background_archive_names  0x000000c0  ENGINE_SKY_TX_POISON010
+pointer  engine_background_archive_names  0x000000cc  ENGINE_SKY_TX_POISON011
+pointer  engine_background_archive_names  0x000000d8  ENGINE_SKY_TX_POISON012
+pointer  engine_background_archive_names  0x000000e4  ENGINE_SKY_TX_POISON013
+pointer  engine_background_archive  0x00000000  engine_background_archive_names
+pointer  engine_sky_texlist_names  0x00000000  ENGINE_SKY_SPACENBG128
+pointer  engine_sky_texlist_names  0x0000000c  ENGINE_SKY_SPACENBG64
+pointer  engine_sky_texlist  0x00000000  engine_sky_texlist_names
+pointer  engine_outer_sky_model  0x00000000  engine_outer_sky_vertices
+pointer  engine_outer_sky_model  0x00000004  engine_outer_sky_polygons
+pointer  engine_outer_sky  0x00000004  engine_outer_sky_model
+pointer  inner_sky_textures_names  0x00000000  ENGINE_SKY_SPACENBG128
+pointer  inner_sky_textures_names  0x0000000c  ENGINE_SKY_SPACENBG64
+pointer  inner_sky_textures  0x00000000  inner_sky_textures_names
+pointer  engine_inner_sky_model  0x00000000  engine_inner_sky_vertices
+pointer  engine_inner_sky_model  0x00000004  engine_inner_sky_polygons
+pointer  engine_inner_sky  0x00000004  engine_inner_sky_model
+pointer  sky_textures  0x00000000  engine_sky_texlist
+pointer  sky_textures  0x00000004  inner_sky_textures
+pointer  sky_textures  0x00000008  engine_poison_texlist
+pointer  sky_textures  0x0000000c  engine_pulse_texlist
+pointer  engine_bg_groups  0x00000000  sky_textures
+pointer  engine_bg_pvms  0x00000000  ENGINE_BACKGROUND_PVM
+pointer  engine_bg_pvms  0x00000004  engine_background_archive

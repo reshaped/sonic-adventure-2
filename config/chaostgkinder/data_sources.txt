@@ -1,0 +1,9 @@
+modules/chaostgkinder/character_art.c
+modules/chaostgkinder/dat_0ca8c350.c
+modules/chaostgkinder/dat_0ca984f4.c
+modules/chaostgkinder/dat_0caa7868.c
+modules/chaostgkinder/dat_0cab1714.c
+modules/chaostgkinder/dat_0cac1504.c
+modules/chaostgkinder/dat_0cacc7a0.c
+modules/chaostgkinder/door_motions.c
+modules/chaostgkinder/terrain.c

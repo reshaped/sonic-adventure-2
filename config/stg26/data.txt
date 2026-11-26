@@ -1,0 +1,8 @@
+# Native address, terrain object, Ninja or collision type and dimensions or links.
+# Drawn entries use chunk objects. The remaining entries use Basic collision objects.
+0x8c54b4f0  layout  painting_cobra_filenames
+0x8c54b520  .fish_picture_filename  texture_filename  24
+0x8c54b538  .scorpion_picture_filename  texture_filename  28
+0x8c5b57c8  layout  painting_0
+0x8c5b5ae4  layout  painting_1
+0x8c5b5e00  layout  painting_2

@@ -1,0 +1,3 @@
+pointer  engine_hatch_texlists  0x00000000  floor_hatch_texlist
+pointer  engine_hatch_texlists  0x00000004  wall_hatch_texlist
+pointer  engine_hatch_texlists  0x00000008  engine_hatch_air_texlist

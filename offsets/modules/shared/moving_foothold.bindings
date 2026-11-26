@@ -1,0 +1,105 @@
+text  FOOTHOLD_HASIRA3  14
+text  FOOTHOLD_HASIRA5  14
+text  FOOTHOLD_KABE2  12
+text  FOOTHOLD_OTHER1  13
+text  FOOTHOLD_KAGE1  12
+text  FOOTHOLD_SHORT  5
+text  FOOTHOLD_MEDIUM  5
+text  FOOTHOLD_LONG  5
+text  FOOTHOLD_SHORT_F  5
+text  FOOTHOLD_MEDIUM_F  5
+text  FOOTHOLD_LONG_F  5
+pointer  short_f_textures  0x00000000  FOOTHOLD_HASIRA3
+pointer  short_f_textures  0x0000000c  FOOTHOLD_HASIRA5
+pointer  short_f_textures  0x00000018  FOOTHOLD_KABE2
+pointer  short_f_texlist  0x00000000  short_f_textures
+pointer  short_f_mesh  0x00000000  short_f_vertices
+pointer  short_f_mesh  0x00000004  short_f_polygons
+pointer  short_f_object  0x00000004  short_f_mesh
+pointer  medium_f_textures  0x00000000  FOOTHOLD_HASIRA3
+pointer  medium_f_textures  0x0000000c  FOOTHOLD_HASIRA5
+pointer  medium_f_textures  0x00000018  FOOTHOLD_KABE2
+pointer  medium_f_texlist  0x00000000  medium_f_textures
+pointer  medium_f_mesh  0x00000000  medium_f_vertices
+pointer  medium_f_mesh  0x00000004  medium_f_polygons
+pointer  medium_f_object  0x00000004  medium_f_mesh
+pointer  long_f_textures  0x00000000  FOOTHOLD_HASIRA3
+pointer  long_f_textures  0x0000000c  FOOTHOLD_HASIRA5
+pointer  long_f_textures  0x00000018  FOOTHOLD_KABE2
+pointer  long_f_texlist  0x00000000  long_f_textures
+pointer  long_f_mesh  0x00000000  long_f_vertices
+pointer  long_f_mesh  0x00000004  long_f_polygons
+pointer  long_f_object  0x00000004  long_f_mesh
+pointer  short_textures  0x00000000  FOOTHOLD_HASIRA5
+pointer  short_textures  0x0000000c  FOOTHOLD_KABE2
+pointer  short_textures  0x00000018  FOOTHOLD_OTHER1
+pointer  short_texlist  0x00000000  short_textures
+pointer  short_mesh  0x00000000  short_vertices
+pointer  short_mesh  0x00000004  short_polygons
+pointer  short_object  0x00000004  short_mesh
+pointer  medium_textures  0x00000000  FOOTHOLD_HASIRA5
+pointer  medium_textures  0x0000000c  FOOTHOLD_KABE2
+pointer  medium_textures  0x00000018  FOOTHOLD_OTHER1
+pointer  medium_texlist  0x00000000  medium_textures
+pointer  medium_mesh  0x00000000  medium_vertices
+pointer  medium_mesh  0x00000004  medium_polygons
+pointer  medium_object  0x00000004  medium_mesh
+pointer  long_textures  0x00000000  FOOTHOLD_HASIRA5
+pointer  long_textures  0x0000000c  FOOTHOLD_KABE2
+pointer  long_textures  0x00000018  FOOTHOLD_OTHER1
+pointer  long_texlist  0x00000000  long_textures
+pointer  long_mesh  0x00000000  long_vertices
+pointer  long_mesh  0x00000004  long_polygons
+pointer  long_object  0x00000004  long_mesh
+pointer  shadow_textures  0x00000000  FOOTHOLD_HASIRA3
+pointer  shadow_textures  0x0000000c  FOOTHOLD_HASIRA5
+pointer  shadow_textures  0x00000018  FOOTHOLD_KABE2
+pointer  shadow_textures  0x00000024  FOOTHOLD_KAGE1
+pointer  shadow_texlist  0x00000000  shadow_textures
+pointer  shadow_mesh  0x00000000  shadow_vertices
+pointer  shadow_mesh  0x00000004  shadow_polygons
+pointer  foothold_shadow_node  0x00000004  shadow_mesh
+pointer  short_faces  0x00000004  short_strips
+pointer  short_hull  0x00000000  short_points
+pointer  short_hull  0x00000004  short_normals
+pointer  short_hull  0x0000000c  short_faces
+pointer  short_hull  0x00000010  short_material
+pointer  short_collision  0x00000004  short_hull
+pointer  medium_faces  0x00000004  medium_strips
+pointer  medium_hull  0x00000000  medium_points
+pointer  medium_hull  0x00000004  medium_normals
+pointer  medium_hull  0x0000000c  medium_faces
+pointer  medium_hull  0x00000010  medium_material
+pointer  medium_collision  0x00000004  medium_hull
+pointer  long_faces  0x00000004  long_strips
+pointer  long_hull  0x00000000  long_points
+pointer  long_hull  0x00000004  long_normals
+pointer  long_hull  0x0000000c  long_faces
+pointer  long_hull  0x00000010  long_material
+pointer  long_collision  0x00000004  long_hull
+pointer  moving_foothold_models  0x00000000  short_mesh
+pointer  moving_foothold_models  0x00000004  medium_mesh
+pointer  moving_foothold_models  0x00000008  long_mesh
+pointer  moving_foothold_models  0x0000000c  short_f_mesh
+pointer  moving_foothold_models  0x00000010  medium_f_mesh
+pointer  moving_foothold_models  0x00000014  long_f_mesh
+pointer  moving_foothold_models  0x00000018  shadow_mesh
+pointer  moving_foothold_texlists  0x00000000  short_texlist
+pointer  moving_foothold_texlists  0x00000004  medium_texlist
+pointer  moving_foothold_texlists  0x00000008  long_texlist
+pointer  moving_foothold_texlists  0x0000000c  short_f_texlist
+pointer  moving_foothold_texlists  0x00000010  medium_f_texlist
+pointer  moving_foothold_texlists  0x00000014  long_f_texlist
+pointer  moving_foothold_texlists  0x00000018  shadow_texlist
+pointer  moving_foothold_objects  0x00000000  short_collision
+pointer  moving_foothold_objects  0x00000004  medium_collision
+pointer  moving_foothold_objects  0x00000008  long_collision
+pointer  moving_foothold_objects  0x0000000c  short_collision
+pointer  moving_foothold_objects  0x00000010  medium_collision
+pointer  moving_foothold_objects  0x00000014  long_collision
+pointer  moving_foothold_names  0x00000000  FOOTHOLD_SHORT
+pointer  moving_foothold_names  0x00000004  FOOTHOLD_MEDIUM
+pointer  moving_foothold_names  0x00000008  FOOTHOLD_LONG
+pointer  moving_foothold_names  0x0000000c  FOOTHOLD_SHORT_F
+pointer  moving_foothold_names  0x00000010  FOOTHOLD_MEDIUM_F
+pointer  moving_foothold_names  0x00000014  FOOTHOLD_LONG_F

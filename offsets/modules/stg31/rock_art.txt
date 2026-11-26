@@ -1,0 +1,8 @@
+datum  rock_polygons  D  0x00000000  734
+datum  rock_vertices  D  0x000002e0  988
+datum  rock_model  D  0x000006bc  24
+datum  green_hill_rock_object  D  0x000006d4  52
+datum  shadow_polygons  D  0x00000708  170
+datum  shadow_vertices  D  0x000007b4  668
+datum  shadow_model  D  0x00000a50  24
+datum  green_hill_shadow_object  D  0x00000a68  52

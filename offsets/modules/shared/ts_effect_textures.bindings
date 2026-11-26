@@ -1,0 +1,14 @@
+text  TIME_SWITCH_CIRCLE_TEXTURE  26
+pointer  textures  0x00000000  TIME_SWITCH_CIRCLE_TEXTURE
+pointer  time_switch_effect_texlist  0x00000000  textures
+pointer  back_arc_model  0x00000000  back_arc_vertices
+pointer  back_arc_model  0x00000004  back_arc_polygons
+pointer  back_arc  0x00000004  back_arc_model
+pointer  front_arc_model  0x00000000  front_arc_vertices
+pointer  front_arc_model  0x00000004  front_arc_polygons
+pointer  front_arc  0x00000004  front_arc_model
+pointer  front_arc  0x00000030  back_arc
+pointer  time_switch_effect  0x0000002c  front_arc
+pointer  arc_channels  0x0000001c  front_arc_rotation
+pointer  arc_channels  0x00000034  back_arc_rotation
+pointer  time_switch_motion  0x00000000  arc_channels

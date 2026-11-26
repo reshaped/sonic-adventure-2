@@ -1,0 +1,59 @@
+text ITEM_10RING_TEXTURE 13
+text ITEM_20RING_TEXTURE 13
+text ITEM_5RING_TEXTURE 12
+text ITEM_BARRIER_TEXTURE 14
+text ITEM_BOMB_TEXTURE 11
+text ITEM_LIFE_TEXTURE 11
+text ITEM_MAGNET_TEXTURE 13
+text ITEM_RANDOMRING_TEXTURE 17
+text ITEM_SPEED_TEXTURE 12
+text ITEM_SUPER_TEXTURE 12
+text ITEM_1UP_TEXTURE 10
+text ITEM_1UP4_TEXTURE 11
+text ITEM_1UP3_TEXTURE 11
+text ITEM_1UP6_TEXTURE 11
+text ITEM_1UP2_TEXTURE 11
+text ITEM_1UP5_TEXTURE 11
+text ITEM_10RING_LABEL 7
+text ITEM_20RING_LABEL 7
+text ITEM_5RING_LABEL 6
+text ITEM_BARRIER_LABEL 8
+text ITEM_BOMB_LABEL 5
+text ITEM_LIFE_LABEL 5
+text ITEM_MAGNET_LABEL 7
+text ITEM_RNDRING_LABEL 8
+text ITEM_SPEED_LABEL 6
+text ITEM_SUPER_LABEL 6
+text ITEM_1UP_LABEL 4
+
+pointer  item_icon_texnames  0x00000000  ITEM_10RING_TEXTURE
+pointer  item_icon_texnames  0x0000000c  ITEM_20RING_TEXTURE
+pointer  item_icon_texnames  0x00000018  ITEM_5RING_TEXTURE
+pointer  item_icon_texnames  0x00000024  ITEM_BARRIER_TEXTURE
+pointer  item_icon_texnames  0x00000030  ITEM_BOMB_TEXTURE
+pointer  item_icon_texnames  0x0000003c  ITEM_LIFE_TEXTURE
+pointer  item_icon_texnames  0x00000048  ITEM_MAGNET_TEXTURE
+pointer  item_icon_texnames  0x00000054  ITEM_RANDOMRING_TEXTURE
+pointer  item_icon_texnames  0x00000060  ITEM_SPEED_TEXTURE
+pointer  item_icon_texnames  0x0000006c  ITEM_SUPER_TEXTURE
+pointer  item_icon_texnames  0x00000078  ITEM_1UP_TEXTURE
+pointer  item_icon_texnames  0x00000084  ITEM_1UP4_TEXTURE
+pointer  item_icon_texnames  0x00000090  ITEM_1UP3_TEXTURE
+pointer  item_icon_texnames  0x0000009c  ITEM_1UP6_TEXTURE
+pointer  item_icon_texnames  0x000000a8  ITEM_1UP2_TEXTURE
+pointer  item_icon_texnames  0x000000b4  ITEM_1UP5_TEXTURE
+pointer  item_icon_texnames  0x000000c0  ITEM_1UP3_TEXTURE
+pointer  item_icon_texnames  0x000000cc  ITEM_1UP6_TEXTURE
+pointer  item_icon_texnames  0x000000d8  ITEM_1UP_TEXTURE
+pointer  item_icon_texlist  0x00000000  item_icon_texnames
+pointer  item_icon_names  0x00000000  ITEM_10RING_LABEL
+pointer  item_icon_names  0x00000004  ITEM_20RING_LABEL
+pointer  item_icon_names  0x00000008  ITEM_5RING_LABEL
+pointer  item_icon_names  0x0000000c  ITEM_BARRIER_LABEL
+pointer  item_icon_names  0x00000010  ITEM_BOMB_LABEL
+pointer  item_icon_names  0x00000014  ITEM_LIFE_LABEL
+pointer  item_icon_names  0x00000018  ITEM_MAGNET_LABEL
+pointer  item_icon_names  0x0000001c  ITEM_RNDRING_LABEL
+pointer  item_icon_names  0x00000020  ITEM_SPEED_LABEL
+pointer  item_icon_names  0x00000024  ITEM_SUPER_LABEL
+pointer  item_icon_names  0x00000028  ITEM_1UP_LABEL

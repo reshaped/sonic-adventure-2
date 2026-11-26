@@ -1,0 +1,9 @@
+text  GADGET_BOX_SIDE_TEXTURE  14
+text  GADGET_BOX_END_TEXTURE  14
+
+pointer  floating_box_textures  0x00000000  GADGET_BOX_SIDE_TEXTURE
+pointer  floating_box_textures  0x0000000c  GADGET_BOX_END_TEXTURE
+pointer  floating_box_texlist  0x00000000  floating_box_textures
+pointer  floating_box_model  0x00000000  floating_box_vertices
+pointer  floating_box_model  0x00000004  floating_box_polygons
+pointer  floating_box_object  0x00000004  floating_box_model

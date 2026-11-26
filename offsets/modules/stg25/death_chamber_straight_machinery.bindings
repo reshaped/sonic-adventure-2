@@ -1,0 +1,3 @@
+pointer  machinery_straight_model  0x00000000  machinery_straight_vertices
+pointer  machinery_straight_model  0x00000004  machinery_straight_polygons
+pointer  machinery_straight_object  0x00000004  machinery_straight_model

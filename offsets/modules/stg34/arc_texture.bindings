@@ -1,0 +1,7 @@
+text  SONIC_ARC_TEXTURE_KD_LS_UNIT801  14
+
+pointer  textures  0x00000000  SONIC_ARC_TEXTURE_KD_LS_UNIT801
+pointer  electric_arc_texlist  0x00000000  textures
+pointer  electric_arc_model  0x00000000  electric_arc_vertices
+pointer  electric_arc_model  0x00000004  electric_arc_polygons
+pointer  electric_arc_object  0x00000004  electric_arc_model

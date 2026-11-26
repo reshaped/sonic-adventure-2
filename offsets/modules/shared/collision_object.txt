@@ -1,0 +1,6 @@
+datum  collision_sphere_shapes  D  0x00000000  48
+datum  collision_cylinder_shapes  D  0x00000030  48
+datum  collision_cube_shapes  D  0x00000060  48
+datum  collision_wall_shapes  D  0x00000090  48
+datum  dat_collision_object_0  D  0x000000c0  48
+datum  collision_circle_shapes  D  0x000000f0  48

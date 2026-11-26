@@ -1,0 +1,4 @@
+datum  bubble_frames  D  0x00000000  240
+datum  first_splash_frames  D  0x000000f0  144
+datum  second_splash_frames  D  0x00000180  60
+datum  water_splash_frames  D  0x000001bc  64

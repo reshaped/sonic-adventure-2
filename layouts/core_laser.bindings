@@ -1,0 +1,20 @@
+text CORE_LASER_TEXTURE_MIU128_CG007  13
+text CORE_LASER_TEXTURE_MIU64_CG021  12
+text CORE_LASER_TEXTURE_MIU64_EE001  12
+
+pointer core_laser_names  0x00000000  CORE_LASER_TEXTURE_MIU128_CG007
+pointer core_laser_names  0x0000000c  CORE_LASER_TEXTURE_MIU64_CG021
+pointer core_laser_names  0x00000018  CORE_LASER_TEXTURE_MIU64_EE001
+pointer core_laser_texlist  0x00000000  core_laser_names
+pointer core_laser_right_model  0x00000000  core_laser_right_vertices
+pointer core_laser_right_model  0x00000004  core_laser_right_polygons
+pointer core_laser_right  0x00000004  core_laser_right_model
+pointer core_laser_left_model  0x00000000  core_laser_left_vertices
+pointer core_laser_left_model  0x00000004  core_laser_left_polygons
+pointer core_laser_left  0x00000004  core_laser_left_model
+pointer core_laser_left  0x00000030  core_laser_right
+pointer core_laser_beam_model  0x00000000  core_laser_beam_vertices
+pointer core_laser_beam_model  0x00000004  core_laser_beam_polygons
+pointer core_laser_beam  0x00000004  core_laser_beam_model
+pointer core_laser_beam  0x0000002c  core_laser_left
+pointer core_laser_texlists  0x00000000  core_laser_texlist

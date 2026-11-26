@@ -1,0 +1,5 @@
+pointer  security_cylinder_base_model  0x00000000  security_cylinder_base_vertices
+pointer  security_cylinder_base_model  0x00000004  security_cylinder_base_polygons
+pointer  security_cylinder_base_object  0x00000004  security_cylinder_base_model
+pointer  textures  0x00000000  security_miu64_sh001
+pointer  security_cylinder_base_texlist  0x00000000  textures

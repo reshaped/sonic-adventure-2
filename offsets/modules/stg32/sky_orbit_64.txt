@@ -1,0 +1,4 @@
+datum  sky_orbit_64_polygons  D  0x00000000  1666
+datum  sky_orbit_64_vertices  D  0x00000684  1836
+datum  sky_orbit_64_mesh  D  0x00000db0  24
+datum  meteor_sky_second_orbit  D  0x00000dc8  52

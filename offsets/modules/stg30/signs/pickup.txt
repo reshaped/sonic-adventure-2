@@ -1,0 +1,7 @@
+datum  pickup_object_2_miu64_fr005  C  0x00000000  12
+datum  textures  D  0x00000000  12
+datum  pickup_object_2_texlist  D  0x0000000c  8
+datum  pickup_polygons  D  0x00000014  286
+datum  pickup_vertices  D  0x00000134  284
+datum  pickup_object_2_model  D  0x00000250  24
+datum  pickup_object_node  D  0x00000268  52

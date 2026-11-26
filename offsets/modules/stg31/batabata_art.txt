@@ -1,0 +1,27 @@
+# Batabata's original mesh, texture names, joint hierarchy and motions.
+text  BATABATA_TEXTURE_GORA2  C  0x00000000  6
+text  BATABATA_TEXTURE_BEE  C  0x00000008  4
+text  BATABATA_TEXTURE_BATA1  C  0x0000000c  6
+text  BATABATA_TEXTURE_TT_EYE  C  0x00000014  7
+datum  materials  D  0x00000000  48
+datum  green_hill_batabata_texlist  D  0x00000030  8
+datum  piece_0_polygons  D  0x00000038  186
+datum  piece_0_vertices  D  0x000000f4  372
+datum  green_hill_batabata_piece_0  D  0x00000268  24
+datum  piece_0_node  D  0x00000280  52
+datum  piece_1_polygons  D  0x000002b4  190
+datum  piece_1_vertices  D  0x00000374  180
+datum  green_hill_batabata_piece_1  D  0x00000428  24
+datum  piece_1_node  D  0x00000440  52
+datum  piece_2_polygons  D  0x00000474  718
+datum  piece_2_vertices  D  0x00000744  1404
+datum  green_hill_batabata_piece_2  D  0x00000cc0  24
+datum  piece_2_node  D  0x00000cd8  52
+datum  body_polygons  D  0x00000d0c  966
+datum  body_vertices  D  0x000010d4  1476
+datum  green_hill_batabata_body_model  D  0x00001698  24
+datum  green_hill_batabata_body  D  0x000016b0  52
+datum  flight_piece_2_rotation  D  0x000016e4  48
+datum  flight_piece_1_rotation  D  0x00001714  48
+datum  flight_joints  D  0x00001744  64
+datum  green_hill_batabata_flight_motion  D  0x00001784  12

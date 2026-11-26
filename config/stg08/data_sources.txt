@@ -1,0 +1,2 @@
+modules/stg08/dat_8c5683ac.c
+modules/stg08/terrain.c

@@ -1,0 +1,18 @@
+text  TRIPLE_SPRING_TEXT_SIKAKE_01_128  14
+text  TRIPLE_SPRING_TEXT_SIKAKE_02_128  14
+text  TRIPLE_SPRING_TEXT_SIKAKE_08_64  13
+text  TRIPLE_SPRING_TEXT_SIKAKE_15_64  13
+
+pointer  triple_spring_texnames  0x00000000  TRIPLE_SPRING_TEXT_SIKAKE_01_128
+pointer  triple_spring_texnames  0x0000000c  TRIPLE_SPRING_TEXT_SIKAKE_02_128
+pointer  triple_spring_texnames  0x00000018  TRIPLE_SPRING_TEXT_SIKAKE_08_64
+pointer  triple_spring_texnames  0x00000024  TRIPLE_SPRING_TEXT_SIKAKE_15_64
+pointer  triple_spring_texlist  0x00000000  triple_spring_texnames
+pointer  triple_spring_board_model  0x00000000  triple_spring_board_vertices
+pointer  triple_spring_board_model  0x00000004  triple_spring_board_polygons
+pointer  triple_spring_board_object  0x00000004  triple_spring_board_model
+pointer  triple_spring_base_model  0x00000000  triple_spring_base_vertices
+pointer  triple_spring_base_model  0x00000004  triple_spring_base_polygons
+pointer  triple_spring_base_object  0x00000004  triple_spring_base_model
+pointer  triple_spring_base_object  0x0000002c  triple_spring_board_object
+pointer  triple_spring_texlists  0x00000000  triple_spring_texlist

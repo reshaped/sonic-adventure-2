@@ -1,0 +1,6 @@
+pointer  rock_model  0x00000000  rock_vertices
+pointer  rock_model  0x00000004  rock_polygons
+pointer  green_hill_rock_object  0x00000004  rock_model
+pointer  shadow_model  0x00000000  shadow_vertices
+pointer  shadow_model  0x00000004  shadow_polygons
+pointer  green_hill_shadow_object  0x00000004  shadow_model

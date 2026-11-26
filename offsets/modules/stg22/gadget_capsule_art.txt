@@ -1,0 +1,8 @@
+text  GADGET_CAPSULE_ART_TEXTURE_1  C  0x00000000  13
+text  GADGET_CAPSULE_ART_TEXTURE_2  C  0x00000010  13
+datum  textures  D  0x00000000  24
+datum  gadget_capsule_texlist  D  0x00000018  8
+datum  gadget_capsule_polygons  D  0x00000020  386
+datum  gadget_capsule_vertices  D  0x000001a4  716
+datum  gadget_capsule_mesh  D  0x00000470  24
+datum  gadget_capsule_object  D  0x00000488  52

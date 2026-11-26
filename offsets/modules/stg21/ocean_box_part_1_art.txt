@@ -1,0 +1,4 @@
+datum  box_part_1_polygons  D  0x00000000  310
+datum  box_part_1_vertices  D  0x00000138  332
+datum  box_part_1_model  D  0x00000284  24
+datum  box_part_1_object  D  0x0000029c  52

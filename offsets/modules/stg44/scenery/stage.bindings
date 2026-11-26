@@ -1,0 +1,28 @@
+text  MAD_SPACE_STAGE_TEXTURE_MIU128_MAD003  14
+text  MAD_SPACE_STAGE_TEXTURE_MIU128_MAD004  14
+text  MAD_SPACE_STAGE_TEXTURE_MIU128_MAD005  14
+text  MAD_SPACE_STAGE_TEXTURE_MIU128_MEH004  14
+text  MAD_SPACE_STAGE_TEXTURE_MIU64_MAD007  13
+text  MAD_SPACE_STAGE_TEXTURE_MIU64_MAD008  13
+text  MAD_SPACE_STAGE_TEXTURE_SPACE256_5  11
+
+pointer  mad_space_platform_names  0x00000000  MAD_SPACE_STAGE_TEXTURE_MIU128_MAD003
+pointer  mad_space_platform_names  0x0000000c  MAD_SPACE_STAGE_TEXTURE_MIU128_MAD004
+pointer  mad_space_platform_names  0x00000018  MAD_SPACE_STAGE_TEXTURE_MIU128_MAD005
+pointer  mad_space_platform_names  0x00000024  MAD_SPACE_STAGE_TEXTURE_MIU128_MEH004
+pointer  mad_space_platform_names  0x00000030  MAD_SPACE_STAGE_TEXTURE_MIU64_MAD007
+pointer  mad_space_platform_names  0x0000003c  MAD_SPACE_STAGE_TEXTURE_MIU64_MAD008
+pointer  mad_space_platform_names  0x00000048  MAD_SPACE_STAGE_TEXTURE_SPACE256_5
+pointer  mad_space_platform_texlist  0x00000000  mad_space_platform_names
+pointer  mad_space_platform_body_model  0x00000000  mad_space_platform_body_vertices
+pointer  mad_space_platform_body_model  0x00000004  mad_space_platform_body_polygons
+pointer  mad_space_platform_body  0x00000004  mad_space_platform_body_model
+pointer  mad_space_platform_collision_meshsets  0x00000004  mad_space_platform_collision_faces
+pointer  mad_space_platform_collision_model  0x00000000  mad_space_platform_collision_points
+pointer  mad_space_platform_collision_model  0x00000004  mad_space_platform_collision_normals
+pointer  mad_space_platform_collision_model  0x0000000c  mad_space_platform_collision_meshsets
+pointer  mad_space_platform_collision_model  0x00000010  mad_space_platform_collision_materials
+pointer  mad_space_platform_collision  0x00000004  mad_space_platform_collision_model
+pointer  mad_space_platform_shadow_model  0x00000000  mad_space_platform_shadow_vertices
+pointer  mad_space_platform_shadow_model  0x00000004  mad_space_platform_shadow_polygons
+pointer  mad_space_platform_shadow  0x00000004  mad_space_platform_shadow_model

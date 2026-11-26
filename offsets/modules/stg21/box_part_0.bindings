@@ -1,0 +1,2 @@
+include  ocean_box_parts_01
+pointer  box_part_0_texlist  0x00000000  textures

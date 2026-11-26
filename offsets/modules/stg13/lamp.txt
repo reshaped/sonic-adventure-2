@@ -1,0 +1,10 @@
+text  CITY_TEXTURE_MIU128_CE002  C  0x0000000c  13
+text  CITY_TEXTURE_MIU32_CE009  C  0x0000001c  12
+text  CITY_TEXTURE_SCITY64_16  C  0x00000028  11
+datum  lamp_texnames  D  0x00000000  36
+datum  lamp_texlist  D  0x00000024  8
+datum  lamp_polygons  D  0x0000002c  798
+datum  lamp_vertices  D  0x0000034c  1308
+datum  lamp_model  D  0x00000868  24
+datum  lamp_object  D  0x00000880  52
+datum  lamp_texlists  D  0x000008b4  8

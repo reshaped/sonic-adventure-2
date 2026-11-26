@@ -1,0 +1,24 @@
+text  HIGHWAY_TEXT_MIU128_RH003  13
+text  HIGHWAY_TEXT_MIU64_CE003  12
+text  HIGHWAY_TEXT_MIU128_CE002  13
+text  HIGHWAY_TEXT_MIU32_RH002  12
+pointer  highway_ramp_collision_meshsets  0x00000004  highway_ramp_collision_indices_0
+pointer  highway_ramp_collision_model  0x00000000  highway_ramp_collision_points
+pointer  highway_ramp_collision_model  0x00000004  highway_ramp_collision_normals
+pointer  highway_ramp_collision_model  0x0000000c  highway_ramp_collision_meshsets
+pointer  highway_ramp_collision_model  0x00000010  highway_ramp_collision_materials
+pointer  highway_ramp_collision  0x00000004  highway_ramp_collision_model
+pointer  highway_ramp_textures  0x00000000  HIGHWAY_TEXT_MIU128_RH003
+pointer  highway_ramp_textures  0x0000000c  HIGHWAY_TEXT_MIU64_CE003
+pointer  highway_ramp_textures  0x00000018  HIGHWAY_TEXT_MIU128_CE002
+pointer  highway_ramp_textures  0x00000024  HIGHWAY_TEXT_MIU32_RH002
+pointer  highway_ramp_texlist  0x00000000  highway_ramp_textures
+pointer  highway_ramp_scroll_mesh  0x00000000  highway_ramp_scroll_vertices
+pointer  highway_ramp_scroll_mesh  0x00000004  highway_ramp_scroll_polygons
+pointer  highway_ramp_scroll  0x00000004  highway_ramp_scroll_mesh
+pointer  highway_ramp_mesh  0x00000000  highway_ramp_vertices
+pointer  highway_ramp_mesh  0x00000004  highway_ramp_polygons
+pointer  highway_ramp_object  0x00000004  highway_ramp_mesh
+pointer  highway_ramp_object  0x0000002c  highway_ramp_scroll
+pointer  highway_ramp_anim  0x00000010  highway_ramp_uvs
+pointer  highway_ramp_texlists  0x00000000  highway_ramp_texlist

@@ -1,0 +1,10 @@
+modules/chaostgrace/chao_race_crab_model.c
+modules/chaostgrace/chao_race_editor_markers.c
+modules/chaostgrace/chao_race_hunt_fruit.c
+modules/chaostgrace/chao_race_hunt_panels.c
+modules/chaostgrace/course_models.c
+modules/chaostgrace/dat_0c9f5ff0.c
+modules/chaostgrace/dat_0ca1361c.c
+modules/chaostgrace/omo_motion.c
+modules/chaostgrace/prize_art.c
+modules/chaostgrace/props.c

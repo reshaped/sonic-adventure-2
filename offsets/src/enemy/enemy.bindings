@@ -1,0 +1,3 @@
+pointer  scrap_models  0x00000000  enemy_scrap_gray_model
+pointer  scrap_models  0x00000004  enemy_scrap_red_model
+pointer  scrap_models  0x00000008  enemy_scrap_red_model

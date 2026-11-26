@@ -1,0 +1,10 @@
+text  SKY_ARCHIVE  8
+
+pointer  sky_textures  0x00000000  background_0_texlist
+pointer  sky_textures  0x00000004  background_2_texlist
+pointer  sky_textures  0x00000008  background_3_texlist
+
+pointer  rush_sky_groups  0x00000000  sky_textures
+
+pointer  rush_sky_pvms  0x00000000  SKY_ARCHIVE
+pointer  rush_sky_pvms  0x00000004  rush_sky_pvm_texlist

@@ -1,0 +1,4 @@
+pointer  sign_models  0x00000000  gadget_sign_b
+pointer  sign_models  0x00000004  gadget_sign_c
+pointer  sign_models  0x00000008  gadget_sign_d
+pointer  sign_models  0x0000000c  gadget_sign_e

@@ -1,0 +1,9 @@
+text  GADGET_BOX_SIDE_TEXTURE  C  0x00000088  14
+text  GADGET_BOX_END_TEXTURE  C  0x00000098  14
+datum  floating_box_editor  C  0x00000000  136
+datum  floating_box_textures  D  0x00000000  24
+datum  floating_box_texlist  D  0x00000018  8
+datum  floating_box_polygons  D  0x00000020  194
+datum  floating_box_vertices  D  0x000000e4  204
+datum  floating_box_model  D  0x000001b0  24
+datum  floating_box_object  D  0x000001c8  52

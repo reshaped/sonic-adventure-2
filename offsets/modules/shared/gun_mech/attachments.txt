@@ -1,0 +1,12 @@
+datum  jet_marker_polygons  D  0x00000000  30
+datum  mech_boss_jet_markers  D  0x00000020  84
+datum  jet_marker_mesh  D  0x00000074  24
+datum  jet_marker  D  0x0000008c  52
+datum  pod_1_marker_polygons  D  0x000000c0  30
+datum  mech_boss_pods_1_markers  D  0x000000e0  108
+datum  pod_1_marker_mesh  D  0x0000014c  24
+datum  pod_1_marker  D  0x00000164  52
+datum  pod_0_marker_polygons  D  0x00000198  30
+datum  mech_boss_pods_0_markers  D  0x000001b8  108
+datum  pod_0_marker_mesh  D  0x00000224  24
+datum  pod_0_marker  D  0x0000023c  52

@@ -1,0 +1,4 @@
+datum  ember_points  D  0x00000320  128
+datum  ring_uvs  D  0x00000000  748
+datum  ring_scroll  D  0x000002ec  36
+datum  ring_pos  D  0x00000314  12

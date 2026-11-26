@@ -1,0 +1,9 @@
+text  ROAD_TEXTURE_MIU64_RH007  12
+text  ROAD_TEXTURE_MIU64_RH013  12
+pointer  pulsing_light_textures  0x00000000  ROAD_TEXTURE_MIU64_RH007
+pointer  pulsing_light_texlist  0x00000000  pulsing_light_textures
+pointer  pulsing_light_model  0x00000000  pulsing_light_vertices
+pointer  pulsing_light_model  0x00000004  pulsing_light_polygons
+pointer  pulsing_light_object  0x00000004  pulsing_light_model
+pointer  pulsing_light_glow_textures  0x00000000  ROAD_TEXTURE_MIU64_RH013
+pointer  pulsing_light_glow_texlist  0x00000000  pulsing_light_glow_textures

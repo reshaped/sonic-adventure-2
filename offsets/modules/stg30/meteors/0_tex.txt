@@ -1,0 +1,8 @@
+datum  meteor_miu128_fr002  C  0x00000000  16
+datum  meteor_miu256_fr001  C  0x00000010  13
+datum  textures  D  0x00000000  24
+datum  meteor_0_texlist  D  0x00000018  8
+datum  meteor_0_polygons  D  0x00000020  698
+datum  meteor_0_vertices  D  0x000002dc  780
+datum  meteor_0_mesh  D  0x000005e8  24
+datum  meteor_0_object  D  0x00000600  52

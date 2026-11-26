@@ -1,0 +1,6 @@
+modules/stg32/dat_8c5856dc.c
+modules/stg32/routes.c
+modules/stg32/sky_changes.c
+modules/stg32/sky_surfaces.c
+modules/stg32/sky_warning.c
+modules/stg32/terrain.c

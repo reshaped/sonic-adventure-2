@@ -1,0 +1,2 @@
+modules/boss_fdog/fdog_body.c
+modules/boss_fdog/terrain.c

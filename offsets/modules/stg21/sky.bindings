@@ -1,0 +1,45 @@
+text  OCEAN_TEXTURE_KD_SO_PYRAMID1  15
+text  OCEAN_TEXTURE_KD_SO_PYRAMID2  15
+text  OCEAN_TEXTURE_KD_SO_HOSI1  12
+text  OCEAN_TEXTURE_KD_SO_HOSI3  12
+text  OCEAN_TEXTURE_KD_SO_TUKI1  12
+text  OCEAN_TEXTURE_BGTEX21  8
+pointer  ocean_first_pyramid_texlist_names  0x00000000  OCEAN_TEXTURE_KD_SO_PYRAMID1
+pointer  ocean_first_pyramid_texlist  0x00000000  ocean_first_pyramid_texlist_names
+pointer  ocean_first_pyramid  0x00000000  ocean_first_pyramid_vertices
+pointer  ocean_first_pyramid  0x00000004  ocean_first_pyramid_polygons
+pointer  ocean_first_pyramid_object  0x00000004  ocean_first_pyramid
+pointer  ocean_second_pyramid_texlist_names  0x00000000  OCEAN_TEXTURE_KD_SO_PYRAMID2
+pointer  ocean_second_pyramid_texlist  0x00000000  ocean_second_pyramid_texlist_names
+pointer  ocean_second_pyramid  0x00000000  ocean_second_pyramid_vertices
+pointer  ocean_second_pyramid  0x00000004  ocean_second_pyramid_polygons
+pointer  ocean_second_pyramid_object  0x00000004  ocean_second_pyramid
+pointer  ocean_first_stars_texlist_names  0x00000000  OCEAN_TEXTURE_KD_SO_HOSI1
+pointer  ocean_first_stars_texlist  0x00000000  ocean_first_stars_texlist_names
+pointer  ocean_first_stars  0x00000000  ocean_first_stars_vertices
+pointer  ocean_first_stars  0x00000004  ocean_first_stars_polygons
+pointer  ocean_first_stars_object  0x00000004  ocean_first_stars
+pointer  ocean_second_stars_texlist_names  0x00000000  OCEAN_TEXTURE_KD_SO_HOSI3
+pointer  ocean_second_stars_texlist  0x00000000  ocean_second_stars_texlist_names
+pointer  ocean_second_stars  0x00000000  ocean_second_stars_vertices
+pointer  ocean_second_stars  0x00000004  ocean_second_stars_polygons
+pointer  ocean_second_stars_object  0x00000004  ocean_second_stars
+pointer  ocean_moon_texlist_names  0x00000000  OCEAN_TEXTURE_KD_SO_TUKI1
+pointer  ocean_moon_texlist  0x00000000  ocean_moon_texlist_names
+pointer  ocean_moon  0x00000000  ocean_moon_vertices
+pointer  ocean_moon  0x00000004  ocean_moon_polygons
+pointer  ocean_moon_object  0x00000004  ocean_moon
+pointer  background_textures_names  0x00000000  OCEAN_TEXTURE_KD_SO_HOSI1
+pointer  background_textures_names  0x0000000c  OCEAN_TEXTURE_KD_SO_HOSI3
+pointer  background_textures_names  0x00000018  OCEAN_TEXTURE_KD_SO_PYRAMID1
+pointer  background_textures_names  0x00000024  OCEAN_TEXTURE_KD_SO_PYRAMID2
+pointer  background_textures_names  0x00000030  OCEAN_TEXTURE_KD_SO_TUKI1
+pointer  background_textures  0x00000000  background_textures_names
+pointer  sky_materials  0x00000000  ocean_first_pyramid_texlist
+pointer  sky_materials  0x00000004  ocean_second_pyramid_texlist
+pointer  sky_materials  0x00000008  ocean_first_stars_texlist
+pointer  sky_materials  0x0000000c  ocean_second_stars_texlist
+pointer  sky_materials  0x00000010  ocean_moon_texlist
+pointer  ocean_background_groups  0x00000000  sky_materials
+pointer  ocean_background_pvms  0x00000000  OCEAN_TEXTURE_BGTEX21
+pointer  ocean_background_pvms  0x00000004  background_textures

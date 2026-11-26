@@ -1,0 +1,244 @@
+pointer  versus_sonic_2_background_pvm_textures  0x00000000  arena_texture_names
+pointer  versus_sonic_2_background_pvm_textures  0x0000000c  arena_texture_names+0xc
+pointer  versus_sonic_2_background_pvm_textures  0x00000018  arena_texture_names+0x14
+pointer  versus_sonic_2_background_pvm_textures  0x00000024  arena_texture_names+0x20
+pointer  versus_sonic_2_background_pvm_textures  0x00000030  arena_texture_names+0x2c
+pointer  versus_sonic_2_background_pvm_textures  0x0000003c  arena_texture_names+0x38
+pointer  versus_sonic_2_background_pvm_textures  0x00000048  arena_texture_names+0x44
+pointer  versus_sonic_2_background_pvm_textures  0x00000054  arena_texture_names+0x50
+pointer  versus_sonic_2_background_pvm_textures  0x00000060  arena_texture_names+0x5c
+pointer  versus_sonic_2_background_pvm_textures  0x0000006c  arena_texture_names+0x68
+pointer  versus_sonic_2_background_pvm_textures  0x00000078  arena_texture_names+0x74
+pointer  versus_sonic_2_background_pvm_textures  0x00000084  arena_texture_names+0x80
+pointer  versus_sonic_2_background_pvm_textures  0x00000090  arena_texture_names+0x8c
+pointer  versus_sonic_2_background_pvm_textures  0x0000009c  arena_texture_names+0x98
+pointer  versus_sonic_2_background_pvm_textures  0x000000a8  arena_texture_names+0xa4
+pointer  versus_sonic_2_background_pvm_textures  0x000000b4  arena_texture_names+0xb0
+pointer  versus_sonic_2_background_pvm_textures  0x000000c0  arena_texture_names+0xbc
+pointer  versus_sonic_2_background_pvm_textures  0x000000cc  arena_texture_names+0xc8
+pointer  versus_sonic_2_background_pvm_textures  0x000000d8  arena_texture_names+0xd4
+pointer  versus_sonic_2_background_pvm_textures  0x000000e4  arena_texture_names+0xe0
+pointer  versus_sonic_2_background_pvm_textures  0x000000f0  arena_texture_names+0xec
+pointer  versus_sonic_2_background_pvm_texlist  0x00000000  versus_sonic_2_background_pvm_textures
+pointer  turning_b_textures  0x00000000  arena_texture_names+0xe0
+pointer  turning_b_texlist  0x00000000  turning_b_textures
+pointer  sky_orbit_64_chase_mesh  0x00000000  sky_orbit_64_chase_vertices
+pointer  sky_orbit_64_chase_mesh  0x00000004  sky_orbit_64_chase_polygons
+pointer  turning_b_object  0x00000004  sky_orbit_64_chase_mesh
+pointer  turning_a_textures  0x00000000  arena_texture_names+0xd4
+pointer  turning_a_textures  0x0000000c  arena_texture_names+0xe0
+pointer  turning_a_texlist  0x00000000  turning_a_textures
+pointer  sky_orbit_128_mesh  0x00000000  sky_orbit_128_vertices
+pointer  sky_orbit_128_mesh  0x00000004  sky_orbit_128_polygons
+pointer  turning_a_object  0x00000004  sky_orbit_128_mesh
+pointer  upper_textures  0x00000000  arena_texture_names
+pointer  upper_textures  0x0000000c  arena_texture_names+0xec
+pointer  upper_texlist  0x00000000  upper_textures
+pointer  sky_earth_mesh  0x00000000  sky_earth_vertices
+pointer  sky_earth_mesh  0x00000004  sky_earth_polygons
+pointer  upper_object  0x00000004  sky_earth_mesh
+pointer  floor_textures  0x00000000  arena_texture_names+0xc
+pointer  floor_textures  0x0000000c  arena_texture_names+0x14
+pointer  floor_textures  0x00000018  arena_texture_names+0x20
+pointer  floor_textures  0x00000024  arena_texture_names+0x2c
+pointer  floor_textures  0x00000030  arena_texture_names+0x38
+pointer  floor_textures  0x0000003c  arena_texture_names+0x44
+pointer  floor_textures  0x00000048  arena_texture_names+0x50
+pointer  floor_textures  0x00000054  arena_texture_names+0x5c
+pointer  floor_textures  0x00000060  arena_texture_names+0x68
+pointer  floor_textures  0x0000006c  arena_texture_names+0x74
+pointer  floor_textures  0x00000078  arena_texture_names+0x80
+pointer  floor_textures  0x00000084  arena_texture_names+0xa4
+pointer  floor_textures  0x00000090  arena_texture_names+0xb0
+pointer  floor_textures  0x0000009c  arena_texture_names+0xbc
+pointer  floor_textures  0x000000a8  arena_texture_names+0xc8
+pointer  floor_texlist  0x00000000  floor_textures
+pointer  floor_model  0x00000000  floor_vertices
+pointer  floor_model  0x00000004  floor_polygons
+pointer  floor_object  0x00000004  floor_model
+pointer  around_textures  0x00000000  arena_texture_names+0x8c
+pointer  around_textures  0x0000000c  arena_texture_names+0x98
+pointer  around_texlist  0x00000000  around_textures
+pointer  around_model  0x00000000  around_vertices
+pointer  around_model  0x00000004  around_polygons
+pointer  around_object  0x00000004  around_model
+text  RIVAL_TITLE_S  10
+text  RIVAL_TITLE_O  10
+text  RIVAL_TITLE_N  10
+text  RIVAL_TITLE_I  10
+text  RIVAL_TITLE_C  10
+text  RIVAL_TITLE_H  10
+text  RIVAL_TITLE_A  10
+text  RIVAL_TITLE_D  10
+text  RIVAL_TITLE_W  10
+pointer  title_sonic_texnames  0x00000000  RIVAL_TITLE_S
+pointer  title_sonic_texnames  0x0000000c  RIVAL_TITLE_O
+pointer  title_sonic_texnames  0x00000018  RIVAL_TITLE_N
+pointer  title_sonic_texnames  0x00000024  RIVAL_TITLE_I
+pointer  title_sonic_texnames  0x00000030  RIVAL_TITLE_C
+pointer  title_sonic_texlist  0x00000000  title_sonic_texnames
+pointer  title_shadow_texnames  0x00000000  RIVAL_TITLE_S
+pointer  title_shadow_texnames  0x0000000c  RIVAL_TITLE_H
+pointer  title_shadow_texnames  0x00000018  RIVAL_TITLE_A
+pointer  title_shadow_texnames  0x00000024  RIVAL_TITLE_D
+pointer  title_shadow_texnames  0x00000030  RIVAL_TITLE_O
+pointer  title_shadow_texnames  0x0000003c  RIVAL_TITLE_W
+pointer  title_shadow_texlist  0x00000000  title_shadow_texnames
+
+include  objtex_common
+include  efftex_common
+pointer  title_sonic  0x00000000  title_letters
+pointer  title_sonic  0x00000018  title_sonic_texlist
+pointer  title_shadow  0x00000000  title_letters+0x50
+pointer  title_shadow  0x00000018  title_shadow_texlist
+text  BACKGROUND_ARCHIVE_NAME  8
+text  STAGE_TEXTURE_MIU128_FR001  13
+text  STAGE_TEXTURE_MIU128_FR002  13
+text  STAGE_TEXTURE_MIU128_MEH001  14
+text  STAGE_TEXTURE_MIU256_FR001  13
+text  STAGE_TEXTURE_MIU64_MEH001  13
+text  STAGE_TEXTURE_SPACE128_5  11
+text  STAGE_TEXTURE_SPACE128_9  11
+text  STAGE_TEXTURE_SPACE32_2  10
+text  STAGE_TEXTURE_SPACE32_5  10
+text  STAGE_TEXTURE_SPACE32_6  10
+text  STAGE_TEXTURE_SPACE512_2  11
+text  STAGE_TEXTURE_VS256_1  8
+text  STAGE_OBJECT_ARCHIVE  13
+text  COMMON_EFFECT_ARCHIVE  14
+text  COMMON_OBJECT_ARCHIVE  14
+text  BOSS_GAUGE_ARCHIVE  17
+text  OBJECT_NAME_LIGHT_SW  9
+text  OBJECT_NAME_MODMOD  7
+text  OBJECT_NAME_RING  5
+text  OBJECT_NAME_RINGLINE  9
+text  OBJECT_NAME_RINGCIRC  9
+text  OBJECT_NAME_ITEMBOX  8
+text  OBJECT_NAME_ITEMBOXAIR  11
+text  OBJECT_NAME_ORI  4
+text  OBJECT_NAME_CONTWOOD  9
+text  OBJECT_NAME_CONTIRON  9
+text  OBJECT_NAME_SKULL  6
+text  OBJECT_NAME_UDREEL  7
+text  OBJECT_NAME_STOPLSD  8
+text  OBJECT_NAME_PSKULL  7
+text  OBJECT_NAME_SCHBOX  7
+text  OBJECT_NAME_HINTBOX  8
+text  OBJECT_NAME_EFFOBJ0  8
+text  OBJECT_NAME_SPHERE  7
+text  OBJECT_NAME_CCYL  5
+text  OBJECT_NAME_CCUBE  6
+text  OBJECT_NAME_CWALL  6
+text  OBJECT_NAME_CCIRCLE  8
+text  OBJECT_NAME_MSGER  6
+text  OBJECT_NAME_BIG_THE_CAT  12
+text  OBJECT_NAME_DODAI  6
+text  OBJECT_NAME_DODAIGEN  9
+text  OBJECT_NAME_FIREBALL  9
+text  SONIC_TITLE_ARCHIVE  15
+text  SHADOW_TITLE_ARCHIVE  16
+pointer  background_group  0x00000000  upper_texlist
+pointer  background_group  0x00000004  turning_a_texlist
+pointer  background_group  0x00000008  turning_b_texlist
+pointer  background_group  0x0000000c  around_texlist
+pointer  background_group  0x00000010  floor_texlist
+pointer  background_texture_groups  0x00000000  background_group
+pointer  background_pvms  0x00000000  BACKGROUND_ARCHIVE_NAME
+pointer  background_pvms  0x00000004  versus_sonic_2_background_pvm_texlist
+pointer  objtex_stg42_texnames  0x00000000  STAGE_TEXTURE_MIU128_FR001
+pointer  objtex_stg42_texnames  0x0000000c  STAGE_TEXTURE_MIU128_FR002
+pointer  objtex_stg42_texnames  0x00000018  STAGE_TEXTURE_MIU128_MEH001
+pointer  objtex_stg42_texnames  0x00000024  STAGE_TEXTURE_MIU256_FR001
+pointer  objtex_stg42_texnames  0x00000030  STAGE_TEXTURE_MIU64_MEH001
+pointer  objtex_stg42_texnames  0x0000003c  STAGE_TEXTURE_SPACE128_5
+pointer  objtex_stg42_texnames  0x00000048  STAGE_TEXTURE_SPACE128_9
+pointer  objtex_stg42_texnames  0x00000054  STAGE_TEXTURE_SPACE32_2
+pointer  objtex_stg42_texnames  0x00000060  STAGE_TEXTURE_SPACE32_5
+pointer  objtex_stg42_texnames  0x0000006c  STAGE_TEXTURE_SPACE32_6
+pointer  objtex_stg42_texnames  0x00000078  STAGE_TEXTURE_SPACE512_2
+pointer  objtex_stg42_texnames  0x00000084  STAGE_TEXTURE_VS256_1
+pointer  objtex_stg42_texlist  0x00000000  objtex_stg42_texnames
+pointer  common_group  0x00000000  ring_texlist
+pointer  common_group  0x00000004  ring_shadow_texlist
+pointer  common_group  0x00000008  effect_texlist
+pointer  common_group  0x0000000c  burst_texlist
+pointer  common_group  0x00000010  flame_texlist
+pointer  common_group  0x00000014  white_breath_texlist
+pointer  common_group  0x00000018  ring_sparkle_texlist
+pointer  common_group  0x0000001c  burst_texlist
+pointer  object_texture_groups  0x00000000  common_group
+pointer  object_texture_groups  0x00000004  item_box_texlists
+pointer  object_texture_groups  0x00000008  item_box_air_texlists
+pointer  object_texture_groups  0x0000000c  reel_texlists
+pointer  object_texture_groups  0x00000010  cage_texlists
+pointer  object_texture_groups  0x00000014  wood_box_texlists
+pointer  object_texture_groups  0x00000018  iron_box_texlists
+pointer  object_texture_groups  0x0000001c  skull_texlists
+pointer  object_texture_groups  0x00000020  search_box_texlists
+pointer  object_texture_groups  0x00000024  hint_box_texlists
+pointer  object_texture_groups  0x00000028  object_effect_texlists
+pointer  object_texture_groups  0x0000002c  messenger_texlists
+pointer  object_texture_groups  0x00000030  foothold_texture_group
+pointer  object_texture_groups  0x00000034  fireball_texture_group
+pointer  versus_sonic_2_kinds  0x00000008  light_switch_init
+pointer  versus_sonic_2_kinds  0x0000000c  OBJECT_NAME_LIGHT_SW
+pointer  versus_sonic_2_kinds  0x00000018  modifier_volume_init
+pointer  versus_sonic_2_kinds  0x0000001c  OBJECT_NAME_MODMOD
+pointer  versus_sonic_2_kinds  0x00000028  ring_step
+pointer  versus_sonic_2_kinds  0x0000002c  OBJECT_NAME_RING
+pointer  versus_sonic_2_kinds  0x00000038  ring_linear_init
+pointer  versus_sonic_2_kinds  0x0000003c  OBJECT_NAME_RINGLINE
+pointer  versus_sonic_2_kinds  0x00000048  ring_circle_init
+pointer  versus_sonic_2_kinds  0x0000004c  OBJECT_NAME_RINGCIRC
+pointer  versus_sonic_2_kinds  0x00000058  item_box_step
+pointer  versus_sonic_2_kinds  0x0000005c  OBJECT_NAME_ITEMBOX
+pointer  versus_sonic_2_kinds  0x00000068  item_box_air_step
+pointer  versus_sonic_2_kinds  0x0000006c  OBJECT_NAME_ITEMBOXAIR
+pointer  versus_sonic_2_kinds  0x00000078  cage_init
+pointer  versus_sonic_2_kinds  0x0000007c  OBJECT_NAME_ORI
+pointer  versus_sonic_2_kinds  0x00000088  wood_box_init
+pointer  versus_sonic_2_kinds  0x0000008c  OBJECT_NAME_CONTWOOD
+pointer  versus_sonic_2_kinds  0x00000098  iron_box_init
+pointer  versus_sonic_2_kinds  0x0000009c  OBJECT_NAME_CONTIRON
+pointer  versus_sonic_2_kinds  0x000000a8  skull_still_init
+pointer  versus_sonic_2_kinds  0x000000ac  OBJECT_NAME_SKULL
+pointer  versus_sonic_2_kinds  0x000000b8  reel_init
+pointer  versus_sonic_2_kinds  0x000000bc  OBJECT_NAME_UDREEL
+pointer  versus_sonic_2_kinds  0x000000c8  stop_lsd_init
+pointer  versus_sonic_2_kinds  0x000000cc  OBJECT_NAME_STOPLSD
+pointer  versus_sonic_2_kinds  0x000000d8  skull_lying_init
+pointer  versus_sonic_2_kinds  0x000000dc  OBJECT_NAME_PSKULL
+pointer  versus_sonic_2_kinds  0x000000e8  search_box_init
+pointer  versus_sonic_2_kinds  0x000000ec  OBJECT_NAME_SCHBOX
+pointer  versus_sonic_2_kinds  0x000000f8  hint_box_init
+pointer  versus_sonic_2_kinds  0x000000fc  OBJECT_NAME_HINTBOX
+pointer  versus_sonic_2_kinds  0x00000108  effect_object_init
+pointer  versus_sonic_2_kinds  0x0000010c  OBJECT_NAME_EFFOBJ0
+pointer  versus_sonic_2_kinds  0x00000118  collision_sphere_step
+pointer  versus_sonic_2_kinds  0x0000011c  OBJECT_NAME_SPHERE
+pointer  versus_sonic_2_kinds  0x00000128  collision_cylinder_step
+pointer  versus_sonic_2_kinds  0x0000012c  OBJECT_NAME_CCYL
+pointer  versus_sonic_2_kinds  0x00000138  collision_cube_step
+pointer  versus_sonic_2_kinds  0x0000013c  OBJECT_NAME_CCUBE
+pointer  versus_sonic_2_kinds  0x00000148  collision_wall_step
+pointer  versus_sonic_2_kinds  0x0000014c  OBJECT_NAME_CWALL
+pointer  versus_sonic_2_kinds  0x00000158  collision_circle_step
+pointer  versus_sonic_2_kinds  0x0000015c  OBJECT_NAME_CCIRCLE
+pointer  versus_sonic_2_kinds  0x00000168  messenger_init
+pointer  versus_sonic_2_kinds  0x0000016c  OBJECT_NAME_MSGER
+pointer  versus_sonic_2_kinds  0x00000178  big_step
+pointer  versus_sonic_2_kinds  0x0000017c  OBJECT_NAME_BIG_THE_CAT
+pointer  versus_sonic_2_kinds  0x00000188  foothold_step
+pointer  versus_sonic_2_kinds  0x0000018c  OBJECT_NAME_DODAI
+pointer  versus_sonic_2_kinds  0x00000198  foothold_generator_step
+pointer  versus_sonic_2_kinds  0x0000019c  OBJECT_NAME_DODAIGEN
+pointer  versus_sonic_2_kinds  0x000001a8  fireball_init
+pointer  versus_sonic_2_kinds  0x000001ac  OBJECT_NAME_FIREBALL
+pointer  object_pvms  0x00000000  STAGE_OBJECT_ARCHIVE
+pointer  object_pvms  0x00000004  objtex_stg42_texlist
+pointer  object_pvms  0x00000008  COMMON_EFFECT_ARCHIVE
+pointer  object_pvms  0x0000000c  efftex_common_texlist
+pointer  object_pvms  0x00000010  COMMON_OBJECT_ARCHIVE
+pointer  object_pvms  0x00000014  objtex_common_texlist
+pointer  object_pvms  0x00000018  BOSS_GAUGE_ARCHIVE
+pointer  object_pvms  0x0000001c  boss_gauge_texlist

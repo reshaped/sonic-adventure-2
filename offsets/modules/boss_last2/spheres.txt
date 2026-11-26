@@ -1,0 +1,7 @@
+datum  sphere_cell  D  0x00000074  20
+datum  sphere_sprite  D  0x00000088  32
+datum  ring_cell  D  0x00000250  20
+datum  ring  D  0x00000264  32
+datum  trail_strip  D  0x00000158  128
+datum  trail_colors  D  0x000001d8  64
+datum  sphere_models  D  0x00000028  8

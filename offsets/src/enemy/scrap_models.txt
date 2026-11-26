@@ -1,0 +1,8 @@
+datum  gray_faces  D  0x00000000  38
+datum  gray_vertices  D  0x00000028  108
+datum  enemy_scrap_gray_model  D  0x00000094  24
+datum  gray_fragment  D  0x000000ac  52
+datum  red_faces  D  0x000000e0  46
+datum  red_vertices  D  0x00000110  156
+datum  enemy_scrap_red_model  D  0x000001ac  24
+datum  red_fragment  D  0x000001c4  52

@@ -1,0 +1,5 @@
+datum  sky_earth_texture  C  0x00000000  12
+datum  rush_orbit_128_texture  C  0x0000000c  12
+datum  sky_orbit_texture  C  0x00000018  12
+datum  sky_cloud_texture  C  0x00000024  9
+datum  textures  D  0x00000000  48

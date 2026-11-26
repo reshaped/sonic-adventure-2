@@ -1,0 +1,39 @@
+text BATABATA_TEXTURE_GORA2 6
+text BATABATA_TEXTURE_BEE 4
+text BATABATA_TEXTURE_BATA1 6
+text BATABATA_TEXTURE_TT_EYE 7
+
+pointer materials  0x00000000  BATABATA_TEXTURE_GORA2
+pointer materials  0x0000000c  BATABATA_TEXTURE_BEE
+pointer materials  0x00000018  BATABATA_TEXTURE_BATA1
+pointer materials  0x00000024  BATABATA_TEXTURE_TT_EYE
+
+pointer green_hill_batabata_texlist  0x00000000  materials
+
+pointer green_hill_batabata_piece_0  0x00000000  piece_0_vertices
+pointer green_hill_batabata_piece_0  0x00000004  piece_0_polygons
+
+pointer piece_0_node  0x00000004  green_hill_batabata_piece_0
+
+pointer green_hill_batabata_piece_1  0x00000000  piece_1_vertices
+pointer green_hill_batabata_piece_1  0x00000004  piece_1_polygons
+
+pointer piece_1_node  0x00000004  green_hill_batabata_piece_1
+pointer piece_1_node  0x00000030  piece_0_node
+
+pointer green_hill_batabata_piece_2  0x00000000  piece_2_vertices
+pointer green_hill_batabata_piece_2  0x00000004  piece_2_polygons
+
+pointer piece_2_node  0x00000004  green_hill_batabata_piece_2
+pointer piece_2_node  0x00000030  piece_1_node
+
+pointer green_hill_batabata_body_model  0x00000000  body_vertices
+pointer green_hill_batabata_body_model  0x00000004  body_polygons
+
+pointer green_hill_batabata_body  0x00000004  green_hill_batabata_body_model
+pointer green_hill_batabata_body  0x0000002c  piece_2_node
+
+pointer flight_joints  0x00000014  flight_piece_2_rotation
+pointer flight_joints  0x00000024  flight_piece_1_rotation
+
+pointer green_hill_batabata_flight_motion  0x00000000  flight_joints

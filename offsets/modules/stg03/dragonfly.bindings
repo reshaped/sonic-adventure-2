@@ -1,0 +1,20 @@
+text DRAGONFLY_EDITOR_ROT_Y 9
+text DRAGONFLY_EDITOR_LEN_R 9
+text DRAGONFLY_EDITOR_LEN_L 9
+text DRAGONFLY_EDITOR_SPD 7
+text DRAGONFLY_TEXTURE_MIU64_GF001 12
+
+pointer  dragonfly_textures  0x00000000  DRAGONFLY_TEXTURE_MIU64_GF001
+pointer  dragonfly_texlist  0x00000000  dragonfly_textures
+pointer  dragonfly_object_node_2_model  0x00000000  dragonfly_object_node_2_vertices
+pointer  dragonfly_object_node_2_model  0x00000004  dragonfly_object_node_2_polygons
+pointer  dragonfly_object_node_2  0x00000004  dragonfly_object_node_2_model
+pointer  dragonfly_object_node_1_model  0x00000000  dragonfly_object_node_1_vertices
+pointer  dragonfly_object_node_1_model  0x00000004  dragonfly_object_node_1_polygons
+pointer  dragonfly_object_node_1  0x00000004  dragonfly_object_node_1_model
+pointer  dragonfly_object_node_1  0x00000030  dragonfly_object_node_2
+pointer  dragonfly_model  0x00000000  dragonfly_vertices
+pointer  dragonfly_model  0x00000004  dragonfly_polygons
+pointer  dragonfly_object  0x00000004  dragonfly_model
+pointer  dragonfly_object  0x0000002c  dragonfly_object_node_1
+pointer  dragonfly_texlists  0x00000000  dragonfly_texlist

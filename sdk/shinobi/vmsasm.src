@@ -1,0 +1,59 @@
+; the memory card file system's long word copy, and its 16-bit field reads and
+; writes, big- and little-endian. vms.h states their contracts
+
+        .EXPORT     _vmsfs_memcpyl
+        .EXPORT     _vmsfs_getword_big
+        .EXPORT     _vmsfs_getword_little
+        .EXPORT     _vmsfs_setword_big
+        .EXPORT     _vmsfs_setword_little
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void vmsfs_memcpyl(void *destination, const void *source, Sint32 bytes)
+; @asm name: vmsasm_, the 2.00J shinobi2.lib member that holds it; it starts at
+; 0x8c15cec4
+_vmsfs_memcpyl:
+        SHLR2       R6
+?copy:
+        MOV.L       @R5+,R1
+        DT          R6
+        MOV.L       R1,@R4
+        BF/S        ?copy
+        ADD         #4,R4
+        RTS
+        NOP
+
+; Uint16 vmsfs_getword_big(void *buffer, Sint32 offset)
+; @asm opcode: swap, SWAP.B at 0x8c15ced8 swaps the field's bytes
+_vmsfs_getword_big:
+        ADD         R5,R4
+        MOV.W       @R4,R1
+        SWAP.B      R1,R1
+        RTS
+        EXTU.W      R1,R0
+
+; Uint16 vmsfs_getword_little(void *buffer, Sint32 offset)
+; @asm name: vmsasm_, the 2.00J shinobi2.lib member that holds it; it starts at
+; 0x8c15cede
+_vmsfs_getword_little:
+        ADD         R5,R4
+        MOV.W       @R4,R1
+        RTS
+        EXTU.W      R1,R0
+
+; void vmsfs_setword_big(void *buffer, Sint32 offset, Uint16 value)
+; @asm opcode: swap, SWAP.B at 0x8c15cee6 swaps value's bytes
+_vmsfs_setword_big:
+        SWAP.B      R6,R6
+        ADD         R5,R4
+        RTS
+        MOV.W       R6,@R4
+
+; void vmsfs_setword_little(void *buffer, Sint32 offset, Uint16 value)
+; @asm name: vmsasm_, the 2.00J shinobi2.lib member that holds it; it starts at
+; 0x8c15ceee
+_vmsfs_setword_little:
+        ADD         R5,R4
+        RTS
+        MOV.W       R6,@R4
+        .END

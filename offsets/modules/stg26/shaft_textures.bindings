@@ -1,0 +1,20 @@
+text  SHAFT_TEXTURE_64A  18
+text  SHAFT_TEXTURE_64B  18
+pointer  textures  0x00000000  SHAFT_TEXTURE_64A
+pointer  textures  0x0000000c  SHAFT_TEXTURE_64B
+pointer  shaft_texlist  0x00000000  textures
+pointer  shaft_object_child_sibling_sibling_model  0x00000000  shaft_object_child_sibling_sibling_vertices
+pointer  shaft_object_child_sibling_sibling_model  0x00000004  shaft_object_child_sibling_sibling_polygons
+pointer  shaft_object_child_sibling_sibling  0x00000004  shaft_object_child_sibling_sibling_model
+pointer  shaft_object_child_sibling_model  0x00000000  shaft_object_child_sibling_vertices
+pointer  shaft_object_child_sibling_model  0x00000004  shaft_object_child_sibling_polygons
+pointer  shaft_object_child_sibling  0x00000004  shaft_object_child_sibling_model
+pointer  shaft_object_child_sibling  0x00000030  shaft_object_child_sibling_sibling
+pointer  shaft_object_child_model  0x00000000  shaft_object_child_vertices
+pointer  shaft_object_child_model  0x00000004  shaft_object_child_polygons
+pointer  shaft_object_child  0x00000004  shaft_object_child_model
+pointer  shaft_object_child  0x00000030  shaft_object_child_sibling
+pointer  shaft_object  0x0000002c  shaft_object_child
+pointer  shaft_tracks  0x00000018  shaft_object_child_position_keys
+pointer  shaft_tracks  0x00000030  shaft_object_child_sibling_position_keys
+pointer  shaft_motion  0x00000000  shaft_tracks

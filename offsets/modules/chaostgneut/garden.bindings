@@ -1,0 +1,6 @@
+pointer  neutral_water  0x00000000  neutral_pond
+pointer  neutral_water  0x00000004  neutral_sky_texlist
+pointer  neutral_water  0x00000028  neutral_lower_falls
+pointer  neutral_water  0x0000002c  neutral_sky_texlist
+pointer  neutral_water  0x00000050  neutral_upper_falls
+pointer  neutral_water  0x00000054  neutral_sky_texlist

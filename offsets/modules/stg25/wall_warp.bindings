@@ -1,0 +1,8 @@
+text  CHAMBER_WALL_WARP_DZ_VERTICAL_WARPWALL  21
+
+pointer  chamber_warp_texture_names  0x00000000  CHAMBER_WALL_WARP_DZ_VERTICAL_WARPWALL
+pointer  chamber_warp_texlist  0x00000000  chamber_warp_texture_names
+pointer  chamber_warp_model  0x00000000  chamber_warp_vertices
+pointer  chamber_warp_model  0x00000004  chamber_warp_polygons
+pointer  chamber_warp_object  0x00000004  chamber_warp_model
+pointer  chamber_wall_warp_texlists  0x00000000  chamber_warp_texlist

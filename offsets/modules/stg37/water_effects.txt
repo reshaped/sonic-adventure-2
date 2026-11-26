@@ -1,0 +1,2 @@
+datum rouge_kd_lk_un407 C 0x00000000 12
+datum rouge_kd_lk_sibuki1 C 0x0000000c 14

@@ -1,0 +1,38 @@
+text  SOLID_MODELS_TEXTURE_MIU128_LOCO001  15
+text  SOLID_MODELS_TEXTURE_MIU128_MS001  13
+text  SOLID_MODELS_TEXTURE_MIU64_MO018  12
+text  SOLID_MODELS_TEXTURE_MIU64_MS001  12
+text  SOLID_MODELS_TEXTURE_PUM64_4  8
+text  SOLID_MODELS_TEXTURE_MIU64_MS002  12
+text  SOLID_MODELS_TEXTURE_MIU64_MS004  12
+text  SOLID_MODELS_TEXTURE_MIU64_MS005  12
+
+pointer  moasiba_texlist_names  0x00000000  SOLID_MODELS_TEXTURE_MIU128_LOCO001
+pointer  moasiba_texlist_names  0x0000000c  SOLID_MODELS_TEXTURE_MIU128_MS001
+pointer  moasiba_texlist_names  0x00000018  SOLID_MODELS_TEXTURE_MIU64_MO018
+pointer  moasiba_texlist_names  0x00000024  SOLID_MODELS_TEXTURE_MIU64_MS001
+pointer  moasiba_texlist_names  0x00000030  SOLID_MODELS_TEXTURE_PUM64_4
+pointer  moasiba_texlist  0x00000000  moasiba_texlist_names
+pointer  moasiba_model  0x00000000  moasiba_vertices
+pointer  moasiba_model  0x00000004  moasiba_polygons
+pointer  moasiba_object  0x00000004  moasiba_model
+pointer  moasiba_collision_faces  0x00000004  moasiba_collision_strips
+pointer  moasiba_collision_model  0x00000000  moasiba_collision_points
+pointer  moasiba_collision_model  0x00000004  moasiba_collision_normals
+pointer  moasiba_collision_model  0x0000000c  moasiba_collision_faces
+pointer  moasiba_collision_model  0x00000010  moasiba_collision_materials
+pointer  moasiba_collision  0x00000004  moasiba_collision_model
+pointer  railobja_texlist_names  0x00000000  SOLID_MODELS_TEXTURE_MIU64_MS001
+pointer  railobja_texlist_names  0x0000000c  SOLID_MODELS_TEXTURE_MIU64_MS002
+pointer  railobja_texlist_names  0x00000018  SOLID_MODELS_TEXTURE_MIU64_MS004
+pointer  railobja_texlist_names  0x00000024  SOLID_MODELS_TEXTURE_MIU64_MS005
+pointer  railobja_texlist  0x00000000  railobja_texlist_names
+pointer  railobja_model  0x00000000  railobja_vertices
+pointer  railobja_model  0x00000004  railobja_polygons
+pointer  railobja_object  0x00000004  railobja_model
+pointer  railobja_collision_faces  0x00000004  railobja_collision_strips
+pointer  railobja_collision_model  0x00000000  railobja_collision_points
+pointer  railobja_collision_model  0x00000004  railobja_collision_normals
+pointer  railobja_collision_model  0x0000000c  railobja_collision_faces
+pointer  railobja_collision_model  0x00000010  railobja_collision_materials
+pointer  railobja_collision  0x00000004  railobja_collision_model

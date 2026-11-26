@@ -1,0 +1,51 @@
+text  HERD_TEXTURE_METEO128_11  12
+text  HERD_TEXTURE_METEO32_1  10
+text  HERD_TEXTURE_MIU128_MEH004  14
+text  HERD_TEXTURE_MIU128_MEH006  14
+text  HERD_TEXTURE_MIU128_MEH008  14
+text  HERD_TEXTURE_MIU128_MEH009  14
+text  HERD_TEXTURE_MIU128_MEH010  14
+text  HERD_TEXTURE_MIU64_MEH006  13
+text  HERD_TEXTURE_SPACE32_3  10
+pointer  meteor_tank_names  0x00000000  HERD_TEXTURE_METEO128_11
+pointer  meteor_tank_names  0x0000000c  HERD_TEXTURE_METEO32_1
+pointer  meteor_tank_names  0x00000018  HERD_TEXTURE_MIU128_MEH004
+pointer  meteor_tank_names  0x00000024  HERD_TEXTURE_MIU128_MEH006
+pointer  meteor_tank_names  0x00000030  HERD_TEXTURE_MIU128_MEH008
+pointer  meteor_tank_names  0x0000003c  HERD_TEXTURE_MIU128_MEH009
+pointer  meteor_tank_names  0x00000048  HERD_TEXTURE_MIU128_MEH010
+pointer  meteor_tank_names  0x00000054  HERD_TEXTURE_MIU64_MEH006
+pointer  meteor_tank_names  0x00000060  HERD_TEXTURE_SPACE32_3
+pointer  meteor_tank_texlist  0x00000000  meteor_tank_names
+pointer  meteor_tank_object_model  0x00000000  meteor_tank_object_vertices
+pointer  meteor_tank_object_model  0x00000004  meteor_tank_object_polygons
+pointer  meteor_tank_object  0x00000004  meteor_tank_object_model
+pointer  tank_base_names  0x00000000  HERD_TEXTURE_METEO32_1
+pointer  tank_base_names  0x0000000c  HERD_TEXTURE_MIU128_MEH004
+pointer  tank_base_names  0x00000018  HERD_TEXTURE_MIU128_MEH008
+pointer  tank_base_texlist  0x00000000  tank_base_names
+pointer  tank_base_model  0x00000000  tank_base_vertices
+pointer  tank_base_model  0x00000004  tank_base_polygons
+pointer  tank_base  0x00000004  tank_base_model
+pointer  tank_top_names  0x00000000  HERD_TEXTURE_MIU128_MEH006
+pointer  tank_top_names  0x0000000c  HERD_TEXTURE_MIU64_MEH006
+pointer  tank_top_names  0x00000018  HERD_TEXTURE_SPACE32_3
+pointer  tank_top_texlist  0x00000000  tank_top_names
+pointer  tank_top_piece  0x00000000  tank_top_piece_vertices
+pointer  tank_top_piece  0x00000004  tank_top_piece_polygons
+pointer  tank_top_object  0x00000004  tank_top_piece
+pointer  tank_side_names  0x00000000  HERD_TEXTURE_METEO128_11
+pointer  tank_side_names  0x0000000c  HERD_TEXTURE_MIU128_MEH009
+pointer  tank_side_names  0x00000018  HERD_TEXTURE_MIU128_MEH010
+pointer  tank_side_texlist  0x00000000  tank_side_names
+pointer  tank_side_piece  0x00000000  tank_side_piece_vertices
+pointer  tank_side_piece  0x00000004  tank_side_piece_polygons
+pointer  tank_side_object  0x00000004  tank_side_piece
+pointer  tank_center_names  0x00000000  HERD_TEXTURE_MIU128_MEH008
+pointer  tank_center_texlist  0x00000000  tank_center_names
+pointer  tank_center_piece  0x00000000  tank_center_piece_vertices
+pointer  tank_center_piece  0x00000004  tank_center_piece_polygons
+pointer  tank_center_object  0x00000004  tank_center_piece
+pointer  tank_shadow_model  0x00000000  tank_shadow_vertices
+pointer  tank_shadow_model  0x00000004  tank_shadow_polygons
+pointer  tank_shadow  0x00000004  tank_shadow_model

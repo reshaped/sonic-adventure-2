@@ -1,0 +1,133 @@
+; the matrixing of the MPEG audio decoder's synthesis filter, which AHX data
+; plays through
+
+; the matrix's rows, the bytes of an operand cache line, and a float's bytes
+ROWS:           .EQU    64
+CACHE_LINE:     .EQU    32
+FLOAT_BYTES:    .EQU    4
+
+        .EXPORT     _mpeg_matrix
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void mpeg_matrix(const Float *samples, const Float *matrix, Float *ring)
+; take 32 subband samples to 64 values. ring[i] is the sum of samples[k] *
+; matrix[32 * i + k] over k from 0 to 31, for i from 0 to 63. the matrix
+; mpeg_synth_pcm passes holds cos((16 + i)(2k + 1)pi / 64) at
+; matrix[32 * i + k]. each entry is within a unit in the last place of its
+; cosine.
+;
+; samples and matrix must be 8-byte aligned, and ring 4-byte aligned. the 16
+; bytes past the matrix must be readable, since each row, the last included,
+; loads the next row's first four coefficients. FPSCR.PR and FPSCR.SZ must
+; be clear, and SZ is clear again on return. the call changes R0 to R2, R4
+; to R7, and FR0 to FR11 of the bank FPSCR.FR selects.
+;
+; a row takes eight FIPRs of four samples and four coefficients each. FADD
+; adds their sums in order to a sum that starts at 0, and ring[i] is that
+; sum. FSCHG sets SZ for the pair loads and clears it for each row's store.
+; @asm operand: fipr-registers, FIPR FV0,FV4 at 0x8c178d2e takes the first
+; row's first four products
+_mpeg_matrix:
+        FMOV.S      FR12,@-R15
+        FMOV.S      FR13,@-R15
+        FMOV.S      FR14,@-R15
+        FMOV.S      FR15,@-R15
+        PREF        @R4
+        PREF        @R5
+        MOV         R4,R7
+        MOV         #ROWS,R0
+        MOV         R7,R1
+        MOV         R5,R2
+        ADD         #CACHE_LINE,R1
+        PREF        @R1
+        ADD         #2*CACHE_LINE,R2
+        PREF        @R2
+        FSCHG
+        MOV         R7,R4
+        FLDI0       FR15
+        FMOV        @R4+,DR0
+        FMOV        @R4+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FIPR        FV0,FV4
+; a pass of ?row ends a row and starts the next row's first FIPR, whose sum
+; FR7 holds when the next pass starts. a FIPR leaves its sum in the last
+; register of its second vector, the coefficients. each FADD adds a sum
+; while the next FIPR's operands load. R0 counts the rows left, and R4 steps
+; through the samples from R7 again for each row. R2 points 2 * CACHE_LINE
+; bytes past the row's start, at the first of the four lines the pass
+; prefetches
+?row:
+        FMOV        @R4+,DR8
+        FMOV        @R4+,DR10
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        FADD        FR7,FR15
+        PREF        @R2
+        FMOV        @R4+,DR4
+        ADD         #CACHE_LINE,R2
+        FIPR        FV8,FV0
+        FMOV        @R4+,DR6
+        FMOV        @R5+,DR8
+        FMOV        @R5+,DR10
+        FADD        FR3,FR15
+        FMOV        @R4+,DR0
+        FIPR        FV4,FV8
+        FMOV        @R4+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FADD        FR11,FR15
+        PREF        @R2
+        FMOV        @R4+,DR8
+        ADD         #CACHE_LINE,R2
+        FIPR        FV0,FV4
+        FMOV        @R4+,DR10
+        FMOV        @R5+,DR0
+        FMOV        @R5+,DR2
+        FADD        FR7,FR15
+        FMOV        @R4+,DR4
+        FIPR        FV8,FV0
+        FMOV        @R4+,DR6
+        FMOV        @R5+,DR8
+        FMOV        @R5+,DR10
+        FADD        FR3,FR15
+        PREF        @R2
+        FMOV        @R4+,DR0
+        ADD         #CACHE_LINE,R2
+        FIPR        FV4,FV8
+        FMOV        @R4+,DR2
+        FMOV        @R5+,DR4
+        FMOV        @R5+,DR6
+        FADD        FR11,FR15
+        FMOV        @R4+,DR8
+        FIPR        FV0,FV4
+        FMOV        @R4+,DR10
+        FMOV        @R5+,DR0
+        FADD        FR7,FR15
+        FMOV        @R5+,DR2
+        MOV         R7,R4
+        FIPR        FV8,FV0
+        PREF        @R2
+        FMOV        @R5+,DR4
+        ADD         #CACHE_LINE,R2
+        DT          R0
+        FMOV        @R5+,DR6
+        FMOV        @R4+,DR0
+        FADD        FR3,FR15
+        FMOV        @R4+,DR2
+        FSCHG
+        FMOV.S      FR15,@R6
+        FIPR        FV0,FV4
+        FLDI0       FR15
+        FSCHG
+        BF/S        ?row
+        ADD         #FLOAT_BYTES,R6
+        FSCHG
+        FMOV.S      @R15+,FR15
+        FMOV.S      @R15+,FR14
+        FMOV.S      @R15+,FR13
+        FMOV.S      @R15+,FR12
+        RTS
+        NOP
+        .END

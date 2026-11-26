@@ -1,0 +1,7 @@
+pointer  herd_fence_object_1_model  0x00000000  herd_fence_object_1_vertices
+pointer  herd_fence_object_1_model  0x00000004  herd_fence_object_1_polygons
+pointer  herd_fence_object_1  0x00000004  herd_fence_object_1_model
+pointer  herd_fence_object_model  0x00000000  herd_fence_object_vertices
+pointer  herd_fence_object_model  0x00000004  herd_fence_object_polygons
+pointer  herd_fence_object  0x00000004  herd_fence_object_model
+pointer  herd_fence_object  0x0000002c  herd_fence_object_1

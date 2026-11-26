@@ -1,0 +1,7 @@
+text  CHAMBER_FAN_TEXTURE_DZ_DC_MECHANIX64C  C  0x00000000  18
+datum  textures  D  0x00000000  12
+datum  fan_texlist  D  0x0000000c  8
+datum  fan_polygons  D  0x00000014  258
+datum  fan_vertices  D  0x00000118  412
+datum  fan_model  D  0x000002b4  24
+datum  fan_object  D  0x000002cc  52

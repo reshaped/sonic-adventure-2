@@ -1,0 +1,6 @@
+pointer  security_cylinder_wall_model  0x00000000  security_cylinder_wall_vertices
+pointer  security_cylinder_wall_model  0x00000004  security_cylinder_wall_polygons
+pointer  security_cylinder_wall_object  0x00000004  security_cylinder_wall_model
+pointer  textures  0x00000000  security_miu128_pl001
+pointer  textures  0x0000000c  security_miu64_sh001
+pointer  security_cylinder_wall_texlist  0x00000000  textures

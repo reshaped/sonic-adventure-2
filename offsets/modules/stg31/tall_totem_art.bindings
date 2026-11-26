@@ -1,0 +1,3 @@
+pointer  tall_totem_model  0x00000000  tall_totem_vertices
+pointer  tall_totem_model  0x00000004  tall_totem_polygons
+pointer  green_hill_tall_totem_object  0x00000004  tall_totem_model

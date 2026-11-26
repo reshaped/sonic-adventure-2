@@ -1,0 +1,152 @@
+; the VMS LCD's image packers. each packs the 48 by 32 pixels at src, a byte
+; each, into the LCD_SIZE bytes at dst, a bit each. each byte of dst takes
+; BYTE_PIXELS pixels of src in turn. a pixel's bit is set where its byte has
+; bit 3, PIXEL_MASK, set
+
+        .EXPORT     _pdVmsLcdBltAsmFlipH
+        .EXPORT     _pdVmsLcdBltAsmFlipV
+        .EXPORT     _pdVmsLcdBltAsmFlipHV
+        .EXPORT     _pdVmsLcdBltAsm
+
+; an LCD image's rows, each row's bytes, the image's bytes, and the pixels
+; each byte packs
+ROWS:           .EQU    32
+ROW_BYTES:      .EQU    6
+LCD_SIZE:       .EQU    ROWS*ROW_BYTES
+BYTE_PIXELS:    .EQU    8
+; the mask of bit 3, the bit of a pixel's byte at src that sets the pixel's
+; bit at dst
+PIXEL_MASK:     .EQU    8
+; the bit of dst's byte that its first pixel takes: bit 7, where the next
+; pixels take the bits below it, or bit 0, where they take the bits above
+FIRST_HIGH:     .EQU    H'80
+FIRST_LOW:      .EQU    1
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; void pdVmsLcdBltAsmFlipV(void *dst, const void *src)
+; pack src into dst upside down, src's first row into dst's last. the first
+; pixel of each byte takes FIRST_HIGH
+; @asm name: lcdasm_, the R11b shinobi.lib member that holds it; it starts at
+; 0x8c1371b4
+_pdVmsLcdBltAsmFlipV:
+        MOV.W       #LCD_SIZE-ROW_BYTES,R1
+        MOV         #ROWS,R2
+        ADD         R1,R4
+?row:
+        MOV         #ROW_BYTES,R3
+?byte:
+        MOV         #0,R6
+        MOV.W       #FIRST_HIGH,R1
+        MOV         #BYTE_PIXELS,R7
+?pixel:
+        MOV.B       @R5+,R0
+        TST         #PIXEL_MASK,R0
+        BT          ?next
+        OR          R1,R6
+?next:
+        SHLR        R1
+        DT          R7
+        BF          ?pixel
+        MOV.B       R6,@R4
+        ADD         #1,R4
+        DT          R3
+        BF          ?byte
+        DT          R2
+        BF/S        ?row
+        ADD         #-2*ROW_BYTES,R4        ; up to the row above's first byte
+        RTS
+        NOP
+
+; void pdVmsLcdBltAsmFlipH(void *dst, const void *src)
+; pack src into dst mirrored, each row from its last byte back. the first
+; pixel of each byte takes FIRST_LOW
+; @asm name: lcdasm_, the R11b shinobi.lib member that holds it; it starts at
+; 0x8c1371e6
+_pdVmsLcdBltAsmFlipH:
+        MOV         #ROWS,R2
+        ADD         #ROW_BYTES-1,R4
+?row:
+        MOV         #ROW_BYTES,R3
+?byte:
+        MOV         #0,R6
+        MOV         #FIRST_LOW,R1
+        MOV         #BYTE_PIXELS,R7
+?pixel:
+        MOV.B       @R5+,R0
+        TST         #PIXEL_MASK,R0
+        BT          ?next
+        OR          R1,R6
+?next:
+        SHLL        R1
+        DT          R7
+        BF          ?pixel
+        MOV.B       R6,@R4
+        ADD         #-1,R4
+        DT          R3
+        BF          ?byte
+        DT          R2
+        BF/S        ?row
+        ADD         #2*ROW_BYTES,R4         ; on to the row below's last byte
+        RTS
+        NOP
+
+; void pdVmsLcdBltAsmFlipHV(void *dst, const void *src)
+; pack src into dst turned half a turn, filling dst from its last byte back
+; to its first. the first pixel of each byte takes FIRST_LOW
+; @asm name: lcdasm_, the R11b shinobi.lib member that holds it; it starts at
+; 0x8c137212
+_pdVmsLcdBltAsmFlipHV:
+        MOV.W       #LCD_SIZE,R1
+        MOV         #ROWS,R2
+        ADD         R1,R4
+?row:
+        MOV         #ROW_BYTES,R3
+?byte:
+        MOV         #0,R6
+        MOV         #FIRST_LOW,R1
+        MOV         #BYTE_PIXELS,R7
+?pixel:
+        MOV.B       @R5+,R0
+        TST         #PIXEL_MASK,R0
+        BT          ?next
+        OR          R1,R6
+?next:
+        DT          R7
+        BF/S        ?pixel
+        SHLL        R1
+        MOV.B       R6,@-R4
+        DT          R3
+        BF          ?byte
+        DT          R2
+        BF          ?row
+        RTS
+        NOP
+
+; void pdVmsLcdBltAsm(void *dst, const void *src)
+; pack src into dst unflipped, from dst's first byte on. the first pixel of
+; each byte takes FIRST_HIGH
+; @asm name: lcdasm_, the R11b shinobi.lib member that holds it; it starts at
+; 0x8c13723e
+_pdVmsLcdBltAsm:
+        MOV.W       #LCD_SIZE,R3
+?byte:
+        MOV         #0,R6
+        MOV.W       #FIRST_HIGH,R1
+        MOV         #BYTE_PIXELS,R7
+?pixel:
+        MOV.B       @R5+,R0
+        TST         #PIXEL_MASK,R0
+        BT          ?next
+        OR          R1,R6
+?next:
+        SHLR        R1
+        DT          R7
+        BF          ?pixel
+        MOV.B       R6,@R4
+        DT          R3
+        BF/S        ?byte
+        ADD         #1,R4
+        RTS
+        NOP
+        .END

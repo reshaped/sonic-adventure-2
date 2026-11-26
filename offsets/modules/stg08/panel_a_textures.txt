@@ -1,0 +1,9 @@
+datum  security_panel_face  C  0x00000000  16
+datum  area_a  C  0x00000010  12
+datum  security_panel_border  C  0x0000001c  12
+datum  textures  D  0x00000000  36
+datum  security_panel_a_texlist  D  0x00000024  8
+datum  security_panel_a_object_polygons  D  0x0000002c  458
+datum  security_panel_a_object_vertices  D  0x000001f8  892
+datum  security_panel_a_object_model  D  0x00000574  24
+datum  security_panel_a_object  D  0x0000058c  52

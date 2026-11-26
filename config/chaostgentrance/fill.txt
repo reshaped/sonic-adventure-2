@@ -1,0 +1,4 @@
+# The original overlay header points to an export in its first code input.
+DHEAD P inputs e96bf0b139f2a01dc7b711933293352bd6a27d4d96e67c784fad60e4cbe018e7 _chaostgentrance_step 0x0c9c0008
+# Complete C inputs and a pointer to the first private D input.
+C D inputs 5fe791b18d05f9ba47278233d59b1385cbaf81b081fd70c337798c897c55dfb5 D 0x0c9c04b8

@@ -1,0 +1,127 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_JUNGLE128_12  13
+text  STAGE_TEXTURE_JUNGLE128_13  13
+text  STAGE_TEXTURE_JUNGLE128_14  13
+text  STAGE_TEXTURE_JUNGLE128_5  12
+text  STAGE_TEXTURE_JUNGLE128_9  12
+text  STAGE_TEXTURE_JUNGLE256_6  12
+text  STAGE_TEXTURE_JUNGLE64_1  11
+text  STAGE_TEXTURE_MIU128_GREEN001  16
+text  STAGE_TEXTURE_MIU128_GREEN002  16
+text  STAGE_TEXTURE_MIU128_GREEN003  16
+text  STAGE_TEXTURE_MIU128_GREEN004  16
+text  STAGE_TEXTURE_MIU128_GREEN005  16
+text  STAGE_TEXTURE_MIU128_GREEN006  16
+text  STAGE_TEXTURE_MIU128_GREEN007  16
+text  STAGE_TEXTURE_MIU128_GREEN008  16
+text  STAGE_TEXTURE_MIU128_GREEN009  16
+text  STAGE_TEXTURE_MIU64_GREEN001  15
+text  STAGE_TEXTURE_MIU64_GREEN002  15
+text  STAGE_TEXTURE_MIU64_GREEN003  15
+text  STAGE_TEXTURE_MIU64_GREEN004  15
+text  STAGE_TEXTURE_MIU64_GREEN005  15
+text  STAGE_TEXTURE_MIU64_GREEN006  15
+text  STAGE_TEXTURE_MIU64_GREEN007  15
+text  STAGE_TEXTURE_MIU64_KAGE001  14
+text  STAGE_TEXTURE_TX_JUNGLE001  13
+text  STAGE_TEXTURE_TX_JUNGLE002  13
+text  STAGE_TEXTURE_TX_JUNGLE003  13
+text  STAGE_TEXTURE_TX_JUNGLE004  13
+text  STAGE_TEXTURE_TX_JUNGLE005  13
+text  STAGE_TEXTURE_TX_JUNGLE006  13
+text  STAGE_TEXTURE_TX_JUNGLE007  13
+text  STAGE_TEXTURE_TX_JUNGLE008  13
+text  STAGE_TEXTURE_TX_JUNGLE009  13
+text  STAGE_TEXTURE_TX_JUNGLE010  13
+text  STAGE_TEXTURE_TX_JUNGLE011  13
+text  STAGE_TEXTURE_TX_JUNGLE012  13
+text  STAGE_TEXTURE_TX_JUNGLE013  13
+text  STAGE_TEXTURE_TX_JUNGLE014  13
+text  PVM_OBJTEX_STG19  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+text  PVM_BOSS_PWGUAGE_TEX  17
+text  PVM_LANDTX19_SUIMEN  16
+
+pointer  stage_archive_names  0x00000000  STAGE_TEXTURE_JUNGLE128_12
+pointer  stage_archive_names  0x0000000c  STAGE_TEXTURE_JUNGLE128_13
+pointer  stage_archive_names  0x00000018  STAGE_TEXTURE_JUNGLE128_14
+pointer  stage_archive_names  0x00000024  STAGE_TEXTURE_JUNGLE128_5
+pointer  stage_archive_names  0x00000030  STAGE_TEXTURE_JUNGLE128_9
+pointer  stage_archive_names  0x0000003c  STAGE_TEXTURE_JUNGLE256_6
+pointer  stage_archive_names  0x00000048  STAGE_TEXTURE_JUNGLE64_1
+pointer  stage_archive_names  0x00000054  STAGE_TEXTURE_MIU128_GREEN001
+pointer  stage_archive_names  0x00000060  STAGE_TEXTURE_MIU128_GREEN002
+pointer  stage_archive_names  0x0000006c  STAGE_TEXTURE_MIU128_GREEN003
+pointer  stage_archive_names  0x00000078  STAGE_TEXTURE_MIU128_GREEN004
+pointer  stage_archive_names  0x00000084  STAGE_TEXTURE_MIU128_GREEN005
+pointer  stage_archive_names  0x00000090  STAGE_TEXTURE_MIU128_GREEN006
+pointer  stage_archive_names  0x0000009c  STAGE_TEXTURE_MIU128_GREEN007
+pointer  stage_archive_names  0x000000a8  STAGE_TEXTURE_MIU128_GREEN008
+pointer  stage_archive_names  0x000000b4  STAGE_TEXTURE_MIU128_GREEN009
+pointer  stage_archive_names  0x000000c0  STAGE_TEXTURE_MIU64_GREEN001
+pointer  stage_archive_names  0x000000cc  STAGE_TEXTURE_MIU64_GREEN002
+pointer  stage_archive_names  0x000000d8  STAGE_TEXTURE_MIU64_GREEN003
+pointer  stage_archive_names  0x000000e4  STAGE_TEXTURE_MIU64_GREEN004
+pointer  stage_archive_names  0x000000f0  STAGE_TEXTURE_MIU64_GREEN005
+pointer  stage_archive_names  0x000000fc  STAGE_TEXTURE_MIU64_GREEN006
+pointer  stage_archive_names  0x00000108  STAGE_TEXTURE_MIU64_GREEN007
+pointer  stage_archive_names  0x00000114  STAGE_TEXTURE_MIU64_KAGE001
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  water_frames  0x00000000  STAGE_TEXTURE_TX_JUNGLE001
+pointer  water_frames  0x0000000c  STAGE_TEXTURE_TX_JUNGLE002
+pointer  water_frames  0x00000018  STAGE_TEXTURE_TX_JUNGLE003
+pointer  water_frames  0x00000024  STAGE_TEXTURE_TX_JUNGLE004
+pointer  water_frames  0x00000030  STAGE_TEXTURE_TX_JUNGLE005
+pointer  water_frames  0x0000003c  STAGE_TEXTURE_TX_JUNGLE006
+pointer  water_frames  0x00000048  STAGE_TEXTURE_TX_JUNGLE007
+pointer  water_frames  0x00000054  STAGE_TEXTURE_TX_JUNGLE008
+pointer  water_frames  0x00000060  STAGE_TEXTURE_TX_JUNGLE009
+pointer  water_frames  0x0000006c  STAGE_TEXTURE_TX_JUNGLE010
+pointer  water_frames  0x00000078  STAGE_TEXTURE_TX_JUNGLE011
+pointer  water_frames  0x00000084  STAGE_TEXTURE_TX_JUNGLE012
+pointer  water_frames  0x00000090  STAGE_TEXTURE_TX_JUNGLE013
+pointer  water_frames  0x0000009c  STAGE_TEXTURE_TX_JUNGLE014
+pointer  versus_sonic_1_water_texlist  0x00000000  water_frames
+pointer  stage_textures  0x00000000  ring_texlist
+pointer  stage_textures  0x00000004  ring_shadow_texlist
+pointer  stage_textures  0x00000008  effect_texlist
+pointer  stage_textures  0x0000000c  burst_texlist
+pointer  stage_textures  0x00000010  flame_texlist
+pointer  stage_textures  0x00000014  white_breath_texlist
+pointer  stage_textures  0x00000018  revolving_vine_texlist
+pointer  stage_textures  0x0000001c  vine_texlist
+pointer  stage_textures  0x00000020  vine_preview_texlist
+pointer  stage_textures  0x00000024  hover_lift_texlist_0
+pointer  stage_textures  0x00000028  fallen_tree_texlist
+pointer  stage_textures  0x0000002c  test_wood_texlist
+pointer  stage_textures  0x00000030  hover_lift_texlist_1
+pointer  stage_textures  0x00000034  ring_sparkle_texlist
+pointer  stage_textures  0x00000038  burst_texlist
+pointer  versus_sonic_1_object_texture_groups  0x00000000  stage_textures
+pointer  versus_sonic_1_object_texture_groups  0x00000004  item_box_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000008  item_box_air_texlists
+pointer  versus_sonic_1_object_texture_groups  0x0000000c  reel_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000010  cage_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000014  wood_box_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000018  iron_box_texlists
+pointer  versus_sonic_1_object_texture_groups  0x0000001c  skull_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000020  jungle_prop_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000024  solid_scenery_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000028  search_box_texlists
+pointer  versus_sonic_1_object_texture_groups  0x0000002c  hint_box_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000030  object_effect_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000034  messenger_texlists
+pointer  versus_sonic_1_object_texture_groups  0x00000038  wood_fence_texlists
+pointer  versus_sonic_1_object_pvms  0x00000000  PVM_OBJTEX_STG19
+pointer  versus_sonic_1_object_pvms  0x00000004  stage_archive
+pointer  versus_sonic_1_object_pvms  0x00000008  PVM_EFFTEX_COMMON
+pointer  versus_sonic_1_object_pvms  0x0000000c  efftex_common_texlist
+pointer  versus_sonic_1_object_pvms  0x00000010  PVM_OBJTEX_COMMON
+pointer  versus_sonic_1_object_pvms  0x00000014  objtex_common_texlist
+pointer  versus_sonic_1_object_pvms  0x00000018  PVM_BOSS_PWGUAGE_TEX
+pointer  versus_sonic_1_object_pvms  0x0000001c  boss_gauge_texlist
+pointer  versus_sonic_1_object_pvms  0x00000020  PVM_LANDTX19_SUIMEN
+pointer  versus_sonic_1_object_pvms  0x00000024  versus_sonic_1_water_texlist

@@ -1,0 +1,2 @@
+datum  meteor_texlists  D  0x00000000  24
+datum  meteor_objects  D  0x00000018  16

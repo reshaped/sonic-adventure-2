@@ -1,0 +1,7 @@
+pointer  security_panel_a_object_model  0x00000000  security_panel_a_object_vertices
+pointer  security_panel_a_object_model  0x00000004  security_panel_a_object_polygons
+pointer  security_panel_a_object  0x00000004  security_panel_a_object_model
+pointer  textures  0x00000000  security_panel_face
+pointer  textures  0x0000000c  area_a
+pointer  textures  0x00000018  security_panel_border
+pointer  security_panel_a_texlist  0x00000000  textures

@@ -1,0 +1,24 @@
+text  HERD_TEXTURE_METEO32_1  10
+text  HERD_TEXTURE_MIU128_MEH004  14
+text  HERD_TEXTURE_MIU128_MEH007  14
+text  HERD_TEXTURE_MIU128_MEH010  14
+text  HERD_TEXTURE_MIU64_MEH006  13
+text  HERD_TEXTURE_MIU64_MEH010  13
+pointer  herd_pole_names  0x00000000  HERD_TEXTURE_METEO32_1
+pointer  herd_pole_names  0x0000000c  HERD_TEXTURE_MIU128_MEH004
+pointer  herd_pole_names  0x00000018  HERD_TEXTURE_MIU128_MEH007
+pointer  herd_pole_names  0x00000024  HERD_TEXTURE_MIU128_MEH010
+pointer  herd_pole_names  0x00000030  HERD_TEXTURE_MIU64_MEH006
+pointer  herd_pole_names  0x0000003c  HERD_TEXTURE_MIU64_MEH010
+pointer  herd_pole_texlist  0x00000000  herd_pole_names
+pointer  herd_pole_object_2_model  0x00000000  herd_pole_object_2_vertices
+pointer  herd_pole_object_2_model  0x00000004  herd_pole_object_2_polygons
+pointer  herd_pole_object_2  0x00000004  herd_pole_object_2_model
+pointer  herd_pole_object_1_model  0x00000000  herd_pole_object_1_vertices
+pointer  herd_pole_object_1_model  0x00000004  herd_pole_object_1_polygons
+pointer  herd_pole_object_1  0x00000004  herd_pole_object_1_model
+pointer  herd_pole_object_1  0x0000002c  herd_pole_object_2
+pointer  herd_pole_object_model  0x00000000  herd_pole_object_vertices
+pointer  herd_pole_object_model  0x00000004  herd_pole_object_polygons
+pointer  herd_pole_object  0x00000004  herd_pole_object_model
+pointer  herd_pole_object  0x0000002c  herd_pole_object_1

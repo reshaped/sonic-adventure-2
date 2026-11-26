@@ -1,0 +1,17 @@
+datum  meteor_herd_warning_land_filenames  C  0x00000000  222
+datum  meteor_herd_warning_land_textures  D  0x00000000  156
+datum  meteor_warning_texlist  D  0x0000009c  8
+datum  meteor_herd_warning_land_draw_2_polygons  D  0x000000a4  46
+datum  meteor_herd_warning_land_draw_2_vertices  D  0x000000d4  76
+datum  meteor_herd_warning_land_draw_2_model  D  0x00000120  24
+datum  meteor_herd_warning_land_draw_2  D  0x00000138  52
+datum  meteor_herd_warning_land_draw_1_polygons  D  0x0000016c  46
+datum  meteor_herd_warning_land_draw_1_vertices  D  0x0000019c  76
+datum  meteor_herd_warning_land_draw_1_model  D  0x000001e8  24
+datum  meteor_herd_warning_land_draw_1  D  0x00000200  52
+datum  meteor_herd_warning_land_draw_0_polygons  D  0x00000234  46
+datum  meteor_herd_warning_land_draw_0_vertices  D  0x00000264  76
+datum  meteor_herd_warning_land_draw_0_model  D  0x000002b0  24
+datum  meteor_herd_warning_land_draw_0  D  0x000002c8  52
+datum  meteor_herd_warning_land_entries  D  0x000002fc  96
+datum  meteor_herd_warning_land  D  0x0000035c  32

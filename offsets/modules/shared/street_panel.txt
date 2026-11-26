@@ -1,0 +1,8 @@
+text  ROAD_TEXTURE_MIU128_RH011  C  0x00000000  13
+datum  street_panel_textures  D  0x00000000  12
+datum  street_panel_texlist  D  0x0000000c  8
+datum  street_panel_polygons  D  0x00000014  154
+datum  street_panel_vertices  D  0x000000b0  332
+datum  street_panel_model  D  0x000001fc  24
+datum  street_panel_object  D  0x00000214  52
+datum  street_panel_texlists  D  0x00000248  8

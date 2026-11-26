@@ -1,0 +1,55 @@
+text METEOR_TEXTURE_MIU256_FR001 13
+text METEOR_TEXTURE_MIU128_FR002 13
+text METEOR_TEXTURE_MIU128_MEH001 14
+text METEOR_TEXTURE_MIU64_MEH001 13
+
+pointer  meteor_rock_0_mesh  0x00000000  meteor_rock_0_vertices
+pointer  meteor_rock_0_mesh  0x00000004  meteor_rock_0_polygons
+pointer  meteor_rock_1_mesh  0x00000000  meteor_rock_1_vertices
+pointer  meteor_rock_1_mesh  0x00000004  meteor_rock_1_polygons
+pointer  meteor_rock_2_mesh  0x00000000  meteor_rock_2_vertices
+pointer  meteor_rock_2_mesh  0x00000004  meteor_rock_2_polygons
+pointer  meteor_rock_3_mesh  0x00000000  meteor_rock_3_vertices
+pointer  meteor_rock_3_mesh  0x00000004  meteor_rock_3_polygons
+pointer  meteor_fireball_mesh  0x00000000  meteor_fireball_vertices
+pointer  meteor_fireball_mesh  0x00000004  meteor_fireball_polygons
+pointer  meteor_fragment_mesh  0x00000000  meteor_fragment_vertices
+pointer  meteor_fragment_mesh  0x00000004  meteor_fragment_polygons
+pointer  meteor_shard_mesh  0x00000000  meteor_shard_vertices
+pointer  meteor_shard_mesh  0x00000004  meteor_shard_polygons
+pointer  meteor_rock_0_textures  0x00000000  METEOR_TEXTURE_MIU256_FR001
+pointer  meteor_rock_0_texlist  0x00000000  meteor_rock_0_textures
+pointer  meteor_rock_0  0x00000004  meteor_rock_0_mesh
+pointer  meteor_rock_1_textures  0x00000000  METEOR_TEXTURE_MIU256_FR001
+pointer  meteor_rock_1_texlist  0x00000000  meteor_rock_1_textures
+pointer  meteor_rock_1  0x00000004  meteor_rock_1_mesh
+pointer  meteor_rock_2_textures  0x00000000  METEOR_TEXTURE_MIU128_FR002
+pointer  meteor_rock_2_textures  0x0000000c  METEOR_TEXTURE_MIU256_FR001
+pointer  meteor_rock_2_texlist  0x00000000  meteor_rock_2_textures
+pointer  meteor_rock_2  0x00000004  meteor_rock_2_mesh
+pointer  meteor_rock_3_textures  0x00000000  METEOR_TEXTURE_MIU128_FR002
+pointer  meteor_rock_3_textures  0x0000000c  METEOR_TEXTURE_MIU256_FR001
+pointer  meteor_rock_3_texlist  0x00000000  meteor_rock_3_textures
+pointer  meteor_rock_3  0x00000004  meteor_rock_3_mesh
+pointer  fireball_textures  0x00000000  METEOR_TEXTURE_MIU128_MEH001
+pointer  fireball_texlist  0x00000000  fireball_textures
+pointer  fireball_object  0x00000004  meteor_fireball_mesh
+pointer  fireball_piece_2_textures  0x00000000  METEOR_TEXTURE_MIU128_MEH001
+pointer  fireball_piece_2_textures  0x0000000c  METEOR_TEXTURE_MIU64_MEH001
+pointer  fireball_piece_2_texlist  0x00000000  fireball_piece_2_textures
+pointer  fireball_piece_2_object  0x00000004  meteor_fragment_mesh
+pointer  fireball_piece_1_textures  0x00000000  METEOR_TEXTURE_MIU128_MEH001
+pointer  fireball_piece_1_textures  0x0000000c  METEOR_TEXTURE_MIU64_MEH001
+pointer  fireball_piece_1_texlist  0x00000000  fireball_piece_1_textures
+pointer  fireball_piece_1_object  0x00000004  meteor_shard_mesh
+pointer  fireball_texture_group  0x00000000  meteor_rock_0_texlist
+pointer  fireball_texture_group  0x00000004  meteor_rock_1_texlist
+pointer  fireball_texture_group  0x00000008  meteor_rock_2_texlist
+pointer  fireball_texture_group  0x0000000c  meteor_rock_3_texlist
+pointer  fireball_texture_group  0x00000010  fireball_piece_2_texlist
+pointer  fireball_texture_group  0x00000014  fireball_piece_1_texlist
+pointer  fireball_texture_group  0x00000018  fireball_texlist
+pointer  meteor_rocks  0x00000000  meteor_rock_0
+pointer  meteor_rocks  0x00000004  meteor_rock_1
+pointer  meteor_rocks  0x00000008  meteor_rock_2
+pointer  meteor_rocks  0x0000000c  meteor_rock_3

@@ -1,0 +1,6 @@
+pointer  textures  0x00000000  security_panel_a_texlist
+pointer  textures  0x00000004  security_panel_b_texlist
+pointer  textures  0x00000008  security_panel_c_texlist
+pointer  objects  0x00000000  security_panel_a_object
+pointer  objects  0x00000004  security_panel_b_object
+pointer  objects  0x00000008  security_panel_c_object

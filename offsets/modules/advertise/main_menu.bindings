@@ -1,0 +1,28 @@
+text MAIN_MENU_ARCHIVE 9
+text MAIN_MENU_TEXTURE_EMENU01 29
+text MAIN_MENU_TEXTURE_EMENU02 29
+text MAIN_MENU_TEXTURE_EMENU03 29
+text MAIN_MENU_TEXTURE_JMENU01 29
+text MAIN_MENU_TEXTURE_JMENU02 29
+text MAIN_MENU_TEXTURE_JMENU03 29
+text MAIN_MENU_TEXTURE_MAINMENU_BUTTON 29
+text MAIN_MENU_TEXTURE_SIYOU_HUKA 29
+
+pointer  groups  0x00000000  group_0_panels
+pointer  groups  0x00000008  main_menu_swings
+pointer  groups  0x0000000c  group_1_panels
+pointer  groups  0x00000014  main_menu_swings+0x64
+pointer  groups  0x00000018  group_2_panels
+pointer  groups  0x00000020  main_menu_swings+0xc8
+pointer  groups  0x00000024  group_3_panels
+pointer  groups  0x0000002c  main_menu_swings+0x12c
+pointer  groups  0x00000038  main_menu_swings+0x190
+pointer  texlist  0x00000000  texnames
+pointer  texnames  0x00000000  MAIN_MENU_TEXTURE_EMENU01
+pointer  texnames  0x0000000c  MAIN_MENU_TEXTURE_EMENU02
+pointer  texnames  0x00000018  MAIN_MENU_TEXTURE_EMENU03
+pointer  texnames  0x00000024  MAIN_MENU_TEXTURE_JMENU01
+pointer  texnames  0x00000030  MAIN_MENU_TEXTURE_JMENU02
+pointer  texnames  0x0000003c  MAIN_MENU_TEXTURE_JMENU03
+pointer  texnames  0x00000048  MAIN_MENU_TEXTURE_MAINMENU_BUTTON
+pointer  texnames  0x00000054  MAIN_MENU_TEXTURE_SIYOU_HUKA

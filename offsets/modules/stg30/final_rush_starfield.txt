@@ -1,0 +1,4 @@
+datum  sky_stars_polygons  D  0x00000000  8754
+datum  sky_stars_vertices  D  0x00002234  16236
+datum  sky_stars_mesh  D  0x000061a0  24
+datum  rush_stars_object  D  0x000061b8  52

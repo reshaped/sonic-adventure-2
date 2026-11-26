@@ -1,0 +1,8 @@
+text  SONIC_PILLAR_TEXTURES_KD_LS_UNIT802  C  0x00000000  14
+text  SONIC_PILLAR_TEXTURES_KD_LS_UNIT803  C  0x00000010  14
+datum  textures  D  0x00000000  24
+datum  electric_pillar_texlist  D  0x00000018  8
+datum  electric_pillar_polygons  D  0x00000020  762
+datum  electric_pillar_vertices  D  0x0000031c  620
+datum  electric_pillar_model  D  0x00000588  24
+datum  electric_pillar_object  D  0x000005a0  52

@@ -1,0 +1,227 @@
+include  objtex_common
+include  efftex_common
+
+text  STAGE_TEXTURE_DZ_HB_AHATA128  15
+text  STAGE_TEXTURE_DZ_HB_ASIBA128  15
+text  STAGE_TEXTURE_DZ_HB_ASIBA32  14
+text  STAGE_TEXTURE_DZ_HB_EGGBOX256  16
+text  STAGE_TEXTURE_DZ_HB_EGGBOX_AA256  19
+text  STAGE_TEXTURE_DZ_HB_EGGBOX_AAA256  20
+text  STAGE_TEXTURE_DZ_HB_EGGBOX_BASE256  21
+text  STAGE_TEXTURE_DZ_HB_EGGBOX_DANMEN128  23
+text  STAGE_TEXTURE_DZ_HB_EGGBOX_UP256  19
+text  STAGE_TEXTURE_DZ_HB_EGGBOX_UPAA256  21
+text  STAGE_TEXTURE_DZ_HB_EGGBOX_UPAAA256  22
+text  STAGE_TEXTURE_DZ_HB_EGGHASIRA_SITA128  24
+text  STAGE_TEXTURE_DZ_HB_EGGHASIRA_UE128  22
+text  STAGE_TEXTURE_DZ_HB_EGGWALL256  17
+text  STAGE_TEXTURE_DZ_HB_EGGWALL_DANMEN128  24
+text  STAGE_TEXTURE_DZ_HB_EGGWALL_KOWARE_AAA256  28
+text  STAGE_TEXTURE_DZ_HB_EGGWALL_KOWARE_BBB256  28
+text  STAGE_TEXTURE_DZ_HB_OILDERRICK_ARM256  24
+text  STAGE_TEXTURE_DZ_HB_OILDERRICK_LEG64  23
+text  STAGE_TEXTURE_DZ_HB_OILDERRICK_RID64  23
+text  STAGE_TEXTURE_DZ_HB_OILDERRICK_TANK128  25
+text  STAGE_TEXTURE_DZ_HB_OILDERRICK_WEIGHT128  27
+text  STAGE_TEXTURE_DZ_HB_OILDERRICK_WIRE8  23
+text  STAGE_TEXTURE_DZ_HB_PLANT_ALPHA128  21
+text  STAGE_TEXTURE_DZ_HB_SARUMAT128  17
+text  STAGE_TEXTURE_DZ_HB_TUBO128  14
+text  STAGE_TEXTURE_DZ_HB_TUBO_KAGE32  18
+text  STAGE_TEXTURE_KD_HB_ASIBA4  13
+text  STAGE_TEXTURE_KD_HB_KAGE3  12
+text  STAGE_TEXTURE_KD_SO_SAKU1  12
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0001  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0002  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0003  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0004  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0005  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0006  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0007  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0008  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0009  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0010  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0011  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0012  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0013  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0014  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0015  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0016  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0017  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0018  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0019  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0020  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0021  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0022  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0023  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0024  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0025  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0026  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0027  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0028  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0029  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0030  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0031  18
+text  STAGE_TEXTURE_DZ_HB_RYUUSA_0032  18
+text  STAGE_TEXTURE_SIKAKE_18_128E  15
+text  STAGE_TEXTURE_SIKAKE_20_128E  15
+text  STAGE_TEXTURE_SIKAKE_46_128E  15
+text  STAGE_TEXTURE_SIKAKE_47_128E  15
+text  PVM_LEVUPDAI_TMTEX  15
+text  PVM_OBJTEX_STG23  13
+text  PVM_EFFTEX_COMMON  14
+text  PVM_OBJTEX_COMMON  14
+text  PVM_STG23_RYUUSA  13
+text  PVM_EGGCONTTEX  11
+
+pointer  stage_archive_names  0x00000000  STAGE_TEXTURE_DZ_HB_AHATA128
+pointer  stage_archive_names  0x0000000c  STAGE_TEXTURE_DZ_HB_ASIBA128
+pointer  stage_archive_names  0x00000018  STAGE_TEXTURE_DZ_HB_ASIBA32
+pointer  stage_archive_names  0x00000024  STAGE_TEXTURE_DZ_HB_EGGBOX256
+pointer  stage_archive_names  0x00000030  STAGE_TEXTURE_DZ_HB_EGGBOX_AA256
+pointer  stage_archive_names  0x0000003c  STAGE_TEXTURE_DZ_HB_EGGBOX_AAA256
+pointer  stage_archive_names  0x00000048  STAGE_TEXTURE_DZ_HB_EGGBOX_BASE256
+pointer  stage_archive_names  0x00000054  STAGE_TEXTURE_DZ_HB_EGGBOX_DANMEN128
+pointer  stage_archive_names  0x00000060  STAGE_TEXTURE_DZ_HB_EGGBOX_UP256
+pointer  stage_archive_names  0x0000006c  STAGE_TEXTURE_DZ_HB_EGGBOX_UPAA256
+pointer  stage_archive_names  0x00000078  STAGE_TEXTURE_DZ_HB_EGGBOX_UPAAA256
+pointer  stage_archive_names  0x00000084  STAGE_TEXTURE_DZ_HB_EGGHASIRA_SITA128
+pointer  stage_archive_names  0x00000090  STAGE_TEXTURE_DZ_HB_EGGHASIRA_UE128
+pointer  stage_archive_names  0x0000009c  STAGE_TEXTURE_DZ_HB_EGGWALL256
+pointer  stage_archive_names  0x000000a8  STAGE_TEXTURE_DZ_HB_EGGWALL_DANMEN128
+pointer  stage_archive_names  0x000000b4  STAGE_TEXTURE_DZ_HB_EGGWALL_KOWARE_AAA256
+pointer  stage_archive_names  0x000000c0  STAGE_TEXTURE_DZ_HB_EGGWALL_KOWARE_BBB256
+pointer  stage_archive_names  0x000000cc  STAGE_TEXTURE_DZ_HB_OILDERRICK_ARM256
+pointer  stage_archive_names  0x000000d8  STAGE_TEXTURE_DZ_HB_OILDERRICK_LEG64
+pointer  stage_archive_names  0x000000e4  STAGE_TEXTURE_DZ_HB_OILDERRICK_RID64
+pointer  stage_archive_names  0x000000f0  STAGE_TEXTURE_DZ_HB_OILDERRICK_TANK128
+pointer  stage_archive_names  0x000000fc  STAGE_TEXTURE_DZ_HB_OILDERRICK_WEIGHT128
+pointer  stage_archive_names  0x00000108  STAGE_TEXTURE_DZ_HB_OILDERRICK_WIRE8
+pointer  stage_archive_names  0x00000114  STAGE_TEXTURE_DZ_HB_PLANT_ALPHA128
+pointer  stage_archive_names  0x00000120  STAGE_TEXTURE_DZ_HB_SARUMAT128
+pointer  stage_archive_names  0x0000012c  STAGE_TEXTURE_DZ_HB_TUBO128
+pointer  stage_archive_names  0x00000138  STAGE_TEXTURE_DZ_HB_TUBO_KAGE32
+pointer  stage_archive_names  0x00000144  STAGE_TEXTURE_KD_HB_ASIBA4
+pointer  stage_archive_names  0x00000150  STAGE_TEXTURE_KD_HB_KAGE3
+pointer  stage_archive_names  0x0000015c  STAGE_TEXTURE_KD_SO_SAKU1
+pointer  stage_archive_names  0x00000168  OBJTEX_COMMON_SIKAKE_18_128
+pointer  stage_archive_names  0x00000174  OBJTEX_COMMON_SIKAKE_20_128
+pointer  stage_archive_names  0x00000180  OBJTEX_COMMON_SIKAKE_46_128
+pointer  stage_archive_names  0x0000018c  OBJTEX_COMMON_SIKAKE_47_128
+pointer  stage_archive  0x00000000  stage_archive_names
+pointer  quicksand_names  0x00000000  STAGE_TEXTURE_DZ_HB_RYUUSA_0001
+pointer  quicksand_names  0x0000000c  STAGE_TEXTURE_DZ_HB_RYUUSA_0002
+pointer  quicksand_names  0x00000018  STAGE_TEXTURE_DZ_HB_RYUUSA_0003
+pointer  quicksand_names  0x00000024  STAGE_TEXTURE_DZ_HB_RYUUSA_0004
+pointer  quicksand_names  0x00000030  STAGE_TEXTURE_DZ_HB_RYUUSA_0005
+pointer  quicksand_names  0x0000003c  STAGE_TEXTURE_DZ_HB_RYUUSA_0006
+pointer  quicksand_names  0x00000048  STAGE_TEXTURE_DZ_HB_RYUUSA_0007
+pointer  quicksand_names  0x00000054  STAGE_TEXTURE_DZ_HB_RYUUSA_0008
+pointer  quicksand_names  0x00000060  STAGE_TEXTURE_DZ_HB_RYUUSA_0009
+pointer  quicksand_names  0x0000006c  STAGE_TEXTURE_DZ_HB_RYUUSA_0010
+pointer  quicksand_names  0x00000078  STAGE_TEXTURE_DZ_HB_RYUUSA_0011
+pointer  quicksand_names  0x00000084  STAGE_TEXTURE_DZ_HB_RYUUSA_0012
+pointer  quicksand_names  0x00000090  STAGE_TEXTURE_DZ_HB_RYUUSA_0013
+pointer  quicksand_names  0x0000009c  STAGE_TEXTURE_DZ_HB_RYUUSA_0014
+pointer  quicksand_names  0x000000a8  STAGE_TEXTURE_DZ_HB_RYUUSA_0015
+pointer  quicksand_names  0x000000b4  STAGE_TEXTURE_DZ_HB_RYUUSA_0016
+pointer  quicksand_names  0x000000c0  STAGE_TEXTURE_DZ_HB_RYUUSA_0017
+pointer  quicksand_names  0x000000cc  STAGE_TEXTURE_DZ_HB_RYUUSA_0018
+pointer  quicksand_names  0x000000d8  STAGE_TEXTURE_DZ_HB_RYUUSA_0019
+pointer  quicksand_names  0x000000e4  STAGE_TEXTURE_DZ_HB_RYUUSA_0020
+pointer  quicksand_names  0x000000f0  STAGE_TEXTURE_DZ_HB_RYUUSA_0021
+pointer  quicksand_names  0x000000fc  STAGE_TEXTURE_DZ_HB_RYUUSA_0022
+pointer  quicksand_names  0x00000108  STAGE_TEXTURE_DZ_HB_RYUUSA_0023
+pointer  quicksand_names  0x00000114  STAGE_TEXTURE_DZ_HB_RYUUSA_0024
+pointer  quicksand_names  0x00000120  STAGE_TEXTURE_DZ_HB_RYUUSA_0025
+pointer  quicksand_names  0x0000012c  STAGE_TEXTURE_DZ_HB_RYUUSA_0026
+pointer  quicksand_names  0x00000138  STAGE_TEXTURE_DZ_HB_RYUUSA_0027
+pointer  quicksand_names  0x00000144  STAGE_TEXTURE_DZ_HB_RYUUSA_0028
+pointer  quicksand_names  0x00000150  STAGE_TEXTURE_DZ_HB_RYUUSA_0029
+pointer  quicksand_names  0x0000015c  STAGE_TEXTURE_DZ_HB_RYUUSA_0030
+pointer  quicksand_names  0x00000168  STAGE_TEXTURE_DZ_HB_RYUUSA_0031
+pointer  quicksand_names  0x00000174  STAGE_TEXTURE_DZ_HB_RYUUSA_0032
+pointer  base_quicksand_texlist  0x00000000  quicksand_names
+pointer  eggman_container_names  0x00000000  STAGE_TEXTURE_SIKAKE_18_128E
+pointer  eggman_container_names  0x0000000c  STAGE_TEXTURE_SIKAKE_20_128E
+pointer  eggman_container_names  0x00000018  STAGE_TEXTURE_SIKAKE_46_128E
+pointer  eggman_container_names  0x00000024  STAGE_TEXTURE_SIKAKE_47_128E
+pointer  eggman_container_texlist  0x00000000  eggman_container_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  hidden_base_texture_groups  0x00000000  stage_textures
+pointer  hidden_base_texture_groups  0x00000004  goal_ring_texlists
+pointer  hidden_base_texture_groups  0x00000008  emerald_texlists
+pointer  hidden_base_texture_groups  0x0000000c  item_box_texlists
+pointer  hidden_base_texture_groups  0x00000010  item_box_air_texlists
+pointer  hidden_base_texture_groups  0x00000014  weight_texlists
+pointer  hidden_base_texture_groups  0x00000018  iron_ball_texlists
+pointer  hidden_base_texture_groups  0x0000001c  triple_spring_texlists
+pointer  hidden_base_texture_groups  0x00000020  dynamite_texlists
+pointer  hidden_base_texture_groups  0x00000024  reel_texlists
+pointer  hidden_base_texture_groups  0x00000028  chao_pipe_texlists
+pointer  hidden_base_texture_groups  0x0000002c  cage_texlists
+pointer  hidden_base_texture_groups  0x00000030  wood_box_texlists
+pointer  hidden_base_texture_groups  0x00000034  iron_box_texlists
+pointer  hidden_base_texture_groups  0x00000038  upgrade_texlists
+pointer  hidden_base_texture_groups  0x0000003c  missile_texlists
+pointer  hidden_base_texture_groups  0x00000040  skull_texlists
+pointer  hidden_base_texture_groups  0x00000044  rocket_texlists
+pointer  hidden_base_texture_groups  0x00000048  search_box_texlists
+pointer  hidden_base_texture_groups  0x0000004c  hint_box_texlists
+pointer  hidden_base_texture_groups  0x00000050  knudai_texlists
+pointer  hidden_base_texture_groups  0x00000054  knudai_foothold_texlists
+pointer  hidden_base_texture_groups  0x00000058  knudai_warp_hole_texlists
+pointer  hidden_base_texture_groups  0x0000005c  knudai_door_texlists
+pointer  hidden_base_texture_groups  0x00000060  chao_box_texlists
+pointer  hidden_base_texture_groups  0x00000064  chao_key_texlists
+pointer  hidden_base_texture_groups  0x00000068  object_effect_texlists
+pointer  hidden_base_texture_groups  0x0000006c  messenger_texlists
+pointer  hidden_base_texture_groups  0x00000070  ring_effect_texlists
+pointer  hidden_base_texture_groups  0x00000074  solid_box_texlists
+pointer  hidden_base_texture_groups  0x00000078  ocean_pot_texlists
+pointer  hidden_base_texture_groups  0x0000007c  ocean_flag_texlists
+pointer  hidden_base_texture_groups  0x00000080  tilted_flag_texlists
+pointer  hidden_base_texture_groups  0x00000084  stacked_platform_texlists
+pointer  hidden_base_texture_groups  0x00000088  staff_texlists
+pointer  hidden_base_texture_groups  0x0000008c  base_pillar_texlists
+pointer  hidden_base_texture_groups  0x00000090  base_tower_texlists
+pointer  hidden_base_texture_groups  0x00000094  base_plinth_texlists
+pointer  hidden_base_texture_groups  0x00000098  base_lift_texlists
+pointer  hidden_base_texture_groups  0x0000009c  base_swing_texlists
+pointer  hidden_base_texture_groups  0x000000a0  base_plant_texlists
+pointer  hidden_base_texture_groups  0x000000a4  base_wall_texlists
+pointer  hidden_base_texture_groups  0x000000a8  base_block_texlists
+pointer  hidden_base_texture_groups  0x000000ac  oil_derrick_texlists
+pointer  hidden_base_texture_groups  0x000000b0  ocean_fence_texlists
+pointer  hidden_base_texture_groups  0x000000b4  corner_texlists
+pointer  hidden_base_texture_groups  0x000000b8  base_mat_texlists
+pointer  hidden_base_texture_groups  0x000000bc  wood_box_e_texlists
+pointer  hidden_base_texture_groups  0x000000c0  iron_box_e_texlists
+pointer  hidden_base_texture_groups  0x000000c4  solid_box_e_texlists
+pointer  hidden_base_pvms  0x00000000  PVM_LEVUPDAI_TMTEX
+pointer  hidden_base_pvms  0x00000004  upgrade_melody_texlist
+pointer  hidden_base_pvms  0x00000008  PVM_OBJTEX_STG23
+pointer  hidden_base_pvms  0x0000000c  stage_archive
+pointer  hidden_base_pvms  0x00000010  PVM_EFFTEX_COMMON
+pointer  hidden_base_pvms  0x00000014  efftex_common_texlist
+pointer  hidden_base_pvms  0x00000018  PVM_OBJTEX_COMMON
+pointer  hidden_base_pvms  0x0000001c  objtex_common_texlist
+pointer  hidden_base_pvms  0x00000020  PVM_STG23_RYUUSA
+pointer  hidden_base_pvms  0x00000024  base_quicksand_texlist
+pointer  hidden_base_pvms  0x00000028  PVM_EGGCONTTEX
+pointer  hidden_base_pvms  0x0000002c  eggman_container_texlist
+pointer  hidden_base_pvms  0x00000034  hidden_base_land_texlist

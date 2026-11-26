@@ -1,0 +1,3 @@
+pointer  explosion_sprite  0x0000001c  explosion_cell
+pointer  volley_sprite  0x0000001c  volley_cell
+pointer  ricochet_sprite  0x0000001c  ricochet_cells

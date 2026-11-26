@@ -1,0 +1,15 @@
+text  LAGOON_TEXTURE_KD_DL_HASIRA4_VQ  C  0x00000000  17
+datum  stake_bright_texlist_names  D  0x00000000  12
+datum  stake_bright_texlist  D  0x0000000c  8
+datum  stake_bright_polygons  D  0x00000014  246
+datum  stake_bright_vertices  D  0x0000010c  220
+datum  stake_bright_model  D  0x000001e8  24
+datum  stake_bright_object  D  0x00000200  52
+datum  stake_dark_texlist_names  D  0x00000234  12
+datum  stake_dark_texlist  D  0x00000240  8
+datum  stake_dark_polygons  D  0x00000248  246
+datum  stake_dark_vertices  D  0x00000340  220
+datum  stake_dark_model  D  0x0000041c  24
+datum  stake_dark_object  D  0x00000434  52
+datum  stake_models  D  0x00000468  8
+datum  stake_texlists  D  0x00000470  12

@@ -1,0 +1,2 @@
+datum  knudai_item_box_texlists  D  0x00000000  8
+text  KNUDAI_ITEM_BOX_DEBUG_ID  C  0x00000000  6

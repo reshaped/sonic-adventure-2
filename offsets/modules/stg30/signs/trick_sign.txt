@@ -1,0 +1,9 @@
+datum  trick_sign_miu32_fr006  C  0x00000000  12
+datum  textures  D  0x00000000  12
+datum  trick_sign_texlist  D  0x0000000c  8
+datum  trick_sign_polygons  D  0x00000014  298
+datum  trick_sign_vertices  D  0x00000140  524
+datum  trick_sign_mesh  D  0x0000034c  24
+datum  trick_sign_object  D  0x00000364  52
+datum  trick_sign_uvs  D  0x00000398  212
+datum  trick_sign_anim  D  0x0000046c  36

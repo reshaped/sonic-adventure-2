@@ -1,0 +1,3 @@
+datum  lift_hasira3  C  0x00000000  16
+datum  lift_hasira5  C  0x00000010  16
+datum  lift_sekihi1  C  0x00000020  14

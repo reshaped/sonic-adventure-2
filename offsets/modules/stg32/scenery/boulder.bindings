@@ -1,0 +1,40 @@
+text  HERD_TEXTURE_MIU128_FR002  13
+text  HERD_TEXTURE_MIU128_MEH004  14
+text  HERD_TEXTURE_MIU128_MEH006  14
+text  HERD_TEXTURE_MIU256_FR001  13
+text  HERD_TEXTURE_MIU32_MEH002  13
+text  HERD_TEXTURE_MIU64_CG020  12
+text  HERD_TEXTURE_MIU64_MEH003  13
+text  HERD_TEXTURE_SPACE64_9  10
+text  HERD_TEXTURE_MIU128_MEH007  14
+pointer  large_meteor_names  0x00000000  HERD_TEXTURE_MIU128_FR002
+pointer  large_meteor_names  0x0000000c  HERD_TEXTURE_MIU128_MEH004
+pointer  large_meteor_names  0x00000018  HERD_TEXTURE_MIU128_MEH006
+pointer  large_meteor_names  0x00000024  HERD_TEXTURE_MIU256_FR001
+pointer  large_meteor_names  0x00000030  HERD_TEXTURE_MIU32_MEH002
+pointer  large_meteor_names  0x0000003c  HERD_TEXTURE_MIU64_CG020
+pointer  large_meteor_names  0x00000048  HERD_TEXTURE_MIU64_MEH003
+pointer  large_meteor_names  0x00000054  HERD_TEXTURE_SPACE64_9
+pointer  large_meteor_texlist  0x00000000  large_meteor_names
+pointer  large_meteor_beacon_model  0x00000000  large_meteor_beacon_vertices
+pointer  large_meteor_beacon_model  0x00000004  large_meteor_beacon_polygons
+pointer  large_meteor_beacon  0x00000004  large_meteor_beacon_model
+pointer  large_meteor_lamp_model  0x00000000  large_meteor_lamp_vertices
+pointer  large_meteor_lamp_model  0x00000004  large_meteor_lamp_polygons
+pointer  large_meteor_lamp  0x00000004  large_meteor_lamp_model
+pointer  large_meteor_lamp  0x00000030  large_meteor_beacon
+pointer  large_meteor_body_model  0x00000000  large_meteor_body_vertices
+pointer  large_meteor_body_model  0x00000004  large_meteor_body_polygons
+pointer  large_meteor_body  0x00000004  large_meteor_body_model
+pointer  large_meteor_body  0x0000002c  large_meteor_lamp
+pointer  large_meteor_shard_names  0x00000000  HERD_TEXTURE_MIU128_FR002
+pointer  large_meteor_shard_names  0x0000000c  HERD_TEXTURE_MIU256_FR001
+pointer  large_meteor_shard_texlist  0x00000000  large_meteor_shard_names
+pointer  large_meteor_shard_model  0x00000000  large_meteor_shard_vertices
+pointer  large_meteor_shard_model  0x00000004  large_meteor_shard_polygons
+pointer  large_meteor_shard  0x00000004  large_meteor_shard_model
+pointer  large_meteor_chip_names  0x00000000  HERD_TEXTURE_MIU128_MEH007
+pointer  large_meteor_chip_texlist  0x00000000  large_meteor_chip_names
+pointer  large_meteor_chip_model  0x00000000  large_meteor_chip_vertices
+pointer  large_meteor_chip_model  0x00000004  large_meteor_chip_polygons
+pointer  large_meteor_chip  0x00000004  large_meteor_chip_model

@@ -1,0 +1,5 @@
+function	r11_ninja	r13_game	r13_aggressive	r26_modem
+shared_changed_addend	FMUL FADD FADD	FMUL FADD FADD	FMUL FADD FADD	FMUL FADD FADD
+shared_compound	FMUL FADD FADD	FMUL FADD FADD	FMUL FADD FADD	FMUL FADD FADD
+shared_member_address	FMAC FMAC	FMAC FMAC	FMAC FMAC	FMAC FMAC
+shared_separate_local	FMUL FADD FADD	FMUL FADD FADD	FMUL FADD FADD	FMUL FADD FADD

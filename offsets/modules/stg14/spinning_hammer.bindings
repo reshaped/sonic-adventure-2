@@ -1,0 +1,29 @@
+text  HIGHWAY_TEXT_MIU128_CE002  13
+text  HIGHWAY_TEXT_MIU32_RH001  12
+text  HIGHWAY_TEXT_MIU32_RH005  12
+text  HIGHWAY_TEXT_MIU64_RH012  12
+pointer  spinning_hammer_textures  0x00000000  HIGHWAY_TEXT_MIU128_CE002
+pointer  spinning_hammer_textures  0x0000000c  HIGHWAY_TEXT_MIU32_RH001
+pointer  spinning_hammer_textures  0x00000018  HIGHWAY_TEXT_MIU32_RH005
+pointer  spinning_hammer_textures  0x00000024  HIGHWAY_TEXT_MIU64_RH012
+pointer  spinning_hammer_texlist  0x00000000  spinning_hammer_textures
+pointer  spinning_hammer_glow_model  0x00000000  spinning_hammer_glow_vertices
+pointer  spinning_hammer_glow_model  0x00000004  spinning_hammer_glow_polygons
+pointer  spinning_hammer_glow_object  0x00000004  spinning_hammer_glow_model
+pointer  spinning_hammer_model  0x00000000  spinning_hammer_vertices
+pointer  spinning_hammer_model  0x00000004  spinning_hammer_polygons
+pointer  spinning_hammer_object  0x00000004  spinning_hammer_model
+pointer  spinning_hammer_object  0x0000002c  spinning_hammer_glow_object
+pointer  spinning_hammer_drum_meshsets  0x00000004  spinning_hammer_drum_indices_0
+pointer  spinning_hammer_drum_model  0x00000000  spinning_hammer_drum_points
+pointer  spinning_hammer_drum_model  0x00000004  spinning_hammer_drum_normals
+pointer  spinning_hammer_drum_model  0x0000000c  spinning_hammer_drum_meshsets
+pointer  spinning_hammer_drum_model  0x00000010  spinning_hammer_drum_materials
+pointer  spinning_hammer_drum  0x00000004  spinning_hammer_drum_model
+pointer  spinning_hammer_bar_meshsets  0x00000004  spinning_hammer_bar_indices_0
+pointer  spinning_hammer_bar_model  0x00000000  spinning_hammer_bar_points
+pointer  spinning_hammer_bar_model  0x00000004  spinning_hammer_bar_normals
+pointer  spinning_hammer_bar_model  0x0000000c  spinning_hammer_bar_meshsets
+pointer  spinning_hammer_bar_model  0x00000010  spinning_hammer_bar_materials
+pointer  spinning_hammer_bar  0x00000004  spinning_hammer_bar_model
+pointer  spinning_hammer_texlists  0x00000000  spinning_hammer_texlist

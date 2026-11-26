@@ -1,0 +1,137 @@
+; the checks that the link placed the video decoder's sections as the library
+; wants, and PSGSFD01's bytes. strt1.src holds each section's start, end and
+; size in a word of its own. PSGSFD00's are __START_PSGSFD00, __END_PSGSFD00
+; and __SIZE_PSGSFD00, and the others' are named alike. an end is the address
+; past the section's last byte
+
+; a and b are within range where |b - a| has no bit set outside WITHIN_BITS.
+; that distance is then 0 to 3 or 8 to 11
+WITHIN_BITS:    .EQU    11
+; the size the library wants of PSGSFD01, and so its count of zeros
+PSGSFD01_BYTES: .EQU    1582
+
+        .IMPORT     __START_PSGSFD00
+        .IMPORT     __START_PSGSFD01
+        .IMPORT     __START_PSGSFD02
+        .IMPORT     __START_PSGSFD03
+        .IMPORT     __END_PSGSFD00
+        .IMPORT     __END_PSGSFD01
+        .IMPORT     __END_PSGSFD02
+        .IMPORT     __END_PSGSFD03
+        .IMPORT     __SIZE_PSGSFD00
+        .IMPORT     __SIZE_PSGSFD01
+        .IMPORT     __SIZE_PSGSFD02
+        .IMPORT     __SIZE_PSGSFD03
+        .EXPORT     _MPVASEC_CheckSectionSeq
+        .EXPORT     _MPVASEC_CheckSectionSiz
+
+        .SECTION    PSG,CODE,ALIGN=4
+
+; Bool mpvasec_within(Sint32 a, Sint32 b)
+; whether a and b are within range. the result is in T as well as in R0
+_mpvasec_within:
+        SUB         R4,R5
+        CMP/PZ      R5
+        MOV         #~WITHIN_BITS,R1
+        MOV         R5,R0
+        BT          ?absolute
+        NEG         R0,R0
+?absolute:
+        TST         R1,R0
+        RTS
+        MOVT        R0
+        .ALIGN      4
+
+; Sint32 MPVASEC_CheckSectionSiz(void)
+; check that each of PSGSFD00 to PSGSFD02 has a size within range of the one
+; the library wants of it. it returns 0 if each does, and -1 if one doesn't
+; @asm operand: integer-constant, MOV.L wanted_sizes,R5 at 0x8c108666 loads
+; 6610, the size wanted of PSGSFD00, from the pool
+_MPVASEC_CheckSectionSiz:
+        STS.L       PR,@-R15
+        MOV.L       size_word_addresses,R4
+        MOV.L       @R4,R4
+        MOV.L       wanted_sizes,R5
+        BSR         _mpvasec_within
+        NOP
+        BF          ?siz_failed
+        MOV.L       size_word_addresses+4,R4
+        MOV.L       @R4,R4
+        MOV.L       wanted_sizes+4,R5
+        BSR         _mpvasec_within
+        NOP
+        BF          ?siz_failed
+        MOV.L       size_word_addresses+8,R4
+        MOV.L       @R4,R4
+        MOV.L       wanted_sizes+8,R5
+        BSR         _mpvasec_within
+        NOP
+        BF          ?siz_failed
+        LDS.L       @R15+,PR
+        RTS
+        MOV         #0,R0
+?siz_failed:
+        LDS.L       @R15+,PR
+        RTS
+        MOV         #-1,R0
+        .ALIGN      4
+
+; Sint32 MPVASEC_CheckSectionSeq(void)
+; check that PSGSFD01 starts within range of PSGSFD00's end, and that
+; PSGSFD02 starts within range of PSGSFD01's. it returns 0 if both do, and -1
+; if either doesn't
+; @asm open: no inspect rule reads the T that each BF takes from
+; mpvasec_within
+_MPVASEC_CheckSectionSeq:
+        STS.L       PR,@-R15
+        MOV.L       end_word_addresses,R4
+        MOV.L       @R4,R4
+        MOV.L       start_word_addresses+4,R5
+        MOV.L       @R5,R5
+        BSR         _mpvasec_within
+        NOP
+        BF          ?seq_failed
+        MOV.L       end_word_addresses+4,R4
+        MOV.L       @R4,R4
+        MOV.L       start_word_addresses+8,R5
+        MOV.L       @R5,R5
+        BSR         _mpvasec_within
+        NOP
+        BF          ?seq_failed
+        LDS.L       @R15+,PR
+        RTS
+        MOV         #0,R0
+?seq_failed:
+        LDS.L       @R15+,PR
+        RTS
+        MOV         #-1,R0
+        .ALIGN      4
+
+; strt1.src's words for PSGSFD00 to PSGSFD03, by address
+start_word_addresses:
+        .DATA.L     __START_PSGSFD00
+        .DATA.L     __START_PSGSFD01
+        .DATA.L     __START_PSGSFD02
+        .DATA.L     __START_PSGSFD03
+end_word_addresses:
+        .DATA.L     __END_PSGSFD00
+        .DATA.L     __END_PSGSFD01
+        .DATA.L     __END_PSGSFD02
+        .DATA.L     __END_PSGSFD03
+size_word_addresses:
+        .DATA.L     __SIZE_PSGSFD00
+        .DATA.L     __SIZE_PSGSFD01
+        .DATA.L     __SIZE_PSGSFD02
+        .DATA.L     __SIZE_PSGSFD03
+; the size the library wants of each section
+wanted_sizes:
+        .DATA.L     6610
+        .DATA.L     PSGSFD01_BYTES
+        .DATA.L     24576
+        .DATA.L     0
+
+; PSGSFD01's bytes: PSGSFD01_BYTES zeros. nothing in the image points into
+; them but strt1.src's words
+        .SECTION    PSGSFD01,CODE,ALIGN=4
+        .DATAB.B    PSGSFD01_BYTES,0
+        .END

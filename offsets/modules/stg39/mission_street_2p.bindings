@@ -1,0 +1,14 @@
+text STREET_TEXTURE_SHCITYNBG 10
+text STREET_TEXTURE_SHCITYNBG2 11
+text STREET_TEXTURE_ST1_NBG2 9
+text STREET_BACKGROUND_ARCHIVE 8
+
+include mission_street_background
+
+pointer  kill_area_meshset  0x00000004  kill_area_meshes
+pointer  kill_area_model  0x00000000  kill_area_points
+pointer  kill_area_model  0x00000004  kill_area_normals
+pointer  kill_area_model  0x0000000c  kill_area_meshset
+pointer  kill_area_model  0x00000010  kill_area_material
+pointer  kill_area_object  0x00000004  kill_area_model
+pointer  mission_street_2p_kill_areas  0x00000004  kill_area_object

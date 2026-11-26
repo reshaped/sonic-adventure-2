@@ -1,0 +1,3 @@
+pointer  post_fire_model  0x00000000  post_fire_vertices
+pointer  post_fire_model  0x00000004  post_fire_polygons
+pointer  post_fire_object  0x00000004  post_fire_model

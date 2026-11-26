@@ -1,0 +1,45 @@
+text  CANYON_TEXT_DZ_HATA_LONGHOOK32A  20
+text  CANYON_TEXT_DZ_WC_EYEPRO_ALPHA_128  23
+text  CANYON_TEXT_KD_NDE_HASIRA9_VQ  18
+text  CANYON_TEXT_DZ_WC_SHADOW_SQ32  18
+text  CANYON_TEXT_KD_NDE_HASIRA7  15
+text  CANYON_TEXT_KD_NDE_HASIRA8_VQ  18
+text  CANYON_TEXT_BRIGHT  7
+text  CANYON_TEXT_DARK  7
+pointer  fan_bright_blades_texlist_names  0x00000000  CANYON_TEXT_DZ_HATA_LONGHOOK32A
+pointer  fan_bright_blades_texlist_names  0x0000000c  CANYON_TEXT_DZ_WC_EYEPRO_ALPHA_128
+pointer  fan_bright_blades_texlist_names  0x00000018  CANYON_TEXT_KD_NDE_HASIRA9_VQ
+pointer  fan_bright_blades_texlist  0x00000000  fan_bright_blades_texlist_names
+pointer  fan_bright_blades_model  0x00000000  fan_bright_blades_vertices
+pointer  fan_bright_blades_model  0x00000004  fan_bright_blades_polygons
+pointer  fan_bright_blades_object  0x00000004  fan_bright_blades_model
+pointer  fan_bright_stand_texlist_names  0x00000000  CANYON_TEXT_DZ_WC_SHADOW_SQ32
+pointer  fan_bright_stand_texlist_names  0x0000000c  CANYON_TEXT_KD_NDE_HASIRA7
+pointer  fan_bright_stand_texlist_names  0x00000018  CANYON_TEXT_KD_NDE_HASIRA8_VQ
+pointer  fan_bright_stand_texlist  0x00000000  fan_bright_stand_texlist_names
+pointer  fan_bright_stand_model  0x00000000  fan_bright_stand_vertices
+pointer  fan_bright_stand_model  0x00000004  fan_bright_stand_polygons
+pointer  fan_bright_stand_object  0x00000004  fan_bright_stand_model
+pointer  fan_dark_blades_texlist_names  0x00000000  CANYON_TEXT_DZ_HATA_LONGHOOK32A
+pointer  fan_dark_blades_texlist_names  0x0000000c  CANYON_TEXT_DZ_WC_EYEPRO_ALPHA_128
+pointer  fan_dark_blades_texlist_names  0x00000018  CANYON_TEXT_KD_NDE_HASIRA9_VQ
+pointer  fan_dark_blades_texlist  0x00000000  fan_dark_blades_texlist_names
+pointer  fan_dark_blades_model  0x00000000  fan_dark_blades_vertices
+pointer  fan_dark_blades_model  0x00000004  fan_dark_blades_polygons
+pointer  fan_dark_blades_object  0x00000004  fan_dark_blades_model
+pointer  fan_dark_stand_texlist_names  0x00000000  CANYON_TEXT_KD_NDE_HASIRA7
+pointer  fan_dark_stand_texlist_names  0x0000000c  CANYON_TEXT_KD_NDE_HASIRA8_VQ
+pointer  fan_dark_stand_texlist  0x00000000  fan_dark_stand_texlist_names
+pointer  fan_dark_stand_model  0x00000000  fan_dark_stand_vertices
+pointer  fan_dark_stand_model  0x00000004  fan_dark_stand_polygons
+pointer  fan_dark_stand_object  0x00000004  fan_dark_stand_model
+pointer  fan_blades_models  0x00000000  fan_bright_blades_model
+pointer  fan_blades_models  0x00000004  fan_dark_blades_model
+pointer  fan_blades_texlists  0x00000000  fan_bright_blades_texlist
+pointer  fan_blades_texlists  0x00000004  fan_dark_blades_texlist
+pointer  fan_stand_models  0x00000000  fan_bright_stand_model
+pointer  fan_stand_models  0x00000004  fan_dark_stand_model
+pointer  fan_stand_texlists  0x00000000  fan_bright_stand_texlist
+pointer  fan_stand_texlists  0x00000004  fan_dark_stand_texlist
+pointer  fan_names  0x00000000  CANYON_TEXT_BRIGHT
+pointer  fan_names  0x00000004  CANYON_TEXT_DARK

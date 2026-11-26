@@ -1,0 +1,25 @@
+file                               SONIC2/OTHERPRINT.PRS
+
+# section                          start       end
+DHEAD                              0x8c500000  0x8c500020
+P                                  0x8c500020  0x8c500ae0
+D                                  0x8c500ae0  0x8c501d10
+C                                  0x8c501d10  0x8c502b51
+B                                  0x8c502b54  0x8c502b64
+
+# source                           section     start       end
+modules/otherprint/head.c          DHEAD       0x8c500000  0x8c500018
+modules/otherprint/otherprint.c    P           0x8c500020  0x8c500140
+modules/shared/screen_sprite.c     P           0x8c500140  0x8c500560
+modules/otherprint/logos.c         P           0x8c500560  0x8c5009a0
+modules/otherprint/tento_ending.c  P           0x8c5009a0  0x8c500ae0
+modules/otherprint/otherprint.c    D           0x8c500ae0  0x8c500ae4
+modules/shared/screen_sprite.c     D           0x8c500ae4  0x8c500b04
+modules/otherprint/logos.c         D           0x8c500b04  0x8c500c44
+modules/otherprint/tento_ending.c  D           0x8c500c44  0x8c500cac
+modules/shared/staff_art.c         D           0x8c500cac  0x8c501d10
+modules/otherprint/logos.c         C           0x8c501d10  0x8c501e95
+modules/otherprint/tento_ending.c  C           0x8c501e98  0x8c501fb1
+modules/shared/staff_art.c         C           0x8c501fb4  0x8c502b51
+modules/otherprint/logos.c         B           0x8c502b54  0x8c502b5c
+modules/otherprint/tento_ending.c  B           0x8c502b5c  0x8c502b64

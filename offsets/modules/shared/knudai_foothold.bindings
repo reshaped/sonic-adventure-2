@@ -1,0 +1,20 @@
+text  KNUDAI_FOOTHOLD_DEBUG_ID  6
+text  KNUDAI_FOOTHOLD_DEBUG_YAW  11
+text  KNUDAI_FOOTHOLD_TEXTURE_22  13
+text  KNUDAI_FOOTHOLD_TEXTURE_31  14
+text  KNUDAI_FOOTHOLD_TEXTURE_32  13
+pointer  knudai_foothold_textures  0x00000000  KNUDAI_FOOTHOLD_TEXTURE_22
+pointer  knudai_foothold_textures  0x0000000c  KNUDAI_FOOTHOLD_TEXTURE_31
+pointer  knudai_foothold_textures  0x00000018  KNUDAI_FOOTHOLD_TEXTURE_32
+pointer  knudai_foothold_texlist  0x00000000  knudai_foothold_textures
+pointer  knudai_foothold_model  0x00000000  knudai_foothold_vertices
+pointer  knudai_foothold_model  0x00000004  knudai_foothold_polygons
+pointer  knudai_foothold_object  0x00000004  knudai_foothold_model
+pointer  foothold_floor_meshsets  0x00000004  foothold_floor_indices_0
+pointer  foothold_floor_model  0x00000000  foothold_floor_points
+pointer  foothold_floor_model  0x00000004  foothold_floor_normals
+pointer  foothold_floor_model  0x0000000c  foothold_floor_meshsets
+pointer  foothold_floor_model  0x00000010  foothold_floor_materials
+pointer  knudai_foothold_collision  0x00000004  foothold_floor_model
+pointer  knudai_foothold_texlists  0x00000000  knudai_foothold_texlist
+pointer  knudai_foothold_texlists  0x00000004  ring_sparkle_texlist

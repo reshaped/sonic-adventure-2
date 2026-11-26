@@ -1,0 +1,2 @@
+datum  puff_cells  D  0x00000000  20
+datum  puff_sprite  D  0x00000014  32

@@ -1,0 +1,7 @@
+text  SONIC_ARC_TEXTURE_KD_LS_UNIT801  C  0x00000000  14
+datum  textures  D  0x00000000  12
+datum  electric_arc_texlist  D  0x0000000c  8
+datum  electric_arc_polygons  D  0x00000014  50
+datum  electric_arc_vertices  D  0x00000048  76
+datum  electric_arc_model  D  0x00000094  24
+datum  electric_arc_object  D  0x000000ac  52

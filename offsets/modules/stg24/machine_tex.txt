@@ -1,0 +1,3 @@
+datum  miu128_cg016  C  0x00000000  16
+datum  miu32_ee001  C  0x00000010  12
+datum  textures  D  0x00000000  24

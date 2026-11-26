@@ -1,0 +1,14 @@
+text  ROAD_TEXTURE_MIU128_RH002  13
+text  ROAD_TEXTURE_MIU128_RH003  13
+text  ROAD_TEXTURE_MIU128_RH010  13
+pointer  street_fan_textures  0x00000000  ROAD_TEXTURE_MIU128_RH002
+pointer  street_fan_textures  0x0000000c  ROAD_TEXTURE_MIU128_RH003
+pointer  street_fan_textures  0x00000018  ROAD_TEXTURE_MIU128_RH010
+pointer  street_fan_texlist  0x00000000  street_fan_textures
+pointer  street_fan_blades_mesh  0x00000000  street_fan_blades_vertices
+pointer  street_fan_blades_mesh  0x00000004  street_fan_blades_polygons
+pointer  street_fan_blades  0x00000004  street_fan_blades_mesh
+pointer  street_fan_mesh  0x00000000  street_fan_vertices
+pointer  street_fan_mesh  0x00000004  street_fan_polygons
+pointer  street_fan_object  0x00000004  street_fan_mesh
+pointer  street_fan_object  0x0000002c  street_fan_blades

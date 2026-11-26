@@ -1,0 +1,2 @@
+datum  textures  D  0x00000010  12
+datum  objects  D  0x0000001c  12

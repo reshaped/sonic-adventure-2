@@ -1,0 +1,10 @@
+text  PICKUP_TEXTURE_MIU64_MO014  12
+text  PICKUP_TEXTURE_MIU64_MS003  12
+
+pointer  pickup_texlist_names  0x00000000  PICKUP_TEXTURE_MIU64_MO014
+pointer  pickup_texlist_names  0x0000000c  PICKUP_TEXTURE_MIU64_MS003
+pointer  pumpkin_pickup_texlist  0x00000000  pickup_texlist_names
+pointer  pumpkin_pickup_model  0x00000000  pickup_vertices
+pointer  pumpkin_pickup_model  0x00000004  pickup_polygons
+pointer  pickup_object  0x00000004  pumpkin_pickup_model
+pointer  pickup_texlists  0x00000000  pumpkin_pickup_texlist

@@ -1,0 +1,15 @@
+text  TEXTURE_MISSION_BG  11
+text  TEXTURE_MISSION_W0  11
+text  TEXTURE_MISSION_W1  11
+text  TEXTURE_MISSION_NUMALL  15
+text  TEXTURE_STG_KAZARI0  12
+text  TEXTURE_MISSION_TATEMOJI  17
+text  TEXTURE_STG_KAZARI1  12
+
+pointer  missiontex_texname  0x00000000  TEXTURE_MISSION_BG
+pointer  missiontex_texname  0x0000000c  TEXTURE_MISSION_W0
+pointer  missiontex_texname  0x00000018  TEXTURE_MISSION_W1
+pointer  missiontex_texname  0x00000024  TEXTURE_MISSION_NUMALL
+pointer  missiontex_texname  0x00000030  TEXTURE_STG_KAZARI0
+pointer  missiontex2_texname  0x00000000  TEXTURE_MISSION_TATEMOJI
+pointer  missiontex2_texname  0x0000000c  TEXTURE_STG_KAZARI1

@@ -1,0 +1,2 @@
+datum  mech_boss_sound_table  C  0x00000000  160
+datum  mech_boss_sound_list  C  0x000000a0  8

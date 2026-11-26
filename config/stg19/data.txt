@@ -1,0 +1,71 @@
+0x8c52992c  versus_sonic_1_land_names  land_filenames  modules/stg19/versus_sonic_1.c 103
+0x8c52d03c  .entries  land_entries  21 2
+0x8c52d31c  versus_sonic_1_land  land_table  .entries - versus_sonic_1_land_names .terrain_textures
+0x8c52d33c  .textures  texture_names  7
+0x8c52d390  .terrain_textures  texture_list  .textures
+0x8c52d398  .draw_20_polygons  chunk_polygons  261
+0x8c52d5a4  .draw_20_vertices  chunk_vertices  183
+0x8c52d880  .draw_20_model  chunk_model  .draw_20_vertices .draw_20_polygons
+0x8c52d898  .draw_20  chunk_object  .draw_20_model - -
+0x8c52d8cc  .collision_0_materials  basic_materials  1
+0x8c52d8e0  .collision_0_faces  basic_indices  35
+0x8c52d928  .collision_0_meshsets  basic_meshsets  1
+0x8c52d940  .collision_0_points  points  32
+0x8c52dac0  .collision_0_model  basic_model  .collision_0_points - .collision_0_meshsets .collision_0_materials
+0x8c52dae8  .collision_0  basic_object  .collision_0_model - -
+0x8c52db1c  .collision_1_materials  basic_materials  1
+0x8c52db30  .collision_1_faces  basic_indices  36
+0x8c52db78  .collision_1_meshsets  basic_meshsets  1
+0x8c52db90  .collision_1_points  points  17
+0x8c52dc5c  .collision_1_model  basic_model  .collision_1_points - .collision_1_meshsets .collision_1_materials
+0x8c52dc84  .collision_1  basic_object  .collision_1_model - -
+0x8c52dcb8  .draw_19_polygons  chunk_polygons  129
+0x8c52ddbc  .draw_19_vertices  chunk_vertices  107
+0x8c52df68  .draw_19_model  chunk_model  .draw_19_vertices .draw_19_polygons
+0x8c52df80  .draw_19  chunk_object  .draw_19_model - -
+0x8c52dfb4  .draw_18_polygons  chunk_polygons  127
+0x8c52e0b4  .draw_18_vertices  chunk_vertices  91
+0x8c52e220  .draw_18_model  chunk_model  .draw_18_vertices .draw_18_polygons
+0x8c52e238  .draw_18  chunk_object  .draw_18_model - -
+0x8c52e26c  .draw_17_polygons  chunk_polygons  89
+0x8c52e320  .draw_17_vertices  chunk_vertices  63
+0x8c52e41c  .draw_17_model  chunk_model  .draw_17_vertices .draw_17_polygons
+0x8c52e434  .draw_17  chunk_object  .draw_17_model - -
+0x8c52e468  .draw_14_polygons  chunk_polygons  275
+0x8c52e690  .draw_14_vertices  chunk_vertices  211
+0x8c52e9dc  .draw_14_model  chunk_model  .draw_14_vertices .draw_14_polygons
+0x8c52e9f4  .draw_16  chunk_object  .draw_14_model - -
+0x8c52ea28  .draw_11_polygons  chunk_polygons  191
+0x8c52eba8  .draw_11_vertices  chunk_vertices  171
+0x8c52ee54  .draw_11_model  chunk_model  .draw_11_vertices .draw_11_polygons
+0x8c52ee6c  .draw_13  chunk_object  .draw_11_model - -
+0x8c52eea0  .draw_9_polygons  chunk_polygons  203
+0x8c52f038  .draw_9_vertices  chunk_vertices  175
+0x8c52f2f4  .draw_9_model  chunk_model  .draw_9_vertices .draw_9_polygons
+0x8c52f30c  .draw_10  chunk_object  .draw_9_model - -
+0x8c52f340  .draw_8_polygons  chunk_polygons  247
+0x8c52f530  .draw_8_vertices  chunk_vertices  203
+0x8c52f85c  .draw_8_model  chunk_model  .draw_8_vertices .draw_8_polygons
+0x8c52f874  .draw_8  chunk_object  .draw_8_model - -
+0x8c52f8a8  .draw_6_polygons  chunk_polygons  155
+0x8c52f9e0  .draw_6_vertices  chunk_vertices  115
+0x8c52fbac  .draw_6_model  chunk_model  .draw_6_vertices .draw_6_polygons
+0x8c52fbc4  .draw_7  chunk_object  .draw_6_model - -
+0x8c52fbf8  .draw_1_polygons  chunk_polygons  145
+0x8c52fd1c  .draw_1_vertices  chunk_vertices  95
+0x8c52fe98  .draw_1_model  chunk_model  .draw_1_vertices .draw_1_polygons
+0x8c52feb0  .draw_5  chunk_object  .draw_1_model - -
+0x8c52fee4  .draw_0_polygons  chunk_polygons  261
+0x8c5300f0  .draw_0_vertices  chunk_vertices  183
+0x8c5303cc  .draw_0_model  chunk_model  .draw_0_vertices .draw_0_polygons
+0x8c5303e4  .draw_0  chunk_object  .draw_0_model - -
+0x8c530418  .draw_15  chunk_object  .draw_14_model - -
+0x8c53044c  .draw_14  chunk_object  .draw_14_model - -
+0x8c530480  .draw_12  chunk_object  .draw_11_model - -
+0x8c5304b4  .draw_11  chunk_object  .draw_11_model - -
+0x8c5304e8  .draw_9  chunk_object  .draw_9_model - -
+0x8c53051c  .draw_6  chunk_object  .draw_6_model - -
+0x8c530550  .draw_4  chunk_object  .draw_1_model - -
+0x8c530584  .draw_3  chunk_object  .draw_1_model - -
+0x8c5305b8  .draw_2  chunk_object  .draw_1_model - -
+0x8c5305ec  .draw_1  chunk_object  .draw_1_model - -

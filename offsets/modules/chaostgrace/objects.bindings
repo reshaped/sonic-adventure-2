@@ -1,0 +1,36 @@
+text  SET_NAME_OBJ_ETC  8
+text  SET_NAME_K_CUBE  7
+text  SET_NAME_OMOCHAO  8
+text  SET_NAME_OBJ_BOX  8
+text  SET_NAME_OBJ_TREE  9
+text  SET_NAME_OBJ_LOG  8
+text  SET_NAME_OBJ_KANI  9
+text  SET_NAME_OBJ_OMO  8
+text  SET_NAME_C_SPHERE  9
+text  SET_NAME_C_CYL  6
+text  SET_NAME_C_CUBE  7
+text  SET_NAME_WALL_PLANE  11
+pointer  chaostgrace_kinds  0x00000008  race_scenery_init
+pointer  chaostgrace_kinds  0x0000000c  SET_NAME_OBJ_ETC
+pointer  chaostgrace_kinds  0x00000018  garden_race_field
+pointer  chaostgrace_kinds  0x0000001c  SET_NAME_K_CUBE
+pointer  chaostgrace_kinds  0x00000028  race_scenery_init
+pointer  chaostgrace_kinds  0x0000002c  SET_NAME_OMOCHAO
+pointer  chaostgrace_kinds  0x00000038  race_box_init
+pointer  chaostgrace_kinds  0x0000003c  SET_NAME_OBJ_BOX
+pointer  chaostgrace_kinds  0x00000048  race_tree_init
+pointer  chaostgrace_kinds  0x0000004c  SET_NAME_OBJ_TREE
+pointer  chaostgrace_kinds  0x00000058  race_log_init
+pointer  chaostgrace_kinds  0x0000005c  SET_NAME_OBJ_LOG
+pointer  chaostgrace_kinds  0x00000068  race_crab_init
+pointer  chaostgrace_kinds  0x0000006c  SET_NAME_OBJ_KANI
+pointer  chaostgrace_kinds  0x00000078  race_omochao_init
+pointer  chaostgrace_kinds  0x0000007c  SET_NAME_OBJ_OMO
+pointer  chaostgrace_kinds  0x00000088  collision_sphere_step
+pointer  chaostgrace_kinds  0x0000008c  SET_NAME_C_SPHERE
+pointer  chaostgrace_kinds  0x00000098  collision_cylinder_step
+pointer  chaostgrace_kinds  0x0000009c  SET_NAME_C_CYL
+pointer  chaostgrace_kinds  0x000000a8  collision_cube_step
+pointer  chaostgrace_kinds  0x000000ac  SET_NAME_C_CUBE
+pointer  chaostgrace_kinds  0x000000b8  collision_wall_step
+pointer  chaostgrace_kinds  0x000000bc  SET_NAME_WALL_PLANE

@@ -1,0 +1,5 @@
+text  SKY_ARCHIVE  C  0x00000000  8
+datum  background_builds  D  0x00000004  64
+datum  sky_textures  D  0x00000044  20
+datum  background_texture_groups  D  0x00000058  8
+datum  background_pvms  D  0x00000060  24

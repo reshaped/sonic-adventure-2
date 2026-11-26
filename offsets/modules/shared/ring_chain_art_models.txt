@@ -1,0 +1,7 @@
+datum  ring_chain_root_polygons  D  0x00000000  22
+datum  ring_chain_root_model  D  0x00000018  24
+datum  ring_chain_root  D  0x00000030  52
+datum  ring_entry_template_polygons  D  0x00000064  158
+datum  ring_entry_template_vertices  D  0x00000104  780
+datum  ring_entry_template_model  D  0x00000410  24
+datum  ring_entry_template  D  0x00000428  52

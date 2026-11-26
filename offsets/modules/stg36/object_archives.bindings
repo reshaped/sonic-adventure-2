@@ -1,0 +1,128 @@
+include  objtex_common
+include  efftex_common
+
+include  core_object_archive
+include  core_walker_archive
+include  core_block_glow_archive
+
+text CORE_TEXTURE_MIU128_CG006 13
+text CORE_TEXTURE_MIU128_CG0061 14
+text CORE_TEXTURE_MIU128_CG0062 14
+text CORE_TEXTURE_MIU128_CG0063 14
+text CORE_TEXTURE_MIU128_CG0064 14
+text CORE_TEXTURE_DZ_CC_64WAVE0001 17
+text CORE_TEXTURE_DZ_CC_64WAVE0002 17
+text CORE_TEXTURE_DZ_CC_64WAVE0003 17
+text CORE_TEXTURE_DZ_CC_64WAVE0004 17
+text CORE_TEXTURE_DZ_CC_64WAVE0005 17
+text CORE_TEXTURE_DZ_CC_64WAVE0006 17
+text CORE_TEXTURE_DZ_CC_64WAVE0007 17
+text CORE_TEXTURE_DZ_CC_64WAVE0008 17
+text CORE_TEXTURE_DZ_CC_64WAVE0009 17
+text CORE_TEXTURE_DZ_CC_64WAVE0010 17
+text CORE_TEXTURE_DZ_CC_64WAVE0011 17
+text CORE_TEXTURE_DZ_CC_64WAVE0012 17
+text CORE_TEXTURE_DZ_CC_64WAVE0013 17
+text CORE_TEXTURE_DZ_CC_64WAVE0014 17
+text CORE_TEXTURE_DZ_CC_64WAVE0015 17
+text CORE_TEXTURE_OBJTEX_CC_COMMON 17
+text CORE_TEXTURE_OBJTEX_CC_WALKER 17
+text CORE_TEXTURE_EFFTEX_COMMON 14
+text CORE_TEXTURE_OBJTEX_COMMON 14
+text CORE_TEXTURE_STG36_TEXPATTERN 17
+text CORE_TEXTURE_STG36_TEXPATTERN2 18
+text CORE_TEXTURE_CC_POISON 10
+
+pointer  tails_panel_texlist_names  0x00000000  CORE_TEXTURE_MIU128_CG006
+pointer  tails_panel_texlist_names  0x0000000c  CORE_TEXTURE_MIU128_CG0061
+pointer  tails_panel_texlist_names  0x00000018  CORE_TEXTURE_MIU128_CG0062
+pointer  tails_panel_texlist_names  0x00000024  CORE_TEXTURE_MIU128_CG0063
+pointer  tails_panel_texlist_names  0x00000030  CORE_TEXTURE_MIU128_CG0064
+pointer  tails_panel_texlist  0x00000000  tails_panel_texlist_names
+pointer  tails_joint_texlist_names  0x00000000  CORE_TEXTURE_DZ_CC_64WAVE0001
+pointer  tails_joint_texlist_names  0x0000000c  CORE_TEXTURE_DZ_CC_64WAVE0002
+pointer  tails_joint_texlist_names  0x00000018  CORE_TEXTURE_DZ_CC_64WAVE0003
+pointer  tails_joint_texlist_names  0x00000024  CORE_TEXTURE_DZ_CC_64WAVE0004
+pointer  tails_joint_texlist_names  0x00000030  CORE_TEXTURE_DZ_CC_64WAVE0005
+pointer  tails_joint_texlist_names  0x0000003c  CORE_TEXTURE_DZ_CC_64WAVE0006
+pointer  tails_joint_texlist_names  0x00000048  CORE_TEXTURE_DZ_CC_64WAVE0007
+pointer  tails_joint_texlist_names  0x00000054  CORE_TEXTURE_DZ_CC_64WAVE0008
+pointer  tails_joint_texlist_names  0x00000060  CORE_TEXTURE_DZ_CC_64WAVE0009
+pointer  tails_joint_texlist_names  0x0000006c  CORE_TEXTURE_DZ_CC_64WAVE0010
+pointer  tails_joint_texlist_names  0x00000078  CORE_TEXTURE_DZ_CC_64WAVE0011
+pointer  tails_joint_texlist_names  0x00000084  CORE_TEXTURE_DZ_CC_64WAVE0012
+pointer  tails_joint_texlist_names  0x00000090  CORE_TEXTURE_DZ_CC_64WAVE0013
+pointer  tails_joint_texlist_names  0x0000009c  CORE_TEXTURE_DZ_CC_64WAVE0014
+pointer  tails_joint_texlist_names  0x000000a8  CORE_TEXTURE_DZ_CC_64WAVE0015
+pointer  tails_joint_texlist  0x00000000  tails_joint_texlist_names
+pointer  core_block_glow_texlist  0x00000000  core_block_glow_texlist_names
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  dirt_texlist
+pointer  stage_textures  0x00000024  ring_shadow_texlist
+pointer  stage_textures  0x00000028  effect_texlist
+pointer  stage_textures  0x0000002c  item_balloon_texlist
+pointer  stage_textures  0x00000030  ring_sparkle_texlist
+pointer  stage_textures  0x00000034  burst_texlist
+pointer  stage_textures  0x00000038  lens_flare_texlist
+pointer  core_tails_object_groups  0x00000000  stage_textures
+pointer  core_tails_object_groups  0x00000004  goal_ring_texlists
+pointer  core_tails_object_groups  0x00000008  emerald_texlists
+pointer  core_tails_object_groups  0x0000000c  item_box_texlists
+pointer  core_tails_object_groups  0x00000010  item_box_air_texlists
+pointer  core_tails_object_groups  0x00000014  weight_texlists
+pointer  core_tails_object_groups  0x00000018  iron_ball_texlists
+pointer  core_tails_object_groups  0x0000001c  triple_spring_texlists
+pointer  core_tails_object_groups  0x00000020  dynamite_texlists
+pointer  core_tails_object_groups  0x00000024  reel_texlists
+pointer  core_tails_object_groups  0x00000028  chao_pipe_texlists
+pointer  core_tails_object_groups  0x0000002c  cage_texlists
+pointer  core_tails_object_groups  0x00000030  wood_box_texlists
+pointer  core_tails_object_groups  0x00000034  iron_box_texlists
+pointer  core_tails_object_groups  0x00000038  upgrade_texlists
+pointer  core_tails_object_groups  0x0000003c  missile_texlists
+pointer  core_tails_object_groups  0x00000040  skull_texlists
+pointer  core_tails_object_groups  0x00000044  rocket_texlists
+pointer  core_tails_object_groups  0x00000048  search_box_texlists
+pointer  core_tails_object_groups  0x0000004c  hint_box_texlists
+pointer  core_tails_object_groups  0x00000050  knudai_texlists
+pointer  core_tails_object_groups  0x00000054  knudai_foothold_texlists
+pointer  core_tails_object_groups  0x00000058  knudai_warp_hole_texlists
+pointer  core_tails_object_groups  0x0000005c  knudai_door_texlists
+pointer  core_tails_object_groups  0x00000060  chao_box_texlists
+pointer  core_tails_object_groups  0x00000064  chao_key_texlists
+pointer  core_tails_object_groups  0x00000068  object_effect_texlists
+pointer  core_tails_object_groups  0x0000006c  messenger_texlists
+pointer  core_tails_object_groups  0x00000070  ring_effect_texlists
+pointer  core_tails_object_groups  0x00000074  solid_box_texlists
+pointer  core_tails_object_groups  0x00000078  core_block_texlists
+pointer  core_tails_object_groups  0x0000007c  core_lift_texlists
+pointer  core_tails_object_groups  0x00000080  core_shutter_texlists
+pointer  core_tails_object_groups  0x00000084  core_step_texlists
+pointer  core_tails_object_groups  0x00000088  last_step_texlists
+pointer  core_tails_object_groups  0x0000008c  capsule_bomb_texlists
+pointer  core_tails_object_groups  0x00000090  core_laser_texlists
+pointer  core_tails_object_groups  0x00000094  core_cannon_texlists
+pointer  core_tails_object_groups  0x00000098  time_switch_texlists
+pointer  core_tails_object_groups  0x0000009c  goal_door_texlists
+pointer  core_tails_object_pvms  0x00000000  CORE_TEXTURE_OBJTEX_CC_COMMON
+pointer  core_tails_object_pvms  0x00000004  core_object_textures
+pointer  core_tails_object_pvms  0x00000008  CORE_TEXTURE_OBJTEX_CC_WALKER
+pointer  core_tails_object_pvms  0x0000000c  walker_object_textures
+pointer  core_tails_object_pvms  0x00000010  CORE_TEXTURE_EFFTEX_COMMON
+pointer  core_tails_object_pvms  0x00000014  efftex_common_texlist
+pointer  core_tails_object_pvms  0x00000018  CORE_TEXTURE_OBJTEX_COMMON
+pointer  core_tails_object_pvms  0x0000001c  objtex_common_texlist
+pointer  core_tails_object_pvms  0x00000020  CORE_TEXTURE_STG36_TEXPATTERN
+pointer  core_tails_object_pvms  0x00000024  tails_panel_texlist
+pointer  core_tails_object_pvms  0x00000028  CORE_TEXTURE_STG36_TEXPATTERN2
+pointer  core_tails_object_pvms  0x0000002c  tails_joint_texlist
+pointer  core_tails_object_pvms  0x00000030  CORE_TEXTURE_CC_POISON
+pointer  core_tails_object_pvms  0x00000034  core_block_glow_texlist
+pointer  core_tails_object_pvms  0x0000003c  tails_glow_texlist

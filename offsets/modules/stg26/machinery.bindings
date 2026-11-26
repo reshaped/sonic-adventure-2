@@ -1,0 +1,13 @@
+pointer  machinery_curve_model  0x00000000  machinery_curve_vertices
+pointer  machinery_curve_model  0x00000004  machinery_curve_polygons
+pointer  machinery_curve_object  0x00000004  machinery_curve_model
+pointer  straight_textures  0x00000000  machinery_texture_128a
+pointer  straight_textures  0x0000000c  machinery_texture_64a
+pointer  straight_textures  0x00000018  machinery_texture_64b
+pointer  machinery_straight_texlist  0x00000000  straight_textures
+pointer  machinery_straight_model  0x00000000  machinery_straight_vertices
+pointer  machinery_straight_model  0x00000004  machinery_straight_polygons
+pointer  machinery_straight_object  0x00000004  machinery_straight_model
+include  desert_machinery_models
+pointer  quarters_machinery_texlists  0x00000000  machinery_curve_texlist
+pointer  quarters_machinery_texlists  0x00000004  machinery_straight_texlist

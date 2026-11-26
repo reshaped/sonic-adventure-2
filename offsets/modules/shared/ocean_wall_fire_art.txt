@@ -1,0 +1,4 @@
+datum  wall_fire_polygons  D  0x00000000  242
+datum  wall_fire_vertices  D  0x000000f4  380
+datum  wall_fire_model  D  0x00000270  24
+datum  wall_fire_object  D  0x00000288  52

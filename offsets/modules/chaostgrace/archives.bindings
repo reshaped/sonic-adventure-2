@@ -1,0 +1,5 @@
+pointer  effects  0x00000000  ripple_texlist
+pointer  effects  0x00000004  sparkle_texlist
+pointer  race_effect_groups  0x00000000  effects
+pointer  race_effect_textures  0x00000000  race_effect_archive
+pointer  race_effect_textures  0x00000004  garden_effect_texlist

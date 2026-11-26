@@ -1,0 +1,65 @@
+include  objtex_common
+include  efftex_common
+
+text  ARCHIVE_DZ_GHOSTCEILINGDOOR  20
+text  ARCHIVE_DZ_KANKYOU128  14
+text  ARCHIVE_DZ_SANDGLASS_BODY128  21
+text  ARCHIVE_DZ_SANDGLASS_BUTTAN128  23
+text  ARCHIVE_DZ_SANDGLASS_EDGE32  20
+text  ARCHIVE_DZ_SANDGLASS_SAND64  20
+text  ARCHIVE_EFFTEX_COMMON  14
+text  ARCHIVE_OBJTEX_COMMON  14
+text  ARCHIVE_OBJTEX_BOSSBOGY  16
+text  ARCHIVE_BOSS_PWGUAGE_TEX  17
+pointer  room_textures  0x00000000  ARCHIVE_DZ_GHOSTCEILINGDOOR
+pointer  room_textures  0x0000000c  ARCHIVE_DZ_KANKYOU128
+pointer  room_textures  0x00000018  ARCHIVE_DZ_SANDGLASS_BODY128
+pointer  room_textures  0x00000024  ARCHIVE_DZ_SANDGLASS_BUTTAN128
+pointer  room_textures  0x00000030  ARCHIVE_DZ_SANDGLASS_EDGE32
+pointer  room_textures  0x0000003c  ARCHIVE_DZ_SANDGLASS_SAND64
+pointer  room_texlist  0x00000000  room_textures
+pointer  stage_textures  0x00000000  spring_texlist
+pointer  stage_textures  0x00000004  ring_texlist
+pointer  stage_textures  0x00000008  switch_texlist
+pointer  stage_textures  0x0000000c  dash_panel_texlist
+pointer  stage_textures  0x00000010  dash_panel_anim_texlist
+pointer  stage_textures  0x00000014  save_point_texlist
+pointer  stage_textures  0x00000018  big_jump_anim_texlist
+pointer  stage_textures  0x0000001c  big_jump_texlist
+pointer  stage_textures  0x00000020  rocket_base_texlist
+pointer  stage_textures  0x00000024  rocket_texlist
+pointer  stage_textures  0x00000028  dirt_texlist
+pointer  stage_textures  0x0000002c  ring_shadow_texlist
+pointer  stage_textures  0x00000030  effect_texlist
+pointer  stage_textures  0x00000034  item_balloon_texlist
+pointer  stage_textures  0x00000038  burst_texlist
+pointer  stage_textures  0x0000003c  lens_flare_texlist
+pointer  bigbogy_texture_groups  0x00000000  stage_textures
+pointer  bigbogy_texture_groups  0x00000004  goal_ring_texlists
+pointer  bigbogy_texture_groups  0x00000008  emerald_texlists
+pointer  bigbogy_texture_groups  0x0000000c  item_box_texlists
+pointer  bigbogy_texture_groups  0x00000010  item_box_air_texlists
+pointer  bigbogy_texture_groups  0x00000014  weight_texlists
+pointer  bigbogy_texture_groups  0x00000018  iron_ball_texlists
+pointer  bigbogy_texture_groups  0x0000001c  triple_spring_texlists
+pointer  bigbogy_texture_groups  0x00000020  dynamite_texlists
+pointer  bigbogy_texture_groups  0x00000024  reel_texlists
+pointer  bigbogy_texture_groups  0x00000028  chao_pipe_texlists
+pointer  bigbogy_texture_groups  0x0000002c  cage_texlists
+pointer  bigbogy_texture_groups  0x00000030  wood_box_texlists
+pointer  bigbogy_texture_groups  0x00000034  iron_box_texlists
+pointer  bigbogy_texture_groups  0x00000038  upgrade_texlists
+pointer  bigbogy_texture_groups  0x0000003c  missile_texlists
+pointer  bigbogy_texture_groups  0x00000040  skull_texlists
+pointer  bigbogy_texture_groups  0x00000044  object_effect_texlists
+pointer  bigbogy_texture_groups  0x00000048  sandglass_texlists
+pointer  bigbogy_texture_groups  0x0000004c  bigbogy_door_texlists
+pointer  bigbogy_texture_groups  0x00000050  messenger_texlists
+pointer  bigbogy_pvms  0x00000000  ARCHIVE_EFFTEX_COMMON
+pointer  bigbogy_pvms  0x00000004  efftex_common_texlist
+pointer  bigbogy_pvms  0x00000008  ARCHIVE_OBJTEX_COMMON
+pointer  bigbogy_pvms  0x0000000c  objtex_common_texlist
+pointer  bigbogy_pvms  0x00000010  ARCHIVE_OBJTEX_BOSSBOGY
+pointer  bigbogy_pvms  0x00000014  room_texlist
+pointer  bigbogy_pvms  0x00000018  ARCHIVE_BOSS_PWGUAGE_TEX
+pointer  bigbogy_pvms  0x0000001c  boss_gauge_texlist
