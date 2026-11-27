@@ -117,7 +117,14 @@ static void fog_apply(struct fog_setting *setting)
         if (speed < 0.0F) {
             speed = -speed;
         }
+#ifdef NONMATCHING
+        /* the original's runtime gives a remainder by 0 as 0, where GCC's
+         * faults. STG21's fog has speed 2000 */
+        phase = (Int)(FOG_TABLE_SIZE / speed);
+        phase = phase != 0 ? game_state.steps % phase : 0;
+#else
         phase = game_state.steps % (Int)(FOG_TABLE_SIZE / speed);
+#endif
         if (applied->speed > 0.0F) {
             pos = phase * speed;
         } else {
@@ -293,7 +300,14 @@ static void fog_apply_blend(struct fog_setting *from, struct fog_setting *to,
             if (speed < 0.0F) {
                 speed = -speed;
             }
+#ifdef NONMATCHING
+            /* the original's runtime gives a remainder by 0 as 0, where
+             * GCC's faults. STG21's fog has speed 2000 */
+            phase = (Int)(FOG_TABLE_SIZE / speed);
+            phase = phase != 0 ? game_state.steps % phase : 0;
+#else
             phase = game_state.steps % (Int)(FOG_TABLE_SIZE / speed);
+#endif
             if (setting->speed > 0.0F) {
                 pos = phase * speed;
             } else {
